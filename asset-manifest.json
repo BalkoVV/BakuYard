@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BakuYard/static/css/main.7acaea2f.css",
+    "main.js": "/BakuYard/static/js/main.07d3183d.js",
+    "index.html": "/BakuYard/index.html",
+    "main.7acaea2f.css.map": "/BakuYard/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/BakuYard/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
