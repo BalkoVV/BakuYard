@@ -1,0 +1,16 @@
+ /*  HeroBottom.module.css  */
+
+.BakuHeroBottom {
+   display: block;
+   /* height: 550px; */
+   width: 900px;
+   margin-left: -200px;
+}
+
+.BakuHeroBottomImg {
+   display: block;
+   height: 350px;
+   background: url('../HeroBottom/bg4.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+}

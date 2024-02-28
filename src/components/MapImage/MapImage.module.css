@@ -1,0 +1,16 @@
+.MapImageDiv {
+   /* position: absolute; */
+   display: block;
+   /* height: 550px; */
+   width: 900px;
+   /* margin-left: -200px; */
+}
+
+.MapImageDivImg {
+   display: block;
+   height: 350px;
+   background: url('../MapImage/googleMaps.jpg');
+   background-size: cover;
+   /* background-attachment: fixed; */
+}
+

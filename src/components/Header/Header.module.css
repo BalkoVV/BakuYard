@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  height: 100px;
+  width: 100vw;
+  align-items: center;
+  position: fixed;
+  background: #180404;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  border-bottom: 1px solid rgba(218, 165, 32, 0.239);
+}
+
+.headerList {
+display: flex;
+padding: 0 20px;
+margin: 0;
+justify-content: space-between;
+align-items: center;
+}
+
+.headerListItem:nth-child(3) {
+ margin-top: 25px;
+}
+.headerContainer {
+  width: 960px;
+  padding: auto 0;
+  /* background-color: rgba(255, 255, 255, 0.113); */
+}
