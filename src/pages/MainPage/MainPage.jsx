@@ -7,36 +7,58 @@ import DetailsButton from 'components/DetailsButton/DetailsButton';
 import MainDescriptionsTop from 'components/MainDescriptionsTop/MainDescriptionsTop';
 import MainDescriptionsBottom from 'components/MainDescriptionsBottom/MainDescriptionsBottom';
 
-import styles from 'pages/MainPage/MainPage.module.css';
+// import styles from 'pages/MainPage/MainPage.module.css';
 
 export const MainPage = () => {
   return (
-    <div className={styles.mainPage}>
-     <div className={styles.mainPageContainer}>
+    <div>
      <Hero />
-       <ul className={styles.mainPageList}>
-        <li className={styles.mainPageListItem}>
-          <span className={styles.mainPageListItemDescription}>
+       <ul>
+        <li>
+          <span>
             <MainDescriptionsTop />
           </span>
          
         </li>
         <li>
-            <span className={styles.mainPageListItemImage}>
+            <span>
             <HeroBottom />
           </span>
         </li>
-        <li className={styles.mainPageListItem}> 
-          <span className={styles.mainPageListItemDescription}>
+        <li> 
+          <span>
             <MainDescriptionsBottom />
           </span>
-          {/* <HeroBottom /> */}
+          <HeroBottom />
         </li>
-        <li className={styles.mainPageListItem}>
+        <li>
           <DetailsButton />
         </li>
+        <li> 
+          <span>
+            <MainDescriptionsBottom />
+          </span>
+          <HeroBottom />
+        </li>
+        <li> 
+          <span>
+            <MainDescriptionsBottom />
+          </span>
+          <HeroBottom />
+        </li>
+        <li> 
+          <span>
+            <MainDescriptionsBottom />
+          </span>
+          <HeroBottom />
+        </li>
+        <li> 
+          <span>
+            <MainDescriptionsBottom />
+          </span>
+          <HeroBottom />
+        </li>
        </ul>
-     </div>
     </div>
   );
 };

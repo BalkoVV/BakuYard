@@ -10,6 +10,16 @@ export const VacanciesPage = () => {
       <h1>VacanciesPage Content</h1>
       <h1>VacanciesPage Content</h1>
       <h1>VacanciesPage Content</h1>
+      <h1>VacanciesPage Content</h1>
+      <h1>VacanciesPage Content</h1>
+      <h1>VacanciesPage Content</h1>
+      <h1>VacanciesPage Content</h1>
+      <h1>VacanciesPage Content</h1>
+      <h1>VacanciesPage Content</h1>
+      <h1>VacanciesPage Content</h1>
+      <h1>VacanciesPage Content</h1>
+      <h1>VacanciesPage Content</h1>
+      <h1>VacanciesPage Content</h1>
     </div>
   );
 };

@@ -10,6 +10,16 @@ export const PromotionsPage = () => {
       <h1>PromotionsPage Content</h1>
       <h1>PromotionsPage Content</h1>
       <h1>PromotionsPage Content</h1>
+      <h1>PromotionsPage Content</h1>
+      <h1>PromotionsPage Content</h1>
+      <h1>PromotionsPage Content</h1>
+      <h1>PromotionsPage Content</h1>
+      <h1>PromotionsPage Content</h1>
+      <h1>PromotionsPage Content</h1>
+      <h1>PromotionsPage Content</h1>
+      <h1>PromotionsPage Content</h1>
+      <h1>PromotionsPage Content</h1>
+      <h1>PromotionsPage Content</h1>
     </div>
   );
 };

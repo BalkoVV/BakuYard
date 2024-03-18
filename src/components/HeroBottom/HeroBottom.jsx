@@ -1,15 +1,15 @@
 // Hero.jsx 
 
 import React from 'react';
-// import backgroundImage from 'images/bg22.jpg';
-import styles from '../HeroBottom/HeroBottom.module.css';
+// import backgroundImage from '../HeroBottom/bg4.jpg';
+// import styles from '../HeroBottom/HeroBottom.module.css';
 
 
 const HeroBottom = () => {
    return (
-<div className={styles.BakuHeroBottom}>
+<div>
 {/* <img className={styles.backgroundImage} src={backgroundImage} alt='backgroundImage' height='550px'/>       */}
-<div className={styles.BakuHeroBottomImg}></div>
+{/* <div></div> */}
 </div>
 
 );

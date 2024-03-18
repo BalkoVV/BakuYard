@@ -10,6 +10,16 @@ export const FeedbacksPage = () => {
       <h1>FeedbacksPage Content</h1>
       <h1>FeedbacksPage Content</h1>
       <h1>FeedbacksPage Content</h1>
+      <h1>FeedbacksPage Content</h1>
+      <h1>FeedbacksPage Content</h1>
+      <h1>FeedbacksPage Content</h1>
+      <h1>FeedbacksPage Content</h1>
+      <h1>FeedbacksPage Content</h1>
+      <h1>FeedbacksPage Content</h1>
+      <h1>FeedbacksPage Content</h1>
+      <h1>FeedbacksPage Content</h1>
+      <h1>FeedbacksPage Content</h1>
+      <h1>FeedbacksPage Content</h1>
     </div>
   );
 };

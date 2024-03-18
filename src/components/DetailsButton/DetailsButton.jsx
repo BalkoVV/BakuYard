@@ -1,10 +1,14 @@
+// DetailsButton.jsx 
+
 import React from "react";
-import styles from 'components/DetailsButton/DetailsButton.module.css';
-const DetailsButton = () => {
+import { NavLink } from 'react-router-dom';
+// import styles from 'components/DetailsButton/DetailsButton.module.css';
+
+export const DetailsButton = () => {
   return (
   
    <div>
-     <button className={styles.detailsButton}>Детальніше</button>
+     <NavLink to="/about">Детальніше</NavLink>
    </div>
 )
 };

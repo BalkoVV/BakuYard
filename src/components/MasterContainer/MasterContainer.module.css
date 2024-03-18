@@ -1,0 +1,30 @@
+/*  MasterContainer.module.css  */
+
+.masterContainer {
+   box-sizing: border-box;
+   margin: 0 auto;
+ 
+@media screen and (min-width: 600px) {
+     max-width: var(--mobile-viewport);
+     background: var(--mobile-background-color);
+     font-family: var(--primary-font);
+     color: var(--white-color);
+     padding: 0 auto;
+   } 
+ 
+@media screen and (min-width: 960px) {
+     max-width: var(--tablet-viewport);
+     background: var(--tablet-background-color);
+     font-family: var(--primary-font);
+     color: var(--white-color);
+     padding: 0 20px;
+   }
+
+@media screen and (min-width: 1280px) {
+     max-width: var(--desktop-viewport);
+     background: var(--desktop-background-color);
+     font-family: var(--primary-font);
+     color: var(--white-color);
+     padding: 0 30px;
+   } 
+ };

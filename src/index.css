@@ -1,19 +1,63 @@
+/* index.css */
 @import-normalize; /* bring in normalize.css styles */
+
+:root {
+  /* colors */
+    --white-color: #ffffff6a;
+    --mobile-color: #8702028a;
+    --tablet-color: #0080006f;
+    --desktop-color: #02318790; 
+    --background-color: #0c0c0c;
+    --main-text-color: #069;
+    --secondary-text-color: #073;
+    --hover-text-color: red;
+    --accent-text-color: #944;
+    --master-container-bg-color: #2d2c2c63;
+    --mobile-background-color: #14090927;
+    --tablet-background-color: #0077344e;
+    --desktop-background-color: #00669952;
+/* fonts */
+    --primary-font: 'TypeyMctypeface';
+    --secondary-font: 'TypeyMctypeface';
+/* breakpoints */
+    --mobile-breakpoint: 480px;
+    --max-mobile-breakpoint: 767.9px;
+    --tablet-breakpoint: 768px;
+    --max-tablet-breakpoint: 1199.9px;
+    --desktop-breakpoint: 1200px;
+}
+
+
+* {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: justify;
+}
+
+ul {
+padding: 0;
+margin: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+a {
+color: rgb(255, 255, 255);
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
   font-family: 'TypeyMctypeface';
-  justify-content: center;
-  color: rgb(75, 50, 1);
-  background: rgb(0, 0, 0);
-  /* display: grid; */
-  /* align-items: center; */
-  /* justify-content: space-around; */
-  /* padding: 0 auto; */
+  background: var(--background-color);
+  color: var(--main-text-color);
+}
+
+
+.content {
+  flex: 1;
 }
 
 
@@ -22,60 +66,12 @@ body {
   src: url(./data/fonts/McTypeface/Mctypeface.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: PrimaryFont;
+  src: url(./data/fonts/BakyPrimaryFont.ttf) format("truetype");
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.container {
-  height: 100%;
-  width: 900px;
-background-color: #fff;
-}
-
-
-a {
-  text-decoration: none;
- color: rgba(218, 165, 32, 0.565);
-}
-
-
-li {
-  list-style-type: none;
-}
-
-/* p {
-  display: flex;
- justify-content: center;
- margin: 20px;
-} */
-
-/* button {
- margin: 50px 677px;
- background: transparent;
- border: 1px solid rgba(104, 75, 2, 0.374);
- border-radius: 1rem;
- width: 200px;
- height: 60px;
- color: rgba(158, 117, 5, 0.529);
-
-} */
-
-
-/* .headerContainer {
-  width: 1200px;
-  height: 100vh;
-  padding: 100px;
-  background-color: rgb(232, 190, 190);
-} */
-
-/* container {
-  display: grid;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  padding: 120px 0px;
- } */
-
-
-

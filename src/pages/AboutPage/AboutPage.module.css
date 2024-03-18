@@ -16,3 +16,12 @@
 /* .aboutPageListItem {
 
 } */
+
+.dishList {
+display: flex;
+}
+
+.dishList li {
+ padding: 15px;
+ margin: 15px;
+}
