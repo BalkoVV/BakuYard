@@ -1,10 +1,18 @@
 // AddButton.jsx
+import React, { useState } from 'react';
 
-import React from 'react';
+const AddButton = ({ onClick, alreadyAdded }) => {
+  const [added, setAdded] = useState(alreadyAdded);
 
-const AddButton = ({ onClick }) => {
+  const handleClick = () => {
+    onClick();
+    setAdded(true);
+  };
+
   return (
-    <button onClick={onClick}>+</button>
+    <button onClick={handleClick} disabled={added}>
+      {added ? 'Added' : '+'}
+    </button>
   );
 };
 

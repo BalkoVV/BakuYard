@@ -1,15 +1,23 @@
-import React from 'react';
+// OrderReceipt.jsx
+import React, { useEffect, useState } from "react";
 
-const OrderReceipt = ({ orderedItems }) => {
+const OrderReceipt = () => {
+  const [order, setOrder] = useState([]);
+
+  useEffect(() => {
+    const itemsInLocalStorage = Object.keys(localStorage).map((key) =>
+      JSON.parse(localStorage.getItem(key))
+    );
+    setOrder(itemsInLocalStorage);
+  }, []);
+
   return (
     <div>
       <h2>Чек замовлення</h2>
       <ul>
-        {orderedItems.map((item, index) => (
+        {order.map((item, index) => (
           <li key={index}>
-            <span>{item.назва}</span>
-            <span>{item.обєм} мл</span>
-            <span>{item.ціна} грн</span>
+            {item.назва} - Об'єм: {item.обєм} мл, Ціна: {item.ціна} грн
           </li>
         ))}
       </ul>

@@ -1,17 +1,17 @@
 // ContactPage.jsx
 
 import React from "react";
-import MapImage from "components/MapImage/MapImage";
-import Product from "components/Product/Product";
+// import MapImage from "components/MapImage/MapImage";
+// import Product from "components/Product/Product";
 // import styles from 'pages/ContactsPage/ContactsPage.module.css';
 
 export const ContactsPage = () => {
   return (
     <div>
-      <Product />
+      {/* <Product /> */}
       <h1>Contacts</h1>
       <span>
-        <MapImage />
+        {/* <MapImage /> */}
       </span>
       <h1>вул. Героїв України, 22, Бровари, Київська область.</h1>
       <h1>тел: +380 93 442 3028</h1>

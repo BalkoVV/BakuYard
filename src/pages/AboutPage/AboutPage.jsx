@@ -1,57 +1,35 @@
+// AboutPage.jsx
 import React from "react";
 import { NavLink, Route } from "react-router-dom";
-
+import Basket from "components/Basket/Basket";
+import Pizza from 'components/MenuComponents/Pizza/Pizza';
+import Pipizza from 'components/MenuComponents/Pipizza/Pipizza';
 import styles from '../AboutPage/AboutPage.module.css';
+import { CartProvider } from "components/CartProvider/CartProvider";
 
-import BarbequeMenu from "components/MenuComponents/BarbequeMenu/BarbequeMenu";
-import Salads from "components/MenuComponents/Salads/Salads";
-import CoffeeMenu from "components/MenuComponents/CoffeeMenu/CoffeeMenu";
-import Mocktails from "components/MenuComponents/Mocktails/Mocktails";
-import HotApetizers from "components/MenuComponents/HotApetizers/HotApetizers";
-import OrderReceipt from "components/MenuComponents/OrderReceipt/OrderReceipt";
-
-export const AboutPage = () => {
+const AboutPage = () => {
   return (
-    <div>
-      <ul className={styles.dishList}>
-      <li>
-          <NavLink to="/about/order">Order</NavLink>
-        </li>
-      <li>
-          <NavLink to="/about/barbeque">Barbeque</NavLink>
-        </li>
-        
-        <li>
-          <NavLink to="/about/salads">Salads</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about/coffee">Coffee</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about/mocktails">Mocktails</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about/hot-apetizers">HotApetizers</NavLink>
-        </li>
-        
-        <li>
-          <NavLink to="/about/barbeque">Barbeque</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about/salads">Salads</NavLink>
-        </li>
-        
-      </ul>
+    <CartProvider>
+      <div>
+        <ul className={styles.dishList}>
+          <li>
+            <NavLink to="/about/pizza">Pizza</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about/pipizza">Pipizza</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about/basket">Basket</NavLink>
+          </li>
+        </ul>
 
-      <Route path="/about/order" component={OrderReceipt} />
-      <Route path="/about/barbeque" component={BarbequeMenu} />
-      <Route path="/about/salads" component={Salads} />
-      <Route path="/about/coffee" component={CoffeeMenu} />
-      <Route path="/about/mocktails" component={Mocktails} />
-      <Route path="/about/hot-apetizers" component={HotApetizers} />
-
-      
-    </div>
+        
+        <Route path="/about/basket" component={Basket} />
+        <Route path="/about/pizza" component={Pizza} />
+        <Route path="/about/pipizza" component={Pipizza} />
+       
+      </div>
+    </CartProvider>
   );
 };
 
