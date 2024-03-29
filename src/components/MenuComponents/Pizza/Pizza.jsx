@@ -4,7 +4,7 @@ import menuData from "services/pizza.json";
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
 
-const Pizza = () => {
+export const Pizza = () => {
   const { addToCart, cartItems } = useContext(CartContext);
   const [menuItems, setMenuItems] = useState([]);
 
@@ -18,11 +18,11 @@ const Pizza = () => {
       <table>
         <thead>
           <tr>
-            {/* <th>ID</th> */}
-            {/* <th>Назва</th> */}
-            {/* <th>Об'єм</th> */}
-            {/* <th>Ціна</th> */}
-            {/* <th>Дія</th> */}
+            <th>ID</th>
+            <th>Назва</th>
+            <th>Об'єм</th>
+            <th>Ціна</th>
+            <th>Дія</th>
           </tr>
         </thead>
         <tbody>

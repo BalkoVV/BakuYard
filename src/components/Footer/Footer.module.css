@@ -35,7 +35,8 @@
  }
 
  .footerContainer {
-   width: 960px;
-   padding: auto 0;
+   /* width: 960px; */
+   /* padding: auto 0; */
    /* background-color: rgba(255, 255, 255, 0.113); */
+   margin: 50px;
  }

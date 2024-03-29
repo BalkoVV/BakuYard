@@ -1,6 +1,6 @@
 // Footer.jsx
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import { Logo } from 'components/Logo/Logo';
 import styles from '../Footer/Footer.module.css';
 
@@ -8,9 +8,10 @@ export const Footer = () => {
   return (
     <div  className={styles.footer}>
       <div className={styles.footerContainer}>
-        <ul className={styles.footerList}>
+      <Logo />
+        {/* <ul className={styles.footerList}>
           <li className={styles.footerListItem}>
-            <Logo />
+            
           </li>
           <li className={styles.footerListItem}>
             <NavLink to="/promotions">Акції</NavLink>
@@ -21,7 +22,7 @@ export const Footer = () => {
           <li className={styles.footerListItem}>
             <NavLink to="/vacancies">Вакансії</NavLink>
             </li>
-        </ul>
+        </ul> */}
       </div>
         
     </div>

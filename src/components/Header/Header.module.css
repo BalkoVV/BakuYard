@@ -3,25 +3,33 @@
 
 .header {
  background: linear-gradient(0deg, #000000c8 , #000000); 
+
 }
 
 .headerList {
    /* position: fixed; */
    display: inline-flex;
    width: 100%;
+   height: 100%;
    justify-content: space-around;
    align-items: center;
    margin: 0;
+   margin-top: 20px;
+   margin-bottom: 20px;
    padding: 0;
    background: linear-gradient(0deg, #000000c8 , #000000); 
    border-bottom: 1px solid #f1eaea3e;
    box-shadow: 0 0 35px 25px #34250063;
 }
 
+
+.headerListItem span {
+ margin: 20px;
+}
 .headerLogo {
   
   @media screen and (min-width: 600px) {
-   height: 22px;
+   height: 33px;
    margin: 15px;
  } 
 }

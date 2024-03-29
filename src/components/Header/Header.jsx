@@ -13,15 +13,16 @@ export const Header = () => {
             <li className={styles.headerListItem}>
               <NavLink to="/">Головна</NavLink>
             </li>
-            <li className={styles.headerListItem}>
+            {/* <li className={styles.headerListItem}>
               <NavLink to="/about">Про нас</NavLink>
+            </li> */}
+            <li className={styles.headerListItem}>
+              <span><Logo /></span>
             </li>
             <li className={styles.headerListItem}>
-              <Logo />
+              <NavLink to="/menu">Меню</NavLink>
             </li>
-            <li className={styles.headerListItem}>
-              <NavLink to="/dish">Меню</NavLink>
-            </li>
+           
             <li className={styles.headerListItem}>
               <NavLink to="/contacts">Контакти</NavLink>
             </li>
