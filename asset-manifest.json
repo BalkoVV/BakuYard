@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.3737f419.css",
-    "main.js": "/BakuYard/static/js/main.31f22a0e.js",
+    "main.css": "/BakuYard/static/css/main.07e0a7c4.css",
+    "main.js": "/BakuYard/static/js/main.70f6c267.js",
     "static/media/pizza.png": "/BakuYard/static/media/pizza.db53df60a8345697dc75.png",
     "static/media/bg22.jpg": "/BakuYard/static/media/bg22.a83a33edfee4440ee307.jpg",
     "static/media/Mctypeface.ttf": "/BakuYard/static/media/Mctypeface.f15a1ae8ffd2e6772a89.ttf",
     "static/media/BakyPrimaryFont.ttf": "/BakuYard/static/media/BakyPrimaryFont.67005b9304a3da8b7f88.ttf",
     "static/media/yardBakuLogo.svg": "/BakuYard/static/media/yardBakuLogo.5aae0bb45fb6c6ee5a48b58cfc9cc7ee.svg",
+    "static/media/yardBakuLogoUncolored.svg": "/BakuYard/static/media/yardBakuLogoUncolored.d0260322283ac00dd66a2557a08edddb.svg",
     "index.html": "/BakuYard/index.html",
-    "main.3737f419.css.map": "/BakuYard/static/css/main.3737f419.css.map",
-    "main.31f22a0e.js.map": "/BakuYard/static/js/main.31f22a0e.js.map"
+    "static/media/burgerMenuIcon.svg": "/BakuYard/static/media/burgerMenuIcon.e660da26fb57ee1a682b0584e76827c6.svg",
+    "main.07e0a7c4.css.map": "/BakuYard/static/css/main.07e0a7c4.css.map",
+    "main.70f6c267.js.map": "/BakuYard/static/js/main.70f6c267.js.map"
   },
   "entrypoints": [
-    "static/css/main.3737f419.css",
-    "static/js/main.31f22a0e.js"
+    "static/css/main.07e0a7c4.css",
+    "static/js/main.70f6c267.js"
   ]
 }
