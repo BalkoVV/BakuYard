@@ -20,11 +20,11 @@
     --primary-font: 'TypeyMctypeface';
     --secondary-font: 'TypeyMctypeface';
 /* breakpoints */
-    --mobile-breakpoint: 480px;
-    --max-mobile-breakpoint: 767.9px;
-    --tablet-breakpoint: 768px;
-    --max-tablet-breakpoint: 1199.9px;
-    --desktop-breakpoint: 1200px;
+    --mobile: 480px;
+    --mobile-max: 767.9px;
+    --tablet: 768px;
+    --tablet-max: 1199.9px;
+    --desktop: 1200px;
 }
 
 

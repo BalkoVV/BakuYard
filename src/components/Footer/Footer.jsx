@@ -1,14 +1,16 @@
 // Footer.jsx
 import React from 'react';
 // import { NavLink } from 'react-router-dom';
-import { Logo } from 'components/Logo/Logo';
+import { LogoUncolored } from 'components/Logo/LogoUncolored';
 import styles from '../Footer/Footer.module.css';
 
 export const Footer = () => {
   return (
     <div  className={styles.footer}>
       <div className={styles.footerContainer}>
-      <Logo />
+      <span className={styles.logoFooter}>
+      <LogoUncolored />
+      </span>
         {/* <ul className={styles.footerList}>
           <li className={styles.footerListItem}>
             

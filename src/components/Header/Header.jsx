@@ -1,34 +1,41 @@
 // Header.jsx
-
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { NavLink, useHistory } from 'react-router-dom'; 
 import { Logo } from 'components/Logo/Logo';
-import styles from '../Header/Header.module.css';
+import { ReactComponent as MenuIcon } from 'images/burgerMenuIcon.svg';
+import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
+import styles from './Header.module.css';
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const history = useHistory(); 
+
+  useEffect(() => {
+    return history.listen(() => {
+      setIsMenuOpen(false);
+    });
+  }, [history]);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(prevIsMenuOpen => !prevIsMenuOpen);
+  };
+
   return (
-    <div className={styles.header}>
-     <div className={styles.headerContainer}>
-        <ul className={styles.headerList}>
-            <li className={styles.headerListItem}>
-              <NavLink to="/">Головна</NavLink>
-            </li>
-            {/* <li className={styles.headerListItem}>
-              <NavLink to="/about">Про нас</NavLink>
-            </li> */}
-            <li className={styles.headerListItem}>
-              <span><Logo /></span>
-            </li>
-            <li className={styles.headerListItem}>
-              <NavLink to="/menu">Меню</NavLink>
-            </li>
-           
-            <li className={styles.headerListItem}>
-              <NavLink to="/contacts">Контакти</NavLink>
-            </li>
-        </ul>   
-     </div>
-    </div>
+    <header className={styles.header}>
+      <div className={styles.headerBox}>
+        <Logo />
+        <div className={styles.menuIcon} onClick={toggleMenu}>
+          <MenuIcon />
+        </div>
+        <BurgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+         <nav className={styles.headerNav}>
+          <NavLink exact to="/" activeClassName={styles.activeLink}>Головна</NavLink>
+          <NavLink to="/about" activeClassName={styles.activeLink}>Про нас</NavLink>
+          <NavLink to="/menu" activeClassName={styles.activeLink}>Меню</NavLink>
+          <NavLink to="/contacts" activeClassName={styles.activeLink}>Контакти</NavLink>
+        </nav>
+      </div>
+    </header>
   );
 };
 
