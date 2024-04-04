@@ -66,9 +66,9 @@ const MainPage = () => {
             <li className={styles.featuresItem}>
             <h1>Сімейна вечеря</h1>
             </li>
-        </div> 
+            </div> 
         </ul>
-        <div className={`${styles.mainPageListItem} ${styles.mainContent}`}>
+          <div className={`${styles.mainPageListItem} ${styles.mainContent}`}>
           <p>
               Від палячих шашликів до ароматних вегетаріанських страв 
             – у нас є щось для кожного гурмана.
@@ -78,7 +78,7 @@ const MainPage = () => {
             Приходьте і дозвольте собі насолодитися миттєвістю 
             смаку та задоволенням.
           </p>
-      </div>  
+          </div>  
        
           <ul className={styles.features}>
           <li className={styles.featuresItem}>
