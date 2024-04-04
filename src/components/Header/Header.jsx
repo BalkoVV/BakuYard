@@ -4,6 +4,7 @@ import { NavLink, useHistory } from 'react-router-dom';
 
 import { Logo } from 'components/Logo/Logo';
 import { ReactComponent as MenuIcon } from 'images/burgerMenuIcon.svg';
+import { ReactComponent as BasketIcon } from 'images/basketIcon.svg';
 
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 import styles from './Header.module.css';
@@ -29,6 +30,10 @@ export const Header = () => {
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <MenuIcon />
         </div>
+        <div className={styles.basketIcon}>
+          <BasketIcon />
+        </div>
+
         <BurgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
          <nav className={styles.headerNav}>
           <NavLink exact to="/" activeClassName={styles.activeLink}>Головна</NavLink>
