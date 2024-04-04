@@ -53,18 +53,18 @@
   position: absolute;
   right: 25px;
    display: none; 
-   fill: var(--main-text-color);
+   fill: var(--non-active-color);
    
    @media screen and (max-width: 767.9px) {
      display: block; 
    }
  }
 
- .basketIcon {
+ .deliveryIcon {
   position: absolute;
   right: 70px;
    display: none; 
-   fill: var(--main-text-color);
+   fill: var(--non-active-color);
    
    @media screen and (max-width: 767.9px) {
      display: block; 

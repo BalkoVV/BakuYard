@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, useHistory } from 'react-router-dom'; 
 
 import { Logo } from 'components/Logo/Logo';
-import { ReactComponent as MenuIcon } from 'images/burgerMenuIcon.svg';
-import { ReactComponent as BasketIcon } from 'images/basketIcon.svg';
+import { ReactComponent as MenuIcon } from 'images/mobileSwitch.svg';
+import { ReactComponent as DeviveryIcon } from 'images/delivery.svg';
 
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 import styles from './Header.module.css';
@@ -30,8 +30,8 @@ export const Header = () => {
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <MenuIcon />
         </div>
-        <div className={styles.basketIcon}>
-          <BasketIcon />
+        <div className={styles.deliveryIcon}>
+          < DeviveryIcon/>
         </div>
 
         <BurgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
