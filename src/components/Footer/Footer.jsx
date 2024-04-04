@@ -1,6 +1,7 @@
 // Footer.jsx
+
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
+
 import { Logo } from 'components/Logo/Logo';
 import styles from '../Footer/Footer.module.css';
 
@@ -11,20 +12,6 @@ export const Footer = () => {
       <span className={styles.logoFooter}>
       <Logo />
       </span>
-        {/* <ul className={styles.footerList}>
-          <li className={styles.footerListItem}>
-            
-          </li>
-          <li className={styles.footerListItem}>
-            <NavLink to="/promotions">Акції</NavLink>
-            </li>
-          <li className={styles.footerListItem}>
-            <NavLink to="/feedbacks">Відгуки</NavLink>
-            </li>
-          <li className={styles.footerListItem}>
-            <NavLink to="/vacancies">Вакансії</NavLink>
-            </li>
-        </ul> */}
       </div>
         
     </div>

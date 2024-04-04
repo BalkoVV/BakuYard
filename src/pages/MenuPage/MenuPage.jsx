@@ -36,6 +36,61 @@ const MenuPage = () => {
                 <NavLink to="/menu/pipizza">Pipizza</NavLink>
               </div>
             </li>
+            <li  className={`${styles.mainPageListItem} ${styles.mainContent}`}>
+              <div className={styles.featuresItem}>
+                <NavLink to="/menu/pizza">Pizza</NavLink>
+              </div>
+            </li>
+            <li  className={`${styles.mainPageListItem} ${styles.mainContent}`}>
+              <div className={styles.featuresItem}>
+          
+                <NavLink to="/menu/pipizza">Pipizza</NavLink>
+              </div>
+            </li>
+            <li  className={`${styles.mainPageListItem} ${styles.mainContent}`}>
+              <div className={styles.featuresItem}>
+                <NavLink to="/menu/pizza">Pizza</NavLink>
+              </div>
+            </li>
+            <li  className={`${styles.mainPageListItem} ${styles.mainContent}`}>
+              <div className={styles.featuresItem}>
+          
+                <NavLink to="/menu/pipizza">Pipizza</NavLink>
+              </div>
+            </li>
+            <li  className={`${styles.mainPageListItem} ${styles.mainContent}`}>
+              <div className={styles.featuresItem}>
+                <NavLink to="/menu/pizza">Pizza</NavLink>
+              </div>
+            </li>
+            <li  className={`${styles.mainPageListItem} ${styles.mainContent}`}>
+              <div className={styles.featuresItem}>
+          
+                <NavLink to="/menu/pipizza">Pipizza</NavLink>
+              </div>
+            </li>
+            <li  className={`${styles.mainPageListItem} ${styles.mainContent}`}>
+              <div className={styles.featuresItem}>
+                <NavLink to="/menu/pizza">Pizza</NavLink>
+              </div>
+            </li>
+            <li  className={`${styles.mainPageListItem} ${styles.mainContent}`}>
+              <div className={styles.featuresItem}>
+          
+                <NavLink to="/menu/pipizza">Pipizza</NavLink>
+              </div>
+            </li>
+            <li  className={`${styles.mainPageListItem} ${styles.mainContent}`}>
+              <div className={styles.featuresItem}>
+                <NavLink to="/menu/pizza">Pizza</NavLink>
+              </div>
+            </li>
+            <li  className={`${styles.mainPageListItem} ${styles.mainContent}`}>
+              <div className={styles.featuresItem}>
+          
+                <NavLink to="/menu/pipizza">Pipizza</NavLink>
+              </div>
+            </li>
           </ul>  
         </Route>
 

@@ -7,7 +7,7 @@ export const DeliveryPage = () => {
    return (
        <div className={StyleSheet.deliveryPage}>
          <CartProvider>
-         <Basket/>
+           <Basket/>
          </CartProvider>
        </div>
       )

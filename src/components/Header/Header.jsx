@@ -1,8 +1,10 @@
 // Header.jsx
 import React, { useState, useEffect } from 'react';
 import { NavLink, useHistory } from 'react-router-dom'; 
+
 import { Logo } from 'components/Logo/Logo';
 import { ReactComponent as MenuIcon } from 'images/burgerMenuIcon.svg';
+
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 import styles from './Header.module.css';
 
@@ -30,8 +32,8 @@ export const Header = () => {
         <BurgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
          <nav className={styles.headerNav}>
           <NavLink exact to="/" activeClassName={styles.activeLink}>Головна</NavLink>
-          <NavLink to="/delivery" activeClassName={styles.activeLink}>Доставка</NavLink>
           <NavLink to="/menu" activeClassName={styles.activeLink}>Меню</NavLink>
+          <NavLink to="/delivery" activeClassName={styles.activeLink}>Доставка</NavLink>
           <NavLink to="/contacts" activeClassName={styles.activeLink}>Контакти</NavLink>
         </nav>
       </div>

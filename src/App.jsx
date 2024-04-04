@@ -21,10 +21,13 @@ export const App = () => {
   return (
     <Router>
           
-            <Header />
+          <Header />
+          
             <MasterContainer>
-           <div className={styles.container}>
+              
+            <div className={styles.container}>
             <Switch>
+
               <Route path="/" exact component={MainPage} />
               
               <CartProvider>
@@ -33,9 +36,12 @@ export const App = () => {
               </CartProvider>
               
               <Route path="/contacts" component={ContactsPage} />
+
             </Switch>
-           </div>
+            </div>
+
            </MasterContainer>
+
         <Footer />
         
     </Router>
