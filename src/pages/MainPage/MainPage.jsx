@@ -12,7 +12,7 @@ const MainPage = () => {
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '1'; 
-      }, 80 * index); // Додаємо затримку в залежності від індексу компонента
+      }, 80 * index); 
     });
   }, []);
 
