@@ -4,39 +4,56 @@
    opacity: 0;
    transition: opacity 1.3s ease-in; 
    font-family: 'PrimaryFont';
-   
  }
 
  .mainContent p {
-   margin: 30px 10px;
-   font-size: 11px;
-   line-height: 32px;
-   opacity: 1;
-  
+    margin: 30px 10px;
+    font-size: 11px;
+    line-height: 32px;
+    opacity: 1;
 }
 
-
- 
  .hero {
-  display: flex;
-  margin-left: -30px;
-  margin-right: auto;
-  background: url("images/heroImg.jpg");
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
- 
-  height: 250px;
-  max-width: 1600px; 
-  width: 101vw;
+    display: flex;
+    margin-left: -30px;
+    margin-right: auto;
+    background: url("images/heroImg.jpg");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 250px;
+    max-width: 1600px; 
+    width: 101vw;
   }
 
+  .servicesBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+   
+  }
+
+  .bottomBox {
+    /* padding: 50px; */
+    /* background-color: #1f1502; */
+  }
+
+  .bottomBox p {
+    margin: 40px 0;
+    /* border-bottom: 1px solid red; */
+  }
+
+  .feature {
+    display: grid;
+    background-color: #fff;
+  }
   .features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 1em;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     /* padding-bottom: 60px; */
     
   
@@ -57,15 +74,19 @@
     } */
   }
 
+  .featuresItems {
+   display: flex;
+   text-align: end;
+  }
   .featuresItem {
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     justify-content: center;
-    font-size: 10px;
-    /* flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item)); */
-    height: 77px;
-    border-radius: .7rem;
-    border: 1px solid var(--main-text-color);
+    /* font-size: 10px; */
+    /* flex-basis: calc((100% - 30px * 3) / 3); */
+    /* height: 15px; */
+    /* border-radius: .7rem; */
+    /* border: .1px dotted var(--main-text-color); */
   }
 
   .featuresItem h1 {
