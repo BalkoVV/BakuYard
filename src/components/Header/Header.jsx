@@ -30,7 +30,7 @@ export const Header = () => {
         <BurgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
          <nav className={styles.headerNav}>
           <NavLink exact to="/" activeClassName={styles.activeLink}>Головна</NavLink>
-          <NavLink to="/about" activeClassName={styles.activeLink}>Замовлення</NavLink>
+          <NavLink to="/delivery" activeClassName={styles.activeLink}>Доставка</NavLink>
           <NavLink to="/menu" activeClassName={styles.activeLink}>Меню</NavLink>
           <NavLink to="/contacts" activeClassName={styles.activeLink}>Контакти</NavLink>
         </nav>

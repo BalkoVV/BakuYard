@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import MainPage from 'pages/MainPage/MainPage';
-import AboutPage from 'pages/AboutPage/AboutPage';
+import DeliveryPage from 'pages/DeliveryPage/DeliveryPage';
 import MenuPage from 'pages/MenuPage/MenuPage';
 import ContactsPage from 'pages/ContactsPage/ContactsPage';
 
@@ -27,10 +27,12 @@ export const App = () => {
            <div className={styles.container}>
             <Switch>
               <Route path="/" exact component={MainPage} />
-              <Route path="/about" component={AboutPage} />
+              
               <CartProvider>
                 <Route path="/menu" component={MenuPage} />
+                <Route path="/delivery" component={DeliveryPage} />
               </CartProvider>
+              
               <Route path="/contacts" component={ContactsPage} />
             </Switch>
            </div>

@@ -22,14 +22,14 @@
   margin-left: -30px;
   margin-right: auto;
   background: url("images/heroImg.jpg");
-  background-size:contain;
+  background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
  
   height: 250px;
   max-width: 1600px; 
-  width: 102vw;
+  width: 101vw;
   }
 
   .features {

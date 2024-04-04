@@ -3,8 +3,8 @@ import React from "react";
 import { NavLink, Route } from "react-router-dom";
 import Basket from "components/Basket/Basket";
 import { CartProvider } from "components/CartProvider/CartProvider";
-import Pizza from 'components/MenuComponents/Pizza/Pizza';
-import Pipizza from 'components/MenuComponents/Pipizza/Pipizza';
+// import Pizza from 'components/MenuComponents/Pizza/Pizza';
+// import Pipizza from 'components/MenuComponents/Pipizza/Pipizza';
 import styles from '../AboutPage/AboutPage.module.css';
 
 

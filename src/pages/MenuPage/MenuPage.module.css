@@ -1,1 +1,28 @@
-export { default } from './DishPage';
+.featuresItem {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 10px;
+   /* width: 150px; */
+   height: 150px;
+   border-radius: .7rem;
+   border: 1px solid var(--main-text-color);
+ }
+
+ .list {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 30px;
+   grid-row-gap: 1em;
+   grid-column-gap: 30px;
+   grid-row-gap: 30px;
+   margin-top: 10px;
+}
+
+/* .mainContent {
+   opacity: 0;
+   transition: opacity 1.3s ease-in; 
+   font-family: 'PrimaryFont';
+   
+ } */
+
