@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.ea7fba19.css",
-    "main.js": "/BakuYard/static/js/main.04b26daa.js",
+    "main.css": "/BakuYard/static/css/main.115f4bd6.css",
+    "main.js": "/BakuYard/static/js/main.686d41dc.js",
     "static/media/heroImg.jpg": "/BakuYard/static/media/heroImg.1ff35f7d41b103d3c378.jpg",
     "static/media/Constantine.ttf": "/BakuYard/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
     "static/media/mobileSwitch.svg": "/BakuYard/static/media/mobileSwitch.199728a413e75e716e1111889457ef02.svg",
-    "static/media/delivery.svg": "/BakuYard/static/media/delivery.0950ce115415af72239f705caf84cf3c.svg",
+    "static/media/delivery.svg": "/BakuYard/static/media/delivery.187a04d387f54164b3ebe928a6bf68e6.svg",
     "static/media/yardBakuLogo.svg": "/BakuYard/static/media/yardBakuLogo.65e4bbf30598805b12e13fa26859c141.svg",
     "index.html": "/BakuYard/index.html",
-    "main.ea7fba19.css.map": "/BakuYard/static/css/main.ea7fba19.css.map",
-    "main.04b26daa.js.map": "/BakuYard/static/js/main.04b26daa.js.map"
+    "main.115f4bd6.css.map": "/BakuYard/static/css/main.115f4bd6.css.map",
+    "main.686d41dc.js.map": "/BakuYard/static/js/main.686d41dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea7fba19.css",
-    "static/js/main.04b26daa.js"
+    "static/css/main.115f4bd6.css",
+    "static/js/main.686d41dc.js"
   ]
 }
