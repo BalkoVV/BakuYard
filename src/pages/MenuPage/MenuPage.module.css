@@ -9,6 +9,11 @@
    border: 1px solid var(--main-text-color);
  }
 
+ /* .mainContent {
+  opacity: 0;
+  transition: opacity 1.3s ease-in; 
+  font-family: 'PrimaryFont';
+} */
  .list {
    display: grid;
    grid-template-columns: repeat(2, 1fr);

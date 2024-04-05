@@ -21,10 +21,10 @@ export const App = () => {
   return (
     <Router>
           
-          <Header />
+         
           
             <MasterContainer>
-              
+            <Header />
             <div className={styles.container}>
             <Switch>
 
@@ -39,10 +39,10 @@ export const App = () => {
 
             </Switch>
             </div>
-
+            <Footer />
            </MasterContainer>
 
-        <Footer />
+        
         
     </Router>
   );

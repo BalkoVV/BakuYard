@@ -7,9 +7,10 @@
     --mobile-color: #8702028a;
     --tablet-color: #0080006f;
     --desktop-color: #02318790; 
-    --background-color: #0c0c0c;
-    --main-text-color: #8d8c76;
-    --non-active-color: #3f3e33;
+    --background-color: #111111;
+    --main-text-color: #a5a17d;
+    --non-active-color: #5c5a46;
+    --active-link-color: goldenrod;
     --secondary-text-color: #073;
     --hover-text-color: red;
     --accent-text-color: #944;

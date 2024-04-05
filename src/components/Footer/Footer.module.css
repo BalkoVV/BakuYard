@@ -2,39 +2,31 @@
    display: grid;
    display: flex;
    height: 100px;
-   /* align-items: flex-start; */
-   /* background: #180404; */
    padding: 25px 10px;
    margin-top: 50px;
    justify-content: center;
    border-top: .7px solid var(--non-active-color);
+
+   
  }
  
 .logoFooter {
  height: 30px;
- /* margin-bottom: 60px; */
 }
 
  .footerList {
  display: grid;
- /* margin-top: 25px; */
- /* padding: 0 20px; */
- /* margin: 0; */
  justify-content: center;
  align-items: center;
  }
 
  .footerList li{
   display: grid;
-  /* padding: 0 20px; */
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
   }
   
-  .footerList a {
-    color: var(--white-color);
-    }
  
  .footerLogo img {
   margin-top: 25px ;

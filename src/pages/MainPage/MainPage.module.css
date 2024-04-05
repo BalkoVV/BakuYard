@@ -35,14 +35,8 @@
    
   }
 
-  /* .bottomBox {
-    padding: 50px;
-    background-color: #1f1502;
-  } */
-
   .bottomBox p {
     margin: 40px 0;
-    /* border-bottom: 1px solid red; */
   }
 
   .feature {
@@ -81,6 +75,4 @@
     justify-content: center;
   }
 
-  .featuresItem h1 {
-  font-size: 11px;
-  }
+ 

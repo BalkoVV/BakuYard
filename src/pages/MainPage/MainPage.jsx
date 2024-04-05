@@ -1,8 +1,4 @@
 import React, { useEffect } from 'react';
-// import MainDescriptionsTop from 'components/MainDescriptionsTop/MainDescriptionsTop';
-// import HeroBottom from 'components/HeroBottom/HeroBottom';
-// import MainDescriptionsBottom from 'components/MainDescriptionsBottom/MainDescriptionsBottom';
-// import DetailsButton from 'components/DetailsButton/DetailsButton';
 import styles from 'pages/MainPage/MainPage.module.css';
 
 const MainPage = () => {

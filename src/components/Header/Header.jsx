@@ -27,18 +27,21 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.headerBox}>
         <Logo />
+        {/* < DeviveryIcon/> */}
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <MenuIcon />
         </div>
         <div className={styles.deliveryIcon}>
-          < DeviveryIcon/>
-        </div>
+  <NavLink to="/delivery">
+    <DeviveryIcon/>
+  </NavLink>
+</div>
 
         <BurgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
          <nav className={styles.headerNav}>
           <NavLink exact to="/" activeClassName={styles.activeLink}>Головна</NavLink>
           <NavLink to="/menu" activeClassName={styles.activeLink}>Меню</NavLink>
-          <NavLink to="/delivery" activeClassName={styles.activeLink}>Доставка</NavLink>
+          {/* <NavLink to="/delivery" activeClassName={styles.activeLink}>Доставка</NavLink> */}
           <NavLink to="/contacts" activeClassName={styles.activeLink}>Контакти</NavLink>
         </nav>
       </div>
