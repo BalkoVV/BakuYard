@@ -1,24 +1,32 @@
 import React, { useEffect } from 'react';
 import styles from 'pages/MainPage/MainPage.module.css';
-
 const MainPage = () => {
 
+  // useEffect(() => {
+  //   const contentElements = document.querySelectorAll(`.${styles.mainContent}`);
+  //   contentElements.forEach((element, index) => {
+  //     setTimeout(() => {
+  //       element.style.opacity = '1'; 
+  //     }, 80 * index); 
+  //   });
+  // }, []);
+
   useEffect(() => {
-    const contentElements = document.querySelectorAll(`.${styles.mainContent}`);
+    const contentElements = document.querySelectorAll(`.${styles.fadeOut}`);
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '1'; 
-      }, 80 * index); 
+      }, 50 * index); 
     });
   }, []);
 
   return (
-    <div>
-      <section  className={`${styles.mainPageListItem} ${styles.mainContent}`}>
-          <div className={styles.hero}></div>
-      </section>
-      <div className={`${styles.mainPageListItem} ${styles.mainContent}`}>
-        <p>
+    <div className={styles.Main}>
+      <div className={styles.mainContainer}>
+
+      <div className={`${styles.hero} ${styles.fadeOut}`}></div>
+
+        <p className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
           Бакінський Двір
           – місце де традиції сходяться з сучаснiстю, 
           тут аромати кухні розповідають власну історію. 
@@ -27,58 +35,60 @@ const MainPage = () => {
           Затишні зали, приватні бесідки та сонячна тераса чекають,  
           щоб стати свідками вашого найважливішого свята.
         </p>
-      </div>  
+       
       <ul className={styles.features}>
-      <li className={styles.featuresItem}>
+      <li className={styles.fadeOut}>
           <h1>Банкетна зала</h1>
       </li>
-      <li className={styles.featuresItem}>
+      <li className={styles.fadeOut}>
           <h1>Окремі бесідки</h1>
       </li>
-      <li className={styles.featuresItem}>
+      <li className={styles.fadeOut}>
           <h1>Літня тераса</h1>
       </li>
-      <li className={styles.featuresItem}>
+      <li className={styles.fadeOut}>
           <h1>Танцмайданчик</h1>
       </li>
     </ul>
     
-      <div className={styles.bottomBox}>
-      <div className={`${styles.mainPageListItem} ${styles.mainContent}`}>
-        <p>Від палячих шашликів до ароматних вегетаріанських страв 
+      
+      
+        <p className={styles.fadeOut}>Від палячих шашликів до ароматних вегетаріанських страв 
           – у нас є щось для кожного гурмана.
           "Бакінський Двір" – де смак об'єднує серця,  
           а атмосфера творить неповторний вечір, 
           наповнений враженнями та веселим настроєм. 
           </p>
-      </div>  
+      
       <ul className={styles.features}>
-        <li className={styles.featuresItem}>
+        <li className={styles.fadeOut}>
             <h1>Банкети</h1>
         </li>
-        <li className={styles.featuresItem}>
+        <li className={styles.fadeOut}>
             <h1>Корпоративи</h1>
         </li>
-        <li className={styles.featuresItem}>
+        <li className={styles.fadeOut}>
             <h1>Сімейна вечеря</h1>
         </li>  
-        <li className={styles.featuresItem}>
+        <li className={styles.fadeOut}>
             <h1>Бізнес ланчі</h1>
         </li>
-        <li className={styles.featuresItem}>
+        <li className={styles.fadeOut}>
             <h1>Дні народження</h1>
         </li>
-        <li className={styles.featuresItem}>
+        <li className={styles.fadeOut}>
             <h1>Караоке</h1>
         </li>
       </ul>
-      </div>
-    <div className={`${styles.mainPageListItem} ${styles.mainContent}`}>
-        <p>
+     
+  
+        <p className={styles.fadeOut}>
           В нас працює доставка
         </p>
-      </div>  
+     
+     
 </div>
+    </div>
   );
 };
 

@@ -1,30 +1,28 @@
 /* MainPage.module.css */
+.mainContainer {
+width: 100%;
+height: 100vh;
+}
 
-.mainContent {
-   opacity: 0;
-   transition: opacity 1.3s ease-in; 
-   font-family: 'PrimaryFont';
- }
+.fadeOut {
+  opacity: 0; /* Початковий стан непрозорості */
+  transition: opacity 1.5s ease-in-out; /* Плавний перехід непрозорості */
+}
 
- .mainContent p {
-    margin: 30px 10px;
-    font-size: 11px;
-    line-height: 32px;
-    opacity: 1;
+.mainTopParagraph {
+color: green;
 }
 
  .hero {
     display: flex;
-    margin-left: -30px;
+    margin-left: auto;
     margin-right: auto;
     background: url("images/heroImg.jpg");
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 250px;
-    max-width: 1600px; 
-    width: 101vw;
+    height: 300px;
   }
 
   .servicesBox {
@@ -35,9 +33,7 @@
    
   }
 
-  .bottomBox p {
-    margin: 40px 0;
-  }
+
 
   .feature {
     display: grid;

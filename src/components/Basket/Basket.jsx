@@ -1,6 +1,8 @@
 import React, { useContext, useState, useEffect } from "react";
 import CartContext from "components/CartProvider/CartProvider";
 
+import styles from 'components/Basket/Basket.module.css';
+
 const Basket = () => {
   const { cartItems, increaseQuantity, decreaseQuantity, clearCart } = useContext(CartContext);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -103,9 +105,10 @@ const Basket = () => {
   };
 
   return (
+    <div className={styles.basketContainer}>
     <section>
-      <h2>Кошик</h2>
-      <ul>
+      <h2>Замовлення</h2>
+      <ul className={styles.basketList}>
         {cartItems.map((item) => (
           <li key={item.id}>
             {item.назва} == {item.обєм} == {item.ціна} ==
@@ -121,6 +124,7 @@ const Basket = () => {
       <button onClick={handleSubmitOrder} disabled={!isOrderButtonActive()}>Замовити</button>
       {orderCompleted && <p>Замовлення оформлене. Чекайте дзвінка адміністратора для підтвердження</p>}
     </section>
+    </div>
   );
 };
 

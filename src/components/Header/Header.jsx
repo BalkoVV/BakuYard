@@ -25,17 +25,21 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
+      <div className={styles.headerContainer}>
+
       <div className={styles.headerBox}>
-        <Logo />
-        {/* < DeviveryIcon/> */}
-        <div className={styles.menuIcon} onClick={toggleMenu}>
-          <MenuIcon />
+        
+        <div className={styles.headerVisible}>
+            <Logo />
+            <div className={styles.menuIcon} onClick={toggleMenu}>
+              <MenuIcon />
+            </div>
+            <div className={styles.deliveryIcon}>
+              <NavLink to="/delivery">
+                <DeviveryIcon/>
+              </NavLink>
+            </div>
         </div>
-        <div className={styles.deliveryIcon}>
-  <NavLink to="/delivery">
-    <DeviveryIcon/>
-  </NavLink>
-</div>
 
         <BurgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
          <nav className={styles.headerNav}>
@@ -44,6 +48,7 @@ export const Header = () => {
           {/* <NavLink to="/delivery" activeClassName={styles.activeLink}>Доставка</NavLink> */}
           <NavLink to="/contacts" activeClassName={styles.activeLink}>Контакти</NavLink>
         </nav>
+      </div>
       </div>
     </header>
   );
