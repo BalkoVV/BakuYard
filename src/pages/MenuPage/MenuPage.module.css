@@ -1,8 +1,18 @@
 .fadeIn {
-   opacity: 0; /* Початковий стан непрозорості */
-   transition: opacity 1.5s ease-in-out; /* Плавний перехід непрозорості */
+   opacity: 0; 
+   
+   transition: opacity 1.5s ease-in-out; 
 }
-
+/* 
+.fade-enter {
+   opacity: 0;
+ }
+ 
+ .fade-enter-active {
+   opacity: 1;
+   transition: opacity 1s ease-in-out;
+ } */
+ 
 
 
 
