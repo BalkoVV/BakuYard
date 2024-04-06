@@ -31,8 +31,8 @@ export const Pizza = () => {
   return (
     <div>
       <div className={styles.dishPageContainer}>
-      {/* <h1 className={styles.dishTitle}>Pizza</h1> */}
-      <h1 className={`${styles.dishTitle} ${styles.fades}`}>Pizza</h1>      <NavLink to="/menu" className={styles.toMenuButton}>
+      <h1 className={`${styles.dishTitle} ${styles.fades}`}>Pizza</h1>      
+      <NavLink to="/menu" className={styles.toMenuButton}>
       <ToMenuIcon  className={styles.fades}/>
         </NavLink>
       <table className={styles.fades}>

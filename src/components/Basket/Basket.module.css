@@ -9,8 +9,8 @@
    grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-   /* display: inline-flex; */
-   /* min-height: 500px; */
-   /* width: 100%; */
-/* background-color: #fff; */
 }
+.fades {
+   opacity: 0; /* Початковий стан непрозорості */
+   transition: opacity 2s ease-in-out; /* Плавний перехід непрозорості */
+ }

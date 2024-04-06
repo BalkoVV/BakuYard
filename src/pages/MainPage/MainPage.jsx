@@ -53,14 +53,14 @@ const MainPage = () => {
     
       
       
-        <p className={styles.fadeOut}>Від палячих шашликів до ароматних вегетаріанських страв 
+        <p className={`${styles.mainBottomParagraph} ${styles.fadeOut}`}>Від палячих шашликів до ароматних вегетаріанських страв 
           – у нас є щось для кожного гурмана.
           "Бакінський Двір" – де смак об'єднує серця,  
           а атмосфера творить неповторний вечір, 
           наповнений враженнями та веселим настроєм. 
           </p>
       
-      <ul className={styles.features}>
+      <ul className={styles.features2}>
         <li className={styles.fadeOut}>
             <h1>Банкети</h1>
         </li>
@@ -82,9 +82,9 @@ const MainPage = () => {
       </ul>
      
   
-        <p className={styles.fadeOut}>
-          В нас працює доставка
-        </p>
+      <p className={`${styles.maindeliveryParagraph} ${styles.fadeOut}`}>
+        В нас працює доставка по місту
+          </p>
      
      
 </div>

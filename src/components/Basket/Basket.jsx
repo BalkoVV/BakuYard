@@ -1,6 +1,8 @@
 import React, { useContext, useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import CartContext from "components/CartProvider/CartProvider";
 
+import { ReactComponent as ToMenuIcon } from 'images/toMenu.svg';
 import styles from 'components/Basket/Basket.module.css';
 
 const Basket = () => {
@@ -12,6 +14,15 @@ const Basket = () => {
   const [isNameValid, setIsNameValid] = useState(false);
   const [isPhoneNumberValid, setIsPhoneNumberValid] = useState(false);
   const [orderCompleted, setOrderCompleted] = useState(false);
+
+  useEffect(() => {
+    const contentElements = document.querySelectorAll(`.${styles.fades}`);
+    contentElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.style.opacity = '1'; 
+      }, 50 * index); 
+    });
+  }, []);
 
   useEffect(() => {
     const calculateTotalPrice = () => {
@@ -105,25 +116,33 @@ const Basket = () => {
   };
 
   return (
-    <div className={styles.basketContainer}>
-    <section>
-      <h2>Замовлення</h2>
-      <ul className={styles.basketList}>
-        {cartItems.map((item) => (
-          <li key={item.id}>
-            {item.назва} == {item.обєм} == {item.ціна} ==
-            <button onClick={() => increaseQuantity(item.id)}>+</button> == {item.quantity} шт. ==
-            <button onClick={() => decreaseQuantity(item.id)}>-</button>
-          </li>
-        ))}
-      </ul>
-      <p>Кількість позицій: {totalItems}</p>
-      <p>Загальна сума: {totalPrice}</p>
-      <input type="text" placeholder="Ім'я" value={name} onChange={handleNameChange} />
-      <input type="text" placeholder="Телефон" value={phoneNumber} onChange={handlePhoneNumberChange} />
-      <button onClick={handleSubmitOrder} disabled={!isOrderButtonActive()}>Замовити</button>
-      {orderCompleted && <p>Замовлення оформлене. Чекайте дзвінка адміністратора для підтвердження</p>}
-    </section>
+    <div  className={styles.basket}>
+      <div className={styles.basketContainer}>
+        <div  className={styles.basketBox}>
+          <h1  className={styles.fades}>Ваше замовлення</h1>
+          
+          <NavLink to="/menu" className={`${styles.toMenuButton} ${styles.fades}`}>
+          <ToMenuIcon/>
+            </NavLink>
+          <ul className={`${styles.basketList} ${styles.fades}`}>
+            {cartItems.map((item) => (
+              <li key={item.id}>
+                {item.назва} == {item.обєм} == {item.ціна} ==
+                <button onClick={() => increaseQuantity(item.id)}>+</button> == {item.quantity} шт. ==
+                <button onClick={() => decreaseQuantity(item.id)}>-</button>
+              </li>
+            ))}
+          </ul>
+          <p className={styles.fades}>Кількість позицій: {totalItems}</p>
+          <p className={styles.fades}>Загальна сума: {totalPrice}</p>
+          <input  className={styles.fades} type="text" placeholder="Ім'я" value={name} onChange={handleNameChange} />
+          <input  className={styles.fades} type="text" placeholder="Телефон" value={phoneNumber} onChange={handlePhoneNumberChange} />
+          <button  className={styles.fades} onClick={handleSubmitOrder} disabled={!isOrderButtonActive()}>Замовити</button>
+          {orderCompleted && <p>Замовлення оформлене. Чекайте дзвінка адміністратора для підтвердження</p>}
+        </div>
+    
+  
+  </div>
     </div>
   );
 };

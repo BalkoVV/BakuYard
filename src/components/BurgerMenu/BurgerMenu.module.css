@@ -19,6 +19,8 @@
   transform: translateX(-100%);
 }
 
+
+
 .isOpen {
   transform: translateX(0%);
   opacity: 1;

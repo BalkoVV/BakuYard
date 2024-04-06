@@ -1,17 +1,32 @@
 .footer {
    display: grid;
    display: flex;
-   height: 100px;
-   padding: 25px 10px;
+   /* height: 100px; */
+   padding: 40px 0px;
    margin-top: 50px;
    justify-content: center;
-   border-top: .7px solid var(--non-active-color);
-
+   /* border-top: .7px solid var(--non-active-color); */
+   border-top: 1px solid #ececec64;
+   background: linear-gradient(0deg, black, #25252596);
    
  }
- 
+
+ .footerRights {
+display: flex;
+justify-content: center;
+color: #5c5a46;
+margin-top: 30px;
+/* margin-bottom: 30px; */
+}
+ .footerSocial {
+display: flex;
+width: 120px;
+justify-content: space-around;
+margin-top: 30px;
+}
 .logoFooter {
  height: 30px;
+ margin-top: 20px;
 }
 
  .footerList {

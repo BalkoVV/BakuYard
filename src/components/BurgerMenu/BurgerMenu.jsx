@@ -36,7 +36,7 @@ const BurgerMenu = ({ isOpen, onClose }) => {
         <ul>
           <li><NavLink exact to="/" onClick={onClose} activeClassName={styles.activeLink}>Головна</NavLink></li>
           <li><NavLink to="/menu" onClick={onClose} activeClassName={styles.activeLink}>Меню</NavLink></li>
-          <li><NavLink to="/delivery" onClick={onClose} activeClassName={styles.activeLink}>Доставка</NavLink></li>
+          {/* <li><NavLink to="/delivery" onClick={onClose} activeClassName={styles.activeLink}>Доставка</NavLink></li> */}
           <li><NavLink to="/contacts" onClick={onClose} activeClassName={styles.activeLink}>Контакти</NavLink></li>
         </ul>
       </div>
