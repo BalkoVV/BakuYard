@@ -45,7 +45,6 @@ export const Header = () => {
          <nav className={styles.headerNav}>
           <NavLink exact to="/" activeClassName={styles.activeLink}>Головна</NavLink>
           <NavLink to="/menu" activeClassName={styles.activeLink}>Меню</NavLink>
-          {/* <NavLink to="/delivery" activeClassName={styles.activeLink}>Доставка</NavLink> */}
           <NavLink to="/contacts" activeClassName={styles.activeLink}>Контакти</NavLink>
         </nav>
       </div>

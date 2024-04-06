@@ -1,0 +1,26 @@
+.toMenuButton {
+   position: absolute;
+   top: 20px;
+   right: 27px;
+   }
+
+.dishTitle {
+   display: flex;
+   justify-content: center;
+   padding:  20px 0;
+   margin: 0;
+}
+
+.dishTableLine {
+   border-bottom: 1px solid #5e5d5d81;
+}
+
+.dishPageContainer {
+   position: relative;
+   padding: 0 20px;
+}
+
+.fades {
+   opacity: 0; /* Початковий стан непрозорості */
+   transition: opacity 2s ease-in-out; /* Плавний перехід непрозорості */
+ }

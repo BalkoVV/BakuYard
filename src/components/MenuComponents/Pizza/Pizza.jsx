@@ -1,8 +1,15 @@
-// Pizza.jsx
+// // Pizza.jsx
+
 import React, { useEffect, useState, useContext } from "react";
-import menuData from "services/pizza.json";
+import { NavLink } from "react-router-dom"; // Імпорт NavLink
+
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
+
+import { ReactComponent as ToMenuIcon } from 'images/toMenu.svg';
+
+import menuData from "services/pizza.json";
+import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const Pizza = () => {
   const { addToCart, cartItems } = useContext(CartContext);
@@ -12,11 +19,24 @@ export const Pizza = () => {
     setMenuItems(menuData);
   }, []);
 
+  useEffect(() => {
+    const contentElements = document.querySelectorAll(`.${styles.fades}`);
+    contentElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.style.opacity = '1'; 
+      }, 50 * index); 
+    });
+  }, []);
+
   return (
     <div>
-      <h1>Pizza</h1>
-      <table>
-        <thead>
+      <div className={styles.dishPageContainer}>
+      {/* <h1 className={styles.dishTitle}>Pizza</h1> */}
+      <h1 className={`${styles.dishTitle} ${styles.fades}`}>Pizza</h1>      <NavLink to="/menu" className={styles.toMenuButton}>
+      <ToMenuIcon  className={styles.fades}/>
+        </NavLink>
+      <table className={styles.fades}>
+        {/* <thead>
           <tr>
             <th>ID</th>
             <th>Назва</th>
@@ -24,8 +44,8 @@ export const Pizza = () => {
             <th>Ціна</th>
             <th>Дія</th>
           </tr>
-        </thead>
-        <tbody>
+        </thead> */}
+        <tbody  className={`${styles.fadeIn}`}>
           {menuItems.map((item) => (
             <tr key={item.id}>
               {/* <td>{item.id}</td> */}
@@ -42,6 +62,7 @@ export const Pizza = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

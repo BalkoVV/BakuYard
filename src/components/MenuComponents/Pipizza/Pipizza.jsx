@@ -1,8 +1,15 @@
 // Pipizza.jsx
+
 import React, { useEffect, useState, useContext } from "react";
-import menuData from "services/pipizza.json";
+import { NavLink } from "react-router-dom";
+
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
+
+import { ReactComponent as ToMenuIcon } from 'images/toMenu.svg';
+
+import menuData from "services/pipizza.json";
+import styles from 'components/MenuComponents/menuStyle.module.css';
 
 const Pipizza = () => {
   const { addToCart, cartItems } = useContext(CartContext);
@@ -12,10 +19,23 @@ const Pipizza = () => {
     setMenuItems(menuData);
   }, []);
 
+  useEffect(() => {
+    const contentElements = document.querySelectorAll(`.${styles.fades}`);
+    contentElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.style.opacity = '1'; 
+      }, 50 * index); 
+    });
+  }, []);
+
   return (
     <div>
-      <h1>Pipizza</h1>
-      <table>
+      <div className={styles.dishPageContainer}>
+      <h1 className={`${styles.dishTitle} ${styles.fades}`}>Pipizza</h1>
+      <NavLink to="/menu" className={styles.toMenuButton}>
+        <ToMenuIcon  className={styles.fades}/>
+      </NavLink>
+      <table className={styles.fades}>
         <thead>
           <tr>
             {/* <th>ID</th> */}
@@ -27,11 +47,11 @@ const Pipizza = () => {
         </thead>
         <tbody>
           {menuItems.map((item) => (
-            <tr key={item.id}>
+            <tr key={item.id} className={styles.dishTableLine}>
               {/* <td>{item.id}</td> */}
-              <td>{item.назва}</td>
-              <td>{item.обєм}</td>
-              <td>{item.ціна}</td>
+              <td >{item.назва}</td>
+              <td >{item.обєм}</td>
+              <td >{item.ціна}</td>
               <td>
                 <AddButton
                   onClick={() => addToCart(item)}
@@ -42,6 +62,7 @@ const Pipizza = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };
