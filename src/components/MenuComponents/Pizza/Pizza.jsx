@@ -1,7 +1,7 @@
-// // Pizza.jsx
+// Pizza.jsx
 
 import React, { useEffect, useState, useContext } from "react";
-import { NavLink } from "react-router-dom"; // Імпорт NavLink
+import { NavLink } from "react-router-dom";
 
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
@@ -23,48 +23,72 @@ export const Pizza = () => {
     const contentElements = document.querySelectorAll(`.${styles.fades}`);
     contentElements.forEach((element, index) => {
       setTimeout(() => {
-        element.style.opacity = '1'; 
+        element.style.opacity = '.9'; 
       }, 50 * index); 
     });
   }, []);
 
+  const updateButtonState = (itemId) => {
+    setMenuItems(menuItems.map(item => {
+      if (item.id === itemId) {
+        return { ...item, alreadyAdded: false };
+      }
+      return item;
+    }));
+  };
+
   return (
-    <div>
+    <div className={styles.dishPage}>
+      <h1 className={styles.dishTitle}>Pizza</h1>  
+      
       <div className={styles.dishPageContainer}>
-      <h1 className={`${styles.dishTitle} ${styles.fades}`}>Pizza</h1>      
-      <NavLink to="/menu" className={styles.toMenuButton}>
-      <ToMenuIcon  className={styles.fades}/>
-        </NavLink>
-      <table className={styles.fades}>
-        {/* <thead>
-          <tr>
-            <th>ID</th>
-            <th>Назва</th>
-            <th>Об'єм</th>
-            <th>Ціна</th>
-            <th>Дія</th>
-          </tr>
-        </thead> */}
-        <tbody  className={`${styles.fadeIn}`}>
-          {menuItems.map((item) => (
-            <tr key={item.id}>
-              {/* <td>{item.id}</td> */}
-              <td>{item.назва}</td>
-              <td>{item.обєм}</td>
-              <td>{item.ціна}</td>
-              <td>
-                <AddButton
-                  onClick={() => addToCart(item)}
-                  alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                />
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+
+        <div className={styles.dishPageBox}>
+
+          <NavLink to="/menu" className={styles.toMenuLink}>
+            <ToMenuIcon/>
+          </NavLink>
+
+          <table className={styles.fades}>
+
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Назва</th>
+                <th>Об'єм</th>
+                <th>Ціна</th>
+              </tr>
+            </thead>
+
+            <tbody  className={`${styles.fadeIn}`}>
+              {menuItems.map((item) => (
+                <tr key={item.id}>
+                  <td>{item.id}</td>
+                  <td>{item.назва}</td>
+                  <td>{item.обєм}</td>
+                  <td>{item.ціна}</td>
+                  <td>
+                    <AddButton
+                      onClick={() => addToCart(item)}
+                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                      updateButtonState={() => updateButtonState(item.id)}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+
+          </table>
+
+        </div>
       </div>
     </div>
   );
 };
 
 export default Pizza;
+
+
+
+
+

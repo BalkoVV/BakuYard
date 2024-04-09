@@ -1,20 +1,27 @@
-/* ContactsPage.module.css */
 .contactsPage {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
+   width: 100%;
+   min-height: 80vh;
+   /* background-color: #fff; */
 }
 
 .contactsPageContainer {
-  width: 960px;
-  padding: 0;
-  margin: 0;
+ width: 100%;
+ min-height: 80vh;
+ 
 }
 
-.mapGoogleSpan {
-  /* position: relative; */
-  width: 900px;
-  height: 100%;
-  /* background-color: #fff; */
+.contactsPageBox {
+ padding: 0 20px;
 }
+
+.contactsPageTitle {
+   display: flex;
+   justify-content: center;
+   padding:  20px 0;
+   margin: 0;
+}
+
+.fadeOut {
+   opacity: 0; /* Початковий стан непрозорості */
+   transition: opacity 1.5s ease-in-out; /* Плавний перехід непрозорості */
+ }

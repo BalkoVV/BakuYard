@@ -2,15 +2,6 @@ import React, { useEffect } from 'react';
 import styles from 'pages/MainPage/MainPage.module.css';
 const MainPage = () => {
 
-  // useEffect(() => {
-  //   const contentElements = document.querySelectorAll(`.${styles.mainContent}`);
-  //   contentElements.forEach((element, index) => {
-  //     setTimeout(() => {
-  //       element.style.opacity = '1'; 
-  //     }, 80 * index); 
-  //   });
-  // }, []);
-
   useEffect(() => {
     const contentElements = document.querySelectorAll(`.${styles.fadeOut}`);
     contentElements.forEach((element, index) => {
@@ -21,8 +12,8 @@ const MainPage = () => {
   }, []);
 
   return (
-    <div className={styles.Main}>
-      <div className={styles.mainContainer}>
+    <div className={styles.mainPage}>
+      <div className={styles.mainPageContainer}>
 
       <div className={`${styles.hero} ${styles.fadeOut}`}></div>
 

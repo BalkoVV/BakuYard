@@ -1,0 +1,64 @@
+.basketContainer {
+   width: 100%;
+   min-height: 80vh;
+   
+  }
+  
+  .quantityBox {
+   display: flex;
+   width: 80px;
+   align-items: center;
+   justify-content: space-between;
+  
+  }
+  
+  .quantityBox span {
+   display: flex;
+   font-size: 15px;
+  }
+  
+  .basketBox {
+   padding: 0 20px;
+  }
+  
+  .basketTitle {
+     display: flex;
+     justify-content: center;
+     padding:  20px 0;
+     margin: 0;
+  }
+  
+  .basketDishTitle {
+   display: flex;
+   min-width: 220px;
+   text-align: right;
+   /* background-color: #fff; */
+   /* font-size: 15px; */
+  }
+  
+  .basketList {
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     /* grid-column-gap: 20px; */
+     grid-row-gap: 20px;
+  }
+  
+  .basketList li {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    border-bottom: 1px solid var(--non-active-color);
+  }
+  .fades {
+     opacity: 0; /* Початковий стан непрозорості */
+     transition: opacity 2s ease-in-out; /* Плавний перехід непрозорості */
+   }
+  
+   .basketInput {
+     border: 1px solid var(--non-active-color);
+     border-radius: 7px;
+     height: 30px;
+     background-color: transparent;
+     color: var(--non-active-color);
+     padding-left: 16px;
+  }

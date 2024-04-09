@@ -1,5 +1,6 @@
 // BurgerMenu.jsx
 
+
 import React, { useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -23,6 +24,7 @@ const BurgerMenu = ({ isOpen, onClose }) => {
       document.body.style.overflow = 'visible'; // Дозвіл скролу при закритому меню
     }
 
+
     return () => {
       document.body.style.overflow = 'visible'; // Дозвіл скролу при закритті меню
       document.removeEventListener('touchmove', handleTouchMove);
@@ -36,7 +38,6 @@ const BurgerMenu = ({ isOpen, onClose }) => {
         <ul>
           <li><NavLink exact to="/" onClick={onClose} activeClassName={styles.activeLink}>Головна</NavLink></li>
           <li><NavLink to="/menu" onClick={onClose} activeClassName={styles.activeLink}>Меню</NavLink></li>
-          {/* <li><NavLink to="/delivery" onClick={onClose} activeClassName={styles.activeLink}>Доставка</NavLink></li> */}
           <li><NavLink to="/contacts" onClick={onClose} activeClassName={styles.activeLink}>Контакти</NavLink></li>
         </ul>
       </div>

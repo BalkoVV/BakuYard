@@ -1,10 +1,9 @@
-// Header.jsx
+
 import React, { useState, useEffect } from 'react';
 import { NavLink, useHistory } from 'react-router-dom'; 
 
 import { Logo } from 'components/Logo/Logo';
 import { ReactComponent as MenuIcon } from 'images/mobileSwitch.svg';
-import { ReactComponent as DeviveryIcon } from 'images/delivery.svg';
 
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 import styles from './Header.module.css';
@@ -24,33 +23,53 @@ export const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <div className={styles.headerComponent}>
+
       <div className={styles.headerContainer}>
 
-      <div className={styles.headerBox}>
+        <div className={styles.headerBox}>
         
-        <div className={styles.headerVisible}>
-            <Logo />
-            <div className={styles.menuIcon} onClick={toggleMenu}>
-              <MenuIcon />
-            </div>
-            <div className={styles.deliveryIcon}>
-              <NavLink to="/delivery">
-                <DeviveryIcon/>
-              </NavLink>
-            </div>
-        </div>
+          <ul className={styles.headerList}>
 
+            <li>
+              <span className={styles.headerLogo}>
+               <Logo />
+              </span>
+           </li>
+
+            <li> 
+             <span className={styles.burgeLinesIcon} onClick={toggleMenu}>
+               <MenuIcon />
+             </span>
+            </li>
+          
         <BurgerMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+
          <nav className={styles.headerNav}>
-          <NavLink exact to="/" activeClassName={styles.activeLink}>Головна</NavLink>
-          <NavLink to="/menu" activeClassName={styles.activeLink}>Меню</NavLink>
-          <NavLink to="/contacts" activeClassName={styles.activeLink}>Контакти</NavLink>
-        </nav>
+            <NavLink exact to="/" activeClassName={styles.activeLink}>
+              Головна
+            </NavLink>
+
+            <NavLink to="/menu" activeClassName={styles.activeLink}>
+              Меню
+            </NavLink>
+
+            <NavLink to="/contacts" activeClassName={styles.activeLink}>
+              Контакти
+            </NavLink>
+
+         </nav>
+         <ul className={styles.headerInfo}>
+          <span>Бровари, Героїв України 22</span>
+          <span>Ми працюємо з 9:00 до 23:00</span>
+         </ul>
+         </ul>
+       </div>
       </div>
-      </div>
-    </header>
+    </div>
   );
 };
 
 export default Header;
+
+

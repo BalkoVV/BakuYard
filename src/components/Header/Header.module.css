@@ -1,22 +1,17 @@
 /* Header.module.css */
 
-.header {
-  border-bottom: 1px solid #ececec64;
-  background: linear-gradient(0deg, black, rgba(37, 37, 37, 0.76));
+.headerComponent {
+  border-bottom: 1px solid black;
+  /* background: linear-gradient(0deg, black, #000000); */
+  box-shadow: 0 25px 65px -15px #b4b1ab72;
 }
 
-/* .headerContainer {
- background-color: rgba(35, 0, 0, 0.615);
-} */
 
 .headerBox {
-   position: relative;
-   display: inline-flex;
-   align-items: center;
-   width: 100%;
+   display: flex;
    height: 55px;
-   /* z-index: 1;  */
-
+   position: relative;
+ 
    @media screen and (min-width: 768px) {
      height: 60px;
    };
@@ -26,44 +21,44 @@
    };
  }
 
-.headerVisible {
-  position: relative;
+.headerList {
   display: flex;
-  padding: 0 25px;
-  width: 100%;
-}
+  padding: 0 30px;
+  justify-content: space-between;
+} 
+
+.headerList li {
+  display: flex;
+ 
+  align-items: center;
+} 
 
 .headerNav {
   display: flex;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  justify-content: space-around;
-  width: 100%;
+  align-items: center;
 
   @media screen and (max-width: 767.9px) {
     display: none;
   }
  }
 
-.menuIcon {
-  position: absolute;
-  right: 25px;
-  top: 0px;
+
+ .headerInfo {
+display: grid;
+@media screen and (max-width: 767.9px) {
   display: none; 
+}
+}
+
+.burgeLinesIcon {
+  position: absolute;
+  right: 30px;
   fill: var(--non-active-color);
    
-   @media screen and (max-width: 767.9px) {
-     display: block; 
+   @media screen and (min-width: 767.9px) {
+     display: none; 
    }
  }
-
- .deliveryIcon {
-  position: absolute;
-  right: 75px;
-  display: block; 
- }
-
 
 .activeLink {
    color: var(--active-link-color); 

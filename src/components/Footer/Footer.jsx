@@ -29,7 +29,7 @@ export const Footer = () => {
         </li>
         
        </ul>
-       <h5  className={styles.footerRights}>@Всі права захищені</h5>
+       <h5  className={styles.footerAllRights}>@Всі права захищені</h5>
       </div>
         
     </div>

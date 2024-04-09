@@ -1,0 +1,27 @@
+.aboutPageDiv {
+   display: flex;
+   padding: 0;
+   margin: 0;
+   justify-content: center;
+}
+.aboutPageContainer {
+   width: 960px;
+   padding: 0;
+   margin: 0;
+}
+.aboutPageList {
+   display: grid;
+   margin-top: 50px;
+}
+/* .aboutPageListItem {
+
+} */
+
+.dishList {
+display: flex;
+}
+
+.dishList li {
+ padding: 15px;
+ margin: 15px;
+}

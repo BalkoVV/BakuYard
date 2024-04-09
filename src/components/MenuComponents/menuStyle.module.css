@@ -1,7 +1,7 @@
-.toMenuButton {
-   position: absolute;
-   top: 20px;
-   right: 27px;
+.toMenuLink {
+      position: absolute;
+      right: 32px;
+      top: 75px;
    }
 
 .dishTitle {
@@ -11,16 +11,13 @@
    margin: 0;
 }
 
-.dishTableLine {
-   border-bottom: 1px solid #5e5d5d81;
-}
-
 .dishPageContainer {
-   position: relative;
+   width: 100%;
+   min-height: 80vh;
    padding: 0 20px;
 }
 
 .fades {
-   opacity: 0; /* Початковий стан непрозорості */
-   transition: opacity 2s ease-in-out; /* Плавний перехід непрозорості */
+   opacity: 0.1; /* Початковий стан непрозорості */
+   transition: opacity 1.1s ease-in-out; /* Плавний перехід непрозорості */
  }

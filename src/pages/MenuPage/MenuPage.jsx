@@ -1,15 +1,18 @@
 // // MenuPage.jsx
-
 import React, { useEffect } from "react";
 import { NavLink, Route, Switch, useLocation } from "react-router-dom"; 
 
+import { CartProvider } from "components/CartProvider/CartProvider";
 
-import Pipizza from 'components/MenuComponents/Pipizza/Pipizza';
+import Basket from "components/Basket/Basket";
 import Pizza from "components/MenuComponents/Pizza/Pizza";
 
-import styles from 'pages/MenuPage/MenuPage.module.css';
+import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 
-const MenuPage = () => {
+import styles from 'pages/MenuPage/MenuPage.module.css';
+// import Basket from "components/Basket/Basket";
+
+export const MenuPage = () => {
   const location = useLocation();
 
   useEffect(() => {
@@ -23,60 +26,29 @@ const MenuPage = () => {
   
   
   return (
-   <div>
-     <div className={styles.menuContainer}>
+   <div className={styles.menuPage}>
+     
+     <div className={styles.menuPageContainer}>
+      <div className={styles.menuPageBox}>
      <Switch>
+     
         <Route path="/menu" exact> 
-            <h1 className={`${styles.menuTitle} ${styles.fadeIn}`}>Меню</h1>
-            <ul className={styles.list}>
+            <h1 className={styles.menuTitle}>Меню</h1>
+            <CartProvider>
+             <section className={styles.menuSection}>
+             <div className={styles.menuBasketList}>
+              <span>
+                <NavLink to="/menu/basket">
+                  <BasketIcon />
+                </NavLink>
+              </span>
+             </div>
+
+            <ul className={styles.menuDishList}>
+            
               <li className={styles.fadeIn}>
                 <NavLink to="/menu/pizza">
                   Pizza
-                </NavLink>
-              </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pipizza">
-                  Pipizza
-                </NavLink>
-              </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                  Pizza
-                </NavLink>
-              </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pipizza">
-                  Pipizza
-                </NavLink>
-              </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                  Pizza
-                </NavLink>
-              </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pipizza">
-                  Pipizza
-                </NavLink> 
-              </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                  Pizza
-                </NavLink>
-              </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pipizza">
-                  Pipizza
-                </NavLink> 
-              </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                  Pizza
-                </NavLink>
-              </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pipizza">
-                  Pipizza
                 </NavLink>
               </li>
               <li className={styles.fadeIn}>
@@ -85,17 +57,47 @@ const MenuPage = () => {
                 </NavLink>
               </li>
               <li className={styles.fadeIn}>
-                <NavLink to="/menu/pipizza">
-                  Pipizza
+                <NavLink to="/menu/pizza">
+                  Pizza
+                </NavLink>
+              </li>
+              <li className={styles.fadeIn}>
+                <NavLink to="/menu/pizza">
+                  Pizza
+                </NavLink>
+              </li>
+              <li className={styles.fadeIn}>
+                <NavLink to="/menu/pizza">
+                  Pizza
+                </NavLink>
+              </li>
+              <li className={styles.fadeIn}>
+                <NavLink to="/menu/pizza">
+                  Pizza
+                </NavLink>
+              </li>
+              <li className={styles.fadeIn}>
+                <NavLink to="/menu/pizza">
+                  Pizza
+                </NavLink>
+              </li>
+              
+              <li className={styles.fadeIn}>
+                <NavLink to="/menu/pizza">
+                  Pizza
                 </NavLink>
               </li>
             </ul>  
+             </section>
+            
+            </CartProvider>
         </Route>
-
        
-        <Route path="/menu/pipizza" component={Pipizza} /> 
+
         <Route path="/menu/pizza" component={Pizza} /> 
+        <Route path="/menu/basket" component={Basket} /> 
       </Switch>
+      </div>
      </div>
    </div>
   );
