@@ -3,12 +3,9 @@
    display: flex;
    /* height: 100px; */
    padding: 20px 0px;
-   /* margin-top: 50px; */
    justify-content: center;
-   /* border-top: .7px solid var(--non-active-color); */
-   border-top: 1px solid #00000064;
-   /* background: linear-gradient(0deg, #daa52022, black); */
-   box-shadow: 0 -15px 65px -25px #b4b1ab72;
+   border-top: 1px solid transparent;
+   box-shadow: 0 -15px 65px -25px #201a1a;
    /* box-shadow: 0 25px 65px -15px #b4b1ab72; */
    
    /* #daa5da */
