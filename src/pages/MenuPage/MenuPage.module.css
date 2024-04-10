@@ -17,7 +17,7 @@ min-height: 75vh;
 .menuTitle {
    display: flex;
    justify-content: center;
-   font-size: 25px;
+   font-size: 20px;
    font-weight: 900;
    padding:  15px 0px 30px ;
    margin: 0;
@@ -28,25 +28,23 @@ min-height: 75vh;
    display: grid;
   }
 
-.menuBasketList {
+/* .menuBasketList {
    position: absolute;
    right: 32px;
    top: 73px;
    display: grid;
-   /* padding: 0 80px; */
- 
+} */
+
+.menuBasketLink {
+   position: absolute;
+   right: 32px;
+   top: 70px;
+   display: grid;
 }
 
 .basketIcon {
-fill: black;
+   fill: black;
 }
-
-/* .menuBasketList span {
-height: 22px;
-   border-radius: .7rem;
-   border: 1px solid #362700a5;
-   box-shadow: 0px 0px 15px 9px #362700a5;
- } */
 
  .menuDishList {
    display: grid;

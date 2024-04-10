@@ -37,7 +37,7 @@ export const MenuPage = () => {
             <CartProvider>
              <section className={styles.menuSection}>
              <div className={styles.menuBasketList}>
-              <span>
+              <span className={styles.menuBasketLink}>
                 <NavLink to="/menu/basket">
                   <BasketIcon className={styles.basketIcon}/>
                 </NavLink>
