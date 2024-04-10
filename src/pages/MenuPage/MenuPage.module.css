@@ -17,7 +17,9 @@ min-height: 75vh;
 .menuTitle {
    display: flex;
    justify-content: center;
-   padding:  20px 0;
+   font-size: 25px;
+   font-weight: 900;
+   padding:  15px 0px 30px ;
    margin: 0;
    color: black;
 }
@@ -33,6 +35,10 @@ min-height: 75vh;
    display: grid;
    /* padding: 0 80px; */
  
+}
+
+.basketIcon {
+fill: black;
 }
 
 /* .menuBasketList span {

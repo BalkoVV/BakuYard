@@ -44,16 +44,17 @@
 
 
  .headerInfo {
-display: grid;
-@media screen and (max-width: 767.9px) {
-  display: none; 
-}
+   display: grid;
+
+   @media screen and (max-width: 767.9px) {
+     display: none; 
+   }
 }
 
 .burgeLinesIcon {
   position: absolute;
   right: 30px;
-  fill: var(--non-active-color);
+  fill: #b4b1ab7e;
    
    @media screen and (min-width: 767.9px) {
      display: none; 

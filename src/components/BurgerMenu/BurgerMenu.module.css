@@ -57,7 +57,7 @@ padding: 20px;
 
 
 .activeLink {
-  color: rgb(0, 0, 0); 
+  color: rgb(140, 138, 138); 
   /* z-index: 10;  */
   /* fill: var(--active-link-color); */
 }
@@ -72,7 +72,7 @@ padding: 20px;
   z-index: -5;
   border-radius: 2px 0px 2px 0px;
   background-color: black; 
-  box-shadow: 0 22px 22px 17px #b4b1ab3d;
+  /* box-shadow: 0 22px 22px 17px #b4b1ab3d; */
 }
 
 .backdrop {

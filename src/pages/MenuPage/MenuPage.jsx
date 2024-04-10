@@ -39,7 +39,7 @@ export const MenuPage = () => {
              <div className={styles.menuBasketList}>
               <span>
                 <NavLink to="/menu/basket">
-                  <BasketIcon />
+                  <BasketIcon className={styles.basketIcon}/>
                 </NavLink>
               </span>
              </div>
