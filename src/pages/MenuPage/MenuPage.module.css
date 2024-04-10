@@ -28,12 +28,6 @@ min-height: 75vh;
    display: grid;
   }
 
-/* .menuBasketList {
-   position: absolute;
-   right: 32px;
-   top: 73px;
-   display: grid;
-} */
 
 .menuBasketLink {
    position: absolute;
@@ -62,9 +56,14 @@ min-height: 75vh;
    font-size: 10px;
    height: 150px;
    border-radius: 7px;
-   border: 1px solid var(--main-text-color);
-   border: 2px solid #44444372;
-  /* background: linear-gradient(0deg, #44444372, black); */
+   /* color: black; */
+   /* border: 1px solid var(--main-text-color);
+   border: 2px solid #44444372; */
+  background: #b4b1ab28;
  }
+
+ .menuDishList h1 {
+color: rgb(0, 0, 0);
+}
 
 

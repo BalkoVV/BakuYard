@@ -48,43 +48,43 @@ export const MenuPage = () => {
             
               <li className={styles.fadeIn}>
                 <NavLink to="/menu/pizza">
-                  Pizza
+                 <h1>Pizza</h1>
                 </NavLink>
               </li>
               <li className={styles.fadeIn}>
                 <NavLink to="/menu/pizza">
-                  Pizza
+                <h1>Pizza</h1>
                 </NavLink>
               </li>
               <li className={styles.fadeIn}>
                 <NavLink to="/menu/pizza">
-                  Pizza
+                <h1>Pizza</h1>
                 </NavLink>
               </li>
               <li className={styles.fadeIn}>
                 <NavLink to="/menu/pizza">
-                  Pizza
+                <h1>Pizza</h1>
                 </NavLink>
               </li>
               <li className={styles.fadeIn}>
                 <NavLink to="/menu/pizza">
-                  Pizza
+                <h1>Pizza</h1>
                 </NavLink>
               </li>
               <li className={styles.fadeIn}>
                 <NavLink to="/menu/pizza">
-                  Pizza
+                <h1>Pizza</h1>
                 </NavLink>
               </li>
               <li className={styles.fadeIn}>
                 <NavLink to="/menu/pizza">
-                  Pizza
+                <h1>Pizza</h1>
                 </NavLink>
               </li>
               
               <li className={styles.fadeIn}>
                 <NavLink to="/menu/pizza">
-                  Pizza
+                <h1>Pizza</h1>
                 </NavLink>
               </li>
             </ul>  
