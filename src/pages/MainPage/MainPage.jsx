@@ -15,7 +15,9 @@ const MainPage = () => {
     <div className={styles.mainPage}>
       <div className={styles.mainPageContainer}>
 
-      <div className={`${styles.hero} ${styles.fadeOut}`}></div>
+      <div className={`${styles.heroBox} ${styles.fadeOut}`}>
+        <div className={styles.hero}></div>
+      </div>
 
         <p className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
           Бакінський Двір
