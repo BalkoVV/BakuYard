@@ -25,8 +25,14 @@
 .basketTitle {
    display: flex;
    justify-content: center;
-   padding:  20px 0;
+   font-size: 20px;
+   font-weight: 900;
+   padding:  17px 0px;
    margin: 0;
+   color: #b1b1b1;
+   font-weight: 900;
+   font-size: 22px;
+   border-bottom: 1.5px solid #000000;
    
 }
 
@@ -58,6 +64,7 @@
    position: absolute;
    right: 32px;
    top: 75px;
+   fill: #b1b1b1;
 }
 
  .basketInput {

@@ -4,11 +4,13 @@
   border-bottom: 1px solid black;
   background: linear-gradient(0deg, black, #000000);
   box-shadow: 0 35px 65px -15px #b4b1ab76;
-  box-shadow: 0 35px 65px -15px #000000fc;
+  /* box-shadow: 0 35px 65px -15px #000000fc; */
   position: fixed;
+  top: 0;
   z-index: 10;
   height: 55px;
   width: 100%;
+  border-bottom: .5px solid #b1b1b1;
 }
 
 
@@ -59,7 +61,7 @@
 .burgeLinesIcon {
   position: absolute;
   right: 30px;
-  fill: #b4b1ab7e;
+  fill: #b1b1b1;
    
    @media screen and (min-width: 767.9px) {
      display: none; 
@@ -67,7 +69,7 @@
  }
 
 .activeLink {
-   color: var(--active-link-color); 
+   color: #b1b1b1; 
  }
  
  

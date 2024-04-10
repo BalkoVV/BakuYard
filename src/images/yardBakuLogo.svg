@@ -2,8 +2,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="173" height="32" viewBox="0 0 173 32">
 <title>yardBakuLogo</title>
 <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-   <stop offset="0%" style="stop-color: #3f3e33; stop-opacity: 1" />
-   <stop offset="100%" style="stop-color: #3f3e33; stop-opacity: .8" />
+   <stop offset="0%" style="stop-color: #b1b1b1; stop-opacity: 1" />
+   <stop offset="100%" style="stop-color: #b1b1b1; stop-opacity: .8" />
 <!-- <stop offset="0%" style="stop-color: #ab080875; stop-opacity: .3" />
    <stop offset="100%" style="stop-color: #ab080875; stop-opacity: .9" /> -->
    
