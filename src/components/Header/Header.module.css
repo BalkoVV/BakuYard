@@ -2,8 +2,13 @@
 
 .headerComponent {
   border-bottom: 1px solid black;
-  /* background: linear-gradient(0deg, black, #000000); */
+  background: linear-gradient(0deg, black, #000000);
   box-shadow: 0 35px 65px -15px #b4b1ab76;
+  box-shadow: 0 35px 65px -15px #000000fc;
+  position: fixed;
+  z-index: 10;
+  height: 55px;
+  width: 100%;
 }
 
 
