@@ -1,20 +1,16 @@
 .footer {
-   display: grid;
+   /* display: grid; */
    display: flex;
-   /* height: 100px; */
    padding: 20px 0px;
    justify-content: center;
    border-top: 1.5px solid #262626;
-   box-shadow: 0 -5px 35px 15px #000000;
-   /* box-shadow: 0 25px 65px -15px #b4b1ab72; */
-   
-   /* #daa5da */
+   background: linear-gradient(0deg, black, #181818);
  }
 
  .footerAllRights {
 display: flex;
 justify-content: center;
-color: #5c5a46;
+color: #7b7a7a;
 margin-top: 30px;
 /* margin-bottom: 30px; */
 }

@@ -13,7 +13,6 @@
   background: linear-gradient(0deg, #181818, black);
   border-top: 1.5px solid #262626;
   border-bottom: 1.5px solid #262626;
-  border-bottom: .5px solid #000000;
   opacity: 0;
   transition: transform .4s ease-in-out, opacity .6s ;
   transform: translateX(-100%);

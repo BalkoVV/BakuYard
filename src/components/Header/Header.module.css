@@ -1,19 +1,10 @@
 /* Header.module.css */
 
 .headerComponent {
-  border-bottom: 1px solid black;
-  background: linear-gradient(0deg, black, #000000);
-  /* box-shadow: 0 35px 65px -15px #201a1a; */
-  box-shadow: 0 35px 65px -15px #000000;
-  position: fixed;
-  top: 0;
+  background: linear-gradient(0deg, #181818, black);
   z-index: 10;
   height: 55px;
-  padding-top: 50px;
-  margin-top: 50px;
-  top: -100px;
   width: 100%;
-  border-bottom: .5px solid #b1b1b1;
   border-bottom: 1.5px solid #262626;
 }
 
@@ -65,7 +56,7 @@
 .burgeLinesIcon {
   position: absolute;
   right: 30px;
-  fill: #b1b1b1;
+  fill: #7b7a7a;
    
    @media screen and (min-width: 767.9px) {
      display: none; 
