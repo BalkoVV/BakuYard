@@ -27,7 +27,7 @@
 .isOpen {
   transform: translateX(0%);
   opacity: 1;
-  transition: transform .5s ease-in-out, opacity 1s ;
+  transition: transform .5s ease-in-out, opacity 1.7s ;
 
 }
 
@@ -45,26 +45,35 @@ justify-content: space-around;
 }
 
 .burgerMenu ul li {
-margin: 20px;
+padding: 20px;
 /* background-color: #fff; */
 /* border: 1px solid var(--main-text-color); */
 }
 
+.burgerMenu ul li a{
+  padding: 20px;
+
+  }
+
 
 .activeLink {
-  color: rgb(150, 149, 149);  
+  color: rgb(0, 0, 0); 
+  /* z-index: 10;  */
   /* fill: var(--active-link-color); */
 }
 
 .activeLink::after {
   position: relative;
-  top: 5px;
+  top: -29px;
   content: "";
   display: flex;
   width: 100%;
-  /* height: 1px; */
+  height: 0px;
+  z-index: -5;
   border-radius: 2px 0px 2px 0px;
-  background-color: var(--active-link-color); }
+  background-color: black; 
+  box-shadow: 0 22px 22px 17px #b4b1ab3d;
+}
 
 .backdrop {
   position: fixed;
@@ -72,9 +81,9 @@ margin: 20px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.296);
+  background-color: rgba(0, 0, 0, 0.404);
   
   z-index: 5; /* Забезпечте, щоб backdrop мав менший z-index, ніж саме меню */
-  transition: opacity 2s ease-in;
+  transition: opacity 1.7s ease-in;
   opacity: 1; /* Початкове значення для анімації */
 }
