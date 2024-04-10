@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.5f0950f8.css",
-    "main.js": "/BakuYard/static/js/main.b173fed0.js",
+    "main.css": "/BakuYard/static/css/main.25c2bc02.css",
+    "main.js": "/BakuYard/static/js/main.e693a132.js",
     "static/media/heroImg.jpg": "/BakuYard/static/media/heroImg.1ff35f7d41b103d3c378.jpg",
     "static/media/Constantine.ttf": "/BakuYard/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
     "static/media/mobileSwitch.svg": "/BakuYard/static/media/mobileSwitch.199728a413e75e716e1111889457ef02.svg",
-    "static/media/delivery.svg": "/BakuYard/static/media/delivery.fe4fa0fd7c9c9c03ecfbfb78301f12cf.svg",
+    "static/media/delivery.svg": "/BakuYard/static/media/delivery.1434875efbd9b6940425068ddf6e5560.svg",
     "static/media/yardBakuLogo.svg": "/BakuYard/static/media/yardBakuLogo.65e4bbf30598805b12e13fa26859c141.svg",
     "static/media/instagram.svg": "/BakuYard/static/media/instagram.c3e212cb12482a198c6d384348768acd.svg",
     "static/media/gmail.svg": "/BakuYard/static/media/gmail.081b88392577d3aaf2047f920bf31472.svg",
     "static/media/facebook.svg": "/BakuYard/static/media/facebook.a88c1cfc6b83718ddea3392502fb14c3.svg",
     "index.html": "/BakuYard/index.html",
     "static/media/toMenu.svg": "/BakuYard/static/media/toMenu.d30f82807f5800d488d6786fa8362d40.svg",
-    "main.5f0950f8.css.map": "/BakuYard/static/css/main.5f0950f8.css.map",
-    "main.b173fed0.js.map": "/BakuYard/static/js/main.b173fed0.js.map"
+    "main.25c2bc02.css.map": "/BakuYard/static/css/main.25c2bc02.css.map",
+    "main.e693a132.js.map": "/BakuYard/static/js/main.e693a132.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f0950f8.css",
-    "static/js/main.b173fed0.js"
+    "static/css/main.25c2bc02.css",
+    "static/js/main.e693a132.js"
   ]
 }
