@@ -7,7 +7,7 @@
    width: 100%;
    /* margin-top: 55px; */
    min-height: 75vh;
-   background: #160000;
+   background: #202123;
    overflow: hidden;
 }
 
@@ -27,9 +27,11 @@
    margin: 0;
    color: #b1b1b1;
    font-weight: 900;
-   font-size: 22px;
-   border-bottom: 1.5px solid #262626;
-   box-shadow: 0 35px 65px -15px #201a1a;
+   font-size: 20px;
+   border-bottom: .5px solid #262626;
+      border-bottom: .5px solid #000000;
+
+   /* box-shadow: 0 35px 65px -15px #201a1a; */
 }
 
 .menuSection {

@@ -117,10 +117,10 @@ export const Basket = () => {
     <div  className={styles.basket}>
 
       <div className={styles.basketContainer}>
-
+      <h1 className={styles.basketTitle}>Замовлення</h1>
         <div  className={styles.basketBox}>
 
-          <h1 className={styles.basketTitle}>Замовлення</h1>
+          
 
          
             <NavLink to="/menu" className={styles.toMenuLink}>
