@@ -10,15 +10,30 @@
  
 }
 
+.contactsList {
+ display: grid;
+
+}
+
+.contactsList li {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
 .contactsPageBox {
  padding: 0 20px;
 }
 
 .contactsPageTitle {
    display: flex;
+   height: 55px;
    justify-content: center;
-   padding:  20px 0;
+   align-items: center;
+   font-size: 13px;
+   font-weight: 900;
    margin: 0;
+   color: #7b7a7a;
 }
 
 .fadeOut {

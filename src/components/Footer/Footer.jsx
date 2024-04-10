@@ -5,9 +5,9 @@ import React from 'react';
 import { Logo } from 'components/Logo/Logo';
 import styles from '../Footer/Footer.module.css';
 
-import { ReactComponent as FacebookIcon } from 'images/facebook.svg';
-import { ReactComponent as GmailIcon } from 'images/gmail.svg';
-import { ReactComponent as InstagramIcon } from 'images/instagram.svg';
+import { ReactComponent as FacebookIcon } from 'images/facebookIcon.svg';
+import { ReactComponent as GmailIcon } from 'images/mailIcon.svg';
+import { ReactComponent as InstagramIcon } from 'images/instagramIcon.svg';
 
 export const Footer = () => {
   return (

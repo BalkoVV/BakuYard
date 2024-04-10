@@ -5,9 +5,7 @@
   z-index: 10;
   height: 55px;
   width: 100%;
-  border-bottom: 1.5px solid #262626;
 }
-
 
 .headerBox {
    display: flex;
@@ -31,7 +29,6 @@
 
 .headerList li {
   display: flex;
- 
   align-items: center;
 } 
 
@@ -42,10 +39,10 @@
   @media screen and (max-width: 767.9px) {
     display: none;
   }
+
  }
 
-
- .headerInfo {
+.headerInfo {
    display: grid;
 
    @media screen and (max-width: 767.9px) {
@@ -55,16 +52,28 @@
 
 .burgeLinesIcon {
   position: absolute;
-  right: 30px;
+  right: 20px;
+  top: 15px;
   fill: #7b7a7a;
    
    @media screen and (min-width: 767.9px) {
      display: none; 
    }
+
  }
 
 .activeLink {
-   color: #b1b1b1; 
- }
+   color: #896300; 
+}
+
+.activeLink::after {
+  position: relative;
+  top: 20px;
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background-color: #896300; 
+}
  
  

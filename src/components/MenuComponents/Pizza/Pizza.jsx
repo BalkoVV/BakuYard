@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
 
-import { ReactComponent as ToMenuIcon } from 'images/toMenu.svg';
+import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
 
 import menuData from "services/pizza.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';

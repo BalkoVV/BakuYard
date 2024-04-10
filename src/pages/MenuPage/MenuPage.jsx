@@ -7,7 +7,7 @@ import { CartProvider } from "components/CartProvider/CartProvider";
 import Basket from "components/Basket/Basket";
 import Pizza from "components/MenuComponents/Pizza/Pizza";
 
-import { ReactComponent as BasketIcon } from 'images/delivery.svg';
+import { ReactComponent as BasketIcon } from 'images/deliveryDining.svg';
 
 import styles from 'pages/MenuPage/MenuPage.module.css';
 // import Basket from "components/Basket/Basket";

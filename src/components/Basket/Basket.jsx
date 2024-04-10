@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import CartContext from "components/CartProvider/CartProvider";
 
-import { ReactComponent as ToMenuIcon } from 'images/toMenu.svg';
+import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
 import styles from 'components/Basket/Basket.module.css';
 
 export const Basket = () => {
@@ -140,9 +140,10 @@ export const Basket = () => {
           <p className={styles.fades}>Кількість позицій: {totalItems}</p>
           <p className={styles.fades}>Загальна сума: {totalPrice}</p>
 
-          <input  className={styles.fades} type="text" placeholder="Ім'я" value={name} onChange={handleNameChange} />
-          <input  className={styles.fades} type="text" placeholder="Телефон" value={phoneNumber} onChange={handlePhoneNumberChange} />
-
+        <div className={styles.basketInputBox}>
+        <input  className={`${styles.fades} ${styles.basketInput}`} type="text" placeholder="Ім'я" value={name} onChange={handleNameChange} />
+        <input  className={`${styles.fades} ${styles.basketInput}`} type="text" placeholder="Телефон" value={phoneNumber} onChange={handlePhoneNumberChange} />
+        </div>
           <button  className={styles.fades} onClick={handleSubmitOrder} disabled={!isOrderButtonActive()}>Замовити</button>
           {orderCompleted && <p>Замовлення оформлене. Чекайте дзвінка адміністратора для підтвердження</p>}
 

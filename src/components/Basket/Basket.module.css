@@ -9,8 +9,6 @@
  width: 80px;
  align-items: center;
  justify-content: space-between;
- 
-
 }
 
 .quantityBox span {
@@ -27,12 +25,10 @@
    height: 55px;
    justify-content: center;
    align-items: center;
-   font-size: 20px;
+   font-size: 13px;
    font-weight: 900;
    margin: 0;
    color: #7b7a7a;
-   border-bottom: 1.5px solid #262626;
-   background: linear-gradient(0deg, #181818, black);
    
 }
 
@@ -62,15 +58,20 @@
 
  .toMenuLink {
    position: absolute;
-   right: 32px;
+   right: 20px;
    top: 75px;
-   fill: #b1b1b1;
+   fill: #7b7a7a;
 }
 
+.basketInputBox {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: #fff; */
+}
  .basketInput {
    border: 1px solid var(--non-active-color);
    border-radius: 7px;
-   height: 30px;
+   height: 20px;
    background-color: transparent;
    color: var(--non-active-color);
    padding-left: 16px;
