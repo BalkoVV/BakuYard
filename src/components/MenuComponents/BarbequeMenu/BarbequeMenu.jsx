@@ -1,133 +1,94 @@
 // BarbequeMenu.jsx
 
-// BarbequeMenu.jsx
-import React, { useEffect, useState } from "react";
-import menuData from "services/meat.json";
-import AddButton from "../AddButton/AddButton";
+import React, { useEffect, useState, useContext } from "react";
+import { NavLink } from "react-router-dom";
 
-const BarbequeMenu = ({ onAddToOrder }) => {
+import AddButton from 'components/MenuComponents/AddButton/AddButton';
+import CartContext from "components/CartProvider/CartProvider";
+
+import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
+
+import menuData from "services/barbeque.json";
+import styles from 'components/MenuComponents/menuStyle.module.css';
+
+export const BarbequeMenu = () => {
+  const { addToCart, cartItems } = useContext(CartContext);
   const [menuItems, setMenuItems] = useState([]);
-  const [addedItems, setAddedItems] = useState([]);
 
   useEffect(() => {
     setMenuItems(menuData);
   }, []);
 
   useEffect(() => {
-    const itemsInLocalStorage = Object.keys(localStorage).map((key) =>
-      JSON.parse(localStorage.getItem(key))
-    );
-    setAddedItems(itemsInLocalStorage);
+    const contentElements = document.querySelectorAll(`.${styles.fades}`);
+    contentElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.style.opacity = '.9'; 
+      }, 50 * index); 
+    });
   }, []);
 
-  const handleAddToOrder = (item) => {
-    onAddToOrder(item);
-    localStorage.setItem(item.id, JSON.stringify(item));
-    setAddedItems([...addedItems, item]);
+  const updateButtonState = (itemId) => {
+    setMenuItems(menuItems.map(item => {
+      if (item.id === itemId) {
+        return { ...item, alreadyAdded: false };
+      }
+      return item;
+    }));
   };
 
   return (
-    <div>
-      <h1>BBQ</h1>
-      <table>
-        <tbody>
-          {menuItems.map((item) => (
-            <tr key={item.id}>
-              <td>{item.id}</td>
-              <td>{item.назва}</td>
-              <td>{item.обєм}</td>
-              <td>{item.ціна}</td>
-              <td>
-                {addedItems.some((addedItem) => addedItem.id === item.id) ? null : (
-                  <AddButton onClick={() => handleAddToOrder(item)} />
-                )}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className={styles.dishPage}>
+      <h1 className={styles.dishTitle}>Барбекю</h1>  
+      
+      <div className={styles.dishPageContainer}>
+
+        <div className={styles.dishPageBox}>
+
+          <NavLink to="/menu" className={styles.toMenuLink}>
+            <ToMenuIcon/>
+          </NavLink>
+
+          <table className={styles.fades}>
+
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Назва</th>
+                <th>Об'єм</th>
+                <th>Ціна</th>
+              </tr>
+            </thead>
+
+            <tbody  className={`${styles.fadeIn}`}>
+              {menuItems.map((item) => (
+                <tr key={item.id}>
+                  <td>{item.id}</td>
+                  <td>{item.назва}</td>
+                  <td>{item.обєм}</td>
+                  <td>{item.ціна}</td>
+                  <td>
+                    <AddButton
+                      onClick={() => addToCart(item)}
+                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                      updateButtonState={() => updateButtonState(item.id)}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+
+          </table>
+
+        </div>
+      </div>
     </div>
   );
 };
 
 export default BarbequeMenu;
 
-// import React, { useEffect, useState } from "react";
-// import menuData from "services/meat.json";
-// import AddButton from "../AddButton/AddButton";
 
-// const BarbequeMenu = ({ onAddToOrder }) => {
-//   const [menuItems, setMenuItems] = useState([]);
-//   const [buttonDisabled, setButtonDisabled] = useState(false);
 
-//   useEffect(() => {
-//     setMenuItems(menuData);
-//   }, []);
 
-//   const handleAddToOrder = (item) => {
-//     onAddToOrder(item);
-//     setButtonDisabled(true); // Встановлюємо кнопку в неактивний стан
-//   };
 
-//   return (
-//     <div>
-//       <h1>BBQ</h1>
-//       <table>
-//         <tbody>
-//           {menuItems.map((item) => (
-//             <tr key={item.id}>
-//               <td>{item.id}</td>
-//               <td>{item.назва}</td>
-//               <td>{item.обєм}</td>
-//               <td>{item.ціна}</td>
-//               <td>
-//                 <AddButton onClick={() => handleAddToOrder(item)} disabled={buttonDisabled} />
-//               </td>
-//             </tr>
-//           ))}
-//         </tbody>
-//       </table>
-//     </div>
-//   );
-// };
-
-// export default BarbequeMenu;
-
-// import React, { useEffect, useState } from "react";
-// import menuData from "services/meat.json";
-// import AddButton from "../AddButton/AddButton";
-
-// const BarbequeMenu = ({ onAddToOrder }) => {
-//   const [menuItems, setMenuItems] = useState([]);
-
-//   useEffect(() => {
-//     setMenuItems(menuData);
-//   }, []);
-
-//   const handleAddToOrder = (item) => {
-//     onAddToOrder(item);
-//   };
-
-//   return (
-//     <div>
-//       <h1>BBQ</h1>
-//       <table>
-//         <tbody>
-//           {menuItems.map((item) => (
-//             <tr key={item.id}>
-//               <td>{item.id}</td>
-//               <td>{item.назва}</td>
-//               <td>{item.обєм}</td>
-//               <td>{item.ціна}</td>
-//               <td>
-//                 <AddButton onClick={() => handleAddToOrder(item)} />
-//               </td>
-//             </tr>
-//           ))}
-//         </tbody>
-//       </table>
-//     </div>
-//   );
-// };
-
-// export default BarbequeMenu;
