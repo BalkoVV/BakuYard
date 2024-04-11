@@ -29,8 +29,8 @@ export const ContactsPage = () => {
       <h1 className={styles.contactsPageTitle}>Контакти</h1>
       <div className={styles.contactsPageContainer}>
          <div className={styles.contactsPageBox }>
-        <div className={styles.mapBox}></div>
-       <ul className={styles.contactsList}>
+        <div className={`${styles.mapBox} ${styles.fadeOut}`}></div>
+       <ul className={`${styles.contactsList} ${styles.fadeOut}`}>
             <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
               <span><MapIcon/></span>
             <h3>Бровари, </h3>

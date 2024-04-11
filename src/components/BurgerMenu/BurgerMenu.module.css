@@ -11,7 +11,8 @@
   width: 100%;
   height: 55px;
   background: linear-gradient(0deg, #181818, black);
-  border-bottom: 1px solid var(--non-active-color);
+  border-bottom: 1px solid #525151;
+  
   opacity: 0;
   transition: transform .4s ease-in-out, opacity .6s ;
   transform: translateX(-100%);
@@ -42,7 +43,7 @@
 }
 
 .activeLink {
-  color: #896300; 
+  color: #550012; 
 }
 
 .activeLink::after {
@@ -52,7 +53,7 @@
   display: flex;
   width: 100%;
   height: 1px;
-  background-color: #896300; 
+  background-color: #550012; 
 }
 
 .backdrop {
