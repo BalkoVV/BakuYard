@@ -8,7 +8,7 @@ import CartContext from "components/CartProvider/CartProvider";
 
 import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
 
-import menuData from "services/barbeque.json";
+import menuData from "services/dataBarbeque/barbeque.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const BarbequeMenu = () => {

@@ -96,6 +96,14 @@
    background-image: url("images/bbq.jpg");
 }
 
+.dishCardSalads {
+   background-image: url("images/salads.avif");
+}
+
+.dishCardBeer {
+   background-image: url("images/beer.jpeg");
+}
+
 /* .dishCard:hover {
    border: 1px solid #fa0000;
 } */

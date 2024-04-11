@@ -26,6 +26,7 @@ justify-content: center;
 padding: 40px 40px;
 font-size: 15px;
 }
+
 /* 
 .heroBox {
   position: relative;
@@ -34,17 +35,16 @@ font-size: 15px;
  height: 300px;
  z-index: 1;
 } */
+
  .hero {
-  /* position: absolute; */
- 
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    background: url("images/bg1.jpg");
+    background: url("images/bg233.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 300px;
     z-index: 0;
   }

@@ -8,7 +8,7 @@ import CartContext from "components/CartProvider/CartProvider";
 
 import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
 
-import menuData from "services/pizza.json";
+import menuData from "services/dataBakedDishes/pizza.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const Pizza = () => {

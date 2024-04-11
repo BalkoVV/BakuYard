@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import { ReactComponent as TimeIcon } from 'images/time.svg';
+// import MapComponent from 'components/MapImage/MapImage';
 import { ReactComponent as MapIcon } from 'images/mapIcon.svg';
 import { ReactComponent as PhoneIcon } from 'images/phoneIcon.svg';
 import { ReactComponent as FacebookIcon } from 'images/facebookIcon.svg';
@@ -27,30 +29,47 @@ export const ContactsPage = () => {
       <h1 className={styles.contactsPageTitle}>Контакти</h1>
       <div className={styles.contactsPageContainer}>
          <div className={styles.contactsPageBox }>
-        
+        <div className={styles.mapBox}></div>
        <ul className={styles.contactsList}>
-            <li className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
-              <MapIcon/>
-            <h3>Бровари, Героїв України, 22</h3>
+            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+              <span><MapIcon/></span>
+            <h3>Бровари, </h3>
+            <h3>Героїв України, 22</h3>
             </li>
-            <li className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
-              <PhoneIcon/>
-              <h3> +380 4594 53369</h3>
+            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+              <span><TimeIcon/></span>
+              <h3>Ми працюємо з 9 до 23</h3>
            
             </li>
-            <li className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
-              <InstagramIcon/>
+
+            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+              <span><PhoneIcon/></span>
+              <h3> +38 093 442 30 28</h3>
+           
+            </li>
+           
+            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+              <span><PhoneIcon/></span>
+              <h3> +38 045 945 33 69</h3>
+           
+            </li>
+
+            
+
+            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+              <span><InstagramIcon/></span>
               <h3>Instagram</h3>
             
             </li>
-            <li className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
-              <FacebookIcon/>
-              <h3>Facebook</h3>
+            
+            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+              <span><MailIcon/></span>
+              <h3>Gmail</h3>
             
             </li>
-            <li className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
-              <MailIcon/>
-              <h3>Gmail</h3>
+            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+              <span><FacebookIcon/></span>
+              <h3>Facebook</h3>
             
             </li>
         </ul>

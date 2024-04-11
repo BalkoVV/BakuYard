@@ -1,4 +1,4 @@
-// Salads.jsx
+// Beer.jsx
 
 import React, { useEffect, useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
@@ -8,10 +8,10 @@ import CartContext from "components/CartProvider/CartProvider";
 
 import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
 
-import menuData from "services/dataSalads/salads.json";
+import menuData from "services/dataBeer/beer.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
-export const Salads = () => {
+export const Beer = () => {
   const { addToCart, cartItems } = useContext(CartContext);
   const [menuItems, setMenuItems] = useState([]);
 
@@ -86,7 +86,8 @@ export const Salads = () => {
   );
 };
 
-export default Salads;
+export default Beer;
+
 
 
 

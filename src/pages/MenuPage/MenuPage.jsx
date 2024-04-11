@@ -3,17 +3,19 @@ import React, { useEffect } from "react";
 import { NavLink, Route, Switch, useLocation } from "react-router-dom"; 
 
 import { CartProvider } from "components/CartProvider/CartProvider";
+import { ReactComponent as BasketIcon } from 'images/deliveryDining.svg';
 
 import Basket from "components/Basket/Basket";
 import Pizza from "components/MenuComponents/Pizza/Pizza";
 import BarbequeMenu from "components/MenuComponents/BarbequeMenu/BarbequeMenu";
+import Salads from "components/MenuComponents/Salads/Salads";
+import Beer from "components/MenuComponents/Beer";
 // import Wine from "components/MenuComponents/Wine/Wine";
 
-import { ReactComponent as BasketIcon } from 'images/deliveryDining.svg';
+
 
 import styles from 'pages/MenuPage/MenuPage.module.css';
 
-// import Basket from "components/Basket/Basket";
 
 export const MenuPage = () => {
   const location = useLocation();
@@ -53,7 +55,15 @@ export const MenuPage = () => {
   <li className={`${styles.fadeIn} ${styles.dishCard} ${styles.dishCardPizza}`}>
     <span classname={styles.dishCardBox}> 
     <NavLink to="/menu/pizza" className={styles.dishCardLink}>
-     <h1>Pizza</h1>
+     <h1>Піцца</h1>
+    </NavLink>
+    </span>
+  </li>
+
+  <li className={`${styles.fadeIn} ${styles.dishCard} ${styles.dishCardSalads}`}>
+    <span classname={styles.dishCardBox}> 
+    <NavLink to="/menu/salads" className={styles.dishCardLink}>
+     <h1>Салати</h1>
     </NavLink>
     </span>
   </li>
@@ -69,15 +79,15 @@ export const MenuPage = () => {
   <li className={`${styles.fadeIn} ${styles.dishCard} ${styles.dishCardWine}`}>
     <span classname={styles.dishCardBox}> 
     <NavLink to="/menu/wine" className={styles.dishCardLink}>
-     <h1>Wine</h1>
+     <h1>Вино</h1>
     </NavLink>
     </span>
   </li>  
 
-  <li className={`${styles.fadeIn} ${styles.dishCard} ${styles.dishCardPizza}`}>
+  <li className={`${styles.fadeIn} ${styles.dishCard} ${styles.dishCardBeer}`}>
     <span classname={styles.dishCardBox}> 
-    <NavLink to="/menu/pizza" className={styles.dishCardLink}>
-     <h1>Pizza</h1>
+    <NavLink to="/menu/beer" className={styles.dishCardLink}>
+     <h1>Пиво</h1>
     </NavLink>
     </span>
   </li>
@@ -138,6 +148,8 @@ export const MenuPage = () => {
 
         <Route path="/menu/pizza" component={Pizza} /> 
         <Route path="/menu/barbeque" component={BarbequeMenu} /> 
+        <Route path="/menu/salads" component={Salads} /> 
+        <Route path="/menu/beer" component={Beer} /> 
         {/* <Route path="/menu/wine" component={Wine} />  */}
         <Route path="/menu/basket" component={Basket} /> 
       </Switch>
