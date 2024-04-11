@@ -46,46 +46,61 @@ export const MenuPage = () => {
 
             <ul className={styles.menuDishList}>
             
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                 <h1>Pizza</h1>
-                </NavLink>
+              <li className={`${styles.fadeIn} ${styles.dishItem}`}>
+                <span className={styles.pizzaForImg}>
+                  <NavLink to="/menu/pizza">
+                  <h1>Pizza</h1>
+                  </NavLink>
+                </span>
               </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                <h1>Pizza</h1>
-                </NavLink>
+              <li className={`${styles.fadeIn} ${styles.dishItem}`}>
+                <span className={styles.pizzaForImg}>
+                  <NavLink to="/menu/pizza">
+                  <h1>Pizza</h1>
+                  </NavLink>
+                </span>
               </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                <h1>Pizza</h1>
-                </NavLink>
+              <li className={`${styles.fadeIn} ${styles.dishItem}`}>
+                <span className={styles.pizzaForImg}>
+                  <NavLink to="/menu/pizza">
+                  <h1>Pizza</h1>
+                  </NavLink>
+                </span>
               </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                <h1>Pizza</h1>
-                </NavLink>
+              <li className={`${styles.fadeIn} ${styles.dishItem}`}>
+                <span className={styles.pizzaForImg}>
+                  <NavLink to="/menu/pizza">
+                  <h1>Pizza</h1>
+                  </NavLink>
+                </span>
               </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                <h1>Pizza</h1>
-                </NavLink>
+              <li className={`${styles.fadeIn} ${styles.dishItem}`}>
+                <span className={styles.pizzaForImg}>
+                  <NavLink to="/menu/pizza">
+                  <h1>Pizza</h1>
+                  </NavLink>
+                </span>
               </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                <h1>Pizza</h1>
-                </NavLink>
+              <li className={`${styles.fadeIn} ${styles.dishItem}`}>
+                <span className={styles.pizzaForImg}>
+                  <NavLink to="/menu/pizza">
+                  <h1>Pizza</h1>
+                  </NavLink>
+                </span>
               </li>
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                <h1>Pizza</h1>
-                </NavLink>
+              <li className={`${styles.fadeIn} ${styles.dishItem}`}>
+                <span className={styles.pizzaForImg}>
+                  <NavLink to="/menu/pizza">
+                  <h1>Pizza</h1>
+                  </NavLink>
+                </span>
               </li>
-              
-              <li className={styles.fadeIn}>
-                <NavLink to="/menu/pizza">
-                <h1>Pizza</h1>
-                </NavLink>
+              <li className={`${styles.fadeIn} ${styles.dishItem}`}>
+                <span className={styles.pizzaForImg}>
+                  <NavLink to="/menu/pizza">
+                  <h1>Pizza</h1>
+                  </NavLink>
+                </span>
               </li>
             </ul>  
              </section>
