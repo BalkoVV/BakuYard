@@ -44,8 +44,93 @@ export const MenuPage = () => {
               </span>
              </div>
 
-            <ul className={styles.menuDishList}>
+            <ul className={styles.dishList}>
             
+            {/* <li className={`${styles.fadeIn} ${styles.dishItem}`}>
+              <div className={styles.dishCard}>
+              <NavLink to="/menu/pizza" className={styles.dishCardLink}>
+                <p>Pizza</p>
+              </NavLink>
+             
+              </div>
+
+            </li> */}
+
+  <li className={`${styles.fadeIn} ${styles.dishCard}`}>
+    <span classname={styles.dishCardBox}> 
+    <NavLink to="/menu/pizza" className={styles.dishCardLink}>
+     <h1>Pizza</h1>
+    </NavLink>
+    </span>
+  </li>
+
+  <li className={`${styles.fadeIn} ${styles.dishCard}`}>
+    <span classname={styles.dishCardBox}> 
+    <NavLink to="/menu/pizza" className={styles.dishCardLink}>
+     <h1>Pizza</h1>
+    </NavLink>
+    </span>
+  </li>
+
+  <li className={`${styles.fadeIn} ${styles.dishCard}`}>
+    <span classname={styles.dishCardBox}> 
+    <NavLink to="/menu/pizza" className={styles.dishCardLink}>
+     <h1>Pizza</h1>
+    </NavLink>
+    </span>
+  </li>
+
+  <li className={`${styles.fadeIn} ${styles.dishCard}`}>
+    <span classname={styles.dishCardBox}> 
+    <NavLink to="/menu/pizza" className={styles.dishCardLink}>
+     <h1>Pizza</h1>
+    </NavLink>
+    </span>
+  </li>
+
+  <li className={`${styles.fadeIn} ${styles.dishCard}`}>
+    <span classname={styles.dishCardBox}> 
+    <NavLink to="/menu/pizza" className={styles.dishCardLink}>
+     <h1>Pizza</h1>
+    </NavLink>
+    </span>
+  </li>
+
+  <li className={`${styles.fadeIn} ${styles.dishCard}`}>
+    <span classname={styles.dishCardBox}> 
+    <NavLink to="/menu/pizza" className={styles.dishCardLink}>
+     <h1>Pizza</h1>
+    </NavLink>
+    </span>
+  </li>
+
+  <li className={`${styles.fadeIn} ${styles.dishCard}`}>
+    <span classname={styles.dishCardBox}> 
+    <NavLink to="/menu/pizza" className={styles.dishCardLink}>
+     <h1>Pizza</h1>
+    </NavLink>
+    </span>
+  </li>
+
+  <li className={`${styles.fadeIn} ${styles.dishCard}`}>
+    <span classname={styles.dishCardBox}> 
+    <NavLink to="/menu/pizza" className={styles.dishCardLink}>
+     <h1>Pizza</h1>
+    </NavLink>
+    </span>
+  </li>
+
+
+              {/* <li className={`${styles.fadeIn} ${styles.dishItem}`}>
+                  <div className={styles.pizzaNavLink}>
+                   <span className={styles.dishNavLinkCover}>
+                    <NavLink to="/menu/pizza" className={styles.dishNavLink}>
+                     <h1>Pizza</h1>
+                    </NavLink>
+                   </span>
+                  </div>
+              </li>
+
               <li className={`${styles.fadeIn} ${styles.dishItem}`}>
                 <span className={styles.pizzaForImg}>
                   <NavLink to="/menu/pizza">
@@ -94,14 +179,7 @@ export const MenuPage = () => {
                   <h1>Pizza</h1>
                   </NavLink>
                 </span>
-              </li>
-              <li className={`${styles.fadeIn} ${styles.dishItem}`}>
-                <span className={styles.pizzaForImg}>
-                  <NavLink to="/menu/pizza">
-                  <h1>Pizza</h1>
-                  </NavLink>
-                </span>
-              </li>
+              </li> */}
             </ul>  
              </section>
             

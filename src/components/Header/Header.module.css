@@ -2,6 +2,8 @@
 
 .headerComponent {
   background: linear-gradient(0deg, #181818, black);
+  background: linear-gradient(0deg, black, #181818);
+  border-bottom: 1px solid var(--non-active-color);
   z-index: 10;
   height: 55px;
   width: 100%;
@@ -52,7 +54,7 @@
 
 .burgeLinesIcon {
   position: absolute;
-  right: 20px;
+  right: 33px;
   top: 15px;
   fill: #7b7a7a;
    
