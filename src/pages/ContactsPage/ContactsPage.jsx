@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 
 import { ReactComponent as TimeIcon } from 'images/time.svg';
-// import MapComponent from 'components/MapImage/MapImage';
 import { ReactComponent as MapIcon } from 'images/mapIcon.svg';
 import { ReactComponent as PhoneIcon } from 'images/phoneIcon.svg';
 import { ReactComponent as FacebookIcon } from 'images/facebookIcon.svg';

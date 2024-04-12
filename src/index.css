@@ -56,8 +56,7 @@ body {
   font-family: 'PrimaryFont';
   font-weight: 100;
   background: black;
-  color: #525151;
-  /* color: var(--non-active-color); */
+  color: #6d6d6d;
   font-size: 10px;
 }
 

@@ -59,10 +59,10 @@ export const Header = () => {
             </NavLink>
 
          </nav>
-         <ul className={styles.headerInfo}>
-          <span>Бровари, Героїв України 22</span>
-          <span>Ми працюємо з 9:00 до 23:00</span>
-         </ul>
+            <ul className={styles.headerInfo}>
+              <li>м.Бровари, Героїв України 22</li>
+              <li>Ми працюємо з 9:00 до 23:00</li>
+            </ul>
          </ul>
        </div>
       </div>

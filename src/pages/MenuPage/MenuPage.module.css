@@ -3,9 +3,6 @@
    transition: opacity 1.5s ease-in-out; 
 }
 
-/* .menuPage {
-   padding-top: 55px;
-} */
 
 .menuPageContainer {
    width: 100%;
@@ -13,9 +10,6 @@
    background: #000000;
    overflow: hidden;
 }
-
-/* .menuPageBox {
-} */
 
 .menuTitle {
    display: flex;
@@ -40,38 +34,22 @@
    padding: 0 20px;
    margin-bottom: 50px;
    margin-top: 10px;
+
+
+   @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+   }; 
+
+   @media screen and (min-width: 1200px) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+   }; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .dishCard {
    height: 150px;
@@ -104,12 +82,6 @@
    background-image: url("images/beer.jpeg");
 }
 
-/* .dishCard:hover {
-   border: 1px solid #fa0000;
-} */
-
-/* .dishCardBox {
-} */
 
 .dishCardLink {
    position: relative;
@@ -138,34 +110,6 @@
 }
 
 
-
-
-  /* .dishItem {
-
- 
-
- width: 100%;
-   height: 100%;
-   backdrop-filter: blur(20px);
-} */
-
-/* .dishNavLinkCover {
- display: flex;
- width: 100%;
- height: 100%;
- background-color: #00000082;
-} */
-
-/* .pizzaNavLink {
-   display: block;
-   width: 100%;
-   height: 100%;
-   overflow: hidden;
-   margin-left: auto;
-   margin-right: auto;
-   background: url("images/pizza.png");
-   background-size: cover;
-} */
 .menuBasketLink {
    position: absolute;
    right: 30px;
@@ -179,25 +123,6 @@
 
 
 
-/* .dishNavLink {
-   display: flex;
-   height: 100%;
-   width: 100%;
-} */
-
- /* .dishItem {
-   height: 150px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-} */
-
-/* .dishItem h1 {
-  
-   color: #797979;
-  
-   background-color: rgba(190, 20, 20, 0.8);
-} */
 
 
 

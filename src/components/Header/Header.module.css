@@ -15,7 +15,8 @@
    position: relative;
  
    @media screen and (min-width: 768px) {
-     height: 60px;
+    
+     /* background-color: #fff; */
    };
  
    @media screen and (min-width: 1200px) {
@@ -27,6 +28,14 @@
   display: flex;
   padding: 0 30px;
   justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+     
+  }
 } 
 
 .headerList li {
@@ -37,6 +46,9 @@
 .headerNav {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 100px;
 
   @media screen and (max-width: 767.9px) {
     display: none;
@@ -45,11 +57,24 @@
  }
 
 .headerInfo {
-   display: grid;
+   display: flex;
+   flex-direction:column;
+   /* justify-content: end; */
+   width: 100%;
+
 
    @media screen and (max-width: 767.9px) {
      display: none; 
    }
+}
+
+.headerInfo li {
+ display: flex;
+ width: 100%;
+ flex-wrap: nowrap;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
 }
 
 .burgeLinesIcon {
