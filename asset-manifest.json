@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.fa81bb0e.css",
-    "main.js": "/BakuYard/static/js/main.3d6ff4ad.js",
+    "main.css": "/BakuYard/static/css/main.e4a8b00c.css",
+    "main.js": "/BakuYard/static/js/main.b0e4f897.js",
     "static/media/pizza.png": "/BakuYard/static/media/pizza.db53df60a8345697dc75.png",
     "static/media/mapImage.png": "/BakuYard/static/media/mapImage.c375c8d8f3db809bc951.png",
     "static/media/bg233.jpg": "/BakuYard/static/media/bg233.02d370f7a147f08b0ed1.jpg",
@@ -11,22 +11,22 @@
     "static/media/beer.jpeg": "/BakuYard/static/media/beer.f5364fc46ce0b87a5d93.jpeg",
     "static/media/salads.avif": "/BakuYard/static/media/salads.5cbdce91894c9f4e79e1.avif",
     "static/media/yardBakuLogo.svg": "/BakuYard/static/media/yardBakuLogo.580e3c15542c02f3b9aea504e1974b5f.svg",
-    "static/media/phoneIcon.svg": "/BakuYard/static/media/phoneIcon.8eef2df4d5bce2c20578a27dbf853c10.svg",
-    "static/media/instagramIcon.svg": "/BakuYard/static/media/instagramIcon.a98a6ee42b4dcb84ba5a8301d93331a9.svg",
-    "static/media/mapIcon.svg": "/BakuYard/static/media/mapIcon.5c0e639b5ff75f95d9de1d19d5dca926.svg",
+    "static/media/phoneIcon.svg": "/BakuYard/static/media/phoneIcon.5b0b6d148b74e034a1438520f314e98d.svg",
+    "static/media/instagramIcon.svg": "/BakuYard/static/media/instagramIcon.e6cf2db7e801e287d2cc17c54c62bf7d.svg",
+    "static/media/mapIcon.svg": "/BakuYard/static/media/mapIcon.c1b723a72f94ed7dccac1acb8de974cc.svg",
     "index.html": "/BakuYard/index.html",
-    "static/media/facebookIcon.svg": "/BakuYard/static/media/facebookIcon.80457982a3905749d16dca0b22df8dc4.svg",
-    "static/media/mailIcon.svg": "/BakuYard/static/media/mailIcon.869886ebd451d156ee81a27bb5bc1ff9.svg",
+    "static/media/facebookIcon.svg": "/BakuYard/static/media/facebookIcon.09ae51321fc397b2fe594bd3b8eb01ee.svg",
+    "static/media/mailIcon.svg": "/BakuYard/static/media/mailIcon.04d709571a6c50ee13d9f563e756939b.svg",
     "static/media/deliveryDining.svg": "/BakuYard/static/media/deliveryDining.c0dd7a4e92c2691da04ac498b0871bce.svg",
-    "static/media/time.svg": "/BakuYard/static/media/time.727f66dbfaa33b65f7dfce8217b122a0.svg",
+    "static/media/time.svg": "/BakuYard/static/media/time.a6cc1aa4baed244b4ec0187808a937fd.svg",
     "static/media/undo.svg": "/BakuYard/static/media/undo.e0a771d3e28f57725fc483263beb4cf5.svg",
     "static/media/mobileSwitch.svg": "/BakuYard/static/media/mobileSwitch.092159f2b6272484816a0da0e6623410.svg",
     "static/media/toMenu.svg": "/BakuYard/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.fa81bb0e.css.map": "/BakuYard/static/css/main.fa81bb0e.css.map",
-    "main.3d6ff4ad.js.map": "/BakuYard/static/js/main.3d6ff4ad.js.map"
+    "main.e4a8b00c.css.map": "/BakuYard/static/css/main.e4a8b00c.css.map",
+    "main.b0e4f897.js.map": "/BakuYard/static/js/main.b0e4f897.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa81bb0e.css",
-    "static/js/main.3d6ff4ad.js"
+    "static/css/main.e4a8b00c.css",
+    "static/js/main.b0e4f897.js"
   ]
 }
