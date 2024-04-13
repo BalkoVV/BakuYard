@@ -67,7 +67,7 @@
    
    height: 150px;
    width: 100%;
-   border: 1px solid rgb(111, 80, 0);
+   border: 1px solid #6f5000;
    border-radius: 9px;
    overflow: hidden;
    margin-left: auto;
@@ -112,7 +112,8 @@
    display: block;
    height: 100%;
    width: 100%;
-   background-color: #0e0e0e33;
+   background-color: #0e0e0e49;
+   background: linear-gradient(40deg, #5a410160, #0e0e0e1e, #5a410160);
 }
 
 .dishCardLink h1 {
@@ -151,7 +152,7 @@
 }
 
 .basketIcon {
-   fill: #7b7a7a;
+   fill: #6f5000;
 
    /* @media screen and (min-width: 768px) {
     

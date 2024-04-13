@@ -61,7 +61,7 @@ export const MenuPage = () => {
   </li>
 
   <li className={`${styles.fadeIn} ${styles.dishCard} ${styles.dishCardSalads}`}>
-    <div className={styles.cardDecorative}></div>
+    
     <span classname={styles.dishCardBox}> 
     <NavLink to="/menu/salads" className={styles.dishCardLink}>
      <h1>Салати</h1>

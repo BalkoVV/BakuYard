@@ -1,8 +1,8 @@
 .toMenuLink {
       position: absolute;
-      right: 20px;
+      right: 30px;
       top: 75px;
-      fill: #7b7a7a;
+      fill: #6f5000;
 
       @media screen and (min-width: 768px) {
          top: 105px;
@@ -23,7 +23,7 @@
    font-size: 13px;
    font-weight: 900;
    margin: 0;
-   color: #7b7a7a;
+   color: #c7c7c7;
 
    @media screen and (min-width: 768px) {
       height: 75px;
