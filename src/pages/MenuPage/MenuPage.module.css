@@ -19,7 +19,7 @@
    font-size: 13px;
    font-weight: 900;
    margin: 0;
-   color: #7b7a7a;
+   color: #7b7b7b;
 
    @media screen and (min-width: 768px) {
       height: 75px;
@@ -113,7 +113,7 @@
    height: 100%;
    width: 100%;
    background-color: #0e0e0e49;
-   background: linear-gradient(40deg, #5a410160, #0e0e0e1e, #5a410160);
+   background: linear-gradient(40deg, #2f220060, #0e0e0e1e, #2f220060);
 }
 
 .dishCardLink h1 {

@@ -4,13 +4,13 @@
   padding: 20px 0px;
   justify-content: center;
   background: linear-gradient(0deg, black, #181818);
-  box-shadow: 0px -5px 120px 30px #3e2d0079;
+  box-shadow: 0px -5px 120px 30px #231a0034;
   /* border-top: 1px solid rgb(231, 225, 225); */
 }
 
 .borderDecorative {
   position: absolute;
-  bottom: 160px;
+  bottom: 162px;
   display: flex;
   z-index: 100;
   width: 100%;
