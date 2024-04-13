@@ -11,6 +11,8 @@
   width: 100%;
   height: 55px;
   background: linear-gradient(0deg, #181818, black);
+  background: linear-gradient(0deg,#131313, black);
+
   border-bottom: 1px solid #525151;
   opacity: 0;
   transition: transform .4s ease-in-out, opacity .6s ;
@@ -24,8 +26,8 @@
   z-index: 100;
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, #614600, goldenrod, #614600, goldenrod, #614600, goldenrod,#614600);
-  background: linear-gradient(90deg, #503901, goldenrod, #503901);
+  background: linear-gradient(90deg, #2f2f2e, #898585, #2f2f2e);
+
 
 }
 

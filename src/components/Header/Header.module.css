@@ -2,11 +2,13 @@
 
 .headerComponent {
   background: linear-gradient(0deg, black, #2a1e0164);
+  background: linear-gradient(0deg,#131313, black);
+
   border-bottom: 1px solid #6b6b6b;
   z-index: 10;
-  -webkit-box-shadow: 0px 30px 32px 30px #231a0034;
+  /* -webkit-box-shadow: 0px 30px 32px 30px #231a0034;
 -moz-box-shadow: 0px 30px 32px 30px #231a0034;
-box-shadow: 0px 10px 120px 30px #231a0034;
+box-shadow: 0px 10px 120px 30px #231a0034; */
 }
 
 .borderDecorative {
@@ -15,7 +17,7 @@ box-shadow: 0px 10px 120px 30px #231a0034;
   display: flex;
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, #503901, goldenrod, #503901);
+  background: linear-gradient(90deg, #2f2f2e, #898585, #2f2f2e);
   /* background: linear-gradient(90deg, #614600, goldenrod, #614600, goldenrod, #614600, goldenrod,#614600); */
 
   @media screen and (min-width: 768px) {
@@ -58,12 +60,14 @@ box-shadow: 0px 10px 120px 30px #231a0034;
   align-items: center;
 } 
 
+
 .headerNav {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-around;
   font-size: 11px;
+  
 
   @media screen and (min-width: 1200px) {
     font-size: 15px;
@@ -74,6 +78,14 @@ box-shadow: 0px 10px 120px 30px #231a0034;
   };
 
  }
+
+ .headerNav a {
+  transition: .5s;
+}
+ .headerNav a:hover  {
+ color: #6f5000;
+ transition: .5s;
+}
 
 .headerInfo {
    display: grid;
@@ -122,16 +134,18 @@ box-shadow: 0px 10px 120px 30px #231a0034;
  }
 
 .activeLink {
-   color: #6f5000; 
+  position: relative;
+  color: #6f5000; 
 }
 
 .activeLink::after {
   position: relative;
-  top: 20px;
+  top: 3px;
   content: "";
   display: flex;
   width: 100%;
-  height: 1px;
+  height: 2px;
+  border-radius:  0 0 5px 5px;
   background-color: #6f5000; 
 }
 

@@ -67,7 +67,7 @@ export const Header = () => {
             <ul className={styles.headerInfo}>
               <li>
                 <MapIcon className={styles.headerInfoIcon}/>
-               <h3> м.Бровари, Героїв України 22</h3>
+               <h3> м.Бровари, Героїв України, 22</h3>
                 </li>
               <li>
                 <TimeIcon className={styles.headerInfoIcon}/>

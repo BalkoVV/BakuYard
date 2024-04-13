@@ -39,15 +39,19 @@ export const ContactsPage = () => {
 
                 <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
                   <span><MapIcon/></span>
-                  <h3>Бровари,Героїв України, 22 </h3>
+                  <h3>Бровари, Героїв України, 22 </h3>
                 </li>
 
-                <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
-                  <span><TimeIcon/></span>
-                  <h3>Ми працюємо з 9 до 23</h3>
-                </li>
+               
 
-             
+
+                
+                
+             <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+                  <span><PhoneIcon/></span>
+                  <h3> +38 068 239 38 37</h3>
+                </li>
+              
 
                 <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
                   <span><PhoneIcon/></span>
@@ -59,7 +63,13 @@ export const ContactsPage = () => {
                   <h3> +38 045 945 33 69</h3>
                 </li>
               </ul>
+
               <ul className={styles.contactsList}>
+              <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+                  <span><TimeIcon/></span>
+                  <h3>Ми працюємо з 9 до 23</h3>
+                </li>
+                
               <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
                   <span><MailIcon/></span>
                   <h3>Надішліть нам eMail</h3>

@@ -67,12 +67,14 @@
    
    height: 150px;
    width: 100%;
-   border: 1px solid #6f5000;
+   border: 1px solid #2f2f2e;
    border-radius: 9px;
    overflow: hidden;
    margin-left: auto;
    margin-right: auto;
    background-size: cover;
+   transition: .7s;
+
   
 
    @media screen and (min-width: 768px) {
@@ -84,10 +86,17 @@
    }; 
 }
 
+.dishCard:hover {
+   /* scale: 1.005; */
+ border: 1px solid goldenrod;
+ transition: .3s;
+
+}
 
 
 .dishCardPizza {
    background-image: url("images/pizza.png");
+   
 }
 
 .dishCardWine {
@@ -105,6 +114,7 @@
 .dishCardBeer {
    background-image: url("images/beer.jpeg");
 }
+
 
 
 .dishCardLink {

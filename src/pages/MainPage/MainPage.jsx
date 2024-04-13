@@ -25,9 +25,12 @@ const MainPage = () => {
           тут аромати кухні розповідають власну історію. 
           У нас кожен стіл – це святковий захід, 
           а кожна страва – це шедевр майстра.
-          Затишні зали, приватні бесідки та сонячна тераса чекають,  
-          щоб стати свідками вашого найважливішого свята.
+          
         </p>
+
+        <p className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
+          Затишні зали, приватні бесідки та сонячна тераса чекають,  
+          щоб стати свідками вашого найважливішого свята.</p>
        
       <ul className={styles.features}>
       <li className={styles.fadeOut}>
@@ -46,11 +49,18 @@ const MainPage = () => {
     
       
       
-        <p className={`${styles.mainBottomParagraph} ${styles.fadeOut}`}>Від палячих шашликів до ароматних вегетаріанських страв 
+        <p className={`${styles.mainBottomParagraph} ${styles.fadeOut}`}>
+          Від палячих шашликів до ароматних вегетаріанських страв 
           – у нас є щось для кожного гурмана.
-          "Бакінський Двір" – де смак об'єднує серця,  
-          а атмосфера творить неповторний вечір, 
-          наповнений враженнями та веселим настроєм. 
+
+          
+          </p>
+
+          <p className={`${styles.mainBottomParagraph} ${styles.fadeOut}`}>
+
+          "Бакінський Двір" – місце де смак об'єднує серця,  
+          а атмосфера творить неповторний вечір.
+          
           </p>
       
       <ul className={styles.features2}>
@@ -61,19 +71,47 @@ const MainPage = () => {
             <h1>Корпоративи</h1>
         </li>
         <li className={styles.fadeOut}>
-            <h1>Сімейна вечеря</h1>
-        </li>  
-        <li className={styles.fadeOut}>
-            <h1>Бізнес ланчі</h1>
+            <h1>Весілля</h1>
         </li>
         <li className={styles.fadeOut}>
             <h1>Дні народження</h1>
         </li>
         <li className={styles.fadeOut}>
+            <h1>Сімейна вечеря</h1>
+        </li>  
+        <li className={styles.fadeOut}>
+            <h1>Бізнес ланч</h1>
+        </li>
+        
+        
+      </ul>
+
+      <p className={`${styles.maindeliveryParagraph} ${styles.fadeOut}`}>
+      Будьте завжди підключені. Наш безкоштовний Wi-Fi 
+      дозволяє вам залишатися на зв'язку або працювати в 
+      Інтернеті у будь-який момент.
+      </p>
+      
+      <p className={`${styles.maindeliveryParagraph} ${styles.fadeOut}`}>
+        Не переймайтеся за парковку. 
+        Ми надаємо зручне паркувальне місце, 
+        щоб зробити ваше перебування у нас ще комфортнішим.
+      </p>
+     
+      <ul className={styles.features2}>
+        <li className={styles.fadeOut}>
+            <h1>Wi-Fi Free</h1>
+        </li>
+        <li className={styles.fadeOut}>
+            <h1>Парковка</h1>
+        </li>
+        <li className={styles.fadeOut}>
             <h1>Караоке</h1>
         </li>
+        
+        
+        
       </ul>
-     
   
       <p className={`${styles.maindeliveryParagraph} ${styles.fadeOut}`}>
         В нас працює доставка по місту

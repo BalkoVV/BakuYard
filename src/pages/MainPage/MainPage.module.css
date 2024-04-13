@@ -27,6 +27,9 @@ padding: 40px 40px;
 font-size: 15px;
 }
 
+
+
+
 /* 
 .heroBox {
   position: relative;
@@ -94,7 +97,7 @@ font-size: 15px;
     display: flex;
     justify-content: center;
     color: var(--main-text-color);
-    color: #550012;
+    color: #6f5000;
     /* font-size: 14px; */
   }
 
@@ -102,11 +105,23 @@ font-size: 15px;
     display: flex;
     justify-content: center;
     color: var(--main-text-color);
-    color: #550012;
-    border: 1px solid #797979;
+    color: #6f5000;
+    border: 1px solid #2f2f2e;
     border-radius: 15px;
     /* font-size: 14px; */
   }
+
+  /* Стилі для першого та третього <li> елементів */
+.features li:nth-child(odd) {
+  background-color: #f0f0f02b;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Стилі для другого та четвертого <li> елементів */
+.features li:nth-child(even) {
+  background-color: #cccccc35;
+  border-radius: 0 5px 5px 0;
+}
 
   .features2 h1 {
    padding: 20px 0;
