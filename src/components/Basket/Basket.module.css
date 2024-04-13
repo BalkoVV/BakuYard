@@ -69,7 +69,7 @@
    position: absolute;
    right: 30px;
    top: 75px;
-   fill: #7b7a7a;
+   fill: #6f5000;
 
    @media screen and (min-width: 768px) {
       top: 105px;

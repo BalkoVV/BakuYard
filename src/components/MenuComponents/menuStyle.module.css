@@ -2,7 +2,7 @@
       position: absolute;
       right: 30px;
       top: 75px;
-      fill: #6f5000;
+      fill: #7b7b7b;
 
       @media screen and (min-width: 768px) {
          top: 105px;
@@ -23,7 +23,7 @@
    font-size: 13px;
    font-weight: 900;
    margin: 0;
-   color: #c7c7c7;
+   color: #7b7b7b;
 
    @media screen and (min-width: 768px) {
       height: 75px;
