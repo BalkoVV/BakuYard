@@ -12,10 +12,21 @@
   height: 55px;
   background: linear-gradient(0deg, #181818, black);
   border-bottom: 1px solid #525151;
-  
   opacity: 0;
   transition: transform .4s ease-in-out, opacity .6s ;
   transform: translateX(-100%);
+}
+
+.borderDecorative {
+  position: absolute;
+  top: 55px;
+  display: flex;
+  z-index: 100;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #614600, goldenrod, #614600, goldenrod, #614600, goldenrod,#614600);
+  background: linear-gradient(90deg, #503901, goldenrod, #503901);
+
 }
 
 .isOpen {
@@ -33,9 +44,9 @@
   justify-content: space-around;
 }
 
-.burgerMenu ul li {
+/* .burgerMenu ul li {
   padding: 20px;
-}
+} */
 
 .burgerMenu ul li a{
   padding: 20px;

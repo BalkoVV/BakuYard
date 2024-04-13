@@ -26,56 +26,59 @@ export const ContactsPage = () => {
  return (
    <div className={styles.contactsPage}>
       <h1 className={styles.contactsPageTitle}>Контакти</h1>
-      <div className={styles.contactsPageContainer}>
+
+      <div className={`${styles.mapBox} ${styles.fadeOut}`}></div>
+
+        <div className={styles.contactsPageContainer}>
+
          <div className={styles.contactsPageBox }>
-        <div className={`${styles.mapBox} ${styles.fadeOut}`}></div>
-       <ul className={`${styles.contactsList} ${styles.fadeOut}`}>
-            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
-              <span><MapIcon/></span>
-            <h3>Бровари, </h3>
-            <h3>Героїв України, 22</h3>
-            </li>
-            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
-              <span><TimeIcon/></span>
-              <h3>Ми працюємо з 9 до 23</h3>
-           
-            </li>
+    
+            <div className={styles.contactsListBox}>
 
-            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
-              <span><PhoneIcon/></span>
-              <h3> +38 093 442 30 28</h3>
-           
-            </li>
-           
-            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
-              <span><PhoneIcon/></span>
-              <h3> +38 045 945 33 69</h3>
-           
-            </li>
+            <ul className={styles.contactsList}>
 
-            
+                <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+                  <span><MapIcon/></span>
+                  <h3>Бровари,Героїв України, 22 </h3>
+                </li>
 
-            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
-              <span><InstagramIcon/></span>
-              <h3>Instagram</h3>
-            
-            </li>
-            
-            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
-              <span><MailIcon/></span>
-              <h3>Gmail</h3>
-            
-            </li>
-            <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
-              <span><FacebookIcon/></span>
-              <h3>Facebook</h3>
-            
-            </li>
-        </ul>
-         </div>
-      
+                <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+                  <span><TimeIcon/></span>
+                  <h3>Ми працюємо з 9 до 23</h3>
+                </li>
+
+             
+
+                <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+                  <span><PhoneIcon/></span>
+                  <h3> +38 093 442 30 28</h3>
+                </li>
+
+                <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+                  <span><PhoneIcon/></span>
+                  <h3> +38 045 945 33 69</h3>
+                </li>
+              </ul>
+              <ul className={styles.contactsList}>
+              <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+                  <span><MailIcon/></span>
+                  <h3>Надішліть нам eMail</h3>
+                </li>
+
+                <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+                  <span><InstagramIcon/></span>
+                  <h3>Ми в Instagram</h3>
+                </li>
+
+                <li className={`${styles.contactsListItem} ${styles.fadeOut}`}>
+                  <span><FacebookIcon/></span>
+                  <h3>Ми у Facebook</h3>
+                </li>
+              </ul>
+        </div>
+      </div>
     </div>
-    </div>
+ </div>
    )
 };
 

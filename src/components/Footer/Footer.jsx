@@ -12,9 +12,10 @@ import { ReactComponent as InstagramIcon } from 'images/instagramIcon.svg';
 export const Footer = () => {
   return (
     <div  className={styles.footer}>
+      <div className={styles.borderDecorative}></div>
       <div className={styles.footerContainer}>
       <span className={styles.logoFooter}>
-      <Logo />
+      <Logo className={styles.footerLogo}/>
       </span>
        
        <ul className={styles.footerSocial}>
@@ -29,7 +30,7 @@ export const Footer = () => {
         </li>
         
        </ul>
-       <h5  className={styles.footerAllRights}>@Всі права захищені</h5>
+       <h5 className={styles.footerAllRights}>@Всі права захищені</h5>
       </div>
         
     </div>

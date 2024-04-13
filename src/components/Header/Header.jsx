@@ -4,6 +4,8 @@ import { NavLink, useHistory } from 'react-router-dom';
 
 import { Logo } from 'components/Logo/Logo';
 import { ReactComponent as MenuIcon } from 'images/mobileSwitch.svg';
+import { ReactComponent as TimeIcon } from 'images/time.svg';
+import { ReactComponent as MapIcon } from 'images/mapIcon.svg';
 
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 import styles from './Header.module.css';
@@ -18,12 +20,15 @@ export const Header = () => {
     });
   }, [history]);
 
+
   const toggleMenu = () => {
     setIsMenuOpen(prevIsMenuOpen => !prevIsMenuOpen);
   };
 
   return (
     <div className={styles.headerComponent}>
+
+      <div className={styles.borderDecorative}></div>
 
       <div className={styles.headerContainer}>
 
@@ -60,8 +65,14 @@ export const Header = () => {
 
          </nav>
             <ul className={styles.headerInfo}>
-              <li>м.Бровари, Героїв України 22</li>
-              <li>Ми працюємо з 9:00 до 23:00</li>
+              <li>
+                <MapIcon className={styles.headerInfoIcon}/>
+               <h3> м.Бровари, Героїв України 22</h3>
+                </li>
+              <li>
+                <TimeIcon className={styles.headerInfoIcon}/>
+                <h3>Ми працюємо з 9:00 до 23:00</h3>
+                </li>
             </ul>
          </ul>
        </div>

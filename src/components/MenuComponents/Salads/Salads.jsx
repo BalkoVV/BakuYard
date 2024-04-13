@@ -39,7 +39,7 @@ export const Salads = () => {
 
   return (
     <div className={styles.dishPage}>
-      <h1 className={styles.dishTitle}>Pizza</h1>  
+      <h1 className={styles.dishTitle}>Салати</h1>  
       
       <div className={styles.dishPageContainer}>
 

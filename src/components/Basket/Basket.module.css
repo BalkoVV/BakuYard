@@ -29,6 +29,16 @@
    font-weight: 900;
    margin: 0;
    color: #7b7a7a;
+
+   @media screen and (min-width: 768px) {
+      height: 75px;
+      font-size: 13px;
+   };
+   @media screen and (min-width: 1200px) {
+      height: 95px;
+      
+      font-size: 15px;
+   };
    
 }
 
@@ -41,7 +51,6 @@
 .basketList {
    display: grid;
    grid-template-columns: repeat(1, 1fr);
-   /* grid-column-gap: 20px; */
    grid-row-gap: 20px;
 }
 
@@ -49,7 +58,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-  border-bottom: 1px solid var(--non-active-color);
+   border-bottom: 1px solid var(--non-active-color);
 }
 .fades {
    opacity: 0; /* Початковий стан непрозорості */
@@ -61,6 +70,15 @@
    right: 30px;
    top: 75px;
    fill: #7b7a7a;
+
+   @media screen and (min-width: 768px) {
+      top: 105px;
+      right: 45px;
+   };
+   @media screen and (min-width: 1200px) {
+     top: 135px;
+     right: 65px;
+   };
 }
 
 .basketInputBox {
