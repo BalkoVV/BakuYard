@@ -7,9 +7,12 @@ import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
 
 import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
+import { ReactComponent as BasketIcon } from 'images/deliveryDining.svg';
+
 
 import menuData from "services/dataBarbeque/barbeque.json";
-import styles from 'components/MenuComponents/menuStyle.module.css';
+
+import styles from 'components/MenuComponents/BarbequeMenu/BarbequeMenu.module.css';
 
 export const BarbequeMenu = () => {
   const { addToCart, cartItems } = useContext(CartContext);
@@ -17,6 +20,10 @@ export const BarbequeMenu = () => {
 
   useEffect(() => {
     setMenuItems(menuData);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
   }, []);
 
   useEffect(() => {
@@ -45,30 +52,39 @@ export const BarbequeMenu = () => {
 
         <div className={styles.dishPageBox}>
 
-          <NavLink to="/menu" className={styles.toMenuLink}>
-            <ToMenuIcon/>
-          </NavLink>
+          <span className={styles.toMenuLink}>
+            <NavLink to="/menu">
+              <ToMenuIcon className={styles.toMenuIcon}/>
+            </NavLink>
+          </span>
+
+          <span className={styles.menuBasketLink}>
+            <NavLink to="/menu/basket">
+              <BasketIcon className={styles.basketIcon}/>
+            </NavLink>
+          </span>
 
           <table className={styles.fades}>
 
             <thead>
               <tr>
-                <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th>
+                {/* <th>ID</th> */}
+                {/* <th>Назва</th> */}
+                {/* <th>Об'єм</th> */}
+                {/* <th>Ціна</th> */}
               </tr>
             </thead>
 
             <tbody  className={`${styles.fadeIn}`}>
               {menuItems.map((item) => (
-                <tr key={item.id}>
-                  <td>{item.id}</td>
+                <tr key={item.id} className={styles.tableBarbeque}>
+                  {/* <td>{item.id}</td> */}
                   <td>{item.назва}</td>
                   <td>{item.обєм}</td>
                   <td>{item.ціна}</td>
                   <td>
                     <AddButton
+                      className={styles.addsButton}
                       onClick={() => addToCart(item)}
                       alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
                       updateButtonState={() => updateButtonState(item.id)}

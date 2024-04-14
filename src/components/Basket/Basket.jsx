@@ -119,9 +119,6 @@ export const Basket = () => {
       <div className={styles.basketContainer}>
       <h1 className={styles.basketTitle}>Замовлення</h1>
         <div  className={styles.basketBox}>
-
-          
-
          
             <NavLink to="/menu" className={styles.toMenuLink}>
               <ToMenuIcon/>
@@ -129,16 +126,46 @@ export const Basket = () => {
         
           <ul className={styles.basketList}>
             {cartItems.map((item) => (
-              <li key={item.id}>
-                {item.назва} - {item.обєм} - {item.ціна} -
-                <button onClick={() => increaseQuantity(item.id)}>+</button> - {item.quantity} шт. -
-                <button onClick={() => decreaseQuantity(item.id)}>-</button>
+
+              <li className={styles.basketListItem} key={item.id}>
+
+                <span className={styles.basketListItemName}>
+                  {item.назва}
+                </span>
+                {/* {item.обєм}  */}
+                <span className={styles.basketListItemPrice}>
+                  {item.ціна}
+                </span>
+
+               
+               <span className={styles.basketListItemCounter}>
+               <button className={styles.basketListItemDecrease} onClick={() => decreaseQuantity(item.id)}>
+                  -
+                </button>
+
+                <span className={styles.basketListItemQuantity}>
+                  {item.quantity}
+                </span>
+
+                <button className={styles.basketListItemIncrease} onClick={() => increaseQuantity(item.id)}>
+                  +
+                </button>
+                
+               </span>
               </li>
             ))}
           </ul>
 
-          <p className={styles.fades}>Кількість позицій: {totalItems}</p>
-          <p className={styles.fades}>Загальна сума: {totalPrice}</p>
+          <div className={styles.basketOrderInfo}>
+            <p className={styles.fades}>
+              <span>Кількість позицій: </span>
+              <span className={styles.basketTotalQuantity}>{totalItems}</span>
+            </p>
+            <p className={styles.fades}>
+              <span>Загальна сума:</span>
+              <span className={styles.basketTotalPrice}>{totalPrice}</span>
+            </p>
+          </div>
 
         <div className={styles.basketInputBox}>
         <input  className={`${styles.fades} ${styles.basketInput}`} type="text" placeholder="Ім'я" value={name} onChange={handleNameChange} />

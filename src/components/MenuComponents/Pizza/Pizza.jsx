@@ -20,6 +20,10 @@ export const Pizza = () => {
   }, []);
 
   useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+  }, []);
+
+  useEffect(() => {
     const contentElements = document.querySelectorAll(`.${styles.fades}`);
     contentElements.forEach((element, index) => {
       setTimeout(() => {

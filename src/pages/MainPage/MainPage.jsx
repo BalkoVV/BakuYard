@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import styles from 'pages/MainPage/MainPage.module.css';
+
+
+
 const MainPage = () => {
 
   useEffect(() => {
@@ -20,106 +23,95 @@ const MainPage = () => {
       </div>
 
         <p className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
-          Бакінський Двір
-          – місце де традиції сходяться з сучаснiстю, 
-          тут аромати кухні розповідають власну історію. 
+          "Бакінський Двір" – місце де смак об'єднує серця,  
+          а атмосфера творить неповторний вечір.
+          Тут аромати кухні розповідають власну історію. 
           У нас кожен стіл – це святковий захід, 
-          а кожна страва – це шедевр майстра.
+          а кожна страва – це шедевр від майстра.
           
         </p>
 
-        <p className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
-          Затишні зали, приватні бесідки та сонячна тераса чекають,  
-          щоб стати свідками вашого найважливішого свята.</p>
+        <ul className={styles.features}>
+          <li className={styles.fadeOut}>
+              <h3>Банкетна зала</h3>
+          </li>
+          <li className={styles.fadeOut}>
+              <h3>Окремі бесідки</h3>
+          </li>
+          <li className={styles.fadeOut}>
+              <h3>Літня тераса</h3>
+          </li>
+          <li className={styles.fadeOut}>
+              <h3>Танцмайданчик</h3>
+          </li>
+        </ul>
+
+          <p className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
+            Затишні зали, приватні бесідки та сонячна тераса чекають,  
+            щоб стати свідками вашого свята.
+          </p>
        
-      <ul className={styles.features}>
-      <li className={styles.fadeOut}>
-          <h1>Банкетна зала</h1>
-      </li>
-      <li className={styles.fadeOut}>
-          <h1>Окремі бесідки</h1>
-      </li>
-      <li className={styles.fadeOut}>
-          <h1>Літня тераса</h1>
-      </li>
-      <li className={styles.fadeOut}>
-          <h1>Танцмайданчик</h1>
-      </li>
-    </ul>
+          <ul className={styles.features2}>
+          <li className={styles.fadeOut}>
+              <h1>Банкети</h1>
+          </li>
+          <li className={styles.fadeOut}>
+              <h1>Корпоративи</h1>
+          </li>
+          <li className={styles.fadeOut}>
+              <h1>Весілля</h1>
+          </li>
+          <li className={styles.fadeOut}>
+              <h1>Дні народження</h1>
+          </li>
+          <li className={styles.fadeOut}>
+              <h1>Сімейна вечеря</h1>
+          </li>  
+          <li className={styles.fadeOut}>
+              <h1>Бізнес ланч</h1>
+          </li>
+        </ul>
     
       
       
         <p className={`${styles.mainBottomParagraph} ${styles.fadeOut}`}>
           Від палячих шашликів до ароматних вегетаріанських страв 
           – у нас є щось для кожного гурмана.
+        </p>
 
-          
-          </p>
-
-          <p className={`${styles.mainBottomParagraph} ${styles.fadeOut}`}>
-
-          "Бакінський Двір" – місце де смак об'єднує серця,  
-          а атмосфера творить неповторний вечір.
-          
-          </p>
-      
-      <ul className={styles.features2}>
-        <li className={styles.fadeOut}>
-            <h1>Банкети</h1>
-        </li>
-        <li className={styles.fadeOut}>
-            <h1>Корпоративи</h1>
-        </li>
-        <li className={styles.fadeOut}>
-            <h1>Весілля</h1>
-        </li>
-        <li className={styles.fadeOut}>
-            <h1>Дні народження</h1>
-        </li>
-        <li className={styles.fadeOut}>
-            <h1>Сімейна вечеря</h1>
-        </li>  
-        <li className={styles.fadeOut}>
-            <h1>Бізнес ланч</h1>
-        </li>
-        
-        
-      </ul>
-
-      <p className={`${styles.maindeliveryParagraph} ${styles.fadeOut}`}>
-      Будьте завжди підключені. Наш безкоштовний Wi-Fi 
-      дозволяє вам залишатися на зв'язку або працювати в 
-      Інтернеті у будь-який момент.
-      </p>
-      
-      <p className={`${styles.maindeliveryParagraph} ${styles.fadeOut}`}>
-        Не переймайтеся за парковку. 
-        Ми надаємо зручне паркувальне місце, 
-        щоб зробити ваше перебування у нас ще комфортнішим.
-      </p>
+        <p className={`${styles.mainBottomParagraph} ${styles.fadeOut}`}>
+          Безкоштовний Wi-Fi дозволяє вам залишатися на зв'язку, працювати або ділитися світлинами 
+          з Вашого відпочинку.
+          Не переймайтеся за парковку. Зручне паркувальне місце, 
+          зробить Ваше перебування у нас ще комфортнішим.
+        </p>
      
-      <ul className={styles.features2}>
+        <ul className={styles.features2}>
         <li className={styles.fadeOut}>
-            <h1>Wi-Fi Free</h1>
-        </li>
-        <li className={styles.fadeOut}>
-            <h1>Парковка</h1>
-        </li>
-        <li className={styles.fadeOut}>
-            <h1>Караоке</h1>
-        </li>
-        
-        
-        
-      </ul>
+              <h1>Доставка</h1>
+          </li>
+          <li className={styles.fadeOut}>
+              <h1>Парковка</h1>
+          </li>
+          <li className={styles.fadeOut}>
+              <h1>Караоке</h1>
+          </li>
+          <li className={styles.fadeOut}>
+              <h1>Безкоштовний Wi-Fi</h1>
+          </li>
+          
+          
+        </ul>
+
+
+        <p className={`${styles.mainBottomParagraph} ${styles.fadeOut}`}>
+          Наша система караоке дозволить проявити свій талант, 
+           співаючи улюблені пісні перед рідними, друзями або колегами. 
+           В нас працює доставка по місту.
+        </p>
   
-      <p className={`${styles.maindeliveryParagraph} ${styles.fadeOut}`}>
-        В нас працює доставка по місту
-          </p>
-     
-     
-</div>
     </div>
+  </div>
   );
 };
 
