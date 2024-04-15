@@ -25,8 +25,8 @@ const MainPage = () => {
         <p className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
           "Бакінський Двір" – місце де смак об'єднує серця,  
           а атмосфера творить неповторний вечір.
-          У нас кожен стіл – це святковий захід, 
-          а кожна страва – це шедевр від майстра. 
+          У нас кожен стіл – це святковий захід.
+          Кожна страва – це шедевр від майстра. 
           Від палячих шашликів до ароматних вегетаріанських страв 
           – у нас є щось для кожного гурмана
           
@@ -53,18 +53,12 @@ const MainPage = () => {
             </li>
           </ul>
 
-        
-
           <p className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
             Затишні зали, приватні бесідки та сонячна тераса чекають,  
             щоб стати свідками вашого свята
           </p>
        
-          
-    
-      
-      
-          <ul className={styles.features}>
+          <ul className={styles.features2}>
           <li className={styles.fadeOut}>
               <h3>Банкетна зала</h3>
           </li>
@@ -98,7 +92,7 @@ const MainPage = () => {
               <h1>Караоке</h1>
           </li>
           <li className={styles.fadeOut}>
-              <h1>Безкоштовний Wi-Fi</h1>
+              <h1>Wi-Fi</h1>
           </li>
           
           

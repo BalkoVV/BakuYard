@@ -128,17 +128,14 @@ export const Basket = () => {
             {cartItems.map((item) => (
 
               <li className={styles.basketListItem} key={item.id}>
+                <div className={styles.borderDecorative}></div>
 
                 <span className={styles.basketListItemName}>
                   {item.назва}
                 </span>
                 {/* {item.обєм}  */}
-                <span className={styles.basketListItemPrice}>
-                  {item.ціна}
-                </span>
 
-               
-               <span className={styles.basketListItemCounter}>
+                <span className={styles.basketListItemCounter}>
                <button className={styles.basketListItemDecrease} 
                        onClick={() => decreaseQuantity(item.id)}>
                   -
@@ -154,6 +151,12 @@ export const Basket = () => {
                 </button>
                 
                </span>
+                <span className={styles.basketListItemPrice}>
+                  {item.ціна}
+                </span>
+
+               
+               
               </li>
             ))}
           </ul>
@@ -171,29 +174,47 @@ export const Basket = () => {
 
         <div className={styles.basketMakeOrder}>
 
-            {/* <div className={styles.basketOrderInfo}>
-              <p className={styles.fades}>
-                <span>Кількість позицій: </span>
-                <span className={styles.basketTotalQuantity}>{totalItems}</span>
-              </p>
-              <p className={styles.fades}>
-                <span>Загальна сума:</span>
-                <span className={styles.basketTotalPrice}>{totalPrice}</span>
-              </p>
-            </div> */}
-
             <div className={styles.basketInputBox}>
 
-              <input  className={styles.basketInput} type="text" placeholder="Ім'я" value={name} onChange={handleNameChange} />
-              <input  className={styles.basketInput} type="text" placeholder="Телефон" value={phoneNumber} onChange={handlePhoneNumberChange} />
+             
+                <input  
+                className={styles.basketInput} 
+                type="text" placeholder="Ім'я" 
+                value={name} 
+                onChange={handleNameChange} 
+                />
+        
+                <input  
+                className={styles.basketInput} 
+                type="text" placeholder="Телефон" 
+                value={phoneNumber} 
+                onChange={handlePhoneNumberChange} 
+                />
+             
               
               <div className={styles.basketInputAddressBox}>
-              <input  className={`${styles.basketInput} ${styles.basketInputStreet}`} type="text" placeholder="Вулиця" value={phoneNumber} onChange={handlePhoneNumberChange} />
-              <input  className={`${styles.basketInput} ${styles.basketInputNumber}`} type="text" placeholder="№" value={phoneNumber} onChange={handlePhoneNumberChange} />
+                <input  
+                className={`${styles.basketInput} ${styles.basketInputStreet}`} 
+                type="text" placeholder="Вулиця" 
+                value={phoneNumber} 
+                onChange={handlePhoneNumberChange} 
+                />
+
+                <input  
+                className={`${styles.basketInput} ${styles.basketInputNumber}`} 
+                type="text" placeholder="№" 
+                value={phoneNumber} 
+                onChange={handlePhoneNumberChange} 
+                />
               </div>
             </div>
 
-            <button className={styles.buttonMakeOrder} onClick={handleSubmitOrder} disabled={!isOrderButtonActive()}>Замовити</button>
+            <button 
+              className={styles.buttonMakeOrder} 
+              onClick={handleSubmitOrder} 
+              disabled={!isOrderButtonActive()}>
+              <h3>Замовити</h3>
+            </button>
 
             </div>
               {orderCompleted && <p>Замовлення оформлене. Чекайте дзвінка адміністратора для підтвердження</p>}

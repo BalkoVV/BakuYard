@@ -57,17 +57,17 @@ export const Salads = () => {
 
             <thead>
               <tr>
-                <th>ID</th>
+                {/* <th>ID</th>
                 <th>Назва</th>
                 <th>Об'єм</th>
-                <th>Ціна</th>
+                <th>Ціна</th> */}
               </tr>
             </thead>
 
-            <tbody  className={`${styles.fadeIn}`}>
+            <tbody  className={styles.dishTable}>
               {menuItems.map((item) => (
-                <tr key={item.id}>
-                  <td>{item.id}</td>
+                <tr className={styles.dishTableItem} key={item.id}>
+                  {/* <td>{item.id}</td> */}
                   <td>{item.назва}</td>
                   <td>{item.обєм}</td>
                   <td>{item.ціна}</td>

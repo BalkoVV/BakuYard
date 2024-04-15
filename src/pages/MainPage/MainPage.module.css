@@ -117,32 +117,34 @@ font-size: 15px;
 
   .features2 li {
     display: flex;
+    padding: 0;
     justify-content: center;
     color: var(--main-text-color);
     color: #6f5000;
     border: 1px solid #000000;
-    background: linear-gradient(0deg, #ffffff28,#00000000,#ffffff28);
+    background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28);
 
-    border-radius: 7px;
-    /* font-size: 14px; */
+    /* border-radius: 7px; */
+    font-size: 12px;
   }
 
   /* Стилі для першого та третього <li> елементів */
 .features li:nth-child(odd) {
   background-color: #f0f0f02b;
   background: linear-gradient(90deg, transparent, #181717, transparent);
-  border-radius: 5px 0 0 5px;
+  /* border-radius: 5px 0 0 5px; */
 }
 
 /* Стилі для другого та четвертого <li> елементів */
 .features li:nth-child(even) {
   background-color: #cccccc35;
   background: linear-gradient(90deg, transparent, #181717, transparent);
-  border-radius: 0 5px 5px 0;
+  /* border-radius: 0 5px 5px 0; */
 }
 
   .features2 h1 {
    padding: 20px 0;
+   font-size: 14px;
   }
 
  

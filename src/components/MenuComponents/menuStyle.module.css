@@ -2,7 +2,7 @@
       position: absolute;
       right: 30px;
       top: 75px;
-      fill: #7b7b7b;
+      /* fill: #d82f2f; */
 
       @media screen and (min-width: 768px) {
          top: 105px;
@@ -46,3 +46,23 @@
    opacity: 0.1;
    transition: opacity 1.1s ease-in-out;
  }
+
+
+ .dishTable {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-row-gap: 15px;
+}
+
+
+ .dishTableItem {
+   position: relative;
+   display: flex; 
+   /* border-radius: 0 7px 7px 0; */
+   padding-left: 3px;
+   height: 40px;
+   align-items: center;
+   justify-content: space-between;
+   /* border-bottom: 1px solid #7b7b7b39;  */
+   background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28);
+}

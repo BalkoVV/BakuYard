@@ -32,7 +32,7 @@ box-shadow: 0px 10px 120px 30px #231a0034; */
 .headerBox {
    display: flex;
    height: 55px;
- 
+  
    @media screen and (min-width: 768px) {
     height: 80px;
    };
