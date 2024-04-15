@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { NavLink, Route, Switch, useLocation } from "react-router-dom"; 
 
 import { CartProvider } from "components/CartProvider/CartProvider";
-import { ReactComponent as BasketIcon } from 'images/deliveryDining.svg';
+import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 
 import Basket from "components/Basket/Basket";
 import Pizza from "components/MenuComponents/Pizza/Pizza";

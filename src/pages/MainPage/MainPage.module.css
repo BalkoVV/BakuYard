@@ -120,8 +120,10 @@ font-size: 15px;
     justify-content: center;
     color: var(--main-text-color);
     color: #6f5000;
-    border: 1px solid #2f2f2e;
-    border-radius: 15px;
+    border: 1px solid #000000;
+    background: linear-gradient(0deg, #ffffff28,#00000000,#ffffff28);
+
+    border-radius: 7px;
     /* font-size: 14px; */
   }
 
