@@ -363,14 +363,15 @@ export const Basket = () => {
     <div className={styles.basket}>
       <div className={styles.basketContainer}>
         <h1 className={styles.basketTitle}>Замовлення</h1>
-        <div className={`${styles.basketBox} ${styles.fades}`}>
-          <NavLink to="/menu" className={styles.toMenuLink}>
+        <NavLink to="/menu" className={styles.toMenuLink}>
             <ToMenuIcon/>
           </NavLink>
+        <div className={`${styles.basketBox} ${styles.fades}`}>
+          
           {basketEmpty ? (
             <span className={styles.emptyBasketMessage}>
-              <p>Ваш кошик порожній.</p> 
-              <p>Додайте страви з меню</p>
+              <p>Ваш кошик порожній</p> 
+              <p>Додайте страви з меню!</p>
             </span>
           ) : (
             <ul className={styles.basketList}>
@@ -445,8 +446,11 @@ export const Basket = () => {
             </button>
           </div>
           {orderCompleted && <span className={styles.orderDone}>
-            <p>Замовлення оформлене.</p> 
-            <p>Чекайте дзвінка адміністратора для підтвердження</p>
+            <p>Замовлення оформлене!</p> 
+            <p>Адміністратор зателефонує Вам</p>
+            <p>для підтвердження</p>
+            <p>та узгодження деталей </p>
+            
             </span>}
         </div>
       </div>
