@@ -254,3 +254,14 @@ border-bottom: 1px solid rgba(154, 145, 145, 0.239);
    border: none;
    background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28);
 }
+
+.orderDone {
+   position: absolute;
+  display: flex;
+  height: 500px;
+  width: 700px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid red;
+  top: 26%;
+  left: 26%;
+}
