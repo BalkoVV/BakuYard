@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.2004ede5.css",
-    "main.js": "/BakuYard/static/js/main.387fcd27.js",
+    "main.css": "/BakuYard/static/css/main.08350063.css",
+    "main.js": "/BakuYard/static/js/main.9845dff0.js",
     "static/media/pizza.png": "/BakuYard/static/media/pizza.db53df60a8345697dc75.png",
     "static/media/mapImage.png": "/BakuYard/static/media/mapImage.c375c8d8f3db809bc951.png",
     "static/media/bg233.jpg": "/BakuYard/static/media/bg233.02d370f7a147f08b0ed1.jpg",
@@ -10,6 +10,7 @@
     "static/media/wine.jpeg": "/BakuYard/static/media/wine.a36042a279a9049acb5f.jpeg",
     "static/media/beer.jpeg": "/BakuYard/static/media/beer.f5364fc46ce0b87a5d93.jpeg",
     "static/media/salads.avif": "/BakuYard/static/media/salads.5cbdce91894c9f4e79e1.avif",
+    "static/media/delivery.svg": "/BakuYard/static/media/delivery.1434875efbd9b6940425068ddf6e5560.svg",
     "static/media/yardBakuLogo.svg": "/BakuYard/static/media/yardBakuLogo.580e3c15542c02f3b9aea504e1974b5f.svg",
     "static/media/phoneIcon.svg": "/BakuYard/static/media/phoneIcon.5b0b6d148b74e034a1438520f314e98d.svg",
     "static/media/instagramIcon.svg": "/BakuYard/static/media/instagramIcon.e6cf2db7e801e287d2cc17c54c62bf7d.svg",
@@ -22,11 +23,11 @@
     "static/media/undo.svg": "/BakuYard/static/media/undo.b930f1458478f78956912147336d9d3c.svg",
     "static/media/mobileSwitch.svg": "/BakuYard/static/media/mobileSwitch.092159f2b6272484816a0da0e6623410.svg",
     "static/media/toMenu.svg": "/BakuYard/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.2004ede5.css.map": "/BakuYard/static/css/main.2004ede5.css.map",
-    "main.387fcd27.js.map": "/BakuYard/static/js/main.387fcd27.js.map"
+    "main.08350063.css.map": "/BakuYard/static/css/main.08350063.css.map",
+    "main.9845dff0.js.map": "/BakuYard/static/js/main.9845dff0.js.map"
   },
   "entrypoints": [
-    "static/css/main.2004ede5.css",
-    "static/js/main.387fcd27.js"
+    "static/css/main.08350063.css",
+    "static/js/main.9845dff0.js"
   ]
 }
