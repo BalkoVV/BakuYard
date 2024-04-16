@@ -9,6 +9,7 @@
    min-height: 85vh;
    background: #000000;
    overflow: hidden;
+   padding-top: 100px;
 }
 
 .menuTitle {

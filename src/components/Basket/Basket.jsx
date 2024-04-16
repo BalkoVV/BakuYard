@@ -371,7 +371,7 @@ export const Basket = () => {
           {basketEmpty ? (
             <span className={styles.emptyBasketMessage}>
               <p>Ваш кошик порожній</p> 
-              <p>Додайте страви з меню!</p>
+              <p>Додайте страви з меню</p>
             </span>
           ) : (
             <ul className={styles.basketList}>

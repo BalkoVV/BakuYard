@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, useHistory } from 'react-router-dom'; 
 
 import { Logo } from 'components/Logo/Logo';
-import { ReactComponent as MenuIcon } from 'images/mobileSwitch.svg';
+import { ReactComponent as MenuIcon } from 'images/burgerSwitch.svg';
 import { ReactComponent as TimeIcon } from 'images/time.svg';
 import { ReactComponent as MapIcon } from 'images/mapIcon.svg';
 

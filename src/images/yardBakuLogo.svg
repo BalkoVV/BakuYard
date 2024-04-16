@@ -2,12 +2,13 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="173" height="32" viewBox="0 0 173 32">
 <title>yardBakuLogo</title>
 <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-   <stop offset="0%" style="stop-color: #7b7a7a; stop-opacity: 1" />
-   <stop offset="100%" style="stop-color: #7b7a7a; stop-opacity: .8" />
+   <stop offset="0%" style="stop-color: #1b1400; stop-opacity: 1" />
+   <stop offset="100%" style="stop-color: #7b7a7a; stop-opacity: .25" />
 <!-- <stop offset="0%" style="stop-color: #ab080875; stop-opacity: .3" />
    <stop offset="100%" style="stop-color: #ab080875; stop-opacity: .9" /> -->
    
 </linearGradient>
+
 
 <!-- <path fill="url(#gradient1)" d="M126.813 24.155v-3.613c0-0.619 0.619-0.723 1.135-0.723 0.052-3.458-0.052-8.723 0.052-12.8 0.052-2.271 1.961-3.819 4.439-3.819h2.994v-1.394c0.103 0 3.665 0.052 3.716 0.052v17.91c0.206 0 1.084-0.103 1.084 0.826v3.561h-2.219v-1.394h-8.981v1.394h-2.219z"></path>
 <path fill="black" d="M131.561 8.206v11.51c2.581 0 3.871 0 3.871 0v-13.781c-0.619 0-1.135 0-1.548 0-1.652 0.052-2.323 0.877-2.323 2.219z"></path>
@@ -57,6 +58,8 @@
 <path stroke="#5a0101c9" strokeWidth="1" fill="black" d="M81.084 19.045c2.787 0 5.419 0.465 5.419-3.303 0-3.51-2.89-3.148-5.419-3.2v6.503z"></path>
 <path stroke="#5a0101c9" strokeWidth="1" fill="black" d="M144.981 20.181c0.826 0 1.394 0 2.632 0s2.219-0.413 2.219-3.148c0-2.735-1.135-2.942-2.323-2.942l-2.477-0.052v6.142z"></path>
 <path stroke="#5a0101c9" strokeWidth="1" fill="#3e0101c9" d="M158.503 22.194l0.052-18.994h-3.768v19.406h3.716z"></path>  -->
+
+
 
 <path stroke="#f1eaea22" strokeWidth="1" fill="url(#gradient1)" d="M126.813 24.155v-3.613c0-0.619 0.619-0.723 1.135-0.723 0.052-3.458-0.052-8.723 0.052-12.8 0.052-2.271 1.961-3.819 4.439-3.819h2.994v-1.394c0.103 0 3.665 0.052 3.716 0.052v17.91c0.206 0 1.084-0.103 1.084 0.826v3.561h-2.219v-1.394h-8.981v1.394h-2.219z"></path>
 <path stroke="#f1eaea22" strokeWidth="1" fill="black" d="M131.561 8.206v11.51c2.581 0 3.871 0 3.871 0v-13.781c-0.619 0-1.135 0-1.548 0-1.652 0.052-2.323 0.877-2.323 2.219z"></path>
