@@ -21,7 +21,7 @@ export const App = () => {
         <div className={styles.container}>
           <Switch>
             <CartProvider>
-              <Route path="/main" exact component={MainPage} />
+              <Route path="/" exact component={MainPage} />
               <Route path="/menu" component={MenuPage} />
               <Route path="/basket" component={BasketPage} />
               <Route path="/contacts" component={ContactsPage} />
