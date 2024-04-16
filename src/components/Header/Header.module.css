@@ -3,7 +3,7 @@
 .headerComponent {
   position: fixed;
   width: 100%;
-  background: linear-gradient(0deg, black, #1b1400af);
+  background: linear-gradient(0deg, black, #1b1400);
   border-bottom: 1px solid #6b6b6b;
   z-index: 10;
 }
