@@ -1,7 +1,7 @@
 /* MainPage.module.css */
 .mainPageContainer {
 width: 100%;
-min-height: 100vh;
+/* min-height: 100vh; */
 
 }
 
@@ -29,7 +29,7 @@ min-height: 100vh;
 .maindeliveryParagraph {
 display: flex;
 justify-content: center;
-padding: 40px 40px;
+padding: 80px 40px;
 font-size: 15px;
 }
 
@@ -53,6 +53,7 @@ font-size: 15px;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    background-size: 105%;
     background-attachment: fixed;
     height: 300px;
     z-index: 0;
@@ -61,104 +62,195 @@ font-size: 15px;
       height: 400px;
     };
     @media screen and (min-width: 1200px) {
-      height: 700px;
+      height: 500px;
     };
   }
 
+  
 
-  .servicesBox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-   
+
+
+  
+
+  .topDescriptionsBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding: 50px 0;
+   background-color: #630e0e33;
   }
 
-  .features {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 40px;
-    padding: 0 30px;
-    font-size: 14px;
-    /* background: linear-gradient(90deg, transparent, #181717, transparent); */
+  .bottomDescriptionsBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    /* @media screen and (min-width: $tablet) {
-      max-width: $tablet;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 30px;
-      grid-row-gap: 30px;
-    }
-    @media screen and (min-width: $desktop) {
-      max-width: $desktop;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-column-gap: 30px;
-      padding-bottom: 94px;
-    } */
+   padding: 55px 0;
+   background-color: #00000033;
+  }
+  
+  .topDescriptions {
+  display: flex;
+  text-align: center;
+  font-size: 22px;
+  line-height: 55px;
+  width: 700px;
+  justify-content: center;
   }
 
-  .features2 {
-    display: grid;
-    height: 100%;
-    /* width: 100%; */
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 25px;
-    padding: 10px 10px;
-    font-size: 5px;
-    background: url("images/bg2.jpg");
-    background-position: center;
+  .bottomDescriptions {
+    display: flex;
+    font-size: 22px;
+    line-height: 55px;
+    width: 700px;
+    text-align: center;
+    justify-content: center;
+    }
+
+  .centerDescriptionsBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding: 100px 0;
+ /* background-color: rgb(46, 45, 45); */
+ background: linear-gradient(0deg, #1414143f, black, black, black, #1414143f );
+  }
+
+  .centerDescriptions {
+    display: flex;
+  font-size: 22px;
+  line-height: 55px;
+  width: 700px;
+  text-align: center;
+  }
+
+
+  .featuresTopBox {
+   
+    justify-content: center;
+   display: flex;
+   height: 450px;
+   padding-top: 20px;
+   justify-content: center;
+
+  }
+
+ 
+
+.featuresTop  {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 45px;
+  grid-row-gap: 45px;
+  width: 900px;
+  height: 450px;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+  .featuresTop li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 190px;
+   width: 100%;
+   padding: 90px auto;
+    border-radius: 7px;
+    background-image: url('images/bg22.jpg');
+    background-size: 150%;
+    background-position: left top ;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
   }
 
-  .features li {
+  .featuresTop li h1 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 19px;
+   color: rgb(162, 161, 161);
+  
+  }
+
+  .featuresTopBlur {
     display: flex;
     justify-content: center;
-    color: var(--main-text-color);
-    color: #6f5000;
-    /* font-size: 14px; */
-  }
+    align-items: center;
+    height: 190px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.525);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+   }
+ 
 
-  .features2 li {
+  .featuresCenterBox {
     display: flex;
-    padding: 0;
-    height: 80px;
-    border-radius: 7px;
-    /* width: 100%; */
+    height: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     justify-content: center;
-    color: var(--main-text-color);
-    color: #6f5000;
-    border: 1px solid #000000;
-    /* background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28); */
-
-    /* border-radius: 7px; */
-    font-size: 12px;
-    background: linear-gradient(0deg, black, #1b1400);
-
+    background-image: url('images/featuresBg2.jpg'); 
+    background-size: 150%;
+    background-attachment: fixed; 
   }
 
-
-  /* Стилі для першого та третього <li> елементів */
-.features li:nth-child(odd) {
-  background-color: #f0f0f02b;
-  background: linear-gradient(90deg, transparent, #181717, transparent);
-  /* border-radius: 5px 0 0 5px; */
-}
-
-/* Стилі для другого та четвертого <li> елементів */
-.features li:nth-child(even) {
-  background-color: #cccccc35;
-  background: linear-gradient(90deg, transparent, #181717, transparent);
-  /* border-radius: 0 5px 5px 0; */
-}
-
-  .features2 h1 {
+  .featuresCenter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    width: 900px;
+    height: 180px;
     
-   /* padding: 20px 0; */
-   font-size: 14px;
   }
+  
+  .featuresCenter li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    padding: 30px auto;
+    border-radius: 17px;
+    background-color: rgba(0, 0, 0, 0.548);
+   }
+
+   .featuresCenter li h3 {
+    font-size: 22px;
+    color: #c7c5c58d;
+   }
+
+   .featuresBottomBox {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg,black, #161616be, #222222be);
+    background-attachment: fixed; 
+   }
+
+ 
+  .featuresBottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 25px;
+    width: 900px;
+    padding: 0 20px;
+   }
+  
+  .featuresBottom li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    color: rgb(95, 95, 95);
+    padding: 90px auto;
+    border-radius: 9px;
+    background-color: rgb(0, 0, 0);
+   }
 
  

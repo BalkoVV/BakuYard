@@ -15,92 +15,130 @@ const MainPage = () => {
   }, []);
 
   return (
-    <div className={styles.mainPage}>
+    <div className={`${styles.mainPage} ${styles.fadeOut}`}>
+
       <div className={styles.mainPageContainer}>
 
-      <div className={`${styles.heroBox} ${styles.fadeOut}`}>
-        <div className={styles.hero}></div>
+      <div className={styles.heroBox}>
+        <div className={styles.hero}>
+          <div className={styles.heroInHero}>
+            {/* boxShadow */}
+          </div>
+        </div>
       </div>
 
-        <p className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
-          "Бакінський Двір" – місце де смак об'єднує серця,  
-          а атмосфера творить неповторний вечір.
-          У нас кожен стіл – це святковий захід.
-          Кожна страва – це шедевр від майстра. 
-          Від палячих шашликів до ароматних вегетаріанських страв 
+       <section  className={styles.topDescriptionsBox}>
+       <p className={styles.topDescriptions}>
+          "Бакінський Двір" – місце де смак об'єднує серця, <br/>
+          а атмосфера творить неповторний вечір.<br/>
+          У нас кожен стіл – це святковий захід.<br/>
+          Кожна страва – це шедевр від майстра.<br/>
+          Від палячих шашликів до вегетаріанських страв<br/>
           – у нас є щось для кожного гурмана
-          
         </p>
-
-        <ul className={styles.features2}>
-            <li className={styles.fadeOut}>
+       </section>
+       
+        <section className={styles.featuresTopBox}>
+         
+         <ul className={styles.featuresTop}>
+            <li>
+            <span className={styles.featuresTopBlur}>
                 <h1>Банкети</h1>
+                </span>
             </li>
-            <li className={styles.fadeOut}>
-                <h1>Корпоративи</h1>
+            <li>
+            <span className={styles.featuresTopBlur}>
+            <h1>Корпоративи</h1>
+                </span>
+                
             </li>
-            <li className={styles.fadeOut}>
-                <h1>Весілля</h1>
+            <li>
+            <span className={styles.featuresTopBlur}>
+            <h1>Весілля</h1>
+                </span>
+                
             </li>
-            <li className={styles.fadeOut}>
-                <h1>Дні народження</h1>
+            <li>
+            <span className={styles.featuresTopBlur}>
+            <h1>Дні народження</h1>
+                </span>
+                
             </li>
-            <li className={styles.fadeOut}>
-                <h1>Сімейна вечеря</h1>
+            <li>
+            <span className={styles.featuresTopBlur}>
+            <h1>Сімейна вечеря</h1>
+                </span>
+                
             </li>  
-            <li className={styles.fadeOut}>
-                <h1>Бізнес ланч</h1>
+            <li>
+            <span className={styles.featuresTopBlur}>
+            <h1>Бізнес ланч</h1>
+                </span>
+                
             </li>
           </ul>
-
-          <p className={`${styles.mainTopParagraph} ${styles.fadeOut}`}>
+         
+        </section>
+        
+          <section className={styles.centerDescriptionsBox}>
+          <p className={styles.centerDescriptions}>
             Затишні зали, приватні бесідки та сонячна тераса чекають,  
             щоб стати свідками вашого свята
           </p>
+          </section>
        
-          <ul className={styles.features2}>
-          <li className={styles.fadeOut}>
+          <section className={styles.featuresCenterBox}>
+          <ul className={styles.featuresCenter}>
+          <li>
               <h3>Банкетна зала</h3>
           </li>
-          <li className={styles.fadeOut}>
+          <li>
               <h3>Окремі бесідки</h3>
           </li>
-          <li className={styles.fadeOut}>
+          <li>
               <h3>Літня тераса</h3>
           </li>
-          <li className={styles.fadeOut}>
+          <li>
               <h3>Танцмайданчик</h3>
           </li>
         </ul>
+          </section>
 
-        <p className={`${styles.mainBottomParagraph} ${styles.fadeOut}`}>
-          Безкоштовний Wi-Fi дозволяє вам залишатися на зв'язку, працювати або ділитися світлинами 
-          з Вашого відпочинку.
+        <section className={styles.bottomDescriptionsBox}>
+        <p className={styles.bottomDescriptions}>
+          Безкоштовний Wi-Fi - залишатесь на зв'язку, працюйте або діліться світлинами 
+          з Вашого відпочинку. <br/>
           Не переймайтеся за парковку. Зручне паркувальне місце, 
           зробить Ваше перебування у нас ще комфортнішим
-          
         </p>
+        
+       
+        </section>
      
-        <ul className={styles.features2}>
-        <li className={styles.fadeOut}>
-              <h1>Доставка</h1>
-          </li>
-          <li className={styles.fadeOut}>
-              <h1>Парковка</h1>
-          </li>
-          <li className={styles.fadeOut}>
-              <h1>Караоке</h1>
-          </li>
-          <li className={styles.fadeOut}>
-              <h1>Wi-Fi</h1>
-          </li>
-          
-          
-        </ul>
-        <p className={`${styles.mainBottomParagraph} ${styles.fadeOut}`}>
-        В нас працює доставка по місту
+         <section className={styles.featuresBottomBox}>
+            <ul className={styles.featuresBottom}>
+              <li>
+                  <h1>Доставка</h1>
+              </li>
+              <li>
+                  <h1>Парковка</h1>
+              </li>
+              <li>
+                  <h1>Free Wi-Fi</h1>
+              </li>
+              <li>
+                  <h1>Караоке</h1>
+              </li>
+              
+            </ul>
+        </section>
+        
+        <section className={styles.bottomDescriptionsBox}>
+        <p className={styles.bottomDescriptions}>
+           В нас працює доставка по місту
         </p>
        
+        </section>
     </div>
   </div>
   );
