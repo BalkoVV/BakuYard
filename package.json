@@ -2,7 +2,7 @@
   "name": "bakuyard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ViktorBalko.github.io/BakuYard/",
+  "homepage": "https://ViktorBalko.github.io/",
   "dependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
