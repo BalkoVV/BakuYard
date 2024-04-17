@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.0cc0219d.css",
+    "main.css": "/BakuYard/static/css/main.9003fa7a.css",
     "main.js": "/BakuYard/static/js/main.b6d1af4a.js",
     "static/media/pizza.png": "/BakuYard/static/media/pizza.db53df60a8345697dc75.png",
     "static/media/featuresBg2.jpg": "/BakuYard/static/media/featuresBg2.a2b774b787f603e06a2a.jpg",
@@ -24,11 +24,11 @@
     "static/media/time.svg": "/BakuYard/static/media/time.a6cc1aa4baed244b4ec0187808a937fd.svg",
     "static/media/undo.svg": "/BakuYard/static/media/undo.b930f1458478f78956912147336d9d3c.svg",
     "static/media/toMenu.svg": "/BakuYard/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.0cc0219d.css.map": "/BakuYard/static/css/main.0cc0219d.css.map",
+    "main.9003fa7a.css.map": "/BakuYard/static/css/main.9003fa7a.css.map",
     "main.b6d1af4a.js.map": "/BakuYard/static/js/main.b6d1af4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.0cc0219d.css",
+    "static/css/main.9003fa7a.css",
     "static/js/main.b6d1af4a.js"
   ]
 }
