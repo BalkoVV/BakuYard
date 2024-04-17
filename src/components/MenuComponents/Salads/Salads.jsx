@@ -9,7 +9,7 @@ import CartContext from "components/CartProvider/CartProvider";
 import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
 
 import menuData from "services/dataSalads/salads.json";
-import styles from 'components/MenuComponents/menuStyle.module.css';
+import styles from 'components/MenuComponents/Salads/Salads.module.css';
 
 export const Salads = () => {
   const { addToCart, cartItems } = useContext(CartContext);
@@ -68,11 +68,13 @@ export const Salads = () => {
               {menuItems.map((item) => (
                 <tr className={styles.dishTableItem} key={item.id}>
                   {/* <td>{item.id}</td> */}
-                  <td>{item.назва}</td>
-                  <td>{item.обєм}</td>
-                  <td>{item.ціна}</td>
-                  <td>
+                  <td className={styles.dishName}>{item.назва}</td>
+                  {/* <td className={styles.dishName}>{item.назва}</td> */}
+                  <td className={styles.dishWeigth}>{item.обєм}</td>
+                  <td className={styles.dishPrice}>{item.ціна}</td>
+                  <td className={styles.dishAddButton}>
                     <AddButton
+                     
                       onClick={() => addToCart(item)}
                       alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
                       updateButtonState={() => updateButtonState(item.id)}

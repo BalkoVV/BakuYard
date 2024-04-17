@@ -126,9 +126,9 @@ const MainPage = () => {
               <li>
                   <h1>Free Wi-Fi</h1>
               </li>
-              <li>
+              {/* <li>
                   <h1>Караоке</h1>
-              </li>
+              </li> */}
               
             </ul>
         </section>

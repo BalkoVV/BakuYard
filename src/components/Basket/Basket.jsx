@@ -371,13 +371,14 @@ export const Basket = () => {
           {basketEmpty ? (
             <span className={styles.emptyBasketMessage}>
               <p>Ваш кошик порожній</p> 
-              <p>Додайте страви з меню</p>
+              <p>Додайте страви з Меню</p>
             </span>
           ) : (
-            <ul className={styles.basketList}>
+            <div className={styles.basketListBox}>
+              <ul className={styles.basketList}>
               {cartItems.map((item) => (
                 <li className={styles.basketListItem} key={item.id}>
-                  <div className={styles.borderDecorative}></div>
+                  {/* <div className={styles.borderDecorative}></div> */}
                   <span className={styles.basketListItemName}>
                     {item.назва}
                   </span>
@@ -398,14 +399,16 @@ export const Basket = () => {
                 </li>
               ))}
             </ul>
+            </div>
+
           )}
           <div className={styles.basketOrderInfo}>
-            <p className={styles.fades}>
-              <span>Кількість позицій: </span>
+            <p className={styles.basketQuantityBox}>
+              <span className={styles.basketQuantityTitle}>Кількість позицій: </span>
               <span className={styles.basketTotalQuantity}>{totalItems}</span>
             </p>
-            <p className={styles.fades}>
-              <span>Загальна сума:</span>
+            <p className={styles.basketQuantityBox}>
+              <span className={styles.basketPriceTitle}>Загальна сума:</span>
               <span className={styles.basketTotalPrice}>{totalPrice}</span>
             </p>
           </div>

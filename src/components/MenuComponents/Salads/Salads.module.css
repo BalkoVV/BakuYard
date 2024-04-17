@@ -1,0 +1,133 @@
+.toMenuLink {
+   position: absolute;
+   right: 30px;
+   top: 75px;
+   /* fill: #d82f2f; */
+
+   @media screen and (min-width: 768px) {
+      top: 105px;
+      right: 45px;
+   };
+   
+   @media screen and (min-width: 1200px) {
+     top: 135px;
+     right: 65px;
+   };
+}
+
+.dishTitle {
+display: flex;
+height: 55px;
+justify-content: center;
+align-items: center;
+font-size: 13px;
+font-weight: 900;
+margin: 0;
+color: #7b7b7b;
+
+@media screen and (min-width: 768px) {
+   height: 75px;
+   font-size: 13px;
+};
+@media screen and (min-width: 1200px) {
+   height: 95px;
+   
+   font-size: 15px;
+}
+}
+
+.dishPageContainer {
+display: flex;
+justify-content: center;
+width: 100%;
+min-height: 80vh;
+/* background: #080808; */
+/* padding: 0 50px; */
+/* background: linear-gradient(0deg,#373737be, #222222be, #161616be, black); */
+/* background-image: url('images/eeee.jpeg');
+    background-size: 100%;
+    background-position: left top ;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+
+}
+
+.fades {
+opacity: 0.1;
+transition: opacity 1.1s ease-in-out;
+}
+
+
+.dishTable {
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-row-gap: 15px;
+padding-bottom: 50px;
+}
+
+
+.dishTableItem {
+position: relative;
+display: flex; 
+min-width: 700px;
+border-radius: 9px;
+padding-left: 3px;
+height: 50px;
+align-items: center;
+color: #7b7b7b;
+
+font-size: 16px;
+padding-left: 15px;
+border: 2px solid rgb(0, 0, 0);
+
+/* justify-content: space-between; */
+/* border: 1px solid #00000096;  */
+background: linear-gradient(0deg, rgb(3, 3, 3), black);
+}
+
+.dishAddButton {
+   position: absolute;
+   display: grid;
+   border-radius: 0 7px 7px 0;
+   right: 0;
+   height: 100%;
+   width: 100px;
+   background-color: rgba(0, 25, 8, 0.293);
+   border-left: 1px solid rgb(18, 17, 17);
+
+}
+.dishPrice {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   right: 103px;
+   height: 100%;
+   width: 100px;
+   border-left: 1px solid rgb(18, 17, 17);
+   /* background-color: #fff; */
+}
+
+.dishWeigth {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* right: 103px; */
+   height: 100%;
+   width: 100px;
+   /* background-color: #fff; */
+   right: 206px;
+   border-left: 1px solid rgb(18, 17, 17);
+}
+
+.dishName {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 9px 0 0 9px;
+   height: 40px;
+   width: 100%;
+   /* background-color: rgb(17, 17, 17); */
+   
+}

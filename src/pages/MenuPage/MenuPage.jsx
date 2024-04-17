@@ -9,7 +9,8 @@ import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import Basket from "components/Basket/Basket";
 import Pizza from "components/MenuComponents/Pizza/Pizza";
 import BarbequeMenu from "components/MenuComponents/BarbequeMenu/BarbequeMenu";
-import Salads from "components/MenuComponents/Salads/Salads";
+import Wine from "components/MenuComponents/Wine/Wine";
+// import Salads from "components/MenuComponents/Salads/Salads";
 import Beer from "components/MenuComponents/Beer";
 
 
@@ -72,14 +73,21 @@ export const MenuPage = () => {
     </span>
   </li>
 
-  <li className={`${styles.fadeIn} ${styles.dishCard} ${styles.dishCardSalads}`}>
+  <li className={`${styles.fadeIn} ${styles.dishCard} ${styles.dishCardPizza}`}>
+    <span classame={styles.dishCardBox}> 
+    <NavLink to="/menu/wine" className={styles.dishCardLink}>
+     <h1>Wine</h1>
+    </NavLink>
+    </span>
+  </li>
+  {/* <li className={`${styles.fadeIn} ${styles.dishCard} ${styles.dishCardSalads}`}>
     
     <span classame={styles.dishCardBox}> 
     <NavLink to="/menu/salads" className={styles.dishCardLink}>
      <h1>Салати</h1>
     </NavLink>
     </span>
-  </li>
+  </li> */}
 
   <li className={`${styles.fadeIn} ${styles.dishCard} ${styles.dishCardBarbeque}`}>
     <span classame={styles.dishCardBox}> 
@@ -182,8 +190,9 @@ export const MenuPage = () => {
        
 
         <Route path="/menu/pizza" component={Pizza} /> 
+        <Route path="/menu/wine" component={Wine} /> 
         <Route path="/menu/barbeque" component={BarbequeMenu} /> 
-        <Route path="/menu/salads" component={Salads} /> 
+        {/* <Route path="/menu/salads" component={Salads} />  */}
         <Route path="/menu/beer" component={Beer} /> 
         <Route path="/menu/basket" component={Basket} /> 
       </Switch>

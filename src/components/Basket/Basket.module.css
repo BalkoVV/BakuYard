@@ -1,25 +1,9 @@
+
 .basketContainer {
  width: 100%;
-
- 
+ min-height: 75vh;
 }
 
-.borderDecorative {
-   position: absolute;
-   bottom: 0px;
-   display: flex;
-   width: 100%;
-   height: 1px;
-   background: linear-gradient(90deg, #060400, #3e3000, #060400);   /* background: linear-gradient(90deg, #614600, goldenrod, #614600, goldenrod, #614600, goldenrod,#614600); */
- 
-   /* @media screen and (min-width: 768px) {
-     top: 80px;
-    };
-  
-    @media screen and (min-width: 1200px) {
-      top: 100px;
-    }; */
- }
 
 .quantityBox {
  display: flex;
@@ -34,7 +18,8 @@
 }
 
 .basketBox {
- padding: 0 10px;
+ margin: 0 10px;
+ background-color: inherit;
 }
 
 .basketTitle {
@@ -46,7 +31,8 @@
    font-weight: 900;
    margin: 0;
    color: #7b7b7b;
-   margin-bottom: 30px;
+   margin-bottom: 50px;
+   /* background-color: #000; */
 
    @media screen and (min-width: 768px) {
       height: 75px;
@@ -67,20 +53,43 @@
 
 }
 
+.basketListBox {
+ display: flex;
+ width: 100%;
+ height: auto;
+justify-content: center;
+align-items: center;
+}
 .basketList {
-   display: grid;
+   /* display: grid;
    grid-template-columns: repeat(1, 1fr);
-   grid-row-gap: 15px;
+   grid-row-gap: 15px; */
+
+   display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 15px;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    /* background: linear-gradient(0deg, black, rgb(41, 41, 41));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.489), #0b0b0bcb, #111111cb);
+    background-attachment: fixed; */
 }
 
 .basketListItem {
    position: relative;
    display: flex; 
    padding-left: 3px;
-   height: 40px;
+   width: 900px;
+   height: 50px;
+   border-radius: 9px;
    align-items: center;
    justify-content: space-between;
-   background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28);
+   background: black;
+   /* color: #000000; */
+   background: linear-gradient(180deg, #282727cc, #282727bc, #000000ae);
+    background-attachment: fixed;
+   /* background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28); */
 
 }
 
@@ -110,10 +119,21 @@
    border-left: 1px solid #7b7b7b39;
 }
 
+.basketListItemName {
+ padding-left: 20px;
+ font-size: 15px;
+ /* font-family: ; */
+ /* font-family: 'PrimaryFont'; */
+}
+
 .basketMakeOrder {
  display: grid;
  justify-content: space-around;
- margin-top: 40px;
+ padding-top: 40px;
+ /* background: linear-gradient(0deg, black, #1f1f1fcb); */
+ /* background: linear-gradient(360deg, #0000007d, #0b0b0bcb, #111111cb); */
+
+ /* background-attachment: fixed; */
 }
 
 .basketListItemIncrease,
@@ -135,24 +155,50 @@
 display: flex;
 justify-content: center;
 padding: 10px 0px;
+/* width: 900px; */
 text-align: right;
-border-bottom: 1px solid rgba(154, 145, 145, 0.239);
+/* border-bottom: 1px solid rgba(154, 145, 145, 0.239); */
 }
+
 
 .basketOrderInfo p {
  display: flex;
- width: 150px;
- justify-content: center;
+ width: 200px;
+ height: 50px;
+ justify-content: start;
  align-items: center;
  padding: 5px;
- font-size: 10px;
+ font-size: 15px;
 }
+
+.basketQuantityBox {
+ display: flex;
+ /* width: 260px; */
+ align-items: center;
+ border-radius: 9px;
+ background-color: rgb(0, 0, 0);
+ /* border: 1px solid red; */
+ margin: 20px;
+ 
+}
+.basketQuantityTitle,
+.basketPriceTitle  {
+   padding-left: 20px;
+   padding-right: 20px;
+   font-size: 16px;
+   line-height: 17px;
+   /* color: red; */
+  }
 
 .basketTotalQuantity,
 .basketTotalPrice {
    color: #836006;
-   font-size: 12px;
-   padding-left: 7px;
+   font-size: 30px;
+   padding-right: 20px;
+
+   /* padding-left: 7px; */
+   /* background-color: red; */
+   /* padding-top: 5px; */
   /* background: linear-gradient(90deg, #00000000,#ffffff8d); */
 
 }
@@ -180,19 +226,25 @@ border-bottom: 1px solid rgba(154, 145, 145, 0.239);
 .basketInputBox {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-row-gap: 20px;
-  
+  grid-row-gap: 15px;
+  padding: 15px 50px;
+  /* border-color: #756565; */
+  border-radius: 15px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.489), #0b0b0bcb, #111111cb);
+    background-attachment: fixed;
 }
  .basketInput {
-   border: 1px solid black;
-   border-bottom: 1px solid #7b7b7b39; 
-   background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28);
-   height: 20px;
-   background-color: transparent;
+   /* border: 1px solid black; */
+   /* border-bottom: 1px solid #7b7b7b39;  */
+   /* background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28); */
+
+   background-color: black;
    color: var(--non-active-color);
    padding-left: 16px;
    width: 300px;
-   height: 40px;
+   height: 50px;
+   border: none;
+   border-radius: 9px;
 }
 
 .basketInputHomeNumber {
@@ -217,13 +269,14 @@ border-bottom: 1px solid rgba(154, 145, 145, 0.239);
    display: flex;
    align-items: center;
    justify-content: center;
-   color: #6f5000;
-   text-transform: uppercase;
+   color: #000000;
+   /* text-transform: uppercase; */
    height: 40px;
-   width: 200px;
+   /* width: 200px; */
    margin: 30px 60px;
    border: none;
-   background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28);
+   border-radius: 9px;
+   /* background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28); */
 }
 
 .emptyBasketMessage,
@@ -234,11 +287,11 @@ border-bottom: 1px solid rgba(154, 145, 145, 0.239);
    grid-row-gap: 20px;
    justify-content: center;
    align-items: center;
-   height: 400px;
+   height: 480px;
    min-width: 93%;
    background-color: rgb(0, 0, 0);
-   border: 1px solid #7b7b7b;
-   border-radius: 7px;
+   /* border: 1px solid #7b7b7b; */
+   border-radius: 22px;
    top: 120px;
    left: 3.5%;
    z-index: 5;
@@ -258,11 +311,14 @@ border-bottom: 1px solid rgba(154, 145, 145, 0.239);
 }
 
 .active {
-background-color: red;
+color: red;
 }
 
 .inactive {
 background-color: gray;
 }
 
- 
+ .basketListBox {
+ height: 100%;
+ /* background-color: rgb(0, 0, 0); */
+}

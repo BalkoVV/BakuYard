@@ -8,7 +8,10 @@ import CartContext from "components/CartProvider/CartProvider";
 
 import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
 
-import menuData from "services/wine.json";
+// import menuData from "services/wine.json";
+
+import menuData from "services/dataWines/champagne.json";
+// import menuData from "services/dataWines/ukrainianWines.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const Wine = () => {
@@ -53,17 +56,46 @@ export const Wine = () => {
 
             <thead>
               <tr>
-                <th>ID</th>
+                {/* <th>ID</th>
                 <th>Назва</th>
                 <th>Об'єм</th>
-                <th>Ціна</th>
+                <th>Ціна</th> */}
               </tr>
             </thead>
-
             <tbody  className={`${styles.fadeIn}`}>
               {menuItems.map((item) => (
                 <tr key={item.id}>
-                  <td>{item.id}</td>
+                  {/* <td>{item.id}</td> */}
+                  <td>{item.тип}</td>
+                  <td>{item.назва}</td>
+                  <td>{item.обємНеПрод}</td>
+                  <td>{item.цінаНеПрод}</td>
+                  <td>{item.обєм}</td>
+                  <td>{item.ціна}</td>
+                  <td>
+                    <AddButton
+                      onClick={() => addToCart(item)}
+                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                      updateButtonState={() => updateButtonState(item.id)}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+
+            <thead>
+              <tr>
+                {/* <th>ID</th>
+                <th>Назва</th>
+                <th>Об'єм</th>
+                <th>Ціна</th> */}
+              </tr>
+            </thead>
+            <tbody  className={`${styles.fadeIn}`}>
+              {menuItems.map((item) => (
+                <tr key={item.id}>
+                  {/* <td>{item.id}</td> */}
+                  <td>{item.тип}</td>
                   <td>{item.назва}</td>
                   <td>{item.обєм}</td>
                   <td>{item.ціна}</td>
