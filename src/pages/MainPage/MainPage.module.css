@@ -49,15 +49,15 @@ font-size: 15px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    height: 300px;
+    z-index: 0;
     background: url("images/beer.jpeg");
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     background-size: 115%;
     background-attachment: fixed;
     -webkit-background-attachment: fixed;
-    height: 300px;
-    z-index: 0;
     -webkit-overflow-scrolling: touch;
 
     @media screen and (min-width: 768px) {
@@ -163,11 +163,15 @@ font-size: 15px;
    padding: 90px auto;
     border-radius: 7px;
     background-image: url('images/bg233.jpg');
-    background-size: 150%;
+    background-size: 100%;
     background-position: left top ;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     overflow: hidden;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -webkit-overflow-scrolling: touch;
+    
   }
 
   .featuresTop li h1 {
@@ -199,7 +203,10 @@ font-size: 15px;
     justify-content: center;
     background-image: url('images/featuresBg2.jpg'); 
     background-size: 150%;
-    background-attachment: fixed; 
+    /* background-attachment: fixed;  */
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -webkit-overflow-scrolling: touch;
   }
 
   .featuresCenter {
