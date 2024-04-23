@@ -1,6 +1,11 @@
 .contactsPage {
    width: 100%;
    /* min-height: 90vh; */
+   background-image: url('images/texture-bg.jpeg');
+   background-size: contain;
+   /* background-size: cover; */
+   background-position: bottom;
+   background-attachment: fixed;
  
 }
 
@@ -112,35 +117,51 @@
 
 .contactsListBox {
    display: flex;
-   height: 600px;
+   height: 500px;
    justify-content: center;
    align-items: center;
-   background: linear-gradient(0deg,#222222be, #161616be, black);
-   background: linear-gradient(0deg,black, #161616be, #222222be, #282828be);
-
-   background-attachment: fixed; 
+   /* background: linear-gradient(0deg,#222222be, #161616be, black); */
+   /* background: linear-gradient(0deg,black, #161616be, #222222be, #282828be); */
+   /* background: linear-gradient(to bottom, #192126 ,#192126,#07090bdc); */
+   /* background: linear-gradient(180deg, #1f1f1f, #131313, black); */
+   /* background-attachment: fixed;  */
   }
 
 
  .contactsList {
    display: grid;
    grid-template-columns: repeat(1, 1fr);
-   /* grid-column-gap: 1px; */
+   grid-column-gap: 20px;
    grid-row-gap: 45px;
    width: 600px;
    padding: 0 50px;
+
   }
  
  .contactsListItem {
+   position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 80px;
-   color: rgb(95, 95, 95);
+   height: 60px;
+   width: 100%;
+   color: #555555;
+   /* color: #000000; */
    font-size: 15px;
-   padding: 90px auto;
-   border-radius: 9px;
-   /* border: 1px solid #7b7b7b2c; */
-   /* box-shadow: 0 0 5px 5px rgb(10, 10, 10); */
-   background-color: rgb(0, 0, 0);
+   /* padding: 90px auto; */
+   /* padding-left: 150px; */
+   /* border-radius: 33px; */
+   /* background: linear-gradient(180deg, #1f1f1f, #1f1f1f, black); */
+   /* background-color: #000000; */
+   /* background-attachment: fixed;  */
+
+border-bottom: 2px solid #555555;
   }
+
+  .contactsListItem span {
+ position: absolute;
+ left: 73px;
+ top: 22px;
+}
+
+ 

@@ -1,0 +1,261 @@
+.dishPage {
+   position: relative;
+   min-height: 85vh;
+}
+
+.dishPageContainer {
+ display: grid;
+ justify-content: center;
+ /* overflow-y: scroll; */
+}
+
+.dishTitle {
+   display: flex;
+   justify-content: center;
+   height: 75px;
+   align-items: center;
+   font-size: 13px;
+   font-weight: 900;
+   color: #7b7b7b;
+   margin: 0;
+
+   @media screen and (min-width: 768px) {
+      height: 75px;
+      font-size: 13px;
+   };
+   @media screen and (min-width: 1200px) {
+      height: 95px;
+      
+      font-size: 15px;
+   };
+}
+
+.dishTableList {
+margin-top: 10px;
+}
+.dishTable {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* font-size: 15px; */
+  border-radius: 9px;
+  width: 900px;
+  height: 60px;
+  padding-left: 15px;
+  
+  /* background: linear-gradient(180deg, #1f1d1dcc, #282727bc, #000000ae);
+  background: linear-gradient(180deg, #1f1f1f, #1f1f1f, black); */
+  background: linear-gradient(359deg, #181717bd, #060606bc, black, black);
+  background-attachment: fixed;
+  
+}
+.dishTableButtonAdd {
+ position: absolute;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+ height: 60px;
+ width: 100px;
+ margin: 0;
+ padding: 0;
+ right: 0;
+ top: 0;
+ border-radius: 0 9px 9px 0;
+ border-left: 1px solid #000000;
+}
+
+.dishTablePrice {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 60px;
+   width: 100px;
+   margin: 0;
+   padding: 0;
+   right: 101px;
+   font-size: 15px;
+   top: 0;
+   border-left: 1px solid #000000;
+}
+
+.dishTableWeigth {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 60px;
+   width: 100px;
+   margin: 0;
+   padding: 0;
+   right: 202px;
+   font-size: 15px;
+   top: 0;
+   border-left: 1px solid #000000;
+}
+
+.dishTableName {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   height: 60px;
+   width: 100%;
+   margin: 0;
+   padding-left: 10px;
+   left: 20px;
+   bottom: 0px;
+   font-size: 17px;
+   color: #b5b5b5;
+}
+
+.dishTableIngredients {
+   position: absolute;
+   bottom: 5px;
+   padding-left: 20px;
+   font-size: 12px;
+   color: #695759;
+}
+
+.dishTableType {
+   position: absolute;
+   top: 5px;
+   /* padding-left: 10px; */
+   font-size: 9px;
+   color: #b5b5b5;
+}
+
+.toMenuLinkBox {
+   position: absolute;
+   border: none;
+   border-radius: 30px;
+   background: linear-gradient(0deg,#191616, #020202, #191616);
+   top: 30px;
+   left: 70px; 
+}
+
+.toMenuLink {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   width: 150px;
+   border-radius: 9px;
+}
+.basketIcon {
+   fill: #303030;
+  }
+  
+  .basketIcon.nonEmpty {
+     fill: #c10000; /* Колір fill, коли корзина не пуста */
+    
+   }
+
+.basketBadge {
+position: absolute;
+right: 60px;
+top: 15px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 10px;
+ width: 10px;
+ border-radius: 50%;
+ /* border: .5px solid red; */
+ color: #ffffff;
+ /* color: #a67701; */
+ /* color: #008d17; */
+ background-color: #000000;
+
+ font-size: 11px;
+z-index: 2;
+}
+
+/* .toMenuLinkBox:hover {
+ transition: 2s;
+ background-color: rgba(31, 3, 3, 0.583);
+ background: linear-gradient(0deg,#443a00, #020202, #443a00);
+} */
+
+/* Webkit (Chrome, Safari) */
+/* ::-webkit-scrollbar {
+   width: 12px;
+ } */
+ 
+ /* ::-webkit-scrollbar-thumb {
+   background: transparent;
+ } */
+ 
+ /* ::-webkit-scrollbar-track {
+   background: transparent;
+ }
+  */
+ /* Firefox */
+ /* scrollbar {
+   width: 12px;
+ } */
+ 
+ /* scrollbar-thumb {
+   background: rgb(0, 0, 0); 
+  
+ } */
+ 
+ /* scrollbar-track {
+   background: #000000; 
+   
+ } */
+ 
+ .toBasketLinkBox {
+   position: absolute;
+   border: none;
+   border-radius: 30px;
+   /* background: linear-gradient(0deg,#191616, #020202, #191616); */
+   /* background: linear-gradient(0deg,#191616, #020202, #191616); */
+   top: -56px;
+   right: 300px; 
+   transition: 1.5s;
+   z-index: 10;
+}
+
+.toBasketLink {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   width: 150px;
+   border-radius: 9px;
+}
+
+/* .toBasketLink:hover {
+ transition: 2s;
+ background-color: rgba(31, 3, 3, 0.583);
+ background: linear-gradient(0deg,#000644, #020202, #001644);
+ transition: .9s;
+} */
+.basketIcon {
+   fill: #303030;
+  }
+  
+  .basketIcon.nonEmpty {
+     fill: #6f0000; /* Колір fill, коли корзина не пуста */
+    
+   }
+
+
+   .basketBadge {
+      position: absolute;
+      right: 60px;
+      top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      color: #d7d7d7;
+      background-color: #000000;
+      font-size: 11px;
+      z-index: 2;
+     }

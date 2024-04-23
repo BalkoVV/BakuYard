@@ -1,0 +1,36 @@
+.toMenuButton {
+ position: absolute;
+ top: 60px;
+ left: 0px;
+ display: flex;
+ align-items: center;
+ justify-content: end;
+ height: 60px;
+ width: 150px;
+ border: none;
+ 
+}
+
+.toMenuLink {
+   display: flex; 
+   align-items: center;
+   justify-content: space-evenly;
+   height: 60px;
+   width: 150px;
+   border-radius: 30px;
+   border-radius: 0 11px 11px 0;
+  
+   background-color: #000000;
+}
+
+.toMenuDescription {
+   margin: 0;
+   padding: 0;
+   font-size: 15px;
+   /* color: rgb(168, 168, 168); */
+}
+
+.toMenuButton:hover .toMenuDescription {
+ color: #790008;
+ transition: 1s;
+}

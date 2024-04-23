@@ -10,7 +10,7 @@ const MainPage = () => {
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '1'; 
-      }, 50 * index); 
+      }, 1 * index); 
     });
   }, []);
 
@@ -20,7 +20,7 @@ const MainPage = () => {
       <div className={styles.mainPageContainer}>
 
       <div className={styles.heroBox}>
-        <div className={styles.hero}>
+        <div className={styles.hero} id="hero">
           <div className={styles.heroInHero}>
             {/* boxShadow */}
           </div>

@@ -3,9 +3,9 @@ import React, { useEffect } from 'react';
 import { ReactComponent as TimeIcon } from 'images/time.svg';
 import { ReactComponent as MapIcon } from 'images/mapIcon.svg';
 import { ReactComponent as PhoneIcon } from 'images/phoneIcon.svg';
-import { ReactComponent as FacebookIcon } from 'images/facebookIcon.svg';
-import { ReactComponent as MailIcon } from 'images/mailIcon.svg';
-import { ReactComponent as InstagramIcon } from 'images/instagramIcon.svg';
+import { ReactComponent as FacebookIcon } from 'images/facebook.svg';
+import { ReactComponent as MailIcon } from 'images/mail4.svg';
+import { ReactComponent as InstagramIcon } from 'images/instagram4.svg';
 
 import styles from 'pages/ContactsPage/ContactsPage.module.css';
 
@@ -19,13 +19,13 @@ export const ContactsPage = () => {
       contentElements.forEach((element, index) => {
         setTimeout(() => {
           element.style.opacity = '1'; 
-        }, 50 * index); 
+        }, 30 * index); 
       });
     }, []); 
 
  return (
    <div className={styles.contactsPage}>
-      <h1 className={styles.contactsPageTitle}>Контакти</h1>
+      {/* <h1 className={styles.contactsPageTitle}>Контакти</h1> */}
 
       <div className={`${styles.mapBox} ${styles.fadeOut}`}></div>
 
@@ -43,7 +43,7 @@ export const ContactsPage = () => {
                 </li>
 
              <li className={styles.contactsListItem}>
-                  <span><PhoneIcon/></span>
+                  <span className={styles.phoneIconContact}><PhoneIcon/></span>
                   <h3> +38 068 239 38 37</h3>
                 </li>
               

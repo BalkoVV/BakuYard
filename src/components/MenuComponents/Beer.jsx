@@ -6,10 +6,15 @@ import { NavLink } from "react-router-dom";
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
 
-import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
+// import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
+import { ReactComponent as BasketIcon } from 'images/delivery.svg';
+
+import ToMenuButton from "components/ToMenuButton/ToMenuButton";
+
 
 import menuData from "services/dataBeer/beer.json";
 import beerSnacksData from "services/dataBeer/beerSnacks.json";
+
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const Beer = () => {
@@ -42,79 +47,91 @@ export const Beer = () => {
     }));
   };
 
+
   return (
     <div className={styles.dishPage}>
-      <h1 className={styles.dishTitle}>Пиво</h1>  
+      
       
       <div className={styles.dishPageContainer}>
+      <h1 className={styles.dishTitle}>Пиво</h1>  
+        <span className={styles.toBasketLinkBox}>
+
+          <NavLink to="/menu/basket" className={styles.toBasketLink}>
+            <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
+            {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
+          </NavLink>
+        </span>
+        
+        <ToMenuButton/>
+
 
         <div className={styles.dishPageBox}>
 
-          <NavLink to="/menu" className={styles.toMenuLink}>
-            <ToMenuIcon/>
-          </NavLink>
-
-          <table className={styles.fades}>
+          <table className={styles.dishTableList}>
 
             <thead>
-              <tr>
+              <h3>Пиво</h3>
+              {/* <tr>
                 <th>ID</th>
                 <th>Назва</th>
                 <th>Об'єм</th>
                 <th>Ціна</th>
-              </tr>
+              </tr> */}
             </thead>
 
             <tbody  className={`${styles.fadeIn}`}>
               {menuItems.map((item) => (
-                <tr key={item.id}>
-                  <td>{item.id}</td>
-                  <td>{item.назва}</td>
-                  <td>{item.обєм}</td>
-                  <td>{item.ціна}</td>
-                  <td>
-                    <AddButton
-                      onClick={() => addToCart(item)}
-                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                      updateButtonState={() => updateButtonState(item.id)}
-                    />
-                  </td>
-                </tr>
+                <tr key={item.id} className={styles.dishTable}>
+                {/* <td>{item.id}</td> */}
+                <td className={styles.dishTableName}>{item.назва}</td>
+                <td className={styles.dishTableWeigth}>{item.вага}</td>
+                <td className={styles.dishTablePrice}>{item.ціна}</td>
+                <td className={styles.dishTableButtonAdd}>
+                  <AddButton
+                    // className={styles.dishAddButton}
+                    onClick={() => addToCart(item)}
+                    alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                    updateButtonState={() => updateButtonState(item.id)}
+                  />
+                </td>
+              </tr>
               ))}
             </tbody>
 
           </table>
 
 {/* beerSnacks */}
-          <table className={styles.fades}>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Назва</th>
-      <th>Вага</th>
-      <th>Ціна</th>
-      <th>Склад</th>
-    </tr>
-  </thead>
-  <tbody className={`${styles.fadeIn}`}>
-    {beerSnacksData.map((item) => (
-      <tr key={item.id}>
-        <td>{item.id}</td>
-        <td>{item.назва}</td>
-        <td>{item.вага}</td>
-        <td>{item.ціна}</td>
-        <td>{item.склад}</td>
-        <td>
-          <AddButton
-            onClick={() => addToCart(item)}
-            alreadyAdded={cartItems.some((cartItem) => cartItem.id === item.id)}
-            updateButtonState={() => updateButtonState(item.id)}
-          />
-        </td>
-      </tr>
-    ))}
-  </tbody>
-</table>
+        <table>
+          <thead>
+            <tr>
+              <h3>до Пива</h3>
+              {/* <th>ID</th>
+              <th>Назва</th>
+              <th>Вага</th>
+              <th>Ціна</th>
+              <th>Склад</th> */}
+            </tr>
+          </thead>
+          <tbody>
+            {beerSnacksData.map((item) => (
+              <tr key={item.id} className={styles.dishTable}>
+                {/* <td>{item.id}</td> */}
+                <td className={styles.dishTableName}>{item.назва}</td>
+                <td className={styles.dishTableIngredients}>{item.інгредієнти}</td>
+                <td className={styles.dishTableWeigth}>{item.вага}</td>
+                <td className={styles.dishTablePrice}>{item.ціна}</td>
+                
+                <td className={styles.dishTableButtonAdd}>
+                  <AddButton
+                    onClick={() => addToCart(item)}
+                    alreadyAdded={cartItems.some((cartItem) => cartItem.id === item.id)}
+                    updateButtonState={() => updateButtonState(item.id)}
+                  />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
 
         </div>

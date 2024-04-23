@@ -3,11 +3,14 @@
 import React from 'react';
 
 import { Logo } from 'components/Logo/Logo';
+import { InstagramIcon } from 'components/Icons/InstagramIcon/InstagramIcon';
+import { FacebookIcon } from 'components/Icons/FacebookIcon/FacebookIcon';
+import { MailIcon } from 'components/Icons/MailIcon/MailIcon';
 import styles from '../Footer/Footer.module.css';
 
-import { ReactComponent as FacebookIcon } from 'images/facebookIcon.svg';
-import { ReactComponent as GmailIcon } from 'images/mailIcon.svg';
-import { ReactComponent as InstagramIcon } from 'images/instagramIcon.svg';
+// import { ReactComponent as FacebookIcon } from 'images/facebookIcon.svg';
+// import { ReactComponent as GmailIcon } from 'images/mailIcon.svg';
+
 
 export const Footer = ({ customLinks }) => {
   return (
@@ -31,7 +34,7 @@ export const Footer = ({ customLinks }) => {
               <FacebookIcon />
             </li>
             <li>
-              <GmailIcon />
+              <MailIcon />
             </li>
           </ul>
         )}

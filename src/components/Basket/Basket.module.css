@@ -1,8 +1,13 @@
+.basket {
+ position: relative;
+ min-height: 100vh;
+}
 
 .basketContainer {
- width: 100%;
- min-height: 75vh;
-}
+   width: 100%; 
+   /* overflow-y: scroll; */
+ }
+ 
 
 
 .quantityBox {
@@ -12,15 +17,8 @@
  justify-content: space-between;
 }
 
-.quantityBox span {
- display: flex;
- font-size: 15px;
-}
 
-.basketBox {
- margin: 0 10px;
- background-color: inherit;
-}
+
 
 .basketTitle {
    display: flex;
@@ -32,17 +30,9 @@
    margin: 0;
    color: #7b7b7b;
    margin-bottom: 50px;
-   /* background-color: #000; */
+  
 
-   @media screen and (min-width: 768px) {
-      height: 75px;
-      font-size: 13px;
-   };
-   @media screen and (min-width: 1200px) {
-      height: 95px;
-      
-      font-size: 15px;
-   };
+ 
    
 }
 
@@ -53,27 +43,35 @@
 
 }
 
+.basketBox {
+   height: 100%;
+   
+  }
+
 .basketListBox {
  display: flex;
- width: 100%;
+ width: auto;
  height: auto;
 justify-content: center;
 align-items: center;
 }
-.basketList {
-   /* display: grid;
-   grid-template-columns: repeat(1, 1fr);
-   grid-row-gap: 15px; */
 
-   display: grid;
+.basketEmptyListBox {
+ display: flex;
+ width: auto;
+ height: auto;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-size: 22px;
+}
+
+.basketList {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 15px;
     border: none;
     border-radius: 15px;
-    padding: 20px;
-    /* background: linear-gradient(0deg, black, rgb(41, 41, 41));
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.489), #0b0b0bcb, #111111cb);
-    background-attachment: fixed; */
 }
 
 .basketListItem {
@@ -86,10 +84,9 @@ align-items: center;
    align-items: center;
    justify-content: space-between;
    background: black;
-   /* color: #000000; */
+
    background: linear-gradient(180deg, #282727cc, #282727bc, #000000ae);
     background-attachment: fixed;
-   /* background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28); */
 
 }
 
@@ -105,8 +102,17 @@ align-items: center;
    font-size: 14px;
    height: 100%;
    border-left: 1px solid #7b7b7b39;
-   color: #6f5000;
+   color: #6f0000;
 }
+
+.basketListItemCategory {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #6f0000;
+}
+
+
 .basketListItemCounter {
    position: absolute;
    right: 55px;
@@ -122,18 +128,13 @@ align-items: center;
 .basketListItemName {
  padding-left: 20px;
  font-size: 15px;
- /* font-family: ; */
- /* font-family: 'PrimaryFont'; */
+
 }
 
 .basketMakeOrder {
  display: grid;
  justify-content: space-around;
  padding-top: 40px;
- /* background: linear-gradient(0deg, black, #1f1f1fcb); */
- /* background: linear-gradient(360deg, #0000007d, #0b0b0bcb, #111111cb); */
-
- /* background-attachment: fixed; */
 }
 
 .basketListItemIncrease,
@@ -155,9 +156,7 @@ align-items: center;
 display: flex;
 justify-content: center;
 padding: 10px 0px;
-/* width: 900px; */
 text-align: right;
-/* border-bottom: 1px solid rgba(154, 145, 145, 0.239); */
 }
 
 
@@ -173,11 +172,9 @@ text-align: right;
 
 .basketQuantityBox {
  display: flex;
- /* width: 260px; */
  align-items: center;
  border-radius: 9px;
  background-color: rgb(0, 0, 0);
- /* border: 1px solid red; */
  margin: 20px;
  
 }
@@ -187,7 +184,6 @@ text-align: right;
    padding-right: 20px;
    font-size: 16px;
    line-height: 17px;
-   /* color: red; */
   }
 
 .basketTotalQuantity,
@@ -195,62 +191,30 @@ text-align: right;
    color: #836006;
    font-size: 30px;
    padding-right: 20px;
-
-   /* padding-left: 7px; */
-   /* background-color: red; */
-   /* padding-top: 5px; */
-  /* background: linear-gradient(90deg, #00000000,#ffffff8d); */
-
 }
-.fades {
-   opacity: 0; /* Початковий стан непрозорості */
-   transition: opacity .7s ease-in-out; /* Плавний перехід непрозорості */
- }
 
- .toMenuLink {
-   position: absolute;
-   right: 30px;
-   top: 75px;
-   fill: #6f5000;
 
-   @media screen and (min-width: 768px) {
-      top: 105px;
-      right: 45px;
-   };
-   @media screen and (min-width: 1200px) {
-     top: 135px;
-     right: 65px;
-   };
-}
 
 .basketInputBox {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 15px;
   padding: 15px 50px;
-  /* border-color: #756565; */
   border-radius: 15px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.489), #0b0b0bcb, #111111cb);
-    background-attachment: fixed;
+  background: linear-gradient(180deg, #000000, #232323cb, #232323cb);
+  background-attachment: fixed;
 }
- .basketInput {
-   /* border: 1px solid black; */
-   /* border-bottom: 1px solid #7b7b7b39;  */
-   /* background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28); */
 
+ .basketInput {
    background-color: black;
    color: var(--non-active-color);
    padding-left: 16px;
    width: 300px;
    height: 50px;
    border: none;
-   border-radius: 9px;
+   border-radius: 11px;
 }
 
-.basketInputHomeNumber {
-   padding-left: 16px;
-   width: 80px;
-}
 
 .basketInputAddressBox {
    display: flex;
@@ -261,7 +225,7 @@ text-align: right;
    width: 230px;
 }
 
-.basketInputNumber {
+.basketInputStreetNumber {
    width: 40px;
 }
 
@@ -269,56 +233,61 @@ text-align: right;
    display: flex;
    align-items: center;
    justify-content: center;
-   color: #000000;
-   /* text-transform: uppercase; */
+   color: #4b4b4b;
+   text-transform: uppercase;
    height: 40px;
-   /* width: 200px; */
    margin: 30px 60px;
    border: none;
-   border-radius: 9px;
-   /* background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28); */
+   border-radius: 30px;
+   background: linear-gradient(0deg, #191616, black, #191616);
 }
 
-.emptyBasketMessage,
-.orderDone {
+
+ 
+.buttonMakeOrder.disabled {
+   background: linear-gradient(0deg, #191616, black, #191616);
+   cursor: not-allowed;
+   position: relative;
+   transition: background-color 0.5s; 
+}
+
+.buttonMakeOrder.disabled:hover::after {
+   content: "Заповніть всі поля";
    position: absolute;
-   display: grid;
-   grid-template-columns: repeat(1, 1fr);
-   grid-row-gap: 20px;
+   top: calc(100% + 5px);
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #000;
+   color: rgb(217, 217, 217);
+   padding: 5px 10px;
+   border-radius: 5px;
+   font-size: 14px;
+   white-space: nowrap;
+   transition: opacity 5s; /* Додаємо перехід для плавної зміни прозорості */
+   opacity: 0; /* По замовчуванню текст має бути прихованим */
+}
+
+.buttonMakeOrder.disabled:hover::after {
+   opacity: 1; /* Під час наведення зробимо текст видимим */
+}
+
+.buttonMakeOrder.active {
+   
+   background: linear-gradient(0deg, #30000090, black, #30000090);
+   color: #f3f0f0;
+   transition: background-color 0.5s; /* Додаємо перехід для зміни кольору фону */
+}
+
+.buttonMakeOrder.active:hover {
+   background: linear-gradient(0deg, #77020290, black, #30000090);
+}
+
+
+.emptyBasketMessage {
+   position: absolute;
+   display: flex;
    justify-content: center;
    align-items: center;
-   height: 480px;
-   min-width: 93%;
-   background-color: rgb(0, 0, 0);
-   /* border: 1px solid #7b7b7b; */
-   border-radius: 22px;
-   top: 120px;
-   left: 3.5%;
-   z-index: 5;
-   font-size: 17px;
+   font-size: 15px;
 
-   @media screen and (min-width: 768px) {
-      top: 200px;
-      /* max-width: 37%; */
-   }
-}
-
-.emptyBasketMessage,
-.orderDone {
- display: flex;
- flex-direction: column;
- justify-content: center;
-}
-
-.active {
-color: red;
-}
-
-.inactive {
-background-color: gray;
-}
-
- .basketListBox {
- height: 100%;
- /* background-color: rgb(0, 0, 0); */
 }

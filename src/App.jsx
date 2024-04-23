@@ -30,7 +30,7 @@ export const App = () => {
         </div>
         <Route render={({ location }) => {
           const isContactsPage = location.pathname === '/contacts';
-          return <Footer customLinks={isContactsPage ? <a href="https://developer-site.com">Ben Happyngton</a> : null} />;
+          return <Footer customLinks={isContactsPage ? <a href="https://benhappyngton.com">Ben Happyngton</a> : null} />;
         }} />
       </MasterContainer>
     </Router>

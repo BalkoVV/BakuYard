@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, useHistory } from 'react-router-dom'; 
 
 import { Logo } from 'components/Logo/Logo';
-import { ReactComponent as MenuIcon } from 'images/burgerSwitch.svg';
+import { BurgerLinesIcon } from 'components/Icons/BurgerLinesIcon/BurgerLinesIcon';
+
 import { ReactComponent as TimeIcon } from 'images/time.svg';
 import { ReactComponent as MapIcon } from 'images/mapIcon.svg';
 
@@ -43,8 +44,8 @@ export const Header = () => {
            </li>
 
             <li> 
-             <span className={styles.burgeLinesIcon} onClick={toggleMenu}>
-               <MenuIcon />
+             <span className={styles.burgerLinesIcon} onClick={toggleMenu}>
+               <BurgerLinesIcon />
              </span>
             </li>
           

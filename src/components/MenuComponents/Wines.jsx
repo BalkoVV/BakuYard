@@ -1,0 +1,228 @@
+import React, { useEffect, useState, useContext } from "react";
+import { NavLink } from "react-router-dom";
+
+import AddButton from 'components/MenuComponents/AddButton/AddButton';
+import CartContext from "components/CartProvider/CartProvider";
+
+import { ReactComponent as BasketIcon } from 'images/delivery.svg';
+import ToMenuButton from "components/ToMenuButton/ToMenuButton";
+
+import menuChampagneData from "services/dataWines/champagne.json";
+import menuUkrainianWineData from "services/dataWines/ukrainianWine.json";
+import menuItalianWineData from "services/dataWines/italianWine.json";
+import menuGeorgianWineData from "services/dataWines/georgianWine.json";
+
+import styles from 'components/MenuComponents/menuStyle.module.css';
+
+export const Wines = () => {
+  const { addToCart, cartItems } = useContext(CartContext);
+
+  const [champagneItems, setChampagneItems] = useState([]);
+  const [ukrainianWineItems, setUkrainianWineItems] = useState([]);
+  const [italianWineItems, setItalianWineItems] = useState([]);
+  const [georgianWineItems, setGeorgianWineItems] = useState([]);
+
+  useEffect(() => {
+    const contentElements = document.querySelectorAll(`.${styles.fades}`);
+    contentElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.style.opacity = '.9'; 
+      }, 10 * index); 
+    });
+  }, []);
+  
+  useEffect(() => {
+    setChampagneItems(menuChampagneData);
+  }, []);
+
+  useEffect(() => {
+    setUkrainianWineItems(menuUkrainianWineData);
+  }, []);
+
+  useEffect(() => {
+    setItalianWineItems(menuItalianWineData);
+  }, []);
+
+  useEffect(() => {
+    setGeorgianWineItems(menuGeorgianWineData);
+  }, []);
+
+  const updateChampagneButtonState = (itemId) => {
+    setChampagneItems(champagneItems.map(item => {
+      if (item.id === itemId) {
+        return { ...item, alreadyAdded: false };
+      }
+      return item;
+    }));
+  };
+
+  const updateUkrainianWineButtonState = (itemId) => {
+    setUkrainianWineItems(ukrainianWineItems.map(item => {
+      if (item.id === itemId) {
+        return { ...item, alreadyAdded: false };
+      }
+      return item;
+    }));
+  };
+
+  const updateGeorgianWineButtonState = (itemId) => {
+    setGeorgianWineItems(georgianWineItems.map(item => {
+      if (item.id === itemId) {
+        return { ...item, alreadyAdded: false };
+      }
+      return item;
+    }));
+  };
+
+  const updateItalianWineButtonState = (itemId) => {
+    setItalianWineItems(italianWineItems.map(item => {
+      if (item.id === itemId) {
+        return { ...item, alreadyAdded: false };
+      }
+      return item;
+    }));
+  };
+
+  return (
+    <div className={styles.dishPage}>
+     <div className={styles.dishPageContainer}>
+       <h1 className={styles.dishTitle}>Wines</h1>  
+
+      <span className={styles.toBasketLinkBox}>
+        <NavLink to="/menu/basket" className={styles.toBasketLink}>
+          <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
+          {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
+        </NavLink>
+      </span>
+      
+      <ToMenuButton/>
+
+      <div className={styles.dishPageBox}>
+
+      <table>
+            <thead>
+              <tr>
+              <h3>Шампанське</h3>
+              {/* <th>ID</th>
+                <th>Назва</th>
+                <th>Об'єм</th>
+                <th>Ціна</th> */}
+              </tr>
+            </thead>
+            <tbody>
+              {champagneItems.map((item) => (
+                <tr key={item.id} className={styles.dishTable}>
+                  {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
+                  <td  className={styles.dishTableName}>{item.назва}</td>
+                  <td  className={styles.dishTableType}>{item.вид}</td>
+                  <td  className={styles.dishTableWeigth}>{item.вага}</td>
+                  <td  className={styles.dishTablePrice}>{item.ціна}</td>
+                  <td className={styles.dishTableButtonAdd}>
+                    <AddButton
+                      onClick={() => addToCart(item)}
+                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                      updateButtonState={() => updateChampagneButtonState(item.id)}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+              <h3>Українські вина</h3>
+              {/* <th>ID</th>
+                <th>Назва</th>
+                <th>Об'єм</th>
+                <th>Ціна</th> */}
+              </tr>
+            </thead>
+            <tbody>
+              {ukrainianWineItems.map((item) => (
+                <tr key={item.id} className={styles.dishTable}>
+                  {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
+                  <td  className={styles.dishTableName}>{item.назва}</td>
+                  <td  className={styles.dishTableType}>{item.вид}</td>
+                  <td  className={styles.dishTableWeigth}>{item.вага}</td>
+                  <td  className={styles.dishTablePrice}>{item.ціна}</td>
+                  <td className={styles.dishTableButtonAdd}>
+                    <AddButton
+                      onClick={() => addToCart(item)}
+                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                      updateButtonState={() => updateUkrainianWineButtonState(item.id)}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+              <h3>Італійські вина</h3>
+              {/* <th>ID</th>
+                <th>Назва</th>
+                <th>Об'єм</th>
+                <th>Ціна</th> */}
+              </tr>
+            </thead>
+            <tbody>
+              {italianWineItems.map((item) => (
+                <tr key={item.id} className={styles.dishTable}>
+                  {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
+                  <td  className={styles.dishTableName}>{item.назва}</td>
+                  <td  className={styles.dishTableType}>{item.вид}</td>
+                  <td  className={styles.dishTableWeigth}>{item.вага}</td>
+                  <td  className={styles.dishTablePrice}>{item.ціна}</td>
+                  <td className={styles.dishTableButtonAdd}>
+                    <AddButton
+                      onClick={() => addToCart(item)}
+                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                      updateButtonState={() => updateItalianWineButtonState(item.id)}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+              <h3>Грузинські вина</h3>
+              {/* <th>ID</th>
+                <th>Назва</th>
+                <th>Об'єм</th>
+                <th>Ціна</th> */}
+              </tr>
+            </thead>
+            <tbody>
+              {georgianWineItems.map((item) => (
+                <tr key={item.id} className={styles.dishTable}>
+                  {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
+                  <td  className={styles.dishTableName}>{item.назва}</td>
+                  <td  className={styles.dishTableType}>{item.вид}</td>
+                  <td  className={styles.dishTableWeigth}>{item.вага}</td>
+                  <td  className={styles.dishTablePrice}>{item.ціна}</td>
+                  <td className={styles.dishTableButtonAdd}>
+                    <AddButton
+                      onClick={() => addToCart(item)}
+                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                      updateButtonState={() => updateGeorgianWineButtonState(item.id)}
+                    />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Wines;

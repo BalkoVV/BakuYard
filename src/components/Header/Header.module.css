@@ -3,9 +3,11 @@
 .headerComponent {
   /* position: fixed; */
   width: 100%;
-  /* background: linear-gradient(0deg, black, #1b14007e); */
-  border-bottom: 1px solid #6b6b6b;
+  /* background: linear-gradient(0deg, #2424247e, black); */
+  background: black;
+  border-bottom: 1px solid #192126;
   z-index: 10;
+  /* overflow-y: scroll; */
 }
 
 .borderDecorative {
@@ -15,6 +17,10 @@
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, #101010, #373737, #101010);
+  background: linear-gradient(90deg, #07090bdc, #192126 ,#192126,#192126, #07090bdc);
+  background: linear-gradient(90deg,#000000, #2d1d01, #513401, #2d1d01, #000000);
+  background: linear-gradient(90deg, #000000, #1f1f1f,#242424, #444444, #242424, #1f1f1f, #000000);
+  z-index: 9; 
 
   @media screen and (min-width: 768px) {
     top: 57px;
@@ -81,10 +87,10 @@
 }
 
  .headerNav a {
-  transition: .5s;
+  transition: 1s;
 }
  .headerNav a:hover  {
- color: #6f5000;
+ color: #790008;
  /* color: #1b1400; */
  transition: .5s;
 }
@@ -123,11 +129,11 @@
 }; 
 }
 
-.burgeLinesIcon {
+.burgerLinesIcon {
   position: absolute;
   right: 33px;
   top: 15px;
-  fill: #6f5000;
+  fill: #f1eaea33;
   
    @media screen and (min-width: 767.9px) {
      display: none; 
@@ -136,20 +142,21 @@
  }
 
 .activeLink {
-  /* position: relative; */
-  color: #4f3900; 
+  color: #555555; 
+  color: #790008;
 }
 
-.activeLink::after {
-  /* position: relative; */
+/* .activeLink::after {
   top: 3px;
   content: "";
   display: flex;
   width: 100%;
   height: 2px;
   border-radius:  0 0 5px 5px;
-  background-color: #483c1891; 
-}
+  background-color: #062335; 
+  transition: 1s;
+  background: linear-gradient(90deg, #000000, #1f1f1f,#242424, #444444, #242424, #1f1f1f, #000000);
+} */
 
 /* <stop offset="0%" style="stop-color: #1b1400; stop-opacity: 1" />
 <stop offset="100%" style="stop-color: #7b7a7a; stop-opacity: .25" /> */

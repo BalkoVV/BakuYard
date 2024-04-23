@@ -14,8 +14,8 @@ const AddButton = ({ onClick, alreadyAdded }) => {
 
   return (
 
-    <div onClick={handleClick} disabled={added} className={styles.addsButton}>
-       {added ? 'Added' : '+'}
+    <div onClick={handleClick} disabled={added} className={styles.addButton}>
+       {added ? 'added' : '+'}
     </div>
 
   );
