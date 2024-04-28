@@ -15,8 +15,9 @@ import styles from '../Footer/Footer.module.css';
 export const Footer = ({ customLinks }) => {
   return (
     <div className={styles.footer}>
-      <div className={styles.borderDecorative}></div>
+      {/* <div className={styles.borderDecorative}></div> */}
       <div className={styles.footerContainer}>
+        <div  className={styles.footerBox}>
         <span className={styles.logoFooter}>
           <Logo className={styles.footerLogo}/>
         </span>
@@ -40,6 +41,7 @@ export const Footer = ({ customLinks }) => {
         )}
        
         <h5 className={styles.footerAllRights}>@Всі права захищені</h5>
+        </div>
       </div>
     </div>
   );

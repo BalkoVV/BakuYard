@@ -1,46 +1,33 @@
 /* Header.module.css */
 
 .headerComponent {
-  /* position: fixed; */
-  width: 100%;
-  /* background: linear-gradient(0deg, #2424247e, black); */
-  background: black;
-  border-bottom: 1px solid #192126;
+  /* border-bottom: 2px solid #192126; */
+  border-bottom: 2px solid transparent;
+  /* border-image: linear-gradient(0.25turn, #000000, #595959, #000000); */
+  border-image: linear-gradient(0.25turn, #090909, #acabab4d, #090909);
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+  box-shadow:  0 0 19px 9px rgba(0, 0, 0, 0.452);
+  background-attachment: fixed;
+  border-image-slice: 1;
+  width:100%;
   z-index: 10;
-  /* overflow-y: scroll; */
 }
 
-.borderDecorative {
-  position: absolute;
-  top: 55px;
-  display: flex;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, #101010, #373737, #101010);
-  background: linear-gradient(90deg, #07090bdc, #192126 ,#192126,#192126, #07090bdc);
-  background: linear-gradient(90deg,#000000, #2d1d01, #513401, #2d1d01, #000000);
-  background: linear-gradient(90deg, #000000, #1f1f1f,#242424, #444444, #242424, #1f1f1f, #000000);
-  z-index: 9; 
-
-  @media screen and (min-width: 768px) {
-    top: 57px;
-   };
- 
-   @media screen and (min-width: 1200px) {
-     top: 60px;
-   };
-}
 
 .headerBox {
    display: flex;
-   height: 55px;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.28),rgba(0, 0, 0, 0.319));
+   height: 50px;
   
    @media screen and (min-width: 768px) {
-    height: 57px;
+    height: 60px;
    };
  
    @media screen and (min-width: 1200px) {
-     height: 60px;
+     height: 70px;
+    
+
    };
  }
 
@@ -81,17 +68,19 @@
 
  }
 
- .activeLink {
- /* display: flex; */
- justify-content:right;
+ .activeLink h4 {
+  background: linear-gradient(0deg, #3f0004,#790008,#3f0004);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
- .headerNav a {
-  transition: 1s;
-}
- .headerNav a:hover  {
+ .headerNav a:hover h4 {
  color: #790008;
- /* color: #1b1400; */
+ background: linear-gradient(0deg, #3f0004,#790008,#3f0004);
+ -webkit-background-clip: text;
+ color: transparent;
+ display: inline-block;
  transition: .5s;
 }
 
@@ -120,8 +109,13 @@
 
 .headerInfo h3 {
  margin: 0;
- font-size: 11px;
+ font-size: 12px;
  padding-left: 2px;
+ background: linear-gradient(0deg, #070707,#7c7c7c,#090909);
+ background: linear-gradient(0deg, #6c6c6c,#7c7c7c,#6c6c6c);
+ -webkit-background-clip: text;
+ color: transparent;
+ display: inline-block;
 
  @media screen and (min-width: 1200px) {
   font-size: 12px;
@@ -165,6 +159,7 @@
 
  @media screen and (min-width: 767.9px) {
   height: 20px;
+  margin-right: 2px;
 }
 }
 

@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import InMapButton from 'components/InMapButton/InMapButton';
+
 import { ReactComponent as TimeIcon } from 'images/time.svg';
 import { ReactComponent as MapIcon } from 'images/mapIcon.svg';
 import { ReactComponent as PhoneIcon } from 'images/phoneIcon.svg';
@@ -27,7 +29,9 @@ export const ContactsPage = () => {
    <div className={styles.contactsPage}>
       {/* <h1 className={styles.contactsPageTitle}>Контакти</h1> */}
 
-      <div className={`${styles.mapBox} ${styles.fadeOut}`}></div>
+      <div className={`${styles.mapBox} ${styles.fadeOut}`}>
+        <InMapButton className={styles.inMap}/>
+      </div>
 
         <div className={styles.contactsPageContainer}>
 
@@ -62,7 +66,7 @@ export const ContactsPage = () => {
               <ul className={styles.contactsList}>
               <li className={styles.contactsListItem}>
                   <span><TimeIcon/></span>
-                  <h3>Ми працюємо з 9 до 23</h3>
+                  <h3>Ми працюємо з 11:00 до 23:00</h3>
                 </li>
                 
               <li className={styles.contactsListItem}>

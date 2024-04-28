@@ -74,7 +74,7 @@ export const MenuPage = () => {
               <li className={`${styles.dishCard} ${styles.dishCardBarbeque}`}>
                 <span classame={styles.dishCardBox}> 
                   <NavLink to="/menu/barbeque" className={styles.dishCardLink}>
-                    <h1>Барбекю</h1>
+                    <h1 className={styles.dishCardLinkTitle}>Барбекю</h1>
                   </NavLink>
                 </span>
               </li>

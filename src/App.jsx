@@ -11,6 +11,7 @@ import ContactsPage from 'pages/ContactsPage/ContactsPage';
 import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
 import MasterContainer from 'components/MasterContainer/MasterContainer';
+import LogoBen from 'components/LogoBen/LogoBen';
 import styles from 'index.css';
 
 export const App = () => {
@@ -30,7 +31,10 @@ export const App = () => {
         </div>
         <Route render={({ location }) => {
           const isContactsPage = location.pathname === '/contacts';
-          return <Footer customLinks={isContactsPage ? <a href="https://benhappyngton.com">Ben Happyngton</a> : null} />;
+          return <Footer customLinks={isContactsPage ? <a href="https://benhappyngton.com">
+            <LogoBen />
+            {/* Ben Happyngton */}
+          </a> : null} />;
         }} />
       </MasterContainer>
     </Router>

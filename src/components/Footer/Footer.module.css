@@ -1,48 +1,32 @@
 .footer {
   position: relative;
   display: flex;
-  /* padding: 40px 0px 0px; */
-  /* margin-top: 50px; */
   justify-content: center;
-  background: linear-gradient(0deg,#000000, #24242441);
-  background: linear-gradient(0deg, #2424247e, black);
-  background: black;
-  height: 160px;
 
+  height: 160px;
+  width: 100%;
+
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+  background-attachment: fixed;
+  box-shadow: inset 0 0 62px 92px rgba(0, 0, 0, 0.424);
+
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, #090909, #acabab4d, #090909);
+  border-image-slice: 1;
+    
   @media screen and (min-width: 768px) {
     height: 170px;
   };
 
   @media screen and (min-width: 1200px) {
-    height: 180px;
+    height: 210px;
   }
 }
 
 .footerContainer {
 padding: 40px 0;
-}
 
-.borderDecorative {
-  position: absolute;
-  bottom: 200px;
-  display: flex;
-  z-index: 100;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, #101010, #373737, #101010);
-  background: linear-gradient(90deg,#000000, #2d1d01, #513401, #2d1d01, #000000);
-  background: linear-gradient(90deg, #000000, #1f1f1f,#242424, #444444, #242424, #1f1f1f, #000000);
-  /* background: linear-gradient(90deg, #060400, #3e3000, #060400); */
-  background: linear-gradient(90deg, #000000, #1f1f1f,#242424, #444444, #242424, #1f1f1f, #000000);
-  /* background-color: rgb(102, 51, 153); */
-
-  @media screen and (min-width: 768px) {
-    bottom: 160px;
-  };
-
-  @media screen and (min-width: 1200px) {
-    bottom: 180px;
-  }
 }
 
 .footerLogo {
@@ -54,8 +38,10 @@ padding: 40px 0;
 .footerAllRights {
   display: flex;
   justify-content: center;
-  color: #7b7b7b;
+  color: #353535;
   margin-top: 30px;
+  margin-bottom: 30px;
+  
 }
 
 .footerSocial {
@@ -67,7 +53,6 @@ padding: 40px 0;
 
 .footerSocial li img {
   height: 27px;
-  /* box-shadow: 0 0 13px 6px #291a0fa3; */
   border-radius: 50%;
 }
 

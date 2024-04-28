@@ -12,6 +12,9 @@ import CartContext from "components/CartProvider/CartProvider";
 import menuData from "services/dataBakedDishes/pizza.json";
 import khachapuriData from "services/dataBakedDishes/khachapuri.json"
 
+import pizzaMenu1 from 'images/pizzaMenu1.png';
+import pizzaMenu2 from 'images/pizzaMenu2.png';
+import pizzaMenu3 from 'images/pizzaMenu3.png';
 
 import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
@@ -67,6 +70,40 @@ export const Pizza = () => {
         </span> */}
 
         <div>
+
+        <img
+         src={pizzaMenu1}
+        alt="First Image"
+        style={{
+          position: 'fixed',
+          top: '100px',
+          left: '-80px',
+          width: '400px',
+          height: '600px',
+        }}
+      />
+       <img
+         src={pizzaMenu2}
+        alt="First Image"
+        style={{
+          position: 'fixed',
+          top: '290px',
+          right: '-80px',
+          width: '400px',
+          height: '600px',
+        }}
+      />
+       {/* <img
+         src={pizzaMenu3}
+        alt="First Image"
+        style={{
+          position: 'absolute',
+          top: '350px',
+          left: '50px',
+          width: '200px',
+          height: '200px',
+        }}
+      /> */}
           <table>
             <thead>
               <tr>

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
+import { ReactComponent as ToMenuIcon } from 'images/deliveryMoto.svg';
 
 import styles from 'components/ToMenuButton/ToMenuButton.module.css';
 

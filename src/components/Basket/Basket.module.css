@@ -86,6 +86,8 @@ align-items: center;
    background: black;
 
    background: linear-gradient(180deg, #282727cc, #282727bc, #000000ae);
+   background: linear-gradient(359deg, #181717bd, #060606bc, black, black);
+   background-attachment: fixed;
     background-attachment: fixed;
 
 }
@@ -102,7 +104,7 @@ align-items: center;
    font-size: 14px;
    height: 100%;
    border-left: 1px solid #7b7b7b39;
-   color: #6f0000;
+   color: #b6b6b6;
 }
 
 .basketListItemCategory {
@@ -188,7 +190,7 @@ text-align: right;
 
 .basketTotalQuantity,
 .basketTotalPrice {
-   color: #836006;
+   color: #790811;
    font-size: 30px;
    padding-right: 20px;
 }
@@ -238,7 +240,7 @@ text-align: right;
    height: 40px;
    margin: 30px 60px;
    border: none;
-   border-radius: 30px;
+   border-radius: 11px;
    background: linear-gradient(0deg, #191616, black, #191616);
 }
 

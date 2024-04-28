@@ -22,58 +22,58 @@ const MainPage = () => {
       <div className={styles.heroBox}>
         <div className={styles.hero} id="hero">
           <div className={styles.heroInHero}>
-            {/* boxShadow */}
+        
           </div>
         </div>
       </div>
 
        <section  className={styles.topDescriptionsBox}>
-       <p className={styles.topDescriptions}>
+       <h1 className={styles.topDescriptions}>
           "Бакінський Двір" – місце де смак об'єднує серця, <br/>
           а атмосфера творить неповторний вечір.<br/>
           У нас кожен стіл – це святковий захід.<br/>
           Кожна страва – це шедевр від майстра.<br/>
           Від палячих шашликів до вегетаріанських страв<br/>
           – у нас є щось для кожного гурмана
-        </p>
+        </h1>
        </section>
        
         <section className={styles.featuresTopBox}>
          
          <ul className={styles.featuresTop}>
             <li>
-            <span className={styles.featuresTopBlur}>
+            
                 <h1>Банкети</h1>
-                </span>
+                
             </li>
             <li>
-            <span className={styles.featuresTopBlur}>
+            {/* <span className={styles.featuresTopBlur}> */}
             <h1>Корпоративи</h1>
-                </span>
+            {/* </span> */}
                 
             </li>
             <li>
-            <span className={styles.featuresTopBlur}>
+            
             <h1>Весілля</h1>
-                </span>
+                
                 
             </li>
             <li>
-            <span className={styles.featuresTopBlur}>
+            {/* <span className={styles.featuresTopBlur}> */}
             <h1>Дні народження</h1>
-                </span>
+            {/* </span> */}
                 
             </li>
             <li>
-            <span className={styles.featuresTopBlur}>
+            
             <h1>Сімейна вечеря</h1>
-                </span>
+                
                 
             </li>  
             <li>
-            <span className={styles.featuresTopBlur}>
+            {/* <span className={styles.featuresTopBlur}> */}
             <h1>Бізнес ланч</h1>
-                </span>
+                {/* </span> */}
                 
             </li>
           </ul>
@@ -81,36 +81,39 @@ const MainPage = () => {
         </section>
         
           <section className={styles.centerDescriptionsBox}>
-          <p className={styles.centerDescriptions}>
-            Затишні зали, приватні бесідки та сонячна тераса чекають,  
-            щоб стати свідками вашого свята
-          </p>
+          <h1 className={styles.centerDescriptions}>
+            Затишні банкетні зали чекають, щоб стати свідками вашого свята.
+            За потреби більшої приватності, оберіть одну з окремих альтанок. <br/>
+            А відкрита тераса, дасть змогу насолодитися смачними стравами на свіжому повітрі,
+            незалежно від пори року
+          </h1>
           </section>
        
           <section className={styles.featuresCenterBox}>
           <ul className={styles.featuresCenter}>
           <li>
-              <h3>Банкетна зала</h3>
+              <h1>Банкетна зала</h1>
           </li>
           <li>
-              <h3>Окремі бесідки</h3>
+              <h1>Окремі альтанки</h1>
           </li>
           <li>
-              <h3>Літня тераса</h3>
+              <h1>Літня тераса</h1>
           </li>
           <li>
-              <h3>Танцмайданчик</h3>
+              <h1>Танцмайданчик</h1>
           </li>
         </ul>
           </section>
 
         <section className={styles.bottomDescriptionsBox}>
-        <p className={styles.bottomDescriptions}>
-          Безкоштовний Wi-Fi - залишатесь на зв'язку, працюйте або діліться світлинами 
-          з Вашого відпочинку. <br/>
-          Не переймайтеся за парковку. Зручне паркувальне місце, 
+        <h1 className={styles.bottomDescriptions}>
+          Залишатесь на зв'язку, працюйте або діліться світлинами з Вашого відпочинку - 
+          у вільному доступі безкоштовний Wi-Fi
+           <br/>
+          Також, не переймайтеся за парковку. Зручне паркувальне місце, 
           зробить Ваше перебування у нас ще комфортнішим
-        </p>
+        </h1>
         
        
         </section>
@@ -126,17 +129,13 @@ const MainPage = () => {
               <li>
                   <h1>Free Wi-Fi</h1>
               </li>
-              {/* <li>
-                  <h1>Караоке</h1>
-              </li> */}
-              
             </ul>
         </section>
         
         <section className={styles.bottomDescriptionsBox}>
-        <p className={styles.bottomDescriptions}>
+        <h1 className={styles.bottomDescriptions}>
            В нас працює доставка по місту
-        </p>
+        </h1>
        
         </section>
     </div>

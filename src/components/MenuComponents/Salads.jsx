@@ -13,6 +13,9 @@ import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 
 import menuData from "services/dataSalads/salads.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
+import saladMenu1 from 'images/saladMenu1.png';
+import saladMenu2 from 'images/saladMenu2.png';
+import saladMenu3 from 'images/saladMenu3.png';
 
 export const Salads = () => {
   const { addToCart, cartItems } = useContext(CartContext);
@@ -60,6 +63,41 @@ export const Salads = () => {
          
       
         <div className={styles.dishPageBox}>
+
+        <img
+         src={saladMenu1}
+        alt="saladMenu1"
+        style={{
+          position: 'fixed',
+          top: '100px',
+          left: '-80px',
+          width: '450px',
+          height: '650px',
+        }}
+      />
+       <img
+         src={saladMenu2}
+        alt="saladMenu2"
+        style={{
+          position: 'fixed',
+          top: '-90px',
+          right: '-80px',
+          width: '450px',
+          height: '600px',
+        }}
+      />
+       {/* <img
+         src={saladMenu3}
+        alt="First Image"
+        style={{
+          position: 'absolute',
+          top: '350px',
+          left: '50px',
+          width: '200px',
+          height: '200px',
+        }}
+      /> */}
+        
 
           <table className={styles.dishTableList}>
             <thead>

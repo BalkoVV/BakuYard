@@ -29,8 +29,6 @@ export const Header = () => {
   return (
     <div className={styles.headerComponent}>
 
-      <div className={styles.borderDecorative}></div>
-
       <div className={styles.headerContainer}>
 
         <div className={styles.headerBox}>
@@ -53,15 +51,15 @@ export const Header = () => {
 
          <nav className={styles.headerNav}>
             <NavLink exact to="/" activeClassName={styles.activeLink}>
-              Головна
+              <h4>Головна</h4>
             </NavLink>
 
             <NavLink to="/menu" activeClassName={styles.activeLink}>
-              Меню
+             <h4>Меню</h4>
             </NavLink>
 
             <NavLink to="/contacts" activeClassName={styles.activeLink}>
-              Контакти
+             <h4>Контакти</h4>
             </NavLink>
 
          </nav>
@@ -72,7 +70,7 @@ export const Header = () => {
                 </li>
               <li>
                 <TimeIcon className={styles.headerInfoIcon}/>
-                <h3>Ми працюємо з 9:00 до 23:00</h3>
+                <h3>Ми працюємо з 11:00 до 23:00</h3>
                 </li>
             </ul>
          </ul>

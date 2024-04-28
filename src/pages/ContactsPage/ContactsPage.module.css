@@ -1,17 +1,19 @@
 .contactsPage {
    width: 100%;
-   /* min-height: 90vh; */
-   background-image: url('images/texture-bg.jpeg');
+   /* background-image: url('images/texture-bg3.jpeg');
    background-size: contain;
-   /* background-size: cover; */
+   background-position: bottom;
+   background-attachment: fixed; */
    background-position: bottom;
    background-attachment: fixed;
+   background-repeat: repeat;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   background-color: #010101;
  
 }
 
 .contactsPageContainer {
  width: 100%;
- /* padding: 0 30px; */
 }
 
 
@@ -91,11 +93,12 @@
 }
 
 .fadeOut {
-   opacity: 0; /* Початковий стан непрозорості */
-   transition: opacity 1.5s ease-in-out; /* Плавний перехід непрозорості */
+   opacity: 0; 
+   transition: opacity .5s ease-in-out;
  }
 
  .mapBox {
+   position: relative;
    display: flex;
    margin-left: auto;
    margin-right: auto;
@@ -115,16 +118,17 @@
    };
 }
 
+.inMap {
+ position: absolute;
+ left: 0;
+ top: 100px;
+}
+
 .contactsListBox {
    display: flex;
    height: 500px;
    justify-content: center;
    align-items: center;
-   /* background: linear-gradient(0deg,#222222be, #161616be, black); */
-   /* background: linear-gradient(0deg,black, #161616be, #222222be, #282828be); */
-   /* background: linear-gradient(to bottom, #192126 ,#192126,#07090bdc); */
-   /* background: linear-gradient(180deg, #1f1f1f, #131313, black); */
-   /* background-attachment: fixed;  */
   }
 
 
@@ -132,7 +136,7 @@
    display: grid;
    grid-template-columns: repeat(1, 1fr);
    grid-column-gap: 20px;
-   grid-row-gap: 45px;
+   grid-row-gap: 15px;
    width: 600px;
    padding: 0 50px;
 
@@ -143,24 +147,18 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 60px;
+   height: 70px;
    width: 100%;
-   color: #555555;
-   /* color: #000000; */
+   color: #7b7b7b;
    font-size: 15px;
-   /* padding: 90px auto; */
-   /* padding-left: 150px; */
-   /* border-radius: 33px; */
-   /* background: linear-gradient(180deg, #1f1f1f, #1f1f1f, black); */
-   /* background-color: #000000; */
-   /* background-attachment: fixed;  */
-
-border-bottom: 2px solid #555555;
+   border-radius: 11px;
+   background: linear-gradient(0deg, #00000011, #00000066, black);
+   background-attachment: fixed; 
   }
 
   .contactsListItem span {
  position: absolute;
- left: 73px;
+ left: 123px;
  top: 22px;
 }
 
