@@ -14,6 +14,21 @@ const MainPage = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const supportsBackgroundFixed = (() => {
+      const testElement = document.createElement('div');
+      testElement.style.backgroundAttachment = 'fixed';
+      const isSupported = (testElement.style.backgroundAttachment === 'fixed');
+      return isSupported;
+    })();
+
+    if (!supportsBackgroundFixed) {
+      const element = document.querySelector(`.${styles.mainPageContainer}`);
+      element.classList.add(styles.backgroundFixedFallback);
+    }
+  }, []);
+  
+
   return (
     <div className={`${styles.mainPage} ${styles.fadeOut}`}>
 

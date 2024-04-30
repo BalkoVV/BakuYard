@@ -1,7 +1,7 @@
 .toMenuButton {
- position: fixed;
- top: 80px;
- left: 0px;
+ position: absolute;
+ top: 23px;
+ left: 68px;
  display: flex;
  align-items: center;
  justify-content: end;
@@ -17,10 +17,11 @@
    justify-content: space-evenly;
    height: 60px;
    width: 150px;
-   border-radius: 30px;
-   border-radius: 0 11px 11px 0;
-  
+   border-radius: 11px;
+   background: #00000099;
    background-color: #000000;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   box-shadow: 7px 7px 15px 2px #00000047;
 }
 
 .toMenuDescription {

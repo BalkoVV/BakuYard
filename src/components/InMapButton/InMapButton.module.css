@@ -1,11 +1,11 @@
 .inMapButton {
    position: absolute;
-   top: 60px;
-   left: 0px;
+   top: 20px;
+   left: 55px;
    display: flex;
    align-items: center;
    justify-content: end;
-   height: 60px;
+   height: 50px;
    width: 150px;
    border: none;
    
@@ -15,12 +15,13 @@
      display: flex; 
      align-items: center;
      justify-content: space-evenly;
-     height: 60px;
+     height: 50px;
      width: 150px;
      border-radius: 30px;
-     border-radius: 0 11px 11px 0;
     
-     background-color: #000000;
+    
+     background-color: #00000055;
+     box-shadow: 0 0 15px 2px #790008;
   }
   
   .inMapDescription {

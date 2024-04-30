@@ -50,7 +50,9 @@ export const MenuPage = () => {
             <h1 className={styles.menuTitle}>Меню</h1>
 
               <span className={styles.toBasketLinkBox}>
+               
                 <NavLink to="/menu/basket" className={styles.toBasketLink}>
+                <h3>Доставка</h3>
                   <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
                   {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
                 </NavLink>

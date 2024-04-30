@@ -8,7 +8,7 @@
    background-attachment: fixed;
    background-repeat: repeat;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   background-color: #010101;
+   background-color: #111111;
  
 }
 
@@ -58,10 +58,11 @@
 }
 
 } */
-
-/* .contactsListItem span {
+/* 
+.contactsListItem span {
  display: flex;
  width: 30px;
+ height: 30px;
  align-items: center;
  justify-content: center;
  margin-right: 10px; 
@@ -109,6 +110,7 @@
    /* margin-bottom: 70px; */
    height: 300px;
    z-index: 0;
+   box-shadow: 0 0 20px 22px #00000064;
 
    @media screen and (min-width: 768px) {
       height: 500px;
@@ -143,23 +145,46 @@
   }
  
  .contactsListItem {
-   position: relative;
+   /* position: relative; */
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
    height: 70px;
    width: 100%;
    color: #7b7b7b;
    font-size: 15px;
    border-radius: 11px;
-   background: linear-gradient(0deg, #00000011, #00000066, black);
-   background-attachment: fixed; 
+   /* padding: 0 50px; */
+   /* background: linear-gradient(0deg, #00000066, black);
+   background-attachment: fixed;  */
+   background: linear-gradient(180deg,#00000069, #00000069, #00000003);
+    background-attachment: fixed;
+    box-shadow: 6px 6px 11px 1px rgb(0 0 0 / 31%);
   }
 
-  .contactsListItem span {
+  .contactsListItem img {
+ display: block;
+ height: 30px;
+ padding-left: 50px;
+}
+
+.contactsListItemDiscriptions {
+padding-right: 50px;
+background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+display: inline-block;
+text-shadow: rgb(0, 0, 0) 3px 5px 11px;
+}
+  /* .contactsListItem span {
  position: absolute;
  left: 123px;
  top: 22px;
-}
+} */
+
+/* contactsListItem */
+/* contactsListItemImg */
+/* contactsListItemDiscriptions */
 
  

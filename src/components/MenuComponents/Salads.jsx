@@ -15,7 +15,7 @@ import menuData from "services/dataSalads/salads.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
 import saladMenu1 from 'images/saladMenu1.png';
 import saladMenu2 from 'images/saladMenu2.png';
-import saladMenu3 from 'images/saladMenu3.png';
+// import saladMenu3 from 'images/saladMenu3.png';
 
 export const Salads = () => {
   const { addToCart, cartItems } = useContext(CartContext);
@@ -69,8 +69,8 @@ export const Salads = () => {
         alt="saladMenu1"
         style={{
           position: 'fixed',
-          top: '100px',
-          left: '-80px',
+          top: '20px',
+          left: '-90px',
           width: '450px',
           height: '650px',
         }}
@@ -80,8 +80,8 @@ export const Salads = () => {
         alt="saladMenu2"
         style={{
           position: 'fixed',
-          top: '-90px',
-          right: '-80px',
+          top: '270px',
+          right: '-90px',
           width: '450px',
           height: '600px',
         }}

@@ -14,7 +14,7 @@ import khachapuriData from "services/dataBakedDishes/khachapuri.json"
 
 import pizzaMenu1 from 'images/pizzaMenu1.png';
 import pizzaMenu2 from 'images/pizzaMenu2.png';
-import pizzaMenu3 from 'images/pizzaMenu3.png';
+// import pizzaMenu3 from 'images/pizzaMenu3.png';
 
 import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
@@ -73,22 +73,22 @@ export const Pizza = () => {
 
         <img
          src={pizzaMenu1}
-        alt="First Image"
+        alt=""
         style={{
           position: 'fixed',
           top: '100px',
-          left: '-80px',
+          left: '-40px',
           width: '400px',
           height: '600px',
         }}
       />
        <img
          src={pizzaMenu2}
-        alt="First Image"
+        alt=""
         style={{
           position: 'fixed',
-          top: '290px',
-          right: '-80px',
+          top: '220px',
+          right: '-40px',
           width: '400px',
           height: '600px',
         }}
@@ -104,10 +104,11 @@ export const Pizza = () => {
           height: '200px',
         }}
       /> */}
-          <table>
+          <table className={styles.dishTableList}>
+          
             <thead>
               <tr>
-                <h3>Піца</h3>
+                <h3 className={styles.dishTableListTitle}>Піца</h3>
                 {/* <th>ID</th>
                 <th>Назва</th>
                 <th>Об'єм</th>
@@ -136,10 +137,10 @@ export const Pizza = () => {
             </tbody>
           </table>
 
-          <table>
+          <table className={styles.dishTableList}>
             <thead>
               <tr>
-                <h3>Хачапурі</h3>
+                <h3 className={styles.dishTableListTitle}>Хачапурі</h3>
                 {/* <th>ID</th>
                 <th>Назва</th>
                 <th>Вага</th>

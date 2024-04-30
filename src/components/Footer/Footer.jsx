@@ -15,13 +15,17 @@ import styles from '../Footer/Footer.module.css';
 export const Footer = ({ customLinks }) => {
   return (
     <div className={styles.footer}>
-      {/* <div className={styles.borderDecorative}></div> */}
       <div className={styles.footerContainer}>
         <div  className={styles.footerBox}>
-        <span className={styles.logoFooter}>
-          <Logo className={styles.footerLogo}/>
-        </span>
+        {/* <span className={styles.logoFooter}>
+          
+          <span className={styles.bottomLineLogo}></span>
+        </span> */}
        
+          <li className={styles.footerLogo}>
+              <Logo/>
+              {/* <span className={styles.bottomLineLogo}></span> */}
+           </li>
         {customLinks ? (
           <ul className={styles.footerSocial}>
             {customLinks}

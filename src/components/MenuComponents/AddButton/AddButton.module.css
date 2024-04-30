@@ -13,5 +13,6 @@
 
 
 .added {
-   background: linear-gradient(#000000d3, #014905c8, #000000d3);
+   background-color: aliceblue;
+   /* background: linear-gradient(#000000d3, #014905c8, #000000d3); */
 }

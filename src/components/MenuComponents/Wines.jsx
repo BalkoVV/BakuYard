@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 
-import AddButton from 'components/MenuComponents/AddButton/AddButton';
+// import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
 
 import { ReactComponent as BasketIcon } from 'images/delivery.svg';
@@ -15,7 +15,7 @@ import menuGeorgianWineData from "services/dataWines/georgianWine.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const Wines = () => {
-  const { addToCart, cartItems } = useContext(CartContext);
+  const { cartItems } = useContext(CartContext);
 
   const [champagneItems, setChampagneItems] = useState([]);
   const [ukrainianWineItems, setUkrainianWineItems] = useState([]);
@@ -47,41 +47,41 @@ export const Wines = () => {
     setGeorgianWineItems(menuGeorgianWineData);
   }, []);
 
-  const updateChampagneButtonState = (itemId) => {
-    setChampagneItems(champagneItems.map(item => {
-      if (item.id === itemId) {
-        return { ...item, alreadyAdded: false };
-      }
-      return item;
-    }));
-  };
+  // const updateChampagneButtonState = (itemId) => {
+  //   setChampagneItems(champagneItems.map(item => {
+  //     if (item.id === itemId) {
+  //       return { ...item, alreadyAdded: false };
+  //     }
+  //     return item;
+  //   }));
+  // };
 
-  const updateUkrainianWineButtonState = (itemId) => {
-    setUkrainianWineItems(ukrainianWineItems.map(item => {
-      if (item.id === itemId) {
-        return { ...item, alreadyAdded: false };
-      }
-      return item;
-    }));
-  };
+  // const updateUkrainianWineButtonState = (itemId) => {
+  //   setUkrainianWineItems(ukrainianWineItems.map(item => {
+  //     if (item.id === itemId) {
+  //       return { ...item, alreadyAdded: false };
+  //     }
+  //     return item;
+  //   }));
+  // };
 
-  const updateGeorgianWineButtonState = (itemId) => {
-    setGeorgianWineItems(georgianWineItems.map(item => {
-      if (item.id === itemId) {
-        return { ...item, alreadyAdded: false };
-      }
-      return item;
-    }));
-  };
+  // const updateGeorgianWineButtonState = (itemId) => {
+  //   setGeorgianWineItems(georgianWineItems.map(item => {
+  //     if (item.id === itemId) {
+  //       return { ...item, alreadyAdded: false };
+  //     }
+  //     return item;
+  //   }));
+  // };
 
-  const updateItalianWineButtonState = (itemId) => {
-    setItalianWineItems(italianWineItems.map(item => {
-      if (item.id === itemId) {
-        return { ...item, alreadyAdded: false };
-      }
-      return item;
-    }));
-  };
+  // const updateItalianWineButtonState = (itemId) => {
+  //   setItalianWineItems(italianWineItems.map(item => {
+  //     if (item.id === itemId) {
+  //       return { ...item, alreadyAdded: false };
+  //     }
+  //     return item;
+  //   }));
+  // };
 
   return (
     <div className={styles.dishPage}>
@@ -99,7 +99,7 @@ export const Wines = () => {
 
       <div className={styles.dishPageBox}>
 
-      <table>
+      <table className={styles.dishTableList}>
             <thead>
               <tr>
               <h3>Шампанське</h3>
@@ -117,19 +117,19 @@ export const Wines = () => {
                   <td  className={styles.dishTableType}>{item.вид}</td>
                   <td  className={styles.dishTableWeigth}>{item.вага}</td>
                   <td  className={styles.dishTablePrice}>{item.ціна}</td>
-                  <td className={styles.dishTableButtonAdd}>
+                  {/* <td className={styles.dishTableButtonAdd}>
                     <AddButton
                       onClick={() => addToCart(item)}
                       alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
                       updateButtonState={() => updateChampagneButtonState(item.id)}
                     />
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>
           </table>
 
-          <table>
+          <table className={styles.dishTableList}>
             <thead>
               <tr>
               <h3>Українські вина</h3>
@@ -147,19 +147,19 @@ export const Wines = () => {
                   <td  className={styles.dishTableType}>{item.вид}</td>
                   <td  className={styles.dishTableWeigth}>{item.вага}</td>
                   <td  className={styles.dishTablePrice}>{item.ціна}</td>
-                  <td className={styles.dishTableButtonAdd}>
+                  {/* <td className={styles.dishTableButtonAdd}>
                     <AddButton
                       onClick={() => addToCart(item)}
                       alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
                       updateButtonState={() => updateUkrainianWineButtonState(item.id)}
                     />
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>
           </table>
 
-          <table>
+          <table className={styles.dishTableList}>
             <thead>
               <tr>
               <h3>Італійські вина</h3>
@@ -177,19 +177,19 @@ export const Wines = () => {
                   <td  className={styles.dishTableType}>{item.вид}</td>
                   <td  className={styles.dishTableWeigth}>{item.вага}</td>
                   <td  className={styles.dishTablePrice}>{item.ціна}</td>
-                  <td className={styles.dishTableButtonAdd}>
+                  {/* <td className={styles.dishTableButtonAdd}>
                     <AddButton
                       onClick={() => addToCart(item)}
                       alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
                       updateButtonState={() => updateItalianWineButtonState(item.id)}
                     />
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>
           </table>
 
-          <table>
+          <table className={styles.dishTableList}>
             <thead>
               <tr>
               <h3>Грузинські вина</h3>
@@ -207,13 +207,13 @@ export const Wines = () => {
                   <td  className={styles.dishTableType}>{item.вид}</td>
                   <td  className={styles.dishTableWeigth}>{item.вага}</td>
                   <td  className={styles.dishTablePrice}>{item.ціна}</td>
-                  <td className={styles.dishTableButtonAdd}>
+                  {/* <td className={styles.dishTableButtonAdd}>
                     <AddButton
                       onClick={() => addToCart(item)}
                       alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
                       updateButtonState={() => updateGeorgianWineButtonState(item.id)}
                     />
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>

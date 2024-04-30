@@ -86,14 +86,14 @@ export const Beer = () => {
                 <td className={styles.dishTableName}>{item.назва}</td>
                 <td className={styles.dishTableWeigth}>{item.вага}</td>
                 <td className={styles.dishTablePrice}>{item.ціна}</td>
-                <td className={styles.dishTableButtonAdd}>
+                {/* <td className={styles.dishTableButtonAdd}>
                   <AddButton
-                    // className={styles.dishAddButton}
+                    
                     onClick={() => addToCart(item)}
                     alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
                     updateButtonState={() => updateButtonState(item.id)}
                   />
-                </td>
+                </td> */}
               </tr>
               ))}
             </tbody>
@@ -101,7 +101,7 @@ export const Beer = () => {
           </table>
 
 {/* beerSnacks */}
-        <table>
+<table className={styles.dishTableList}>
           <thead>
             <tr>
               <h3>до Пива</h3>

@@ -2,9 +2,10 @@
 
 .mainPageContainer {
 width: 100%;
-background-color: #050505;
+background-color: #111111;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   background-attachment: fixed;
+   background-attachment: fixed !important;
+   background-position: top !important;
 }
 /* 
 .fadeOut {
@@ -26,7 +27,8 @@ background-color: #050505;
   height: 400px;
   /* z-index: 0; */
   
-  box-shadow: 0 0 20px 22px #00000064;
+  /* box-shadow: 0 0 20px 22px #00000064; */
+  box-shadow: 0 0 25px 9px #00000081;
     
 
     @media screen and (min-width: 768px) {
@@ -41,7 +43,7 @@ background-color: #050505;
       background-size: cover;
       background-position: bottom;
       background-attachment: fixed;
-      height: 600px;
+      height: 750px;
     }; 
   }
 
@@ -108,6 +110,7 @@ background-color: #050505;
    align-items: center;
     box-shadow: 0 0 22px 25px #00000058;
     box-shadow: 0 0 20px 22px #00000064;
+    box-shadow: 0 0 25px 9px #00000081;
     /* box-shadow: -27px 0px 20px 27px #a40d0dc8; */
     background: #00000033;
   }
@@ -135,18 +138,14 @@ background-color: #050505;
    width: 100%;
    padding: 90px auto;
     border-radius: 11px;
-    background-image: url('images/bg233.webp');
+    background-image: url('images/bg233.webp'); 
     background-color: #0d0000;
-/* background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png"); */
-background-color: #0d0000;
-/* background-image: url("https://www.transparenttextures.com/patterns/swirl.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     background-size: 110%;
     background-position: left top ;
-    background-repeat: repeat;
+    /* background-repeat: repeat; */
     background-attachment: fixed;
     overflow: hidden;
+    box-shadow: 7px 7px 15px 2px #00000081;
    
 
     
@@ -158,10 +157,16 @@ background-color: #0d0000;
    justify-content: center;
    font-size: 19px;
    color: #a1a1a1;
-  
+   background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
+   background-clip: text;
+   -webkit-background-clip: text;
+ color: transparent;
+ display: inline-block;
+ text-shadow: rgb(0, 0, 0) 3px 5px 11px;
+
   }
 
-  .featuresTopBlur {
+  /* .featuresTopBlur {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +174,7 @@ background-color: #0d0000;
     width: 100%;
     background: rgba(0, 0, 0, 0.387);
 
-   }
+   } */
  
 
   .featuresCenterBox {
@@ -177,7 +182,7 @@ background-color: #0d0000;
     height: 450px;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 20px 22px #00000064;
+    box-shadow: 0 0 25px 9px #00000081;
     background: #00000033;
   }
 
@@ -200,9 +205,10 @@ background-color: #0d0000;
     width: 100%;
     padding: 30px auto;
     border-radius: 11px;
-    background: linear-gradient(0deg, transparent,#7a7a7a64);
+    background: linear-gradient(0deg, transparent,#7a7a7a64, transparent);
     background-size: cover;
     background-attachment: fixed; 
+    box-shadow: 7px 7px 15px 2px #00000081;
    }
 
    .featuresCenter li h3 {
@@ -235,13 +241,16 @@ background-color: #0d0000;
     height: 110px;
     padding: 90px auto;
     border-radius: 11px;
-    background: linear-gradient(0deg, #00000066,  black);
+    background: linear-gradient(180deg, #00000069, #00000003);
     background-attachment: fixed;
-
+    box-shadow: 7px 7px 15px 2px #00000081;
+  
+    
    }
 
  .featuresBottom li h1 {
   background: linear-gradient(0deg, #6c6c6c,#7c7c7c,#6c6c6c);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;

@@ -39,6 +39,7 @@ export const Header = () => {
               <span className={styles.headerLogo}>
                <Logo />
               </span>
+              <span className={styles.bottomLineLogo}></span>
            </li>
 
             <li> 
@@ -65,7 +66,7 @@ export const Header = () => {
          </nav>
             <ul className={styles.headerInfo}>
               <li>
-                <MapIcon className={styles.headerInfoIcon}/>
+              <MapIcon className={`${styles.headerInfoIcon} ${styles.headerInfoIconLocation}`}/>
                <h3> м.Бровари, Героїв України, 22</h3>
                 </li>
               <li>

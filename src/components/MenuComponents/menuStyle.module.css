@@ -30,32 +30,52 @@
    };
 }
 
-.dishTableList {
+/* .dishTableList {
 margin-top: 10px;
-}
+} */
+
 .dishTable {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   /* font-size: 15px; */
   border-radius: 9px;
   width: 900px;
   height: 60px;
   padding-left: 15px;
-  
-  /* background: linear-gradient(180deg, #1f1d1dcc, #282727bc, #000000ae);
-  background: linear-gradient(180deg, #1f1f1f, #1f1f1f, black); */
-  background: linear-gradient(359deg, #181717bd, #060606bc, black, black);
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+  /* background: #000000c3;
+  background-color: #000000;
   background-attachment: fixed;
-  
+  background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
+  /* box-shadow: 7px 7px 10px 2px #00000069; */
+  /* background: #00000099; */
+  box-shadow: 7px 7px 15px 2px #00000047;
 }
+
+.dishTableListTitle {
+ display: flex;
+ justify-content: center;
+}
+
+.dishTableList {
+   /* position: relative; */
+ padding: 15px 25px;
+ border-radius: 9px;
+ background: #b4b4b44a;
+ margin: 35px 0;
+}
+
 .dishTableButtonAdd {
  position: absolute;
  display: flex;
  align-items: center;
  justify-content: center;
- 
+ background-image: url('images/clockIcon.svg');
+ background-position: center;
+ background-repeat: no-repeat;
  height: 60px;
  width: 100px;
  margin: 0;
@@ -66,6 +86,11 @@ margin-top: 10px;
  border-left: 1px solid #000000;
 }
 
+
+.dishTableButtonAdd:hover  {
+   border-left: 1px solid #290000;
+   box-shadow: inset 0 0 23px 3px rgba(255, 0, 0, 0.228);
+}
 .dishTablePrice {
    position: absolute;
    display: flex;
@@ -131,25 +156,21 @@ margin-top: 10px;
    position: absolute;
    border: none;
    border-radius: 30px;
-   background: linear-gradient(0deg,#191616, #020202, #191616);
+   background: linear-gradient(0deg, #00000099, #00000099, #00000099, #00000099, #00000099, #00000003);
+   background-attachment: fixed;
+   background-position: top;
+   
    top: 30px;
    left: 70px; 
 }
 
-.toMenuLink {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 50px;
-   width: 150px;
-   border-radius: 9px;
-}
+
 .basketIcon {
    fill: #303030;
   }
   
   .basketIcon.nonEmpty {
-     fill: #c10000; /* Колір fill, коли корзина не пуста */
+     fill: #c69c9cbb; /* Колір fill, коли корзина не пуста */
     
    }
 
@@ -163,77 +184,36 @@ top: 15px;
  height: 10px;
  width: 10px;
  border-radius: 50%;
- /* border: .5px solid red; */
  color: #ffffff;
- /* color: #a67701; */
- /* color: #008d17; */
  background-color: #000000;
-
  font-size: 11px;
-z-index: 2;
+ z-index: 2;
 }
 
-/* .toMenuLinkBox:hover {
- transition: 2s;
- background-color: rgba(31, 3, 3, 0.583);
- background: linear-gradient(0deg,#443a00, #020202, #443a00);
-} */
-
-/* Webkit (Chrome, Safari) */
-/* ::-webkit-scrollbar {
-   width: 12px;
- } */
- 
- /* ::-webkit-scrollbar-thumb {
-   background: transparent;
- } */
- 
- /* ::-webkit-scrollbar-track {
-   background: transparent;
- }
-  */
- /* Firefox */
- /* scrollbar {
-   width: 12px;
- } */
- 
- /* scrollbar-thumb {
-   background: rgb(0, 0, 0); 
-  
- } */
- 
- /* scrollbar-track {
-   background: #000000; 
-   
- } */
  
  .toBasketLinkBox {
    position: absolute;
    border: none;
-   border-radius: 30px;
-   /* background: linear-gradient(0deg,#191616, #020202, #191616); */
-   /* background: linear-gradient(0deg,#191616, #020202, #191616); */
-   top: -56px;
-   right: 300px; 
+   border-radius: 11px;
+   background: #00000099;
+   box-shadow: 7px 7px 15px 2px #00000047;
+   top: 23px;
+   right: 68px; 
    transition: 1.5s;
    z-index: 10;
+   background-color: #000000;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 }
 
 .toBasketLink {
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 50px;
+   height: 60px;
    width: 150px;
    border-radius: 9px;
 }
 
-/* .toBasketLink:hover {
- transition: 2s;
- background-color: rgba(31, 3, 3, 0.583);
- background: linear-gradient(0deg,#000644, #020202, #001644);
- transition: .9s;
-} */
 .basketIcon {
    fill: #303030;
   }
