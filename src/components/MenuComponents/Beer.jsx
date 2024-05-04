@@ -84,8 +84,8 @@ export const Beer = () => {
                 <tr key={item.id} className={styles.dishTable}>
                 {/* <td>{item.id}</td> */}
                 <td className={styles.dishTableName}>{item.назва}</td>
-                <td className={styles.dishTableWeigth}>{item.вага}</td>
-                <td className={styles.dishTablePrice}>{item.ціна}</td>
+                <td className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                <td className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
                 {/* <td className={styles.dishTableButtonAdd}>
                   <AddButton
                     

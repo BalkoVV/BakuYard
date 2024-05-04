@@ -133,7 +133,7 @@ export const Basket = () => {
 
   useEffect(() => {
     if (basketEmpty || orderCompleted) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'auto';
     } else {
       document.body.style.overflow = 'auto';
     }
@@ -165,8 +165,8 @@ export const Basket = () => {
           
           {basketEmpty ? (
             <span className={styles.basketEmptyListBox}>
-              <p>Ваш кошик порожній</p> 
-              <p>Додайте страви з Меню</p>
+              <h3>Ваш кошик порожній</h3> 
+              <h3>Додайте страви (доступні для доставки) з Меню</h3>
             </span>
           ) : (
             <div className={styles.basketListBox}>
@@ -203,7 +203,7 @@ export const Basket = () => {
           <div className={styles.basketOrderInfo}>
             <p className={styles.basketQuantityBox}>
               <span className={styles.basketQuantityTitle}>
-                Кількість позицій: 
+                <h3>Кількість позицій: </h3>
               </span>
               <span className={styles.basketTotalQuantity}>
                 {totalItems}
@@ -212,7 +212,7 @@ export const Basket = () => {
 
             <p className={styles.basketQuantityBox}>
               <span className={styles.basketPriceTitle}>
-                Загальна сума:
+                <h3>Загальна сума:</h3>
               </span>
               <span className={styles.basketTotalPrice}>
                 {totalPrice}

@@ -99,35 +99,7 @@ export const Wines = () => {
 
       <div className={styles.dishPageBox}>
 
-      <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Шампанське</h3>
-              {/* <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th> */}
-              </tr>
-            </thead>
-            <tbody>
-              {champagneItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
-                  <td  className={styles.dishTableWeigth}>{item.вага}</td>
-                  <td  className={styles.dishTablePrice}>{item.ціна}</td>
-                  {/* <td className={styles.dishTableButtonAdd}>
-                    <AddButton
-                      onClick={() => addToCart(item)}
-                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                      updateButtonState={() => updateChampagneButtonState(item.id)}
-                    />
-                  </td> */}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      
 
           <table className={styles.dishTableList}>
             <thead>
@@ -144,9 +116,9 @@ export const Wines = () => {
                 <tr key={item.id} className={styles.dishTable}>
                   {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
                   <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
-                  <td  className={styles.dishTableWeigth}>{item.вага}</td>
-                  <td  className={styles.dishTablePrice}>{item.ціна}</td>
+                  <td  className={styles.dishTableType}>{item.тип}</td>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
                   {/* <td className={styles.dishTableButtonAdd}>
                     <AddButton
                       onClick={() => addToCart(item)}
@@ -159,35 +131,7 @@ export const Wines = () => {
             </tbody>
           </table>
 
-          <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Італійські вина</h3>
-              {/* <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th> */}
-              </tr>
-            </thead>
-            <tbody>
-              {italianWineItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
-                  <td  className={styles.dishTableWeigth}>{item.вага}</td>
-                  <td  className={styles.dishTablePrice}>{item.ціна}</td>
-                  {/* <td className={styles.dishTableButtonAdd}>
-                    <AddButton
-                      onClick={() => addToCart(item)}
-                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                      updateButtonState={() => updateItalianWineButtonState(item.id)}
-                    />
-                  </td> */}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          
 
           <table className={styles.dishTableList}>
             <thead>
@@ -205,8 +149,8 @@ export const Wines = () => {
                   {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
                   <td  className={styles.dishTableName}>{item.назва}</td>
                   <td  className={styles.dishTableType}>{item.вид}</td>
-                  <td  className={styles.dishTableWeigth}>{item.вага}</td>
-                  <td  className={styles.dishTablePrice}>{item.ціна}</td>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
                   {/* <td className={styles.dishTableButtonAdd}>
                     <AddButton
                       onClick={() => addToCart(item)}
@@ -218,7 +162,64 @@ export const Wines = () => {
               ))}
             </tbody>
           </table>
-
+          <table className={styles.dishTableList}>
+            <thead>
+              <tr>
+              <h3>Італійські вина</h3>
+              {/* <th>ID</th>
+                <th>Назва</th>
+                <th>Об'єм</th>
+                <th>Ціна</th> */}
+              </tr>
+            </thead>
+            <tbody>
+              {italianWineItems.map((item) => (
+                <tr key={item.id} className={styles.dishTable}>
+                  {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
+                  <td  className={styles.dishTableName}>{item.назва}</td>
+                  <td  className={styles.dishTableType}>{item.вид}</td>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+                  {/* <td className={styles.dishTableButtonAdd}>
+                    <AddButton
+                      onClick={() => addToCart(item)}
+                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                      updateButtonState={() => updateItalianWineButtonState(item.id)}
+                    />
+                  </td> */}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <table className={styles.dishTableList}>
+            <thead>
+              <tr>
+              <h3>Шампанське</h3>
+              {/* <th>ID</th>
+                <th>Назва</th>
+                <th>Об'єм</th>
+                <th>Ціна</th> */}
+              </tr>
+            </thead>
+            <tbody>
+              {champagneItems.map((item) => (
+                <tr key={item.id} className={styles.dishTable}>
+                  {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
+                  <td  className={styles.dishTableName}>{item.назва}</td>
+                  <td  className={styles.dishTableType}>{item.вид}</td>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+                  {/* <td className={styles.dishTableButtonAdd}>
+                    <AddButton
+                      onClick={() => addToCart(item)}
+                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                      updateButtonState={() => updateChampagneButtonState(item.id)}
+                    />
+                  </td> */}
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

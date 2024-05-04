@@ -17,9 +17,17 @@ import AlcoholicCocktails from "components/MenuComponents/AlcoholicCocktails";
 import Desserts from "components/MenuComponents/Desserts";
 import Mocktails from "components/MenuComponents/Mocktails";
 import Barbeque from "components/MenuComponents/Barbeque";
+import Sauces from "components/MenuComponents/Sauces";
+import HardAlkohol from "components/MenuComponents/HardAlkohol";
 import Wines from "components/MenuComponents/Wines";
 import Beer from "components/MenuComponents/Beer";
 import Salads from "components/MenuComponents/Salads";
+import Banquete from "components/MenuComponents/AddButton/Banquete";
+import Fish from "components/MenuComponents/Fish";
+import MainDish from "components/MenuComponents/MainDish";
+import SideDish from "components/MenuComponents/SideDish";
+import Soup from "components/MenuComponents/Soup";
+import SetMeals from "components/MenuComponents/SetMeals";
 import styles from 'pages/MenuPage/MenuPage.module.css';
 
 
@@ -65,14 +73,21 @@ export const MenuPage = () => {
              </div>
 
             <ul className={styles.dishList}>
-
-              {/* <li className={`${styles.dishCard} ${styles.dishCardBarbeque}`}>
+            <li className={`${styles.dishCard} ${styles.dishCardBarbeque}`}>
                 <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/barbeque" className={styles.dishCardLink}>
-                    <h1>Барбекю</h1>
+                  <NavLink to="/menu/set-meals" className={styles.dishCardLink}>
+                    <h1>Комплексні обіди</h1>
                   </NavLink>
                 </span>
-              </li> */}
+              </li>
+
+              <li className={`${styles.dishCard} ${styles.dishCardHardAlkohol}`}>
+                <span classame={styles.dishCardBox}> 
+                  <NavLink to="/menu/hard-alkohol" className={styles.dishCardLink}>
+                    <h1>Міцний алкоголь</h1>
+                  </NavLink>
+                </span>
+              </li>
               <li className={`${styles.dishCard} ${styles.dishCardBarbeque}`}>
                 <span classame={styles.dishCardBox}> 
                   <NavLink to="/menu/barbeque" className={styles.dishCardLink}>
@@ -89,10 +104,18 @@ export const MenuPage = () => {
                 </span>
               </li>
 
+              <li className={`${styles.dishCard} ${styles.dishCardSauces}`}>
+                <span classame={styles.dishCardBox}> 
+                  <NavLink to="/menu/sauces" className={styles.dishCardLink}>
+                    <h1>Соуси</h1>
+                  </NavLink>
+                </span>
+              </li>
+
               <li className={`${styles.dishCard} ${styles.dishCardPizza}`}>
                 <span classame={styles.dishCardBox}> 
                   <NavLink to="/menu/pizza" className={styles.dishCardLink}>
-                    <h1>Піца</h1>
+                    <h1>З Печі</h1>
                   </NavLink>
                 </span>
               </li>
@@ -169,6 +192,47 @@ export const MenuPage = () => {
                 </span>
               </li>
 
+              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
+                <span classame={styles.dishCardBox}> 
+                  <NavLink to="/menu/banquete" className={styles.dishCardLink}>
+                    <h1>Банкетне меню</h1>
+                  </NavLink>
+                </span>
+              </li>
+
+              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
+                <span classame={styles.dishCardBox}> 
+                  <NavLink to="/menu/fish" className={styles.dishCardLink}>
+                    <h1>Риба</h1>
+                  </NavLink>
+                </span>
+              </li>
+
+              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
+                <span classame={styles.dishCardBox}> 
+                  <NavLink to="/menu/main-dish" className={styles.dishCardLink}>
+                    <h1>Основні страви</h1>
+                  </NavLink>
+                </span>
+              </li>
+
+
+              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
+                <span classame={styles.dishCardBox}> 
+                  <NavLink to="/menu/side-dish" className={styles.dishCardLink}>
+                    <h1>Гарнір</h1>
+                  </NavLink>
+                </span>
+              </li>
+
+              <li className={`${styles.dishCard} ${styles.dishCardSoups}`}>
+                <span classame={styles.dishCardBox}> 
+                  <NavLink to="/menu/soup" className={styles.dishCardLink}>
+                    <h1>Супи</h1>
+                  </NavLink>
+                </span>
+              </li>
+
             </ul>  
           </section>
         </CartProvider>
@@ -176,21 +240,25 @@ export const MenuPage = () => {
 
       <Route path="/menu/basket" component={Basket} /> 
       <Route path="/menu/barbeque" component={Barbeque} />
+      <Route path="/menu/sauces" component={Sauces} />
       <Route path="/menu/cold-apetizers" component={ColdApetizers} />
       <Route path="/menu/hot-apetizers" component={HotApetizers} />
       <Route path="/menu/desserts" component={Desserts} />
       <Route path="/menu/alcoholic-cocktails" component={AlcoholicCocktails} />
       <Route path="/menu/mocktails" component={Mocktails} />
       <Route path="/menu/beverages" component={Beverages} />
-
+      <Route path="/menu/hard-alkohol" component={HardAlkohol} />
+      <Route path="/menu/banquete" component={Banquete} />
       <Route path="/menu/beer" component={Beer} /> 
       <Route path="/menu/pizza" component={Pizza} /> 
       <Route path="/menu/salads" component={Salads} /> 
       <Route path="/menu/wines" component={Wines} /> 
+      <Route path="/menu/fish" component={Fish} /> 
       <Route path="/menu/hot-drinks" component={HotDrinks} />  
-        
-        
-
+      <Route path="/menu/main-dish" component={MainDish} /> 
+      <Route path="/menu/side-dish" component={SideDish} /> 
+      <Route path="/menu/soup" component={Soup} /> 
+      <Route path="/menu/set-meals" component={SetMeals} /> 
       </Switch>
       </div>
      </div>

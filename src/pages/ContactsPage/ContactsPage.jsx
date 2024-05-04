@@ -2,13 +2,6 @@ import React, { useEffect } from 'react';
 
 import InMapButton from 'components/InMapButton/InMapButton';
 
-// import { ReactComponent as TimeIcon } from 'images/time.svg';
-// import { ReactComponent as MapIcon } from 'images/mapIcon.svg';
-// import { ReactComponent as PhoneIcon } from 'images/phoneIcon.svg';
-// import { ReactComponent as FacebookIcon } from 'images/facebook.svg';
-// import { ReactComponent as MailIcon } from 'images/mail4.svg';
-// import { ReactComponent as InstagramIcon } from 'images/instagram4.svg';
-
 import InstagramIcon from 'components/Icons/InstagramIcon/InstagramIcon';
 import FacebookIcon from 'components/Icons/FacebookIcon/FacebookIcon';
 import MailIcon from 'components/Icons/MailIcon/MailIcon';
@@ -17,9 +10,6 @@ import ClockIcon from 'components/Icons/ClockIcon/ClockIcon';
 import PhonesIcon from 'components/Icons/PhonesIcon/PhonesIcon';
 
 import styles from 'pages/ContactsPage/ContactsPage.module.css';
-
-
-
 
 export const ContactsPage = () => {
 

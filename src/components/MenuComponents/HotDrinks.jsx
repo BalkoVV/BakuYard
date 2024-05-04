@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 
-import AddButton from 'components/MenuComponents/AddButton/AddButton';
+// import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 
 import CartContext from "components/CartProvider/CartProvider";
@@ -15,7 +15,9 @@ import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const HotDrinks = () => {
-  const { addToCart, cartItems } = useContext(CartContext);
+  // const { addToCart, cartItems } = useContext(CartContext);
+  const { cartItems } = useContext(CartContext);
+
   const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
@@ -36,20 +38,20 @@ export const HotDrinks = () => {
   }, []);
  
 
-  const updateButtonState = (itemId) => {
-    setMenuItems(menuItems.map(item => {
-      if (item.id === itemId) {
-        return { ...item, alreadyAdded: false };
-      }
-      return item;
-    }));
-  };
+  // const updateButtonState = (itemId) => {
+  //   setMenuItems(menuItems.map(item => {
+  //     if (item.id === itemId) {
+  //       return { ...item, alreadyAdded: false };
+  //     }
+  //     return item;
+  //   }));
+  // };
 
   return (
     <div className={styles.dishPage}>
       <div className={styles.dishPageContainer}>
 
-        <h1 className={styles.dishTitle}>Hot Drinks</h1> 
+        <h1 className={styles.dishTitle}>Гарячі напої</h1> 
 
         <span className={styles.toBasketLinkBox}>
           <NavLink to="/menu/basket" className={styles.toBasketLink}>
@@ -62,10 +64,10 @@ export const HotDrinks = () => {
       
 
         <div>
-          <table>
+          <table className={styles.dishTableList}>
             <thead>
               <tr>
-                <h3>Coffee</h3>
+                <h3>Кава</h3>
             
               </tr>
             </thead>
@@ -75,22 +77,22 @@ export const HotDrinks = () => {
                   {/* <td>{item.id}</td> */}
                   <td className={styles.dishTableName}>{item.назва}</td>
                   {/* <td className={styles.dishTableType}>{item.тип}</td> */}
-                  <td className={styles.dishTableWeigth}>{item.вага}</td>
-                  <td className={styles.dishTablePrice}>{item.ціна}</td>
-                  <td className={styles.dishTableButtonAdd}>
+                  <td className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                  <td className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+                  {/* <td className={styles.dishTableButtonAdd}>
                     <AddButton
                       
                       onClick={() => addToCart(item)}
                       alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
                       updateButtonState={() => updateButtonState(item.id)}
                     />
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>
           </table>
 
-          <table>
+          <table className={styles.dishTableList}>
             <thead>
               <tr>
                 <h3>Чай</h3>
@@ -103,16 +105,16 @@ export const HotDrinks = () => {
                 
                   <td className={styles.dishTableName}>{item.назва}</td>
                   {/* <td className={styles.dishTableIngredients}>{item.інгредієнти}</td> */}
-                  <td className={styles.dishTableWeigth}>{item.вага}</td>
-                  <td className={styles.dishTablePrice}>{item.ціна}</td>
+                  <td className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                  <td className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
                   
-                  <td className={styles.dishTableButtonAdd}>
+                  {/* <td className={styles.dishTableButtonAdd}>
                     <AddButton
                       onClick={() => addToCart(item)}
                       alreadyAdded={cartItems.some((cartItem) => cartItem.id === item.id)}
                       updateButtonState={() => updateButtonState(item.id)}
                     />
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>

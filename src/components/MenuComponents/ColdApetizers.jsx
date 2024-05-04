@@ -64,11 +64,11 @@ export const ColdApetizers = () => {
 
       <div className={styles.dishPageBox}>
       
-      <table>
+      <table className={styles.dishTableList}>
     
             <thead>
               <tr>
-              <h3>Холодні закуски</h3>
+              {/* <h3>Холодні закуски</h3> */}
               {/* <th>ID</th>
                 <th>Назва</th>
                 <th>Об'єм</th>

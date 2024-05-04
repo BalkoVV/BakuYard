@@ -63,10 +63,10 @@ export const Beverages = () => {
 
       <div className={styles.dishPageBox}>
       
-          <table>
+          <table className={styles.dishTableList}>
             <thead>
               <tr>
-              <h3>Безалкогольні напої</h3>
+              {/* <h3>Безалкогольні напої</h3> */}
               {/* <th>ID</th>
                 <th>Назва</th>
                 <th>Об'єм</th>

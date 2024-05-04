@@ -103,7 +103,8 @@
    display: flex;
    margin-left: auto;
    margin-right: auto;
-   background: url("images/mapImage.png");
+   background:url("images/map4.png");
+   /* background-attachment: fixed; */
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -117,7 +118,20 @@
    };
    @media screen and (min-width: 1200px) {
       height: 700px;
+
    };
+}
+
+.mapBox::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: #0a0a0a00;
+   z-index: -1;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 }
 
 .inMap {
@@ -157,8 +171,9 @@
    /* padding: 0 50px; */
    /* background: linear-gradient(0deg, #00000066, black);
    background-attachment: fixed;  */
-   background: linear-gradient(180deg,#00000069, #00000069, #00000003);
-    background-attachment: fixed;
+   /* background: linear-gradient(180deg,#00000084, #00000069, #00000003); */
+    /* background-attachment: fixed; */
+    background: #00000084;
     box-shadow: 6px 6px 11px 1px rgb(0 0 0 / 31%);
   }
 

@@ -50,7 +50,7 @@ export const Mocktails = () => {
   return (
     <div className={styles.dishPage}>
      <div className={styles.dishPageContainer}>
-       <h1 className={styles.dishTitle}>Безалкогольні напої</h1>  
+       <h1 className={styles.dishTitle}>Безалкогольні коктейлі</h1>  
 
       <span className={styles.toBasketLinkBox}>
         <NavLink to="/menu/basket" className={styles.toBasketLink}>
@@ -63,7 +63,7 @@ export const Mocktails = () => {
 
       <div className={styles.dishPageBox}>
       
-          <table>
+          <table className={styles.dishTableList}>
             <thead>
               <tr>
               

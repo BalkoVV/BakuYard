@@ -63,7 +63,7 @@ export const Desserts = () => {
 
       <div className={styles.dishPageBox}>
       
-          <table>
+          <table className={styles.dishTableList}>
             <thead>
               <tr>
               

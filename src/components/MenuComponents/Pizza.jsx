@@ -53,7 +53,7 @@ export const Pizza = () => {
     <div className={styles.dishPage}>
       <div className={styles.dishPageContainer}>
 
-        <h1 className={styles.dishTitle}>Pizza</h1> 
+        <h1 className={styles.dishTitle}>З Печі</h1> 
 
         <span className={styles.toBasketLinkBox}>
           <NavLink to="/menu/basket" className={styles.toBasketLink}>
@@ -93,17 +93,7 @@ export const Pizza = () => {
           height: '600px',
         }}
       />
-       {/* <img
-         src={pizzaMenu3}
-        alt="First Image"
-        style={{
-          position: 'absolute',
-          top: '350px',
-          left: '50px',
-          width: '200px',
-          height: '200px',
-        }}
-      /> */}
+       
           <table className={styles.dishTableList}>
           
             <thead>

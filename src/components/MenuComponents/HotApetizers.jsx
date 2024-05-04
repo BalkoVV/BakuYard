@@ -50,7 +50,7 @@ export const HotApetizers = () => {
   return (
     <div className={styles.dishPage}>
      <div className={styles.dishPageContainer}>
-       <h1 className={styles.dishTitle}>Закуски</h1>  
+       <h1 className={styles.dishTitle}>Гарячі закуски</h1>  
 
       <span className={styles.toBasketLinkBox}>
         <NavLink to="/menu/basket" className={styles.toBasketLink}>
@@ -63,10 +63,10 @@ export const HotApetizers = () => {
 
       <div className={styles.dishPageBox}>
       
-          <table>
+          <table className={styles.dishTableList}>
             <thead>
               <tr>
-              <h3>Гарячі закуски</h3>
+              {/* <h3>Гарячі закуски</h3> */}
               {/* <th>ID</th>
                 <th>Назва</th>
                 <th>Об'єм</th>

@@ -1,12 +1,12 @@
 /* Header.module.css */
 
 .headerComponent {
-  border-top: 2px solid transparent;
+  /* border-top: 2px solid transparent; */
   border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, #252525, #565555, #252525);
+  border-image: linear-gradient(0.25turn, #1a1a1a, #343434, #1a1a1a);
   border-image-slice: 1;
 
-  background-color: #010101;
+  background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
   /* box-shadow:  0 0 19px 19px rgba(0, 0, 0, 0.54); */
@@ -69,7 +69,7 @@
 .headerNav {
   display: flex;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 50px;
   width: 100%;
   height: 100%;
   justify-content: space-between;

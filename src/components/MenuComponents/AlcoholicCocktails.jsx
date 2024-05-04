@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 
-import AddButton from 'components/MenuComponents/AddButton/AddButton';
+// import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
 
 import { ReactComponent as BasketIcon } from 'images/delivery.svg';
@@ -13,7 +13,9 @@ import menuAlcoholicCocktailsData from "services/dataCocktails/alcoholicCocktail
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const AlcoholicCocktails = () => {
-  const { addToCart, cartItems } = useContext(CartContext);
+  // const { addToCart, cartItems } = useContext(CartContext);
+  const { cartItems } = useContext(CartContext);
+
 
   const [alcoholicCocktailsItems, setAlcoholicCocktailsItems] = useState([]);
 
@@ -38,19 +40,19 @@ export const AlcoholicCocktails = () => {
 
  
 
-  const updateAlcoholicCocktailsButtonState = (itemId) => {
-   setAlcoholicCocktailsItems(alcoholicCocktailsItems.map(item => {
-      if (item.id === itemId) {
-        return { ...item, alreadyAdded: false };
-      }
-      return item;
-    }));
-  };
+  // const updateAlcoholicCocktailsButtonState = (itemId) => {
+  //  setAlcoholicCocktailsItems(alcoholicCocktailsItems.map(item => {
+  //     if (item.id === itemId) {
+  //       return { ...item, alreadyAdded: false };
+  //     }
+  //     return item;
+  //   }));
+  // };
 
   return (
     <div className={styles.dishPage}>
      <div className={styles.dishPageContainer}>
-       <h1 className={styles.dishTitle}>Безалкогольні напої</h1>  
+       <h1 className={styles.dishTitle}>Алкогольні коктейлі</h1>  
 
       <span className={styles.toBasketLinkBox}>
         <NavLink to="/menu/basket" className={styles.toBasketLink}>
@@ -63,7 +65,7 @@ export const AlcoholicCocktails = () => {
 
       <div className={styles.dishPageBox}>
       
-          <table>
+          <table className={styles.dishTableList}>
             <thead>
               <tr>
               
@@ -79,15 +81,15 @@ export const AlcoholicCocktails = () => {
                   {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
                   <td  className={styles.dishTableName}>{item.назва}</td>
                   <td  className={styles.dishTableIngredients}>{item.інгредієнти}</td>
-                  <td  className={styles.dishTableWeigth}>{item.вага}</td>
-                  <td  className={styles.dishTablePrice}>{item.ціна}</td>
-                  <td className={styles.dishTableButtonAdd}>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+                  {/* <td className={styles.dishTableButtonAdd}>
                     <AddButton
                       onClick={() => addToCart(item)}
                       alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
                       updateButtonState={() => updateAlcoholicCocktailsButtonState(item.id)}
                     />
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>

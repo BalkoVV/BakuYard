@@ -50,7 +50,7 @@ export const Salads = () => {
   return (
     <div className={styles.dishPage}>
       <div className={styles.dishPageContainer}>
-       <h1 className={styles.dishTitle}>Salads</h1> 
+       <h1 className={styles.dishTitle}>Салати</h1> 
 
           <span className={styles.toBasketLinkBox}>
             <NavLink to="/menu/basket" className={styles.toBasketLink}>
@@ -73,6 +73,7 @@ export const Salads = () => {
           left: '-90px',
           width: '450px',
           height: '650px',
+          opacity: '0.9',
         }}
       />
        <img
@@ -84,6 +85,7 @@ export const Salads = () => {
           right: '-90px',
           width: '450px',
           height: '600px',
+          opacity: '0.9',
         }}
       />
        {/* <img
@@ -102,7 +104,7 @@ export const Salads = () => {
           <table className={styles.dishTableList}>
             <thead>
               <tr>
-                <h3>Salads</h3>
+                {/* <h3>Salads</h3> */}
                 {/* <th>ID</th> */}
                 {/* <th>Назва</th> */}
                 {/* <th>Об'єм</th> */}

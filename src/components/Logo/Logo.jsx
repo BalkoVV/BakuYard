@@ -2,6 +2,7 @@
 
 import React from 'react';
 import logo from 'images/yardBakuLogo.svg';
+// import logo from 'images/bakinsky-dvir-logo.png';
 import styles from 'components/Logo/Logo.module.css';
 
 

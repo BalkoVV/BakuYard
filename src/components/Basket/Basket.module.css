@@ -71,7 +71,10 @@ align-items: center;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 15px;
     border: none;
-    border-radius: 15px;
+    padding: 25px 25px;
+    border-radius: 11px;
+    background: #b4b4b44a;
+    margin: 35px 0;
 }
 
 .basketListItem {
@@ -80,31 +83,37 @@ align-items: center;
    padding-left: 3px;
    width: 900px;
    height: 50px;
-   border-radius: 9px;
+   border-radius: 11px;
    align-items: center;
    justify-content: space-between;
-   background: black;
+   /* background: black;
 
    background: linear-gradient(180deg, #282727cc, #282727bc, #000000ae);
    background: linear-gradient(359deg, #181717bd, #060606bc, black, black);
    background-attachment: fixed;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 
+  width: 900px;
+  height: 60px;
+  padding-left: 15px;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+  box-shadow: 7px 7px 15px 2px #00000047;
 }
 
 .basketListItemPrice {
    position: absolute;
-   right: 0px;
-   padding: 0;
-   margin: 0;
    display: flex;
-   width: 55px;
-   justify-content: center;
    align-items: center;
-   font-size: 14px;
-   height: 100%;
-   border-left: 1px solid #7b7b7b39;
-   color: #b6b6b6;
+   justify-content: center;
+   height: 60px;
+   width: 100px;
+   margin: 0;
+   padding: 0;
+   right: 0px;
+   font-size: 15px;
+   top: 0;
+   border-left: 1px solid #39393969;
 }
 
 .basketListItemCategory {
@@ -116,7 +125,7 @@ align-items: center;
 
 
 .basketListItemCounter {
-   position: absolute;
+   /* position: absolute;
    right: 55px;
    height: 100%;
    display: flex;
@@ -124,7 +133,20 @@ align-items: center;
    justify-content: space-around;
    align-items: center;
    font-size: 14px;
-   border-left: 1px solid #7b7b7b39;
+   border-left: 1px solid #7b7b7b39; */
+
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 60px;
+   width: 100px;
+   margin: 0;
+   padding: 0;
+   right: 101px;
+   font-size: 15px;
+   top: 0;
+   border-left: 1px solid #39393969;
 }
 
 .basketListItemName {
@@ -159,6 +181,7 @@ display: flex;
 justify-content: center;
 padding: 10px 0px;
 text-align: right;
+
 }
 
 
@@ -170,6 +193,9 @@ text-align: right;
  align-items: center;
  padding: 5px;
  font-size: 15px;
+ background-color: #000000;
+ background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+ box-shadow: 7px 7px 15px 2px #00000047;
 }
 
 .basketQuantityBox {
@@ -202,9 +228,11 @@ text-align: right;
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 15px;
   padding: 15px 50px;
-  border-radius: 15px;
-  background: linear-gradient(180deg, #000000, #232323cb, #232323cb);
-  background-attachment: fixed;
+  border-radius: 19px;
+ 
+  background-color: #000000;
+    background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
+    box-shadow: 7px 7px 15px 2px #00000047;
 }
 
  .basketInput {
@@ -242,6 +270,9 @@ text-align: right;
    border: none;
    border-radius: 11px;
    background: linear-gradient(0deg, #191616, black, #191616);
+   background-color: #000000;
+    background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
+    box-shadow: 7px 7px 15px 2px #00000047;
 }
 
 

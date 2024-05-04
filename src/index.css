@@ -81,13 +81,14 @@ button:active {
  background: radial-gradient( rgb(8, 8, 8),transparent);
 }
 
-h1, h4 {
+h1, h3, h2, h5, h4 {
   background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
   background-clip: text;
  -webkit-background-clip: text;
  color: transparent;
  display: inline-block;
  text-shadow: rgb(0, 0, 0) 3px 5px 11px;
+ margin: 0;
  /* font-size: 33px; */
 }
 
