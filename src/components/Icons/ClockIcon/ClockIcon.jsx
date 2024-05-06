@@ -1,7 +1,7 @@
 // ClockIcon.jsx
 
 import React from 'react';
-import clockIcon from 'images/clockIcon.svg';
+import clockIcon from 'images/clock.svg';
 import styles from 'components/Logo/Logo.module.css';
 
 

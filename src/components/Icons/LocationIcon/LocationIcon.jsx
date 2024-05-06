@@ -1,7 +1,7 @@
 // LocationIcon.jsx
 
 import React from 'react';
-import locationIcon from 'images/locationIcon.svg';
+import locationIcon from 'images/formap.svg';
 import styles from 'components/Logo/Logo.module.css';
 
 

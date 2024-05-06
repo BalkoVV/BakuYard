@@ -5,8 +5,8 @@ import { NavLink, useHistory } from 'react-router-dom';
 import { Logo } from 'components/Logo/Logo';
 import { BurgerLinesIcon } from 'components/Icons/BurgerLinesIcon/BurgerLinesIcon';
 
-import { ReactComponent as TimeIcon } from 'images/time.svg';
-import { ReactComponent as MapIcon } from 'images/mapIcon.svg';
+import { ReactComponent as TimeIcon } from 'images/dot.svg';
+import { ReactComponent as MapIcon } from 'images/dot.svg';
 
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 import styles from './Header.module.css';

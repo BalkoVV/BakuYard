@@ -6,12 +6,12 @@
 .menuPage {
    height: 100%;
    padding-top: 30px;
- background-color: #050505;
- background-position: bottom;
- background-attachment: fixed;
- background-repeat: repeat;
- background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
- background-color: #111111;
+   background-color: #050505;
+   background-position: bottom;
+   background-attachment: fixed;
+   background-repeat: repeat;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   background-color: #111111;
 
 }
 
@@ -19,12 +19,6 @@
 .menuPageContainer {
    width: 100%;
    padding-bottom: 50px;
-   /* background-position: bottom;
-   background-attachment: fixed;
-   background-repeat: repeat;
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   background-color: #111111; */
-   
 }
 
 
@@ -44,7 +38,6 @@
    };
    @media screen and (min-width: 1200px) {
       height: 95px;
-      
       font-size: 15px;
    };
 }
@@ -101,100 +94,94 @@ fill: #a66101;
 
 
 .dishCard {
+   /* position: relative; */
+   display: grid;
+   align-content: flex-end;
    height: 150px;
    width: 100%;
-   border: 1px solid #000000;
-   border-radius: 7px;
+   border: 1px solid black;
+   border-radius: 11px;
    overflow: hidden;
    margin-left: auto;
    margin-right: auto;
-   background-size: cover;
-   transition: .7s;
-   border: 1px solid #000000;
-   box-shadow: 10px 10px 32px 2px rgba(0, 0, 0, 0.563);
+   transition: .3s;
+   box-shadow: 10px 10px 22px 2px rgba(0, 0, 0, 0.563);
+   background-color: #000000;
+   /* background-color: #2f0000; */
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+ 
 
    @media screen and (min-width: 768px) {
       height: 180px;
    }; 
 
    @media screen and (min-width: 1200px) {
-      height: 210px;
+      height: 200px;
+      
    }; 
 }
 
-.dishCard:hover {
- border: 1px solid #3f0404;
- transition: .2s;
-/* box-shadow: 0 0 11px 7px rgba(0, 0, 0, 0.512); */
-}
-
-.dishCardSauces {
-   background-image: url("images/saucesMenu.jpeg");
-}
-.dishCardHardAlkohol {
-   background-image: url("images/hardAlkohol.jpg");
-}
-
-.dishCardPizza {
-   background-image: url("images/pizzas.jpeg");
-   
-}
-
-.dishCardWines {
-   background-image: url("images/wine.jpeg");
-}
-
-.dishCardBarbeque {
-   background-image: url("images/bbq.jpg");
-}
-
-.dishCardSalads {
-   background-image: url("images/salads.avif");
-}
-
-.dishCardBeer {
-   background-image: url("images/beer.jpeg");
-}
-
-.dishCardHotDrinks {
-background-image: url("images/hotDrink.jpg");
-background-position: bottom;
-}
-
-.dishCardSoups {
-   background-image: url("images/soup.png");
-   background-size: cover;
-}
-
-
-
-.dishCardLink {
-   position: relative;
-   display: block;
-   height: 100%;
-   width: 100%;
-   background-color: #0e0e0e4d;
-   /* color: #7c7c7c80; */
-}
-
-.dishCardLink h1 {
+/* .dishCardBox {
    position: absolute;
+  
+   background: #111111;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+} */
+
+
+.dishCard:hover {
+ border: 1px solid #820000;
+ transition: .3s;
+}
+
+.dishCardImg {
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ transition: .3s;
+}
+
+
+
+.dishCardImage {
+   display: block;
+ margin-bottom: 20px;
+}
+
+.dishCardDescription {
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 15px;
-   color: #7b7b7b;
-   /* border-radius: 0 0 9px 9px; */
    height: 30px;
    width: 100%;
-   background: #000000b3;
-   backdrop-filter: blur(2.7px);
-   -webkit-backdrop-filter: blur(2.7px);
-   margin: 0;
-   padding: 0;
-   bottom: 0;
-   
+   background: linear-gradient(0deg, #515151,#414141,#8e8e8e);
+   background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
+   background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* border-top: 1px solid #000; */
+  /* box-shadow: inset 0 0 21px 5px rgba(0, 0, 0, 0.511); */
+ /* background: #010101; */
 }
+
+/* .dishCard h3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 30px;
+   width: 100%;
+   background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
+   background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+} */
+
+
+
+
+
 
 
 .menuBasketInfoIcon {
@@ -220,28 +207,8 @@ background-position: bottom;
    border-radius: 11px;
 }
 
-.toBasketLinkBox:hover {
- transition: 1s;
- /* background-color: rgba(31, 3, 3, 0.583); */
- background: linear-gradient(0deg,#1f1c1c, #020202, #1f1c1c);
-}
-
-/* .menuBasketLink {
-   position: absolute;
-   right: 55px;
-   top: 75px;
-   display: grid;
 
 
-   @media screen and (min-width: 768px) {
-      top: 105px;
-      right: 45px;
-   };
-   @media screen and (min-width: 1200px) {
-     top: 135px;
-     right: 65px;
-   };
-} */
 
 .basketIcon {
    fill: #a72222;

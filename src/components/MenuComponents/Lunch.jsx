@@ -9,7 +9,7 @@ import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 
 import CartContext from "components/CartProvider/CartProvider";
 
-import setMealsData from "services/dataComboSets/setMeals.json";
+import lunchData from "services/dataComboSets/setMeals.json";
 
 
 // import pizzaMenu1 from 'images/pizzaMenu1.png';
@@ -19,9 +19,9 @@ import setMealsData from "services/dataComboSets/setMeals.json";
 import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
-export const SetMeals = () => {
+export const Lunch = () => {
   const { addToCart, cartItems } = useContext(CartContext);
-  const [setMealsItems, setSetMealsItems] = useState([]);
+  const [lunchItems, setLunchItems] = useState([]);
 
   useEffect(() => {
     window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
@@ -37,11 +37,11 @@ export const SetMeals = () => {
   }, []);
 
   useEffect(() => {
-    setSetMealsItems(setMealsData);
+    setLunchItems(lunchData);
   }, []);
 
   const updateButtonState = (itemId) => {
-    setSetMealsItems(setMealsItems.map(item => {
+    setLunchItems(lunchItems.map(item => {
       if (item.id === itemId) {
         return { ...item, alreadyAdded: false };
       }
@@ -53,7 +53,7 @@ export const SetMeals = () => {
     <div className={styles.dishPage}>
       <div className={styles.dishPageContainer}>
 
-        <h1 className={styles.dishTitle}>Комплексні обіди</h1> 
+        <h1 className={styles.dishTitle}>Бізнес ланчі</h1> 
 
         <span className={styles.toBasketLinkBox}>
           <NavLink to="/menu/basket" className={styles.toBasketLink}>
@@ -102,7 +102,7 @@ export const SetMeals = () => {
               </tr>
             </thead>
             <tbody  className={styles.dishTableSetMeals}>
-              {setMealsItems.map((item) => (
+              {lunchItems.map((item) => (
                 <tr key={item.id}  className={styles.dishTableSetMealsItem}>
                   {/* <td>{item.id}</td> */}
             <td className={styles.dishTableDay}>{item.назва}</td>
@@ -144,7 +144,7 @@ export const SetMeals = () => {
   );
 };
 
-export default SetMeals;
+export default Lunch;
 
 
 

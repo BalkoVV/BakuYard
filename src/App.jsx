@@ -19,6 +19,7 @@ export const App = () => {
     <Router>
       <MasterContainer>
         <Header />
+        <MainPage />
         <div className={styles.container}>
           <Switch>
             <CartProvider>

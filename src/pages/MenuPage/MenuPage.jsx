@@ -9,26 +9,58 @@ import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import Basket from "components/Basket/Basket";
 
 import Pizza from "components/MenuComponents/Pizza";
+
 import HotDrinks from "components/MenuComponents/HotDrinks";
+import hotDrinkCardImage from 'images/hotDrinkCard.svg';
+
 import ColdApetizers from "components/MenuComponents/ColdApetizers";
 import HotApetizers from "components/MenuComponents/HotApetizers";
+
 import Beverages from "components/MenuComponents/Beverages";
+import beveragesCardImage from 'images/beveragesCard.svg';
+
 import AlcoholicCocktails from "components/MenuComponents/AlcoholicCocktails";
+import CocktailsCardImage from 'images/cocktailsCard.svg';
+
 import Desserts from "components/MenuComponents/Desserts";
+import dessertCardImage from 'images/dessertCard.svg';
+ 
 import Mocktails from "components/MenuComponents/Mocktails";
-import Barbeque from "components/MenuComponents/Barbeque";
+import mocktailsCardImage from 'images/mocktailsCard.svg';
+
+import Meat from "components/MenuComponents/Meat";
+
 import Sauces from "components/MenuComponents/Sauces";
-import HardAlkohol from "components/MenuComponents/HardAlkohol";
+import saucesCardImage from 'images/saucesCard.svg';
+
+import HardAlcohol from "components/MenuComponents/HardAlkohol";
+import alcoholCardImage from 'images/alcoholCard.svg';
+
 import Wines from "components/MenuComponents/Wines";
+import wineCardImage from 'images/wineCard.svg';
+
 import Beer from "components/MenuComponents/Beer";
+import beerCardImage from 'images/beerCard.svg';
+
 import Salads from "components/MenuComponents/Salads";
+import saladCardImage from 'images/saladCard.svg';
 import Banquete from "components/MenuComponents/AddButton/Banquete";
 import Fish from "components/MenuComponents/Fish";
 import MainDish from "components/MenuComponents/MainDish";
+
 import SideDish from "components/MenuComponents/SideDish";
+// import sideDishCardImage from 'images/sideDishCard.svg';
+
+
 import Soup from "components/MenuComponents/Soup";
-import SetMeals from "components/MenuComponents/SetMeals";
+import soupCardImage from 'images/soupCard.svg';
+
+import Lunch from "components/MenuComponents/Lunch";
+import lunchCardImage from 'images/lunchCard.svg';
 import styles from 'pages/MenuPage/MenuPage.module.css';
+
+
+
 
 
 export const MenuPage = () => {
@@ -73,164 +105,396 @@ export const MenuPage = () => {
              </div>
 
             <ul className={styles.dishList}>
-            <li className={`${styles.dishCard} ${styles.dishCardBarbeque}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/set-meals" className={styles.dishCardLink}>
-                    <h1>Комплексні обіди</h1>
-                  </NavLink>
-                </span>
-              </li>
 
-              <li className={`${styles.dishCard} ${styles.dishCardHardAlkohol}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/hard-alkohol" className={styles.dishCardLink}>
-                    <h1>Міцний алкоголь</h1>
+              <li className={styles.dishCard}>
+                  <NavLink to="/menu/meat" className={styles.dishCardLink}>
+                  
+                    <span className={styles.dishCardImg}>
+                    <img
+                        className={styles.dishCardImage}
+                        src={lunchCardImage} 
+                        alt="М'ясо"
+                        width="125"
+                        height="125"
+                      />
+                    </span>
+                      <h2 className={styles.dishCardDescription}>
+                        М'ясо
+                      </h2>
+                  
                   </NavLink>
-                </span>
+                </li>
+               
+              <li className={styles.dishCard}>
+                  <NavLink to="/menu/fish" className={styles.dishCardLink}>
+                  
+                    <span className={styles.dishCardImg}>
+                    <img
+                        className={styles.dishCardImage}
+                        src={lunchCardImage} 
+                        alt="Риба"
+                        width="125"
+                        height="125"
+                      />
+                    </span>
+                      <h2 className={styles.dishCardDescription}>
+                        Риба
+                      </h2>
+                  
+                  </NavLink>
+                </li>
+               
+               
+               <li className={styles.dishCard}>
+                  <NavLink to="/menu/main-dish" className={styles.dishCardLink}>
+                  
+                    <span className={styles.dishCardImg}>
+                    <img
+                        className={styles.dishCardImage}
+                        src={lunchCardImage} 
+                        alt="Основні страви"
+                        width="125"
+                        height="125"
+                      />
+                    </span>
+                      <h2 className={styles.dishCardDescription}>
+                      Основні страви
+                      </h2>
+                  
+                  </NavLink>
+                </li>
+
+               <li className={styles.dishCard}>
+                  <NavLink to="/menu/side-dish" className={styles.dishCardLink}>
+                  
+                    <span className={styles.dishCardImg}>
+                    <img
+                        className={styles.dishCardImage}
+                        src={saladCardImage} 
+                        alt="Гарнір"
+                        width="125"
+                        height="125"
+                      />
+                    </span>
+                      <h2 className={styles.dishCardDescription}>
+                      Гарніри
+                      </h2>
+                  
+                  </NavLink>
+                </li>
+
+               <li className={styles.dishCard}>
+                  <NavLink to="/menu/hot-apetizers" className={styles.dishCardLink}>
+                  
+                    <span className={styles.dishCardImg}>
+                    <img
+                        className={styles.dishCardImage}
+                        src={lunchCardImage} 
+                        alt="Гарячі закуски"
+                        width="125"
+                        height="125"
+                      />
+                    </span>
+                      <h2 className={styles.dishCardDescription}>
+                      Гарячі закуски
+                      </h2>
+                  
+                  </NavLink>
+                </li>
+              <li className={styles.dishCard}>
+                  <NavLink to="/menu/cold-apetizers" className={styles.dishCardLink}>
+                  
+                    <span className={styles.dishCardImg}>
+                    <img
+                        className={styles.dishCardImage}
+                        src={lunchCardImage} 
+                        alt="Холодні закуски"
+                        width="125"
+                        height="125"
+                      />
+                    </span>
+                      <h2 className={styles.dishCardDescription}>
+                      Холодні закуски
+                      </h2>
+                  
+                  </NavLink>
+                </li>
+
+              <li className={styles.dishCard}>
+                  <NavLink to="/menu/salads" className={styles.dishCardLink}>
+                  
+                    <span className={styles.dishCardImg}>
+                    <img
+                        className={styles.dishCardImage}
+                        src={saladCardImage} 
+                        alt="Салати"
+                        width="125"
+                        height="125"
+                      />
+                    </span>
+                      <h2 className={styles.dishCardDescription}>
+                      Салати
+                      </h2>
+                  
+                  </NavLink>
+                </li>
+
+              <li className={styles.dishCard}>
+                <NavLink to="/menu/sauces" className={styles.dishCardLink}>
+                
+                   <span className={styles.dishCardImg}>
+                   <img
+                      className={styles.dishCardImage}
+                      src={saucesCardImage} 
+                      alt="Соуси"
+                      width="125"
+                      height="125"
+                    
+                    />
+                   </span>
+                    <h2 className={styles.dishCardDescription}>
+                      Соуси
+                    </h2>
+                 
+                </NavLink>
               </li>
-              <li className={`${styles.dishCard} ${styles.dishCardBarbeque}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/barbeque" className={styles.dishCardLink}>
-                    <h1 className={styles.dishCardLinkTitle}>Барбекю</h1>
-                  </NavLink>
-                </span>
+              <li className={styles.dishCard}>
+                <NavLink to="/menu/pizza" className={styles.dishCardLink}>
+                
+                   <span className={styles.dishCardImg}>
+                   <img
+                      className={styles.dishCardImage}
+                      src={lunchCardImage} 
+                      alt="Випічка"
+                      width="125"
+                      height="125"
+                    />
+                   </span>
+                    <h2 className={styles.dishCardDescription}>
+                      Випічка
+                    </h2>
+                 
+                </NavLink>
               </li>
           
-              <li className={`${styles.dishCard} ${styles.dishCardBeer}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/beer" className={styles.dishCardLink}>
-                    <h1>Пиво</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardSauces}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/sauces" className={styles.dishCardLink}>
-                    <h1>Соуси</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardPizza}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/pizza" className={styles.dishCardLink}>
-                    <h1>З Печі</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardWines}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/wines" className={styles.dishCardLink}>
-                    <h1>Вино</h1>
-                  </NavLink>
-                </span>
-              </li>
-             
-              <li className={`${styles.dishCard} ${styles.dishCardHotDrinks}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/hot-drinks" className={styles.dishCardLink}>
-                    <h1>Гарячі напої</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/salads" className={styles.dishCardLink}>
-                    <h1>Салати</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/cold-apetizers" className={styles.dishCardLink}>
-                    <h1>Холодні закуски</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-               <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/hot-apetizers" className={styles.dishCardLink}>
-                    <h1>Гарячі закуски</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/beverages" className={styles.dishCardLink}>
-                    <h1>Безалкогольні напої</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/alcoholic-cocktails" className={styles.dishCardLink}>
-                    <h1>Алкогольні коктейлі</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/mocktails" className={styles.dishCardLink}>
-                    <h1>Безалкогольні коктейлі</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/desserts" className={styles.dishCardLink}>
-                    <h1>Десерти</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/banquete" className={styles.dishCardLink}>
-                    <h1>Банкетне меню</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/fish" className={styles.dishCardLink}>
-                    <h1>Риба</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/main-dish" className={styles.dishCardLink}>
-                    <h1>Основні страви</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-
-              <li className={`${styles.dishCard} ${styles.dishCardSalads}`}>
-                <span classame={styles.dishCardBox}> 
-                  <NavLink to="/menu/side-dish" className={styles.dishCardLink}>
-                    <h1>Гарнір</h1>
-                  </NavLink>
-                </span>
-              </li>
-
-              <li className={`${styles.dishCard} ${styles.dishCardSoups}`}>
-                <span classame={styles.dishCardBox}> 
+              <li className={styles.dishCard}>
                   <NavLink to="/menu/soup" className={styles.dishCardLink}>
-                    <h1>Супи</h1>
+                  
+                    <span className={styles.dishCardImg}>
+                    <img
+                        className={styles.dishCardImage}
+                        src={soupCardImage} 
+                        alt="Суп"
+                        width="125"
+                        height="135"
+                      />
+                    </span>
+                      <h2 className={styles.dishCardDescription}>
+                      Супи
+                      </h2>
+                  
                   </NavLink>
+                </li>
+            
+                <li className={styles.dishCard}>
+                <NavLink to="/menu/lunch" className={styles.dishCardLink}>
+                
+                   <span className={styles.dishCardImg}>
+                   <img
+                      className={styles.dishCardImage}
+                      src={lunchCardImage} 
+                      alt="Соуси"
+                      width="125"
+                      height="125"
+                    />
+                   </span>
+                    <h2 className={styles.dishCardDescription}>
+                      Бізнес ланчі
+                    </h2>
+                 
+                </NavLink>
+              </li>
+
+               <li className={styles.dishCard}>
+                <div className={styles.dishCardBox}>
+                <NavLink to="/menu/banquete" className={styles.dishCardLink}>
+                
+                <span className={styles.dishCardImg}>
+                  <img
+                    className={styles.dishCardImage}
+                    src={alcoholCardImage} 
+                    alt="Банкетне меню"
+                    width="125"
+                    height="125"
+                  />
                 </span>
+
+                <h2 className={styles.dishCardDescription}>
+                Банкетне меню
+                </h2>
+              
+                </NavLink>
+                </div>
+              </li>
+
+              <li className={styles.dishCard}>
+                <NavLink to="/menu/beverages" className={styles.dishCardLink}>
+                
+                   <span className={styles.dishCardImg}>
+                   <img
+                      className={styles.dishCardImage}
+                      src={beveragesCardImage} 
+                      alt="Безалкогольні напої"
+                      width="125"
+                      height="125"
+                    />
+                   </span>
+                    <h2 className={styles.dishCardDescription}>
+                    Безалкогольні напої
+                    </h2>
+                 
+                </NavLink>
+              </li>
+
+               <li className={styles.dishCard}>
+                <NavLink to="/menu/mocktails" className={styles.dishCardLink}>
+                
+                   <span className={styles.dishCardImg}>
+                   <img
+                      className={styles.dishCardImage}
+                      src={mocktailsCardImage} 
+                      alt="Безалкогольні коктейлі"
+                      width="125"
+                      height="125"
+                    />
+                   </span>
+                    <h2 className={styles.dishCardDescription}>
+                    Безалкогольні коктейлі
+                    </h2>
+                 
+                </NavLink>
+              </li>
+
+              <li className={styles.dishCard}>
+                <NavLink to="/menu/hot-drinks" className={styles.dishCardLink}>
+                
+                   <span className={styles.dishCardImg}>
+                   <img
+                      className={styles.dishCardImage}
+                      src={hotDrinkCardImage} 
+                      alt="Гарячі напої"
+                      width="145"
+                      height="145"
+                    />
+                   </span>
+                    <h2 className={styles.dishCardDescription}>
+                    Гарячі напої
+                    </h2>
+                 
+                </NavLink>
+              </li>
+
+              <li className={styles.dishCard}>
+                <NavLink to="/menu/desserts" className={styles.dishCardLink}>
+                
+                   <span className={styles.dishCardImg}>
+                   <img
+                      className={styles.dishCardImage}
+                      src={dessertCardImage} 
+                      alt="Десерт"
+                      width="155"
+                      height="155"
+                    />
+                   </span>
+                    <h2 className={styles.dishCardDescription}>
+                      Десерти
+                    </h2>
+                 
+                </NavLink>
+              </li>
+
+              <li className={styles.dishCard}>
+                <div className={styles.dishCardBox}>
+                <NavLink to="/menu/hard-alcohol" className={styles.dishCardLink}>
+                
+                <span className={styles.dishCardImg}>
+                  <img
+                    className={styles.dishCardImage}
+                    src={alcoholCardImage} 
+                    alt="Соуси"
+                    width="125"
+                    height="125"
+                  />
+                </span>
+
+                <h2 className={styles.dishCardDescription}>
+                  Міцний алкоголь
+                </h2>
+              
+                </NavLink>
+                </div>
+              </li>
+
+           
+
+                <li className={styles.dishCard}>
+                <div className={styles.dishCardBox}>
+                <NavLink to="/menu/alcoholic-cocktails" className={styles.dishCardLink}>
+                
+                <span className={styles.dishCardImg}>
+                  <img
+                    className={styles.dishCardImage}
+                    src={CocktailsCardImage} 
+                    alt="Алкогольні коктейлі"
+                    width="125"
+                    height="125"
+                  />
+                </span>
+
+                <h2 className={styles.dishCardDescription}>
+                Алкогольні коктейлі
+                </h2>
+              
+                </NavLink>
+                </div>
+              </li>
+            
+              <li className={styles.dishCard}>
+                <NavLink to="/menu/wines" className={styles.dishCardLink}>
+                
+                   <span className={styles.dishCardImg}>
+                   <img
+                      className={styles.dishCardImage}
+                      src={wineCardImage} 
+                      alt="Вино"
+                      width="125"
+                      height="125"
+                    />
+                   </span>
+                    <h2 className={styles.dishCardDescription}>
+                    Вино
+                    </h2>
+                 
+                </NavLink>
+              </li>
+
+              <li className={styles.dishCard}>
+                <NavLink to="/menu/beer" className={styles.dishCardLink}>
+                
+                   <span className={styles.dishCardImg}>
+                   <img
+                      className={styles.dishCardImage}
+                      src={beerCardImage} 
+                      alt="Пиво"
+                      width="125"
+                      height="125"
+                    />
+                   </span>
+                    <h2 className={styles.dishCardDescription}>
+                      Пиво
+                    </h2>
+                 
+                </NavLink>
               </li>
 
             </ul>  
@@ -239,7 +503,7 @@ export const MenuPage = () => {
       </Route>
 
       <Route path="/menu/basket" component={Basket} /> 
-      <Route path="/menu/barbeque" component={Barbeque} />
+      <Route path="/menu/meat" component={Meat} />
       <Route path="/menu/sauces" component={Sauces} />
       <Route path="/menu/cold-apetizers" component={ColdApetizers} />
       <Route path="/menu/hot-apetizers" component={HotApetizers} />
@@ -247,7 +511,7 @@ export const MenuPage = () => {
       <Route path="/menu/alcoholic-cocktails" component={AlcoholicCocktails} />
       <Route path="/menu/mocktails" component={Mocktails} />
       <Route path="/menu/beverages" component={Beverages} />
-      <Route path="/menu/hard-alkohol" component={HardAlkohol} />
+      <Route path="/menu/hard-alcohol" component={HardAlcohol} />
       <Route path="/menu/banquete" component={Banquete} />
       <Route path="/menu/beer" component={Beer} /> 
       <Route path="/menu/pizza" component={Pizza} /> 
@@ -258,7 +522,7 @@ export const MenuPage = () => {
       <Route path="/menu/main-dish" component={MainDish} /> 
       <Route path="/menu/side-dish" component={SideDish} /> 
       <Route path="/menu/soup" component={Soup} /> 
-      <Route path="/menu/set-meals" component={SetMeals} /> 
+      <Route path="/menu/lunch" component={Lunch} /> 
       </Switch>
       </div>
      </div>

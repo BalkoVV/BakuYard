@@ -1,7 +1,7 @@
 // InstagramIcon.jsx
 
 import React from 'react';
-import instagramIcon from 'images/instagram4.svg';
+import instagramIcon from 'images/forinsta.svg';
 import styles from 'components/Logo/Logo.module.css';
 
 

@@ -1,7 +1,7 @@
 // MailIcon.jsx
 
 import React from 'react';
-import mailIcon from 'images/gmail.svg';
+import mailIcon from 'images/formail.svg';
 import styles from 'components/Logo/Logo.module.css';
 
 

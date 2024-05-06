@@ -95,7 +95,7 @@
 
 .fadeOut {
    opacity: 0; 
-   transition: opacity .5s ease-in-out;
+   transition: opacity .3s ease-in-out;
  }
 
  .mapBox {
@@ -103,7 +103,7 @@
    display: flex;
    margin-left: auto;
    margin-right: auto;
-   background:url("images/map4.png");
+   background:url("images/map45.png");
    /* background-attachment: fixed; */
    background-size: cover;
    background-position: center;
@@ -168,12 +168,13 @@
    color: #7b7b7b;
    font-size: 15px;
    border-radius: 11px;
+   margin:  3px 0;
    /* padding: 0 50px; */
-   /* background: linear-gradient(0deg, #00000066, black);
-   background-attachment: fixed;  */
-   /* background: linear-gradient(180deg,#00000084, #00000069, #00000003); */
-    /* background-attachment: fixed; */
-    background: #00000084;
+   /* background: linear-gradient(0deg, #00000066, black); */
+   /* background-attachment: fixed;   */
+   background: linear-gradient(180deg,#000000ad, #00000083, #00000003); 
+    background-attachment: fixed;
+    /* background: #00000084; */
     box-shadow: 6px 6px 11px 1px rgb(0 0 0 / 31%);
   }
 
@@ -202,4 +203,7 @@ text-shadow: rgb(0, 0, 0) 3px 5px 11px;
 /* contactsListItemImg */
 /* contactsListItemDiscriptions */
 
- 
+ .iconMapInMap {
+ display: block;
+ height: 25px;
+}

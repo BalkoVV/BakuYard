@@ -1,7 +1,7 @@
 // PhonesIcon.jsx
 
 import React from 'react';
-import phonesIcon from 'images/phonesIcon.svg';
+import phonesIcon from 'images/mobile.svg';
 import styles from 'components/Logo/Logo.module.css';
 
 

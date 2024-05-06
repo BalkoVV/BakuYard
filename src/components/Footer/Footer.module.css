@@ -79,8 +79,8 @@
 
 
 .footerSocial li img {
-  height: 27px;
-  border-radius: 50%;
+  height: 22px;
+  /* border-radius: 50%; */
 }
 
 .footerSocial li {

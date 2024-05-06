@@ -1,7 +1,7 @@
 // FacebookIcon.jsx
 
 import React from 'react';
-import facebookIcon from 'images/facebook.svg';
+import facebookIcon from 'images/forfacebook.svg';
 import styles from 'components/Logo/Logo.module.css';
 
 

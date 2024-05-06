@@ -13,6 +13,7 @@ export const InMapButton = () => {
             className={styles.inMapLink}
          >
             <h1 className={styles.inMapDescription}>Ми на Карті</h1>
+            
          </a>
       </div>
    );

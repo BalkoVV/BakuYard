@@ -18,7 +18,7 @@ export const ContactsPage = () => {
       contentElements.forEach((element, index) => {
         setTimeout(() => {
           element.style.opacity = '1'; 
-        }, 30 * index); 
+        }, 10 * index); 
       });
     }, []); 
 
@@ -27,6 +27,8 @@ export const ContactsPage = () => {
 
       <div className={`${styles.mapBox} ${styles.fadeOut}`}>
         <InMapButton className={styles.inMap}/>
+        {/* <LocationIcon className={styles.iconMapInMap}/> */}
+        {/* <LocationIcon className={styles.contactsListItemImg}/> */}
       </div>
 
         <div className={styles.contactsPageContainer}>
