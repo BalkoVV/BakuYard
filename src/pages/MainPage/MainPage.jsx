@@ -10,7 +10,7 @@ const MainPage = () => {
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '1'; 
-      }, 10 * index); 
+      }, 1 * index); 
     });
   }, []);
 
@@ -147,8 +147,8 @@ const MainPage = () => {
             </ul>
         </section>
         
-        <section className={styles.bottomDescriptionsBox}>
-        <h1 className={styles.bottomDescriptions}>
+        <section className={styles.bottomDeliveryBox}>
+        <h1 className={styles.bottomDelivery}>
            В нас працює доставка по місту
         </h1>
        

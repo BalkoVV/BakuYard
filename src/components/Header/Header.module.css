@@ -5,12 +5,10 @@
   border-image: linear-gradient(0.25turn, #1a1a1a, #414141, #1a1a1a);
   border-image-slice: 1;
   box-shadow: 0 0 25px 11px #00000098;
-  background-color: #030303;
-  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
   width:100%;
   z-index: 10;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 }
 
 .bottomLineLogo {

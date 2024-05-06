@@ -1,7 +1,7 @@
 .inMapButton {
    position: absolute;
-   top: 40px;
-   right: 65px;
+   top: 54px;
+   right: 68px; 
    display: flex;
    align-items: center;
    justify-content: end;

@@ -1,6 +1,6 @@
 .fadeIn {
    opacity: 0; 
-   transition: opacity .3s ease-in-out; 
+   /* transition: opacity .1s ease-in;  */
 }
 
 .menuPage {
@@ -10,8 +10,9 @@
    background-position: bottom;
    background-attachment: fixed;
    background-repeat: repeat;
-   background-color: #111111;
+   background-color: #070707;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   
 }
 
 
@@ -103,10 +104,9 @@ fill: #a66101;
    margin-left: auto;
    margin-right: auto;
    transition: .1s;
-
    background-color: #000000;
-   background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
-   
+   background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
+
    @media screen and (min-width: 768px) {
       height: 180px;
    }; 
@@ -118,7 +118,7 @@ fill: #a66101;
 }
 
 .dishCard:hover {
- border: 1px solid #590000;
+ border: 1px solid #5900009f;
  transition: .1s;
 
 }
@@ -136,12 +136,14 @@ fill: #a66101;
  width: 100%;
  justify-content: center;
  align-items: center;
- transition: .3s;
+ transition: .1s;
 }
 
 .dishCardImage {
  display: block;
  margin-bottom: 20px;
+ height: 125px;
+ width: 125px;
 }
 
 .dishCardDescription {
@@ -173,7 +175,7 @@ fill: #a66101;
 .toBasketButton {
    position: absolute;
    border: none;
-   top: 125px;
+   top: 124px;
    right: 68px; 
    display: flex;
    align-items: center;
@@ -181,7 +183,10 @@ fill: #a66101;
    height: 60px;
    width: 150px;
    border: none;
+   border-radius: 11px;
    z-index: 10;
+   /* border: 1px solid #000000; */
+   transition: .1s;
 }
 .toBasketLink {
    display: flex; 
@@ -191,7 +196,7 @@ fill: #a66101;
    width: 150px;
    border-radius: 11px;
    background-color: #000000;
-   background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+   background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
 }
 
 .toBasketDescription {
@@ -201,8 +206,9 @@ fill: #a66101;
    padding-left: 15px;
 }
 
-.toBasketButton:hover .toBasketDescription {
-   color: #590000;
+.toBasketButton:hover {
+   /* border: 1px solid #5900009f; */
+   transition: .1s;
   }
 
 .basketIcon {

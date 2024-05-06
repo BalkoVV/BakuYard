@@ -18,7 +18,7 @@ export const ContactsPage = () => {
       contentElements.forEach((element, index) => {
         setTimeout(() => {
           element.style.opacity = '1'; 
-        }, 10 * index); 
+        }, 1 * index); 
       });
     }, []); 
 

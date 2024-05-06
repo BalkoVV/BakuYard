@@ -7,7 +7,7 @@
   width: 100%;
 
   border-top: 1px solid transparent;
-  border-image: linear-gradient(0.25turn, #1a1a1a, #414141, #1a1a1a);
+  border-image: linear-gradient(0.25turn, #1a1a1a, #292929, #1a1a1a);
   border-image-slice: 1;
 
   box-shadow: 0 0 25px 10px #00000085;
@@ -15,7 +15,12 @@
   background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
-  @media screen and (min-width: 768px) {
+  background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/black-mamba.png");
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+
+@media screen and (min-width: 768px) {
     height: 170px;
   };
 

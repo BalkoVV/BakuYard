@@ -78,12 +78,9 @@ button:active {
 }
 
 h1, h3, h2, h5, h4 {
-  /* background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
-  background-clip: text;
- -webkit-background-clip: text;
- color: transparent;
- display: inline-block; */
+ 
  /* text-shadow: rgb(0, 0, 0) 3px 5px 11px; */
+
  color: #414141;
  margin: 0;
 

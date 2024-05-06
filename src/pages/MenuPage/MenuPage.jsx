@@ -74,7 +74,7 @@ export const MenuPage = () => {
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '1'; 
-      }, 10 * index); 
+      }, 1 * index); 
     });
   }, [location.pathname]);
   
@@ -88,15 +88,6 @@ export const MenuPage = () => {
      
         <Route path="/menu" exact> 
             <h1 className={styles.menuTitle}>Меню</h1>
-
-
-              {/* <div className={styles.toBasketLinkBox}>
-                <NavLink to="/menu/basket" className={styles.toBasketLink}>
-                  <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
-                  {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
-                  <h3 className={styles.toMenuDescription}>Доставка</h3>
-                </NavLink>
-              </div> */}
             
               <div className={styles.toBasketButton}>
                 <NavLink to="/menu/basket" className={styles.toBasketLink}>
@@ -122,8 +113,8 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={lunchCardImage} 
                         alt="М'ясо"
-                        width="125"
-                        height="125"
+                        // width="125"
+                        // height="125"
                       />
                     </span>
                       <h3 className={styles.dishCardDescription}>
@@ -141,8 +132,8 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={lunchCardImage} 
                         alt="Риба"
-                        width="125"
-                        height="125"
+                        // width="125"
+                        // height="125"
                       />
                     </span>
                       <h3 className={styles.dishCardDescription}>
@@ -161,8 +152,8 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={lunchCardImage} 
                         alt="Основні страви"
-                        width="125"
-                        height="125"
+                        // width="125"
+                        // height="125"
                       />
                     </span>
                       <h3 className={styles.dishCardDescription}>
@@ -180,8 +171,8 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={saladCardImage} 
                         alt="Гарнір"
-                        width="125"
-                        height="125"
+                        // width="125"
+                        // height="125"
                       />
                     </span>
                       <h3 className={styles.dishCardDescription}>
@@ -199,8 +190,8 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={lunchCardImage} 
                         alt="Гарячі закуски"
-                        width="125"
-                        height="125"
+                        // width="125"
+                        // height="125"
                       />
                     </span>
                       <h3 className={styles.dishCardDescription}>
@@ -217,8 +208,8 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={lunchCardImage} 
                         alt="Холодні закуски"
-                        width="125"
-                        height="125"
+                        // width="125"
+                        // height="125"
                       />
                     </span>
                       <h3 className={styles.dishCardDescription}>
@@ -236,8 +227,8 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={saladCardImage} 
                         alt="Салати"
-                        width="125"
-                        height="125"
+                        // width="125"
+                        // height="125"
                       />
                     </span>
                       <h3 className={styles.dishCardDescription}>
@@ -255,8 +246,8 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={saucesCardImage} 
                       alt="Соуси"
-                      width="125"
-                      height="125"
+                      // width="125"
+                      // height="125"
                     
                     />
                    </span>
@@ -274,8 +265,8 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={lunchCardImage} 
                       alt="Випічка"
-                      width="125"
-                      height="125"
+                      // width="125"
+                      // height="125"
                     />
                    </span>
                     <h3 className={styles.dishCardDescription}>
@@ -293,8 +284,8 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={soupCardImage} 
                         alt="Суп"
-                        width="125"
-                        height="135"
+                        // width="125"
+                        // height="135"
                       />
                     </span>
                       <h3 className={styles.dishCardDescription}>
@@ -312,8 +303,8 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={lunchCardImage} 
                       alt="Соуси"
-                      width="125"
-                      height="125"
+                      // width="125"
+                      // height="125"
                     />
                    </span>
                     <h3 className={styles.dishCardDescription}>
@@ -332,8 +323,8 @@ export const MenuPage = () => {
                     className={styles.dishCardImage}
                     src={alcoholCardImage} 
                     alt="Банкетне меню"
-                    width="125"
-                    height="125"
+                    // width="125"
+                    // height="125"
                   />
                 </span>
 
@@ -353,8 +344,8 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={beveragesCardImage} 
                       alt="Безалкогольні напої"
-                      width="125"
-                      height="125"
+                      // width="125"
+                      // height="125"
                     />
                    </span>
                     <h3 className={styles.dishCardDescription}>
@@ -372,8 +363,8 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={mocktailsCardImage} 
                       alt="Безалкогольні коктейлі"
-                      width="125"
-                      height="125"
+                      // width="125"
+                      // height="125"
                     />
                    </span>
                     <h3 className={styles.dishCardDescription}>
@@ -391,8 +382,8 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={hotDrinkCardImage} 
                       alt="Гарячі напої"
-                      width="145"
-                      height="145"
+                      // width="145"
+                      // height="145"
                     />
                    </span>
                     <h3 className={styles.dishCardDescription}>
@@ -410,8 +401,8 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={dessertCardImage} 
                       alt="Десерт"
-                      width="155"
-                      height="155"
+                      // width="155"
+                      // height="155"
                     />
                    </span>
                     <h3 className={styles.dishCardDescription}>
@@ -430,8 +421,8 @@ export const MenuPage = () => {
                     className={styles.dishCardImage}
                     src={alcoholCardImage} 
                     alt="Соуси"
-                    width="125"
-                    height="125"
+                    // width="125"
+                    // height="125"
                   />
                 </span>
 
@@ -454,8 +445,8 @@ export const MenuPage = () => {
                     className={styles.dishCardImage}
                     src={CocktailsCardImage} 
                     alt="Алкогольні коктейлі"
-                    width="125"
-                    height="125"
+                    // width="125"
+                    // height="125"
                   />
                 </span>
 
@@ -475,8 +466,8 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={wineCardImage} 
                       alt="Вино"
-                      width="125"
-                      height="125"
+                      // width="125"
+                      // height="125"
                     />
                    </span>
                     <h3 className={styles.dishCardDescription}>
@@ -494,8 +485,8 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={beerCardImage} 
                       alt="Пиво"
-                      width="125"
-                      height="125"
+                      // width="125"
+                      // height="125"
                     />
                    </span>
                     <h3 className={styles.dishCardDescription}>

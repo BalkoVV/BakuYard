@@ -91,7 +91,7 @@
 
 .fadeOut {
    opacity: 0; 
-   transition: opacity .3s ease-in-out;
+   transition: opacity .1s ease-in;
  }
 
  .mapBox {
@@ -125,20 +125,20 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background: #0a0a0a00;
+   background: #0707074e;
    z-index: -1;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 }
 
-.inMap {
+/* .inMap {
  position: absolute;
  left: 0;
- top: 100px;
-}
+ top: 150px;
+} */
 
 .contactsListBox {
    display: flex;
-   height: 500px;
+   height: 550px;
    justify-content: center;
    align-items: center;
   }
@@ -148,7 +148,7 @@
    display: grid;
    grid-template-columns: repeat(1, 1fr);
    grid-column-gap: 20px;
-   grid-row-gap: 15px;
+   grid-row-gap: 30px;
    width: 600px;
    padding: 0 50px;
 
@@ -165,28 +165,22 @@
    font-size: 15px;
    border-radius: 11px;
    margin:  3px 0;
-    background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
-    box-shadow: 6px 6px 15px 2px #0000004f;
-    background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+   box-shadow: 6px 6px 15px 2px #0000004f;
+   background-color: #000000;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
   }
 
-  .contactsListItem img {
- display: block;
- height: 30px;
- padding-left: 50px;
+.contactsListItem img {
+   display: block;
+   height: 30px;
+   padding-left: 50px;
 }
 
 .contactsListItemDiscriptions {
-padding-right: 50px;
-background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
-background-clip: text;
--webkit-background-clip: text;
-color: transparent;
-display: inline-block;
-text-shadow: rgb(0, 0, 0) 3px 5px 11px;
+   padding-right: 50px;
+ 
+   color: #414141;
+
 }
   /* .contactsListItem span {
  position: absolute;
@@ -198,7 +192,7 @@ text-shadow: rgb(0, 0, 0) 3px 5px 11px;
 /* contactsListItemImg */
 /* contactsListItemDiscriptions */
 
- .iconMapInMap {
+ /* .iconMapInMap {
  display: block;
  height: 25px;
-}
+} */

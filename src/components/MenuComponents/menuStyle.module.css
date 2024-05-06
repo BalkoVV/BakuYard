@@ -233,7 +233,7 @@ margin: 35px 0;
    color: #695759;
 }
 
-.toMenuLinkBox {
+/* .toMenuLinkBox {
    position: absolute;
    border: none;
    border-radius: 30px;
@@ -243,7 +243,7 @@ margin: 35px 0;
    
    top: 30px;
    left: 70px; 
-}
+} */
 
 
 .basketIcon {
@@ -343,7 +343,7 @@ top: 15px;
       width: 150px;
       border-radius: 11px;
       background-color: #000000;
-      background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+      background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
    }
    
    .toBasketDescription {
