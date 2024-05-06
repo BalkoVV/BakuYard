@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.93e5f035.css",
-    "main.js": "/BakuYard/static/js/main.861cb709.js",
+    "main.css": "/BakuYard/static/css/main.89f3a7d8.css",
+    "main.js": "/BakuYard/static/js/main.e6a8e38c.js",
     "static/media/bg233.webp": "/BakuYard/static/media/bg233.087471099bc83d4ff823.webp",
     "static/media/23232555.png": "/BakuYard/static/media/23232555.20d673c873c32dd792fa.png",
     "static/media/Constantine.ttf": "/BakuYard/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
@@ -26,7 +26,7 @@
     "static/media/soupCard.svg": "/BakuYard/static/media/soupCard.9346a20b5c2cf080ea47729d54ba5cc1.svg",
     "static/media/lunchCard.svg": "/BakuYard/static/media/lunchCard.151121ab93c86bb47103fe549bb576f2.svg",
     "static/media/hotDrinkCard.svg": "/BakuYard/static/media/hotDrinkCard.6305f01c91d350daf57cca562d2e5c20.svg",
-    "static/media/dessertCard.svg": "/BakuYard/static/media/dessertCard.7fdf62d383c3705f712ec003a8c6bba8.svg",
+    "static/media/dessertCard.svg": "/BakuYard/static/media/dessertCard.7183524357b4e3d96c16a8a55a2528f2.svg",
     "static/media/mobile.svg": "/BakuYard/static/media/mobile.0afd77c73935cca5e8e000e2a7224f59.svg",
     "static/media/clock.svg": "/BakuYard/static/media/clock.1371759ea046b72e402caee0b659a5db.svg",
     "index.html": "/BakuYard/index.html",
@@ -38,11 +38,11 @@
     "static/media/forfacebook.svg": "/BakuYard/static/media/forfacebook.4a335a9cd815c0305f0dde9200dceaa3.svg",
     "static/media/dot.svg": "/BakuYard/static/media/dot.f31b974a7e6183c1197b526fbf2c8647.svg",
     "static/media/toMenu.svg": "/BakuYard/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.93e5f035.css.map": "/BakuYard/static/css/main.93e5f035.css.map",
-    "main.861cb709.js.map": "/BakuYard/static/js/main.861cb709.js.map"
+    "main.89f3a7d8.css.map": "/BakuYard/static/css/main.89f3a7d8.css.map",
+    "main.e6a8e38c.js.map": "/BakuYard/static/js/main.e6a8e38c.js.map"
   },
   "entrypoints": [
-    "static/css/main.93e5f035.css",
-    "static/js/main.861cb709.js"
+    "static/css/main.89f3a7d8.css",
+    "static/js/main.e6a8e38c.js"
   ]
 }
