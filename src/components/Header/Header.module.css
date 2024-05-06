@@ -1,15 +1,14 @@
 /* Header.module.css */
 
 .headerComponent {
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(0.25turn, #1a1a1a, #343434, #1a1a1a);
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(0.25turn, #1a1a1a, #414141, #1a1a1a);
   border-image-slice: 1;
-  box-shadow: 0 0 25px 9px #00000081;
+  box-shadow: 0 0 25px 11px #00000098;
   background-color: #030303;
-background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
   width:100%;
   z-index: 10;
 }
@@ -30,7 +29,7 @@ background-image: url("https://www.transparenttextures.com/patterns/black-orchid
 
 .headerBox {
    display: flex;
-   background: linear-gradient(0deg, #0000000f,#00000051);
+   /* background: linear-gradient(0deg, #0000000f,#00000077); */
    height: 50px;
   
    @media screen and (min-width: 768px) {
@@ -84,22 +83,12 @@ background-image: url("https://www.transparenttextures.com/patterns/black-orchid
  }
 
  .activeLink h4 {
-  background: linear-gradient(0deg, #d3000e,#790008,#d3000e);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  display: inline-block;
+ color: #590000;
 }
 
  .headerNav a:hover h4 {
- color: #790008;
- background: linear-gradient(0deg, #d3000e,#790008,#d3000e);
- background-clip: text;
- -webkit-background-clip: text;
- color: transparent;
- 
- display: inline-block;
- transition: .5s;
+ color: #590000;
+ transition: .1s;
 }
 
 .headerInfo {
@@ -129,16 +118,11 @@ background-image: url("https://www.transparenttextures.com/patterns/black-orchid
 .headerInfoIconLocation {
 padding-right: 1.9px;
 }
+
 .headerInfo h3 {
  margin: 0;
  font-size: 11px;
  padding-left: 2px;
- background: linear-gradient(0deg, #6c6c6c,#7c7c7c,#6c6c6c);
- background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
- background-clip: text;
-  -webkit-background-clip: text;
- color: transparent;
- display: inline-block;
 
  @media screen and (min-width: 1200px) {
   font-size: 12px;

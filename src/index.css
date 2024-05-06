@@ -51,17 +51,13 @@ height: 100%;
 }
 
 body {
-  
   margin: 0;
   padding: 0;
   font-family: 'PrimaryFont';
   font-weight: 100;
-  color: #a1a1a1;
+  color: #8c8c8c;
   background: #000000;
   font-size: 12px;
-  /* background-color: #050505;
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   background-attachment: fixed; */
 }
 
 .content {
@@ -82,13 +78,14 @@ button:active {
 }
 
 h1, h3, h2, h5, h4 {
-  background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
+  /* background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
   background-clip: text;
  -webkit-background-clip: text;
  color: transparent;
- display: inline-block;
- text-shadow: rgb(0, 0, 0) 3px 5px 11px;
+ display: inline-block; */
+ /* text-shadow: rgb(0, 0, 0) 3px 5px 11px; */
+ color: #414141;
  margin: 0;
- /* font-size: 33px; */
+
 }
 

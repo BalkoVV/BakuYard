@@ -272,7 +272,8 @@ top: 15px;
 }
 
  
- .toBasketLinkBox {
+
+ /* .toBasketLinkBox {
    position: absolute;
    border: none;
    border-radius: 11px;
@@ -284,28 +285,28 @@ top: 15px;
    z-index: 10;
    background-color: #000000;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-}
+} */
 
-.toBasketLink {
+/* .toBasketLink {
    display: flex;
    justify-content: center;
    align-items: center;
    height: 60px;
    width: 150px;
    border-radius: 9px;
-}
+} */
 
-.basketIcon {
+/* .basketIcon {
    fill: #303030;
   }
   
   .basketIcon.nonEmpty {
-     fill: #6f0000; /* Колір fill, коли корзина не пуста */
+     fill: #6f0000; 
     
-   }
+   } */
 
 
-   .basketBadge {
+   /* .basketBadge {
       position: absolute;
       right: 60px;
       top: 15px;
@@ -319,8 +320,70 @@ top: 15px;
       background-color: #000000;
       font-size: 11px;
       z-index: 2;
-     }
+     } */
 
+     .toBasketButton {
+      position: absolute;
+      border: none;
+      top: 23px;
+      right: 68px; 
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      height: 60px;
+      width: 150px;
+      border: none;
+      z-index: 10;
+   }
+   .toBasketLink {
+      display: flex; 
+      align-items: center;
+      justify-content: start;
+      height: 60px;
+      width: 150px;
+      border-radius: 11px;
+      background-color: #000000;
+      background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+   }
+   
+   .toBasketDescription {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      padding-left: 15px;
+   }
+   
+   .toBasketButton:hover .toBasketDescription {
+      color: #f6f6f6;
+     }
+   
+   .basketIcon {
+      position: absolute;
+      right: 13px;
+      top: 12px;
+      fill: #3a3a3a;
+     }
+     
+     .basketIcon.nonEmpty {
+        fill: #660000;
+      }
+   
+   
+      .basketBadge {
+         position: absolute;
+         right: 11px;
+         top: 16px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 15px;
+         width: 15px;
+         border-radius: 50%;
+         color: #8c8c8c;
+         background-color: #000000;
+         font-size: 15px;
+         z-index: 2;
+        }
 
      .dishTableDay {
    color: red;

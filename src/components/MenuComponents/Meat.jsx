@@ -49,12 +49,13 @@ export const Meat = () => {
       <div className={styles.dishPageContainer}>
        <h1 className={styles.dishTitle}>Барбекю</h1> 
 
-          <span className={styles.toBasketLinkBox}>
-            <NavLink to="/menu/basket" className={styles.toBasketLink}>
-              <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
-              {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
-            </NavLink>
-          </span>
+       <div className={styles.toBasketButton}>
+                <NavLink to="/menu/basket" className={styles.toBasketLink}>
+                  <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
+                  {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
+                  <h3 className={styles.toBasketDescription}>Доставка</h3>
+                </NavLink>
+              </div>
           
           <ToMenuButton/>
          

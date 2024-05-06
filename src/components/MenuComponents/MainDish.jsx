@@ -32,7 +32,7 @@ export const MainDish = () => {
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '.9'; 
-      }, 30 * index); 
+      }, 10 * index); 
     });
   }, []);
 
@@ -55,12 +55,13 @@ export const MainDish = () => {
 
         <h1 className={styles.dishTitle}>Основні страви</h1> 
 
-        <span className={styles.toBasketLinkBox}>
-          <NavLink to="/menu/basket" className={styles.toBasketLink}>
-            <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
-            {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
-          </NavLink>
-        </span>
+        <div className={styles.toBasketButton}>
+                <NavLink to="/menu/basket" className={styles.toBasketLink}>
+                  <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
+                  {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
+                  <h3 className={styles.toBasketDescription}>Доставка</h3>
+                </NavLink>
+              </div>
 
         <ToMenuButton />
     
