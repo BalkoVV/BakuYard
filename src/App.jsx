@@ -19,11 +19,10 @@ export const App = () => {
     <Router>
       <MasterContainer>
         <Header />
-        <MainPage />
         <div className={styles.container}>
           <Switch>
             <CartProvider>
-              <Route path="/" exact component={MainPage} />
+              <Route path="BakuYard/" exact component={MainPage} />
               <Route path="/menu" component={MenuPage} />
               <Route path="/basket" component={BasketPage} />
               <Route path="/contacts" component={ContactsPage} />
@@ -34,7 +33,7 @@ export const App = () => {
           const isContactsPage = location.pathname === '/contacts';
           return <Footer customLinks={isContactsPage ? <a href="https://benhappyngton.com">
             <LogoBen />
-            {/* Ben Happyngton */}
+           
           </a> : null} />;
         }} />
       </MasterContainer>

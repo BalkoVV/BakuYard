@@ -109,8 +109,12 @@ fill: #a66101;
    background-color: #000000;
    /* background-color: #2f0000; */
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
- 
-
+   background-color: #000000;
+   background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+   background-color: #000000;
+   background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
+   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
    @media screen and (min-width: 768px) {
       height: 180px;
    }; 
@@ -130,9 +134,17 @@ fill: #a66101;
 
 
 .dishCard:hover {
- border: 1px solid #820000;
+ border: 1px solid #3d0000;
  transition: .3s;
 }
+
+/* .dishCard:hover .dishCardDescription {
+   background: linear-gradient(0deg, #d3000e,#790008,#d3000e);
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   transition: 1.3s;
+} */
 
 .dishCardImg {
  display: flex;

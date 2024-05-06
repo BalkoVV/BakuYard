@@ -1,9 +1,5 @@
 .contactsPage {
    width: 100%;
-   /* background-image: url('images/texture-bg3.jpeg');
-   background-size: contain;
-   background-position: bottom;
-   background-attachment: fixed; */
    background-position: bottom;
    background-attachment: fixed;
    background-repeat: repeat;
@@ -169,13 +165,12 @@
    font-size: 15px;
    border-radius: 11px;
    margin:  3px 0;
-   /* padding: 0 50px; */
-   /* background: linear-gradient(0deg, #00000066, black); */
-   /* background-attachment: fixed;   */
-   background: linear-gradient(180deg,#000000ad, #00000083, #00000003); 
-    background-attachment: fixed;
-    /* background: #00000084; */
-    box-shadow: 6px 6px 11px 1px rgb(0 0 0 / 31%);
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+    box-shadow: 6px 6px 15px 2px #0000004f;
+    background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   }
 
   .contactsListItem img {

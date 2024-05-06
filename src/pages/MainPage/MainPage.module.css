@@ -189,7 +189,8 @@ background-color: #111111;
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 25px 9px #00000081;
-    background: #0000004e;
+    background: #0000006a;
+    
   }
 
   .featuresCenter {
@@ -247,8 +248,9 @@ background-color: #111111;
     height: 110px;
     padding: 90px auto;
     border-radius: 11px;
-    background: linear-gradient(180deg,#000000ad, #00000083, #00000003); 
-    background-attachment: fixed;
+    background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     box-shadow: 7px 7px 8px 2px #0000003d;
   
     margin: 20px 0;

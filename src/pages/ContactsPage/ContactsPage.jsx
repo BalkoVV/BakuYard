@@ -27,8 +27,7 @@ export const ContactsPage = () => {
 
       <div className={`${styles.mapBox} ${styles.fadeOut}`}>
         <InMapButton className={styles.inMap}/>
-        {/* <LocationIcon className={styles.iconMapInMap}/> */}
-        {/* <LocationIcon className={styles.contactsListItemImg}/> */}
+       
       </div>
 
         <div className={styles.contactsPageContainer}>
