@@ -16,16 +16,17 @@ import styles from 'index.css';
 
 export const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <MasterContainer>
         <Header />
         <div className={styles.container}>
           <Switch>
             <CartProvider>
-              <Route path="BakuYard/" exact component={MainPage} />
+              
               <Route path="/menu" component={MenuPage} />
               <Route path="/basket" component={BasketPage} />
               <Route path="/contacts" component={ContactsPage} />
+              <Route path="/" exact component={MainPage} />
             </CartProvider>
           </Switch>
         </div>
