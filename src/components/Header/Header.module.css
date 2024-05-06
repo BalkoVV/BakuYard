@@ -1,20 +1,15 @@
 /* Header.module.css */
 
 .headerComponent {
-  /* border-top: 2px solid transparent; */
   border-bottom: 2px solid transparent;
   border-image: linear-gradient(0.25turn, #1a1a1a, #343434, #1a1a1a);
   border-image-slice: 1;
-
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  border-image-slice: 1;
   box-shadow: 0 0 25px 9px #00000081;
+  background-color: #030303;
+background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
   width:100%;
   z-index: 10;
 }

@@ -164,9 +164,12 @@ export const Basket = () => {
         <div className={styles.basketBox}>
           
           {basketEmpty ? (
-            <span className={styles.basketEmptyListBox}>
-              <h3>Ваш кошик порожній</h3> 
-              <h3>Додайте страви (доступні для доставки) з Меню</h3>
+            <span className={styles.basketEmpty}>
+              <div className={styles.basketEmptyMessage}>
+              <h2>Ваш кошик порожній <br/>
+            Додайте страви з Меню <br/>
+            *доступні для доставки</h2>
+              </div>
             </span>
           ) : (
             <div className={styles.basketListBox}>
@@ -224,13 +227,13 @@ export const Basket = () => {
             <div className={styles.basketInputBox}>
               <input  
                 className={styles.basketInput} 
-                type="text" placeholder="Ім'я" 
+                type="text" placeholder="Ім'я (мінімум 3 символи)" 
                 value={name} 
                 onChange={handleNameChange} 
               />
               <input  
                 className={styles.basketInput} 
-                type="text" placeholder="Телефон" 
+                type="text" placeholder="Телефон (без +38)" 
                 value={phoneNumber} 
                 onChange={handlePhoneNumberChange} 
               />
@@ -268,9 +271,12 @@ export const Basket = () => {
           </div>
 
           {orderCompleted && <span className={styles.orderDone}>
-            <p>Замовлення оформлене!</p> 
-            <p>Адміністратор зателефонує Вам</p>
-            <p>для підтвердження та узгодження деталей</p>
+           <div className={styles.orderDoneMessage}>
+           <h2>Замовлення оформлене!  <br/>
+               Адміністратор зателефонує Вам  <br/>
+               для підтвердження <br/>
+               та узгодження деталей</h2>
+           </div>
            
             
             </span>}

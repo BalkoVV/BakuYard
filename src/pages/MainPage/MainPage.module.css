@@ -212,9 +212,11 @@ background-color: #111111;
     width: 100%;
     padding: 30px auto;
     border-radius: 11px;
-    background: linear-gradient(0deg, transparent,#8a8a8a64, transparent);
-    background-size: cover;
-    background-attachment: fixed; 
+    background-color: #555555;
+    background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+    background-size: contain;
+    background-repeat: repeat;
+    /* background-attachment: fixed;  */
     box-shadow: 7px 7px 15px 2px #00000081;
    }
 

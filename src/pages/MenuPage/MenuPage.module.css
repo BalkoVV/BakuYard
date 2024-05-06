@@ -11,8 +11,26 @@
    background-attachment: fixed;
    background-repeat: repeat;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   background-color: #111111;
-
+   background-color: #191919;
+   /* background-color: #000000; */
+background-image: url("https://www.transparenttextures.com/patterns/cream-pixels.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: #0f0f0f;
+/* background-image: url("https://www.transparenttextures.com/patterns/redox-01.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: #0f0f0f;
+/* background-image: url("https://www.transparenttextures.com/patterns/snow.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: #000000;
+/* background-image: url("https://www.transparenttextures.com/patterns/straws.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: #040404;
+/* background-image: url("https://www.transparenttextures.com/patterns/woven-light.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* background-color: #1a1a1a; */
+/* background-image: url("https://www.transparenttextures.com/patterns/redox-01.png"); */
+background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 
@@ -105,16 +123,11 @@ fill: #a66101;
    margin-left: auto;
    margin-right: auto;
    transition: .3s;
-   box-shadow: 10px 10px 22px 2px rgba(0, 0, 0, 0.563);
-   background-color: #000000;
-   /* background-color: #2f0000; */
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   /* box-shadow: 0px 0px 29px 12px rgba(61, 1, 1, 0.052); */
+
    background-color: #000000;
    background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
-   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-   background-color: #000000;
-   background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
-   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+   
    @media screen and (min-width: 768px) {
       height: 180px;
    }; 
@@ -134,7 +147,7 @@ fill: #a66101;
 
 
 .dishCard:hover {
- border: 1px solid #3d0000;
+ border: 1px solid #660000;
  transition: .3s;
 }
 
@@ -167,11 +180,12 @@ fill: #a66101;
    align-items: center;
    height: 30px;
    width: 100%;
-   background: linear-gradient(0deg, #515151,#414141,#8e8e8e);
+   color: #660000;
+   /* background: linear-gradient(0deg, #515151,#414141,#8e8e8e);
    background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
    background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent; */
   /* border-top: 1px solid #000; */
   /* box-shadow: inset 0 0 21px 5px rgba(0, 0, 0, 0.511); */
  /* background: #010101; */

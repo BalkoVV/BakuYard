@@ -22,11 +22,10 @@ export const App = () => {
         <div className={styles.container}>
           <Switch>
             <CartProvider>
-              
+              <Route path="/" exact component={MainPage} />
               <Route path="/menu" component={MenuPage} />
               <Route path="/basket" component={BasketPage} />
               <Route path="/contacts" component={ContactsPage} />
-              <Route path="/" exact component={MainPage} />
             </CartProvider>
           </Switch>
         </div>

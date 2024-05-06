@@ -38,11 +38,7 @@
   width: 900px;
   height: 60px;
   padding-left: 15px;
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-  box-shadow: 7px 7px 15px 2px #00000047;
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
+border: 1px solid black;
 }
 
 .dishTableList h3 {
@@ -56,9 +52,9 @@
 .dishTableList {
  padding: 25px 25px;
  border-radius: 11px;
- background: #b4b4b44a;
- background-color: #2e2e2e;
-background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png");
+ background: #111111;
+ /* background-color: #2e2e2e; */
+/* background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png"); */
 background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
 margin: 35px 0;
 }
@@ -68,9 +64,6 @@ margin: 35px 0;
  display: flex;
  align-items: center;
  justify-content: center;
- background-image: url('images/clockIcon.svg');
- background-position: center;
- background-repeat: no-repeat;
  height: 60px;
  width: 100px;
  margin: 0;
@@ -82,8 +75,9 @@ margin: 35px 0;
 }
 
 .dishTableButtonAdd:hover  {
-   border-left: 1px solid #290000;
-   box-shadow: inset 0 0 23px 3px rgba(255, 0, 0, 0.228);
+   cursor: pointer;
+   /* border-left: 1px solid #290000; */
+   /* box-shadow: inset 0 0 23px 3px rgba(255, 0, 0, 0.228); */
 }
 
 .dishTablePrice {
