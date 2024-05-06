@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.08431840.css",
-    "main.js": "/BakuYard/static/js/main.241f61ba.js",
+    "main.css": "/BakuYard/static/css/main.b3e81bc7.css",
+    "main.js": "/BakuYard/static/js/main.228d2558.js",
     "static/media/bg233.webp": "/BakuYard/static/media/bg233.087471099bc83d4ff823.webp",
     "static/media/23232555.png": "/BakuYard/static/media/23232555.20d673c873c32dd792fa.png",
     "static/media/Constantine.ttf": "/BakuYard/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
@@ -35,15 +35,15 @@
     "static/media/formap.svg": "/BakuYard/static/media/formap.f86a28884d4f0517e5858df261bac93e.svg",
     "static/media/forinsta.svg": "/BakuYard/static/media/forinsta.ee3489be4a045d6a0996a4506c695a53.svg",
     "static/media/mobileSwitch.svg": "/BakuYard/static/media/mobileSwitch.6e7796e9f3a2e68b5459c848f2decf51.svg",
+    "static/media/dot.svg": "/BakuYard/static/media/dot.eb46bb33e97be332929de79848093739.svg",
     "static/media/formail.svg": "/BakuYard/static/media/formail.25f6c2bee915819f884422d4cd5e9b89.svg",
     "static/media/forfacebook.svg": "/BakuYard/static/media/forfacebook.dc425f4a1c193b27f8593b134d8ab91f.svg",
-    "static/media/dot.svg": "/BakuYard/static/media/dot.06f9e88dc3e1a96581711a0537228f40.svg",
     "static/media/toMenu.svg": "/BakuYard/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.08431840.css.map": "/BakuYard/static/css/main.08431840.css.map",
-    "main.241f61ba.js.map": "/BakuYard/static/js/main.241f61ba.js.map"
+    "main.b3e81bc7.css.map": "/BakuYard/static/css/main.b3e81bc7.css.map",
+    "main.228d2558.js.map": "/BakuYard/static/js/main.228d2558.js.map"
   },
   "entrypoints": [
-    "static/css/main.08431840.css",
-    "static/js/main.241f61ba.js"
+    "static/css/main.b3e81bc7.css",
+    "static/js/main.228d2558.js"
   ]
 }
