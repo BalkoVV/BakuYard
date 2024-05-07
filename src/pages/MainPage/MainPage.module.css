@@ -220,7 +220,7 @@ background-color: #070707;
 
    .featuresCenter li h1 {
     font-size: 22px;
-    color: #858585;
+    color: #555555;
     text-shadow:rgb(0 0 0) 0px 0px 43px;
 
     /* text-shadow: rgba(95, 95, 95, 0.091) 3px 3px 4px; */
@@ -253,8 +253,10 @@ background-color: #070707;
     border-radius: 11px;
     background-color: #000000eb;
     background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
-    box-shadow: 7px 7px 8px 2px #0000003d;
-    color: #4f4e4e;
+    background-image: url("images/beanstalk.png");
+    /* box-shadow: 7px 7px 8px 2px #0000003d; */
+    box-shadow: inset 0px 0px 66px 0px #000000;
+    color: #555555;
     /* text-shadow: rgba(95, 95, 95, 0.091) 3px 3px 4px; */
     /* letter-spacing: 1.5px; */
    }
