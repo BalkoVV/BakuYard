@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.68642c38.css",
+    "main.css": "/BakuYard/static/css/main.f7b79cec.css",
     "main.js": "/BakuYard/static/js/main.e7b4627b.js",
     "static/media/bg233.webp": "/BakuYard/static/media/bg233.087471099bc83d4ff823.webp",
     "static/media/23232555.png": "/BakuYard/static/media/23232555.20d673c873c32dd792fa.png",
@@ -40,11 +40,11 @@
     "static/media/forfacebook.svg": "/BakuYard/static/media/forfacebook.d5f34bf3d4b504d761a526b148e848a6.svg",
     "static/media/dot.svg": "/BakuYard/static/media/dot.d25a592c3deea3410e95181d73b83e62.svg",
     "static/media/toMenu.svg": "/BakuYard/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.68642c38.css.map": "/BakuYard/static/css/main.68642c38.css.map",
+    "main.f7b79cec.css.map": "/BakuYard/static/css/main.f7b79cec.css.map",
     "main.e7b4627b.js.map": "/BakuYard/static/js/main.e7b4627b.js.map"
   },
   "entrypoints": [
-    "static/css/main.68642c38.css",
+    "static/css/main.f7b79cec.css",
     "static/js/main.e7b4627b.js"
   ]
 }
