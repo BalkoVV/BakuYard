@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.509c418f.css",
-    "main.js": "/BakuYard/static/js/main.ad06d922.js",
+    "main.css": "/BakuYard/static/css/main.cfb9e2e4.css",
+    "main.js": "/BakuYard/static/js/main.1c7400f5.js",
     "static/media/23232555.png": "/BakuYard/static/media/23232555.20d673c873c32dd792fa.png",
     "static/media/stars.png": "/BakuYard/static/media/stars.3ec0ed5f5ced4cf9adac.png",
     "static/media/map44.jpg": "/BakuYard/static/media/map44.e2091eb17ab52d79f0f2.jpg",
@@ -9,7 +9,6 @@
     "static/media/pizzaMenu2.png": "/BakuYard/static/media/pizzaMenu2.24a103b436a11b628e35.png",
     "static/media/pizzaMenu1.png": "/BakuYard/static/media/pizzaMenu1.24876e65cf01eb37951e.png",
     "static/media/saladMenu2.png": "/BakuYard/static/media/saladMenu2.ea108eea3f4e3d18dd24.png",
-    "static/media/mainBannerTablet.jpg": "/BakuYard/static/media/mainBannerTablet.f80bc802d2101b6e13de.jpg",
     "static/media/bottomLineLogo.svg": "/BakuYard/static/media/bottomLineLogo.5f8a5eb75f2062da4231.svg",
     "static/media/saladMenu1.png": "/BakuYard/static/media/saladMenu1.5bc633780684e8bca0d1.png",
     "static/media/delivery.svg": "/BakuYard/static/media/delivery.d64f682f8b12883211b9eeb109aaa7ba.svg",
@@ -40,11 +39,11 @@
     "static/media/forfacebook.svg": "/BakuYard/static/media/forfacebook.d5f34bf3d4b504d761a526b148e848a6.svg",
     "static/media/dot.svg": "/BakuYard/static/media/dot.d25a592c3deea3410e95181d73b83e62.svg",
     "static/media/toMenu.svg": "/BakuYard/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.509c418f.css.map": "/BakuYard/static/css/main.509c418f.css.map",
-    "main.ad06d922.js.map": "/BakuYard/static/js/main.ad06d922.js.map"
+    "main.cfb9e2e4.css.map": "/BakuYard/static/css/main.cfb9e2e4.css.map",
+    "main.1c7400f5.js.map": "/BakuYard/static/js/main.1c7400f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.509c418f.css",
-    "static/js/main.ad06d922.js"
+    "static/css/main.cfb9e2e4.css",
+    "static/js/main.1c7400f5.js"
   ]
 }
