@@ -214,7 +214,6 @@ background-color: #070707;
     background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
     background-size: contain;
     background-repeat: repeat;
-    /* background-attachment: fixed;  */
     box-shadow: 7px 7px 15px 2px #00000081;
    }
 
@@ -265,12 +264,8 @@ background-color: #070707;
 }
 .bottomDelivery {
   font-size: 24px;
-  /* line-height: 65px; */
  color: #4f4e4e;
-  /* justify-content: center; */
   letter-spacing: 1.5px;
-  font-weight: 900;
-  /* height: 400px; */
-  /* width: 800px; */
+  font-weight: 700;
    text-shadow: #000000 5px 5px 22px;
 }

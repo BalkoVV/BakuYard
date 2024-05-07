@@ -23,13 +23,13 @@ import AlcoholicCocktails from "components/MenuComponents/AlcoholicCocktails";
 import CocktailsCardImage from 'images/cocktailsCard.svg';
 
 import Desserts from "components/MenuComponents/Desserts";
-import dessertCardImage from 'images/dessertCard.svg';
+import dessertCardImage from 'images/desertCard.svg';
  
 import Mocktails from "components/MenuComponents/Mocktails";
 import mocktailsCardImage from 'images/mocktailsCard.svg';
 
 import Meat from "components/MenuComponents/Meat";
-
+import meatCardImage from 'images/meatCard.svg';
 import Sauces from "components/MenuComponents/Sauces";
 import saucesCardImage from 'images/saucesCard.svg';
 
@@ -46,6 +46,8 @@ import Salads from "components/MenuComponents/Salads";
 import saladCardImage from 'images/saladCard.svg';
 import Banquete from "components/MenuComponents/AddButton/Banquete";
 import Fish from "components/MenuComponents/Fish";
+import fishCardImage from 'images/fishCard.svg';
+
 import MainDish from "components/MenuComponents/MainDish";
 
 import SideDish from "components/MenuComponents/SideDish";
@@ -111,7 +113,7 @@ export const MenuPage = () => {
                     <span className={styles.dishCardImg}>
                     <img
                         className={styles.dishCardImage}
-                        src={lunchCardImage} 
+                        src={meatCardImage} 
                         alt="М'ясо"
                         // width="125"
                         // height="125"
@@ -130,7 +132,7 @@ export const MenuPage = () => {
                     <span className={styles.dishCardImg}>
                     <img
                         className={styles.dishCardImage}
-                        src={lunchCardImage} 
+                        src={fishCardImage} 
                         alt="Риба"
                         // width="125"
                         // height="125"
