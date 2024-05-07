@@ -1,98 +1,27 @@
+.fadeOut {
+   opacity: 0; 
+   transition: opacity 1s ease-out;
+ }
+
+.contactsPageContainer {
+width: 100%;
+}
+
 .contactsPage {
    width: 100%;
    background-position: bottom;
-   background-attachment: fixed;
    background-repeat: repeat;
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    background-color: #111111;
- 
-}
-
-.contactsPageContainer {
- width: 100%;
-}
-
-
-/* .contactsListBox {
-   display: grid;
-   grid-template-columns: repeat(1, 1fr);
-   grid-column-gap: 30px;
-   grid-row-gap: 20px;
-
-   @media screen and (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-      padding: 0 70px;
-   };
-   @media screen and (min-width: 1200px) {
-      padding: 0 150px;
-   }
-} */
-/* .contactsList {
-   display: grid;
-   grid-template-columns: repeat(1, 1fr);
-   grid-column-gap: 30px;
-   grid-row-gap: 40px;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
   
-} */
+      @media screen and (min-width: 768px) {
+         
+      };
 
-/* 
-.contactsListItem {
- display: flex;
- padding-left: auto;
- padding-right: auto;
- width: 100%;
- justify-content: center;
- font-size: 10px;
- background: linear-gradient(0deg, #ffffff16,#00000000,#ffffff28);
-
-
- @media screen and (min-width: 768px) {
-   font-size: 13px;
-};
-@media screen and (min-width: 1200px) {
-   font-size: 15px;
+         @media screen and (min-width: 1200px) {
+            background-attachment: fixed;
+         };
 }
-
-} */
-/* 
-.contactsListItem span {
- display: flex;
- width: 30px;
- height: 30px;
- align-items: center;
- justify-content: center;
- margin-right: 10px; 
-} */
-
-/* .contactsListItem h3 {
-   display: flex;
-  align-items: center;
-} */
-
-.contactsPageTitle {
-   display: flex;
-   height: 55px;
-   justify-content: center;
-   align-items: center;
-   font-size: 10px;
-   font-weight: 900;
-   margin: 0;
-   color: #7b7a7a;
-
-   @media screen and (min-width: 768px) {
-      height: 75px;
-      font-size: 13px;
-   };
-   @media screen and (min-width: 1200px) {
-      height: 95px;
-      font-size: 15px;
-   };
-}
-
-.fadeOut {
-   opacity: 0; 
-   transition: opacity .1s ease-in;
- }
 
  .mapBox {
    position: relative;
@@ -100,21 +29,21 @@
    margin-left: auto;
    margin-right: auto;
    background:url("images/map44.jpg");
-   /* background-attachment: fixed; */
-   background-size: cover;
+   background-size: 250%;
    background-position: center;
-   background-repeat: no-repeat;
-   /* margin-bottom: 70px; */
-   height: 300px;
+   height: 450px;
    z-index: 0;
    box-shadow: 0 0 20px 22px #00000064;
+   margin-bottom: 30px;
 
    @media screen and (min-width: 768px) {
       height: 500px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
    };
    @media screen and (min-width: 1200px) {
       height: 700px;
-
    };
 }
 
@@ -129,14 +58,6 @@
    z-index: -1;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 }
-
-/* .inMap {
- position: absolute;
- left: 0;
- top: 150px;
-} */
-
-
 
 .contactsListBox {
    display: flex;
@@ -155,29 +76,27 @@
    };
   }
 
-
  .contactsList {
    display: grid;
    grid-row-gap: 10px;
    min-width: 300px;
    padding-bottom: 10px;
 
-      @media screen and (min-width: 767.9px) {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-column-gap: 30px;
-         grid-row-gap: 30px;
-         min-width: 700px;
-         padding: 0 30px;
-      };
-         @media screen and (min-width: 1200px) {
-         
+   @media screen and (min-width: 767.9px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      min-width: 700px;
+      padding: 0 30px;
+   };
 
-         };
+   @media screen and (min-width: 1200px) {
+      grid-column-gap: 50px;
+   };
   }
 
  .contactsListItem {
-  
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -195,6 +114,7 @@
       font-size: 13px;
       max-width: 450px;
    };
+
    @media screen and (min-width: 1200px) {
       font-size: 15px; 
       min-width: 500px;
@@ -208,11 +128,12 @@
 
    @media screen and (min-width: 767.9px) {
       padding-left: 20px;
-     
+
    };
+
    @media screen and (min-width: 1200px) {
-      padding-left: 50px;
-     
+   padding-left: 50px;
+
    };
 }
 

@@ -21,7 +21,10 @@
       };
 
          @media screen and (min-width: 1200px) {
-      
+            top: 54px;
+            right: 68px; 
+            height: 60px;
+            width: 150px;
          };
   }
   
@@ -43,17 +46,18 @@
   }
   
   .inMapDescription {
-    
     margin: 0;
     padding: 0 3px 0 0 ;
     font-size: 10px;
 
      @media screen and (min-width: 767.9px) {
       font-size: 13px;
+      padding: 0 5px 0 0 ;
    };
 
       @media screen and (min-width: 1200px) {
          font-size: 15px;
+         padding: 0 10px 0 0 ;
       };
   }
   

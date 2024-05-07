@@ -44,7 +44,7 @@ const MainPage = () => {
 
        <section  className={styles.topDescriptionsBox}>
        <h1 className={styles.topDescriptions}>
-          "Бакінський Двір" – місце де смак об'єднує серця, <br/>
+          Бакінський Двір <br/>  - місце де смак об'єднує серця, <br/>
           а атмосфера творить неповторний вечір.<br/>
           У нас кожен стіл – це святковий захід.<br/>
           Кожна страва – це шедевр від майстра.<br/>
@@ -57,39 +57,22 @@ const MainPage = () => {
          
          <ul className={styles.featuresTop}>
             <li>
-            
-                <h1>Банкети</h1>
-                
+              <h1>Банкети</h1>
             </li>
             <li>
-            {/* <span className={styles.featuresTopBlur}> */}
-            <h1>Корпоративи</h1>
-            {/* </span> */}
-                
+              <h1>Корпоративи</h1>  
             </li>
             <li>
-            
-            <h1>Весілля</h1>
-                
-                
+              <h1>Весілля</h1>
             </li>
             <li>
-            {/* <span className={styles.featuresTopBlur}> */}
-            <h1>Дні народження</h1>
-            {/* </span> */}
-                
+              <h1>Дні народження</h1>
             </li>
             <li>
-            
-            <h1>Сімейна вечеря</h1>
-                
-                
+              <h1>Сімейна вечеря</h1>   
             </li>  
             <li>
-            {/* <span className={styles.featuresTopBlur}> */}
-            <h1>Бізнес ланч</h1>
-                {/* </span> */}
-                
+              <h1>Бізнес ланч</h1>                
             </li>
           </ul>
          
@@ -97,8 +80,8 @@ const MainPage = () => {
         
           <section className={styles.centerDescriptionsBox}>
           <h1 className={styles.centerDescriptions}>
-            Затишні банкетні зали чекають, щоб стати свідками вашого свята.
-            За потреби більшої приватності, оберіть одну з окремих альтанок. <br/>
+            Затишні банкетні зали чекають, <br/>щоб стати свідками вашого свята.
+            <br/>За потреби більшої приватності, <br/>оберіть одну з окремих альтанок. <br/>
             А відкрита тераса, дасть змогу насолодитися смачними стравами на свіжому повітрі,
             незалежно від пори року
           </h1>
@@ -148,7 +131,7 @@ const MainPage = () => {
         </section>
         
         <section className={styles.bottomDeliveryBox}>
-        <h1 className={styles.bottomDelivery}>
+        <h1 className={styles.bottomDeliveryDescriptions}>
            В нас працює доставка по місту
         </h1>
        

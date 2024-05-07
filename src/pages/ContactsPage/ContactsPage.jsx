@@ -43,11 +43,16 @@ export const ContactsPage = () => {
                   <h3 className={styles.contactsListItemDiscriptions}>Бровари, Героїв України, 22 </h3>
                 </li>
 
+                <li className={styles.contactsListItem}>
+                  <ClockIcon className={styles.contactsListItemImg}/>
+                  <h3 className={styles.contactsListItemDiscriptions}>Ми працюємо з 11:00 до 23:00</h3>
+                </li>
              <li className={styles.contactsListItem}>
                   <PhonesIcon  className={styles.phoneIconContact}/>
                   <h3 className={styles.contactsListItemDiscriptions}> +38 068 239 38 37</h3>
                 </li>
               
+
 
                 <li className={styles.contactsListItem}>
                  <PhonesIcon className={styles.phoneIconContact}/>
@@ -58,13 +63,8 @@ export const ContactsPage = () => {
                   <PhonesIcon className={styles.phoneIconContact}/>
                   <h3 className={styles.contactsListItemDiscriptions}> +38 045 945 33 69</h3>
                 </li>
-              {/* </ul>
-
-              <ul className={styles.contactsList}> */}
-              <li className={styles.contactsListItem}>
-                  <ClockIcon className={styles.contactsListItemImg}/>
-                  <h3 className={styles.contactsListItemDiscriptions}>Ми працюємо з 11:00 до 23:00</h3>
-                </li>
+       
+              
                 
               <li className={styles.contactsListItem}>
                   <MailIcon className={styles.contactsListItemImg}/>
