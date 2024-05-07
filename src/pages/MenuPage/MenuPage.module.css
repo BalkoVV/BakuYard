@@ -30,7 +30,7 @@
    font-size: 13px;
    font-weight: 900;
    margin: 0;
-   color: #7b7b7b;
+   color: #aaaaaa99;
 
    @media screen and (min-width: 768px) {
       height: 75px;
@@ -123,6 +123,7 @@ fill: #a66101;
 
 .dishCard:hover {
  border: 1px solid #6b4d00;
+ border: 1px solid #aaaaaa77;
  transition: .1s;
 /* color: #231900; */
 }
@@ -156,7 +157,7 @@ fill: #a66101;
    align-items: center;
    height: 30px;
    width: 100%;
-   color: #3a3a3a;
+   color: #6b4d00;
 }
 
 /* .dishCard h3 {

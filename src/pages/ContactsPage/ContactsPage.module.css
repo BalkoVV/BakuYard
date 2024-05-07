@@ -136,63 +136,96 @@
  top: 150px;
 } */
 
+
+
 .contactsListBox {
    display: flex;
-   height: 550px;
-   justify-content: center;
-   align-items: center;
+   padding: 20px 20px;
+   flex-direction: column;
+
+   @media screen and (min-width: 767.9px) {
+      display: grid;
+      height: 450px;
+      justify-content: center;
+      align-items: center;
+   };
+   @media screen and (min-width: 1200px) {
+      height: 550px;
+
+   };
   }
 
 
  .contactsList {
    display: grid;
-   grid-template-columns: repeat(1, 1fr);
-   grid-column-gap: 20px;
-   grid-row-gap: 30px;
-   width: 600px;
-   padding: 0 50px;
+   grid-row-gap: 10px;
+   min-width: 300px;
+   padding-bottom: 10px;
 
+      @media screen and (min-width: 767.9px) {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-column-gap: 30px;
+         grid-row-gap: 30px;
+         min-width: 700px;
+         padding: 0 30px;
+      };
+         @media screen and (min-width: 1200px) {
+         
+
+         };
   }
- 
+
  .contactsListItem {
-   /* position: relative; */
+  
    display: flex;
    justify-content: space-between;
    align-items: center;
    height: 70px;
    width: 100%;
    color: #7b7b7b;
-   font-size: 15px;
+   font-size: 13px;
    border-radius: 11px;
    margin:  3px 0;
    box-shadow: 6px 6px 15px 2px #0000004f;
    background-color: #000000;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   
+   @media screen and (min-width: 767.9px) {
+      font-size: 13px;
+      max-width: 450px;
+   };
+   @media screen and (min-width: 1200px) {
+      font-size: 15px; 
+      min-width: 500px;
+   };
   }
 
 .contactsListItem img {
    display: block;
    height: 30px;
-   padding-left: 50px;
+   padding-left: 20px;
+
+   @media screen and (min-width: 767.9px) {
+      padding-left: 20px;
+     
+   };
+   @media screen and (min-width: 1200px) {
+      padding-left: 50px;
+     
+   };
 }
 
 .contactsListItemDiscriptions {
-   padding-right: 50px;
- 
+   padding-right: 20px;
    color: #414141;
-
+ 
+   @media screen and (min-width: 767.9px) {
+      padding-right: 20px;
+     
+   };
+   @media screen and (min-width: 1200px) {
+      padding-right: 50px;
+     
+   };
 }
-  /* .contactsListItem span {
- position: absolute;
- left: 123px;
- top: 22px;
-} */
-
-/* contactsListItem */
-/* contactsListItemImg */
-/* contactsListItemDiscriptions */
-
- /* .iconMapInMap {
- display: block;
- height: 25px;
-} */

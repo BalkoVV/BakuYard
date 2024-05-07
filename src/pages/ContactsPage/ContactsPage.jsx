@@ -58,9 +58,9 @@ export const ContactsPage = () => {
                   <PhonesIcon className={styles.phoneIconContact}/>
                   <h3 className={styles.contactsListItemDiscriptions}> +38 045 945 33 69</h3>
                 </li>
-              </ul>
+              {/* </ul>
 
-              <ul className={styles.contactsList}>
+              <ul className={styles.contactsList}> */}
               <li className={styles.contactsListItem}>
                   <ClockIcon className={styles.contactsListItemImg}/>
                   <h3 className={styles.contactsListItemDiscriptions}>Ми працюємо з 11:00 до 23:00</h3>

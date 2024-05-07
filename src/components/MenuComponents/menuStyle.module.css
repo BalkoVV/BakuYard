@@ -38,10 +38,11 @@
   width: 900px;
   height: 60px;
   padding-left: 15px;
-/* border: 1px solid black; */
-box-shadow: 5px 5px 11px 3px #0000008d;
-background-color: #070707;
-background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+
+box-shadow: 5px 5px 8px 3px #0000006b;
+
+background-color: #000000d6;
+background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
 }
 
 .dishTableList h3 {
@@ -54,12 +55,13 @@ background-image: url("https://www.transparenttextures.com/patterns/white-wall-3
 
 .dishTableList {
  padding: 25px 25px;
- border-radius: 11px;
- background: #ffffff4d;
+ border-radius: 10px;
+ background: #a8a8a84d;
  /* background-color: #2e2e2e; */
 /* background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png"); */
 /* background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png"); */
 margin: 35px 0;
+box-shadow: 11px 11px 21px 5px #0000003e;
 }
 
 .dishTableButtonAdd {
