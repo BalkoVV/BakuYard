@@ -206,8 +206,9 @@ fill: #a66101;
    padding-left: 15px;
 }
 
-.toBasketButton:hover {
+.toBasketButton:hover .toBasketDescription {
    /* border: 1px solid #5900009f; */
+   color: #6b4d00;
    transition: .1s;
   }
 
@@ -220,6 +221,7 @@ fill: #a66101;
   
   .basketIcon.nonEmpty {
      fill: #590000;
+     fill: #6b4d00;
    }
 
 

@@ -17,7 +17,7 @@
    font-size: 13px;
    text-shadow: #000000 3px 5px 11px;
    margin: 0;
-
+   color: #7c7c7c;
    @media screen and (min-width: 768px) {
       height: 75px;
       font-size: 13px;
@@ -38,13 +38,16 @@
   width: 900px;
   height: 60px;
   padding-left: 15px;
-border: 1px solid black;
+/* border: 1px solid black; */
+box-shadow: 5px 5px 11px 3px #0000008d;
+background-color: #070707;
+background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 }
 
 .dishTableList h3 {
  display: flex;
  justify-content: center;
- color: #afafaf;
+ color: #000000;
  font-size: 15px;
  padding-bottom: 20px;
 }
@@ -52,10 +55,10 @@ border: 1px solid black;
 .dishTableList {
  padding: 25px 25px;
  border-radius: 11px;
- background: #111111;
+ background: #ffffff4d;
  /* background-color: #2e2e2e; */
 /* background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png"); */
-background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
+/* background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png"); */
 margin: 35px 0;
 }
 
@@ -354,7 +357,7 @@ top: 15px;
    }
    
    .toBasketButton:hover .toBasketDescription {
-      color: #f6f6f6;
+      color: #6b4d00;
      }
    
    .basketIcon {
@@ -365,7 +368,7 @@ top: 15px;
      }
      
      .basketIcon.nonEmpty {
-        fill: #660000;
+        fill: #6b4d00;
       }
    
    
@@ -379,14 +382,14 @@ top: 15px;
          height: 15px;
          width: 15px;
          border-radius: 50%;
-         color: #8c8c8c;
+         color: #b6b2b2;
          background-color: #000000;
          font-size: 15px;
          z-index: 2;
         }
 
      .dishTableDay {
-   color: red;
+   color: rgb(255, 255, 255);
    }
 
    .dishTableNameFirst {

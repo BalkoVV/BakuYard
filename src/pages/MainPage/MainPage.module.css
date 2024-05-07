@@ -65,28 +65,28 @@ background-color: #070707;
   .topDescriptions {
   display: flex;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 65px;
- color: #4f4e4e;
+ color: #6b6b6b;
   justify-content: center;
   letter-spacing: 1.5px;
   font-weight: 900;
-  height: 400px;
+  height: 390px;
    text-shadow: #000000 5px 5px 22px;
   }
 
   .bottomDescriptions {
     display: flex;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 60px;
     width: 800px;
-    color: #4f4e4e;
+    color: #6b6b6b;
     text-shadow: #000000 5px 5px 22px;
     text-align: center;
     justify-content: center;
     letter-spacing: 1.5px;
     font-weight: 900;
-    height: 400px;
+    height: 280px;
     /* background-color: #fff; */
     padding: 70px 0 30px 0;
     }
@@ -101,13 +101,13 @@ background-color: #070707;
   .centerDescriptions {
     display: flex;
     text-align: center;
-    font-size: 25px;
+    font-size: 19px;
     line-height: 65px;
-   color: #4f4e4e;
+   color: #6b6b6b;
     justify-content: center;
     letter-spacing: 1.5px;
     font-weight: 900;
-    height: 400px;
+    height: 280px;
     width: 800px;
      text-shadow: #000000 5px 5px 22px;
   }
@@ -166,7 +166,7 @@ background-color: #070707;
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 19px;
+   font-size: 22px;
    color: #a1a1a1;
    background: linear-gradient(0deg, #a7a7a7,#8f8e8e,#a7a7a7);
    
@@ -210,17 +210,21 @@ background-color: #070707;
     width: 100%;
     padding: 30px auto;
     border-radius: 11px;
-    background-color: #22222200;
+    background-color: #0000003e;
     background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-    background-size: contain;
-    background-repeat: repeat;
-    box-shadow: 7px 7px 15px 2px #00000081;
+    background-image: url("images/hotel.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 111px 17px #000000;
    }
 
    .featuresCenter li h1 {
     font-size: 22px;
-    color: #6a6a6a;
-    text-shadow: rgba(0, 0, 0, 0.358) 3px 3px 10px;
+    color: #858585;
+    text-shadow:rgb(0 0 0) 0px 0px 43px;
+
+    /* text-shadow: rgba(95, 95, 95, 0.091) 3px 3px 4px; */
+
    }
 
    .featuresBottomBox {
@@ -247,11 +251,12 @@ background-color: #070707;
     align-items: center;
     height: 110px;
     border-radius: 11px;
-    background-color: #000000;
+    background-color: #000000eb;
     background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
     box-shadow: 7px 7px 8px 2px #0000003d;
     color: #4f4e4e;
-    letter-spacing: 1.5px;
+    /* text-shadow: rgba(95, 95, 95, 0.091) 3px 3px 4px; */
+    /* letter-spacing: 1.5px; */
    }
 
 .bottomDeliveryBox {
@@ -263,9 +268,15 @@ background-color: #070707;
 
 }
 .bottomDelivery {
-  font-size: 24px;
- color: #4f4e4e;
+  font-size: 20px;
+ color: #6b6b6b;
   letter-spacing: 1.5px;
   font-weight: 700;
-   text-shadow: #000000 5px 5px 22px;
+   text-shadow: #5c5c5c 5px 5px 22px;
+   /* background: linear-gradient(0deg, #a7a7a7,#8f8e8e,#a7a7a7);
+   
+   background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   display: inline-block; */
 }

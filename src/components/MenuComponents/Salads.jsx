@@ -74,7 +74,7 @@ export const Salads = () => {
           left: '-90px',
           width: '450px',
           height: '650px',
-          opacity: '0.9',
+          opacity: '1',
         }}
       />
        <img

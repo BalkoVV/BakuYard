@@ -9,6 +9,9 @@
   z-index: 10;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+  background-color: #000000;
+background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .bottomLineLogo {
