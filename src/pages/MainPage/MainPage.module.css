@@ -4,7 +4,7 @@
 width: 100%;
 background-color: #070707;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   /* background-attachment: fixed; */
+   background-attachment: fixed;
    /* background-position: top; */
 }
 
@@ -73,6 +73,7 @@ background-color: #070707;
   font-weight: 900;
   height: 390px;
    text-shadow: #000000 5px 5px 22px;
+   text-shadow:rgb(0 0 0) 5px 5px 7px;
   }
 
   .bottomDescriptions {
@@ -82,6 +83,7 @@ background-color: #070707;
     width: 800px;
     color: #6b6b6b;
     text-shadow: #000000 5px 5px 22px;
+    text-shadow:rgb(0 0 0) 5px 5px 7px;
     text-align: center;
     justify-content: center;
     letter-spacing: 1.5px;
@@ -110,6 +112,7 @@ background-color: #070707;
     height: 280px;
     width: 800px;
      text-shadow: #000000 5px 5px 22px;
+     text-shadow:rgb(0 0 0) 5px 5px 7px;
   }
 
 
@@ -149,33 +152,29 @@ background-color: #070707;
    width: 100%;
    padding: 90px auto;
     border-radius: 11px;
-    background-image: url('images/bg233.webp'); 
-    /* background-color: #000000; */
-    background-size: 110%;
-    background-position: left top ;
-    /* background-repeat: repeat; */
+    background-image: url('images/stars.png'); 
+  
+    background-color: #0000000a;
+    background-size: 100%;
+    background-position: center;
+    /* background-repeat: repeat-x; */
     background-attachment: fixed;
     overflow: hidden;
-    box-shadow: 7px 7px 15px 2px #00000081;
+    /* box-shadow: 7px 7px 15px 2px #00000081; */
    
-
-    
+    box-shadow: inset 0px 0px 10px 97px #00000077;
+    /* background: scroll; */
   }
 
   .featuresTop li h1 {
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 22px;
-   color: #a1a1a1;
-   background: linear-gradient(0deg, #a7a7a7,#8f8e8e,#a7a7a7);
-   
-   background-clip: text;
-   -webkit-background-clip: text;
-   color: transparent;
-   display: inline-block;
-   text-shadow: #000000 3px 5px 11px;
-
+   font-size: 20px;
+   text-shadow: #000000 3px 25px 121px;
+   color: #555555;
+   padding-top: 20px;
+/* padding-bottom: 55px; */
   }
  
 
@@ -184,7 +183,7 @@ background-color: #070707;
     height: 450px;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 25px 9px #00000081;
+    box-shadow: 0 0 25px 9px #2a1e00;
     background: #0000006a;
     background-color: #070707;
     background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
@@ -199,9 +198,6 @@ background-color: #070707;
     width: 900px;  
   }
 
-  .featuresCenterTitle {
-    text-shadow: rgb(0, 0, 0) 10px 0 10px;
-  }
   .featuresCenter li {
     display: flex;
     justify-content: center;
@@ -211,18 +207,18 @@ background-color: #070707;
     padding: 30px auto;
     border-radius: 11px;
     background-color: #0000003e;
-    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
     background-image: url("images/hotel.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 100%;
+    background-repeat: repeat;
+    /* background-attachment: fixed; */
     box-shadow: inset 0px 0px 111px 17px #000000;
    }
 
    .featuresCenter li h1 {
-    font-size: 22px;
+    font-size: 20px;
     color: #555555;
     text-shadow:rgb(0 0 0) 0px 0px 43px;
-
+    text-shadow:rgb(0 0 0) 5px 5px 7px;
     /* text-shadow: rgba(95, 95, 95, 0.091) 3px 3px 4px; */
 
    }
@@ -251,14 +247,7 @@ background-color: #070707;
     align-items: center;
     height: 110px;
     border-radius: 11px;
-    background-color: #000000eb;
-    background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
-    background-image: url("images/beanstalk.png");
-    /* box-shadow: 7px 7px 8px 2px #0000003d; */
-    box-shadow: inset 0px 0px 66px 0px #000000;
-    color: #555555;
-    /* text-shadow: rgba(95, 95, 95, 0.091) 3px 3px 4px; */
-    /* letter-spacing: 1.5px; */
+    box-shadow: inset 0px 0px 10px 97px #00000077;
    }
 
 .bottomDeliveryBox {
@@ -274,7 +263,8 @@ background-color: #070707;
  color: #6b6b6b;
   letter-spacing: 1.5px;
   font-weight: 700;
-   text-shadow: #5c5c5c 5px 5px 22px;
+  text-shadow:rgb(0 0 0) 5px 5px 7px;
+   /* text-shadow: #5c5c5c 5px 5px 22px; */
    /* background: linear-gradient(0deg, #a7a7a7,#8f8e8e,#a7a7a7);
    
    background-clip: text;

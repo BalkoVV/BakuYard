@@ -23,7 +23,7 @@ import AlcoholicCocktails from "components/MenuComponents/AlcoholicCocktails";
 import CocktailsCardImage from 'images/cocktailsCard.svg';
 
 import Desserts from "components/MenuComponents/Desserts";
-import dessertCardImage from 'images/desertCard.svg';
+import dessertCardImage from 'images/dessertCard.svg';
  
 import Mocktails from "components/MenuComponents/Mocktails";
 import mocktailsCardImage from 'images/mocktailsCard.svg';

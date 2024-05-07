@@ -39,7 +39,7 @@ export const Header = () => {
               <span className={styles.headerLogo}>
                <Logo />
               </span>
-              <span className={styles.bottomLineLogo}></span>
+              {/* <span className={styles.bottomLineLogo}></span> */}
            </li>
 
             <li> 

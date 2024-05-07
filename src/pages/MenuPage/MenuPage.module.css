@@ -104,9 +104,13 @@ fill: #a66101;
    margin-left: auto;
    margin-right: auto;
    transition: .1s;
-   background-color: #000000;
-   background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
-
+   /* background-color: #000000; */
+   /* background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png); */
+   /* background-image: url("images/menus.png"); */
+   /* background-size: 10%; */
+   box-shadow: inset 0px 0px 100px 7px #000000cc;
+   /* background-repeat: repeat; */
+   /* box-shadow: inset 0px 0px 111px 17px #000000; */
    @media screen and (min-width: 768px) {
       height: 180px;
    }; 
@@ -120,7 +124,7 @@ fill: #a66101;
 .dishCard:hover {
  border: 1px solid #6b4d00;
  transition: .1s;
-
+/* color: #231900; */
 }
 
 /* .dishCard:hover .dishCardDescription {
