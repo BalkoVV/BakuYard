@@ -127,7 +127,7 @@ fill: #a66101;
 
 .dishCard:hover {
  border: 1px solid #6b4d00;
- border: 1px solid #aaaaaa77;
+ border: 1px solid #5c2000e5;
  transition: .1s;
 }
 
@@ -176,7 +176,7 @@ width: 60%;
    flex-wrap: no-wrap;
   
    margin: 0;
-   color: #883000;
+   color: #5c2000;
    font-size: 11px;
    padding-left: 5px;
 

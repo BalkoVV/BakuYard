@@ -79,12 +79,12 @@
 
  .activeLink h4 {
  color: #781e1e;
- color: #883000;
+ color: #5c2000;
 }
 
  .headerNav a:hover h4 {
  color: #590000;
- color: #883000;
+ color: #5c2000;
  transition: .1s;
 }
 
