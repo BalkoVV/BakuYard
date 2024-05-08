@@ -36,7 +36,7 @@ const BurgerMenu = ({ isOpen, onClose }) => {
 
       {isOpen && <div className={styles.backdrop} onClick={onClose}></div>}
       <div ref={menuRef} className={`${styles.burgerMenu} ${isOpen ? styles.isOpen : ''}`}>
-      <div className={styles.borderDecorative}></div>
+      {/* <div className={styles.borderDecorative}></div> */}
 
         <ul>
           <li><NavLink exact to="/" onClick={onClose} activeClassName={styles.activeLink}>Головна</NavLink></li>
