@@ -98,6 +98,7 @@ width: 100%;
 
  .contactsListItem {
    display: flex;
+
    justify-content: space-between;
    align-items: center;
    height: 70px;
@@ -109,6 +110,8 @@ width: 100%;
    box-shadow: 6px 6px 15px 2px #0000004f;
    background-color: #000000;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   background-color: #000000;
+   background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
    
    @media screen and (min-width: 767.9px) {
       font-size: 13px;

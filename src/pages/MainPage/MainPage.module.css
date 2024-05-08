@@ -246,7 +246,9 @@
     background: #0000006a;
     background-color: #070707;
     background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-    box-shadow: 0 0 25px 11px #00000095;
+    background-color: #0000009a;
+    background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+    box-shadow: 0 0 25px 5px #00000068;
 
     @media screen and (min-width: 768px) {
       height: 400px;
@@ -285,6 +287,7 @@
     background-image: url("images/hotel.png");
     background-size: 100%;
     background-repeat: repeat;
+    border: 1px solid rgb(17, 17, 17);
     
     box-shadow: inset 0px 0px 111px 17px #000000;
 
