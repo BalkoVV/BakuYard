@@ -164,19 +164,24 @@ export const Basket = () => {
         <div className={styles.basketBox}>
           
           {basketEmpty ? (
-            <span className={styles.basketEmpty}>
-              <div className={styles.basketEmptyMessage}>
-              <h2>Ваш кошик порожній <br/>
-            Додайте страви з Меню <br/>
-            *доступні для доставки</h2>
-              </div>
-            </span>
+            <div className={styles.emptyOrderBasketBox}>
+              <span className={styles.basketEmpty}>
+                <div className={styles.basketEmptyMessage}>
+                  <h2>
+                    Ваш кошик порожній <br/>
+                    Додайте страви з Меню <br/>
+                    *доступні для доставки
+                  </h2>
+                </div>
+              </span>
+            </div>
           ) : (
             <div className={styles.basketListBox}>
               <ul className={styles.basketList}>
+              <h3 className={styles.basketTitled}>Замовлення</h3>
+
               {cartItems.map((item) => (
                 <li className={styles.basketListItem} key={item.id}>
-                  
                   
                   <div className={styles.basketListItemInfo}>
 
@@ -216,30 +221,66 @@ export const Basket = () => {
                   </div>
                 </li>
               ))}
+
+<div className={styles.basketOrderInfo}>
+
+<div className={styles.basketQuantityBox}>
+
+    <span className={styles.basketQuantityTitle}>
+      <h3>Кількість позицій: </h3>
+    </span>
+
+    <span className={styles.basketTotalQuantity}>
+      {totalItems}
+    </span>
+
+</div>
+
+<div className={styles.basketQuantityBox}>
+
+    <span className={styles.basketPriceTitle}>
+      <h3>Загальна сума:</h3>
+    </span>
+
+    <span className={styles.basketTotalPrice}>
+      {totalPrice}
+    </span>
+
+</div>
+
+</div>
             </ul>
             </div>
 
           )}
 
-          <div className={styles.basketOrderInfo}>
-            <p className={styles.basketQuantityBox}>
-              <span className={styles.basketQuantityTitle}>
-                <h3>Кількість позицій: </h3>
-              </span>
-              <span className={styles.basketTotalQuantity}>
-                {totalItems}
-              </span>
-            </p>
+          {/* <div className={styles.basketOrderInfo}>
 
-            <p className={styles.basketQuantityBox}>
-              <span className={styles.basketPriceTitle}>
-                <h3>Загальна сума:</h3>
-              </span>
-              <span className={styles.basketTotalPrice}>
-                {totalPrice}
-              </span>
-            </p>
-          </div>
+              <div className={styles.basketQuantityBox}>
+
+                  <span className={styles.basketQuantityTitle}>
+                    <h3>Кількість позицій: </h3>
+                  </span>
+
+                  <span className={styles.basketTotalQuantity}>
+                    {totalItems}
+                  </span>
+
+              </div>
+
+              <div className={styles.basketQuantityBox}>
+
+                  <span className={styles.basketPriceTitle}>
+                    <h3>Загальна сума:</h3>
+                  </span>
+
+                  <span className={styles.basketTotalPrice}>
+                    {totalPrice}
+                  </span>
+
+              </div>
+
+          </div> */}
 
           <div className={styles.basketMakeOrder}>
             <div className={styles.basketInputBox}>
@@ -288,16 +329,22 @@ export const Basket = () => {
 
           </div>
 
-          {orderCompleted && <span className={styles.orderDone}>
-           <div className={styles.orderDoneMessage}>
-           <h2>Замовлення оформлене!  <br/>
-               Адміністратор зателефонує Вам  <br/>
-               для підтвердження <br/>
-               та узгодження деталей</h2>
-           </div>
-           
-            
-            </span>}
+          {orderCompleted && 
+          
+          
+          <div className={styles.emptyOrderBasketBox}>
+              <span className={styles.orderDone}>
+            <div className={styles.orderDoneMessage}>
+                <h2>Замовлення оформлене!  <br/>
+                    Адміністратор зателефонує Вам  <br/>
+                    для підтвердження <br/>
+                    та узгодження деталей
+                </h2>
+            </div>
+          </span>
+            </div>
+          
+          }
         </div>
       </div>
     </div>
