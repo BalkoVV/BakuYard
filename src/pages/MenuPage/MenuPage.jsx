@@ -15,6 +15,8 @@ import HotDrinks from "components/MenuComponents/HotDrinks";
 import hotDrinkCardImage from 'images/hotDrinkCard.svg';
 
 import ColdApetizers from "components/MenuComponents/ColdApetizers";
+import coldAppetizerCardImage from 'images/coldAppetizerCard.svg';
+
 import HotApetizers from "components/MenuComponents/HotApetizers";
 
 import Beverages from "components/MenuComponents/Beverages";
@@ -228,7 +230,7 @@ export const MenuPage = () => {
                     <span className={styles.dishCardImg}>
                     <img
                         className={styles.dishCardImage}
-                        src={lunchCardImage} 
+                        src={coldAppetizerCardImage} 
                         alt="Холодні закуски"
                        
                       />
