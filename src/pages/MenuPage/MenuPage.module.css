@@ -176,8 +176,8 @@ width: 60%;
    flex-wrap: no-wrap;
   
    margin: 0;
-   color: #6b4d00;
-   font-size: 10.5px;
+   color: #883000;
+   font-size: 11px;
    padding-left: 5px;
 
    @media screen and (min-width: 768px) {
@@ -256,7 +256,7 @@ width: 60%;
 
 .toBasketButton:hover .toBasketDescription {
    /* border: 1px solid #5900009f; */
-   color: #6b4d00;
+   color: #883000;
    transition: .1s;
   }
 
@@ -269,7 +269,7 @@ width: 60%;
   
   .basketIcon.nonEmpty {
      fill: #590000;
-     fill: #6b4d00;
+     fill: #883000;
    }
 
 
