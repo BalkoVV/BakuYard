@@ -1,6 +1,6 @@
 .toMenuButton {
  position: absolute;
- top: 0px;
+ top: 20px;
  left: 20px;
  display: flex;
  align-items: center;
@@ -10,7 +10,7 @@
  height: 60px;
  width: 150px;
  border: none;
- z-index: 9;
+ z-index: 10;
   border-radius: 11px;
  background-color: #ffffff;
  background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
