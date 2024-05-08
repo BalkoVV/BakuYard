@@ -624,8 +624,8 @@ justify-content: center;
 
 
  background-color: #00000000;
- /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
- height: 500px;
+ background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+ height: 450px;
  width: 380px;
  border-radius: 11px;
  box-shadow: 7px 7px 15px 2px #00000047;
