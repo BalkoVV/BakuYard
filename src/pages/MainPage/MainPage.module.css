@@ -147,7 +147,7 @@
     height: 150px;
     width: 100%;
     border-radius: 11px;
-    background-image: url('images/stars.png'); 
+    background-image: url('images/pngeg.png'); 
     /* background-image: url('images/party.png');  */
     background-color: #00000090;
     background-size: 100%;
@@ -285,8 +285,17 @@
     background-image: url("images/hotel.png");
     background-size: 100%;
     background-repeat: repeat;
-    /* background-attachment: fixed; */
+    
     box-shadow: inset 0px 0px 111px 17px #000000;
+
+    /* @media screen and (min-width: 768px) {
+     
+    }; */
+    @media screen and (min-width: 1200px) {
+      background-attachment: fixed;
+      background-size: contain;
+    background-repeat: repeat;
+    };
    }
 
    .featuresCenter li h1 {
@@ -310,7 +319,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #fff; */
 
   @media screen and (min-width: 768px) {
     padding: 0 40px;
@@ -362,12 +370,13 @@
     justify-content: center;
     align-items: center;
     /* background-color: #fff; */
+    min-width: 400px;
 
     @media screen and (min-width: 768px) {
-    
+      min-width: 600px;
     };
     @media screen and (min-width: 1200px) {
-     
+     min-width: 800px;
     };
    }
 

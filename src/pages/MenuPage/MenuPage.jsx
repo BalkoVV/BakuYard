@@ -9,6 +9,7 @@ import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import Basket from "components/Basket/Basket";
 
 import Pizza from "components/MenuComponents/Pizza";
+import pizzaCardImage from 'images/pizzaCard.svg';
 
 import HotDrinks from "components/MenuComponents/HotDrinks";
 import hotDrinkCardImage from 'images/hotDrinkCard.svg';
@@ -30,6 +31,7 @@ import mocktailsCardImage from 'images/mocktailsCard.svg';
 
 import Meat from "components/MenuComponents/Meat";
 import meatCardImage from 'images/meatCard.svg';
+
 import Sauces from "components/MenuComponents/Sauces";
 import saucesCardImage from 'images/saucesCard.svg';
 
@@ -44,14 +46,17 @@ import beerCardImage from 'images/beerCard.svg';
 
 import Salads from "components/MenuComponents/Salads";
 import saladCardImage from 'images/saladCard.svg';
+
 import Banquete from "components/MenuComponents/AddButton/Banquete";
+import banqueteCardImage from 'images/banqueteCard.svg';
+
 import Fish from "components/MenuComponents/Fish";
 import fishCardImage from 'images/fishCard.svg';
 
 import MainDish from "components/MenuComponents/MainDish";
 
 import SideDish from "components/MenuComponents/SideDish";
-// import sideDishCardImage from 'images/sideDishCard.svg';
+import sideDishCardImage from 'images/sideDishCard.svg';
 
 
 import Soup from "components/MenuComponents/Soup";
@@ -59,6 +64,7 @@ import soupCardImage from 'images/soupCard.svg';
 
 import Lunch from "components/MenuComponents/Lunch";
 import lunchCardImage from 'images/lunchCard.svg';
+
 import styles from 'pages/MenuPage/MenuPage.module.css';
 
 
@@ -115,13 +121,15 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={meatCardImage} 
                         alt="М'ясо"
-                        // width="125"
-                        // height="125"
+                      
                       />
                     </span>
-                      <h3 className={styles.dishCardDescription}>
-                        М'ясо
-                      </h3>
+                    <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      М'ясо 
+                    </h3>
+                    
+                   </span>
                   
                   </NavLink>
                 </li>
@@ -134,13 +142,15 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={fishCardImage} 
                         alt="Риба"
-                        // width="125"
-                        // height="125"
+                       
                       />
                     </span>
-                      <h3 className={styles.dishCardDescription}>
-                        Риба
-                      </h3>
+                    <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Риба 
+                    </h3>
+                    
+                   </span>
                   
                   </NavLink>
                 </li>
@@ -154,13 +164,17 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={lunchCardImage} 
                         alt="Основні страви"
-                        // width="125"
-                        // height="125"
+                      
                       />
                     </span>
-                      <h3 className={styles.dishCardDescription}>
-                      Основні страви
-                      </h3>
+                    <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Основні 
+                    </h3>
+                    <h3 className={styles.dishCardDescription}>
+                       страви
+                    </h3>
+                   </span>
                   
                   </NavLink>
                 </li>
@@ -171,15 +185,17 @@ export const MenuPage = () => {
                     <span className={styles.dishCardImg}>
                     <img
                         className={styles.dishCardImage}
-                        src={saladCardImage} 
+                        src={sideDishCardImage} 
                         alt="Гарнір"
-                        // width="125"
-                        // height="125"
+                      
                       />
                     </span>
-                      <h3 className={styles.dishCardDescription}>
-                      Гарніри
-                      </h3>
+                    <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Гарніри 
+                    </h3>
+                  
+                   </span>
                   
                   </NavLink>
                 </li>
@@ -192,13 +208,17 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={lunchCardImage} 
                         alt="Гарячі закуски"
-                        // width="125"
-                        // height="125"
+                     
                       />
                     </span>
-                      <h3 className={styles.dishCardDescription}>
-                      Гарячі закуски
-                      </h3>
+                    <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Гарячі 
+                    </h3>
+                    <h3 className={styles.dishCardDescription}>
+                       закуски
+                    </h3>
+                   </span>
                   
                   </NavLink>
                 </li>
@@ -210,13 +230,17 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={lunchCardImage} 
                         alt="Холодні закуски"
-                        // width="125"
-                        // height="125"
+                       
                       />
                     </span>
-                      <h3 className={styles.dishCardDescription}>
-                      Холодні закуски
-                      </h3>
+                    <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Холодні 
+                    </h3>
+                    <h3 className={styles.dishCardDescription}>
+                       закуски
+                    </h3>
+                   </span>
                   
                   </NavLink>
                 </li>
@@ -229,13 +253,15 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={saladCardImage} 
                         alt="Салати"
-                        // width="125"
-                        // height="125"
+                       
                       />
                     </span>
-                      <h3 className={styles.dishCardDescription}>
-                      Салати
-                      </h3>
+                    <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Салати 
+                    </h3>
+                    
+                   </span>
                   
                   </NavLink>
                 </li>
@@ -248,14 +274,16 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={saucesCardImage} 
                       alt="Соуси"
-                      // width="125"
-                      // height="125"
+                    
                     
                     />
                    </span>
-                    <h3 className={styles.dishCardDescription}>
-                      Соуси
+                   <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                     Соуси
                     </h3>
+                    
+                   </span>
                  
                 </NavLink>
               </li>
@@ -265,15 +293,17 @@ export const MenuPage = () => {
                    <span className={styles.dishCardImg}>
                    <img
                       className={styles.dishCardImage}
-                      src={lunchCardImage} 
+                      src={pizzaCardImage} 
                       alt="Випічка"
-                      // width="125"
-                      // height="125"
+                    
                     />
                    </span>
-                    <h3 className={styles.dishCardDescription}>
-                      Випічка
+                   <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Випічка 
                     </h3>
+                   
+                   </span>
                  
                 </NavLink>
               </li>
@@ -286,13 +316,15 @@ export const MenuPage = () => {
                         className={styles.dishCardImage}
                         src={soupCardImage} 
                         alt="Суп"
-                        // width="125"
-                        // height="135"
+                      
                       />
                     </span>
-                      <h3 className={styles.dishCardDescription}>
-                      Супи
-                      </h3>
+                    <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Супи 
+                    </h3>
+                    
+                   </span>
                   
                   </NavLink>
                 </li>
@@ -305,37 +337,48 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={lunchCardImage} 
                       alt="Соуси"
-                      // width="125"
-                      // height="125"
+                   
                     />
                    </span>
-                    <h3 className={styles.dishCardDescription}>
-                      Бізнес ланчі
+
+                  
+                   <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Бізнес 
                     </h3>
+                    <h3 className={styles.dishCardDescription}>
+                       ланчі
+                    </h3>
+                   </span>
+                   
                  
                 </NavLink>
               </li>
 
                <li className={styles.dishCard}>
-                <div className={styles.dishCardBox}>
                 <NavLink to="/menu/banquete" className={styles.dishCardLink}>
                 
                 <span className={styles.dishCardImg}>
                   <img
                     className={styles.dishCardImage}
-                    src={alcoholCardImage} 
+                    src={banqueteCardImage} 
                     alt="Банкетне меню"
-                    // width="125"
-                    // height="125"
+                  
                   />
                 </span>
+               
 
+                <span className={styles.dishCardDescriptionBox}>
                 <h3 className={styles.dishCardDescription}>
-                Банкетне меню
+                Банкетне 
                 </h3>
+                <h3 className={styles.dishCardDescription}>
+                меню
+                </h3>
+                </span>
               
                 </NavLink>
-                </div>
+             
               </li>
 
               <li className={styles.dishCard}>
@@ -346,13 +389,17 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={beveragesCardImage} 
                       alt="Безалкогольні напої"
-                      // width="125"
-                      // height="125"
+                    
                     />
                    </span>
-                    <h3 className={styles.dishCardDescription}>
-                    Безалкогольні напої
+                   <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Безалкогольні 
                     </h3>
+                    <h3 className={styles.dishCardDescription}>
+                       напої
+                    </h3>
+                   </span>
                  
                 </NavLink>
               </li>
@@ -365,13 +412,17 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={mocktailsCardImage} 
                       alt="Безалкогольні коктейлі"
-                      // width="125"
-                      // height="125"
+                     
                     />
                    </span>
-                    <h3 className={styles.dishCardDescription}>
-                    Безалкогольні коктейлі
+                   <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Безалкогольні 
                     </h3>
+                    <h3 className={styles.dishCardDescription}>
+                       коктейлі
+                    </h3>
+                   </span>
                  
                 </NavLink>
               </li>
@@ -384,13 +435,17 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={hotDrinkCardImage} 
                       alt="Гарячі напої"
-                      // width="145"
-                      // height="145"
+                      
                     />
                    </span>
-                    <h3 className={styles.dishCardDescription}>
-                    Гарячі напої
+                   <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Гарячі 
                     </h3>
+                    <h3 className={styles.dishCardDescription}>
+                       напої
+                    </h3>
+                   </span>
                  
                 </NavLink>
               </li>
@@ -403,19 +458,20 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={dessertCardImage} 
                       alt="Десерт"
-                      // width="155"
-                      // height="155"
+                
                     />
                    </span>
-                    <h3 className={styles.dishCardDescription}>
-                      Десерти
+                   <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Десерти 
                     </h3>
+                    
+                   </span>
                  
                 </NavLink>
               </li>
 
               <li className={styles.dishCard}>
-                <div className={styles.dishCardBox}>
                 <NavLink to="/menu/hard-alcohol" className={styles.dishCardLink}>
                 
                 <span className={styles.dishCardImg}>
@@ -423,41 +479,48 @@ export const MenuPage = () => {
                     className={styles.dishCardImage}
                     src={alcoholCardImage} 
                     alt="Соуси"
-                    // width="125"
-                    // height="125"
+                  
                   />
                 </span>
 
-                <h3 className={styles.dishCardDescription}>
-                  Міцний алкоголь
-                </h3>
+                <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Міцний 
+                    </h3>
+                    <h3 className={styles.dishCardDescription}>
+                       алкоголь
+                    </h3>
+                   </span>
               
                 </NavLink>
-                </div>
+               
               </li>
 
            
 
                 <li className={styles.dishCard}>
-                <div className={styles.dishCardBox}>
-                <NavLink to="/menu/alcoholic-cocktails" className={styles.dishCardLink}>
+                <NavLink to="/menu/alcoholic-cocktails" 
+                        className={styles.dishCardLink}>
                 
                 <span className={styles.dishCardImg}>
                   <img
                     className={styles.dishCardImage}
                     src={CocktailsCardImage} 
                     alt="Алкогольні коктейлі"
-                    // width="125"
-                    // height="125"
                   />
                 </span>
 
-                <h3 className={styles.dishCardDescription}>
-                Алкогольні коктейлі
-                </h3>
+                <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Алкогольні 
+                    </h3>
+                    <h3 className={styles.dishCardDescription}>
+                       коктейлі
+                    </h3>
+                   </span>
               
                 </NavLink>
-                </div>
+                
               </li>
             
               <li className={styles.dishCard}>
@@ -468,13 +531,14 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={wineCardImage} 
                       alt="Вино"
-                      // width="125"
-                      // height="125"
                     />
                    </span>
-                    <h3 className={styles.dishCardDescription}>
-                    Вино
+                   <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Вино 
                     </h3>
+                   
+                   </span>
                  
                 </NavLink>
               </li>
@@ -487,13 +551,15 @@ export const MenuPage = () => {
                       className={styles.dishCardImage}
                       src={beerCardImage} 
                       alt="Пиво"
-                      // width="125"
-                      // height="125"
+                     
                     />
                    </span>
-                    <h3 className={styles.dishCardDescription}>
-                      Пиво
+                   <span className={styles.dishCardDescriptionBox}>
+                   <h3 className={styles.dishCardDescription}>
+                      Пиво 
                     </h3>
+                    
+                   </span>
                  
                 </NavLink>
               </li>
