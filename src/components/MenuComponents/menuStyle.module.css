@@ -1,31 +1,34 @@
 .dishPage {
    position: relative;
    min-height: 85vh;
+   /* background-position: top; */
+   /* background-repeat: repeat; */
+   /* background-color: #070707; */
+   /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
 }
 
 .dishPageContainer {
  display: grid;
  justify-content: center;
- /* overflow-y: scroll; */
 }
 
 .dishTitle {
    display: flex;
    justify-content: center;
-   height: 75px;
+   height: 95px;
    align-items: center;
-   font-size: 13px;
-   text-shadow: #000000 3px 5px 11px;
+   font-size: 15px;
+   /* text-shadow: #000000 3px 5px 11px; */
    margin: 0;
    color: #7c7c7c;
+
    @media screen and (min-width: 768px) {
-      height: 75px;
-      font-size: 13px;
+      /* height: 75px; */
+      /* font-size: 13px; */
    };
    @media screen and (min-width: 1200px) {
-      height: 95px;
-      
-      font-size: 15px;
+      /* height: 95px; */
+      /* font-size: 15px; */
    };
 }
 
@@ -35,14 +38,25 @@
   align-items: center;
   margin-bottom: 15px;
   border-radius: 11px;
-  width: 900px;
+  width: 400px;
   height: 60px;
-  padding-left: 15px;
+  /* padding-left: 15px; */
 
 box-shadow: 5px 5px 8px 3px #0000006b;
 
 background-color: #000000d6;
 background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+
+@media screen and (min-width: 768px) {
+   
+};
+@media screen and (min-width: 1200px) {
+   margin-bottom: 15px;
+   border-radius: 11px;
+   width: 900px;
+   height: 60px;
+   padding-left: 15px;
+};
 }
 
 .dishTableList h3 {
@@ -54,13 +68,14 @@ background-image: url("https://www.transparenttextures.com/theme/images/transpar
 }
 
 .dishTableList {
- padding: 25px 25px;
+ /* padding: 25px 25px; */
  border-radius: 10px;
  background: #a8a8a84d;
+ /* width: 100%; */
  /* background-color: #2e2e2e; */
 /* background-image: url("https://www.transparenttextures.com/patterns/textured-paper.png"); */
 /* background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png"); */
-margin: 35px 0;
+/* margin: 35px 0; */
 box-shadow: 11px 11px 21px 5px #0000003e;
 }
 
@@ -91,13 +106,21 @@ box-shadow: 11px 11px 21px 5px #0000003e;
    align-items: center;
    justify-content: center;
    height: 60px;
-   width: 100px;
+   width: 40px;
    margin: 0;
    padding: 0;
    right: 101px;
-   font-size: 15px;
+   font-size: 10px;
    top: 0;
    border-left: 1px solid #39393969;
+
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   font-size: 11px;
+ };
 }
 
 .dishTablePrice100 {
@@ -219,7 +242,7 @@ box-shadow: 11px 11px 21px 5px #0000003e;
    padding-left: 10px;
    left: 20px;
    bottom: 0px;
-   font-size: 17px;
+   font-size: 11px;
    /* color: #b5b5b5; */
    background: linear-gradient(0deg, #8e8e8e,#7c7c7c,#8e8e8e);
    background-clip: text;
@@ -234,21 +257,9 @@ box-shadow: 11px 11px 21px 5px #0000003e;
    position: absolute;
    bottom: 5px;
    padding-left: 20px;
-   font-size: 12px;
-   color: #695759;
+   font-size: 10px;
+   color: #5e2000;
 }
-
-/* .toMenuLinkBox {
-   position: absolute;
-   border: none;
-   border-radius: 30px;
-   background: linear-gradient(0deg, #00000099, #00000099, #00000099, #00000099, #00000099, #00000003);
-   background-attachment: fixed;
-   background-position: top;
-   
-   top: 30px;
-   left: 70px; 
-} */
 
 
 .basketIcon {
@@ -260,134 +271,130 @@ box-shadow: 11px 11px 21px 5px #0000003e;
     
    }
 
-.basketBadge {
-position: absolute;
-right: 60px;
-top: 15px;
- display: flex;
- justify-content: center;
- align-items: center;
- height: 10px;
- width: 10px;
- border-radius: 50%;
- color: #ffffff;
- background-color: #000000;
- font-size: 11px;
- z-index: 2;
-}
 
- 
-
- /* .toBasketLinkBox {
-   position: absolute;
-   border: none;
-   border-radius: 11px;
-   background: #00000099;
-   box-shadow: 7px 7px 15px 2px #00000047;
-   top: 23px;
-   right: 68px; 
-   transition: 1.5s;
-   z-index: 10;
-   background-color: #000000;
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-} */
-
-/* .toBasketLink {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 60px;
-   width: 150px;
-   border-radius: 9px;
-} */
-
-/* .basketIcon {
-   fill: #303030;
-  }
-  
-  .basketIcon.nonEmpty {
-     fill: #6f0000; 
-    
-   } */
-
-
-   /* .basketBadge {
-      position: absolute;
-      right: 60px;
-      top: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 10px;
-      width: 10px;
-      border-radius: 50%;
-      color: #d7d7d7;
-      background-color: #000000;
-      font-size: 11px;
-      z-index: 2;
-     } */
 
      .toBasketButton {
       position: absolute;
       border: none;
-      top: 23px;
-      right: 68px; 
+      top: 0px;
+      right: 20px; 
       display: flex;
       align-items: center;
       justify-content: end;
+      /* height: 40px;
+      width: 110px; */
       height: 60px;
-      width: 150px;
+         width: 150px;
       border: none;
-      z-index: 10;
+      z-index: 9;
+      border-radius: 11px;
+      background-color: #000000;
+      background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
+          
+      @media screen and (min-width: 767.9px) {
+         height: 60px;
+         width: 150px;
+         /* top: 23px; */
+         /* right: 68px;  */
+      };
+
+      @media screen and (min-width: 1200px) {
+         height: 60px;
+         width: 150px;
+         /* top: 23px; */
+         /* right: 68px;  */
+      };
    }
    .toBasketLink {
       display: flex; 
       align-items: center;
       justify-content: start;
-      height: 60px;
-      width: 150px;
+      height: 40px;
+      width: 110px;
       border-radius: 11px;
-      background-color: #000000;
-      background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
+
+      @media screen and (min-width: 767.9px) {
+         height: 60px;
+         width: 150px;
+        
+       };
+       @media screen and (min-width: 1200px) {
+         height: 60px;
+            width: 150px;
+        
+       };
    }
    
    .toBasketDescription {
       margin: 0;
       padding: 0;
-      font-size: 14px;
-      padding-left: 15px;
+      font-size: 10px;
+      padding-left: 5px;
+
+      @media screen and (min-width: 767.9px) {
+         font-size: 14px;
+        
+       };
+       @media screen and (min-width: 1200px) {
+         
+         font-size: 14px;
+       };
    }
    
    .toBasketButton:hover .toBasketDescription {
-      color: #6b4d00;
+      color: #5e2000;
      }
    
    .basketIcon {
       position: absolute;
-      right: 13px;
-      top: 12px;
+      right: 5px;
+      top: 4px;
       fill: #3a3a3a;
+
+      @media screen and (min-width: 767.9px) {
+         /* font-size: 14px; */
+         right: 13px;
+         top: 12px;
+       };
+       @media screen and (min-width: 1200px) {
+         right: 13px;
+      top: 12px;
+         /* font-size: 14px; */
+       };
      }
      
      .basketIcon.nonEmpty {
-        fill: #6b4d00;
+        fill: #5e2000;
       }
-   
-   
+
       .basketBadge {
          position: absolute;
-         right: 11px;
-         top: 16px;
+         right: 4px;
+         top: 9px;
          display: flex;
          justify-content: center;
          align-items: center;
-         height: 15px;
-         width: 15px;
+         height: 12px;
+         width: 12px;
          border-radius: 50%;
-         color: #b6b2b2;
-         background-color: #000000;
+         color: #dbdbdb;
+         background-color: #5e2000;
          font-size: 15px;
          z-index: 2;
+         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.808);
+
+         @media screen and (min-width: 767.9px) {
+           
+            height: 15px;
+         width: 15px;
+            right: 11px;
+            top: 16px;
+          };
+          @media screen and (min-width: 1200px) {
+            right: 11px;
+         top: 16px;
+           
+          };
         }
 
      .dishTableDay {

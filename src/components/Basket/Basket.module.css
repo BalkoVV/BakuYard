@@ -1,10 +1,27 @@
 .basket {
  position: relative;
  min-height: 80vh;
+
+  
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .basketContainer {
-   width: 100%; 
+   /* width: 100%;  */
+   padding: 0 5px;
+
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
  }
  
 
@@ -14,6 +31,14 @@
  width: 80px;
  align-items: center;
  justify-content: space-between;
+
+  
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 
@@ -21,18 +46,24 @@
 
 .basketTitle {
    display: flex;
-   height: 55px;
+   height: 95px;
    justify-content: center;
    align-items: center;
    font-size: 15px;
    font-weight: 900;
-  
+  margin: 0;
    color: #7b7b7b;
    /* margin-bottom: 30px; */
-   padding-top: 20px;
+   /* padding-top: 20px; */
   
 
- 
+  
+   @media screen and (min-width: 767.9px) {
+     
+   };
+   @media screen and (min-width: 1200px) {
+     
+   };
    
 }
 
@@ -41,11 +72,24 @@
  min-width: 220px;
  text-align: right;
 
+  
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .basketBox {
    height: 100%;
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
    
+ };
   }
 
 .basketListBox {
@@ -54,6 +98,14 @@
  height: auto;
 justify-content: center;
 align-items: center;
+
+ 
+@media screen and (min-width: 767.9px) {
+     
+};
+@media screen and (min-width: 1200px) {
+  
+};
 }
 
 .basketEmptyListBox {
@@ -64,25 +116,42 @@ align-items: center;
  justify-content: center;
  align-items: center;
  font-size: 22px;
+
+  
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .basketList {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 15px;
+    grid-row-gap: 5px;
     border: none;
-    padding: 25px 25px;
+    padding: 5px;
     border-radius: 11px;
     background: #b4b4b44a;
+    /* background-color: #d84e0321; */
     margin: 35px 0;
+
+     
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .basketListItem {
-   position: relative;
+   /* position: relative; */
    display: flex; 
    padding-left: 3px;
-   width: 900px;
-   height: 50px;
+  
    border-radius: 11px;
    align-items: center;
    justify-content: space-between;
@@ -93,52 +162,81 @@ align-items: center;
    background-attachment: fixed;
     background-attachment: fixed; */
 
-  width: 900px;
-  height: 60px;
-  padding-left: 15px;
+  /* width: 900px; */
+  /* width: 100%; */
+  height: 50px;
+  /* padding-left: 15px; */
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
   box-shadow: 7px 7px 15px 2px #00000047;
+
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+.basketListItemInfo {
+ display: flex;
+ flex-direction: column;
+ /* width: 70%; */
+}
+
+.basketListItemManagement {
+  display: flex;
+  /* flex-direction: column; */
+  /* width: 30%; */
 }
 
 .basketListItemPrice {
-   position: absolute;
+   /* position: absolute; */
    display: flex;
    align-items: center;
    justify-content: center;
    height: 60px;
-   width: 100px;
+   width: 60px;
    margin: 0;
    padding: 0;
-   right: 0px;
-   font-size: 15px;
-   top: 0;
-   border-left: 1px solid #39393969;
+   /* right: 0px; */
+   font-size: 13px;
+   /* top: 0; */
+   /* border-left: 1px solid #690404e6; */
+   /* background-color: rgba(255, 255, 255, 0.199); */
+   border-radius: 0 11px 11px 0;
+
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .basketListItemCategory {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 0;
   color: #6f0000;
+font-size: 9px;
+padding-left: 5px;
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 
 .basketListItemCounter {
-   /* position: absolute;
-   right: 55px;
-   height: 100%;
-   display: flex;
-   width: 80px;
-   justify-content: space-around;
-   align-items: center;
-   font-size: 14px;
-   border-left: 1px solid #7b7b7b39; */
-
-   position: absolute;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between;
    height: 60px;
    width: 100px;
    margin: 0;
@@ -146,19 +244,48 @@ align-items: center;
    right: 101px;
    font-size: 15px;
    top: 0;
-   border-left: 1px solid #39393969;
+   /* border-left: 1px solid #780101e0; */
+
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .basketListItemName {
- padding-left: 20px;
- font-size: 15px;
-
+ /* padding-left: 20px; */
+ font-size: 10px;
+/* background-color: rgba(1, 33, 1, 0.73); */
+  
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
+.basketListItemIngred {
+ font-size: 9px;
+ color: #5e2000;
+ padding-left: 5px;
+}
 .basketMakeOrder {
  display: grid;
+ display: none;
  justify-content: space-around;
  /* padding-top: 40px; */
+background-color: rgba(51, 1, 1, 0.422);
+  
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .basketListItemIncrease,
@@ -167,27 +294,47 @@ align-items: center;
  align-items: center;
  justify-content: center;
  width: 35px;
- height: 100%;
+ height: 35px;
  border: none;
  padding: 0;
  margin: 0;
  color: #7b7a7a;
- font-size: 17px;
+ font-size: 25px;
  background: transparent;
+ border-radius: 7px;
+ background-color: rgba(73, 73, 73, 0.371);
+ /* background-color: rgba(255, 255, 255, 0.25); */
+
+  
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .basketOrderInfo {
 display: flex;
+display: none;
+width: 100%;
 justify-content: center;
 padding: 10px 0px;
-text-align: right;
+background-color: rgba(1, 71, 95, 0.356);
+ 
+@media screen and (min-width: 767.9px) {
+     
+};
+@media screen and (min-width: 1200px) {
+  
+};
 
 }
 
 
 .basketOrderInfo p {
  display: flex;
- width: 200px;
+ width: 150px;
  height: 50px;
  justify-content: start;
  align-items: center;
@@ -196,67 +343,140 @@ text-align: right;
  background-color: #000000;
  background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
  box-shadow: 7px 7px 15px 2px #00000047;
+
+ @media screen and (min-width: 768px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   width: 200px;
+   height: 50px;
+ };
 }
 
-.basketQuantityBox {
+/* .basketQuantityBox  {
  display: flex;
  align-items: center;
  border-radius: 11px;
- background-color: rgb(0, 0, 0);
+ background-color: rgb(95, 2, 2);
  margin: 20px;
+ background-color: rgba(255, 255, 255, 0.638);
  
-}
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+} */
 .basketQuantityTitle,
 .basketPriceTitle  {
    padding-left: 20px;
    padding-right: 20px;
    font-size: 16px;
    line-height: 17px;
+background-color: rgba(3, 88, 41, 0.436);
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
   }
 
 .basketTotalQuantity,
 .basketTotalPrice {
-   color: #790811;
+   color: #b9b9b9;
    font-size: 30px;
    padding-right: 20px;
+   background-color: rgba(1, 78, 85, 0.498);
+
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 
 
 .basketInputBox {
   display: grid;
+  width: 390px;
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 15px;
   padding: 20px;
-  border-radius: 13px;
+  border-radius: 11px;
   margin-top: 30px;
-  background-color: #111111;
+  background-color: #cdcdcd47;
   background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
   box-shadow: 7px 7px 15px 2px #00000047;
+
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
  .basketInput {
-   background-color: black;
+   background-color: rgb(132, 37, 37);
    color: var(--non-active-color);
    padding-left: 16px;
    width: 300px;
    height: 50px;
    border: none;
    border-radius: 11px;
+
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 
 .basketInputAddressBox {
    display: flex;
    justify-content: space-between;
+
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .basketInputStreet {
    width: 230px;
+
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .basketInputStreetNumber {
    width: 40px;
+
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .buttonMakeOrder {
@@ -265,7 +485,8 @@ text-align: right;
    justify-content: center;
    color: #4b4b4b;
    text-transform: uppercase;
-   height: 60px;
+   height: 40px;
+   /* width: 100px; */
    margin: 20px 0;
    border: none;
    border-radius: 11px;
@@ -273,6 +494,15 @@ text-align: right;
    background-color: #000000;
     background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
     box-shadow: 7px 7px 15px 2px #00000047;
+
+     
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+    
 }
 
 
@@ -282,6 +512,14 @@ text-align: right;
    cursor: not-allowed;
    position: relative;
    transition: background-color 0.5s; 
+
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .buttonMakeOrder.disabled:hover::after {
@@ -298,10 +536,26 @@ text-align: right;
    white-space: nowrap;
    transition: opacity 5s; /* Додаємо перехід для плавної зміни прозорості */
    opacity: 0; /* По замовчуванню текст має бути прихованим */
+
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .buttonMakeOrder.disabled:hover::after {
    opacity: 1; /* Під час наведення зробимо текст видимим */
+
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .buttonMakeOrder.active {
@@ -309,10 +563,25 @@ text-align: right;
    background: linear-gradient(0deg, #30000090, black, #30000090);
    color: #f3f0f0;
    transition: background-color 0.5s; /* Додаємо перехід для зміни кольору фону */
+ 
+   @media screen and (min-width: 767.9px) {
+     
+   };
+   @media screen and (min-width: 1200px) {
+     
+   };
 }
 
 .buttonMakeOrder.active:hover {
    background: linear-gradient(0deg, #77020290, black, #30000090);
+
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 
@@ -325,9 +594,18 @@ text-align: right;
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 100%;
+   max-width: 400px;
    height: 500px;
    z-index: 10;
+   /* margin: 0 20px; */
+
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .orderDoneMessage,
@@ -342,6 +620,14 @@ text-align: right;
  width: 500px;
  border-radius: 11px;
  box-shadow: 7px 7px 15px 2px #00000047;
+
+ 
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .orderDoneMessage h2,
@@ -351,4 +637,12 @@ text-align: right;
  justify-content: center;
  text-align: center;
  line-height: 75px;
+
+ 
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
 }

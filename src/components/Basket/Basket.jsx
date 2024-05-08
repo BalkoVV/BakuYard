@@ -176,12 +176,28 @@ export const Basket = () => {
               <ul className={styles.basketList}>
               {cartItems.map((item) => (
                 <li className={styles.basketListItem} key={item.id}>
-                  <span className={styles.basketListItemCategory}>
-                    {item.категорія}
-                  </span>
-                  <span className={styles.basketListItemName}>
-                    {item.назва}
-                  </span>
+                  
+                  
+                  <div className={styles.basketListItemInfo}>
+
+                    <span className={styles.basketListItemCategory}>
+                      {item.категорія}
+                    </span>
+                    
+                    <span className={styles.basketListItemName}>
+                      {item.назва}
+                    </span>
+
+                    <span className={styles.basketListItemIngred}>
+                      {item.інгредієнти}
+                    </span>
+
+                  </div>
+
+
+
+
+                  <div className={styles.basketListItemManagement}>
                   <span className={styles.basketListItemCounter}>
                     <button className={styles.basketListItemDecrease} onClick={() => decreaseQuantity(item.id)}>
                       -
@@ -193,9 +209,11 @@ export const Basket = () => {
                       +
                     </button>
                   </span>
+                  
                   <span className={styles.basketListItemPrice}>
                     {item.ціна}
                   </span>
+                  </div>
                 </li>
               ))}
             </ul>

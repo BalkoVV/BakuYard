@@ -5,19 +5,18 @@
 
 .menuPage {
    height: 100%;
-   padding-top: 30px;
    background-color: #020202;
    background-position: bottom;
- 
    background-repeat: repeat;
    background-color: #070707;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   
+   /* padding-top: 30px; */
    @media screen and (min-width: 767.9px) {
       
    };
    @media screen and (min-width: 1200px) {
       background-attachment: fixed;
+      /* padding-top: 30px; */
    };
 }
 
@@ -30,21 +29,21 @@
 
 .menuTitle {
    display: flex;
-   height: 55px;
+   height: 95px;
    justify-content: center;
    align-items: center;
-   font-size: 13px;
+   font-size: 15px;
    font-weight: 900;
    margin: 0;
-   color: #aaaaaa99;
+   color: #7c7c7c;
 
    @media screen and (min-width: 768px) {
-      height: 75px;
-      font-size: 13px;
+      height: 95px;
+      /* font-size: 13px; */
    };
    @media screen and (min-width: 1200px) {
       height: 95px;
-      font-size: 15px;
+      /* font-size: 15px; */
    };
 }
 
@@ -53,26 +52,28 @@
    grid-template-columns: repeat(2, 1fr);
    grid-column-gap: 15px;
    grid-row-gap: 15px;
-   padding: 0 20px;
-   margin-bottom: 50px;
-   margin-top: 30px;
+   padding-left: 20px;
+   padding-right: 20px;
+   /* padding: 0 20px; */
+   /* margin-bottom: 50px; */
+   /* margin-top: 30px; */
 
 
    @media screen and (min-width: 768px) {
-      display: grid;
+      /* display: grid; */
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 20px;
       grid-row-gap: 20px;
-      padding: 0 50px;
+      /* padding: 0 50px; */
    }; 
 
    @media screen and (min-width: 1200px) {
-      display: grid;
+      /* display: grid; */
       grid-template-columns: repeat(4, 1fr);
-      grid-column-gap: 40px;
-      grid-row-gap: 40px;
-      margin-top: 40px;
-      padding: 0 70px;
+      grid-column-gap: 25px;
+      grid-row-gap: 25px;
+      /* margin-top: 40px; */
+      /* padding: 0 70px; */
    }; 
 }
 
@@ -150,15 +151,16 @@ width: 40%;
  width: 55px;
  /* background-color: #fff; */
 
- @media screen and (min-width: 768px) {
-   
-   height: 125px;
-   width: 125px;
+ @media screen and (min-width: 767.9px) {
+   margin-left: 25px;
+   height: 85px;
+   width: 85px;
 }; 
 
 @media screen and (min-width: 1200px) {
-   height: 125px;
- width: 125px;
+   margin-left: 30px;
+   height: 105px;
+ width: 105px;
    
 }; 
 }
@@ -181,12 +183,12 @@ width: 60%;
    padding-left: 5px;
 
    @media screen and (min-width: 768px) {
-   
+      font-size: 13px;
     
    }; 
    
    @media screen and (min-width: 1200px) {
-    
+      font-size: 15px;
       
    }; 
 }
@@ -208,7 +210,7 @@ width: 60%;
  position: relative;
 }
 
-.toBasketButton {
+/* .toBasketButton {
    position: absolute;
    border: none;
    top: 78px;
@@ -221,7 +223,7 @@ width: 60%;
    border: none;
    border-radius: 11px;
    z-index: 9;
-   /* border: 1px solid #000000; */
+   
    transition: .1s;
 
    @media screen and (min-width: 768px) {
@@ -235,59 +237,137 @@ width: 60%;
       top: 124px;
       right: 68px; 
    }; 
+} */
+
+.toBasketButton {
+   position: absolute;
+   border: none;
+   top: 74px;
+   top: 72px;
+   right: 20px; 
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   /* height: 40px;
+   width: 110px; */
+   height: 60px;
+      width: 150px;
+   border: none;
+   z-index: 9;
+   border-radius: 11px;
+   background-color: #ffffff;
+   background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
+       
+   @media screen and (min-width: 767.9px) {
+      height: 60px;
+      width: 150px;
+      /* top: 124px; */
+      /* right: 68px;  */
+   };
+
+   @media screen and (min-width: 1200px) {
+      height: 60px;
+      width: 150px;
+      /* top: 124px; */
+      /* right: 68px;  */
+   };
 }
 .toBasketLink {
    display: flex; 
    align-items: center;
    justify-content: start;
+   /* height: 40px;
+   width: 110px; */
    height: 60px;
    width: 150px;
    border-radius: 11px;
-   background-color: #000000;
-   background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+
+   @media screen and (min-width: 767.9px) {
+      height: 60px;
+      width: 150px;
+     
+    };
+    @media screen and (min-width: 1200px) {
+      height: 60px;
+      width: 150px;
+     
+    };
 }
 
 .toBasketDescription {
    margin: 0;
    padding: 0;
-   font-size: 14px;
-   padding-left: 15px;
+   font-size: 11px;
+   padding-left: 5px;
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 14px;
+     
+    };
+    @media screen and (min-width: 1200px) {
+      
+      font-size: 14px;
+    };
 }
 
 .toBasketButton:hover .toBasketDescription {
-   /* border: 1px solid #5900009f; */
-   color: #883000;
-   transition: .1s;
+   color: #5e2000;
   }
 
-.basketIcon {
-   position: absolute;
-   right: 13px;
-   top: 12px;
-   fill: #3a3a3a;
-  }
-  
-  .basketIcon.nonEmpty {
-     fill: #590000;
-     fill: #883000;
-   }
-
-
-   .basketBadge {
+     .basketIcon {
       position: absolute;
-      right: 11px;
-      top: 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 15px;
-      width: 15px;
-      border-radius: 50%;
-      color: #8c8c8c;
-      background-color: #000000;
-      font-size: 15px;
-      z-index: 2;
+      right: 5px;
+      top: 4px;
+      fill: #3a3a3a;
+
+      @media screen and (min-width: 767.9px) {
+         /* font-size: 14px; */
+         right: 13px;
+         top: 12px;
+       };
+       @media screen and (min-width: 1200px) {
+         right: 13px;
+      top: 12px;
+         /* font-size: 14px; */
+       };
      }
+     
+     .basketIcon.nonEmpty {
+        fill: #5e2000;
+      }
+
+      .basketBadge {
+         position: absolute;
+         right: 4px;
+         top: 9px;
+         display: flex;
+         justify-content: start;
+         align-items: center;
+        
+         height: 12px;
+         width: 12px;
+         border-radius: 50%;
+         color: #dbdbdb;
+         /* color: #5e2000; */
+         background-color: #6d0101;
+       
+         font-size: 17px;
+         z-index: 2;
+         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.808);
+
+         @media screen and (min-width: 767.9px) {
+           
+            height: 15px;
+         width: 15px;
+            right: 11px;
+            top: 16px;
+          };
+          @media screen and (min-width: 1200px) {
+            right: 11px;
+         top: 16px;
+           
+          };
+        }
 
 
 

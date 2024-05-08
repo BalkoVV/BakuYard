@@ -1,35 +1,6 @@
 /* index.css */
 @import-normalize; /* bring in normalize.css styles */
 
-:root {
-  /* colors */
-    --white-color: #ffffff6a;
-    --mobile-color: #8702028a;
-    --tablet-color: #0080006f;
-    --desktop-color: #02318790; 
-    --background-color: #111111;
-    --main-text-color: #a5a17d;
-    --non-active-color: #5c5a46;
-    --active-link-color: goldenrod;
-    --secondary-text-color: #073;
-    --hover-text-color: red;
-    --accent-text-color: #944;
-    --master-container-bg-color: #2d2c2c63;
-    --mobile-background-color: #14090927;
-    --tablet-background-color: #0077344e;
-    --desktop-background-color: #00669952;
-/* fonts */
-    --primary-font: 'MainFont';
-    --secondary-font: 'MainFont';
-/* breakpoints */
-    --mobile: 480px;
-    --mobile-max: 767.9px;
-    --tablet: 768px;
-    --tablet-max: 1199.9px;
-    --desktop: 1200px;
-}
-
-
 * {
   list-style-type: none;
   text-decoration: none;
