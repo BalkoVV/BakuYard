@@ -95,7 +95,7 @@
    
     justify-content: center;
    display: flex;
-   height: 300px;
+   height: 380px;
    justify-content: center;
    align-items: center;
     background-color: #070707;
@@ -144,7 +144,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: 100px;
     width: 100%;
     border-radius: 11px;
     background-image: url('images/pngeg.png'); 
@@ -238,7 +238,7 @@
 
   .featuresCenterBox {
     display: flex;
-    height: 350px;
+    height: 310px;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
@@ -248,7 +248,7 @@
     /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
     /* background-color: #0000009a; */
     /* background-image: url("https://www.transparenttextures.com/theme/images/transparent.png"); */
-    box-shadow: 0 0 25px 5px #00000068;
+    box-shadow: 0 0 25px 5px #0000008b;
 
     @media screen and (min-width: 768px) {
       height: 400px;
@@ -279,7 +279,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 130px;
     width: 100%;
     padding: 30px auto;
     border-radius: 11px;
@@ -289,7 +289,7 @@
     background-repeat: repeat;
     border: 1px solid rgb(17, 17, 17);
     
-    box-shadow: inset 0px 0px 111px 17px #000000;
+    box-shadow: inset 0px 0px 111px 17px #000000db;
 
     /* @media screen and (min-width: 768px) {
      
@@ -411,7 +411,7 @@
     height: 80px;
     border-radius: 11px;
     
-    box-shadow:  5px 5px 10px 7px #00000034;
+    /* box-shadow:  5px 5px 10px 7px #00000034; */
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
     @media screen and (min-width: 768px) {
