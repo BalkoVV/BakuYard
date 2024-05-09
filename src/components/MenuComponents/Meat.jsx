@@ -46,8 +46,9 @@ export const Meat = () => {
 
   return (
     <div className={styles.dishPage}>
+      <ToMenuButton/>
       <div className={styles.dishPageContainer}>
-       <h1 className={styles.dishTitle}>Барбекю</h1> 
+       <h1 className={styles.dishTitle}>М'ясо</h1> 
 
        <div className={styles.toBasketButton}>
                 <NavLink to="/menu/basket" className={styles.toBasketLink}>
@@ -57,7 +58,7 @@ export const Meat = () => {
                 </NavLink>
               </div>
           
-          <ToMenuButton/>
+          
          
       
         <div className={styles.dishPageBox}>

@@ -157,8 +157,9 @@ export const Basket = () => {
   
   return (
     <div className={styles.basket}>
-      <ToMenuButton/>
+      
       <div className={styles.basketContainer}>
+      <ToMenuButton/>
         <h1 className={styles.basketTitle}>Замовлення</h1>
         
         
