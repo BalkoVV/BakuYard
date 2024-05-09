@@ -2,7 +2,7 @@
 
 
 import React, { useEffect, useState, useContext } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import ToMenuButton from "components/ToMenuButton/ToMenuButton";
@@ -16,7 +16,7 @@ import sideDishData from "services/dataComboSets/sideDish.json";
 // import pizzaMenu2 from 'images/pizzaMenu2.png';
 // import pizzaMenu3 from 'images/pizzaMenu3.png';
 
-import { ReactComponent as BasketIcon } from 'images/delivery.svg';
+// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const SideDish = () => {
@@ -56,13 +56,13 @@ export const SideDish = () => {
 
         <h1 className={styles.dishTitle}>Гарнір</h1> 
 
-        <div className={styles.toBasketButton}>
+        {/* <div className={styles.toBasketButton}>
                 <NavLink to="/menu/basket" className={styles.toBasketLink}>
                   <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
                   {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
                   <h3 className={styles.toBasketDescription}>Доставка</h3>
                 </NavLink>
-              </div>
+              </div> */}
 
         {/* <ToMenuButton /> */}
     

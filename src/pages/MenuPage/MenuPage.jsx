@@ -49,7 +49,7 @@ import beerCardImage from 'images/beerCard.svg';
 import Salads from "components/MenuComponents/Salads";
 import saladCardImage from 'images/saladCard.svg';
 
-import Banquete from "components/MenuComponents/AddButton/Banquete";
+import Banquete from "components/MenuComponents/Banquete";
 import banqueteCardImage from 'images/banqueteCard.svg';
 
 import Fish from "components/MenuComponents/Fish";

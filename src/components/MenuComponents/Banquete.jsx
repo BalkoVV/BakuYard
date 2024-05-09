@@ -2,7 +2,7 @@
 
 
 import React, { useEffect, useState, useContext } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 // import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import ToMenuButton from "components/ToMenuButton/ToMenuButton";
@@ -58,18 +58,19 @@ const { cartItems } = useContext(CartContext);
 
   return (
     <div className={styles.dishPage}>
-      <div className={styles.dishPageContainer}>
-
+       <ToMenuButton />
         <h1 className={styles.dishTitle}>Банкетне меню</h1> 
 
-        <span className={styles.toBasketLinkBox}>
+        {/* <span className={styles.toBasketLinkBox}>
           <NavLink to="/menu/basket" className={styles.toBasketLink}>
             <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
             {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
           </NavLink>
-        </span>
+        </span> */}
+      <div className={styles.dishPageContainer}>
+     
 
-        <ToMenuButton />
+        
       
 
         <div>

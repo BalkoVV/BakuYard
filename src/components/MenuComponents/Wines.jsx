@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useContext } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 // import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
 
-import { ReactComponent as BasketIcon } from 'images/delivery.svg';
+// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 
 import menuChampagneData from "services/dataWines/champagne.json";
@@ -89,13 +89,13 @@ export const Wines = () => {
      <div className={styles.dishPageContainer}>
        <h1 className={styles.dishTitle}>Wines</h1>  
 
-       <div className={styles.toBasketButton}>
+       {/* <div className={styles.toBasketButton}>
                 <NavLink to="/menu/basket" className={styles.toBasketLink}>
                   <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
                   {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
                   <h3 className={styles.toBasketDescription}>Доставка</h3>
                 </NavLink>
-              </div>
+              </div> */}
       
       {/* <ToMenuButton/> */}
 
