@@ -2,10 +2,11 @@
 
 
 import React, { useEffect, useState, useContext } from "react";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
-import ToMenuButton from "components/ToMenuButton/ToMenuButton";
+// import ToMenuButton from "components/ToMenuButton/ToMenuButton";
+import { ReactComponent as ToMenuIcon } from 'images/left.svg';
 
 import CartContext from "components/CartProvider/CartProvider";
 
@@ -57,8 +58,13 @@ export const Lunch = () => {
     <div className={styles.dishPage}>
          <div className={styles.discriptionBox}>
           <h1 className={styles.dishTitle}>Бізнес ланчі</h1> 
-          <ToMenuButton className={styles.buttonToMenu}/>
+          <div className={styles.toMenuButton}>
+        <NavLink to="/menu" className={styles.toMenuLink}>
+          <ToMenuIcon className={styles.toMenuIcon}/>
+          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+        </NavLink>
       </div>
+            </div>
       <div className={styles.dishPageContainer}>
 
       <div className={styles.dishPageBox}>

@@ -1,15 +1,15 @@
 // Beer.jsx
 
 import React, { useEffect, useState, useContext } from "react";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
 
-// import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
+import { ReactComponent as ToMenuIcon } from 'images/left.svg';
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 
-import ToMenuButton from "components/ToMenuButton/ToMenuButton";
+// import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 
 
 import menuData from "services/dataBeer/beer.json";
@@ -54,8 +54,12 @@ export const Beer = () => {
     <div className={styles.dishPage}>
       <div className={styles.discriptionBox}>
             <h1 className={styles.dishTitle}>Пиво</h1> 
-            <ToMenuButton className={styles.buttonToMenu}/>
-          </div>
+            <div className={styles.toMenuButton}>
+        <NavLink to="/menu" className={styles.toMenuLink}>
+          <ToMenuIcon className={styles.toMenuIcon}/>
+          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+        </NavLink>
+      </div>          </div>
       
       <div className={styles.dishPageContainer}>
       

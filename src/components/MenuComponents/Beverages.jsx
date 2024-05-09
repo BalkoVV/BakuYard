@@ -1,11 +1,12 @@
 import React, { useEffect, useState, useContext } from "react";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
 
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
-import ToMenuButton from "components/ToMenuButton/ToMenuButton";
+// import ToMenuButton from "components/ToMenuButton/ToMenuButton";
+import { ReactComponent as ToMenuIcon } from 'images/left.svg';
 
 
 import menuBeveragesData from "services/dataCocktails/beverages.json";
@@ -54,7 +55,13 @@ export const Beverages = () => {
    
         <div className={styles.discriptionBox}>
           <h1 className={styles.dishTitle}>Безалкогольні напої</h1> 
-          <ToMenuButton className={styles.buttonToMenu}/>
+
+          <div className={styles.toMenuButton}>
+        <NavLink to="/menu" className={styles.toMenuLink}>
+          <ToMenuIcon className={styles.toMenuIcon}/>
+          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+        </NavLink>
+      </div>
         </div>
 
      <div className={styles.dishPageContainer}>
