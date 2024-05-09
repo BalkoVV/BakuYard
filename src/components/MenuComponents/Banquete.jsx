@@ -1,13 +1,13 @@
 // Banquete.jsx
 
 
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 // import { NavLink } from "react-router-dom";
 
 // import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 
-import CartContext from "components/CartProvider/CartProvider";
+// import CartContext from "components/CartProvider/CartProvider";
 
 import banqueteHotData from "services/dataBanquete/banqueteHot.json";
 import banqueteColdData from "services/dataBanquete/banqueteCold.json"
@@ -16,12 +16,12 @@ import banqueteColdData from "services/dataBanquete/banqueteCold.json"
 // import pizzaMenu2 from 'images/pizzaMenu2.png';
 // import pizzaMenu3 from 'images/pizzaMenu3.png';
 
-import { ReactComponent as BasketIcon } from 'images/delivery.svg';
+// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const Banquete = () => {
 //   const { addToCart, cartItems } = useContext(CartContext);
-const { cartItems } = useContext(CartContext);
+// const { cartItems } = useContext(CartContext);
 
   const [banqueteHotItems, setBanqueteHotItems] = useState([]);
   const [banqueteColdItems, setBanqueteColdItems] = useState([]);

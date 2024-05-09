@@ -32,7 +32,7 @@ export const SideDish = () => {
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '.9'; 
-      }, 30 * index); 
+      }, 10 * index); 
     });
   }, []);
 

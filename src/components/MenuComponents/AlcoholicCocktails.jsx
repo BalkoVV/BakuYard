@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 // import { NavLink } from "react-router-dom";
 
 // import AddButton from 'components/MenuComponents/AddButton/AddButton';
-import CartContext from "components/CartProvider/CartProvider";
+// import CartContext from "components/CartProvider/CartProvider";
 
-import { ReactComponent as BasketIcon } from 'images/delivery.svg';
+// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 
 
@@ -14,7 +14,7 @@ import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const AlcoholicCocktails = () => {
   // const { addToCart, cartItems } = useContext(CartContext);
-  const { cartItems } = useContext(CartContext);
+  // const { cartItems } = useContext(CartContext);
 
 
   const [alcoholicCocktailsItems, setAlcoholicCocktailsItems] = useState([]);

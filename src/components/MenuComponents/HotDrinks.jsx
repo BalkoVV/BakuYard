@@ -1,22 +1,22 @@
 // HotDrinks.jsx
 
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 // import { NavLink } from "react-router-dom";
 
 // import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 
-import CartContext from "components/CartProvider/CartProvider";
+// import CartContext from "components/CartProvider/CartProvider";
 
 import coffeeData from "services/dataHotDrinks/coffee.json";
 import teaData from "services/dataHotDrinks/tea.json";
 
-import { ReactComponent as BasketIcon } from 'images/delivery.svg';
+// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const HotDrinks = () => {
   // const { addToCart, cartItems } = useContext(CartContext);
-  const { cartItems } = useContext(CartContext);
+  // const { cartItems } = useContext(CartContext);
 
   const [menuItems, setMenuItems] = useState([]);
 

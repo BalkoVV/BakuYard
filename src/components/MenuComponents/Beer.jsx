@@ -7,7 +7,7 @@ import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
 
 // import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
-import { ReactComponent as BasketIcon } from 'images/delivery.svg';
+// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 
 import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 
