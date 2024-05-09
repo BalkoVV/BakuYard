@@ -1,20 +1,16 @@
 .toMenuButton {
  position: absolute;
- top: 20px;
- right: 20px;
+ top: 21px;
+ right: 7px;
  display: flex;
  align-items: center;
- justify-content: end;
- /* height: 40px;
- width: 100px; */
+ justify-content: center;
  height: 60px;
- width: 150px;
+ width: 60px;
  border: none;
- /* z-index: 100000000000000000000; */
-  border-radius: 11px;
+ border-radius: 11px;
  background-color: #000000;
- /* background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png); */
- background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+
 
 
  @media screen and (min-width: 767.9px) {
@@ -30,15 +26,14 @@
 }
 
 .toMenuLink {
+   position: relative;
    display: flex; 
-   align-items: center;
-   justify-content: space-evenly;
-   /* height: 40px;
-   width: 100px; */
+   align-items: flex-end;
+   margin: 0;
+   padding: 0;
    height: 60px;
-   width: 150px;
-
-
+   width: 60px;
+   border-radius: 11px;
 
    @media screen and (min-width: 767.9px) {
       height: 60px;
@@ -51,9 +46,13 @@
 }
 
 .toMenuDescription {
+   display: flex;
+   justify-content: center;
+   width: 100%;
    margin: 0;
-   padding: 0;
-   font-size: 10px;
+   padding: 0 0 8px 0;
+   font-size: 9px;
+
 
    @media screen and (min-width: 767.9px) {
       font-size: 14px;
@@ -65,4 +64,16 @@
 
 .toMenuButton:hover .toMenuDescription {
  color: #6b4d00;
+}
+
+.toMenuIcon {
+   display: block;
+   position: absolute;
+   /* background-color: #fff; */
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   right: 9px;
+   top: 2px;
+   fill: #3a3a3a;
 }

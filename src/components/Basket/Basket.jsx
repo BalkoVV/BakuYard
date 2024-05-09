@@ -22,7 +22,7 @@ export const Basket = () => {
   const [basketEmpty, setBasketEmpty] = useState(false); 
 
   useEffect(() => {
-    const contentElements = document.querySelectorAll(`.${styles.fades}`);
+    const contentElements = document.querySelectorAll(`.${styles.fadeIn}`);
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '1'; 
