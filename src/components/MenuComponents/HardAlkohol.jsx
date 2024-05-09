@@ -87,6 +87,7 @@ export const HardAlkohol = () => {
 
   return (
     <div className={styles.dishPage}>
+     <ToMenuButton/>
      <div className={styles.dishPageContainer}>
        <h1 className={styles.dishTitle}>Міцний алкоголь</h1>  
 
@@ -98,7 +99,7 @@ export const HardAlkohol = () => {
                 </NavLink>
               </div>
       
-      <ToMenuButton/>
+      {/* <ToMenuButton/> */}
 
       <div className={styles.dishPageBox}>
 

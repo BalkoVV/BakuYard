@@ -1,7 +1,7 @@
 .toMenuButton {
- position: absolute;
- top: 20px;
- left: 20px;
+ /* position: absolute; */
+ /* top: 20px; */
+ /* left: 20px; */
  display: flex;
  align-items: center;
  justify-content: end;
@@ -10,10 +10,12 @@
  height: 60px;
  width: 150px;
  border: none;
- z-index: 100000000000000000000;
+ /* z-index: 100000000000000000000; */
   border-radius: 11px;
- background-color: #ffffff;
- background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
+ background-color: #000000;
+ /* background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png); */
+ background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+
 
  @media screen and (min-width: 767.9px) {
    /* height: 60px; */

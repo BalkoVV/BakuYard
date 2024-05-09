@@ -85,6 +85,7 @@ export const Wines = () => {
 
   return (
     <div className={styles.dishPage}>
+     <ToMenuButton/>
      <div className={styles.dishPageContainer}>
        <h1 className={styles.dishTitle}>Wines</h1>  
 
@@ -96,7 +97,7 @@ export const Wines = () => {
                 </NavLink>
               </div>
       
-      <ToMenuButton/>
+      {/* <ToMenuButton/> */}
 
       <div className={styles.dishPageBox}>
 

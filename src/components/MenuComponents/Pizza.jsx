@@ -51,6 +51,7 @@ export const Pizza = () => {
 
   return (
     <div className={styles.dishPage}>
+      <ToMenuButton/>
       <div className={styles.dishPageContainer}>
 
         <h1 className={styles.dishTitle}>З Печі</h1> 
@@ -63,7 +64,7 @@ export const Pizza = () => {
                 </NavLink>
               </div>
 
-        <ToMenuButton />
+        {/* <ToMenuButton /> */}
         {/* <span className={styles.toMenuLinkBox}>
           <NavLink to="/menu" className={styles.toMenuLink}>
             <ToMenuIcon/>

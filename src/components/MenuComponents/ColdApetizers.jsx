@@ -50,6 +50,7 @@ export const ColdApetizers = () => {
 
   return (
     <div className={styles.dishPage}>
+     <ToMenuButton/>
      <div className={styles.dishPageContainer}>
        <h1 className={styles.dishTitle}>Холодні закуски</h1>  
 
@@ -61,7 +62,7 @@ export const ColdApetizers = () => {
                 </NavLink>
               </div>
       
-      <ToMenuButton/>
+      {/* <ToMenuButton/> */}
 
       <div className={styles.dishPageBox}>
       

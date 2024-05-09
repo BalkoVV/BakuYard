@@ -49,6 +49,7 @@ export const Desserts = () => {
 
   return (
     <div className={styles.dishPage}>
+     <ToMenuButton/>
      <div className={styles.dishPageContainer}>
        <h1 className={styles.dishTitle}>Десерти</h1>  
 
@@ -60,7 +61,7 @@ export const Desserts = () => {
                 </NavLink>
               </div>
       
-      <ToMenuButton/>
+      {/* <ToMenuButton/> */}
 
       <div className={styles.dishPageBox}>
       

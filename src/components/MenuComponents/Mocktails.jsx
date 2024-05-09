@@ -49,6 +49,7 @@ export const Mocktails = () => {
 
   return (
     <div className={styles.dishPage}>
+     <ToMenuButton/>
      <div className={styles.dishPageContainer}>
        <h1 className={styles.dishTitle}>Безалкогольні коктейлі</h1>  
 
@@ -60,7 +61,7 @@ export const Mocktails = () => {
                 </NavLink>
               </div>
       
-      <ToMenuButton/>
+      {/* <ToMenuButton/> */}
 
       <div className={styles.dishPageBox}>
       

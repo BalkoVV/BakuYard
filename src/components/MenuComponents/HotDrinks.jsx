@@ -49,6 +49,7 @@ export const HotDrinks = () => {
 
   return (
     <div className={styles.dishPage}>
+      <ToMenuButton/>
       <div className={styles.dishPageContainer}>
 
         <h1 className={styles.dishTitle}>Гарячі напої</h1> 
@@ -61,7 +62,7 @@ export const HotDrinks = () => {
                 </NavLink>
               </div>
 
-        <ToMenuButton />
+        {/* <ToMenuButton /> */}
       
 
         <div>

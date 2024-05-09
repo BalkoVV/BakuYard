@@ -51,6 +51,7 @@ export const MainDish = () => {
 
   return (
     <div className={styles.dishPage}>
+      <ToMenuButton/>
       <div className={styles.dishPageContainer}>
 
         <h1 className={styles.dishTitle}>Основні страви</h1> 
@@ -63,7 +64,7 @@ export const MainDish = () => {
                 </NavLink>
               </div>
 
-        <ToMenuButton />
+        {/* <ToMenuButton /> */}
     
 
         <div>

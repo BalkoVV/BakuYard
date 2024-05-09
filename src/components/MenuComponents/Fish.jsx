@@ -50,6 +50,7 @@ export const Fish = () => {
 
   return (
     <div className={styles.dishPage}>
+      <ToMenuButton/>
       <div className={styles.dishPageContainer}>
        <h1 className={styles.dishTitle}>Риба</h1> 
 
@@ -67,7 +68,7 @@ export const Fish = () => {
                 </NavLink>
               </div>
           
-          <ToMenuButton/>
+          {/* <ToMenuButton/> */}
          
       
         <div className={styles.dishPageBox}>
