@@ -1,7 +1,7 @@
-.fadeIn {
+.fadeOut {
    opacity: 0; 
-   transition: opacity 1s ease-out; 
-}
+   /* transition: opacity 7s ease-out; */
+ }
 
 .menuPage {
    height: 100%;
@@ -91,7 +91,7 @@
 }
 
 .basketIcon {
-fill: #1f1f1f;
+fill: #c81818;
 }
 
 /* .basketIcon.nonEmpty {
@@ -242,21 +242,19 @@ width: 60%;
 .toBasketButton {
    position: absolute;
    border: none;
-   top: 74px;
    top: 92px;
    right: 20px; 
    display: flex;
    align-items: center;
-   justify-content: end;
+   justify-content: center;
    /* height: 40px;
    width: 110px; */
    height: 60px;
-      width: 150px;
+   width: 60px;
    border: none;
    z-index: 9;
    border-radius: 11px;
    background-color: #000000;
-   /* background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png); */
        
    @media screen and (min-width: 767.9px) {
       height: 60px;
@@ -274,12 +272,11 @@ width: 60%;
 }
 .toBasketLink {
    display: flex; 
-   align-items: center;
-   justify-content: start;
-   /* height: 40px;
-   width: 110px; */
+   align-items: flex-end;
+  margin: 0;
+  padding: 0;
    height: 60px;
-   width: 150px;
+   width: 60px;
    border-radius: 11px;
 
    @media screen and (min-width: 767.9px) {
@@ -295,10 +292,15 @@ width: 60%;
 }
 
 .toBasketDescription {
+   display: flex;
+   justify-content: center;
+   
+   /* background-color: #fff; */
+   width: 100%;
    margin: 0;
-   padding: 0;
-   font-size: 11px;
-   padding-left: 5px;
+   padding: 0 0 8px 0;
+   font-size: 9px;
+   /* padding-bottom: 5px; */
 
    @media screen and (min-width: 767.9px) {
       font-size: 14px;
@@ -315,9 +317,13 @@ width: 60%;
   }
 
      .basketIcon {
+      display: block;
+      /* background-color: #fff; */
+      justify-content: center;
+      align-items: center;
       position: absolute;
-      right: 5px;
-      top: 4px;
+      right: 14px;
+      top: 8px;
       fill: #3a3a3a;
 
       @media screen and (min-width: 767.9px) {
@@ -333,38 +339,38 @@ width: 60%;
      }
      
      .basketIcon.nonEmpty {
-        fill: #5e2000;
+        fill: #6e2000;
       }
 
       .basketBadge {
          position: absolute;
-         right: 4px;
-         top: 9px;
+         right: 17px;
+         top: 16px;
          display: flex;
          justify-content: start;
          align-items: center;
         
-         height: 12px;
-         width: 12px;
+         height: 10px;
+         width: 10px;
          border-radius: 50%;
          color: #dbdbdb;
          /* color: #5e2000; */
-         background-color: #6d0101;
+         background-color: #5e1f0000;
        
          font-size: 17px;
          z-index: 2;
-         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.808);
+         /* box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.808); */
 
          @media screen and (min-width: 767.9px) {
            
-            height: 15px;
-         width: 15px;
+            height: 13px;
+         width: 13px;
             right: 11px;
             top: 16px;
           };
           @media screen and (min-width: 1200px) {
-            right: 11px;
-         top: 16px;
+            right: 14px;
+         top: 18px;
            
           };
         }

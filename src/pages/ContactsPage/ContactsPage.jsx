@@ -18,14 +18,14 @@ export const ContactsPage = () => {
       contentElements.forEach((element, index) => {
         setTimeout(() => {
           element.style.opacity = '1'; 
-        }, 1 * index); 
+        }, .5 * index); 
       });
     }, []); 
 
  return (
-   <div className={styles.contactsPage}>
+   <div className={`${styles.contactsPage} ${styles.fadeOut}`}>
 
-      <div className={`${styles.mapBox} ${styles.fadeOut}`}>
+      <div className={styles.mapBox}>
         <InMapButton className={styles.inMap}/>
        
       </div>
