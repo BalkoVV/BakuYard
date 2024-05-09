@@ -27,7 +27,9 @@ export const Sauces = () => {
     });
   }, []);
   
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+  }, []);
  
 
   useEffect(() => {

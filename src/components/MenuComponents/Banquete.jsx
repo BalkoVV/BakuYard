@@ -34,11 +34,15 @@ export const Banquete = () => {
     const contentElements = document.querySelectorAll(`.${styles.fades}`);
     contentElements.forEach((element, index) => {
       setTimeout(() => {
-        element.style.opacity = '.9'; 
+        element.style.opacity = '1'; 
       }, 30 * index); 
     });
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+  }, []);
+  
   useEffect(() => {
     setBanqueteHotItems(banqueteHotData);
   }, []);

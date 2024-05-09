@@ -36,6 +36,10 @@ export const SideDish = () => {
     });
   }, []);
 
+   useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+  }, []);
+
   useEffect(() => {
     setSideDishItems(sideDishData);
   }, []);

@@ -23,12 +23,14 @@ export const Fish = () => {
   const [fishItems, setFishItems] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+  }, []);
+  
+  useEffect(() => {
     setFishItems(fishData);
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0); 
-  }, []);
+  
 
   useEffect(() => {
     const contentElements = document.querySelectorAll(`.${styles.fades}`);

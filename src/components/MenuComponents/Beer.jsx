@@ -22,20 +22,22 @@ export const Beer = () => {
   const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
-    setMenuItems(menuData);
-  }, []);
-
-  useEffect(() => {
-    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
-  }, []);
-
-  useEffect(() => {
     const contentElements = document.querySelectorAll(`.${styles.fades}`);
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '.9'; 
       }, 50 * index); 
     });
+  }, []);
+
+  
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+  }, []);
+
+  useEffect(() => {
+    setMenuItems(menuData);
   }, []);
 
   const updateButtonState = (itemId) => {

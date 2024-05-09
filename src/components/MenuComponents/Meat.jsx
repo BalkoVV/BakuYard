@@ -30,9 +30,13 @@ export const Meat = () => {
     const contentElements = document.querySelectorAll(`.${styles.fades}`);
     contentElements.forEach((element, index) => {
       setTimeout(() => {
-        element.style.opacity = '.9'; 
+        element.style.opacity = '1'; 
       }, 10 * index); 
     });
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
   }, []);
 
   const updateButtonState = (itemId) => {

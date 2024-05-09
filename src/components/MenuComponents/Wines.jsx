@@ -23,12 +23,18 @@ export const Wines = () => {
   const [georgianWineItems, setGeorgianWineItems] = useState([]);
 
   useEffect(() => {
+
+    
     const contentElements = document.querySelectorAll(`.${styles.fades}`);
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '.9'; 
       }, 10 * index); 
     });
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
   }, []);
   
   useEffect(() => {
