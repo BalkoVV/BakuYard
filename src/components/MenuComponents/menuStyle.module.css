@@ -7,6 +7,10 @@
    /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
 }
 
+.rrr {
+position: relative;
+}
+
 .dishPageContainer {
  display: grid;
  justify-content: center;
@@ -44,8 +48,8 @@
 
 box-shadow: 5px 5px 8px 3px #0000006b;
 
-background-color: #000000d6;
-background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+background-color: #000000;
+/* background-image: url("https://www.transparenttextures.com/theme/images/transparent.png"); */
 
 @media screen and (min-width: 768px) {
    
@@ -276,7 +280,7 @@ box-shadow: 11px 11px 21px 5px #0000003e;
      .toBasketButton {
       position: absolute;
       border: none;
-      top: 0px;
+      top: 20px;
       right: 20px; 
       display: flex;
       align-items: center;

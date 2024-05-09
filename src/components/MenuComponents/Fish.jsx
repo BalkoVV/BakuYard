@@ -50,16 +50,14 @@ export const Fish = () => {
 
   return (
     <div className={styles.dishPage}>
-      <ToMenuButton/>
+     
       <div className={styles.dishPageContainer}>
-       <h1 className={styles.dishTitle}>Риба</h1> 
+       
 
-          {/* <span className={styles.toBasketLinkBox}>
-            <NavLink to="/menu/basket" className={styles.toBasketLink}>
-              <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
-              {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
-            </NavLink>
-          </span> */}
+         
+         <div className={styles.rrr}>
+         <ToMenuButton/>
+          <h1 className={styles.dishTitle}>Риба</h1> 
            <div className={styles.toBasketButton}>
                 <NavLink to="/menu/basket" className={styles.toBasketLink}>
                   <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
@@ -67,8 +65,9 @@ export const Fish = () => {
                   <h3 className={styles.toBasketDescription}>Доставка</h3>
                 </NavLink>
               </div>
+         </div>
           
-          {/* <ToMenuButton/> */}
+        
          
       
         <div className={styles.dishPageBox}>
