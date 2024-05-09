@@ -13,8 +13,8 @@ import { CartContext } from "components/CartProvider/CartProvider";
 
 import menuData from "services/dataSalads/salads.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
-import saladMenu1 from 'images/saladMenu1.png';
-import saladMenu2 from 'images/saladMenu2.png';
+// import saladMenu1 from 'images/saladMenu1.png';
+// import saladMenu2 from 'images/saladMenu2.png';
 // import saladMenu3 from 'images/saladMenu3.png';
 
 export const Salads = () => {
@@ -49,24 +49,19 @@ export const Salads = () => {
 
   return (
     <div className={styles.dishPage}>
-      <ToMenuButton/>
+      <div className={styles.discriptionBox}>
+          <h1 className={styles.dishTitle}>Салати</h1> 
+          <ToMenuButton className={styles.buttonToMenu}/>
+      </div>
       <div className={styles.dishPageContainer}>
-       <h1 className={styles.dishTitle}>Салати</h1> 
+       
 
-       {/* <div className={styles.toBasketButton}>
-                <NavLink to="/menu/basket" className={styles.toBasketLink}>
-                  <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
-                  {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
-                  <h3 className={styles.toBasketDescription}>Доставка</h3>
-                </NavLink>
-              </div> */}
-          
-          {/* <ToMenuButton/> */}
+      
          
       
         <div className={styles.dishPageBox}>
 
-        <img
+        {/* <img
          src={saladMenu1}
         alt="saladMenu1"
         style={{
@@ -77,8 +72,8 @@ export const Salads = () => {
           height: '650px',
           opacity: '1',
         }}
-      />
-       <img
+      /> */}
+       {/* <img
          src={saladMenu2}
         alt="saladMenu2"
         style={{
@@ -89,7 +84,7 @@ export const Salads = () => {
           height: '600px',
           opacity: '0.9',
         }}
-      />
+      /> */}
        {/* <img
          src={saladMenu3}
         alt="First Image"

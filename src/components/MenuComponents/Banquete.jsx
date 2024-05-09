@@ -42,7 +42,7 @@ export const Banquete = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
   }, []);
-  
+
   useEffect(() => {
     setBanqueteHotItems(banqueteHotData);
   }, []);
@@ -62,22 +62,16 @@ export const Banquete = () => {
 
   return (
     <div className={styles.dishPage}>
-       <ToMenuButton />
-        <h1 className={styles.dishTitle}>Банкетне меню</h1> 
-
-        {/* <span className={styles.toBasketLinkBox}>
-          <NavLink to="/menu/basket" className={styles.toBasketLink}>
-            <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
-            {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
-          </NavLink>
-        </span> */}
-      <div className={styles.dishPageContainer}>
-     
-
-        
       
 
-        <div>
+          <div className={styles.discriptionBox}>
+            <h1 className={styles.dishTitle}>Банкетне меню</h1> 
+            <ToMenuButton className={styles.buttonToMenu}/>
+          </div>
+        
+      <div className={styles.dishPageContainer}>
+
+      <div className={styles.dishPageBox}>
 
         {/* <img
          src={pizzaMenu1}

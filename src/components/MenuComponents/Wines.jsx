@@ -91,19 +91,12 @@ export const Wines = () => {
 
   return (
     <div className={styles.dishPage}>
-     <ToMenuButton/>
+      <div className={styles.discriptionBox}>
+          <h1 className={styles.dishTitle}>Вино</h1> 
+          <ToMenuButton className={styles.buttonToMenu}/>
+      </div>
      <div className={styles.dishPageContainer}>
-       <h1 className={styles.dishTitle}>Wines</h1>  
 
-       {/* <div className={styles.toBasketButton}>
-                <NavLink to="/menu/basket" className={styles.toBasketLink}>
-                  <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
-                  {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
-                  <h3 className={styles.toBasketDescription}>Доставка</h3>
-                </NavLink>
-              </div> */}
-      
-      {/* <ToMenuButton/> */}
 
       <div className={styles.dishPageBox}>
 

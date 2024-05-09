@@ -12,8 +12,8 @@ import CartContext from "components/CartProvider/CartProvider";
 import menuData from "services/dataBakedDishes/pizza.json";
 import khachapuriData from "services/dataBakedDishes/khachapuri.json"
 
-import pizzaMenu1 from 'images/pizzaMenu1.png';
-import pizzaMenu2 from 'images/pizzaMenu2.png';
+// import pizzaMenu1 from 'images/pizzaMenu1.png';
+// import pizzaMenu2 from 'images/pizzaMenu2.png';
 // import pizzaMenu3 from 'images/pizzaMenu3.png';
 
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
@@ -55,29 +55,20 @@ export const Pizza = () => {
 
   return (
     <div className={styles.dishPage}>
-      <ToMenuButton/>
+
+      <div className={styles.discriptionBox}>
+          <h1 className={styles.dishTitle}>З печі</h1> 
+          <ToMenuButton className={styles.buttonToMenu}/>
+      </div>
+
       <div className={styles.dishPageContainer}>
 
-        <h1 className={styles.dishTitle}>З Печі</h1> 
-{/* 
-        <div className={styles.toBasketButton}>
-                <NavLink to="/menu/basket" className={styles.toBasketLink}>
-                  <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
-                  {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
-                  <h3 className={styles.toBasketDescription}>Доставка</h3>
-                </NavLink>
-              </div> */}
+       
 
-        {/* <ToMenuButton /> */}
-        {/* <span className={styles.toMenuLinkBox}>
-          <NavLink to="/menu" className={styles.toMenuLink}>
-            <ToMenuIcon/>
-          </NavLink>
-        </span> */}
 
-        <div>
+        <div className={styles.dishPageBox}>
 
-        <img
+        {/* <img
          src={pizzaMenu1}
         alt=""
         style={{
@@ -87,8 +78,9 @@ export const Pizza = () => {
           width: '400px',
           height: '600px',
         }}
-      />
-       <img
+      /> */}
+
+       {/* <img
          src={pizzaMenu2}
         alt=""
         style={{
@@ -98,7 +90,7 @@ export const Pizza = () => {
           width: '400px',
           height: '600px',
         }}
-      />
+      /> */}
        
           <table className={styles.dishTableList}>
           

@@ -52,28 +52,20 @@ export const Beer = () => {
 
   return (
     <div className={styles.dishPage}>
-      <ToMenuButton/>
+      <div className={styles.discriptionBox}>
+            <h1 className={styles.dishTitle}>Пиво</h1> 
+            <ToMenuButton className={styles.buttonToMenu}/>
+          </div>
       
       <div className={styles.dishPageContainer}>
-      <h1 className={styles.dishTitle}>Пиво</h1>  
-
-             {/* <div className={styles.toBasketButton}>
-                <NavLink to="/menu/basket" className={styles.toBasketLink}>
-                  <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
-                  {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
-                  <h3 className={styles.toBasketDescription}>Доставка</h3>
-                </NavLink>
-              </div> */}
-        
-        {/* <ToMenuButton/> */}
-
+      
 
         <div className={styles.dishPageBox}>
 
           <table className={styles.dishTableList}>
 
             <thead>
-              <h3>Пиво</h3>
+              {/* <h3>Пиво</h3> */}
               {/* <tr>
                 <th>ID</th>
                 <th>Назва</th>
