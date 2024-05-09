@@ -91,7 +91,13 @@ export const MenuPage = () => {
   
   return (
    <div className={styles.menuPage}>
-     
+     {/* <div className={styles.toBasketButton}>
+                <NavLink to="/menu/basket" className={styles.toBasketLink}>
+                  <BasketIcon className={`${styles.basketIcon} ${cartItems.length > 0 ? styles.nonEmpty : ''}`}/>
+                  {cartItems.length > 0 && <span className={styles.basketBadge}>✓</span>}
+                  <h3 className={styles.toBasketDescription}>Доставка</h3>
+                </NavLink>
+              </div> */}
      <div className={styles.menuPageContainer}>
       <div className={styles.menuPageBox}>
      <Switch>

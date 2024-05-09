@@ -289,7 +289,6 @@ box-shadow: 11px 11px 21px 5px #0000003e;
       z-index: 9;
       border-radius: 11px;
       background-color: #000000;
-      background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png);
           
       @media screen and (min-width: 767.9px) {
          height: 60px;
