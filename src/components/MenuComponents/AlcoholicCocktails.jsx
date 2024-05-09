@@ -53,16 +53,13 @@ export const AlcoholicCocktails = () => {
 
   return (
     <div className={styles.dishPage}>
-      {/* <ToMenuButton/> */}
-     <div className={styles.dishPageContainer}>
-       {/* <h1 className={styles.dishTitle}>Алкогольні коктейлі</h1>   */}
+ 
+      <div className={styles.discriptionBox}>
+        <h1 className={styles.dishTitle}>Алкогольні коктейлі</h1> 
+        <ToMenuButton className={styles.buttonToMenu}/>
+      </div>
 
-          <div className={styles.discriptionBox}>
-            <h1 className={styles.dishTitle}>Алкогольні коктейлі</h1> 
-            <ToMenuButton className={styles.buttonToMenu}/>
-          </div>
-      
-      
+     <div className={styles.dishPageContainer}>
 
       <div className={styles.dishPageBox}>
       
