@@ -46,10 +46,7 @@ export const Meat = () => {
 
   return (
     <div className={styles.dishPage}>
-     
-     
-      <div className={styles.dishPageContainer}>
-   <div className={styles.discriptionBox}>
+     <div className={styles.discriptionBox}>
    <h1 className={styles.dishTitle}>М'ясо</h1> 
 
 <ToMenuButton className={styles.buttonToMenu}/>
@@ -57,6 +54,9 @@ export const Meat = () => {
    
   
    </div>
+     
+      <div className={styles.dishPageContainer}>
+   
       
         <div className={styles.dishPageBox}>
 
