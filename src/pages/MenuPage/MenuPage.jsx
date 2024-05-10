@@ -18,6 +18,7 @@ import ColdApetizers from "components/MenuComponents/ColdApetizers";
 import coldAppetizerCardImage from 'images/coldAppetizerCard.svg';
 
 import HotApetizers from "components/MenuComponents/HotApetizers";
+import hotAppetizerCardImage from 'images/hotAppetizerCard.svg';
 
 import Beverages from "components/MenuComponents/Beverages";
 import beveragesCardImage from 'images/beveragesCard.svg';
@@ -56,6 +57,7 @@ import Fish from "components/MenuComponents/Fish";
 import fishCardImage from 'images/fishCard.svg';
 
 import MainDish from "components/MenuComponents/MainDish";
+import mainDishCardImage from 'images/mainDishCard.svg';
 
 import SideDish from "components/MenuComponents/SideDish";
 import sideDishCardImage from 'images/sideDishCard.svg';
@@ -163,7 +165,7 @@ export const MenuPage = () => {
                     <span className={styles.dishCardImg}>
                     <img
                         className={styles.dishCardImage}
-                        src={lunchCardImage} 
+                        src={mainDishCardImage} 
                         alt="Основні страви"
                       
                       />
@@ -207,7 +209,7 @@ export const MenuPage = () => {
                     <span className={styles.dishCardImg}>
                     <img
                         className={styles.dishCardImage}
-                        src={lunchCardImage} 
+                        src={hotAppetizerCardImage} 
                         alt="Гарячі закуски"
                      
                       />

@@ -1,9 +1,9 @@
 import React, { useContext, useState, useEffect } from "react";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import CartContext from "components/CartProvider/CartProvider";
 
-// import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
-import ToMenuButton from "components/ToMenuButton/ToMenuButton";
+import { ReactComponent as ToMenuIcon } from 'images/left.svg';
+
 import styles from 'components/Basket/Basket.module.css';
 
 export const Basket = () => {
@@ -159,7 +159,14 @@ export const Basket = () => {
     <div className={styles.basket}>
       
       <div className={styles.basketContainer}>
-      <ToMenuButton/>
+   
+      <div className={styles.toMenuButton}>
+        <NavLink to="/menu" className={styles.toMenuLink}>
+          <ToMenuIcon className={styles.toMenuIcon}/>
+          <h1 className={styles.toMenuDescription}>до Меню</h1>
+        </NavLink>
+      </div>
+
         <h1 className={styles.basketTitle}>Замовлення</h1>
         
         
@@ -191,11 +198,12 @@ export const Basket = () => {
                       {item.категорія}
                     </span>
                     
+
                     <span className={styles.basketListItemName}>
                       {item.назва}
                     </span>
 
-                    <span className={styles.basketListItemIngred}>
+                    <span className={styles.basketListItemIngredients}>
                       {item.інгредієнти}
                     </span>
 
@@ -224,65 +232,39 @@ export const Basket = () => {
                 </li>
               ))}
 
-<div className={styles.basketOrderInfo}>
+            <div className={styles.basketOrderInfo}>
 
-<div className={styles.basketQuantityBox}>
+            <div className={styles.basketQuantityBox}>
 
-    <span className={styles.basketQuantityTitle}>
-      <h3>Кількість позицій: </h3>
-    </span>
+                <span className={styles.basketQuantityTitle}>
+                  <h3>Кількість позицій: </h3>
+                </span>
 
-    <span className={styles.basketTotalQuantity}>
-      {totalItems}
-    </span>
+                <span className={styles.basketTotalQuantity}>
+                  {totalItems}
+                </span>
 
-</div>
+            </div>
 
-<div className={styles.basketQuantityBox}>
+            <div className={styles.basketQuantityBox}>
 
-    <span className={styles.basketPriceTitle}>
-      <h3>Загальна сума:</h3>
-    </span>
+                <span className={styles.basketPriceTitle}>
+                  <h3>Загальна сума:</h3>
+                </span>
 
-    <span className={styles.basketTotalPrice}>
-      {totalPrice}
-    </span>
+                <span className={styles.basketTotalPrice}>
+                  {totalPrice}
+                </span>
 
-</div>
+            </div>
 
-</div>
+            </div>
             </ul>
             </div>
 
           )}
 
-          {/* <div className={styles.basketOrderInfo}>
-
-              <div className={styles.basketQuantityBox}>
-
-                  <span className={styles.basketQuantityTitle}>
-                    <h3>Кількість позицій: </h3>
-                  </span>
-
-                  <span className={styles.basketTotalQuantity}>
-                    {totalItems}
-                  </span>
-
-              </div>
-
-              <div className={styles.basketQuantityBox}>
-
-                  <span className={styles.basketPriceTitle}>
-                    <h3>Загальна сума:</h3>
-                  </span>
-
-                  <span className={styles.basketTotalPrice}>
-                    {totalPrice}
-                  </span>
-
-              </div>
-
-          </div> */}
+          
 
           <div className={styles.basketMakeOrder}>
             <div className={styles.basketInputBox}>

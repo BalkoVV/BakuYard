@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-// import AddButton from 'components/MenuComponents/AddButton/AddButton';
-// import CartContext from "components/CartProvider/CartProvider";
-
-// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
-// import ToMenuButton from "components/ToMenuButton/ToMenuButton";
-
 import { ReactComponent as ToMenuIcon } from 'images/left.svg';
 
 import menuChampagneData from "services/dataWines/champagne.json";
@@ -36,7 +30,7 @@ export const Wines = () => {
   }, []);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+    window.scrollTo(0, 0); 
   }, []);
   
   useEffect(() => {
@@ -114,10 +108,6 @@ export const Wines = () => {
             <thead>
               <tr>
               <h3>Українські вина</h3>
-              {/* <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th> */}
               </tr>
             </thead>
             <tbody>
@@ -146,10 +136,6 @@ export const Wines = () => {
             <thead>
               <tr>
               <h3>Грузинські вина</h3>
-              {/* <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th> */}
               </tr>
             </thead>
             <tbody>
@@ -175,10 +161,6 @@ export const Wines = () => {
             <thead>
               <tr>
               <h3>Італійські вина</h3>
-              {/* <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th> */}
               </tr>
             </thead>
             <tbody>
@@ -204,10 +186,6 @@ export const Wines = () => {
             <thead>
               <tr>
               <h3>Шампанське</h3>
-              {/* <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th> */}
               </tr>
             </thead>
             <tbody>

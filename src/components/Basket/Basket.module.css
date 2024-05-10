@@ -12,7 +12,6 @@
 }
 
 .basketContainer {
-   /* width: 100%;  */
    padding: 0 20px;
 
     
@@ -46,21 +45,15 @@
 
 .basketTitle {
    display: flex;
-   /* display: none; */
    visibility: hidden;
-   height: 95px;
    justify-content: center;
    align-items: center;
+   height: 95px;
+  
    font-size: 15px;
-   font-weight: 900;
-  margin: 0;
-   color: #7b7b7b;
-   /* color: transparent; */
-   /* margin-bottom: 30px; */
-   /* padding-top: 20px; */
-  
+   margin: 0;
+   /* color: #7c7c7c; */
 
-  
    @media screen and (min-width: 767.9px) {
      
    };
@@ -86,7 +79,7 @@ font-size: 13px;
 }
 
 
-.basketBox {
+/* .basketBox {
    height: 100%;
   
     
@@ -96,14 +89,14 @@ font-size: 13px;
  @media screen and (min-width: 1200px) {
    
  };
-  }
+  } */
 
 .basketListBox {
  display: flex;
  width: auto;
  height: auto;
-justify-content: center;
-align-items: center;
+ justify-content: center;
+ align-items: center;
 
  
 @media screen and (min-width: 767.9px) {
@@ -114,24 +107,6 @@ align-items: center;
 };
 }
 
-/* .basketEmptyListBox {
- display: flex;
- width: auto;
- height: auto;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- font-size: 22px;
-
-
-  
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
-} */
 
 .basketList {
     display: grid;
@@ -143,6 +118,7 @@ align-items: center;
     border-radius: 11px;
     background: #b4b4b44a;
   
+
      
  @media screen and (min-width: 767.9px) {
      
@@ -155,12 +131,13 @@ align-items: center;
 .basketListItem {
   display: flex; 
   padding-left: 3px;
-  border-radius: 7px;
+  border-radius: 11px;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
+  height: 60px;
   background-color: #000000;
-  /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
+  box-shadow: 5px 5px 8px 3px #0000006b;
+  /* margin-bottom: 15px; */
 
  @media screen and (min-width: 767.9px) {
      
@@ -173,19 +150,64 @@ align-items: center;
 .basketListItemInfo {
  display: flex;
  flex-direction: column;
- height: 50px;
+ height: 60px;
 }
 
 .basketListItemInfo span {
   display: flex;
   align-items: center;
-  height: 16.5px;
+  justify-content: start;
+  height: 20px;
+}
+
+.basketListItemCategory {
+  color: #6e432e;
+  font-size: 8px;
+  padding-left: 10px;
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+.basketListItemName {
+ display: flex;
+ font-size: 10px;
+ padding-left: 5px;
+  
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+.basketListItemIngredients {
+ display: flex;
+ align-items: center;
+ font-size: 9px;
+ color: #5e2000;
+ padding-left: 10px;
+
+ @media screen and (min-width: 767.9px) {
+     
+ };
+
+ @media screen and (min-width: 1200px) {
+   
+ };
 }
 
 .basketListItemManagement {
   display: flex;
   align-items: center;
 }
+
+
 
 .basketListItemPrice {
    display: flex;
@@ -232,57 +254,12 @@ align-items: center;
  };
 }
 
-.basketListItemCategory {
-  /* position: absolute; */
-  left: 0;
-  top: 0;
-  color: #6e432e;
-  font-size: 8px;
-  padding-left: 10px;
-   
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
-}
 
-.basketListItemName {
- display: flex;
- font-size: 10px;
- padding-left: 5px;
-  
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
-}
-
-.basketListItemIngred {
- display: flex;
- align-items: center;
- font-size: 9px;
- color: #5e2000;
- padding-left: 10px;
-
- @media screen and (min-width: 767.9px) {
-     
- };
-
- @media screen and (min-width: 1200px) {
-   
- };
-}
 
 
 .basketMakeOrder {
  display: grid;
- /* display: none; */
  justify-content: space-around;
- /* background-color: rgba(51, 1, 1, 0.422); */
   
   @media screen and (min-width: 767.9px) {
       
@@ -658,3 +635,82 @@ justify-content: center;
    
  };
 }
+
+.toMenuButton {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 11px;
+  background-color: #000000;
+ 
+ 
+ 
+  @media screen and (min-width: 767.9px) {
+    /* height: 60px; */
+    /* width: 150px; */
+  };
+  @media screen and (min-width: 1200px) {
+    height: 60px;
+  width: 150px;
+    /* top: 23px; */
+  /* left: 68px; */
+  };
+ }
+ 
+ .toMenuLink {
+    position: relative;
+    display: flex; 
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 11px;
+ 
+    @media screen and (min-width: 767.9px) {
+       height: 60px;
+    width: 150px;
+    };
+    @media screen and (min-width: 1200px) {
+       height: 60px;
+       width: 150px;
+    };
+ }
+ 
+ .toMenuDescription {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 8px 0;
+    font-size: 9px;
+ 
+ 
+    @media screen and (min-width: 767.9px) {
+       font-size: 14px;
+    };
+    @media screen and (min-width: 1200px) {
+       font-size: 14px;
+    };
+ }
+ 
+ .toMenuButton:hover .toMenuDescription {
+  color: #6b4d00;
+ }
+ 
+ .toMenuIcon {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 9px;
+    top: 2px;
+    fill: #3a3a3a;
+ }

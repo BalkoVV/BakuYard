@@ -57,16 +57,18 @@ export const MainDish = () => {
 
   return (
     <div className={styles.dishPage}>
-   <div className={styles.discriptionBox}>
-          <h1 className={styles.dishTitle}>Основні страви</h1> 
 
-          <div className={styles.toMenuButton}>
-        <NavLink to="/menu" className={styles.toMenuLink}>
-          <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Менюс</h1>
-        </NavLink>
-      </div>
+    <div className={styles.discriptionBox}>
+            <h1 className={styles.dishTitle}>Основні страви</h1> 
+
+            <div className={styles.toMenuButton}>
+              <NavLink to="/menu" className={styles.toMenuLink}>
+                <ToMenuIcon className={styles.toMenuIcon}/>
+                <h1 className={styles.toMenuDescription}>до Менюс</h1>
+              </NavLink>
             </div>
+      </div>
+
       <div className={styles.dishPageContainer}>
 
 
@@ -99,11 +101,7 @@ export const MainDish = () => {
           
             <thead>
               <tr>
-                {/* <h3 className={styles.dishTableListTitle}>Піца</h3> */}
-                {/* <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th> */}
+                
               </tr>
             </thead>
             <tbody>
