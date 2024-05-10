@@ -17,6 +17,7 @@ import mainDishData from "services/dataComboSets/mainDish.json";
 // import pizzaMenu2 from 'images/pizzaMenu2.png';
 // import pizzaMenu3 from 'images/pizzaMenu3.png';
 
+
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
@@ -97,35 +98,58 @@ export const MainDish = () => {
         }}
       /> */}
        
-          <table className={styles.dishTableList}>
           
-            <thead>
-              <tr>
-                
-              </tr>
-            </thead>
+
+<table className={styles.dishList}>
+          
             <tbody>
               {mainDishItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  {/* <td>{item.id}</td> */}
-                  <td className={styles.dishTableName}>{item.назва}</td>
-                  <td className={styles.dishTableIngredients}>{item.інгредієнти}</td>
-                  {/* <td className={styles.dishTableType}>{item.тип}</td> */}
-                  <td className={styles.dishTableWeigth}>{item.вага}</td>
-                  <td className={styles.dishTablePrice}>{item.ціна}</td>
-                  <td className={styles.dishTableButtonAdd}>
-                    <AddButton
-                      // className={styles.dishAddButton}
-                      onClick={() => addToCart(item)}
-                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                      updateButtonState={() => updateButtonState(item.id)}
-                    />
-                  </td>
+              <tr key={item.id} className={styles.dishListItem}>
+                
+                 <div className={styles.dishListItemInfo}>
+
+                    <span className={styles.dishListItemCategory}>
+                      <td>{item.категорія}</td>
+                    </span>
+                  
+                    <span className={styles.dishListItemName} >
+                      <td>{item.назва}</td>
+                    </span>
+
+                    <span className={styles.dishListItemIngredients}>
+                      <td>{item.інгредієнти}</td>
+                    </span>
+
+                 </div>
+
+                  
+                 <div className={styles.dishListItemManagement}>
+
+                    <span className={styles.dishListItemWeigth}>
+                      <td>{item.вага}</td>
+                    </span>
+
+                    <span className={styles.dishTablePrice}>
+                      <td>{item.ціна}</td>
+                    </span>
+
+                    <span className={styles.dishListButtonAddBox}>
+                        <td className={styles.dishListButtonAdd}>
+                          <AddButton
+                            
+                            onClick={() => addToCart(item)}
+                            alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                            updateButtonState={() => updateButtonState(item.id)}
+                          />
+                        </td>
+                    </span>
+
+                 </div>
+
                 </tr>
               ))}
             </tbody>
           </table>
-
           
 
         </div>

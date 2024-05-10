@@ -29,7 +29,7 @@ export const Sauces = () => {
   }, []);
   
   useEffect(() => {
-    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+    window.scrollTo(0, 0); 
   }, []);
  
 
@@ -41,7 +41,7 @@ export const Sauces = () => {
 
  
 
-  const updateSaucesButtonState = (itemId) => {
+  const updateButtonState = (itemId) => {
    setSaucesItems(saucesItems.map(item => {
       if (item.id === itemId) {
         return { ...item, alreadyAdded: false };
@@ -66,35 +66,56 @@ export const Sauces = () => {
 
       <div className={styles.dishPageBox}>
       
-          <table className={styles.dishTableList}>
-            <thead>
-              <tr>
+      <table className={styles.dishList}>
+          
+          <tbody>
+            {saucesItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
               
-              {/* <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th> */}
+               <div className={styles.dishListItemInfo}>
+
+                  <span className={styles.dishListItemCategory}>
+                    <td>{item.категорія}</td>
+                  </span>
+                
+                  <span className={styles.dishListItemName} >
+                    <td>{item.назва}</td>
+                  </span>
+
+                  <span className={styles.dishListItemIngredients}>
+                    <td>{item.інгредієнти}</td>
+                  </span>
+
+               </div>
+
+                
+               <div className={styles.dishListItemManagement}>
+
+                  <span className={styles.dishListItemWeigth}>
+                    <td>{item.вага}</td>
+                  </span>
+
+                  <span className={styles.dishTablePrice}>
+                    <td>{item.ціна}</td>
+                  </span>
+
+                  <span className={styles.dishListButtonAddBox}>
+                      <td className={styles.dishListButtonAdd}>
+                        <AddButton
+                          
+                          onClick={() => addToCart(item)}
+                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                          updateButtonState={() => updateButtonState(item.id)}
+                        />
+                      </td>
+                  </span>
+
+               </div>
+
               </tr>
-            </thead>
-            <tbody>
-              {saucesItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableIngredients}>{item.інгредієнти}</td>
-                  <td  className={styles.dishTableWeigth}>{item.вага}</td>
-                  <td  className={styles.dishTablePrice}>{item.ціна}</td>
-                  <td className={styles.dishTableButtonAdd}>
-                    <AddButton
-                      onClick={() => addToCart(item)}
-                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                      updateButtonState={() => updateSaucesButtonState(item.id)}
-                    />
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+            ))}
+          </tbody>
+        </table>
 
         </div>
       </div>

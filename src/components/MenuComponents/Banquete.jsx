@@ -41,7 +41,7 @@ export const Banquete = () => {
   }, []);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+    window.scrollTo(0, 0); 
   }, []);
 
   useEffect(() => {

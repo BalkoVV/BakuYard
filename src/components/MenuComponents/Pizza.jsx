@@ -25,7 +25,7 @@ export const Pizza = () => {
   const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+    window.scrollTo(0, 0); 
   }, []);
 
    useEffect(() => {
@@ -37,9 +37,6 @@ export const Pizza = () => {
     });
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
-  }, []);
 
   useEffect(() => {
     setMenuItems(menuData);
@@ -62,7 +59,7 @@ export const Pizza = () => {
           <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>
           <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+          <h1 className={styles.toMenuDescription}>до Меню</h1>
         </NavLink>
       </div>
             </div>

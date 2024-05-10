@@ -15,7 +15,7 @@ const AddButton = ({ onClick, alreadyAdded }) => {
   return (
 
     <div onClick={handleClick} disabled={added} className={styles.addButton}>
-       {added ? 'в Замовленні' : '+'}
+       {added ? '✓' : '+'}
     </div>
 
   );

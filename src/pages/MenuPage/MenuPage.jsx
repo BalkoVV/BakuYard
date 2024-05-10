@@ -129,7 +129,7 @@ export const MenuPage = () => {
                     </span>
                     <span className={styles.dishCardDescriptionBox}>
                    <h3 className={styles.dishCardDescription}>
-                      М'ясо 
+                      Барбекю
                     </h3>
                     
                    </span>
@@ -150,7 +150,7 @@ export const MenuPage = () => {
                     </span>
                     <span className={styles.dishCardDescriptionBox}>
                    <h3 className={styles.dishCardDescription}>
-                      Риба 
+                      Риба
                     </h3>
                     
                    </span>

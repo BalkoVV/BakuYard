@@ -42,7 +42,7 @@ export const ColdApetizers = () => {
 
 
 
-  const updateColdApetizerButtonState = (itemId) => {
+  const updateButtonState = (itemId) => {
    setColdApetizerItems(coldApetizerItems.map(item => {
       if (item.id === itemId) {
         return { ...item, alreadyAdded: false };
@@ -60,7 +60,7 @@ export const ColdApetizers = () => {
           <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>
           <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+          <h1 className={styles.toMenuDescription}>до Меню</h1>
         </NavLink>
       </div>      </div>
      <div className={styles.dishPageContainer}>
@@ -68,21 +68,16 @@ export const ColdApetizers = () => {
 
       <div className={styles.dishPageBox}>
       
-      <table className={styles.dishTableList}>
+      {/* <table className={styles.dishTableList}>
     
             <thead>
               <tr>
-              {/* <h3>Холодні закуски</h3> */}
-              {/* <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th> */}
+             
               </tr>
             </thead>
             <tbody>
               {coldApetizerItems.map((item) => (
                 <tr key={item.id} className={styles.dishTable}>
-                  {/* <td  className={styles.dishTableСategory}>{item.категорія}</td> */}
                   <td  className={styles.dishTableName}>{item.назва}</td>
                   <td  className={styles.dishTableIngredients}>{item.інгредієнти}</td>
                   <td  className={styles.dishTableWeigth}>{item.вага}</td>
@@ -97,7 +92,57 @@ export const ColdApetizers = () => {
                 </tr>
               ))}
             </tbody>
-          </table>
+          </table> */}
+          <table className={styles.dishList}>
+          
+          <tbody>
+            {coldApetizerItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+               <div className={styles.dishListItemInfo}>
+
+                  <span className={styles.dishListItemCategory}>
+                    <td>{item.категорія}</td>
+                  </span>
+                
+                  <span className={styles.dishListItemName} >
+                    <td>{item.назва}</td>
+                  </span>
+
+                  <span className={styles.dishListItemIngredients}>
+                    <td>{item.інгредієнти}</td>
+                  </span>
+
+               </div>
+
+                
+               <div className={styles.dishListItemManagement}>
+
+                  <span className={styles.dishListItemWeigth}>
+                    <td>{item.вага}</td>
+                  </span>
+
+                  <span className={styles.dishTablePrice}>
+                    <td>{item.ціна}</td>
+                  </span>
+
+                  <span className={styles.dishListButtonAddBox}>
+                      <td className={styles.dishListButtonAdd}>
+                        <AddButton
+                          
+                          onClick={() => addToCart(item)}
+                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                          updateButtonState={() => updateButtonState(item.id)}
+                        />
+                      </td>
+                  </span>
+
+               </div>
+
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
           
 

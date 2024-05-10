@@ -1,18 +1,18 @@
 .addButton {
    display: flex;
-   height: 60px;
-   width: 100px;
+   /* height: 60px; */
+   /* width: 100px; */
    margin: 0;
-   border-radius: 0 9px 9px 0;
+   /* border-radius: 0 9px 9px 0; */
    align-items: center;
    justify-content: center;
    text-transform: uppercase;
-   font-weight: 100;
+   font-weight: 900;
    transition: all ease-out 300ms;
 }
 
 
 .added {
-   background-color: aliceblue;
+   color: rgb(1, 147, 40);
    /* background: linear-gradient(#000000d3, #014905c8, #000000d3); */
 }
