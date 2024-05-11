@@ -126,9 +126,10 @@
    align-items: center;
    background: rgb(9, 9, 9) radial-gradient(circle at 0 0, rgb(3, 3, 3), rgb(1, 1, 1));
    box-shadow:
-   inset rgba(0,0,0,.5) -5px -5px 11px,
-   inset #303030e6 5px 5px 11px,
-   rgba(0,0,0,.8) 0px 0px 0px -1px;
+   inset rgba(0,0,0,.5) -11px -5px 15px,
+   inset #191919 11px 9px 15px,
+   inset #1d1d1d54 -17px 5px 15px,
+   rgba(0,0,0,.8) -5px -5px 5px 9px;
 }
 
 
