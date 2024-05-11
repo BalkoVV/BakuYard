@@ -99,10 +99,11 @@ export const MainDish = () => {
       /> */}
        
           
-
+       <div className={styles.dishListBox}>
 <table className={styles.dishList}>
           
-            <tbody>
+            
+              <tbody>
               {mainDishItems.map((item) => (
               <tr key={item.id} className={styles.dishListItem}>
                 
@@ -149,9 +150,10 @@ export const MainDish = () => {
                 </tr>
               ))}
             </tbody>
+            
           </table>
           
-
+          </div>
         </div>
       </div>
     </div>
