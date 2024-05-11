@@ -65,7 +65,7 @@
    grid-template-columns: repeat(1, 1fr);
    grid-row-gap: 10px;
    border: none;
-   padding: 10px;
+   padding: 30px;
    border-radius: 11px;
    background: #b4b4b44a;
    margin-bottom: 30px;
@@ -89,10 +89,19 @@
    align-items: center;
    justify-content: space-between;
    height: 60px;
-   background-color: #000000;
-   box-shadow: 5px 5px 8px 3px #0000006b;
+   /* background-color: #000000; */
+   /* box-shadow: 5px 5px 8px 3px #0000006b; */
    margin-bottom: 15px;
- 
+   background: rgb(9, 9, 9) radial-gradient(circle at 0 0, rgb(8, 8, 8), rgba(3, 3, 3, 0.35));
+   /* box-shadow:
+    inset rgba(0,0,0,.5) -3px -3px 8px,
+    inset #303030e6 3px 3px 8px,
+    rgba(0,0,0,.8) 3px 3px 8px -3px; */
+    box-shadow:
+    inset rgba(0,0,0,.5) -5px -5px 11px,
+    inset #303030e6 5px 5px 11px,
+    rgba(0,0,0,.8) 5px 5px 5px -1px;
+    transition: all .4s ease-out;
    @media screen and (min-width: 768px) {
       
    };
@@ -102,6 +111,13 @@
    };
  }
 
+ .dishListItem:hover {
+   /* box-shadow:  0px -2px 15px 2px #1a09001a; */
+   background: rgb(9, 9, 9) radial-gradient(circle at 0 0, rgba(8, 8, 8, 0.65), rgba(16, 16, 16, 0.35));
+  
+   transition: all .4s ease-out;
+   scale: 1.005;
+}
 
  .dishListItemInfo {
    display: flex;
