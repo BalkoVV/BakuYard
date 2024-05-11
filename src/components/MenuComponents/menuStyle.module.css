@@ -47,12 +47,9 @@
 }
 
 .dishPageBox {
-   display: flex;
+   display: grid;
    width: auto;
    height: auto;
-  justify-content: center;
-  align-items: center;
-  
    
   @media screen and (min-width: 767.9px) {
        
@@ -71,14 +68,17 @@
    padding: 10px;
    border-radius: 11px;
    background: #b4b4b44a;
+   margin-bottom: 30px;
 }
 
-.dishList h3 {
+
+.dishListTitle {
    display: flex;
    justify-content: center;
+   width: 100%;
+   margin: 0;
    color: #000000;
-   font-size: 15px;
-   padding-bottom: 20px;
+   font-size: 11px;
 }
 
 
@@ -93,12 +93,13 @@
    box-shadow: 5px 5px 8px 3px #0000006b;
    margin-bottom: 15px;
  
- @media screen and (min-width: 768px) {
-    
- };
- @media screen and (min-width: 1200px) {
-   
- };
+   @media screen and (min-width: 768px) {
+      
+   };
+
+   @media screen and (min-width: 1200px) {
+      
+   };
  }
 
 
@@ -130,15 +131,15 @@
 
  .dishListItemName {
    display: flex;
- font-size: 10px;
- padding-left: 5px;
+   font-size: 10px;
+   padding-left: 5px;
   
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
+   @media screen and (min-width: 767.9px) {
+      
+   };
+   @media screen and (min-width: 1200px) {
+      
+   };
 }
 
 .dishListItemIngredients {
@@ -172,7 +173,6 @@
    padding: 0;
    font-size: 9px;
    color: #6e432e;
-   /* border-left: 1px solid #39393969; */
 }
 
  .dishTablePrice {
@@ -185,32 +185,26 @@
    padding: 0;
    font-size: 11px;
    color: #5e2000;
-   /* border-left: 1px solid #39393969; */
- 
-   /* background-color: red; */
-
     
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
+   @media screen and (min-width: 767.9px) {
+      
+   };
+   @media screen and (min-width: 1200px) {
+      
+   };
 }
  
 
 
 .dishListButtonAddBox {
- display: flex;
- align-items: center;
- justify-content: start;
- height: 60px;
- width: 45px;
- margin: 0;
- padding: 0;
- border-radius: 0 11px 11px 0;
- /* border-left: 1px solid #39393969; */
- /* background-color: #fff; */
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   height: 60px;
+   width: 45px;
+   margin: 0;
+   padding: 0;
+   border-radius: 0 11px 11px 0;
 }
 
 .dishListButtonAdd {
@@ -229,7 +223,7 @@
    background-color: rgba(60, 59, 59, 0.856);
 }
 
-.dishTableButtonAdd:hover  {
+.dishListButtonAdd:hover  {
    cursor: pointer;
   
 }

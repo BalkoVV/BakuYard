@@ -52,8 +52,8 @@
    grid-template-columns: repeat(2, 1fr);
    grid-column-gap: 15px;
    grid-row-gap: 15px;
-   padding-left: 20px;
-   padding-right: 20px;
+   padding-left: 30px;
+   padding-right: 30px;
    /* padding: 0 20px; */
    /* margin-bottom: 50px; */
    /* margin-top: 30px; */
@@ -64,7 +64,7 @@
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 20px;
       grid-row-gap: 20px;
-      /* padding: 0 50px; */
+      padding: 0 50px;
    }; 
 
    @media screen and (min-width: 1200px) {
@@ -74,6 +74,8 @@
       grid-row-gap: 25px;
       /* margin-top: 40px; */
       /* padding: 0 70px; */
+      padding-left: 100px;
+   padding-right: 100px;
    }; 
 }
 
@@ -107,14 +109,16 @@ fill: #a66101;
    height: 110px;
    width: 100%;
    border: 1px solid black;
+   border: none;
    border-radius: 11px;
    overflow: hidden;
    margin-left: auto;
    margin-right: auto;
-   transition: .1s;
-   /* box-shadow: inset 0px 0px 100px 7px #000000cc; */
-   background-color: #000000;
+   transition: all .4s ease-out;
+   box-shadow:  0px -2px 10px 2px #0000005f;
+   /* background-color: #bd1010; */
    background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
    @media screen and (min-width: 768px) {
       height: 180px;
@@ -126,10 +130,21 @@ fill: #a66101;
    }; 
 }
 
-.dishCard:hover {
- border: 1px solid #6b4d00;
- border: 1px solid #5c2000e5;
- transition: .1s;
+.dishCard:hover,
+.dishCard:active {
+ /* border: 1px solid #6b4d00; */
+ /* border: 1px solid #5c2000e5; */
+ box-shadow:  0px -2px 10px 2px #00000037;
+ background: rgb(9, 9, 9) radial-gradient(circle at 0 0, rgba(8, 8, 8, 0.65), rgba(16, 16, 16, 0.35));
+
+ transition: all .4s ease-out;
+ scale: 1.02;
+}
+
+.dishCard:hover h3,
+.dishCard:active h3 {
+color: #9a3803;
+transition: all .4s ease-out;
 }
 
 .dishCardLink {
@@ -137,8 +152,15 @@ fill: #a66101;
  width: 100%;
  justify-content: space-between;
  align-items: center;
- transition: .1s;
+ /* transition: .4s; */
+
+ background: rgb(9, 9, 9) radial-gradient(circle at 0 0, rgba(8, 8, 8, 0.65), rgba(16, 16, 16, 0.35));
+ box-shadow:
+  inset rgba(0,0,0,.5) -3px -3px 8px,
+  inset #303030e6 3px 3px 8px,
+  rgba(0,0,0,.8) 3px 3px 8px -3px;
 }
+
 
 .dishCardImg {
 display: flex;
@@ -252,6 +274,13 @@ width: 60%;
    z-index: 9;
    border-radius: 11px;
    background-color: #000000;
+   box-shadow:  0px -2px 5px 1px #0000005f;
+  
+   /* background-image: url("images/glass.png"); */
+   /* background-position: center; */
+   /* background-size: 177%; */
+   /* background-repeat: no-repeat; */
+   /* box-shadow:  5px 5px 3px 5px rgba(0, 0, 0, 0.262); */
        
    @media screen and (min-width: 767.9px) {
       height: 60px;
@@ -275,6 +304,12 @@ width: 60%;
    height: 60px;
    width: 60px;
    border-radius: 11px;
+   background: rgb(9, 9, 9) radial-gradient(circle at 0 0, rgba(8, 8, 8, 0.65), rgba(16, 16, 16, 0.35));
+   box-shadow:
+    inset rgba(0,0,0,.5) -3px -3px 8px,
+    inset #303030e6 3px 3px 8px,
+    rgba(0,0,0,.8) 3px 3px 8px -3px;
+  
 
    @media screen and (min-width: 767.9px) {
       height: 60px;
@@ -306,8 +341,10 @@ width: 60%;
     };
 }
 
-.toBasketButton:hover .toBasketDescription {
+.toBasketButton:hover  {
    color: #5e2000;
+   transition: .4s;
+   scale: 1.02;
   }
 
      .basketIcon {
@@ -316,8 +353,8 @@ width: 60%;
       justify-content: center;
       align-items: center;
       position: absolute;
-      right: 14px;
-      top: 8px;
+      right: 9px;
+      top: 3px;
       fill: #3a3a3a;
 
       @media screen and (min-width: 767.9px) {
@@ -333,7 +370,7 @@ width: 60%;
      }
      
      .basketIcon.nonEmpty {
-        fill: #6e2000;
+        fill: #5e2000;
       }
 
       .basketBadge {

@@ -154,6 +154,7 @@ export const Fish = () => {
             </tbody>
           </table>
           
+          
        </div>
       </div>
     </div>

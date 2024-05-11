@@ -4,11 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-// import AddButton from 'components/MenuComponents/AddButton/AddButton';
-// import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 import { ReactComponent as ToMenuIcon } from 'images/left.svg';
-
-// import CartContext from "components/CartProvider/CartProvider";
 
 import banqueteHotData from "services/dataBanquete/banqueteHot.json";
 import banqueteColdData from "services/dataBanquete/banqueteCold.json"
@@ -17,12 +13,9 @@ import banqueteColdData from "services/dataBanquete/banqueteCold.json"
 // import pizzaMenu2 from 'images/pizzaMenu2.png';
 // import pizzaMenu3 from 'images/pizzaMenu3.png';
 
-// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const Banquete = () => {
-//   const { addToCart, cartItems } = useContext(CartContext);
-// const { cartItems } = useContext(CartContext);
 
   const [banqueteHotItems, setBanqueteHotItems] = useState([]);
   const [banqueteColdItems, setBanqueteColdItems] = useState([]);
@@ -36,7 +29,7 @@ export const Banquete = () => {
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '1'; 
-      }, 30 * index); 
+      }, 10 * index); 
     });
   }, []);
 
@@ -52,15 +45,6 @@ export const Banquete = () => {
    setBanqueteColdItems(banqueteColdData);
  }, []);
 
-//   const updateButtonState = (itemId) => {
-//     setMenuItems(menuItems.map(item => {
-//       if (item.id === itemId) {
-//         return { ...item, alreadyAdded: false };
-//       }
-//       return item;
-//     }));
-//   };
-
   return (
     <div className={styles.dishPage}>
       
@@ -71,7 +55,7 @@ export const Banquete = () => {
       <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>
           <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+          <h1 className={styles.toMenuDescription}>до Меню</h1>
         </NavLink>
       </div>
 
@@ -104,63 +88,87 @@ export const Banquete = () => {
         }}
       /> */}
        
-          <table className={styles.dishTableList}>
           
-            <thead>
-              <tr>
-                <h3 className={styles.dishTableListTitle}>Гарячі страви</h3>
-               
-              </tr>
-            </thead>
-            <tbody>
-              {banqueteHotItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  {/* <td>{item.id}</td> */}
-                  <td className={styles.dishTableName}>{item.назва}</td>
-                  <td className={styles.dishTableIngredients}>{item.інгредієнти}</td>
-                  {/* <td className={styles.dishTableType}>{item.тип}</td> */}
-                  <td className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
-                  <td className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                  {/* <td className={styles.dishTableButtonAdd}>
-                    <AddButton
-                      
-                      onClick={() => addToCart(item)}
-                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                      updateButtonState={() => updateButtonState(item.id)}
-                    />
-                  </td> */}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <table className={styles.dishList}>
+          <h3 className={styles.dishListTitle}>Гарячі страви</h3>
+         
+          <tbody>
+            {banqueteHotItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+               <div className={styles.dishListItemInfo}>
 
-          <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-                <h3 className={styles.dishTableListTitle}>Холодні страви</h3>
-               
+                  <span className={styles.dishListItemCategory}>
+                    <td>{item.категорія}</td>
+                  </span>
+                
+                  <span className={styles.dishListItemName} >
+                    <td>{item.назва}</td>
+                  </span>
+
+                  <span className={styles.dishListItemIngredients}>
+                    <td>{item.інгредієнти}</td>
+                  </span>
+
+               </div>
+
+                
+               <div className={styles.dishListItemManagement}>
+
+                  <span className={styles.dishListItemWeigth}>
+                    <td>{item.вага}</td>
+                  </span>
+
+                  <span className={styles.dishTablePrice}>
+                    <td>{item.ціна}</td>
+                  </span>
+
+               </div>
+
               </tr>
-            </thead>
-            <tbody>
-              {banqueteColdItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                 
-                  <td className={styles.dishTableName}>{item.назва}</td>
-                  <td className={styles.dishTableIngredients}>{item.інгредієнти}</td>
-                  <td className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
-                  <td className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                  
-                  {/* <td className={styles.dishTableButtonAdd}>
-                    <AddButton
-                      onClick={() => addToCart(item)}
-                      alreadyAdded={cartItems.some((cartItem) => cartItem.id === item.id)}
-                      updateButtonState={() => updateButtonState(item.id)}
-                    />
-                  </td> */}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+            ))}
+          </tbody>
+        </table>
+
+          <table className={styles.dishList}>
+          <h3 className={styles.dishListTitle}>Холодні страви</h3>
+ 
+          <tbody>
+            {banqueteColdItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+               <div className={styles.dishListItemInfo}>
+
+                  <span className={styles.dishListItemCategory}>
+                    <td>{item.категорія}</td>
+                  </span>
+                
+                  <span className={styles.dishListItemName} >
+                    <td>{item.назва}</td>
+                  </span>
+
+                  <span className={styles.dishListItemIngredients}>
+                    <td>{item.інгредієнти}</td>
+                  </span>
+
+               </div>
+
+                
+               <div className={styles.dishListItemManagement}>
+
+                  <span className={styles.dishListItemWeigth}>
+                    <td>{item.вага}</td>
+                  </span>
+
+                  <span className={styles.dishTablePrice}>
+                    <td>{item.ціна}</td>
+                  </span>
+
+               </div>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
         </div>
       </div>
