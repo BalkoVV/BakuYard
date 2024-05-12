@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import CartContext from "components/CartProvider/CartProvider";
 
 import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
-// import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 import styles from 'components/Basket/Basket.module.css';
 
 export const Basket = () => {
@@ -79,9 +78,6 @@ export const Basket = () => {
     setHouseNumber(event.target.value);
   }
 
-  // const isOrderButtonActive = () => {
-  //   return cartItems.length > 0 && isNameValid && isPhoneNumberValid;
-  // };
   const isOrderButtonActive = () => {
     return cartItems.length > 0 && isNameValid && isPhoneNumberValid && isStreetValid && isHouseNumberValid;
   };
@@ -120,9 +116,9 @@ export const Basket = () => {
             throw new Error('Failed to send message to Telegram bot');
           }
           console.log('Order details sent successfully');
-          clearCart(); // Очистка кошика після успішного замовлення
-          setName(""); // Очистка поля імені після успішного замовлення
-          setPhoneNumber(""); // Очистка поля номера телефону після успішного замовлення
+          clearCart(); 
+          setName(""); 
+          setPhoneNumber(""); 
           setOrderCompleted(true);
         })
         .catch(error => {
@@ -131,34 +127,47 @@ export const Basket = () => {
     }
   };
 
-  useEffect(() => {
-    if (basketEmpty || orderCompleted) {
-      document.body.style.overflow = 'auto';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
+      useEffect(() => {
+        if (basketEmpty || orderCompleted) {
+          document.body.style.overflow = 'auto';
+        } else {
+          document.body.style.overflow = 'auto';
+        }
 
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [basketEmpty, orderCompleted]);
+        return () => {
+          document.body.style.overflow = 'auto';
+        };
+      }, [basketEmpty, orderCompleted]);
 
   
   return (
     <div className={styles.basket}>
       
-      <div className={styles.basketContainer}>
-   
-      <div className={styles.toMenuButton}>
-        <NavLink to="/menu" className={styles.toMenuLink}>
-          <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Меню</h1>
-        </NavLink>
-      </div>
-      
-        <h1 className={styles.basketTitle}>Замовлення</h1>
+            <div className={styles.basketContainer}>
         
+            <div className={styles.toMenuButton}>
+              <NavLink to="/menu" className={styles.toMenuLink}>
+                <ToMenuIcon className={styles.toMenuIcon}/>
+                <h1 className={styles.toMenuDescription}>до Меню</h1>
+              </NavLink>
+            </div>
+            
+              <h1 className={styles.basketTitle}>Замовлення</h1>
+              
         
+              {orderCompleted ? ( 
+            <div className={styles.emptyOrderBasketBox}>
+              <span className={styles.orderDone}>
+                <div className={styles.orderDoneMessage}>
+                    <h2>Замовлення оформлене!  <br/>
+                        Адміністратор зателефонує Вам  <br/>
+                        для підтвердження <br/>
+                        та узгодження деталей
+                    </h2>
+                </div>
+              </span>
+            </div>
+          ) : (
         <div className={styles.basketBox}>
           
           {basketEmpty ? (
@@ -174,151 +183,131 @@ export const Basket = () => {
               </span>
             </div>
           ) : (
-            <div className={styles.basketListBox}>
-              <ul className={styles.basketList}>
+
+
+
+        <div className={styles.basketListBox}>
+
+            <ul className={styles.basketList}>
+
               <h3 className={styles.basketTitled}>Замовлення</h3>
 
-              {cartItems.map((item) => (
-                <li className={styles.basketListItem} key={item.id}>
-                  
-                  <div className={styles.basketListItemInfo}>
+                  {cartItems.map((item) => (
+                    <li className={styles.basketListItem} key={item.id}>
+                      
+                      <div className={styles.basketListItemInfo}>
 
-                    <span className={styles.basketListItemCategory}>
-                      {item.категорія}
-                    </span>
-                    
-                    <span className={styles.basketListItemName}>
-                      {item.назва}
-                    </span>
+                        <span className={styles.basketListItemCategory}>
+                          {item.категорія}
+                        </span>
+                        
+                        <span className={styles.basketListItemName}>
+                          {item.назва}
+                        </span>
 
-                    <span className={styles.basketListItemIngred}>
-                      {item.інгредієнти}
-                    </span>
+                        <span className={styles.basketListItemIngred}>
+                          {item.інгредієнти}
+                        </span>
+
+                      </div>
+
+                      <div className={styles.basketListItemManagement}>
+                          <span className={styles.basketListItemCounter}>
+                            <button className={styles.basketListItemDecrease} onClick={() => decreaseQuantity(item.id)}>
+                              -
+                            </button>
+                            <span className={styles.basketListItemQuantity}>
+                              {item.quantity}
+                            </span>
+                            <button className={styles.basketListItemIncrease} onClick={() => increaseQuantity(item.id)}>
+                              +
+                            </button>
+                          </span>
+                          
+                          <span className={styles.basketListItemPrice}>
+                            {item.ціна}
+                          </span>
+                      </div>
+
+                    </li>
+
+                  ))}
+
+              </ul>
+
+              <div className={styles.basketOrderInfo}>
+
+                  <div className={styles.basketQuantityBox}>
+
+                      <span className={styles.basketQuantityTitle}>
+                        <h3>Кількість позицій: </h3>
+                      </span>
+
+                      <span className={styles.basketTotalQuantity}>
+                        {totalItems}
+                      </span>
 
                   </div>
 
+                  <div className={styles.basketQuantityBox}>
 
+                      <span className={styles.basketPriceTitle}>
+                        <h3>Загальна сума:</h3>
+                      </span>
 
+                      <span className={styles.basketTotalPrice}>
+                        {totalPrice}
+                      </span>
 
-                  <div className={styles.basketListItemManagement}>
-                  <span className={styles.basketListItemCounter}>
-                    <button className={styles.basketListItemDecrease} onClick={() => decreaseQuantity(item.id)}>
-                      -
-                    </button>
-                    <span className={styles.basketListItemQuantity}>
-                      {item.quantity}
-                    </span>
-                    <button className={styles.basketListItemIncrease} onClick={() => increaseQuantity(item.id)}>
-                      +
-                    </button>
-                  </span>
-                  
-                  <span className={styles.basketListItemPrice}>
-                    {item.ціна}
-                  </span>
                   </div>
-                </li>
-              ))}
 
-<div className={styles.basketOrderInfo}>
-
-<div className={styles.basketQuantityBox}>
-
-    <span className={styles.basketQuantityTitle}>
-      <h3>Кількість позицій: </h3>
-    </span>
-
-    <span className={styles.basketTotalQuantity}>
-      {totalItems}
-    </span>
-
-</div>
-
-<div className={styles.basketQuantityBox}>
-
-    <span className={styles.basketPriceTitle}>
-      <h3>Загальна сума:</h3>
-    </span>
-
-    <span className={styles.basketTotalPrice}>
-      {totalPrice}
-    </span>
-
-</div>
-
-</div>
-            </ul>
-            <div className={styles.basketMakeOrder}>
-            <div className={styles.basketInputBox}>
-              <input  
-                className={styles.basketInput} 
-                type="text" placeholder="Ім'я (мінімум 3 символи)" 
-                value={name} 
-                onChange={handleNameChange} 
-              />
-              <input  
-                className={styles.basketInput} 
-                type="text" placeholder="Телефон (без +38)" 
-                value={phoneNumber} 
-                onChange={handlePhoneNumberChange} 
-              />
-              <div className={styles.basketInputAddressBox}>
-                <input  
-                  className={`${styles.basketInput} ${styles.basketInputStreet}`} 
-                  type="text" placeholder="Вулиця" 
-                  value={street} 
-                  onChange={handleStreetChange} 
-                />
-                <input  
-                  className={`${styles.basketInput} ${styles.basketInputStreetNumber}`} 
-                  type="text" placeholder="№" 
-                  value={houseNumber} 
-                  onChange={handleHouseNumberChange} 
-                />
               </div>
+
+              <div className={styles.basketMakeOrder}>
+
+                    <div className={styles.basketInputBox}>
+                          <input  
+                            className={styles.basketInput} 
+                            type="text" placeholder="Ім'я (мінімум 3 символи)" 
+                            value={name} 
+                            onChange={handleNameChange} 
+                          />
+                          <input  
+                            className={styles.basketInput} 
+                            type="text" placeholder="Телефон (без +38)" 
+                            value={phoneNumber} 
+                            onChange={handlePhoneNumberChange} 
+                          />
+
+                          <div className={styles.basketInputAddressBox}>
+                              <input  
+                                className={`${styles.basketInput} ${styles.basketInputStreet}`} 
+                                type="text" placeholder="Вулиця" 
+                                value={street} 
+                                onChange={handleStreetChange} 
+                              />
+                              <input  
+                                className={`${styles.basketInput} ${styles.basketInputStreetNumber}`} 
+                                type="text" placeholder="№" 
+                                value={houseNumber} 
+                                onChange={handleHouseNumberChange} 
+                              />
+                        </div>
+                    </div>
+
+                    <button 
+                        className={`${styles.buttonMakeOrder} ${!isOrderButtonActive() ? styles.disabled : styles.active}`}
+                        onClick={handleSubmitOrder}
+                        disabled={!isOrderButtonActive()}
+                        >
+                        <h3>Замовити</h3>
+                    </button>
+
+               </div> 
             </div>
-
-            
-            <button 
-              className={`
-              ${styles.buttonMakeOrder} 
-              ${!isOrderButtonActive() ? 
-                styles.disabled : 
-                styles.active}
-              `}
-              onClick={handleSubmitOrder}
-              disabled={!isOrderButtonActive()}
-              >
-              <h3>Замовити</h3>
-            </button>
-
-
-          </div>
-            </div>
-
           )}
-
-          
-
-          
-
-          {orderCompleted && 
-          
-          
-          <div className={styles.emptyOrderBasketBox}>
-              <span className={styles.orderDone}>
-                <div className={styles.orderDoneMessage}>
-                    <h2>Замовлення оформлене!  <br/>
-                        Адміністратор зателефонує Вам  <br/>
-                        для підтвердження <br/>
-                        та узгодження деталей
-                    </h2>
-                </div>
-              </span>
-            </div>
-          
-          }
         </div>
+        )}
       </div>
     </div>
   );
