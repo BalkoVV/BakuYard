@@ -84,9 +84,9 @@
    margin-right: auto;
    transition: all .3s ease-out;
    box-shadow:  -7px -4px 22px 5px #00000051;
-   /* background-color: #00000075; */
-   background-color: black;
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   background-color: #050505;
+   /* background-color: black; */
+   /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
 
    z-index: 10;
 
