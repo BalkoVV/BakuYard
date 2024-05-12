@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.39cf15af.css",
-    "main.js": "/BakuYard/static/js/main.3e6e0ea6.js",
+    "main.css": "/BakuYard/static/css/main.88d9aa71.css",
+    "main.js": "/BakuYard/static/js/main.bd0de1d2.js",
     "static/media/map444.png": "/BakuYard/static/media/map444.6400aebd07a404414d9e.png",
     "static/media/23232555.png": "/BakuYard/static/media/23232555.20d673c873c32dd792fa.png",
     "static/media/Constantine.ttf": "/BakuYard/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
@@ -35,16 +35,17 @@
     "index.html": "/BakuYard/index.html",
     "static/media/formap.svg": "/BakuYard/static/media/formap.a7f4248ddc201212f8e549ae2fb7ddb6.svg",
     "static/media/forinsta.svg": "/BakuYard/static/media/forinsta.8d86b115ee4a845eb4dd923d1985db73.svg",
+    "static/media/undo.svg": "/BakuYard/static/media/undo.74d2304799a6e767c83a610693eca8e0.svg",
     "static/media/mobileSwitch.svg": "/BakuYard/static/media/mobileSwitch.1d5c2acc8d1c55aaad3f15b2828a9dec.svg",
     "static/media/formail.svg": "/BakuYard/static/media/formail.ece32913eaf4b213a271783b29c44db2.svg",
     "static/media/forfacebook.svg": "/BakuYard/static/media/forfacebook.7fe674680c094a8de1706d8c17ae92a8.svg",
     "static/media/dot.svg": "/BakuYard/static/media/dot.8a4f304f5be13f504c8e6555cf93da5e.svg",
     "static/media/toMenu.svg": "/BakuYard/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.39cf15af.css.map": "/BakuYard/static/css/main.39cf15af.css.map",
-    "main.3e6e0ea6.js.map": "/BakuYard/static/js/main.3e6e0ea6.js.map"
+    "main.88d9aa71.css.map": "/BakuYard/static/css/main.88d9aa71.css.map",
+    "main.bd0de1d2.js.map": "/BakuYard/static/js/main.bd0de1d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.39cf15af.css",
-    "static/js/main.3e6e0ea6.js"
+    "static/css/main.88d9aa71.css",
+    "static/js/main.bd0de1d2.js"
   ]
 }
