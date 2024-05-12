@@ -2,8 +2,8 @@ import React, { useContext, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import CartContext from "components/CartProvider/CartProvider";
 
-import { ReactComponent as ToMenuIcon } from 'images/left.svg';
-
+import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
+// import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 import styles from 'components/Basket/Basket.module.css';
 
 export const Basket = () => {
@@ -143,17 +143,6 @@ export const Basket = () => {
     };
   }, [basketEmpty, orderCompleted]);
 
-  // useEffect(() => {
-  //   if (basketEmpty || orderCompleted) {
-  //     document.body.style.overflow = 'hidden';
-  //   } else {
-  //     document.body.style.overflow = 'auto';
-  //   }
-
-  //   return () => {
-  //     document.body.style.overflow = 'auto';
-  //   };
-  // }, [basketEmpty, orderCompleted]);
   
   return (
     <div className={styles.basket}>
@@ -166,7 +155,7 @@ export const Basket = () => {
           <h1 className={styles.toMenuDescription}>до Меню</h1>
         </NavLink>
       </div>
-
+      
         <h1 className={styles.basketTitle}>Замовлення</h1>
         
         
@@ -198,12 +187,11 @@ export const Basket = () => {
                       {item.категорія}
                     </span>
                     
-
                     <span className={styles.basketListItemName}>
                       {item.назва}
                     </span>
 
-                    <span className={styles.basketListItemIngredients}>
+                    <span className={styles.basketListItemIngred}>
                       {item.інгредієнти}
                     </span>
 
@@ -232,41 +220,35 @@ export const Basket = () => {
                 </li>
               ))}
 
-            <div className={styles.basketOrderInfo}>
+<div className={styles.basketOrderInfo}>
 
-            <div className={styles.basketQuantityBox}>
+<div className={styles.basketQuantityBox}>
 
-                <span className={styles.basketQuantityTitle}>
-                  <h3>Кількість позицій: </h3>
-                </span>
+    <span className={styles.basketQuantityTitle}>
+      <h3>Кількість позицій: </h3>
+    </span>
 
-                <span className={styles.basketTotalQuantity}>
-                  {totalItems}
-                </span>
+    <span className={styles.basketTotalQuantity}>
+      {totalItems}
+    </span>
 
-            </div>
+</div>
 
-            <div className={styles.basketQuantityBox}>
+<div className={styles.basketQuantityBox}>
 
-                <span className={styles.basketPriceTitle}>
-                  <h3>Загальна сума:</h3>
-                </span>
+    <span className={styles.basketPriceTitle}>
+      <h3>Загальна сума:</h3>
+    </span>
 
-                <span className={styles.basketTotalPrice}>
-                  {totalPrice}
-                </span>
+    <span className={styles.basketTotalPrice}>
+      {totalPrice}
+    </span>
 
-            </div>
+</div>
 
-            </div>
+</div>
             </ul>
-            </div>
-
-          )}
-
-          
-
-          <div className={styles.basketMakeOrder}>
+            <div className={styles.basketMakeOrder}>
             <div className={styles.basketInputBox}>
               <input  
                 className={styles.basketInput} 
@@ -312,20 +294,27 @@ export const Basket = () => {
 
 
           </div>
+            </div>
+
+          )}
+
+          
+
+          
 
           {orderCompleted && 
           
           
           <div className={styles.emptyOrderBasketBox}>
               <span className={styles.orderDone}>
-            <div className={styles.orderDoneMessage}>
-                <h2>Замовлення оформлене!  <br/>
-                    Адміністратор зателефонує Вам  <br/>
-                    для підтвердження <br/>
-                    та узгодження деталей
-                </h2>
-            </div>
-          </span>
+                <div className={styles.orderDoneMessage}>
+                    <h2>Замовлення оформлене!  <br/>
+                        Адміністратор зателефонує Вам  <br/>
+                        для підтвердження <br/>
+                        та узгодження деталей
+                    </h2>
+                </div>
+              </span>
             </div>
           
           }

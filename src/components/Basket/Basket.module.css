@@ -1,6 +1,12 @@
+.fadeOut {
+  opacity: 0; 
+  transition: opacity 1s ease-out;
+}
+
 .basket {
  position: relative;
  min-height: 80vh;
+ /* height: 100vh; */
 
   
  @media screen and (min-width: 767.9px) {
@@ -30,7 +36,6 @@
  width: 80px;
  align-items: center;
  justify-content: space-between;
-/* background-color: #fff; */
   
  @media screen and (min-width: 767.9px) {
      
@@ -49,10 +54,8 @@
    justify-content: center;
    align-items: center;
    height: 95px;
-  
    font-size: 15px;
    margin: 0;
-   /* color: #7c7c7c; */
 
    @media screen and (min-width: 767.9px) {
      
@@ -64,12 +67,12 @@
 }
 
 .basketTitled {
-display: flex;
-justify-content: center;
-align-items: center;
-color: #000000;
-font-size: 13px;
-margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 13px;
+  margin: 0;
 
 @media screen and (min-width: 767.9px) {
   font-size: 15px;
@@ -94,10 +97,11 @@ margin: 0;
 
 .basketListBox {
  display: flex;
- width: auto;
- height: auto;
- justify-content: center;
- align-items: center;
+ flex-direction: column;
+ /* width: auto; */
+ /* height: auto; */
+ /* justify-content: center; */
+ /* align-items: center; */
 
  
 @media screen and (min-width: 767.9px) {
@@ -595,20 +599,21 @@ margin-left: 10px;
 .emptyOrderBasketBox {
 display: flex;
 justify-content: center;
+/* background-color: #fff; */
 }
 
 .orderDone,
 .basketEmpty {
-   position: absolute;
-   display: none;
-   top: 100px;
+   /* position: absolute; */
+   /* display: none; */
+   /* top: 100px; */
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 380px;
-   height: 500px;
-   z-index: 9;
-   /* margin: 0 20px; */
+   /* width: 380px; */
+   /* height: 500px; */
+   /* z-index: 9; */
+  
 
    
  @media screen and (min-width: 767.9px) {
@@ -619,20 +624,33 @@ justify-content: center;
  };
 }
 
+.orderDone {
+ z-index: 2;
+}
+
+.basketEmpty {
+z-index: 1;
+}
+
 .orderDoneMessage,
 .basketEmptyMessage {
    display: flex;
    align-items: center;
 
 
- background-color: #070707;
- /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
- background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+ /* background-color: #070707; */
+ /* box-shadow:
+    inset rgba(0, 0, 0, 0.772) -5px -5px 9px,
+    inset #303030 5px 5px 9px,
+    rgb(0, 0, 0) 3px 3px 8px -3px; */
 
- height: 450px;
- width: 380px;
+
+
+ /* height: 450px; */
+ /* max-width: 380px; */
  border-radius: 11px;
- box-shadow: 7px 7px 15px 2px #00000047;
+ /* box-shadow: 7px 7px 15px 2px #00000047; */
+ /* padding: 0 100px; */
 
  
  @media screen and (min-width: 767.9px) {
@@ -649,7 +667,8 @@ justify-content: center;
  width: 100%;
  justify-content: center;
  text-align: center;
- line-height: 75px;
+ line-height: 55px;
+ font-size: 13px;
 
  
  @media screen and (min-width: 767.9px) {
