@@ -107,11 +107,17 @@ width: 100%;
    font-size: 13px;
    border-radius: 11px;
    margin:  3px 0;
-   box-shadow: 6px 6px 15px 2px #0000004f;
+   border-radius: 13px;
+   background-color: #050505;
+   box-shadow:
+    inset rgba(0, 0, 0, 0.772) -5px -5px 9px,
+    inset #303030 5px 5px 9px,
+    rgb(0, 0, 0) 3px 3px 8px -3px;
+   /* box-shadow: 6px 6px 15px 2px #0000004f;
    background-color: #000000;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    background-color: #000000;
-   background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+   background-image: url("https://www.transparenttextures.com/theme/images/transparent.png"); */
    
    @media screen and (min-width: 767.9px) {
       font-size: 13px;

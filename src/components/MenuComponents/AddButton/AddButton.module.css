@@ -3,16 +3,21 @@
    height: 100%;
    width: 100%;
    margin: 0;
-   /* border-radius: 0 9px 9px 0; */
+   border-radius: 9px;
    align-items: center;
    justify-content: center;
    text-transform: uppercase;
    font-weight: 900;
-   transition: all ease-out 300ms;
+   transition: all 0.3s ease-out;
+
+   box-shadow:
+   inset #0e0e0e -5px -5px 9px,
+   inset #303030 5px 5px 9px,
+   rgb(0, 0, 0) 3px 3px 8px -3px;
+    background: #141414;
 }
 
 
-.added {
+/* .added {
    color: rgb(1, 147, 40);
-   /* background: linear-gradient(#000000d3, #014905c8, #000000d3); */
-}
+} */

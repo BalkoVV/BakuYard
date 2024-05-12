@@ -412,7 +412,12 @@
     justify-content: center;
     align-items: center;
     height: 80px;
-    border-radius: 11px;
+    border-radius: 13px;
+    background-color: #050505;
+   box-shadow:
+    inset rgba(0, 0, 0, 0.772) -5px -5px 9px,
+    inset #303030 5px 5px 9px,
+    rgb(0, 0, 0) 3px 3px 8px -3px;
     
     /* box-shadow:  5px 5px 10px 7px #00000034; */
     background-color: #000000;

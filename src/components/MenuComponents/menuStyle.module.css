@@ -8,7 +8,7 @@
 } */
 
 .dishPageContainer {
-   padding: 0 20px;
+   padding: 0 10px;
   
       
    @media screen and (min-width: 767.9px) {
@@ -65,7 +65,7 @@
    grid-template-columns: repeat(1, 1fr);
    grid-row-gap: 10px;
    border: none;
-   padding: 30px;
+   padding: 10px 10px 0 10px;
    border-radius: 13px;
    background: #b4b4b44a;
    margin-bottom: 30px;
@@ -94,32 +94,18 @@
 .dishListItem {
    display: flex; 
    padding-left: 3px;
-   border-radius: 15px;
    align-items: center;
    justify-content: space-between;
    height: 60px;
    margin-bottom: 15px;
-   background: rgb(9, 9, 9) radial-gradient(circle at 0 0, rgb(8, 8, 8), rgba(3, 3, 3, 0.35));
-   /* box-shadow:
-    inset rgba(0,0,0,.5) -3px -3px 8px,
-    inset #303030e6 3px 3px 8px,
-    rgba(0,0,0,.8) 3px 3px 8px -3px; */
-    /* box-shadow:
-    inset rgba(0,0,0,.5) -5px -5px 11px,
-    inset #303030e6 5px 5px 11px,
-    rgba(0,0,0,.8) 5px 5px 5px -1px;
-    transition: all .4s ease-out; */
-
-    background: rgb(0, 0, 0) radial-gradient(circle at 0 0, rgb(8, 8, 8), rgba(3, 3, 3, 0.35));
- /* box-shadow:
-  inset rgba(0,0,0,.5) -3px -3px 8px,
-  inset #303030e6 3px 3px 8px,
-  rgba(0,0,0,.8) 3px 3px 8px -3px; */
-  box-shadow:
-  inset #222222c2 -4px 2px 11px,
-  inset #222222c2 5px 4px 11px,
-  #000000c2 4px 4px 4px -25px;
-  transition: all .4s ease-out;
+  
+    transition: all .3s ease-out; 
+    border-radius: 13px;
+    background-color: #050505;
+    box-shadow:
+     inset rgba(0, 0, 0, 0.772) -5px -5px 9px,
+     inset #303030 5px 5px 9px,
+     rgb(0, 0, 0) 3px 3px 8px -3px;
 
    @media screen and (min-width: 768px) {
       
@@ -131,19 +117,9 @@
  }
 
  .dishListItem:hover {
-   /* box-shadow:  0px -2px 15px 2px #1a09001a; */
-   background: rgb(9, 9, 9) radial-gradient(circle at 0 0, rgb(8, 8, 8), rgba(3, 3, 3, 0.35));
-  background: rgb(0, 0, 0) radial-gradient(circle at 0 0, rgb(8, 8, 8), rgba(3, 3, 3, 0.35));
- /* box-shadow:
-  inset rgba(0,0,0,.5) -3px -3px 8px,
-  inset #303030e6 3px 3px 8px,
-  rgba(0,0,0,.8) 3px 3px 8px -3px; */
-  box-shadow:
-  inset #222222c2 -4px 2px 11px,
-  inset #222222c2 5px 4px 11px,
-  #000000c2 4px 4px 4px -25px;
-   transition: all .4s ease-out;
-   scale: 1.01;
+  
+   transition: all .3s ease-out;
+   scale: 1.02;
 }
 
  .dishListItemInfo {
@@ -156,10 +132,11 @@
    display: flex;
    align-items: center;
    justify-content: start;
-   height: 20px;
+   
+   /* height: 30px; */
  }
 
-.dishListItemCategory {
+/* .dishListItemCategory {
    color: #6e432e;
    font-size: 8px;
    padding-left: 10px;
@@ -170,12 +147,16 @@
    @media screen and (min-width: 1200px) {
      
    };
-}
+} */
 
  .dishListItemName {
    display: flex;
-   font-size: 10px;
-   padding-left: 5px;
+   height: 20px;
+   /* align-items: end; */
+   
+   /* padding: 0 20px 0px 10px; */
+   /* padding: ; */
+   /* background-color: #fff; */
   
    @media screen and (min-width: 767.9px) {
       
@@ -185,12 +166,22 @@
    };
 }
 
+
+.dishListItemNameDescription {
+ display: flex;
+padding: 20px 0 0 10px;
+font-size: 13px;
+}
+
 .dishListItemIngredients {
    display: flex;
-   align-items: center;
+   align-items: flex-start;
    font-size: 9px;
    color: #5e2000;
    padding-left: 10px;
+   /* background-color: red; */
+ 
+   height: 40px;
   
    @media screen and (min-width: 767.9px) {
        
@@ -262,15 +253,19 @@
    color: #7b7a7a;
    font-size: 15px;
    background: transparent;
-   border-radius: 7px;
-   background-color: rgba(60, 59, 59, 0.856);
+   border-radius: 9px;
+   /* box-shadow:  1px 2px 10px 3px #5e1f0080; */
+   scale: 1.02;
 }
 
 .dishListButtonAdd:hover  {
    cursor: pointer;
-  
+ 
 }
 
+.dishListButtonAdd .added {
+color: red;
+}
 
 
 .dishTablePrice100 {
@@ -565,6 +560,10 @@ color: blue;
    border: none;
    border-radius: 11px;
    background-color: #000000;
+   border-radius: 13px;
+   background-color: #000000;
+   box-shadow:  -5px -5px 7px 3px #00000029;
+    transition: all .3s ease-out;
   
   
   
@@ -588,7 +587,14 @@ color: blue;
      padding: 0;
      height: 60px;
      width: 60px;
-     border-radius: 11px;
+     /* border-radius: 11px; */
+
+     border-radius: 13px;
+     background: rgb(9, 9, 9) radial-gradient(circle at 0 0, rgb(3, 3, 3), rgb(1, 1, 1));
+     box-shadow:
+     inset rgba(0,0,0,.5) -4.5px -4.5px 10px,
+     inset #303030e6 4.5px 4.5px 10px,
+     rgba(0,0,0,.8) 0px 0px 0px -1px;
   
      @media screen and (min-width: 767.9px) {
         height: 60px;
@@ -606,7 +612,7 @@ color: blue;
      width: 100%;
      margin: 0;
      padding: 0 0 8px 0;
-     font-size: 9px;
+     font-size: 7px;
   
   
      @media screen and (min-width: 767.9px) {
@@ -618,16 +624,22 @@ color: blue;
   }
   
   .toMenuButton:hover .toMenuDescription {
-   color: #6b4d00;
+   color: #5e5e5e;
+    transition: all .3s ease-out;
   }
   
+
+  .toMenuButton:hover {
+   scale: 1.02;
+  }
+   
+ 
   .toMenuIcon {
      display: block;
      position: absolute;
      justify-content: center;
      align-items: center;
      position: absolute;
-     right: 9px;
-     top: 2px;
-     fill: #3a3a3a;
+     right: 16px;
+     top: 13px;
   }
