@@ -57,7 +57,7 @@ export const Sauces = () => {
           <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>
           <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+          <h1 className={styles.toMenuDescription}>до Меню</h1>
         </NavLink>
       </div>
             </div>
@@ -74,17 +74,17 @@ export const Sauces = () => {
               
                <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemCategory}>
+                  {/* <span className={styles.dishListItemCategory}>
                     <td>{item.категорія}</td>
-                  </span>
+                  </span> */}
                 
-                  <span className={styles.dishListItemName} >
-                    <td>{item.назва}</td>
-                  </span>
+                <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
 
-                  <span className={styles.dishListItemIngredients}>
+                  {/* <span className={styles.dishListItemIngredients}>
                     <td>{item.інгредієнти}</td>
-                  </span>
+                  </span> */}
 
                </div>
 

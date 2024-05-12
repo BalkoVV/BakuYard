@@ -6,8 +6,6 @@
 .basket {
  position: relative;
  min-height: 85vh;
- /* height: 100vh; */
-
   
  @media screen and (min-width: 767.9px) {
      
@@ -20,37 +18,24 @@
 .basketContainer {
    padding: 0 10px;
 
-    
- @media screen and (min-width: 767.9px) {
-  padding: 0 150px;
- };
- @media screen and (min-width: 1200px) {
-  padding: 0 300px;
- };
+  @media screen and (min-width: 767.9px) {
+    padding: 0 150px;
+  };
+  
+  @media screen and (min-width: 1200px) {
+    padding: 0 300px;
+  };
  }
  
 
 
-.quantityBox {
- display: flex;
- width: 80px;
- align-items: center;
- justify-content: space-between;
-  
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
-}
 
 
 
 
 .basketTitle {
    display: flex;
-   visibility: hidden;
+   /* visibility: hidden; */
    justify-content: center;
    align-items: center;
    height: 95px;
@@ -98,10 +83,6 @@
 .basketListBox {
  display: flex;
  flex-direction: column;
- /* width: auto; */
- /* height: auto; */
- /* justify-content: center; */
- /* align-items: center; */
 
  
 @media screen and (min-width: 767.9px) {
@@ -115,14 +96,14 @@
 
 .basketList {
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 10px;
     border: none;
     padding: 10px;
-    border-radius: 11px;
+    border-radius: 13px;
     background: #b4b4b44a;
   
+
 
      
  @media screen and (min-width: 767.9px) {
@@ -136,12 +117,10 @@
 .basketListItem {
   display: flex; 
   padding-left: 3px;
-  border-radius: 11px;
+  border-radius: 13px;
   align-items: center;
   justify-content: space-between;
   height: 60px;
-
- 
   transition: all .3s ease-out; 
   border-radius: 13px;
   background-color: #050505;
@@ -191,7 +170,7 @@
 
 .basketListItemName {
  display: flex;
- font-size: 10px;
+ font-size: 13px;
  padding-left: 5px;
   
  @media screen and (min-width: 767.9px) {
@@ -205,7 +184,7 @@
 .basketListItemIngredients {
  display: flex;
  align-items: center;
- font-size: 9px;
+ font-size: 8px;
  color: #5e2000;
  padding-left: 10px;
 
@@ -222,8 +201,6 @@
   display: flex;
   align-items: center;
 }
-
-
 
 .basketListItemPrice {
    display: flex;
@@ -245,9 +222,6 @@
  };
 }
 
-
-
-
 .basketListItemCounter {
    display: flex;
    align-items: center;
@@ -259,24 +233,7 @@
    right: 101px;
    font-size: 15px;
    top: 0;
-   /* border-left: 1px solid #780101e0; */
 
-    
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
-}
-
-
-
-
-.basketMakeOrder {
- display: grid;
- justify-content: space-around;
-  
   @media screen and (min-width: 767.9px) {
       
   };
@@ -285,6 +242,8 @@
     
   };
 }
+
+
 
 .basketListItemIncrease,
 .basketListItemDecrease {
@@ -301,9 +260,7 @@
   background: transparent;
   border-radius: 7px;
   background-color: rgba(73, 73, 73, 0.371);
-
   transition: all 0.3s ease-out;
-
    box-shadow:
    inset #0e0e0e -5px -5px 9px,
    inset #303030 5px 5px 9px,
@@ -324,13 +281,15 @@
  cursor: pointer;
 }
 
+
+
+
 .basketOrderInfo {
-  display: flex;
-  /* display: none; */
-  width: 100%;
-  justify-content: center;
-  padding: 10px 0px;
-  /* background-color: rgba(1, 71, 95, 0.356); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  padding: 0 20px;
+ 
   
   @media screen and (min-width: 767.9px) {
       
@@ -344,91 +303,98 @@
 
 .basketQuantityBox {
  display: flex;
- width: 150px;
- height: 50px;
- justify-content: start;
  align-items: center;
- padding: 5px;
- font-size: 15px;
- background-color: #000000;
- /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
- box-shadow: 7px 7px 15px 2px #00000047;
+ justify-content: center;
+height: 50px;
+ display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  padding: 0 20px;
+
+ background-color: #050505;
+  box-shadow:
+   inset rgba(0, 0, 0, 0.772) -5px -5px 9px,
+   inset #303030 5px 5px 9px,
+   rgb(0, 0, 0) 3px 3px 8px -3px;
 
  @media screen and (min-width: 768px) {
-     
+   
  };
  @media screen and (min-width: 1200px) {
-   width: 200px;
-   height: 50px;
+ 
+  
  };
 }
 
-.basketQuantityBox  {
- display: flex;
- align-items: center;
- border-radius: 11px;
- /* background-color: rgb(95, 2, 2); */
- margin: 5px;
- background-color: rgb(0, 0, 0);
- 
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
-}
 .basketQuantityTitle,
-.basketPriceTitle  {
-   /* padding-left: 20px; */
-   padding-right: 20px;
-   font-size: 13px;
-   line-height: 17px;
-    
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
+.basketPriceTitle {
+  display: grid;
+ font-size: 10px;
+ background-color: #fff;
+  @media screen and (min-width: 767.9px) {
+  
+  };
+  
+  @media screen and (min-width: 1200px) {
    
- };
+  };
+  }
+
+  .basketQuantityTitle h3,
+.basketPriceTitle h3 {
+  margin: 0;
+ font-size: 10px;
+  @media screen and (min-width: 767.9px) {
+  
+  };
+  
+  @media screen and (min-width: 1200px) {
+   
+  };
   }
 
 .basketTotalQuantity,
 .basketTotalPrice {
    color: #5e2000;
-   font-size: 20px;
-   padding-right: 20px;
-
+  
    
  @media screen and (min-width: 767.9px) {
-     
+  
  };
  @media screen and (min-width: 1200px) {
-   
+
  };
 }
 
 
+.basketMakeOrder {
+  display: flex;
+  width: 100%;
+  justify-content: center; 
 
+   @media screen and (min-width: 767.9px) {
+   };
+ 
+   @media screen and (min-width: 1200px) {
+   };
+ }
 .basketInputBox {
   display: grid;
-  /* width: 350px; */
+  width: 85%;
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 15px;
   padding: 20px;
-  border-radius: 11px;
+  border-radius: 13px;
   margin-top: 30px;
-  /* background-color: #cdcdcd47; */
   background: #b4b4b44a;
-  /* background-image: url(https://www.transparenttextures.com/patterns/white-wall-3-2.png); */
   box-shadow: 7px 7px 15px 2px #00000047;
 
    
  @media screen and (min-width: 767.9px) {
-     
+  width: 65%;
  };
  @media screen and (min-width: 1200px) {
-   
+  width: 55%;
  };
 }
 
@@ -436,7 +402,6 @@
    background-color: rgb(0, 0, 0);
    color: #b4b4b44a;
    padding-left: 16px;
-   width: 300px;
    height: 50px;
    border: none;
    border-radius: 11px;

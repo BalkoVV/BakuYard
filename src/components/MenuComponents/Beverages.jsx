@@ -76,13 +76,13 @@ export const Beverages = () => {
               
                <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemCategory}>
+                  {/* <span className={styles.dishListItemCategory}>
                     <td>{item.категорія}</td>
-                  </span>
+                  </span> */}
                 
-                  <span className={styles.dishListItemName} >
-                    <td>{item.назва}</td>
-                  </span>
+                <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
 
                   <span className={styles.dishListItemIngredients}>
                     <td>{item.інгредієнти}</td>

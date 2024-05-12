@@ -50,12 +50,5 @@ button:active {
  background: radial-gradient( rgb(8, 8, 8),transparent);
 }
 
-h1, h3, h2, h5, h4 {
- 
- /* text-shadow: rgb(0, 0, 0) 3px 5px 11px; */
 
- color: #414141;
- /* margin: 0; */
-
-}
 

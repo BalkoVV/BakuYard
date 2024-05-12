@@ -205,7 +205,7 @@ export const Basket = () => {
                           {item.назва}
                         </span>
 
-                        <span className={styles.basketListItemIngred}>
+                        <span className={styles.basketListItemIngredients}>
                           {item.інгредієнти}
                         </span>
 
@@ -233,35 +233,38 @@ export const Basket = () => {
 
                   ))}
 
+                    <div className={styles.basketOrderInfo}>
+
+                      <ul className={styles.basketQuantityBox}>
+
+                          <li className={styles.basketQuantityTitle}>
+                            <h3>Кількість позицій: </h3>
+                          </li>
+
+                          <li className={styles.basketTotalQuantity}>
+                            {totalItems}
+                          </li>
+
+                      </ul>
+
+                      <ul className={styles.basketQuantityBox}>
+
+                          <li className={styles.basketPriceTitle}>
+                            <h3>Загальна</h3>
+                            <h3>сума:</h3>
+                          </li>
+
+                          <li className={styles.basketTotalPrice}>
+                            {totalPrice}
+                          </li>
+
+                      </ul>
+
+                    </div>
+
               </ul>
 
-              <div className={styles.basketOrderInfo}>
-
-                  <div className={styles.basketQuantityBox}>
-
-                      <span className={styles.basketQuantityTitle}>
-                        <h3>Кількість позицій: </h3>
-                      </span>
-
-                      <span className={styles.basketTotalQuantity}>
-                        {totalItems}
-                      </span>
-
-                  </div>
-
-                  <div className={styles.basketQuantityBox}>
-
-                      <span className={styles.basketPriceTitle}>
-                        <h3>Загальна сума:</h3>
-                      </span>
-
-                      <span className={styles.basketTotalPrice}>
-                        {totalPrice}
-                      </span>
-
-                  </div>
-
-              </div>
+              
 
               <div className={styles.basketMakeOrder}>
 
@@ -295,15 +298,16 @@ export const Basket = () => {
                         </div>
                     </div>
 
-                    <button 
+                   
+
+               </div> 
+               <button 
                         className={`${styles.buttonMakeOrder} ${!isOrderButtonActive() ? styles.disabled : styles.active}`}
                         onClick={handleSubmitOrder}
                         disabled={!isOrderButtonActive()}
                         >
                         <h3>Замовити</h3>
                     </button>
-
-               </div> 
             </div>
           )}
         </div>

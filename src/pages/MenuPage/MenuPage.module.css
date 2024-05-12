@@ -64,6 +64,7 @@
       padding: 0 70px 70px 70px;
    }; 
 
+
    @media screen and (min-width: 1200px) {
      
       grid-template-columns: repeat(4, 1fr);
@@ -127,7 +128,7 @@
    display: flex;
    width: 100%;
    height: 110px;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
    border-radius: 13px;
    box-shadow:
@@ -151,52 +152,64 @@
 
 .dishCardImg {
 display: flex;
-width: 100%;
-justify-content: center;
-padding-left: 20px;
+justify-content: left;
+/* margin-left: 10px; */
+
+@media screen and (min-width: 767.9px) {
+   /* margin-left: 25px; */
+}; 
+
+@media screen and (min-width: 1200px) {
+   /* margin-left: 30px; */
+  
+   
+}; 
 }
 
 
 .dishCardImage {
  display: block;
- display: flex;
- justify-content: center;
- height: 65px;
- width: 65px;
+ /* display: flex; */
+ /* justify-content: center; */
+ height: 60px;
+ width: 60px;
 
+ @media screen and (max-width: 375px) {
+   height: 45px;
+   width: 45px;
+ 
+};  
  @media screen and (min-width: 767.9px) {
-   margin-left: 15px;
-   height: 85px;
-   width: 85px;
+   /* margin-left: 15px; */
+   height: 75px;
+   width: 75px;
 }; 
 
 @media screen and (min-width: 1200px) {
-   margin-left: 25px;
-   height: 105px;
-   width: 105px;
+   /* margin-left: 25px; */
+   height: 95px;
+   width: 95px;
    
 }; 
 }
 
-.dishCardDescriptionBox {
-display: grid;
-width: 60%;
 
-}
 
 .dishCardDescription {
    display: flex;
    justify-content: center;
    align-items: center;
-   flex-wrap: no-wrap;
-  
    margin: 0;
    color: #5c2000;
-   font-size: 11px;
-   padding-left: 5px;
+   font-size: 10px;
 
+
+   @media screen and (max-width: 375px) {
+      font-size: 9px;
+    
+   };  
    @media screen and (min-width: 768px) {
-      font-size: 13px;
+      font-size: 12.5px;
     
    }; 
    

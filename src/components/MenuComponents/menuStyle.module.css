@@ -59,7 +59,7 @@
   };
   }
 
-  .dishList {
+.dishList {
    display: grid;
    width: 100%;
    grid-template-columns: repeat(1, 1fr);
@@ -152,11 +152,7 @@
  .dishListItemName {
    display: flex;
    height: 20px;
-   /* align-items: end; */
-   
-   /* padding: 0 20px 0px 10px; */
-   /* padding: ; */
-   /* background-color: #fff; */
+ 
   
    @media screen and (min-width: 767.9px) {
       
@@ -168,21 +164,35 @@
 
 
 .dishListItemNameDescription {
- display: flex;
-padding: 20px 0 0 10px;
-font-size: 13px;
+   display: flex;
+   padding: 35px 0 0 10px;
+   font-size: 11px;
+   letter-spacing: .01px;
+
+   @media screen and (max-width: 374.9px) {
+      font-size: 9px;
+   letter-spacing: .01px;
+   };
+
+   @media screen and (min-width: 767.9px) {
+      
+   };
+   @media screen and (min-width: 1200px) {
+      
+   };
 }
 
 .dishListItemIngredients {
    display: flex;
    align-items: flex-start;
-   font-size: 9px;
+   font-size: 7px;
+   letter-spacing: .05px;
    color: #5e2000;
-   padding-left: 10px;
-   /* background-color: red; */
- 
+   padding: 10px 0 0 10px;
    height: 40px;
-  
+  /* width: 170px; */
+   
+
    @media screen and (min-width: 767.9px) {
        
    };
@@ -223,6 +233,7 @@ font-size: 13px;
    @media screen and (min-width: 767.9px) {
       
    };
+
    @media screen and (min-width: 1200px) {
       
    };

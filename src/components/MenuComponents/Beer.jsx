@@ -57,7 +57,7 @@ export const Beer = () => {
             <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>
           <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+          <h1 className={styles.toMenuDescription}>до Меню</h1>
         </NavLink>
       </div>          </div>
       
@@ -66,55 +66,78 @@ export const Beer = () => {
 
         <div className={styles.dishPageBox}>
 
-          <table className={styles.dishTableList}>
+          {/* <table className={styles.dishTableList}>
 
             <thead>
-              {/* <h3>Пиво</h3> */}
-              {/* <tr>
-                <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th>
-              </tr> */}
+             
             </thead>
 
             <tbody  className={`${styles.fadeIn}`}>
               {menuItems.map((item) => (
                 <tr key={item.id} className={styles.dishTable}>
-                {/* <td>{item.id}</td> */}
+              
                 <td className={styles.dishTableName}>{item.назва}</td>
                 <td className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
                 <td className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                {/* <td className={styles.dishTableButtonAdd}>
-                  <AddButton
-                    
-                    onClick={() => addToCart(item)}
-                    alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                    updateButtonState={() => updateButtonState(item.id)}
-                  />
-                </td> */}
+               
               </tr>
               ))}
             </tbody>
 
-          </table>
+          </table> */}
+
+<table className={styles.dishList}>
+          <h3 className={styles.dishListTitle}>Пиво</h3>
+ 
+          <tbody>
+            {menuItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+               <div className={styles.dishListItemInfo}>
+
+                  {/* <span className={styles.dishListItemCategory}>
+                    <td>{item.категорія}</td>
+                  </span> */}
+                
+                <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
+
+                  <span className={styles.dishListItemIngredients}>
+                    <td>{item.інгредієнти}</td>
+                  </span>
+
+               </div>
+
+                
+               <div className={styles.dishListItemManagement}>
+
+                  <span className={styles.dishListItemWeigth}>
+                    <td>{item.вага}</td>
+                  </span>
+
+                  <span className={styles.dishTablePrice}>
+                    <td>{item.ціна}</td>
+                  </span>
+
+               </div>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
 {/* beerSnacks */}
-<table className={styles.dishTableList}>
+{/* <table className={styles.dishTableList}>
           <thead>
             <tr>
               <h3>до Пива</h3>
-              {/* <th>ID</th>
-              <th>Назва</th>
-              <th>Вага</th>
-              <th>Ціна</th>
-              <th>Склад</th> */}
+             
             </tr>
           </thead>
           <tbody>
             {beerSnacksData.map((item) => (
               <tr key={item.id} className={styles.dishTable}>
-                {/* <td>{item.id}</td> */}
+               
                 <td className={styles.dishTableName}>{item.назва}</td>
                 <td className={styles.dishTableIngredients}>{item.інгредієнти}</td>
                 <td className={styles.dishTableWeigth}>{item.вага}</td>
@@ -130,7 +153,58 @@ export const Beer = () => {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table> */}
+
+<table className={styles.dishList}>
+            <h3 className={styles.dishListTitle}>до Пива</h3>
+            <tbody>
+              {beerSnacksData.map((item) => (
+              <tr key={item.id} className={styles.dishListItem}>
+                
+                 <div className={styles.dishListItemInfo}>
+
+                    {/* <span className={styles.dishListItemCategory}>
+                      <td>{item.категорія}</td>
+                    </span> */}
+                  
+                  <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
+
+                    <span className={styles.dishListItemIngredients}>
+                      <td>{item.інгредієнти}</td>
+                    </span>
+
+                 </div>
+
+                  
+                 <div className={styles.dishListItemManagement}>
+
+                    <span className={styles.dishListItemWeigth}>
+                      <td>{item.вага}</td>
+                    </span>
+
+                    <span className={styles.dishTablePrice}>
+                      <td>{item.ціна}</td>
+                    </span>
+
+                    <span className={styles.dishListButtonAddBox}>
+                        <td className={styles.dishListButtonAdd}>
+                          <AddButton
+                            
+                            onClick={() => addToCart(item)}
+                            alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                            updateButtonState={() => updateButtonState(item.id)}
+                          />
+                        </td>
+                    </span>
+
+                 </div>
+
+                </tr>
+              ))}
+            </tbody>
+          </table>
 
 
         </div>
