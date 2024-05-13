@@ -41,6 +41,7 @@
    height: 95px;
    font-size: 15px;
    margin: 0;
+   color: transparent;
 
    @media screen and (min-width: 767.9px) {
      

@@ -129,7 +129,7 @@ position: relative;
 }
 .dishCard:hover .dishCardImage,
 .dishCard:active .dishCardImage {
-   scale: .5;
+   scale: .6;
    rotate: 0deg;
    transition: all .4s ease-out;
    opacity: .2;
