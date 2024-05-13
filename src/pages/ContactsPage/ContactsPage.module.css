@@ -97,9 +97,10 @@ width: 100%;
   }
 
  .contactsListItem {
+   position: relative;
    display: flex;
-
-   justify-content: space-between;
+   overflow: hidden;
+   justify-content: flex-end;
    align-items: center;
    height: 70px;
    width: 100%;
@@ -118,7 +119,7 @@ width: 100%;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    background-color: #000000;
    background-image: url("https://www.transparenttextures.com/theme/images/transparent.png"); */
-   
+   transition: all .4s ease-out;
    @media screen and (min-width: 767.9px) {
       font-size: 13px;
       max-width: 450px;
@@ -131,9 +132,34 @@ width: 100%;
   }
 
 .contactsListItem img {
+   position: absolute;
+   rotate: 10deg;
+   opacity: 0.25;
    display: block;
-   height: 30px;
-   padding-left: 20px;
+   height: 100px;
+   transition: all .4s ease-out;
+   left: 0;
+
+   @media screen and (min-width: 767.9px) {
+      padding-left: 20px;
+
+   };
+
+   @media screen and (min-width: 1200px) {
+   padding-left: 50px;
+
+   };
+}
+
+.contactsListItemActive:hover img {
+   
+   rotate: 0deg;
+   opacity: 0.5;
+   display: block;
+   
+   scale: 0.4;
+   transition: all .4s ease-out;
+   left: 0;
 
    @media screen and (min-width: 767.9px) {
       padding-left: 20px;
@@ -149,7 +175,7 @@ width: 100%;
 .contactsListItemDiscriptions {
    padding-right: 20px;
    color: #414141;
- 
+   transition: all .4s ease-out;
    @media screen and (min-width: 767.9px) {
       padding-right: 20px;
      
@@ -158,4 +184,17 @@ width: 100%;
       padding-right: 50px;
      
    };
+}
+
+.contactsListItemActive:hover .contactsListItemDiscriptions,
+.contactsListItem:active .contactsListItemDiscriptions {
+   color: #8e8d8d;
+   transition: all .4s ease-out;
+}
+
+.contactsListItemActive:hover ,
+.contactsListItem:active  {
+   /* color: #8e8d8d; */
+   scale: 1.04;
+   transition: all .4s ease-out;
 }

@@ -38,59 +38,42 @@ export const ContactsPage = () => {
 
             <ul className={styles.contactsList}>
 
-                <li className={styles.contactsListItem}>
-                  <LocationIcon className={styles.contactsListItemImg}/>
-                  <h3 className={styles.contactsListItemDiscriptions}>Бровари, Героїв України, 22 </h3>
-                </li>
-
-                <li className={styles.contactsListItem}>
-                  <ClockIcon className={styles.contactsListItemImg}/>
-                  <h3 className={styles.contactsListItemDiscriptions}>Ми працюємо з 11:00 до 23:00</h3>
-                </li>
-
-
-                {/* <li className={styles.contactsListItem}>
-                  <PhonesIcon  className={styles.phoneIconContact}/>
-                  <h3 className={styles.contactsListItemDiscriptions}> +38 068 239 38 37</h3>
-                </li> */}
-
-                <li className={styles.contactsListItem}>
-  <PhonesIcon className={styles.phoneIconContact}/>
-  <a href="tel:+380970830717" className={styles.contactsListItemDiscriptions}> +38 068 239 38 37</a>
-</li>
-
-
-                {/* <li className={styles.contactsListItem}>
-                 <PhonesIcon className={styles.phoneIconContact}/>
-                  <h3 className={styles.contactsListItemDiscriptions}> +38 093 442 30 28</h3>
-                </li> */}
-
-<li className={styles.contactsListItem}>
-  <PhonesIcon className={styles.phoneIconContact}/>
-  <a href="tel:+380970830717" className={styles.contactsListItemDiscriptions}> +38 093 442 30 28</a>
-</li>
-
-                {/* <li className={styles.contactsListItem}>
-                  <PhonesIcon className={styles.phoneIconContact}/>
-                  <h3 className={styles.contactsListItemDiscriptions}> +38 045 945 33 69</h3>
-                </li> */}
-
-<li className={styles.contactsListItem}>
-  <PhonesIcon className={styles.phoneIconContact}/>
-  <a href="tel:+380970830717" className={styles.contactsListItemDiscriptions}> +38 045 945 33 69</a>
-</li>
+                  <li className={styles.contactsListItem}>
+                    <LocationIcon className={styles.contactsListItemImg}/>
+                    <h3 className={styles.contactsListItemDiscriptions}>Бровари, Героїв України, 22 </h3>
+                  </li>
 
                   <li className={styles.contactsListItem}>
+                    <ClockIcon className={styles.contactsListItemImg}/>
+                    <h3 className={styles.contactsListItemDiscriptions}>Ми працюємо з 11:00 до 23:00</h3>
+                  </li>
+
+                  <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
+                    <PhonesIcon className={styles.phoneIconContact}/>
+                    <a href="tel:+380970830717" className={styles.contactsListItemDiscriptions}> +38 068 239 38 37</a>
+                  </li>
+
+                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
+                    <PhonesIcon className={styles.phoneIconContact}/>
+                    <a href="tel:+380970830717" className={styles.contactsListItemDiscriptions}> +38 093 442 30 28</a>
+                  </li>          
+
+                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
+                    <PhonesIcon className={styles.phoneIconContact}/>
+                    <a href="tel:+380970830717" className={styles.contactsListItemDiscriptions}> +38 045 945 33 69</a>
+                  </li>
+
+                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <MailIcon className={styles.contactsListItemImg}/>
                     <a href="mailto:your_email@example.com" className={styles.contactsListItemDiscriptions}>Надішліть нам eMail</a>
                   </li>
 
-                  <li className={styles.contactsListItem}>
+                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <InstagramIcon className={styles.contactsListItemImg}/>
                     <a href="https://www.instagram.com/dvorbakinskii/" className={styles.contactsListItemDiscriptions}>Ми в Instagram</a>
                   </li>
 
-                  <li className={styles.contactsListItem}>
+                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <FacebookIcon className={styles.contactsListItemImg}/>
                     <a href="https://www.facebook.com/profile.php?id=100025507986999" className={styles.contactsListItemDiscriptions}>Ми у Facebook</a>
                   </li>
