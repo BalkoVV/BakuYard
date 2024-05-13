@@ -86,7 +86,7 @@ position: relative;
    overflow: hidden;
    margin-left: auto;
    margin-right: auto;
-   transition: all .3s ease-out;
+   transition: all .4s ease-out;
    box-shadow:  -7px -4px 22px 5px #00000029;
    background-color: #050505;
    /* background-color: black; */
@@ -110,18 +110,18 @@ position: relative;
 .dishCard:hover,
 .dishCard:active {
    box-shadow:  -7px -4px 17px 1px #0000001f;
-   transition: all .3s ease-out;
-   scale: 1.01;
+   transition: all .4s ease-out;
+   scale: 1.03;
 
 }
 .dishCard h3 {
-   transition: all .3s ease-out;
+   transition: all .4s ease-out;
 }
 
 .dishCard:hover h3,
 .dishCard:active h3 {
    color: #7c7c7c;
-   transition: all .3s ease-out;
+   transition: all .4s ease-out;
 }
 
 .dishCard .dishCardImage {
@@ -129,10 +129,10 @@ position: relative;
 }
 .dishCard:hover .dishCardImage,
 .dishCard:active .dishCardImage {
-   scale: .6;
+   scale: .5;
    rotate: 0deg;
    transition: all .4s ease-out;
-   opacity: .2;
+   opacity: .4;
    /* right: 5px; */
 }
 
@@ -210,7 +210,7 @@ justify-content: left;
    rotate: 7deg;
    bottom: -70px;
    left: -72px;
-   opacity: .07;
+   opacity: .1;
 }; 
 }
 
@@ -272,6 +272,7 @@ justify-content: left;
       height: 60px;
       width: 150px;
       border-radius: 17px;
+      right: 90px; 
       /* top: 124px; */
       /* right: 68px;  */
    };
