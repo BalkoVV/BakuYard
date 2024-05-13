@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BakuYard/static/css/main.7d845658.css",
-    "main.js": "/BakuYard/static/js/main.9ec5c142.js",
+    "main.css": "/BakuYard/static/css/main.9eb566ea.css",
+    "main.js": "/BakuYard/static/js/main.ef4c4e26.js",
     "static/media/map444.png": "/BakuYard/static/media/map444.6400aebd07a404414d9e.png",
     "static/media/23232555.png": "/BakuYard/static/media/23232555.20d673c873c32dd792fa.png",
     "static/media/Constantine.ttf": "/BakuYard/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
@@ -25,7 +25,7 @@
     "static/media/mainDishCard.svg": "/BakuYard/static/media/mainDishCard.c6aa7739ea1fde5efeaf5c23e557ccfe.svg",
     "static/media/fishCard.svg": "/BakuYard/static/media/fishCard.1af886270030cfe00b3f52671c511198.svg",
     "static/media/dessertCard.svg": "/BakuYard/static/media/dessertCard.daa07884ab8d6a7334547cc7b10109e1.svg",
-    "static/media/meatCard.svg": "/BakuYard/static/media/meatCard.4798c13d33611814f44805f608393a09.svg",
+    "static/media/meatCard.svg": "/BakuYard/static/media/meatCard.0a440a83c35238132cccc123797d3827.svg",
     "static/media/sideDishCard.svg": "/BakuYard/static/media/sideDishCard.82c2d78194769394e7678ca64f0ca746.svg",
     "static/media/coldAppetizerCard.svg": "/BakuYard/static/media/coldAppetizerCard.38f03d6a08d514ac4604e8668ce3dd20.svg",
     "static/media/mobile.svg": "/BakuYard/static/media/mobile.f19f83988cdd8f725b97b9f369feaa54.svg",
@@ -41,11 +41,11 @@
     "static/media/forfacebook.svg": "/BakuYard/static/media/forfacebook.7fe674680c094a8de1706d8c17ae92a8.svg",
     "static/media/dot.svg": "/BakuYard/static/media/dot.8a4f304f5be13f504c8e6555cf93da5e.svg",
     "static/media/toMenu.svg": "/BakuYard/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.7d845658.css.map": "/BakuYard/static/css/main.7d845658.css.map",
-    "main.9ec5c142.js.map": "/BakuYard/static/js/main.9ec5c142.js.map"
+    "main.9eb566ea.css.map": "/BakuYard/static/css/main.9eb566ea.css.map",
+    "main.ef4c4e26.js.map": "/BakuYard/static/js/main.ef4c4e26.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d845658.css",
-    "static/js/main.9ec5c142.js"
+    "static/css/main.9eb566ea.css",
+    "static/js/main.ef4c4e26.js"
   ]
 }
