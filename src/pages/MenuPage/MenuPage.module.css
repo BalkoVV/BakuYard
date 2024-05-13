@@ -111,7 +111,7 @@ position: relative;
 .dishCard:active {
    box-shadow:  -7px -4px 17px 1px #0000001f;
    transition: all .3s ease-out;
-   scale: 1.03;
+   scale: 1.01;
 
 }
 .dishCard h3 {
@@ -120,18 +120,20 @@ position: relative;
 
 .dishCard:hover h3,
 .dishCard:active h3 {
-   color: #5e5e5e;
+   color: #7c7c7c;
    transition: all .3s ease-out;
 }
 
 .dishCard .dishCardImage {
-   transition: all .3s ease-out;
+   transition: all .4s ease-out;
 }
 .dishCard:hover .dishCardImage,
 .dishCard:active .dishCardImage {
-   scale: .7;
+   scale: .5;
    rotate: 0deg;
-   transition: all .3s ease-out;
+   transition: all .4s ease-out;
+   opacity: .2;
+   /* right: 5px; */
 }
 
 .dishCardLink {
@@ -182,11 +184,12 @@ justify-content: left;
  position: absolute;
  /* display: flex; */
  /* justify-content: center; */
- height: 160px;
- width: 160px;
- rotate: 7deg;
-   bottom: -30px;
-   left: -22px;
+ height: 130px;
+ width: 130px;
+ rotate: 19deg;
+   bottom: -10px;
+   left: -2px;
+   opacity: .1;
 
  @media screen and (max-width: 375px) {
    height: 45px;
@@ -202,11 +205,12 @@ justify-content: left;
 
 @media screen and (min-width: 1200px) {
    /* margin-left: 25px; */
-   height: 255px;
-   width: 255px;
+   height: 335px;
+   width: 335px;
    rotate: 7deg;
-   bottom: -50px;
-   left: -22px;
+   bottom: -70px;
+   left: -72px;
+   opacity: .07;
 }; 
 }
 
