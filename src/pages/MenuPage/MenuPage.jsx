@@ -34,6 +34,7 @@ import mocktailsCardImage from 'images/mocktailsCard.svg';
 
 import Meat from "components/MenuComponents/Meat";
 import meatCardImage from 'images/meatCard.svg';
+// import meatCardImage from 'images/meatt.jpg';
 
 import Sauces from "components/MenuComponents/Sauces";
 import saucesCardImage from 'images/saucesCard.svg';

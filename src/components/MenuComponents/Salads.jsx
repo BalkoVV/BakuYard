@@ -123,6 +123,7 @@ export const Salads = () => {
                   <span className={styles.dishListItemIngredients}>
                     <td>{item.інгредієнти}</td>
                   </span>
+                  
 
                </div>
 

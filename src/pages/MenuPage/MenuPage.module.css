@@ -75,7 +75,7 @@
 }
 
 .dishCard {
-
+position: relative;
    display: flex;
    width: 100%;
    /* height: 100%; */
@@ -124,6 +124,16 @@
    transition: all .3s ease-out;
 }
 
+.dishCard .dishCardImage {
+   transition: all .3s ease-out;
+}
+.dishCard:hover .dishCardImage,
+.dishCard:active .dishCardImage {
+   scale: .7;
+   rotate: 0deg;
+   transition: all .3s ease-out;
+}
+
 .dishCardLink {
    display: flex;
    width: 100%;
@@ -169,10 +179,14 @@ justify-content: left;
 
 .dishCardImage {
  display: block;
+ position: absolute;
  /* display: flex; */
  /* justify-content: center; */
- height: 60px;
- width: 60px;
+ height: 160px;
+ width: 160px;
+ rotate: 7deg;
+   bottom: -30px;
+   left: -22px;
 
  @media screen and (max-width: 375px) {
    height: 45px;
@@ -183,13 +197,16 @@ justify-content: left;
    /* margin-left: 15px; */
    height: 75px;
    width: 75px;
+   
 }; 
 
 @media screen and (min-width: 1200px) {
    /* margin-left: 25px; */
-   height: 95px;
-   width: 95px;
-   
+   height: 255px;
+   width: 255px;
+   rotate: 7deg;
+   bottom: -50px;
+   left: -22px;
 }; 
 }
 
