@@ -84,13 +84,14 @@
 .basketListBox {
  display: flex;
  flex-direction: column;
-
+ /* padding: 10px; */
  
 @media screen and (min-width: 767.9px) {
-     
+  /* padding: 20px; */
 };
 @media screen and (min-width: 1200px) {
-  
+  /* padding: 60px; */
+ 
 };
 }
 
@@ -108,10 +109,11 @@
 
      
  @media screen and (min-width: 767.9px) {
-     
+  padding: 20px;
  };
  @media screen and (min-width: 1200px) {
-   
+  padding: 30px;
+  /* background: red; */
  };
 }
 

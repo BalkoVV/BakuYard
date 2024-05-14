@@ -131,14 +131,21 @@ width: 100%;
    };
   }
 
+  .contactsListItem:active a {
+   position: absolute;
+   display: flex;
+   height: 70px;
+   width: 100%;
+   background-color: #fff;
+}
 .contactsListItem img {
    position: absolute;
    rotate: 10deg;
-   opacity: 0.25;
+   opacity: 0.15;
    display: block;
-   height: 100px;
+   height: 70px;
    transition: all .4s ease-out;
-   left: 0;
+   left: 20px;
 
    @media screen and (min-width: 767.9px) {
       padding-left: 20px;
@@ -154,12 +161,12 @@ width: 100%;
 .contactsListItemActive:hover img {
    
    rotate: 0deg;
-   opacity: 0.5;
+   opacity: 0.3;
    display: block;
    
-   scale: 0.4;
+   scale: 0.6;
    transition: all .4s ease-out;
-   left: 0;
+   left: 30px;
 
    @media screen and (min-width: 767.9px) {
       padding-left: 20px;
@@ -194,7 +201,6 @@ width: 100%;
 
 .contactsListItemActive:hover ,
 .contactsListItem:active  {
-   /* color: #8e8d8d; */
    scale: 1.04;
    transition: all .4s ease-out;
 }

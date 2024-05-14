@@ -15,9 +15,6 @@ export const Basket = () => {
   const [isPhoneNumberValid, setIsPhoneNumberValid] = useState(false);
   const [street, setStreet] = useState('');
   const [houseNumber, setHouseNumber] = useState('');
-//   const [isStreetValid, setIsStreetValid] = useState(false);
-// const [isHouseNumberValid, setIsHouseNumberValid] = useState(false);
-
   const isStreetValid = street.trim() !== '';
   const isHouseNumberValid = houseNumber.trim() !== '';
   const [orderCompleted, setOrderCompleted] = useState(false);
@@ -60,17 +57,9 @@ export const Basket = () => {
   }, []);
 
 
-// useEffect(() => {
-//   setIsStreetValid(street.trim() !== '');
-// }, [street]);
-
-// useEffect(() => {
-//   setIsHouseNumberValid(houseNumber.trim() !== '');
-// }, [houseNumber]);
-
   const handleNameChange = (event) => {
     const value = event.target.value;
-    // введене значення містить лише букви
+
     const nameRegex = /^[A-Za-zА-Яа-яҐґЄєІіЇї\s]+$/; 
     if (nameRegex.test(value) || value === '') {
       setIsNameValid(nameRegex.test(value)); 
@@ -80,7 +69,6 @@ export const Basket = () => {
   
   const handlePhoneNumberChange = (event) => {
     const value = event.target.value;
-    // введене значення містить лише цифри
     const phoneRegex = /^\d{0,10}$/; 
     if (phoneRegex.test(value) || value === '') {
       setIsPhoneNumberValid(phoneRegex.test(value));
@@ -88,24 +76,9 @@ export const Basket = () => {
     }
   };
   
-  // const handleStreetChange = (event) => {
-  //   const value = event.target.value;
-  //   const streetRegex = /^[A-Za-zА-Яа-яҐґЄєІіЇї\s]+$/;
-  //   setStreet(value);
-  //   setIsStreetValid(streetRegex.test(value) || value === '');
-  // };
-  
-  // const handleHouseNumberChange = (event) => {
-  //   const value = event.target.value;
-  //   const houseNumberRegex = /^\d+$/;
-  //   setHouseNumber(value);
-  //   setIsHouseNumberValid(houseNumberRegex.test(value) || value === '');
-  // };
-  
 
   const handleStreetChange = (event) => {
     const value = event.target.value;
-   
     const streetRegex = /^[A-Za-zА-Яа-яҐґЄєІіЇї\s]+$/;
     if (streetRegex.test(value) || value === '') {
       setStreet(value);
@@ -114,7 +87,6 @@ export const Basket = () => {
   
   const handleHouseNumberChange = (event) => {
     const value = event.target.value;
-  
     const houseNumberRegex = /^\d+$/;
     if (houseNumberRegex.test(value) || value === '') {
       setHouseNumber(value);
@@ -201,16 +173,7 @@ export const Basket = () => {
             </div>
             <div className={styles.basketContainer}>
         
-            {/* <div className={styles.toMenuButton}>
-              <NavLink to="/menu" className={styles.toMenuLink}>
-                <ToMenuIcon className={styles.toMenuIcon}/>
-                <h1 className={styles.toMenuDescription}>до Меню</h1>
-              </NavLink>
-            </div>
-            
-              <h1 className={styles.basketTitle}>Замовлення</h1>
-               */}
-        
+          
               {orderCompleted ? ( 
             <div className={styles.emptyOrderBasketBox}>
               <span className={styles.orderDone}>

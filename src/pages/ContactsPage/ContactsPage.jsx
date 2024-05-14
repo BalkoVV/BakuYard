@@ -8,6 +8,7 @@ import MailIcon from 'components/Icons/MailIcon/MailIcon';
 import LocationIcon from 'components/Icons/LocationIcon/LocationIcon';
 import ClockIcon from 'components/Icons/ClockIcon/ClockIcon';
 import PhonesIcon from 'components/Icons/PhonesIcon/PhonesIcon';
+// import OldPhonesIcon from 'components/Icons/OldPhonesIcon/OldPhonesIcon';
 
 import styles from 'pages/ContactsPage/ContactsPage.module.css';
 
