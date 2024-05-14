@@ -19,7 +19,7 @@ export const ContactsPage = () => {
       contentElements.forEach((element, index) => {
         setTimeout(() => {
           element.style.opacity = '1'; 
-        }, .5 * index); 
+        }, 10 * index); 
       });
     }, []); 
 

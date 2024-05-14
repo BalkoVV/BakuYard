@@ -10,7 +10,7 @@ const MainPage = () => {
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '1'; 
-      }, 1 * index); 
+      }, 10 * index); 
     });
   }, []);
 

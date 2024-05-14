@@ -87,7 +87,7 @@ export const MenuPage = () => {
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '1'; 
-      }, 1 * index); 
+      }, 10 * index); 
     });
   }, [location.pathname]);
   
