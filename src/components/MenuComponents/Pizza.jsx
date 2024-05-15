@@ -6,17 +6,19 @@ import { NavLink } from "react-router-dom";
 
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 // import ToMenuButton from "components/ToMenuButton/ToMenuButton";
-import { ReactComponent as ToMenuIcon } from 'images/left.svg';
-
+import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 import CartContext from "components/CartProvider/CartProvider";
 
 import menuData from "services/dataBakedDishes/pizza.json";
 import khachapuriData from "services/dataBakedDishes/khachapuri.json"
 import pitaData from "services/dataBakedDishes/pita.json"
 
-// import pizzaMenu1 from 'images/pizzaMenu1.png';
-// import pizzaMenu2 from 'images/pizzaMenu2.png';
-// import pizzaMenu3 from 'images/pizzaMenu3.png';
+// import pizzaMenu1 from 'images/pizzaCardMenu.svg';
+// import pizzaMenu2 from 'images/pizzaCardMenu.svg';
+// import pizzaMenu3 from 'images/pizzaCardMenu.svg';
+// import pizzaMenu2 from 'images/pizzaCard.svg';
+import pizzaMenu1 from 'images/pizzaMenu1.png';
+import pizzaMenu2 from 'images/pizzaMenu2.png';
 
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
@@ -72,27 +74,87 @@ export const Pizza = () => {
 
         <div className={styles.dishPageBox}>
 
-        {/* <img
+        <img
          src={pizzaMenu1}
         alt=""
         style={{
           position: 'fixed',
-          top: '100px',
-          left: '-40px',
-          width: '400px',
+          top: '-90px',
+          left: '-150px',
+          width: '600px',
           height: '600px',
+          zIndex: '0',
+          rotate: '7deg',
+          opacity: '.4'
         }}
-      /> */}
+      />
 
-       {/* <img
+
+       <img
          src={pizzaMenu2}
         alt=""
         style={{
           position: 'fixed',
-          top: '220px',
-          right: '-40px',
-          width: '400px',
+          bottom: '-90px',
+          right: '-150px',
+          width: '600px',
           height: '600px',
+          zIndex: '0',
+          rotate: '-17deg',
+          transform: 'scaleX(-1)',
+          opacity: '.4',
+          
+        }}
+      />
+
+{/* <img
+
+         src={pizzaMenu1}
+        alt=""
+        style={{
+          position: 'fixed',
+          top: '70px',
+          left: '-100px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '17deg',
+          opacity: '.4'
+        }}
+      />
+
+
+       <img
+       className={styles.menuCardImage}
+         src={pizzaMenu2}
+        alt=""
+        style={{
+          position: 'fixed',
+          bottom: '10px',
+          right: '-50px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '-17deg',
+          transform: 'scaleX(-1)',
+          opacity: '.4',
+         
+        }}
+      /> */}
+
+{/* <img
+         src={pizzaMenu3}
+        alt=""
+        style={{
+          position: 'fixed',
+          top: '0px',
+          right: '-20px',
+          width: '400px',
+          height: '400px',
+          zIndex: '0',
+          rotate: '-17deg',
+          opacity: '.15',
+          
         }}
       /> */}
        
@@ -101,7 +163,7 @@ export const Pizza = () => {
             <h3 className={styles.dishListTitle}>Піца</h3>
             <tbody>
               {menuItems.map((item) => (
-              <tr key={item.id} className={styles.dishListItem}>
+              <tr key={item.id} className={`${styles.dishListItem} ${styles.dishListItemShadow}`}>
                 
                  <div className={styles.dishListItemInfo}>
 

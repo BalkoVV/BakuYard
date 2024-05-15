@@ -2,8 +2,9 @@ import React, { useContext, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import CartContext from "components/CartProvider/CartProvider";
 
-import { ReactComponent as ToMenuIcon } from 'images/undo.svg';
+import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 import styles from 'components/Basket/Basket.module.css';
+import "index.css";
 
 export const Basket = () => {
   const { cartItems, increaseQuantity, decreaseQuantity, clearCart } = useContext(CartContext);
@@ -257,7 +258,8 @@ export const Basket = () => {
                       <ul className={styles.basketQuantityBox}>
 
                           <li className={styles.basketQuantityTitle}>
-                            <h3>Кількість позицій: </h3>
+                            <h3>Кількість</h3>
+                            <h3>позицій: </h3>
                           </li>
 
                           <li className={styles.basketTotalQuantity}>
@@ -320,13 +322,15 @@ export const Basket = () => {
                    
 
                </div> 
-               <button 
+              <div className={styles.buttonMakeOrderBox}>
+              <button 
                         className={`${styles.buttonMakeOrder} ${!isOrderButtonActive() ? styles.disabled : styles.active}`}
                         onClick={handleSubmitOrder}
                         disabled={!isOrderButtonActive()}
                         >
-                        <h3>Замовити</h3>
+                        <h3 className={styles.buttonMakeOrderDescription}>Замовити</h3>
                     </button>
+              </div>
             </div>
           )}
         </div>

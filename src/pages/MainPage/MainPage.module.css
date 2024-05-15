@@ -8,7 +8,15 @@
 .mainPageContainer {
   width: 100%;
   background-color: #070707;
+  background-position: left;
   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+  /* background-color: #161616; */
+/* background-image: url("https://www.transparenttextures.com/patterns/triangles.png"); */
+/* background-image: url("images/texture-bg.jpeg");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center; */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   
   @media screen and (min-width: 1200px) {
     background-attachment: fixed;
@@ -146,15 +154,16 @@
     align-items: center;
     height: 100px;
     width: 100%;
-    border-radius: 11px;
+    border-radius: 13px;
     background-image: url('images/str.png'); 
-    /* background-image: url('images/party.png');  */
     background-color: #00000090;
     background-size: 170%;
     background-position: top;
     background-repeat: no-repeat;
     overflow: hidden;
-    box-shadow:  inset 0px 0px 95px 15px #000000;
+   
+    box-shadow: inset 0px 0px 111px 17px #000000db;
+    box-shadow:  4px 4px 15px 4px #0000008b;
 
     @media screen and (min-width: 768px) {
       height: 200px;
@@ -163,7 +172,8 @@
       background-size: 80%;
       background-repeat: repeat;
       background-attachment: fixed;
-      box-shadow:  inset 0px 0px 195px 45px #000000;
+     
+      box-shadow:  4px 4px 15px 4px #0000008b;
       height: 200px;
     };
   }
@@ -171,10 +181,17 @@
   .featuresTop li h1 {
    display: flex;
    align-items: center;
+   height: 100%;
+   width: 100%;
    justify-content: center;
    font-size: 15px;
    text-shadow: #000000 3px 25px 121px;
    color: #555555;
+    border-radius: 13px;
+    box-shadow:
+    inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
+    inset #303030 5px 5px 9px,
+    rgb(0, 0, 0) 3px 3px 8px -3px;
    /* padding-top: 0px; */
    /* padding-left: 30px; */
 
@@ -276,6 +293,7 @@
       grid-column-gap: 30px;
       grid-row-gap: 30px;
     };
+
   }
 
   .featuresCenter li {
@@ -285,14 +303,14 @@
     height: 130px;
     width: 100%;
     padding: 30px auto;
-    border-radius: 11px;
+    border-radius: 13px;
     background-color: #0000003e;
     background-image: url("images/hotel.png");
     background-size: 100%;
     background-repeat: repeat;
-    border: 1px solid rgb(17, 17, 17);
-    
+    border: none;
     box-shadow: inset 0px 0px 111px 17px #000000db;
+    
 
     /* @media screen and (min-width: 768px) {
      
@@ -305,10 +323,21 @@
    }
 
    .featuresCenter li h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 13px;
+    box-shadow:
+    inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
+    inset #303030 5px 5px 9px,
+    rgb(0, 0, 0) 3px 3px 8px -3px;
     font-size: 15px;
     color: #555555;
-    text-shadow:rgb(0 0 0) 0px 0px 43px;
-    text-shadow:rgb(0 0 0) 5px 5px 7px;
+   
+    
+
     /* text-shadow: rgba(95, 95, 95, 0.091) 3px 3px 4px; */
 
     @media screen and (min-width: 768px) {
@@ -423,6 +452,7 @@
     /* box-shadow:  5px 5px 10px 7px #00000034; */
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+    
     @media screen and (min-width: 768px) {
       height: 90px;
     };

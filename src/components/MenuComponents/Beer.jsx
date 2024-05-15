@@ -6,8 +6,7 @@ import { NavLink } from "react-router-dom";
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 import CartContext from "components/CartProvider/CartProvider";
 
-import { ReactComponent as ToMenuIcon } from 'images/left.svg';
-// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
+import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 
 // import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 

@@ -4,7 +4,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
-import { ReactComponent as ToMenuIcon } from 'images/left.svg';
+import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 
 import { CartContext } from "components/CartProvider/CartProvider";
 

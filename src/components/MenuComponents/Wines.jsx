@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { ReactComponent as ToMenuIcon } from 'images/left.svg';
-
+import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 import menuChampagneData from "services/dataWines/champagne.json";
 import menuUkrainianWineData from "services/dataWines/ukrainianWine.json";
 import menuItalianWineData from "services/dataWines/italianWine.json";

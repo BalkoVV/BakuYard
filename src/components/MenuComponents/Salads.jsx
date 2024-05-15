@@ -5,8 +5,7 @@ import { NavLink } from "react-router-dom";
 
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
 // import ToMenuButton from "components/ToMenuButton/ToMenuButton";
-import { ReactComponent as ToMenuIcon } from 'images/left.svg';
-
+import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 import { CartContext } from "components/CartProvider/CartProvider";
 
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
@@ -14,6 +13,9 @@ import { CartContext } from "components/CartProvider/CartProvider";
 
 import menuData from "services/dataSalads/salads.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
+
+import saladMenu1 from 'images/saladCardMenu.svg';
+import saladMenu2 from 'images/saladCardMenu.svg';
 // import saladMenu1 from 'images/saladMenu1.png';
 // import saladMenu2 from 'images/saladMenu2.png';
 // import saladMenu3 from 'images/saladMenu3.png';
@@ -67,41 +69,40 @@ export const Salads = () => {
       
         <div className={styles.dishPageBox}>
 
-        {/* <img
+        <img
+        // className={styles.menuCardImage}
          src={saladMenu1}
-        alt="saladMenu1"
+        alt=""
         style={{
           position: 'fixed',
-          top: '20px',
-          left: '-90px',
-          width: '450px',
-          height: '650px',
-          opacity: '1',
+          top: '70px',
+          left: '-100px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '17deg',
+          opacity: '.4'
         }}
-      /> */}
-       {/* <img
+      />
+
+
+       <img
+       className={styles.menuCardImage}
          src={saladMenu2}
-        alt="saladMenu2"
+        alt=""
         style={{
           position: 'fixed',
-          top: '270px',
-          right: '-90px',
-          width: '450px',
-          height: '600px',
-          opacity: '0.9',
+          bottom: '10px',
+          right: '-50px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '-17deg',
+          transform: 'scaleX(-1)',
+          opacity: '.4',
+          // backgroundColor: 'white',
         }}
-      /> */}
-       {/* <img
-         src={saladMenu3}
-        alt="First Image"
-        style={{
-          position: 'absolute',
-          top: '350px',
-          left: '50px',
-          width: '200px',
-          height: '200px',
-        }}
-      /> */}
+      />
         
 
         <table className={styles.dishList}>

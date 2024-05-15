@@ -9,6 +9,7 @@
   z-index: 10;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+
 }
 
 /* .bottomLineLogo {
@@ -66,7 +67,7 @@
   justify-content: space-between;
   font-size: 11px;
   margin-left: 10px;
-
+/* color: #5e5e5e; */
   @media screen and (min-width: 1200px) {
     font-size: 15px;
   }; 
@@ -78,12 +79,12 @@
  }
 
  .activeLink h4 {
- color: #781e1e;
+ /* color: #781e1e; */
  color: #5c2000;
 }
 
  .headerNav a:hover h4 {
- color: #590000;
+ /* color: #590000; */
  color: #5c2000;
  transition: .1s;
 }
@@ -154,6 +155,7 @@ padding-right: 1.9px;
 }
 
 .headerLogo {
+  position: relative;
   display: flex;
 
   @media screen and (min-width: 768px) {
@@ -164,5 +166,29 @@ padding-right: 1.9px;
      padding-right: 200px;
   };
 }
+
+.headerLogo:after {
+  position: absolute;
+  content: "";
+ display: flex;
+ height: 5px;
+ width: 195px;
+ bottom: 2px;
+ border-radius: 1px;
+ left: 2px;
+ background-color: #5e1f006f;
+ background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+ /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+ background-color: #5e2000;
+ background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
+ /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+ background-size: contain;
+ background-color: #5e2000;
+background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
  
  

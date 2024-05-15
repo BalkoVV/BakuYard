@@ -129,10 +129,10 @@ export const MenuPage = () => {
                       />
                     </span>
                     <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
+                   <h3 className={styles.dishCardDescriptionTop}>
                       Барбекю
                     </h3>
-                    
+                   
                    </span>
                   
                   </NavLink>
@@ -150,10 +150,10 @@ export const MenuPage = () => {
                       />
                     </span>
                     <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
+                   <h3 className={styles.dishCardDescriptionTop}>
                       Риба
                     </h3>
-                    
+                   
                    </span>
                   
                   </NavLink>
@@ -172,10 +172,10 @@ export const MenuPage = () => {
                       />
                     </span>
                     <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
+                   <h3 className={styles.dishCardDescriptionTop}>
                       Основні 
                     </h3>
-                    <h3 className={styles.dishCardDescription}>
+                    <h3 className={styles.dishCardDescriptionBottom}>
                        страви
                     </h3>
                    </span>
@@ -195,10 +195,9 @@ export const MenuPage = () => {
                       />
                     </span>
                     <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
+                   <h3 className={styles.dishCardDescriptionTop}>
                       Гарніри 
                     </h3>
-                  
                    </span>
                   
                   </NavLink>
@@ -216,10 +215,10 @@ export const MenuPage = () => {
                       />
                     </span>
                     <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
+                   <h3 className={styles.dishCardDescriptionTop}>
                       Гарячі 
                     </h3>
-                    <h3 className={styles.dishCardDescription}>
+                    <h3 className={styles.dishCardDescriptionBottom}>
                        закуски
                     </h3>
                    </span>
@@ -238,10 +237,10 @@ export const MenuPage = () => {
                       />
                     </span>
                     <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
+                   <h3 className={styles.dishCardDescriptionTop}>
                       Холодні 
                     </h3>
-                    <h3 className={styles.dishCardDescription}>
+                    <h3 className={styles.dishCardDescriptionBottom}>
                        закуски
                     </h3>
                    </span>
@@ -261,7 +260,7 @@ export const MenuPage = () => {
                       />
                     </span>
                     <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
+                   <h3 className={styles.dishCardDescriptionTop}>
                       Салати 
                     </h3>
                     
@@ -283,8 +282,8 @@ export const MenuPage = () => {
                     />
                    </span>
                    <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
-                     Соуси
+                   <h3 className={styles.dishCardDescriptionTop}>
+                      Соуси 
                     </h3>
                     
                    </span>
@@ -302,12 +301,15 @@ export const MenuPage = () => {
                     
                     />
                    </span>
+             
                    <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
-                      З печі
+                   <h3 className={styles.dishCardDescriptionTop}>
+                      Випічка
                     </h3>
                    
                    </span>
+                    
+                  
                  
                 </NavLink>
               </li>
@@ -324,10 +326,10 @@ export const MenuPage = () => {
                       />
                     </span>
                     <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
+                   <h3 className={styles.dishCardDescriptionTop}>
                       Супи 
                     </h3>
-                    
+                   
                    </span>
                   
                   </NavLink>
@@ -347,11 +349,11 @@ export const MenuPage = () => {
 
                   
                    <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
-                      Бізнес 
+                   <h3 className={styles.dishCardDescriptionTop}>
+                       Бізнес
                     </h3>
-                    <h3 className={styles.dishCardDescription}>
-                       ланчі
+                    <h3 className={styles.dishCardDescriptionBottom}>
+                      ланчі
                     </h3>
                    </span>
                    
@@ -373,13 +375,13 @@ export const MenuPage = () => {
                
 
                 <span className={styles.dishCardDescriptionBox}>
-                <h3 className={styles.dishCardDescription}>
-                Банкетне 
-                </h3>
-                <h3 className={styles.dishCardDescription}>
-                меню
-                </h3>
-                </span>
+                   <h3 className={styles.dishCardDescriptionTop}>
+                       Банкетне
+                    </h3>
+                    <h3 className={styles.dishCardDescriptionBottom}>
+                      меню
+                    </h3>
+                   </span>
               
                 </NavLink>
              
@@ -397,11 +399,11 @@ export const MenuPage = () => {
                     />
                    </span>
                    <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
-                      Безалкогольні 
+                   <h3 className={styles.dishCardDescriptionTop}>
+                       Безалкогольні
                     </h3>
-                    <h3 className={styles.dishCardDescription}>
-                       напої
+                    <h3 className={styles.dishCardDescriptionBottom}>
+                      напої
                     </h3>
                    </span>
                  
@@ -420,11 +422,11 @@ export const MenuPage = () => {
                     />
                    </span>
                    <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
-                      Безалкогольні 
+                   <h3 className={styles.dishCardDescriptionTop}>
+                       Безалкогольні
                     </h3>
-                    <h3 className={styles.dishCardDescription}>
-                       коктейлі
+                    <h3 className={styles.dishCardDescriptionBottom}>
+                      коктейлі
                     </h3>
                    </span>
                  
@@ -443,11 +445,11 @@ export const MenuPage = () => {
                     />
                    </span>
                    <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
-                      Гарячі 
+                   <h3 className={styles.dishCardDescriptionTop}>
+                       Гарячі
                     </h3>
-                    <h3 className={styles.dishCardDescription}>
-                       напої
+                    <h3 className={styles.dishCardDescriptionBottom}>
+                      напої
                     </h3>
                    </span>
                  
@@ -466,8 +468,8 @@ export const MenuPage = () => {
                     />
                    </span>
                    <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
-                      Десерти 
+                   <h3 className={styles.dishCardDescriptionTop}>
+                       Десерти
                     </h3>
                     
                    </span>
@@ -488,11 +490,11 @@ export const MenuPage = () => {
                 </span>
 
                 <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
-                      Міцний 
+                   <h3 className={styles.dishCardDescriptionTop}>
+                       Міцний
                     </h3>
-                    <h3 className={styles.dishCardDescription}>
-                       алкоголь
+                    <h3 className={styles.dishCardDescriptionBottom}>
+                      алкоголь
                     </h3>
                    </span>
               
@@ -515,11 +517,11 @@ export const MenuPage = () => {
                 </span>
 
                 <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
-                      Алкогольні 
+                   <h3 className={styles.dishCardDescriptionTop}>
+                       Алкогольні
                     </h3>
-                    <h3 className={styles.dishCardDescription}>
-                       коктейлі
+                    <h3 className={styles.dishCardDescriptionBottom}>
+                      коктейлі
                     </h3>
                    </span>
               
@@ -538,8 +540,8 @@ export const MenuPage = () => {
                     />
                    </span>
                    <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
-                      Вино 
+                   <h3 className={styles.dishCardDescriptionTop}>
+                       Вино
                     </h3>
                    
                    </span>
@@ -559,10 +561,10 @@ export const MenuPage = () => {
                     />
                    </span>
                    <span className={styles.dishCardDescriptionBox}>
-                   <h3 className={styles.dishCardDescription}>
-                      Пиво 
+                   <h3 className={styles.dishCardDescriptionTop}>
+                       Пиво
                     </h3>
-                    
+                  
                    </span>
                  
                 </NavLink>

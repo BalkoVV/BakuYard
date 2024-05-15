@@ -9,18 +9,18 @@ width: 100%;
 
 .contactsPage {
    width: 100%;
-   background-position: bottom;
    background-repeat: repeat;
    background-color: #111111;
+   background-position: top;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-  
+   background-attachment: none;
       @media screen and (min-width: 768px) {
          
       };
 
-         @media screen and (min-width: 1200px) {
-            background-attachment: fixed;
-         };
+      @media screen and (min-width: 1200px) {
+         background-attachment: fixed;
+      };
 }
 
  .mapBox {
@@ -54,45 +54,49 @@ width: 100%;
    left: 0;
    right: 0;
    bottom: 0;
-   background: #0707074e;
+   background: #07070780;
    z-index: -1;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 }
 
 .contactsListBox {
    display: flex;
-   padding: 20px 20px;
+   padding:  0 20px 20px;
    flex-direction: column;
 
    @media screen and (min-width: 767.9px) {
       display: grid;
+      padding:  0 20px 20px 0;
       height: 450px;
       justify-content: center;
       align-items: center;
    };
    @media screen and (min-width: 1200px) {
+     
       height: 550px;
-
+      /* width: 100%; */
    };
   }
 
  .contactsList {
    display: grid;
    grid-row-gap: 10px;
-   min-width: 300px;
+   width: 100%;
    padding-bottom: 10px;
+   /* background-color: #fff; */
 
    @media screen and (min-width: 767.9px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 30px;
       grid-row-gap: 30px;
-      min-width: 700px;
-      padding: 0 30px;
+      /* padding: 0 30px; */
    };
 
    @media screen and (min-width: 1200px) {
+      /* grid-template-columns: repeat(3, 1fr); */
       grid-column-gap: 50px;
+     
    };
   }
 
@@ -106,46 +110,36 @@ width: 100%;
    width: 100%;
    color: #7b7b7b;
    font-size: 13px;
-   border-radius: 11px;
+   border-radius: 13px;
    margin:  3px 0;
    border-radius: 13px;
-   background-color: #050505;
-   box-shadow:
-    inset rgba(0, 0, 0, 0.772) -5px -5px 9px,
-    inset #303030 5px 5px 9px,
-    rgb(0, 0, 0) 3px 3px 8px -3px;
-   /* box-shadow: 6px 6px 15px 2px #0000004f;
-   background-color: #000000;
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   background-color: #000000;
-   background-image: url("https://www.transparenttextures.com/theme/images/transparent.png"); */
+   background-color: #010101;
+   box-shadow:  4px 4px 15px 4px #0000008b;
+    
+  
    transition: all .4s ease-out;
    @media screen and (min-width: 767.9px) {
       font-size: 13px;
-      max-width: 450px;
+      width: 300px;
    };
 
    @media screen and (min-width: 1200px) {
       font-size: 15px; 
-      min-width: 500px;
+      width: 500px;
    };
   }
 
-  .contactsListItem:active a {
-   position: absolute;
-   display: flex;
-   height: 70px;
-   width: 100%;
-   background-color: #fff;
-}
+
+
 .contactsListItem img {
    position: absolute;
    rotate: 10deg;
-   opacity: 0.15;
+   opacity: 0.22;
    display: block;
-   height: 70px;
+   height: 88px;
    transition: all .4s ease-out;
    left: 20px;
+  
 
    @media screen and (min-width: 767.9px) {
       padding-left: 20px;
@@ -153,20 +147,26 @@ width: 100%;
    };
 
    @media screen and (min-width: 1200px) {
-   padding-left: 50px;
+   padding-left: 30px;
 
    };
 }
 
+.contactsListItemActive:hover,
+.contactsListItemActive:active {
+   box-shadow:  2px 2px 15px 2px #0000005d;
+   transition: all .4s ease-out;
+   scale: 1.02;
+}
 .contactsListItemActive:hover img {
    
    rotate: 0deg;
-   opacity: 0.3;
+   opacity: 0.7;
    display: block;
    
-   scale: 0.6;
+   scale: 0.75;
    transition: all .4s ease-out;
-   left: 30px;
+   left: 10px;
 
    @media screen and (min-width: 767.9px) {
       padding-left: 20px;
@@ -174,17 +174,31 @@ width: 100%;
    };
 
    @media screen and (min-width: 1200px) {
-   padding-left: 50px;
-
+   left: 30px;
+   scale: 0.66;
    };
 }
 
 .contactsListItemDiscriptions {
-   padding-right: 20px;
+   /* position: absolute; */
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
    color: #414141;
    transition: all .4s ease-out;
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease-out;
+    border-radius: 13px;
+    box-shadow:
+    inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
+    inset #303030 5px 5px 9px,
+    rgb(0, 0, 0) 3px 3px 8px -3px;
+
+
    @media screen and (min-width: 767.9px) {
       padding-right: 20px;
+
      
    };
    @media screen and (min-width: 1200px) {

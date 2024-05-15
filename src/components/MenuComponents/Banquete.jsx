@@ -4,8 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { ReactComponent as ToMenuIcon } from 'images/left.svg';
-
+import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 import banqueteHotData from "services/dataBanquete/banqueteHot.json";
 import banqueteColdData from "services/dataBanquete/banqueteCold.json"
 

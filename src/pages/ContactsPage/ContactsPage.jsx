@@ -51,32 +51,32 @@ export const ContactsPage = () => {
 
                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <PhonesIcon className={styles.phoneIconContact}/>
-                    <a href="tel:+380970830717" className={styles.contactsListItemDiscriptions}> +38 068 239 38 37</a>
+                    <a href="tel:+380970830717" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 068 239 38 37</a>
                   </li>
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <PhonesIcon className={styles.phoneIconContact}/>
-                    <a href="tel:+380970830717" className={styles.contactsListItemDiscriptions}> +38 093 442 30 28</a>
+                    <a href="tel:+380970830717" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 093 442 30 28</a>
                   </li>          
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <PhonesIcon className={styles.phoneIconContact}/>
-                    <a href="tel:+380970830717" className={styles.contactsListItemDiscriptions}> +38 045 945 33 69</a>
+                    <a href="tel:+380970830717" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 045 945 33 69</a>
                   </li>
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <MailIcon className={styles.contactsListItemImg}/>
-                    <a href="mailto:your_email@example.com" className={styles.contactsListItemDiscriptions}>Надішліть нам eMail</a>
+                    <a href="mailto:your_email@example.com" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}>Надішліть нам eMail</a>
                   </li>
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <InstagramIcon className={styles.contactsListItemImg}/>
-                    <a href="https://www.instagram.com/dvorbakinskii/" className={styles.contactsListItemDiscriptions}>Ми в Instagram</a>
+                    <a href="https://www.instagram.com/dvorbakinskii/" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}>Ми в Instagram</a>
                   </li>
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <FacebookIcon className={styles.contactsListItemImg}/>
-                    <a href="https://www.facebook.com/profile.php?id=100025507986999" className={styles.contactsListItemDiscriptions}>Ми у Facebook</a>
+                    <a href="https://www.facebook.com/profile.php?id=100025507986999" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}>Ми у Facebook</a>
                   </li>
 
               </ul>
