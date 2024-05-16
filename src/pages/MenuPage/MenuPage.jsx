@@ -34,7 +34,6 @@ import mocktailsCardImage from 'images/mocktailsCard.svg';
 
 import Meat from "components/MenuComponents/Meat";
 import meatCardImage from 'images/meatCard.svg';
-// import meatCardImage from 'images/meatt.jpg';
 
 import Sauces from "components/MenuComponents/Sauces";
 import saucesCardImage from 'images/saucesCard.svg';
@@ -73,14 +72,9 @@ import lunchCardImage from 'images/lunchCard.svg';
 import styles from 'pages/MenuPage/MenuPage.module.css';
 
 
-
-
-
 export const MenuPage = () => {
   const location = useLocation();
   const { cartItems } = useContext(CartContext); 
-
-
 
   useEffect(() => {
     const contentElements = document.querySelectorAll(`.${styles.fadeOut}`);
