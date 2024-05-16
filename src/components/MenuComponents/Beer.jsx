@@ -16,6 +16,9 @@ import beerSnacksData from "services/dataBeer/beerSnacks.json";
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import beerMenu1 from 'images/beerCardMenu.svg';
+import beerMenu2 from 'images/beerCardMenu.svg';
+
 export const Beer = () => {
   const { addToCart, cartItems } = useContext(CartContext);
   const [menuItems, setMenuItems] = useState([]);
@@ -65,6 +68,39 @@ export const Beer = () => {
 
         <div className={styles.dishPageBox}>
 
+        <img
+         src={beerMenu1}
+         alt=""
+         style={{
+          position: 'fixed',
+          top: '70px',
+          left: '-100px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '10deg',
+          opacity: '.4'
+        }}
+      />
+
+
+       <img
+        className={styles.menuCardImage}
+         src={beerMenu2}
+         alt=""
+         style={{
+          position: 'fixed',
+          bottom: '10px',
+          right: '-50px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '-10deg',
+          transform: 'scaleX(-1)',
+          opacity: '.4',
+         
+        }}
+      />
           {/* <table className={styles.dishTableList}>
 
             <thead>

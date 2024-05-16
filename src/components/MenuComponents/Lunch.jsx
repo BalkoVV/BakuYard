@@ -19,6 +19,9 @@ import lunchData from "services/dataComboSets/setMeals.json";
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import lunchMenu1 from 'images/lunchCardMenu.svg';
+import lunchMenu2 from 'images/lunchCardMenu.svg';
+
 export const Lunch = () => {
   const { addToCart, cartItems } = useContext(CartContext);
   const [lunchItems, setLunchItems] = useState([]);
@@ -60,13 +63,49 @@ export const Lunch = () => {
           <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>
           <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+          <h1 className={styles.toMenuDescription}>до Меню</h1>
         </NavLink>
       </div>
             </div>
       <div className={styles.dishPageContainer}>
 
       <div className={styles.dishPageBox}>
+
+      <img
+
+src={lunchMenu1}
+alt=""
+style={{
+ position: 'fixed',
+ top: '70px',
+ left: '-100px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '10deg',
+ transform: 'scaleX(-1)',
+ opacity: '.4'
+}}
+/>
+
+
+<img
+className={styles.menuCardImage}
+src={lunchMenu2}
+alt=""
+style={{
+ position: 'fixed',
+ bottom: '10px',
+ right: '-50px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '-10deg',
+ 
+ opacity: '.4',
+
+}}
+/>
 
         {/* <img
          src={pizzaMenu1}

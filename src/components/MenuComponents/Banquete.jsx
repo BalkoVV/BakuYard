@@ -14,6 +14,9 @@ import banqueteColdData from "services/dataBanquete/banqueteCold.json"
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import banqueteMenu1 from 'images/banqueteCardMenu.svg';
+import banqueteMenu2 from 'images/banqueteCardMenu.svg';
+
 export const Banquete = () => {
 
   const [banqueteHotItems, setBanqueteHotItems] = useState([]);
@@ -63,6 +66,43 @@ export const Banquete = () => {
       <div className={styles.dishPageContainer}>
 
       <div className={styles.dishPageBox}>
+
+
+      <img
+
+src={banqueteMenu1}
+alt=""
+style={{
+ position: 'fixed',
+ top: '70px',
+ left: '-100px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '10deg',
+ transform: 'scaleX(-1)',
+ opacity: '.4'
+}}
+/>
+
+
+<img
+className={styles.menuCardImage}
+src={banqueteMenu2}
+alt=""
+style={{
+ position: 'fixed',
+ bottom: '10px',
+ right: '-50px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '-10deg',
+ 
+ opacity: '.4',
+
+}}
+/>
 
         {/* <img
          src={pizzaMenu1}

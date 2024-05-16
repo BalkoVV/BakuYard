@@ -50,8 +50,8 @@
 .dishList {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-column-gap: 15px;
-   grid-row-gap: 15px;
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
    padding: 0 20px 50px 20px;
 
 
@@ -68,8 +68,8 @@
    @media screen and (min-width: 1200px) {
      
       grid-template-columns: repeat(4, 1fr);
-      grid-column-gap: 25px;
-      grid-row-gap: 25px;
+      grid-column-gap: 35px;
+      grid-row-gap: 35px;
       padding: 30px 90px 90px 90px;
 
    }; 
@@ -79,7 +79,7 @@
 position: relative;
    display: flex;
    width: 100%;
-   /* height: 100%; */
+   height: 130px;
    justify-content: space-between;
    align-items: center;
    border: none;
@@ -109,7 +109,8 @@ position: relative;
 }
 
 .dishCard:hover,
-.dishCard:active {
+.dishCard:active,
+.dishCard:focus {
    box-shadow:  2px 2px 15px 2px #0000005d;
    transition: all .4s ease-out;
    scale: 1.02;
@@ -120,7 +121,8 @@ position: relative;
 }
 
 .dishCard:hover h3,
-.dishCard:active h3 {
+.dishCard:active h3,
+.dishCard:focus h3 {
    color: #7c7c7c;
    transition: all .4s ease-out;
 }
@@ -128,16 +130,75 @@ position: relative;
 .dishCard .dishCardImage {
    transition: all .4s ease-out;
 }
+
+
+.dishCardImg {
+   display: flex;
+   justify-content: left;
+   /* margin-left: 10px; */
+   
+   @media screen and (min-width: 767.9px) {
+      /* margin-left: 25px; */
+   }; 
+   
+   @media screen and (min-width: 1200px) {
+      /* margin-left: 30px; */
+     
+      
+   }; 
+   }
+   
+   
+   .dishCardImage {
+      display: block;
+      position: absolute;
+      height: 195px;
+      width: 195px;
+      rotate: 7deg;
+      bottom: -35px;
+      left: -20px;
+      opacity: .25;
+      z-index: 0;
+   
+    @media screen and (max-width: 375px) {
+      height: 145px;
+      width: 145px;
+    
+   };  
+    @media screen and (min-width: 767.9px) {
+    
+      height: 255px;
+      width: 255px;
+      rotate: 7deg;
+      bottom: -30px;
+      left: -30px;
+      opacity: .25;
+      z-index: 0;
+   }; 
+   
+   @media screen and (min-width: 1200px) {
+      /* margin-left: 25px; */
+      height: 295px;
+      width: 295px;
+      rotate: 7deg;
+      bottom: -50px;
+      left: -30px;
+      /* opacity: .15; */
+   }; 
+   }
+   
+
 .dishCard:hover .dishCardImage,
-.dishCard:active .dishCardImage {
-   scale: .75;
+.dishCard:active .dishCardImage,
+.dishCard:focus .dishCardImage {
+   scale: .55;
    rotate: 0deg;
    transition: all .4s ease-out;
    opacity: .6;
   
 
    @media screen and (min-width: 768px) {
-    
+      scale: .6;
      
    }; 
 
@@ -150,7 +211,7 @@ position: relative;
 .dishCardLink {
    display: flex;
    width: 100%;
-   height: 110px;
+   height: 130px;
    justify-content: space-around;
    align-items: center;
    border-radius: 15px;
@@ -173,65 +234,11 @@ position: relative;
 }
 
 
-.dishCardImg {
-display: flex;
-justify-content: left;
-/* margin-left: 10px; */
-
-@media screen and (min-width: 767.9px) {
-   /* margin-left: 25px; */
-}; 
-
-@media screen and (min-width: 1200px) {
-   /* margin-left: 30px; */
-  
-   
-}; 
-}
-
-
-.dishCardImage {
-   display: block;
-   position: absolute;
-   height: 175px;
-   width: 175px;
-   rotate: 7deg;
-   bottom: -30px;
-   left: 0px;
-   opacity: .25;
-   z-index: 0;
-
- @media screen and (max-width: 375px) {
-   height: 45px;
-   width: 45px;
- 
-};  
- @media screen and (min-width: 767.9px) {
- 
-   height: 245px;
-   width: 245px;
-   rotate: 7deg;
-   bottom: -30px;
-   left: -30px;
-   opacity: .25;
-   z-index: 0;
-}; 
-
-@media screen and (min-width: 1200px) {
-   /* margin-left: 25px; */
-   height: 285px;
-   width: 285px;
-   rotate: 7deg;
-   bottom: -50px;
-   left: -30px;
-   /* opacity: .15; */
-}; 
-}
 
 
 .dishCardDescriptionBox{
    position: absolute;
-   right: 10px;
+   right: 15px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -239,11 +246,11 @@ justify-content: left;
    line-height: 13px;
 
    @media screen and (min-width: 768px) {
-      right: 15px;
+      right: 20px;
    }; 
 
    @media screen and (min-width: 1200px) {
-      right: 20px;
+      right: 25px;
    }; 
 }
 

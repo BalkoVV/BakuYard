@@ -20,6 +20,9 @@ import mainDishData from "services/dataComboSets/mainDish.json";
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import mainDishMenu1 from 'images/mainDishCardMenu.svg';
+import mainDishMenu2 from 'images/mainDishCardMenu.svg';
+
 export const MainDish = () => {
   const { addToCart, cartItems } = useContext(CartContext);
   const [mainDishItems, setMainDishItems] = useState([]);
@@ -73,6 +76,42 @@ export const MainDish = () => {
 
 
         <div className={styles.dishPageBox}>
+
+        <img
+
+src={mainDishMenu1}
+alt=""
+style={{
+ position: 'fixed',
+ top: '20px',
+ left: '-20px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '10deg',
+ 
+ opacity: '.4'
+}}
+/>
+
+
+<img
+className={styles.menuCardImage}
+src={mainDishMenu2}
+alt=""
+style={{
+ position: 'fixed',
+ bottom: '10px',
+ right: '-50px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '-10deg',
+ transform: 'scaleX(-1)',
+ opacity: '.4',
+
+}}
+/>
 
         {/* <img
          src={pizzaMenu1}

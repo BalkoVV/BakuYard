@@ -12,6 +12,9 @@ import menuBeveragesData from "services/dataCocktails/beverages.json";
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import beveragesMenu1 from 'images/beveragesCardMenu.svg';
+import beveragesMenu2 from 'images/beveragesCardMenu.svg';
+
 export const Beverages = () => {
   const { addToCart, cartItems } = useContext(CartContext);
 
@@ -66,6 +69,40 @@ export const Beverages = () => {
      <div className={styles.dishPageContainer}>
 
       <div className={styles.dishPageBox}>
+
+      <img
+         src={beveragesMenu1}
+         alt=""
+         style={{
+          position: 'fixed',
+          top: '70px',
+          left: '-100px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '10deg',
+          opacity: '.4'
+        }}
+      />
+
+
+       <img
+        className={styles.menuCardImage}
+         src={beveragesMenu2}
+         alt=""
+         style={{
+          position: 'fixed',
+          bottom: '10px',
+          right: '-50px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '-10deg',
+          transform: 'scaleX(-1)',
+          opacity: '.4',
+         
+        }}
+      />
       
       <table className={styles.dishList}>
           

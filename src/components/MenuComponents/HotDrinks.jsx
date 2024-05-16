@@ -14,6 +14,9 @@ import teaData from "services/dataHotDrinks/tea.json";
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import hotDrinkMenu1 from 'images/hotDrinkCardMenu.svg';
+import hotDrinkMenu2 from 'images/hotDrinkCardMenu.svg';
+
 export const HotDrinks = () => {
   // const { addToCart, cartItems } = useContext(CartContext);
   // const { cartItems } = useContext(CartContext);
@@ -66,6 +69,41 @@ export const HotDrinks = () => {
 
       <div className={styles.dishPageBox}>
          
+      <img
+
+src={hotDrinkMenu1}
+alt=""
+style={{
+ position: 'fixed',
+ top: '70px',
+ left: '-100px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '10deg',
+
+ opacity: '.4'
+}}
+/>
+
+
+<img
+className={styles.menuCardImage}
+src={hotDrinkMenu2}
+alt=""
+style={{
+ position: 'fixed',
+ bottom: '10px',
+ right: '-50px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '-10deg',
+ transform: 'scaleX(-1)',
+ opacity: '.4',
+
+}}
+/>
 
 <table className={styles.dishList}>
           <h3 className={styles.dishListTitle}>Кава</h3>

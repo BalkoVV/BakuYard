@@ -12,6 +12,9 @@ import menuColdApetizerData from "services/dataApetizers/coldApetizers.json";
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import coldAppetizerMenu1 from 'images/coldAppetizerCardMenu.svg';
+import coldAppetizerMenu2 from 'images/coldAppetizerCardMenu.svg';
+
 export const ColdApetizers = () => {
   const { addToCart, cartItems } = useContext(CartContext);
 
@@ -66,6 +69,42 @@ export const ColdApetizers = () => {
      
 
       <div className={styles.dishPageBox}>
+
+      <img
+
+src={coldAppetizerMenu1}
+alt=""
+style={{
+ position: 'fixed',
+ top: '70px',
+ left: '-100px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '17deg',
+ transform: 'scaleX(-1)',
+ opacity: '.4'
+}}
+/>
+
+
+<img
+className={styles.menuCardImage}
+src={coldAppetizerMenu2}
+alt=""
+style={{
+ position: 'fixed',
+ bottom: '10px',
+ right: '-50px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '-17deg',
+ 
+ opacity: '.4',
+
+}}
+/>
       
       {/* <table className={styles.dishTableList}>
     

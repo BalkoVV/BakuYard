@@ -106,7 +106,7 @@ export const Fish = () => {
         
 
           <table className={styles.dishList}>
-          <h1 className={styles.dishTitle}>Риба</h1> 
+          {/* <h1 className={styles.dishTitle}>Риба</h1>  */}
             <tbody>
               {fishItems.map((item) => (
               <tr key={item.id} className={styles.dishListItem}>

@@ -12,6 +12,9 @@ import menuHotApetizerData from "services/dataApetizers/hotApetizers.json";
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import hotAppetizerMenu1 from 'images/hotAppetizerCardMenu.svg';
+import hotAppetizerMenu2 from 'images/hotAppetizerCardMenu.svg';
+
 export const HotApetizers = () => {
   const { addToCart, cartItems } = useContext(CartContext);
 
@@ -65,7 +68,41 @@ export const HotApetizers = () => {
 
       <div className={styles.dishPageBox}>
       
-        
+      <img
+
+src={hotAppetizerMenu1}
+alt=""
+style={{
+ position: 'fixed',
+ top: '70px',
+ left: '-100px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '10deg',
+ transform: 'scaleX(-1)',
+ opacity: '.4'
+}}
+/>
+
+
+<img
+className={styles.menuCardImage}
+src={hotAppetizerMenu2}
+alt=""
+style={{
+ position: 'fixed',
+ bottom: '10px',
+ right: '-50px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '-10deg',
+ 
+ opacity: '.4',
+
+}}
+/>
 
 <table className={styles.dishList}>
           

@@ -18,6 +18,9 @@ import sideDishData from "services/dataComboSets/sideDish.json";
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import sideDishMenu1 from 'images/sideDishCardMenu.svg';
+import sideDishMenu2 from 'images/sideDishCardMenu.svg';
+
 export const SideDish = () => {
   const { addToCart, cartItems } = useContext(CartContext);
   const [sideDishItems, setSideDishItems] = useState([]);
@@ -66,6 +69,43 @@ export const SideDish = () => {
       <div className={styles.dishPageContainer}>
 
       <div className={styles.dishPageBox}>
+
+
+      <img
+
+src={sideDishMenu1}
+alt=""
+style={{
+ position: 'fixed',
+ top: '20px',
+ left: '-20px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '10deg',
+ transform: 'scaleX(-1)',
+ opacity: '.4'
+}}
+/>
+
+
+<img
+className={styles.menuCardImage}
+src={sideDishMenu2}
+alt=""
+style={{
+ position: 'fixed',
+ bottom: '10px',
+ right: '-50px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '-10deg',
+ 
+ opacity: '.4',
+
+}}
+/>
 
         {/* <img
          src={pizzaMenu1}

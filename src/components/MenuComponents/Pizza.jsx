@@ -13,12 +13,12 @@ import menuData from "services/dataBakedDishes/pizza.json";
 import khachapuriData from "services/dataBakedDishes/khachapuri.json"
 import pitaData from "services/dataBakedDishes/pita.json"
 
-// import pizzaMenu1 from 'images/pizzaCardMenu.svg';
-// import pizzaMenu2 from 'images/pizzaCardMenu.svg';
+import pizzaMenu1 from 'images/pizzaCardMenu.svg';
+import pizzaMenu2 from 'images/pizzaCardMenu.svg';
 // import pizzaMenu3 from 'images/pizzaCardMenu.svg';
 // import pizzaMenu2 from 'images/pizzaCard.svg';
-import pizzaMenu1 from 'images/pizzaMenu1.png';
-import pizzaMenu2 from 'images/pizzaMenu2.png';
+// import pizzaMenu1 from 'images/pizzaMenu1.png';
+// import pizzaMenu2 from 'images/pizzaMenu2.png';
 
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
@@ -73,7 +73,7 @@ export const Pizza = () => {
 
 
         <div className={styles.dishPageBox}>
-
+{/* 
         <img
          src={pizzaMenu1}
         alt=""
@@ -87,10 +87,10 @@ export const Pizza = () => {
           rotate: '7deg',
           opacity: '.4'
         }}
-      />
+      /> */}
 
 
-       <img
+       {/* <img
          src={pizzaMenu2}
         alt=""
         style={{
@@ -105,9 +105,9 @@ export const Pizza = () => {
           opacity: '.4',
           
         }}
-      />
+      /> */}
 
-{/* <img
+       <img
 
          src={pizzaMenu1}
         alt=""
@@ -140,7 +140,7 @@ export const Pizza = () => {
           opacity: '.4',
          
         }}
-      /> */}
+      />
 
 {/* <img
          src={pizzaMenu3}
@@ -263,7 +263,7 @@ export const Pizza = () => {
           </table>
 
           <table className={styles.dishList}>
-            <h3 className={styles.dishListTitle}>Хачапурі</h3>
+            <h3 className={styles.dishListTitle}>Лаваші</h3>
             <tbody>
               {pitaData.map((item) => (
               <tr key={item.id} className={styles.dishListItem}>

@@ -12,6 +12,9 @@ import menuAlcoholicCocktailsData from "services/dataCocktails/alcoholicCocktail
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import cocktailsMenu1 from 'images/cocktailsCardMenu.svg';
+import cocktailsMenu2 from 'images/cocktailsCardMenu.svg';
+
 export const AlcoholicCocktails = () => {
   // const { addToCart, cartItems } = useContext(CartContext);
   // const { cartItems } = useContext(CartContext);
@@ -60,7 +63,7 @@ export const AlcoholicCocktails = () => {
         <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>
           <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+          <h1 className={styles.toMenuDescription}>до Меню</h1>
         </NavLink>
       </div>
 
@@ -69,6 +72,40 @@ export const AlcoholicCocktails = () => {
      <div className={styles.dishPageContainer}>
 
       <div className={styles.dishPageBox}>
+
+      <img
+         src={cocktailsMenu1}
+         alt=""
+         style={{
+          position: 'fixed',
+          top: '70px',
+          left: '-100px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '10deg',
+          opacity: '.4'
+        }}
+      />
+
+
+       <img
+        className={styles.menuCardImage}
+         src={cocktailsMenu2}
+         alt=""
+         style={{
+          position: 'fixed',
+          bottom: '10px',
+          right: '-50px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '-10deg',
+          transform: 'scaleX(-1)',
+          opacity: '.4',
+         
+        }}
+      />
       
           {/* <table className={styles.dishTableList}>
             <thead>
@@ -90,7 +127,7 @@ export const AlcoholicCocktails = () => {
           </table> */}
 
 <table className={styles.dishList}>
-          <h3 className={styles.dishListTitle}>Алкогольні коктейлі</h3>
+          {/* <h3 className={styles.dishListTitle}>Алкогольні коктейлі</h3> */}
  
           <tbody>
             {alcoholicCocktailsItems.map((item) => (

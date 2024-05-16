@@ -12,6 +12,9 @@ import menuSaucesData from "services/dataSauces/sauces.json";
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import saucesMenu1 from 'images/saucesCardMenu.svg';
+import saucesMenu2 from 'images/saucesCardMenu.svg';
+
 export const Sauces = () => {
   const { addToCart, cartItems } = useContext(CartContext);
 
@@ -65,6 +68,42 @@ export const Sauces = () => {
 
       <div className={styles.dishPageBox}>
       
+
+      <img
+        // className={styles.menuCardImage}
+         src={saucesMenu1}
+        alt=""
+        style={{
+          position: 'fixed',
+          top: '70px',
+          left: '-100px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '10deg',
+          opacity: '.4'
+        }}
+      />
+
+
+       <img
+       className={styles.menuCardImage}
+         src={saucesMenu2}
+        alt=""
+        style={{
+          position: 'fixed',
+          bottom: '10px',
+          right: '-50px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '-10deg',
+          transform: 'scaleX(-1)',
+          opacity: '.4',
+          // backgroundColor: 'white',
+        }}
+      />
+
       <table className={styles.dishList}>
           
           <tbody>

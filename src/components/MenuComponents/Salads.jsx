@@ -80,7 +80,7 @@ export const Salads = () => {
           width: '500px',
           height: '500px',
           zIndex: '0',
-          rotate: '17deg',
+          rotate: '10deg',
           opacity: '.4'
         }}
       />
@@ -97,7 +97,7 @@ export const Salads = () => {
           width: '500px',
           height: '500px',
           zIndex: '0',
-          rotate: '-17deg',
+          rotate: '-10deg',
           transform: 'scaleX(-1)',
           opacity: '.4',
           // backgroundColor: 'white',

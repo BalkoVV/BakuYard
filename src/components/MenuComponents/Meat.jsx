@@ -12,6 +12,9 @@ import { CartContext } from "components/CartProvider/CartProvider";
 import menuData from "services/dataMeat/meat.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import meatMenu1 from 'images/meatCardMenu.svg';
+import meatMenu2 from 'images/meatCardMenu.svg';
+
 export const Meat = () => {
   const { addToCart, cartItems } = useContext(CartContext);
   const [menuItems, setMenuItems] = useState([]);
@@ -65,6 +68,44 @@ export const Meat = () => {
    
       
         <div className={styles.dishPageBox}>
+
+
+        <img
+
+src={meatMenu1}
+alt=""
+style={{
+ position: 'fixed',
+ top: '20px',
+ left: '-20px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '10deg',
+ transform: 'scaleX(-1)',
+ opacity: '.4'
+}}
+/>
+
+
+<img
+className={styles.menuCardImage}
+src={meatMenu2}
+alt=""
+style={{
+ position: 'fixed',
+ bottom: '10px',
+ right: '-50px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '-10deg',
+ 
+ opacity: '.4',
+
+}}
+/>
+
 
           <table className={styles.dishList}>
           

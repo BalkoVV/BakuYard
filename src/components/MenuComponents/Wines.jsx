@@ -9,6 +9,9 @@ import menuGeorgianWineData from "services/dataWines/georgianWine.json";
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import wineMenu1 from 'images/wineCardMenu.svg';
+import wineMenu2 from 'images/wineCardMenu.svg';
+
 export const Wines = () => {
   // const { cartItems } = useContext(CartContext);
 
@@ -93,7 +96,7 @@ export const Wines = () => {
           <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>
           <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+          <h1 className={styles.toMenuDescription}>до Меню</h1>
         </NavLink>
       </div>
             </div>
@@ -102,7 +105,39 @@ export const Wines = () => {
 
       <div className={styles.dishPageBox}>
 
-      
+      <img
+         src={wineMenu1}
+         alt=""
+         style={{
+          position: 'fixed',
+          top: '70px',
+          left: '-100px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '10deg',
+          opacity: '.4'
+        }}
+      />
+
+
+       <img
+        className={styles.menuCardImage}
+         src={wineMenu2}
+         alt=""
+         style={{
+          position: 'fixed',
+          bottom: '10px',
+          right: '-50px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '-10deg',
+          transform: 'scaleX(-1)',
+          opacity: '.4',
+         
+        }}
+      />
 
       
 

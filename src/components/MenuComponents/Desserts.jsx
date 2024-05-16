@@ -12,6 +12,9 @@ import menuDessertsData from "services/dataDesserts/desserts.json";
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import dessertMenu1 from 'images/dessertCardMenu.svg';
+import dessertMenu2 from 'images/dessertCardMenu.svg';
+
 export const Desserts = () => {
   const { addToCart, cartItems } = useContext(CartContext);
 
@@ -58,7 +61,7 @@ export const Desserts = () => {
           <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>
           <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+          <h1 className={styles.toMenuDescription}>до Меню</h1>
         </NavLink>
       </div>
             </div>
@@ -67,6 +70,44 @@ export const Desserts = () => {
 
       <div className={styles.dishPageBox}>
       
+
+      <img
+
+src={dessertMenu1}
+alt=""
+style={{
+ position: 'fixed',
+ top: '70px',
+ left: '-100px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '10deg',
+ transform: 'scaleX(-1)',
+ opacity: '.4'
+}}
+/>
+
+
+<img
+className={styles.menuCardImage}
+src={dessertMenu2}
+alt=""
+style={{
+ position: 'fixed',
+ bottom: '10px',
+ right: '-50px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '-10deg',
+ 
+ opacity: '.4',
+
+}}
+/>
+
+
           {/* <table className={styles.dishTableList}>
             <thead>
               <tr>

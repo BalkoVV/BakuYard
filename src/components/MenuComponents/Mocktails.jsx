@@ -12,6 +12,9 @@ import menuMocktailsData from "services/dataCocktails/mocktails.json";
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import mocktailsMenu1 from 'images/mocktailsCardMenu.svg';
+import mocktailsMenu2 from 'images/mocktailsCardMenu.svg';
+
 export const Mocktails = () => {
   const { addToCart, cartItems } = useContext(CartContext);
 
@@ -57,7 +60,7 @@ export const Mocktails = () => {
           <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>
           <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Менюс</h1>
+          <h1 className={styles.toMenuDescription}>до Меню</h1>
         </NavLink>
       </div>
             </div>
@@ -65,33 +68,45 @@ export const Mocktails = () => {
       
       <div className={styles.dishPageBox}>
       
-          {/* <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-            
-              </tr>
-            </thead>
-            <tbody>
-              {mocktailsItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableIngredients}>{item.інгредієнти}</td>
-                  <td  className={styles.dishTableWeigth}>{item.вага}</td>
-                  <td  className={styles.dishTablePrice}>{item.ціна}</td>
-                  <td className={styles.dishTableButtonAdd}>
-                    <AddButton
-                      onClick={() => addToCart(item)}
-                      alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                      updateButtonState={() => updateMocktailsButtonState(item.id)}
-                    />
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table> */}
+
+      <img
+         src={mocktailsMenu1}
+         alt=""
+         style={{
+          position: 'fixed',
+          top: '70px',
+          left: '-100px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '10deg',
+          opacity: '.4'
+        }}
+      />
+
+
+       <img
+        className={styles.menuCardImage}
+         src={mocktailsMenu2}
+         alt=""
+         style={{
+          position: 'fixed',
+          bottom: '10px',
+          right: '-50px',
+          width: '500px',
+          height: '500px',
+          zIndex: '0',
+          rotate: '-10deg',
+          transform: 'scaleX(-1)',
+          opacity: '.4',
+         
+        }}
+      />
+
+        
 
 <table className={styles.dishList}>
-            <h3 className={styles.dishListTitle}>Безалкогольні коктейлі</h3>
+            {/* <h3 className={styles.dishListTitle}>Безалкогольні коктейлі</h3> */}
             <tbody>
               {mocktailsItems.map((item) => (
               <tr key={item.id} className={styles.dishListItem}>

@@ -19,6 +19,9 @@ import soupData from "services/dataComboSets/soup.json";
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
+import soupMenu1 from 'images/soupCardMenu.svg';
+import soupMenu2 from 'images/soupCardMenu.svg';
+
 export const Soup = () => {
   const { addToCart, cartItems } = useContext(CartContext);
   const [soupItems, setSoupItems] = useState([]);
@@ -66,6 +69,42 @@ export const Soup = () => {
 
 
         <div className={styles.dishPageBox}>
+
+        <img
+
+src={soupMenu1}
+alt=""
+style={{
+ position: 'fixed',
+ top: '20px',
+ left: '-20px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '10deg',
+ transform: 'scaleX(-1)',
+ opacity: '.4'
+}}
+/>
+
+
+<img
+className={styles.menuCardImage}
+src={soupMenu2}
+alt=""
+style={{
+ position: 'fixed',
+ bottom: '10px',
+ right: '-50px',
+ width: '500px',
+ height: '500px',
+ zIndex: '0',
+ rotate: '-10deg',
+ 
+ opacity: '.4',
+
+}}
+/>
 
         {/* <img
          src={pizzaMenu1}

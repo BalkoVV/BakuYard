@@ -4,7 +4,7 @@
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(0.25turn, #1a1a1a, #414141, #1a1a1a);
   border-image-slice: 1;
-  box-shadow: 0 0 25px 11px #00000098;
+  box-shadow: 0 0 20px 22px #00000064;   
   width:100%;
   z-index: 10;
   background-color: #000000;
@@ -111,7 +111,7 @@
  justify-content: end;
  text-align: center;
  padding: 3px 0;
-
+color: #5e5e5e;
  @media screen and (min-width: 1200px) {
   padding: 5px 0;
   
