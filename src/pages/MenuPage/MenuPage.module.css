@@ -299,7 +299,7 @@ position: relative;
  position: relative;
 }
 
-.toBasketButton {
+/* .toBasketButton {
    position: absolute;
    display: flex;
    align-items: center;
@@ -447,4 +447,4 @@ position: relative;
       right: 14px;
       top: 18px;
       };
-}
+} */
