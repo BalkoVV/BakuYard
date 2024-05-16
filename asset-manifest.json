@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/BakuYard/static/css/main.5a9ae705.css",
-    "main.js": "/BakuYard/static/js/main.935719ef.js",
+    "main.js": "/BakuYard/static/js/main.42e86505.js",
     "static/media/map444.png": "/BakuYard/static/media/map444.6400aebd07a404414d9e.png",
     "static/media/23232555.png": "/BakuYard/static/media/23232555.20d673c873c32dd792fa.png",
     "static/media/Constantine.ttf": "/BakuYard/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
     "static/media/str.png": "/BakuYard/static/media/str.cdaefce858bb865f1d95.png",
+    "static/media/bhLogo.svg": "/BakuYard/static/media/bhLogo.886f84a536b3f9c544ca26c4f4e87723.svg",
     "static/media/yardBakuLogo.svg": "/BakuYard/static/media/yardBakuLogo.c11ace57bc17aab8c109806623046656.svg",
-    "static/media/t7.svg": "/BakuYard/static/media/t7.040e239334d7d8964bbad33ffc0080aa.svg",
     "static/media/pizzaCardMenu.svg": "/BakuYard/static/media/pizzaCardMenu.9910e177a09f6fb10bbb910839c3dd59.svg",
     "static/media/pizzaCard.svg": "/BakuYard/static/media/pizzaCard.472f1b402dd459b389b5ee363fbd0c4a.svg",
     "static/media/mocktailsCardMenu.svg": "/BakuYard/static/media/mocktailsCardMenu.6c35f5dd2df8584c18ff3de3c89edfe7.svg",
@@ -61,10 +61,10 @@
     "static/media/dot.svg": "/BakuYard/static/media/dot.8a4f304f5be13f504c8e6555cf93da5e.svg",
     "static/media/toMenu.svg": "/BakuYard/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
     "main.5a9ae705.css.map": "/BakuYard/static/css/main.5a9ae705.css.map",
-    "main.935719ef.js.map": "/BakuYard/static/js/main.935719ef.js.map"
+    "main.42e86505.js.map": "/BakuYard/static/js/main.42e86505.js.map"
   },
   "entrypoints": [
     "static/css/main.5a9ae705.css",
-    "static/js/main.935719ef.js"
+    "static/js/main.42e86505.js"
   ]
 }
