@@ -7,7 +7,7 @@ import styles from 'components/LogoBen/LogoBen.module.css';
 
 
 export const LogoBen = () => {
- return <img className={styles.logoben} src={logoben} alt="Logo"  />;
+ return <img className={styles.bhLogo} src={logoben} alt="Logo"  />;
 };
 
 export default LogoBen;
