@@ -7,7 +7,7 @@
    height: 100%;
    background-position: bottom;
    background-repeat: repeat;
-   background-color: #070707;
+   background-color: #111111;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    background-position: left;
 
@@ -163,6 +163,7 @@ position: relative;
     @media screen and (max-width: 375px) {
       height: 145px;
       width: 145px;
+      opacity: .25;
     
    };  
     @media screen and (min-width: 767.9px) {
@@ -170,8 +171,8 @@ position: relative;
       height: 255px;
       width: 255px;
       rotate: 7deg;
-      bottom: -30px;
-      left: -30px;
+      bottom: -40px;
+      left: -25px;
       opacity: .25;
       z-index: 0;
    }; 
@@ -183,7 +184,7 @@ position: relative;
       rotate: 7deg;
       bottom: -50px;
       left: -30px;
-      /* opacity: .15; */
+      opacity: .25;
    }; 
    }
    
@@ -191,10 +192,10 @@ position: relative;
 .dishCard:hover .dishCardImage,
 .dishCard:active .dishCardImage,
 .dishCard:focus .dishCardImage {
-   scale: .55;
+   scale: .65;
    rotate: 0deg;
    transition: all .4s ease-out;
-   opacity: .6;
+   opacity: .4;
   
 
    @media screen and (min-width: 768px) {
@@ -203,7 +204,7 @@ position: relative;
    }; 
 
    @media screen and (min-width: 1200px) {
-      scale: .65;
+      scale: .67;
      
    }; 
 }

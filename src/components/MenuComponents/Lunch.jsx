@@ -145,6 +145,7 @@ style={{
               {lunchItems.map((item) => (
                 <tr key={item.id}  className={styles.dishTableSetMealsItem}>
                   {/* <td>{item.id}</td> */}
+
             <td className={styles.dishTableDay}>{item.назва}</td>
             <td className={styles.dishTablePriceDay}>{item.ціна}</td>
             <td className={styles.dishTableSetButtonAdd}>
@@ -155,21 +156,41 @@ style={{
               />
             </td>
 
-            <td className={styles.dishTableNameFirst}>{item.назва_перше}</td>
-            <td className={styles.dishTableWeigthFirst}>{item.вага_перше}</td>
+            <ul className={styles.dishTableDayList}>
+              <li>
+              <td className={styles.dishTableNameFirst}>{item.назва_перше}</td>
+              <td className={styles.dishTableWeigthFirst}>{item.вага_перше}</td>
+              </li>
 
-            <td className={styles.dishTableNameSecond}>{item.назва_друге}</td>
+              <li>
+              <td className={styles.dishTableNameSecond}>{item.назва_друге}</td>
             <td className={styles.dishTableWeigthSecond}>{item.вага_друге}</td>
+              </li>
 
-            <td className={styles.dishTableNameSalad}>{item.назва_салат}</td>
+              <li>
+              <td className={styles.dishTableNameSalad}>{item.назва_салат}</td>
             <td className={styles.dishTableWeigthSalad}>{item.вага_салат}</td>
             <td className={styles.dishTableOptionsSalad}>{item.опції_салат}</td>
+              </li>
 
-            <td className={styles.dishTableNameDrink}>{item.назва_напій}</td>
+              <li>
+              <td className={styles.dishTableNameDrink}>{item.назва_напій}</td>
             <td className={styles.dishTableWeigthDrink}>{item.вага_напій}</td>
-            
+              </li>
+
+              <li>
+                  
             <td className={styles.dishTableBread}>{item.назва_хліб}</td>
             <td className={styles.dishTableBread}>{item.вага_хліб}</td>
+              </li>
+            </ul>
+
+         
+
+           
+
+     
+          
             
                 </tr>
               ))}

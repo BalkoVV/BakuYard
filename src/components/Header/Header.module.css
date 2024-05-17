@@ -7,9 +7,8 @@
   box-shadow: 0 0 20px 22px #00000064;   
   width:100%;
   z-index: 10;
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
-
+  background-color: #020202;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
 }
 
 /* .bottomLineLogo {
@@ -29,6 +28,10 @@
 .headerBox {
    display: flex;
    height: 70px;
+   box-shadow:
+   inset #000000b1 0px -15px 29px,
+   inset #000000b1 0px 15px 29px,
+   rgb(0, 0, 0) 3px 3px 8px -3px;
   
    @media screen and (min-width: 768px) {
     height: 70px;
@@ -79,12 +82,10 @@
  }
 
  .activeLink h4 {
- /* color: #781e1e; */
  color: #5c2000;
 }
 
  .headerNav a:hover h4 {
- /* color: #590000; */
  color: #5c2000;
  transition: .1s;
 }
@@ -104,18 +105,19 @@
 }
 
 .headerInfo li {
- display: flex;
- width: 100%;
- padding:  0;
- align-items: center;
- justify-content: end;
- text-align: center;
- padding: 3px 0;
-color: #5e5e5e;
+  display: flex;
+  width: 100%;
+  padding:  0;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+  padding: 1px 0;
+  color: #5e5e5e;
+
  @media screen and (min-width: 1200px) {
-  padding: 5px 0;
-  
+  /* padding: 5px 0; */
 }; 
+
 }
 
 

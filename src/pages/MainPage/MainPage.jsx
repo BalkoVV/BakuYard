@@ -3,6 +3,7 @@ import styles from 'pages/MainPage/MainPage.module.css';
 
 
 
+
 const MainPage = () => {
 
   useEffect(() => {
@@ -118,15 +119,23 @@ const MainPage = () => {
      
          <section className={styles.featuresBottomBox}>
             <ul className={styles.featuresBottom}>
+
               <li>
-                  <h1>Доставка</h1>
+               
+                <h1>Доставка</h1>
               </li>
+
+
               <li>
-                  <h1>Парковка</h1>
+               
+                <h1>Парковка</h1>
               </li>
+
               <li>
+                
                   <h1>Free Wi-Fi</h1>
-              </li>
+                </li>
+
             </ul>
         </section>
         

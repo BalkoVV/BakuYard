@@ -10,12 +10,10 @@
   border-image: linear-gradient(0.25turn, #1a1a1a, #292929, #1a1a1a);
   border-image-slice: 1;
 
-  box-shadow: 0 0 25px 10px #00000085;
   box-shadow: 0 0 20px 22px #00000064;   
 
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
-
+background-color: #020202;
+background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
 
 @media screen and (min-width: 768px) {
     height: 170px;
@@ -38,8 +36,8 @@ background-image: url("https://www.transparenttextures.com/theme/images/transpar
  padding: 40px 0 0;
  height: 160px;
  box-shadow:
- inset #000000 0px -25px 99px,
- inset #000000 0px 25px 99px,
+ inset #000000b1 0px -25px 99px,
+ inset #000000b1 0px 25px 99px,
  rgb(0, 0, 0) 3px 3px 8px -3px;
 }
 .footerLogo {
@@ -48,20 +46,6 @@ background-image: url("https://www.transparenttextures.com/theme/images/transpar
  display: flex;
  justify-content: center;
 }
-
-/* .bottomLineLogo {
-  position: absolute;
-  display: flex;
-  height: 5px;
-  width: 195px;
-  top: 34px;
-  left: 2px;
-  background-image: url("images/bottomLineLogo.svg");
-  background-size: 150%;
-  background-repeat: repeat;
-  background-position: center;
-  border-image-slice: 1;
-} */
 
 .footerAllRights {
   display: flex;

@@ -7,7 +7,7 @@
 
 .mainPageContainer {
   width: 100%;
-  background-color: #070707;
+  background-color: #111111;
   background-position: left;
   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
   /* background-color: #161616; */
@@ -173,10 +173,11 @@ box-shadow:
     width: 100%;
     border-radius: 14px;
     background-image: url('images/str.png'); 
-    background-color: #00000090;
+    background-color: #000000;
     background-size: 170%;
     background-position: top;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-attachment:unset;
     overflow: hidden;
    
     box-shadow: inset 0px 0px 111px 17px #000000db;
@@ -316,12 +317,12 @@ box-shadow:
     width: 100%;
     padding: 30px auto;
     border-radius: 14px;
-    background-color: #0000003e;
+    background-color: #000000;
     background-image: url("images/hotel.png");
     background-size: 100%;
     background-repeat: repeat;
     border: none;
-    box-shadow: inset 0px 0px 111px 17px #000000db;
+    box-shadow: inset 0px 0px 111px 27px #000000db;
     
 
     @media screen and (min-width: 768px) {
@@ -421,13 +422,13 @@ box-shadow:
     justify-content: center;
     align-items: center;
     /* background-color: #fff; */
-    min-width: 400px;
+    /* min-width: 400px; */
 
     @media screen and (min-width: 768px) {
-      min-width: 600px;
+      /* min-width: 600px; */
     };
     @media screen and (min-width: 1200px) {
-     min-width: 800px;
+     /* min-width: 800px; */
     };
    }
 
@@ -435,58 +436,60 @@ box-shadow:
   .featuresBottom {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 10px;
    
     width: 100%;
-    padding: 0 20px;
+    padding: 0 50px;
 
     @media screen and (min-width: 768px) {
-      grid-column-gap: 30px;
-      padding: 0 40px;
+      grid-column-gap: 15px;
+      padding: 0 240px;
     };
     @media screen and (min-width: 1200px) {
-      grid-column-gap: 50px;
-      padding: 0 50px;
+      grid-column-gap: 20px;
+      padding: 0 290px;
     };
 
     
    }
   
   .featuresBottom li {
+    position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    height: 60px;
-    border-radius: 13px;
-    padding-right: 20px;
-    background-color: #050505;
+    height: 40px;
+    border-radius: 11px;
+    background-color: #020202;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
     box-shadow:
-    inset rgba(0, 0, 0, 0.772) -5px -5px 9px,
-    inset #303030 5px 5px 9px,
+    inset #101010af -5px -5px 9px,
+    inset #2020204e 5px 5px 9px,
     rgb(0, 0, 0) 3px 3px 8px -3px;
-    
-    /* box-shadow:  5px 5px 10px 7px #00000034; */
-    background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
-    
+
+
     @media screen and (min-width: 768px) {
-      height: 90px;
+      height: 60px;
     };
+
     @media screen and (min-width: 1200px) {
-      height: 100px;
+      /* background-attachment: fixed; */
+      height: 70px;
     };
    }
+
+  
 
 
    .featuresBottom li h1{
     
-    font-size: 13px;
+    font-size: 10px;
 
     @media screen and (min-width: 768px) {
-      font-size: 17px;
+      font-size: 15px;
     };
     @media screen and (min-width: 1200px) {
-      font-size: 20px;
+      font-size: 19px;
     };
    }
 

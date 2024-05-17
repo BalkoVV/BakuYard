@@ -17,6 +17,7 @@ import beerSnacksData from "services/dataBeer/beerSnacks.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 import beerMenu1 from 'images/beerCardMenu.svg';
+
 import beerMenu2 from 'images/beerCardMenu.svg';
 
 export const Beer = () => {
