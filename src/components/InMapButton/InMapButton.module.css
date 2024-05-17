@@ -1,6 +1,8 @@
-/* .inMapButton {
+.inMapButton {
    position: absolute;
-
+display: flex;
+align-items: center;
+justify-content: center;
    top: 390px;
    right: 20px; 
    height: 40px;
@@ -29,7 +31,7 @@ box-shadow: 5px 5px 15px 5px #0000008b;
 .inMapLink {
    display: flex;
    align-items: center;
-   justify-content: end;
+   justify-content: center;
    height: 40px;
    width: 100px;
     
@@ -62,35 +64,31 @@ box-shadow: 5px 5px 15px 5px #0000008b;
   .inMapButton:hover .inMapDescription {
    color: #5e2000;
    transition: .1s;
-  } */
+  }
 
-  .inMapButton {
+  /* .inMapButton {
    position: absolute;
 
    top: 235px;
    left: 715px;
-   /* top: 390px;
-   right: 20px;  */
+ 
    height: 60px;
    width: 60px;
-   /* background-color: #000000be; */
+  
   
    border-radius: 50%;
    border: none;
-   /* box-shadow: 5px 5px 15px 5px #0000008b; */
 
       @media screen and (min-width: 767.9px) {
          top: 54px;
          right: 68px; 
-         /* height: 60px;
-         width: 150px; */
+     
       };
 
          @media screen and (min-width: 1200px) {
             top: 235px;
    left: 715px;
-            /* height: 60px;
-            width: 150px; */
+           
          };
   }
 
@@ -100,7 +98,6 @@ box-shadow: 5px 5px 15px 5px #0000008b;
 
   .data-tooltip {
    position: relative;
-   /* сursor: pointer; */
  }
 
  [data-tooltip]::before,
@@ -219,4 +216,4 @@ box-shadow: 5px 5px 15px 5px #0000008b;
  [data-tooltip][data-flow^="right"]:hover::after {
    animation: tooltip-horz .5s ease-out forwards;
  }
- 
+  */
