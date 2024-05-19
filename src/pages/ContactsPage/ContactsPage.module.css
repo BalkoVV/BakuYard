@@ -10,10 +10,11 @@ width: 100%;
 .contactsPage {
    width: 100%;
    background-repeat: repeat;
-   background-color: #111111;
+   background-color: #000000;
    background-position: top;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    background-attachment: none;
+
       @media screen and (min-width: 768px) {
          
       };
@@ -193,6 +194,12 @@ width: 100%;
     inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
     inset #303030 5px 5px 9px,
     rgb(0, 0, 0) 3px 3px 8px -3px;
+    background: #F0B7A1;
+background: repeating-linear-gradient(to bottom, #F0B7A1 0%, #8C3310 50%, #752201 51%, #BF6E4E 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
 
 
    @media screen and (min-width: 767.9px) {
@@ -209,6 +216,12 @@ width: 100%;
 .contactsListItemActive:hover .contactsListItemDiscriptions,
 .contactsListItem:active .contactsListItemDiscriptions {
    color: #8e8d8d;
+   background: #DACDC7;
+   background: linear-gradient(to right, #DACDC7 0%, #8C685C 50%, #753A26 51%, #A46951 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
    transition: all .4s ease-out;
 }
 
