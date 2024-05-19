@@ -16,7 +16,7 @@ import styles from 'index.css';
 
 export const App = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <MasterContainer>
         <Header />
         <div className={styles.container}>
