@@ -9,6 +9,8 @@
   z-index: 10;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+  /* background-color: #121212; */
+  background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
 }
 
 /* .bottomLineLogo {
@@ -82,14 +84,32 @@
 
  }
 
+ .headerLinkText {
+  background: #888888;
+  background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
 
  .activeLink h4 {
  color: #600000;
+   background: #900000;
+   background: linear-gradient(to bottom, #900000 0%, #600000 50%, #400000 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
  transition: all .4s ease-out;
 }
 
  .headerNav a:hover h4 {
  color: #600000;
+   background: #900000;
+   background: linear-gradient(to bottom, #900000 0%, #600000 50%, #400000 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
  transition: all .4s ease-out;
 }
 
@@ -133,6 +153,12 @@ padding-right: 1.9px;
  margin: 0;
  font-size: 11px;
  padding-left: 2px;
+
+ background: #888888;
+  background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
  @media screen and (min-width: 1200px) {
   font-size: 12px;

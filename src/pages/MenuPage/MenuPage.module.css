@@ -6,8 +6,15 @@
    height: 100%;
    background-position: bottom;
    background-repeat: repeat;
-   background-color: #020202;
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   /* background-color: #020202;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
+   /* background-color: #272727;
+background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png"); */
+/* background-color: #1f1f1f;
+background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png"); */
+background-color: #020202;
+background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
+
    background-position: left;
 
    @media screen and (min-width: 767.9px) {
@@ -34,6 +41,12 @@
    font-weight: 900;
    margin: 0;
    color: #7c7c7c;
+
+   background: #888888;
+   background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 
    @media screen and (min-width: 768px) {
       height: 95px;
@@ -101,12 +114,14 @@
    height: 100%;
    justify-content: space-around;
    align-items: center;
-   border-radius: 15px;
-    background-color: #030405;
-    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
-box-shadow:
+   border-radius: 15px; 
+ 
+   background-color: #444444;
+/* background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png"); */
+
+   /* box-shadow:
     inset #000000b0 -5px -5px 9px,
-    inset #7d7d7d93 5px 5px 9px; 
+    inset #7d7d7d93 5px 5px 9px;  */
    
 
     @media screen and (min-width: 768px) {
@@ -133,17 +148,23 @@ box-shadow:
 .dishCard h3 {
    font-weight: 900;
    letter-spacing: 1px;
-   /* text-shadow: 1px 1px 45px rgba(239, 238, 238, 0.96); */
    color: #000000;
-   /* color: #a4a4a4; */
+   color: #7b7a7a;
+   background: #900000;
+   background: linear-gradient(to bottom, #900000 0%, #600000 50%, #400000 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   
+
    transition: all .4s ease-out;
 }
 
 .dishCard:hover h3,
 .dishCard:active h3,
 .dishCard:focus h3 {
-   color: #f8f8f8;
-   /* color: #000000; */
+   color: #fefefe;
+   /* color: #400000; */
    transition: all .4s ease-out;
 }
 
@@ -174,7 +195,7 @@ box-shadow:
       scale: 1.3;
       bottom: 0px;
       left: 0px;
-      opacity: .6;
+      opacity: .5;
       z-index: 0;
    
     @media screen and (max-width: 375px) {
@@ -197,8 +218,8 @@ box-shadow:
    
    @media screen and (min-width: 1200px) {
   
-      height: 190px;
-      width: 190px;
+      height: 210px;
+      width: 210px;
     
       bottom: 0px;
       left: 0px;
@@ -211,7 +232,7 @@ box-shadow:
 .dishCard:active .dishCardImage,
 .dishCard:focus .dishCardImage {
    transition: all .4s ease-out;
-   opacity: 1;
+   opacity: .7;
   
 
    @media screen and (min-width: 768px) {

@@ -56,11 +56,11 @@ export const Header = () => {
             </NavLink>
 
             <NavLink to="/menu" activeClassName={styles.activeLink}>
-             <h4>Меню</h4>
+             <h4 className={styles.headerLinkText}>Меню</h4>
             </NavLink>
 
             <NavLink to="/contacts" activeClassName={styles.activeLink}>
-             <h4>Контакти</h4>
+             <h4 className={styles.headerLinkText}>Контакти</h4>
             </NavLink>
 
          </nav>

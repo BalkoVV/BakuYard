@@ -1,20 +1,19 @@
 .inMapButton {
    position: absolute;
-display: flex;
-align-items: center;
-justify-content: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    top: 390px;
    right: 20px; 
    height: 40px;
    width: 100px;
-   /* background-color: #000000be; */
-   /* color: #000000; */
    border-radius: 11px;
+   overflow: hidden;
    border: none;
-box-shadow: 5px 5px 15px 5px #0000008b;
-/* background-color: #343434; */
-background-color: #131313;
-background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+   box-shadow:  4px 4px 15px 2px #00000078;
+   background-color: #333333;
+   background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+   transition: all .4s ease-out;
       
 @media screen and (min-width: 767.9px) {
          top: 380px;
@@ -37,6 +36,9 @@ background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge
    justify-content: center;
    height: 100%;
    width: 100%;
+   box-shadow:
+    inset #000000b0 -5px -5px 9px,
+    inset #7d7d7d93 5px 5px 9px; 
     
       @media screen and (min-width: 767.9px) {
          height: 60px;
@@ -68,9 +70,13 @@ background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge
   }
   
   .inMapButton:hover .inMapDescription {
-
+  
    color: #c9c9c9;
        transition: all .4s ease-out;
   }
 
+  .inMapButton:hover {
+   scale: 1.02;
+   transition: all .4s ease-out;
+}
   

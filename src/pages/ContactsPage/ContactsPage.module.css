@@ -13,6 +13,8 @@ width: 100%;
    background-color: #020202;
    background-position: top;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   /* background-color: #000000; */
+   background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
    background-attachment: none;
 
       @media screen and (min-width: 768px) {
@@ -115,9 +117,7 @@ width: 100%;
    margin:  3px 0;
    border-radius: 13px;
    background-color: #030405;
-   /* box-shadow:  4px 4px 15px 4px #0000008b; */
-    /* color: #450000; */
-    box-shadow:  4px 4px 15px 2px #00000078;
+   box-shadow:  4px 4px 15px 2px #00000078;
   
    transition: all .4s ease-out;
    @media screen and (min-width: 767.9px) {
@@ -135,10 +135,10 @@ width: 100%;
 
 .contactsListItem img {
    position: absolute;
-   rotate: 10deg;
+   /* rotate: 0deg; */
    opacity: 0.5;
    display: block;
-   height: 90px;
+   height: 55px;
    transition: all .4s ease-out;
    left: 10px;
   
@@ -156,28 +156,23 @@ width: 100%;
 
 .contactsListItemActive:hover,
 .contactsListItemActive:active {
-   /* box-shadow:  2px 2px 15px 2px #0000005d; */
    box-shadow:  2px 2px 15px 2px #0000005d;
    transition: all .4s ease-out;
    scale: 1.02;
 }
 .contactsListItemActive:hover img {
    rotate: 0deg;
-   opacity: 0.8;
+   opacity: 0.4;
    display: block;
-   
-   scale: 0.6;
    transition: all .4s ease-out;
    left: 10px;
 
    @media screen and (min-width: 767.9px) {
-      /* left: 2px; */
 
    };
 
    @media screen and (min-width: 1200px) {
-   /* left: 30px; */
-   /* scale: 0.66; */
+
    };
 }
 
@@ -194,10 +189,15 @@ width: 100%;
     font-size: 14px;
     font-weight: 900;
     padding-right: 20px;
-    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+
+background-color: #333333;
+background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+
+
     box-shadow:
     inset #000000b0 -5px -5px 9px,
     inset #7d7d7d93 5px 5px 9px; 
+
    @media screen and (min-width: 767.9px) {
       padding-right: 30px;
       font-size: 15px;
