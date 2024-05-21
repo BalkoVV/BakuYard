@@ -298,7 +298,7 @@ export const MenuPage = () => {
              
                    <span className={styles.dishCardDescriptionBox}>
                    <h3 className={styles.dishCardDescriptionTop}>
-                      Випічка
+                      з Печі
                     </h3>
                    
                    </span>

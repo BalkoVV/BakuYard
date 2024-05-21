@@ -114,7 +114,7 @@ width: 100%;
    border-radius: 13px;
    margin:  3px 0;
    border-radius: 13px;
-   background-color: #131313;
+   background-color: #111111;
    box-shadow:  4px 4px 15px 4px #0000008b;
     /* color: #450000; */
   
@@ -169,22 +169,21 @@ width: 100%;
    left: 10px;
 
    @media screen and (min-width: 767.9px) {
-      padding-left: 20px;
+      /* left: 2px; */
 
    };
 
    @media screen and (min-width: 1200px) {
-   left: 30px;
+   /* left: 30px; */
    scale: 0.66;
    };
 }
 
 .contactsListItemDiscriptions {
-   /* position: absolute; */
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   color: #000000;
+   color: #a1a1a1;
    transition: all .4s ease-out;
     width: 100%;
     height: 100%;
@@ -193,14 +192,7 @@ width: 100%;
     font-size: 14px;
     font-weight: 900;
     padding-right: 20px;
-    /* box-shadow:
-    inset #313131 -5px -5px 9px,
-    inset #3b3b3b 5px 5px 9px; */
-    /* background-color: #343434; */
     background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-
 
    @media screen and (min-width: 767.9px) {
       padding-right: 30px;
@@ -215,14 +207,12 @@ width: 100%;
 
 .contactsListItemActive:hover .contactsListItemDiscriptions,
 .contactsListItem:active .contactsListItemDiscriptions {
-   color: #c2c2c2;
-  
-
+   color: #f8f8f8;
    transition: all .4s ease-out;
 }
 
 .contactsListItemActive:hover ,
 .contactsListItem:active  {
-   scale: 1.04;
+   scale: 1.02;
    transition: all .4s ease-out;
 }

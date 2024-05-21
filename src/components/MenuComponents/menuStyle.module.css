@@ -818,7 +818,7 @@ color: red;
       position: absolute;
       right: 16px;
       top: 12px;
-      fill: #3a3a3a;
+      /* fill: #3a3a3a; */
 
       @media screen and (min-width: 767.9px) {
          right: 18px;

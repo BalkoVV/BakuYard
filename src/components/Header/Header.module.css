@@ -85,12 +85,12 @@
 
  .activeLink h4 {
  color: #600000;
- transition: .4s;
+ transition: all .4s ease-out;
 }
 
  .headerNav a:hover h4 {
  color: #600000;
- transition: .4s;
+ transition: all .4s ease-out;
 }
 
 .headerInfo {
