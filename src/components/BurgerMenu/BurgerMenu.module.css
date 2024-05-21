@@ -13,7 +13,8 @@
   height: 70px;
 
   background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+
+  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(0.25turn, #1a1a1a, #414141, #1a1a1a);
   border-image-slice: 1;
@@ -47,7 +48,7 @@
 
 .activeLink {
   position: relative;
-  color: #5c2000; 
+  color: #600000; 
 }
 
 

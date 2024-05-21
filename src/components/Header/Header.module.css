@@ -7,11 +7,8 @@
   box-shadow: 0 0 20px 22px #00000064;   
   width:100%;
   z-index: 10;
-  background-color: #020202;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
   background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
 }
 
 /* .bottomLineLogo {
@@ -85,14 +82,15 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-light
 
  }
 
+
  .activeLink h4 {
-  font-weight: 900;
- color: #450000;
+ color: #600000;
+ transition: .4s;
 }
 
  .headerNav a:hover h4 {
- color: #450000;
- transition: .1s;
+ color: #600000;
+ transition: .4s;
 }
 
 .headerInfo {

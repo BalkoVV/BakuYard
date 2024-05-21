@@ -52,7 +52,7 @@ export const Header = () => {
 
          <nav className={styles.headerNav}>
             <NavLink exact to="/" activeClassName={styles.activeLink}>
-              <h4>Головна</h4>
+              <h4 className={styles.headerLinkText}>Головна</h4>
             </NavLink>
 
             <NavLink to="/menu" activeClassName={styles.activeLink}>
