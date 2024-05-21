@@ -11,11 +11,6 @@ import CartContext from "components/CartProvider/CartProvider";
 
 import lunchData from "services/dataComboSets/setMeals.json";
 
-
-// import pizzaMenu1 from 'images/pizzaMenu1.png';
-// import pizzaMenu2 from 'images/pizzaMenu2.png';
-// import pizzaMenu3 from 'images/pizzaMenu3.png';
-
 // import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
@@ -25,10 +20,6 @@ import lunchMenu2 from 'images/lunchCardMenu.svg';
 export const Lunch = () => {
   const { addToCart, cartItems } = useContext(CartContext);
   const [lunchItems, setLunchItems] = useState([]);
-
-  useEffect(() => {
-    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
-  }, []);
 
    useEffect(() => {
     const contentElements = document.querySelectorAll(`.${styles.fades}`);
@@ -40,7 +31,7 @@ export const Lunch = () => {
   }, []);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+    window.scrollTo(0, 0);
   }, []);
 
   useEffect(() => {
@@ -72,129 +63,91 @@ export const Lunch = () => {
       <div className={styles.dishPageBox}>
 
       <img
-
-src={lunchMenu1}
-alt=""
-style={{
- position: 'fixed',
- top: '70px',
- left: '-100px',
- width: '500px',
- height: '500px',
- zIndex: '0',
- rotate: '10deg',
- transform: 'scaleX(-1)',
- opacity: '.4'
-}}
-/>
-
-
-<img
-className={styles.menuCardImage}
-src={lunchMenu2}
-alt=""
-style={{
- position: 'fixed',
- bottom: '10px',
- right: '-50px',
- width: '500px',
- height: '500px',
- zIndex: '0',
- rotate: '-10deg',
- 
- opacity: '.4',
-
-}}
-/>
-
-        {/* <img
-         src={pizzaMenu1}
+        src={lunchMenu1}
         alt=""
         style={{
-          position: 'fixed',
-          top: '100px',
-          left: '-40px',
-          width: '400px',
-          height: '600px',
+        position: 'fixed',
+        top: '70px',
+        left: '-100px',
+        width: '500px',
+        height: '500px',
+        zIndex: '0',
+        rotate: '10deg',
+        transform: 'scaleX(-1)',
+        opacity: '.4'
         }}
-      /> */}
-       {/* <img
-         src={pizzaMenu2}
+      />
+
+
+      <img
+        className={styles.menuCardImage}
+        src={lunchMenu2}
         alt=""
         style={{
-          position: 'fixed',
-          top: '220px',
-          right: '-40px',
-          width: '400px',
-          height: '600px',
+        position: 'fixed',
+        bottom: '10px',
+        right: '-50px',
+        width: '500px',
+        height: '500px',
+        zIndex: '0',
+        rotate: '-10deg',
+        opacity: '.4',
         }}
-      /> */}
-       
-          <table className={styles.dishTableList}>
-          
-            <thead>
-              <tr>
-                {/* <h3 className={styles.dishTableListTitle}>Піца</h3> */}
-                {/* <th>ID</th>
-                <th>Назва</th>
-                <th>Об'єм</th>
-                <th>Ціна</th> */}
-              </tr>
-            </thead>
-            <tbody  className={styles.dishTableSetMeals}>
-              {lunchItems.map((item) => (
-                <tr key={item.id}  className={styles.dishTableSetMealsItem}>
-                  {/* <td>{item.id}</td> */}
-
-            <td className={styles.dishTableDay}>{item.назва}</td>
-            <td className={styles.dishTablePriceDay}>{item.ціна}</td>
-            <td className={styles.dishTableSetButtonAdd}>
-              <AddButton
-                onClick={() => addToCart(item)}
-                alreadyAdded={cartItems.some(cartItem => cartItem.назва === item.назва)}
-                updateButtonState={() => updateButtonState(item.назва)}
-              />
-            </td>
-
-            <ul className={styles.dishTableDayList}>
-              <li>
-              <td className={styles.dishTableNameFirst}>{item.назва_перше}</td>
-              <td className={styles.dishTableWeigthFirst}>{item.вага_перше}</td>
-              </li>
-
-              <li>
-              <td className={styles.dishTableNameSecond}>{item.назва_друге}</td>
-            <td className={styles.dishTableWeigthSecond}>{item.вага_друге}</td>
-              </li>
-
-              <li>
-              <td className={styles.dishTableNameSalad}>{item.назва_салат}</td>
-            <td className={styles.dishTableWeigthSalad}>{item.вага_салат}</td>
-            <td className={styles.dishTableOptionsSalad}>{item.опції_салат}</td>
-              </li>
-
-              <li>
-              <td className={styles.dishTableNameDrink}>{item.назва_напій}</td>
-            <td className={styles.dishTableWeigthDrink}>{item.вага_напій}</td>
-              </li>
-
-              <li>
-                  
-            <td className={styles.dishTableBread}>{item.назва_хліб}</td>
-            <td className={styles.dishTableBread}>{item.вага_хліб}</td>
-              </li>
-            </ul>
-
-         
-
-           
+      />
 
      
-          
-            
+
+       
+          <table className={styles.dishTable}>
+
+            <tbody  className={styles.dishTableList}>
+              {lunchItems.map((item) => (
+                <tr key={item.id}  className={styles.dishTableListItem}>
+                  <ul>
+                  <li>
+                    <span>
+                    <td>{item.назва}</td>
+                    </span>
+                    <span>
+                    <td>{item.ціна}</td>
+                    <td>
+                        <AddButton
+                          onClick={() => addToCart(item)}
+                          alreadyAdded={cartItems.some(cartItem => cartItem.назва === item.назва)}
+                          updateButtonState={() => updateButtonState(item.назва)}
+                        />
+                    </td>
+                    </span>
+                  </li>
+                  <li>
+                    <td className={styles.dishTableNameFirst}>{item.назва_перше}</td>
+                    <td className={styles.dishTableWeigthFirst}>{item.вага_перше}</td>
+                  </li>
+                  <li>
+                    <td className={styles.dishTableNameSecond}>{item.назва_друге}</td>
+                    <td className={styles.dishTableWeigthSecond}>{item.вага_друге}</td>
+                  </li>
+                 
+                  <li>
+                    <td className={styles.dishTableNameSalad}>{item.назва_салат}</td>
+                    <td className={styles.dishTableOptionsSalad}>{item.опції_салат}</td>
+                    <td className={styles.dishTableWeigthSalad}>{item.вага_салат}</td>
+                    
+                  </li>
+                  <li>
+                    <td className={styles.dishTableNameDrink}>{item.назва_напій}</td>
+                    <td className={styles.dishTableWeigthDrink}>{item.вага_напій}</td>
+                  </li>
+                  <li> 
+                    <td className={styles.dishTableBread}>{item.назва_хліб}</td>
+                    <td className={styles.dishTableBread}>{item.вага_хліб}</td>
+                  </li>
+                  </ul>
                 </tr>
               ))}
             </tbody>
+
+
           </table>
 
           

@@ -53,7 +53,7 @@ export const Meat = () => {
     <div className={styles.dishPage}>
       
       <div className={styles.discriptionBox}>
-          <h1 className={styles.dishTitle}>М'ясо</h1> 
+          <h1 className={styles.dishTitle}>Барбекю</h1> 
 
       <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>

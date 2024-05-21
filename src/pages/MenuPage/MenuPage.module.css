@@ -7,7 +7,7 @@
    height: 100%;
    background-position: bottom;
    background-repeat: repeat;
-   background-color: #111111;
+   background-color: #000000;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    background-position: left;
 
@@ -117,13 +117,16 @@ position: relative;
 
 }
 .dishCard h3 {
+   color: #5e5e5e;
+   color: #8a2e01;
    transition: all .4s ease-out;
 }
 
 .dishCard:hover h3,
 .dishCard:active h3,
 .dishCard:focus h3 {
-   color: #7c7c7c;
+   color: #7b7b7b;
+   /* color: #5e2000; */
    transition: all .4s ease-out;
 }
 
@@ -157,13 +160,13 @@ position: relative;
       rotate: 7deg;
       bottom: -35px;
       left: -20px;
-      opacity: .25;
+      opacity: .4;
       z-index: 0;
    
     @media screen and (max-width: 375px) {
       height: 145px;
       width: 145px;
-      opacity: .25;
+      /* opacity: .25; */
     
    };  
     @media screen and (min-width: 767.9px) {
@@ -173,7 +176,7 @@ position: relative;
       rotate: 7deg;
       bottom: -40px;
       left: -25px;
-      opacity: .25;
+      /* opacity: .25; */
       z-index: 0;
    }; 
    
@@ -184,7 +187,7 @@ position: relative;
       rotate: 7deg;
       bottom: -50px;
       left: -30px;
-      opacity: .25;
+      /* opacity: .5; */
    }; 
    }
    
@@ -192,10 +195,10 @@ position: relative;
 .dishCard:hover .dishCardImage,
 .dishCard:active .dishCardImage,
 .dishCard:focus .dishCardImage {
-   scale: .65;
+   scale: .7;
    rotate: 0deg;
    transition: all .4s ease-out;
-   opacity: .4;
+   opacity: .9;
   
 
    @media screen and (min-width: 768px) {
@@ -204,7 +207,7 @@ position: relative;
    }; 
 
    @media screen and (min-width: 1200px) {
-      scale: .67;
+      scale: .59;
      
    }; 
 }

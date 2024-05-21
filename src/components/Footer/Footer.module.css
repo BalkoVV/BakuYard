@@ -32,6 +32,23 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png
 }
 
 
+
+.footerSocial h5 {
+  position: absolute;
+  color: rgb(127, 127, 127);
+  font-size: 6px;
+  display: flex;
+  /* width: 100px; */
+  justify-content: start;
+  /* height: 10px; */
+  /* background-color: #fff; */
+  margin-left: -29px;
+  top: 17px;
+  letter-spacing: .01px;
+  /* left: 150px; */
+ /* padding-bottom: 50px; */
+  }
+  
 .footerBox {
  padding: 40px 0 0;
  height: 160px;
@@ -57,8 +74,9 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png
 }
 
 .footerSocial {
+  position: relative;
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   justify-content: center;
   align-items: center;
   margin-top: 17px;

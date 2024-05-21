@@ -148,275 +148,449 @@ export const HardAlkohol = () => {
       />
 
 
-      <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Бренді</h3>
-              </tr>
-            </thead>
+      <table className={styles.dishList}>
             <tbody>
-              {brandyItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  <td  className={styles.dishTableСategory}>{item.категорія}</td>
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
+            <h3 className={styles.dishListTitle}>Бренді</h3>
 
-                  <td  className={styles.dishTableWeigth50}>{item.вага50}</td>
-                  <td  className={styles.dishTablePrice50}>{item.ціна50}</td>
+            {brandyItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+               <div className={styles.dishListItemInfo}>
 
-                  <td  className={styles.dishTableWeigth100}>{item.вага100}</td>
-                  <td  className={styles.dishTablePrice100}>{item.ціна100}</td>
+                  <span className={styles.dishListItemName} >
+                    <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+                  </span>
 
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                </tr>
-              ))}
-            </tbody>
+                  <span className={styles.dishListItemIngredientsHardDrink}>
+                    <td>{item.інгредієнти}</td>
+                  </span>
+
+               </div>
+
+               <div className={styles.dishListItemManagement}>
+                
+                  <span className={styles.dishListItemWeigth50}>
+                    <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
+                  </span>
+
+                  <span className={styles.dishTablePrice50}>
+                    <td  className={styles.dishTablePriceNotDelivery}>{item.ціна50}</td>
+                  </span>
+
+                  <span className={styles.dishListItemWeigth100}>
+                    <td  className={styles.dishTableWeigthNotDelivery}>{item.вага100}</td>
+                  </span>
+
+                  <span className={styles.dishTablePrice100}>
+                    <td  className={styles.dishTablePriceNotDelivery}>{item.ціна100}</td>
+                  </span>
+
+                  <span className={styles.dishListItemWeigthBottle}>
+                    <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                  </span>
+
+                  <span className={styles.dishTablePriceBottle}>
+                    <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+                  </span>
+
+               </div>
+              </tr>
+            ))}
+          </tbody> 
           </table>
 
-
-
-          {/* <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Коньяк</h3>
-              </tr>
-            </thead>
-            <tbody>
-              {cognacItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  <td  className={styles.dishTableСategory}>{item.категорія}</td>
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.тип}</td>
-
-                  <td  className={styles.dishTableWeigth50}>{item.вага50}</td>
-                  <td  className={styles.dishTablePrice50}>{item.ціна50}</td>
-
-                  <td  className={styles.dishTableWeigth100}>{item.вага100}</td>
-                  <td  className={styles.dishTablePrice100}>{item.ціна100}</td>
-
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table> */}
 
           
 
-          <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Лікер</h3>
-              </tr>
-            </thead>
+          <table className={styles.dishList}>
+         
             <tbody>
-              {liqueursItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  <td  className={styles.dishTableСategory}>{item.категорія}</td>
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
+            <h3 className={styles.dishListTitle}>Лікер</h3>
+            {liqueursItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+              <div className={styles.dishListItemInfo}>
 
-                  <td  className={styles.dishTableWeigth50}>{item.вага50}</td>
-                  <td  className={styles.dishTablePrice50}>{item.ціна50}</td>
+              <span className={styles.dishListItemName} >
+                <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+              </span>
 
-                  <td  className={styles.dishTableWeigth100}>{item.вага100}</td>
-                  <td  className={styles.dishTablePrice100}>{item.ціна100}</td>
+              <span className={styles.dishListItemIngredientsHardDrink}>
+                <td>{item.інгредієнти}</td>
+              </span>
 
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                  
-                </tr>
-              ))}
-            </tbody>
+              </div>
+
+              <div className={styles.dishListItemManagement}>
+
+              <span className={styles.dishListItemWeigth50}>
+                <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
+              </span>
+
+              <span className={styles.dishTablePrice50}>
+                <td  className={styles.dishTablePriceNotDelivery}>{item.ціна50}</td>
+              </span>
+
+              <span className={styles.dishListItemWeigth100}>
+                <td  className={styles.dishTableWeigthNotDelivery}>{item.вага100}</td>
+              </span>
+
+              <span className={styles.dishTablePrice100}>
+                <td  className={styles.dishTablePriceNotDelivery}>{item.ціна100}</td>
+              </span>
+
+              <span className={styles.dishListItemWeigthBottle}>
+                <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+              </span>
+
+              <span className={styles.dishTablePriceBottle}>
+                <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+              </span>
+
+              </div>
+              </tr>
+            ))}
+          </tbody>
           </table>
           
 
-          <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Віскі</h3>
-             
-              </tr>
-            </thead>
+          <table className={styles.dishList}>
+
             <tbody>
-              {whiskeyItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  <td  className={styles.dishTableСategory}>{item.категорія}</td>
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
+            <h3 className={styles.dishListTitle}>Віскі</h3>
+            {whiskeyItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+              <div className={styles.dishListItemInfo}>
 
-                  <td  className={styles.dishTableWeigth50}>{item.вага50}</td>
-                  <td  className={styles.dishTablePrice50}>{item.ціна50}</td>
+                <span className={styles.dishListItemName} >
+                  <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+                </span>
 
-                  <td  className={styles.dishTableWeigth100}>{item.вага100}</td>
-                  <td  className={styles.dishTablePrice100}>{item.ціна100}</td>
+                <span className={styles.dishListItemIngredientsHardDrink}>
+                  <td>{item.інгредієнти}</td>
+                </span>
 
+                </div>
+
+                <div className={styles.dishListItemManagement}>
+
+                <span className={styles.dishListItemWeigth50}>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishTablePrice50}>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна50}</td>
+                </span>
+
+                <span className={styles.dishListItemWeigth100}>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага100}</td>
+                </span>
+
+                <span className={styles.dishTablePrice100}>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна100}</td>
+                </span>
+
+                <span className={styles.dishListItemWeigthBottle}>
                   <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishTablePriceBottle}>
                   <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                 
-                </tr>
-              ))}
-            </tbody>
+                </span>
+
+                </div>
+              </tr>
+            ))}
+          </tbody>
           </table>
 
-          <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Водка</h3>
-             
-              </tr>
-            </thead>
+          <table className={styles.dishList}>
+ 
             <tbody>
-              {vodkaItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  <td  className={styles.dishTableСategory}>{item.категорія}</td>
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
+            <h3 className={styles.dishListTitle}>Водка</h3>
+            {vodkaItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+              <div className={styles.dishListItemInfo}>
 
-                  <td  className={styles.dishTableWeigth50}>{item.вага50}</td>
-                  <td  className={styles.dishTablePrice50}>{item.ціна50}</td>
+                <span className={styles.dishListItemName} >
+                  <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+                </span>
 
-                  <td  className={styles.dishTableWeigth100}>{item.вага100}</td>
-                  <td  className={styles.dishTablePrice100}>{item.ціна100}</td>
+                <span className={styles.dishListItemIngredientsHardDrink}>
+                  <td>{item.інгредієнти}</td>
+                </span>
 
+                </div>
+
+                <div className={styles.dishListItemManagement}>
+
+                <span className={styles.dishListItemWeigth50}>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishTablePrice50}>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна50}</td>
+                </span>
+
+                <span className={styles.dishListItemWeigth100}>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага100}</td>
+                </span>
+
+                <span className={styles.dishTablePrice100}>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна100}</td>
+                </span>
+
+                <span className={styles.dishListItemWeigthBottle}>
                   <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishTablePriceBottle}>
                   <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                 
-                </tr>
-              ))}
-            </tbody>
+                </span>
+
+                </div>
+              </tr>
+            ))}
+          </tbody>
           </table>
 
-          <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Вермут</h3>
-             
-              </tr>
-            </thead>
+          <table className={styles.dishList}>
+       
+           
             <tbody>
-              {vermouthItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  <td  className={styles.dishTableСategory}>{item.категорія}</td>
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
+            <h3 className={styles.dishListTitle}>Вермут</h3>
+            {vermouthItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+              <div className={styles.dishListItemInfo}>
 
-                  <td  className={styles.dishTableWeigth50}>{item.вага50}</td>
-                  <td  className={styles.dishTablePrice50}>{item.ціна50}</td>
+                <span className={styles.dishListItemName} >
+                  <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+                </span>
 
-                  <td  className={styles.dishTableWeigth100}>{item.вага100}</td>
-                  <td  className={styles.dishTablePrice100}>{item.ціна100}</td>
+                <span className={styles.dishListItemIngredientsHardDrink}>
+                  <td>{item.інгредієнти}</td>
+                </span>
 
+                </div>
+
+                <div className={styles.dishListItemManagement}>
+
+                <span className={styles.dishListItemWeigth50}>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishTablePrice50}>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна50}</td>
+                </span>
+
+                <span className={styles.dishListItemWeigth100}>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага100}</td>
+                </span>
+
+                <span className={styles.dishTablePrice100}>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна100}</td>
+                </span>
+
+                <span className={styles.dishListItemWeigthBottle}>
                   <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishTablePriceBottle}>
                   <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                 
-                </tr>
-              ))}
-            </tbody>
+                </span>
+
+                </div>
+              </tr>
+            ))}
+          </tbody>
           </table>
 
-          <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Текіла</h3>
-             
-              </tr>
-            </thead>
+          <table className={styles.dishList}>
+  
             <tbody>
-              {tequilaItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  <td  className={styles.dishTableСategory}>{item.категорія}</td>
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
+            <h3 className={styles.dishListTitle}>Текіла</h3>
+            {tequilaItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+              <div className={styles.dishListItemInfo}>
 
-                  <td  className={styles.dishTableWeigth50}>{item.вага50}</td>
-                  <td  className={styles.dishTablePrice50}>{item.ціна50}</td>
+              <span className={styles.dishListItemName} >
+                <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+              </span>
 
-                  <td  className={styles.dishTableWeigth100}>{item.вага100}</td>
-                  <td  className={styles.dishTablePrice100}>{item.ціна100}</td>
+              <span className={styles.dishListItemIngredientsHardDrink}>
+                <td>{item.інгредієнти}</td>
+              </span>
 
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                 
-                </tr>
-              ))}
-            </tbody>
+              </div>
+
+              <div className={styles.dishListItemManagement}>
+
+              <span className={styles.dishListItemWeigth50}>
+                <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
+              </span>
+
+              <span className={styles.dishTablePrice50}>
+                <td  className={styles.dishTablePriceNotDelivery}>{item.ціна50}</td>
+              </span>
+
+              <span className={styles.dishListItemWeigth100}>
+                <td  className={styles.dishTableWeigthNotDelivery}>{item.вага100}</td>
+              </span>
+
+              <span className={styles.dishTablePrice100}>
+                <td  className={styles.dishTablePriceNotDelivery}>{item.ціна100}</td>
+              </span>
+
+              <span className={styles.dishListItemWeigthBottle}>
+                <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+              </span>
+
+              <span className={styles.dishTablePriceBottle}>
+                <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+              </span>
+
+              </div>      
+              </tr>
+            ))}
+          </tbody>
           </table>
 
-          <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Ром</h3>
-             
-              </tr>
-            </thead>
+          <table className={styles.dishList}>
+           
             <tbody>
-              {rumItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  <td  className={styles.dishTableСategory}>{item.категорія}</td>
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
+            <h3 className={styles.dishListTitle}>Ром</h3>
+            {rumItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+              <div className={styles.dishListItemInfo}>
 
-                  <td  className={styles.dishTableWeigth50}>{item.вага50}</td>
-                  <td  className={styles.dishTablePrice50}>{item.ціна50}</td>
+              <span className={styles.dishListItemName} >
+                <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+              </span>
 
-                  <td  className={styles.dishTableWeigth100}>{item.вага100}</td>
-                  <td  className={styles.dishTablePrice100}>{item.ціна100}</td>
+              <span className={styles.dishListItemIngredientsHardDrink}>
+                <td>{item.інгредієнти}</td>
+              </span>
 
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                 
-                </tr>
-              ))}
-            </tbody>
+              </div>
+
+              <div className={styles.dishListItemManagement}>
+
+              <span className={styles.dishListItemWeigth50}>
+                <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
+              </span>
+
+              <span className={styles.dishTablePrice50}>
+                <td  className={styles.dishTablePriceNotDelivery}>{item.ціна50}</td>
+              </span>
+
+              <span className={styles.dishListItemWeigth100}>
+                <td  className={styles.dishTableWeigthNotDelivery}>{item.вага100}</td>
+              </span>
+
+              <span className={styles.dishTablePrice100}>
+                <td  className={styles.dishTablePriceNotDelivery}>{item.ціна100}</td>
+              </span>
+
+              <span className={styles.dishListItemWeigthBottle}>
+                <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+              </span>
+
+              <span className={styles.dishTablePriceBottle}>
+                <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+              </span>
+
+              </div>  
+              </tr>
+            ))}
+          </tbody>
           </table>
 
-          <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Джин</h3>
-             
-              </tr>
-            </thead>
+          <table className={styles.dishList}>
+      
+           
             <tbody>
-              {ginItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  <td  className={styles.dishTableСategory}>{item.категорія}</td>
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
+            <h3 className={styles.dishListTitle}>Джин</h3>
+            {ginItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+              
+              <div className={styles.dishListItemInfo}>
 
-                  <td  className={styles.dishTableWeigth50}>{item.вага50}</td>
-                  <td  className={styles.dishTablePrice50}>{item.ціна50}</td>
+                <span className={styles.dishListItemName} >
+                  <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+                </span>
 
-                  <td  className={styles.dishTableWeigth100}>{item.вага100}</td>
-                  <td  className={styles.dishTablePrice100}>{item.ціна100}</td>
+                <span className={styles.dishListItemIngredientsHardDrink}>
+                  <td>{item.інгредієнти}</td>
+                </span>
 
+                </div>
+
+                <div className={styles.dishListItemManagement}>
+
+                <span className={styles.dishListItemWeigth50}>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishTablePrice50}>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна50}</td>
+                </span>
+
+                <span className={styles.dishListItemWeigth100}>
+                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага100}</td>
+                </span>
+
+                <span className={styles.dishTablePrice100}>
+                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна100}</td>
+                </span>
+
+                <span className={styles.dishListItemWeigthBottle}>
                   <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishTablePriceBottle}>
                   <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                 
-                </tr>
-              ))}
-            </tbody>
+                </span>
+
+              </div>
+              </tr>
+            ))}
+          </tbody>
           </table>
 
-          <table className={styles.dishTableList}>
-            <thead>
-              <tr>
-              <h3>Шот</h3>
-             
-              </tr>
-            </thead>
+          <table className={styles.dishList}>
+       
             <tbody>
               {shotItems.map((item) => (
-                <tr key={item.id} className={styles.dishTable}>
-                  <td  className={styles.dishTableСategory}>{item.категорія}</td>
-                  <td  className={styles.dishTableName}>{item.назва}</td>
-                  <td  className={styles.dishTableIngredients}>{item.інгредієнти}</td>
-                  <td  className={styles.dishTableType}>{item.вид}</td>
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                 
+                 <tr key={item.id} className={styles.dishListItem}>
+      
+                  <div className={styles.dishListItemInfo}>
+
+                  <span className={styles.dishListItemName} >
+                    <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+                  </span>
+
+                  <span className={styles.dishListItemIngredientsHardDrink}>
+                    <td>{item.інгредієнти}</td>
+                  </span>
+
+                  </div>
+
+                  <div className={styles.dishListItemManagement}>
+
+                  <span className={styles.dishListItemWeigth50}>
+                    <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+                  </span>
+
+                  <span className={styles.dishTablePrice50}>
+                    <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+                  </span>
+
+                  </div>
                 </tr>
               ))}
             </tbody>

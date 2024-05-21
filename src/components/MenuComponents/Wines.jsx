@@ -241,7 +241,7 @@ export const Wines = () => {
                       <td className={styles.dishListItemNameDescription}>{item.назва}</td>
                     </span>
 
-                  <span className={styles.dishListItemIngredients}>
+                    <span className={styles.dishListItemIngredients}>
                     <td>{item.інгредієнти}</td>
                   </span>
 

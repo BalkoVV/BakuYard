@@ -51,17 +51,17 @@ export const ContactsPage = () => {
 
                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <PhonesIcon className={styles.phoneIconContact}/>
-                    <a href="tel:+380970830717" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 068 239 38 37</a>
+                    <a href="tel:+380682393837" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 068 239 38 37</a>
                   </li>
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <PhonesIcon className={styles.phoneIconContact}/>
-                    <a href="tel:+380970830717" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 093 442 30 28</a>
+                    <a href="tel:+380934423028" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 093 442 30 28</a>
                   </li>          
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <PhonesIcon className={styles.phoneIconContact}/>
-                    <a href="tel:+380970830717" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 045 945 33 69</a>
+                    <a href="tel:+380459453369" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 045 945 33 69</a>
                   </li>
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>

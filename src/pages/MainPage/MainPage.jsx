@@ -42,8 +42,17 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-
-       <section  className={styles.topDescriptionsBox}>
+      <section  className={styles.topDescriptionsBox}>
+       <h1 className={styles.topDescriptions}>
+          Бакінський Двір <br/>  - місце де смак об'єднує серця, <br/>
+          а атмосфера творить неповторний вечір.<br/>
+          У нас кожен стіл – це святковий захід.<br/>
+          Кожна страва – це шедевр від майстра.<br/>
+          Від палячих шашликів до вегетаріанських страв<br/>
+          – у нас є щось для кожного гурмана
+        </h1>
+       </section>
+       {/* <section  className={styles.topDescriptionsBox}>
        <span className={styles.topDescriptions}>
           <p>Бакінський Двір</p> 
 
@@ -60,7 +69,7 @@ const MainPage = () => {
          
          <p> – у нас є щось для кожного гурмана</p>
         </span>
-       </section>
+       </section> */}
        
         <section className={styles.featuresTopBox}>
          

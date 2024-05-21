@@ -3,6 +3,7 @@
    min-height: 85vh;
    background-repeat: repeat;
    background-color: #070707;
+   background-color: #000000;
    background-position: top;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    background-attachment: none;
@@ -28,11 +29,10 @@
       display: none;
      };
 }
+
 .dishPageContainer {
    padding: 0 10px;
   
-
-      
    @media screen and (min-width: 767.9px) {
     padding: 0 120px;
    };
@@ -83,7 +83,7 @@
 
 .dishList {
    display: grid;
-   width: 100%;
+   /* width: 100%; */
    grid-template-columns: repeat(1, 1fr);
    grid-row-gap: 10px;
    border: none;
@@ -125,7 +125,6 @@
       font-size: 17px;
      };
 }
-
 
 .dishListItem {
    position: relative;
@@ -178,7 +177,6 @@
  .dishListItemName {
    display: flex;
    height: 20px;
- /* color: red; */
   
    @media screen and (min-width: 767.9px) {
       
@@ -211,6 +209,30 @@
    };
 }
 
+.dishListItemNameDescriptionHardDrink {
+   display: flex;
+   padding: 35px 0 0 10px;
+   font-size: 11px;
+   letter-spacing: .01px;
+   color: #5e5e5e;
+
+   @media screen and (max-width: 399px) {
+      padding: 35px 0 0 2px;
+      font-size: 8px;
+      letter-spacing: .01px;
+      
+   };
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 17px;
+      padding: 35px 0 0 20px;
+   };
+   @media screen and (min-width: 1200px) {
+      font-size: 19px;
+      padding: 35px 0 0 20px;
+   };
+}
+
 .dishListItemIngredients {
    display: flex;
    align-items: flex-start;
@@ -219,6 +241,34 @@
    color: #6e432e;
    padding: 10px 0 0 10px;
    height: 40px;
+
+  
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 10px;
+      padding: 12px 0 0 20px;
+      letter-spacing: .1px;
+   };
+  
+   @media screen and (min-width: 1200px) {
+      font-size: 11px;
+      padding: 15px 0 0 25px;
+      letter-spacing: .2px;
+   };
+}
+
+.dishListItemIngredientsHardDrink {
+   display: flex;
+   align-items: flex-start;
+   font-size: 8px;
+   letter-spacing: -0.1px;
+   color: #6e432e;
+   padding: 10px 0 0 10px;
+   height: 40px;
+
+   @media screen and (max-width: 399px) {
+      font-size: 7px;
+   }
 
    @media screen and (min-width: 767.9px) {
       font-size: 10px;
@@ -236,7 +286,6 @@
 .dishListItemManagement {
    display: flex;
    align-items: center;
-   /* background-color: #fff; */
  }
 
  .dishListItemWeigth {
@@ -292,6 +341,68 @@
       border-left: 1px solid #1a1a1a;
    };
 }
+
+.dishTableWeigthNotDelivery {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 60px;
+   width: 40px;
+   margin: 0;
+   padding: 0;
+   font-size: 9px;
+   color: #6e432e;
+   border-left: 1px solid #1a1a1a;
+   letter-spacing: -0.1px;
+
+   @media screen and (max-width: 399px) {
+      font-size: 8px;
+   }
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 15px;
+      height: 65px;
+      width: 70px;
+   };
+
+   @media screen and (min-width: 1200px) {
+      font-size: 17px;
+      height: 70px;
+      width: 80px;
+   };
+}
+
+.dishTablePriceNotDelivery {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 60px;
+   width: 40px;
+   margin: 0;
+   padding: 0;
+   font-size: 11px;
+   letter-spacing: -0.1px;
+   color: #5e2000;
+   border-left: 1px solid #1a1a1a;
+    
+   @media screen and (max-width: 399px) {
+      font-size: 8px;
+   }
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 15px;
+      height: 60px;
+      width: 70px;
+      border-left: 1px solid #1a1a1a;
+   };
+
+   @media screen and (min-width: 1200px) {
+      font-size: 17px;
+      height: 70px;
+      width: 80px;
+      border-left: 1px solid #1a1a1a;
+   };
+}
  
 
 
@@ -304,20 +415,19 @@
    margin: 0;
    padding: 0;
    border-radius: 0 11px 11px 0;
-   /* background-color: #fff; */
 
    @media screen and (min-width: 767.9px) {
       height: 65px;
-   width: 65px;
-   justify-content: center;
-   border-left: 1px solid #1a1a1a;
+      width: 65px;
+      justify-content: center;
+      border-left: 1px solid #1a1a1a;
    };
 
    @media screen and (min-width: 1200px) {
       height: 70px;
-   width: 70px;
-   justify-content: center;
-   border-left: 1px solid #1a1a1a;
+      width: 70px;
+      justify-content: center;
+      border-left: 1px solid #1a1a1a;
    };
 }
 
@@ -356,8 +466,9 @@
 color: red;
 }
 
+/* =========================================== */
 
-.dishTablePrice100 {
+/* .dishTablePrice100 {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -369,12 +480,10 @@ color: red;
    font-size: 15px;
    top: 0;
    border-left: 1px solid #39393969;
+   background-color: #45454520;
+} */
 
-    background-color: #45454520;
-}
-
-.dishTablePriceNotDelivery {
-   /* position: absolute; */
+/* .dishTablePriceNotDelivery {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -386,10 +495,9 @@ color: red;
    font-size: 15px;
    top: 0;
    border-left: 1px solid #39393969;
-}
-
+} */
+/* 
 .dishTableWeigth100 {
-   /* position: absolute; */
    display: flex;
    align-items: center;
    justify-content: center;
@@ -401,12 +509,10 @@ color: red;
    font-size: 15px;
    top: 0;
    border-left: 1px solid #39393969;
-
    background-color: #45454520;
-}
+} */
 
-.dishTablePrice50 {
-   /* position: absolute; */
+/* .dishTablePrice50 {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -418,10 +524,9 @@ color: red;
    font-size: 15px;
    top: 0;
    border-left: 1px solid #39393969;
-}
+} */
 
-.dishTableWeigth50 {
-   /* position: absolute; */
+/* .dishTableWeigth50 {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -433,10 +538,9 @@ color: red;
    font-size: 15px;
    top: 0;
    border-left: 1px solid #39393969;
-}
+} */
 
-.dishTableWeigthNotDelivery {
-   /* position: absolute; */
+/* .dishTableWeigthNotDelivery {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -448,22 +552,9 @@ color: red;
    font-size: 15px;
    top: 0;
    border-left: 1px solid #39393969;
-}
+} */
 
-
-
-
-
-.basketIcon {
-   fill: #303030;
-  }
-  
-  .basketIcon.nonEmpty {
-     fill: #c69c9cbb; /* Колір fill, коли корзина не пуста */
-    
-   }
-
-
+/* ============================================ */
 
      .toBasketButton {
       position: absolute;
@@ -473,10 +564,8 @@ color: red;
       display: flex;
       align-items: center;
       justify-content: end;
-      /* height: 40px;
-      width: 110px; */
       height: 60px;
-         width: 150px;
+      width: 150px;
       border: none;
       z-index: 9;
       border-radius: 11px;
@@ -485,15 +574,11 @@ color: red;
       @media screen and (min-width: 767.9px) {
          height: 60px;
          width: 150px;
-         /* top: 23px; */
-         /* right: 68px;  */
       };
 
       @media screen and (min-width: 1200px) {
          height: 60px;
          width: 150px;
-         /* top: 23px; */
-         /* right: 68px;  */
       };
    }
    .toBasketLink {
@@ -543,14 +628,12 @@ color: red;
       fill: #3a3a3a;
 
       @media screen and (min-width: 767.9px) {
-         /* font-size: 14px; */
          right: 13px;
          top: 12px;
        };
        @media screen and (min-width: 1200px) {
          right: 13px;
       top: 12px;
-         /* font-size: 14px; */
        };
      }
      
@@ -588,123 +671,43 @@ color: red;
           };
         }
 
-        .dishTableSetMeals
 
-     .dishTableDay {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      margin: 0 0 10px 0;
-      color: #000000;
-      color: #656565;
-      font-size: 13px;
-   
-      @media screen and (min-width: 767.9px) {
-         font-size: 15px;
-        };
-        @media screen and (min-width: 1200px) {
-         font-size: 17px;
-        };
-   }
+/* ================================================ */
 
-   .dishTableDayList {
-      /* width: 100%; */
-      grid-template-columns: repeat(1, 1fr);
-   grid-row-gap: 10px;
-    /* background-color: #fff; */
-    display: grid;
-
-   }
-
-   .dishTableDayList li {
-    background-color: rgba(0, 0, 0, 0.616);
-    height: 50px;
-    width: 100%;
-   }
-   .dishTableNameFirst {
-      /* display: flex;
-      height: 50px;
-      width: 100%;
-      background-color: rgb(28, 27, 27);
-      border-bottom: 1px solid wheat; */
-   color:green;
-   }
-
-   .dishTableWeigthFirst {
-   color:green;
-   }
-
-   .dishTableNameSecond,
-.dishTableWeigthSecond {
-color: blue;
-}
-
-.dishTableSetMeals {
- display: flex;
- flex-direction: column;
- width: 100%;
- /* padding: 30px; */
-
- border-radius: 11px;
- /* background-color: rgba(167, 166, 166, 0.329); */
- 
- /* height: 150px; */
-
- 
-
-}
-
-.dishTableSetMealsItem {
- display: grid;
- position: relative;
-  align-items: center;
-  margin-bottom: 30px;
-  border-radius: 11px;
-  width: 900px;
-  height: 300px;
-  padding-left: 15px;
-
-  box-shadow: 7px 7px 15px 2px #00000047;
-  background: #3232321f;
-   border-radius: 19px;
-   box-shadow:
-   inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
-   inset #303030 5px 5px 9px,
-   rgb(0, 0, 0) 3px 3px 8px -3px;
-}
-
-
-
-/* ===================== */
-
-/* .toMenuButton {
-   position: absolute;
-   top: 21px;
-   right: 90px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 60px;
-   border: none;
-   border-radius: 15px;
-   background-color: #000000;
+   /* .dishTable {
+   border: 1px solid red;
    border-radius: 13px;
-   background-color: #000000;
-   box-shadow:  -5px -5px 7px 3px #00000029;
-    transition: all .3s ease-out;
-  
-  
-  
-   @media screen and (min-width: 767.9px) {
-    
-   };
-   @media screen and (min-width: 1200px) {
-     height: 60px;
-   width: 150px;
-    
-   };
-  } */
+   padding: 10px;
+   } */
+   /* .dishTableList {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 20px;
+   } */
+
+   /* .dishTableListItem {
+      display: grid;
+      
+      border-radius: 13px;
+   } */
+
+   /* .dishTableListItem ul {
+      
+      border-radius: 13px;
+      overflow: hidden;
+      background-color: rgba(158, 155, 155, 0.139);
+   } */
+
+   /* .dishTableListItem ul li {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      background-color: rgba(110, 105, 105, 0.394);
+      
+      height: 50px;
+   } */
+
+/* ============================================== */
 
   .toMenuButton {
    position: absolute;
@@ -765,7 +768,6 @@ color: blue;
   }
   
   .toMenuDescription {
-     /* position: absolute; */
    display: flex;
    justify-content: center;
    align-items: flex-end;

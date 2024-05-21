@@ -163,7 +163,8 @@ export const Pizza = () => {
             <h3 className={styles.dishListTitle}>Піца</h3>
             <tbody>
               {menuItems.map((item) => (
-              <tr key={item.id} className={`${styles.dishListItem} ${styles.dishListItemShadow}`}>
+              <tr key={item.id} 
+              className={`${styles.dishListItem} ${styles.dishListItemShadow}`}>
                 
                  <div className={styles.dishListItemInfo}>
 

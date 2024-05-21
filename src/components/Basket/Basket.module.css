@@ -91,7 +91,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 20px;
     border: none;
-    /* padding: 10px; */
+    padding: 10px;
     border-radius: 17px;
     background: #07070759;
 

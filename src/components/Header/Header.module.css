@@ -58,6 +58,7 @@
 .headerList li {
   display: flex;
   align-items: center;
+  color: #272727;
 } 
 
 
@@ -169,25 +170,39 @@ padding-right: 1.9px;
   };
 }
 
-/* .headerLogo:after {
+.headerLogo:after {
   position: absolute;
   content: "";
  display: flex;
- height: 5px;
- width: 195px;
- bottom: 2px;
- border-radius: 1px;
- left: 2px;
- background-color: #5e1f006f;
- background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
- background-color: #5e2000;
- background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
- background-size: contain;
- background-color: #5e2000;
-background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
-    background-position: center;
-    background-repeat: repeat-x;
+ height: 4px;
+ width: 123px;
+ bottom: 0px;
+ left: 0.5px;
+ background-image: url("images/bottomLine2.svg");
+ background-repeat: repeat;
+ background-size: cover;
+
+ @media screen and (min-width: 767.9px) {
+  left: 6px;
+  height: 5px;
+ width: 193px;
+};
+
+@media screen and (min-width: 1200px) {
+  /* position: absolute; */
+  content: "";
+ display: flex;
+ /* height: 4px;
+ width: 123px; */
+ bottom: 0px;
+ left: 0.5px;
+ background-image: url("images/bottomLine2.svg");
+ /* background-repeat: repeat; */
+ /* background-size: cover; */
+  height: 7px;
+ width: 196px;
+};
 }
 
-  */
+ 
  

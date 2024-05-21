@@ -33,16 +33,24 @@ export const Footer = ({ customLinks }) => {
         ) : (
           <ul className={styles.footerSocial}>
             <li>
-              <InstagramIcon />
+              
+              <a href="https://www.instagram.com/dvorbakinskii/" target="_blank" rel="noreferrer"><InstagramIcon /></a>
+
             </li>
             <li>
-              <FacebookIcon />
+             
+              <a href="https://www.facebook.com/profile.php?id=100025507986999" target="_blank" rel="noreferrer"><FacebookIcon /></a>
+
             </li>
             <li>
-              <MailIcon />
+              
+              <a href="mailto:your_email@example.com" target="_blank" rel="noreferrer"><MailIcon /></a>
+
             </li>
           </ul>
         )}
+
+
        
         <h5 className={styles.footerAllRights}>@Всі права захищені</h5>
         </div>

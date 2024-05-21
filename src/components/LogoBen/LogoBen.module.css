@@ -1,0 +1,18 @@
+.logoben {
+   display: flex;
+   
+   height: 35px;
+  
+
+   @media screen and (min-width: 768px) {
+    
+      height: 40px;
+   };
+
+   @media screen and (min-width: 1200px) {
+    
+      height: 45px;
+  
+   };
+}
+

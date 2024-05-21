@@ -31,7 +31,10 @@ export const App = () => {
         </div>
         <Route render={({ location }) => {
           const isContactsPage = location.pathname === '/contacts';
-          return <Footer customLinks={isContactsPage ? <a href="https://benhappyngton.com">
+          return <Footer customLinks={isContactsPage ? 
+        
+          <a href="mailto:ben.happyngton@gmail.com" target="_blank" rel="noreferrer">
+             <h5 className={styles.createdBy}>created by</h5>
             <LogoBen />
            
           </a> : null} />;

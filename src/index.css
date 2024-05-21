@@ -51,5 +51,11 @@ button:active {
  background: radial-gradient( rgb(8, 8, 8),transparent);
 }
 
+.createdBy {
+  
+color: red;
+font-size: 9px;
+}
+
 
 
