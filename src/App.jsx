@@ -34,7 +34,7 @@ export const App = () => {
           return <Footer customLinks={isContactsPage ? 
         
           <a href="mailto:ben.happyngton@gmail.com" target="_blank" rel="noreferrer">
-             <h5 className={styles.createdBy}>created by</h5>
+             
             <LogoBen />
            
           </a> : null} />;
