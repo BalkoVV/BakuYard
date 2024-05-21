@@ -79,7 +79,7 @@
    margin-left: auto;
    margin-right: auto;
    transition: all .4s ease-out;
-   box-shadow:  4px 4px 15px 4px #000000;
+   box-shadow:  4px 4px 15px 2px #00000078;
 
 
    z-index: 10;
@@ -95,6 +95,33 @@
    }; 
 }
 
+.dishCardLink {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   justify-content: space-around;
+   align-items: center;
+   border-radius: 15px;
+    background-color: #030405;
+    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+box-shadow:
+    inset #000000b0 -5px -5px 9px,
+    inset #7d7d7d93 5px 5px 9px; 
+   
+
+    @media screen and (min-width: 768px) {
+    
+      height: 180px;
+      border-radius: 17px;
+   }; 
+
+   @media screen and (min-width: 1200px) {
+     
+      height: 200px;
+      border-radius: 19px;
+   }; 
+}
+
 .dishCard:hover,
 .dishCard:active,
 .dishCard:focus {
@@ -105,7 +132,10 @@
 }
 .dishCard h3 {
    font-weight: 900;
-   color: #a1a1a1;
+   letter-spacing: 1px;
+   /* text-shadow: 1px 1px 45px rgba(239, 238, 238, 0.96); */
+   color: #000000;
+   /* color: #a4a4a4; */
    transition: all .4s ease-out;
 }
 
@@ -113,7 +143,7 @@
 .dishCard:active h3,
 .dishCard:focus h3 {
    color: #f8f8f8;
-   /* color: #450000; */
+   /* color: #000000; */
    transition: all .4s ease-out;
 }
 
@@ -138,39 +168,41 @@
    .dishCardImage {
       display: block;
       position: absolute;
-      height: 165px;
-      width: 165px;
-      rotate: 7deg;
-      bottom: -20px;
-      left: -5px;
-      opacity: .8;
+      height: 115px;
+      width: 115px;
+      rotate: 5deg;
+      scale: 1.3;
+      bottom: 0px;
+      left: 0px;
+      opacity: .6;
       z-index: 0;
    
     @media screen and (max-width: 375px) {
       height: 145px;
       width: 145px;
-      /* opacity: .25; */
+      
+
     
    };  
     @media screen and (min-width: 767.9px) {
     
-      height: 225px;
-      width: 225px;
-      rotate: 7deg;
-      bottom: -25px;
-      left: -45px;
-      /* opacity: .25; */
+      height: 155px;
+      width: 155px;
+
+      bottom: 0px;
+      left: 0px;
+     
       z-index: 0;
    }; 
    
    @media screen and (min-width: 1200px) {
-      /* margin-left: 25px; */
-      height: 275px;
-      width: 275px;
-      rotate: 7deg;
-      bottom: -30px;
-      left: -30px;
-      /* opacity: .5; */
+  
+      height: 190px;
+      width: 190px;
+    
+      bottom: 0px;
+      left: 0px;
+    
    }; 
    }
    
@@ -178,49 +210,21 @@
 .dishCard:hover .dishCardImage,
 .dishCard:active .dishCardImage,
 .dishCard:focus .dishCardImage {
-   scale: .7;
-   rotate: 0deg;
    transition: all .4s ease-out;
-   opacity: .9;
+   opacity: 1;
   
 
    @media screen and (min-width: 768px) {
-      scale: .6;
-     
+
    }; 
 
    @media screen and (min-width: 1200px) {
-      scale: .59;
+
      
    }; 
 }
 
-.dishCardLink {
-   display: flex;
-   width: 100%;
-   height: 130px;
-   justify-content: space-around;
-   align-items: center;
-   border-radius: 15px;
-    background-color: #050505;
-    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
-/* box-shadow:
-    inset #000000d2 -5px -5px 9px,
-    inset #0f0f0fdb 5px 5px 9px;  */
-   
 
-    @media screen and (min-width: 768px) {
-    
-      height: 180px;
-      border-radius: 17px;
-   }; 
-
-   @media screen and (min-width: 1200px) {
-     
-      height: 200px;
-      border-radius: 19px;
-   }; 
-}
 
 
 
@@ -248,7 +252,7 @@
    justify-content:center;
    align-items: center;
    margin: 0;
-   color: #575757;
+   
    z-index: 5;
    font-size: 13px;
   
@@ -267,7 +271,6 @@
    justify-content: flex-end;
    align-items: center;
    margin: 0;
-   color: #414141;
    font-size: 17px;
    letter-spacing: .5px;
    z-index: 5;
