@@ -8,11 +8,12 @@ justify-content: center;
    height: 40px;
    width: 100px;
    /* background-color: #000000be; */
-   color: #1b1b1b;
+   /* color: #000000; */
    border-radius: 11px;
    border: none;
 box-shadow: 5px 5px 15px 5px #0000008b;
-background-color: #343434;
+/* background-color: #343434; */
+background-color: #131313;
 background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
       
 @media screen and (min-width: 767.9px) {
@@ -52,7 +53,8 @@ background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge
     /* padding: 0 3px 0 0 ; */
     font-size: 10px;
     transition: all .4s ease-out;
-    color: #1b1b1b;
+    color: #000000;
+    font-weight: 900;
 
      @media screen and (min-width: 767.9px) {
       font-size: 13px;

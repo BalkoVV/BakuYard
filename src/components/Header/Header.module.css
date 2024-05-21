@@ -86,11 +86,12 @@ background-image: url("https://www.transparenttextures.com/patterns/asfalt-light
  }
 
  .activeLink h4 {
- color: #872828;
+  font-weight: 900;
+ color: #450000;
 }
 
  .headerNav a:hover h4 {
- color: #872828;
+ color: #450000;
  transition: .1s;
 }
 
