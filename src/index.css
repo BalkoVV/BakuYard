@@ -17,7 +17,7 @@ body, html {
 }
 
 a {
-color: #5e5e5e;
+color: #9f9f9f;
 
 height: 100%;
 display: flex;
@@ -51,11 +51,6 @@ button:active {
  background: radial-gradient( rgb(8, 8, 8),transparent);
 }
 
-.createdBy {
-  
-color: red;
-font-size: 9px;
-}
 
 
 

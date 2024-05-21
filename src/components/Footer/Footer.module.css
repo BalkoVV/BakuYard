@@ -14,7 +14,14 @@
 
 background-color: #020202;
 background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
-
+background-color: #000000;
+/* background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* background-color: #343434; */
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png"); */
 @media screen and (min-width: 768px) {
     height: 170px;
   };
@@ -36,10 +43,10 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png
 .footerBox {
  padding: 40px 0 0;
  height: 160px;
- box-shadow:
+ /* box-shadow:
  inset #000000b1 0px -25px 99px,
  inset #000000b1 0px 25px 99px,
- rgb(0, 0, 0) 3px 3px 8px -3px;
+ rgb(0, 0, 0) 3px 3px 8px -3px; */
 }
 .footerLogo {
   position: relative;

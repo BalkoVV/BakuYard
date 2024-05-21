@@ -29,7 +29,7 @@ width: 100%;
    display: flex;
    margin-left: auto;
    margin-right: auto;
-   background:url("images/map444.png");
+   background:url("images/map45.png");
    background-size: 250%;
    background-position: center;
    height: 450px;
@@ -135,20 +135,20 @@ width: 100%;
 .contactsListItem img {
    position: absolute;
    rotate: 10deg;
-   opacity: 0.22;
+   opacity: 0.5;
    display: block;
-   height: 88px;
+   height: 80px;
    transition: all .4s ease-out;
    left: 20px;
   
 
    @media screen and (min-width: 767.9px) {
-      padding-left: 20px;
+      padding-left: 30px;
 
    };
 
    @media screen and (min-width: 1200px) {
-   padding-left: 30px;
+   padding-left: 50px;
 
    };
 }
@@ -161,10 +161,10 @@ width: 100%;
 }
 .contactsListItemActive:hover img {
    rotate: 0deg;
-   opacity: 0.4;
+   opacity: 0.8;
    display: block;
    
-   scale: 0.85;
+   scale: 0.77;
    transition: all .4s ease-out;
    left: 10px;
 
@@ -184,12 +184,15 @@ width: 100%;
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   color: #1d1d1d;
+   color: #000000;
    transition: all .4s ease-out;
     width: 100%;
     height: 100%;
     transition: all .4s ease-out;
     border-radius: 13px;
+    font-size: 14px;
+    font-weight: 900;
+    padding-right: 20px;
     /* box-shadow:
     inset #313131 -5px -5px 9px,
     inset #3b3b3b 5px 5px 9px; */
@@ -200,19 +203,19 @@ width: 100%;
 
 
    @media screen and (min-width: 767.9px) {
-      padding-right: 20px;
-
+      padding-right: 30px;
+      font-size: 15px;
      
    };
    @media screen and (min-width: 1200px) {
       padding-right: 50px;
-     
+      font-size: 16px;
    };
 }
 
 .contactsListItemActive:hover .contactsListItemDiscriptions,
 .contactsListItem:active .contactsListItemDiscriptions {
-   color: #adadad;
+   color: #c2c2c2;
   
 
    transition: all .4s ease-out;

@@ -9,6 +9,9 @@
   z-index: 10;
   background-color: #020202;
   background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
+  background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 /* .bottomLineLogo {
@@ -28,10 +31,10 @@
 .headerBox {
    display: flex;
    height: 70px;
-   box-shadow:
+   /* box-shadow:
    inset #000000b1 0px -15px 29px,
    inset #000000b1 0px 15px 29px,
-   rgb(0, 0, 0) 3px 3px 8px -3px;
+   rgb(0, 0, 0) 3px 3px 8px -3px; */
   
    @media screen and (min-width: 768px) {
     height: 70px;
@@ -58,7 +61,7 @@
 .headerList li {
   display: flex;
   align-items: center;
-  color: #272727;
+  /* color: #272727; */
 } 
 
 
@@ -71,7 +74,7 @@
   justify-content: space-between;
   font-size: 11px;
   margin-left: 10px;
-/* color: #5e5e5e; */
+/* color: #f0c0c0; */
   @media screen and (min-width: 1200px) {
     font-size: 15px;
   }; 
@@ -83,11 +86,11 @@
  }
 
  .activeLink h4 {
- color: #5c2000;
+ color: #872828;
 }
 
  .headerNav a:hover h4 {
- color: #5c2000;
+ color: #872828;
  transition: .1s;
 }
 
@@ -113,7 +116,8 @@
   justify-content: end;
   text-align: center;
   padding: 1px 0;
-  color: #5e5e5e;
+  color: #9f9f9f;
+  
 
  @media screen and (min-width: 1200px) {
   /* padding: 5px 0; */
@@ -170,7 +174,7 @@ padding-right: 1.9px;
   };
 }
 
-.headerLogo:after {
+/* .headerLogo:after {
   position: absolute;
   content: "";
  display: flex;
@@ -189,20 +193,18 @@ padding-right: 1.9px;
 };
 
 @media screen and (min-width: 1200px) {
-  /* position: absolute; */
+  
   content: "";
  display: flex;
- /* height: 4px;
- width: 123px; */
+
  bottom: 0px;
  left: 0.5px;
  background-image: url("images/bottomLine2.svg");
- /* background-repeat: repeat; */
- /* background-size: cover; */
+
   height: 7px;
  width: 196px;
 };
-}
+} */
 
  
  
