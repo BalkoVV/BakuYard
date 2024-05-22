@@ -95,7 +95,7 @@
 background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
-   z-index: 10;
+   /* z-index: 10; */
 
    @media screen and (min-width: 767.9px) {
       height: 180px;
@@ -145,7 +145,7 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
 .dishCard:focus {
    box-shadow:  2px 2px 15px 2px #0000005d;
    transition: all .4s ease-out;
-   scale: 1.01;
+   scale: 1.03;
    /* border: 1px solid #252525; */
   
 }
@@ -155,8 +155,8 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
    /* border-radius: 30%; */
    /* font-weight: 900; */
    /* letter-spacing: 1px; */
-   color: #949494;
-   /* color: #010101; */
+   font-weight: 900;
+   color: #000000;
    /* text-shadow: 0px 0px 12px rgb(0, 0, 0); */
    /* background: #ececec;
   background: linear-gradient(to bottom, #ececec 0%, #afafaf 20%, #909090 50%, #afafaf 80%, #ececec 100%);
@@ -172,12 +172,22 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
    
 
    transition: all .4s ease-out;
+
+   @media screen and (min-width: 768px) {
+    
+      color: #949494;
+   }; 
+
+   @media screen and (min-width: 1200px) {
+      color: #949494;
+     
+   }; 
 }
 
 .dishCard:hover h3,
 .dishCard:active h3,
 .dishCard:focus h3 {
-   color: #cd0303;
+   color: #770000;
    color: #e9e9e9;
    /* text-shadow: 0px 0px 22px rgba(0, 0, 0, 0.395); */
    transition: all .4s ease-out;
@@ -206,12 +216,12 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
       position: absolute;
       height: 115px;
       width: 115px;
-      rotate: -7deg;
-      scale: 1.3;
+      rotate: -3deg;
+      scale: 1.2;
       bottom: 0px;
       left: 0px;
-      opacity: .4;
-      z-index: 0;
+      opacity: .35;
+      /* z-index: 0; */
    
     @media screen and (max-width: 375px) {
       height: 145px;
@@ -246,6 +256,8 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
 .dishCard:hover .dishCardImage,
 .dishCard:active .dishCardImage,
 .dishCard:focus .dishCardImage {
+   rotate: 0deg;
+   /* scale: 1.1; */
    transition: all .4s ease-out;
    opacity: .8;
   
@@ -512,3 +524,6 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
       top: 23px;
       };
 }
+
+
+

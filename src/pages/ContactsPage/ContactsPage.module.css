@@ -139,7 +139,7 @@ width: 100%;
 
 .contactsListItem img {
    position: absolute;
-   /* rotate: 0deg; */
+   rotate: -5deg;
    opacity: 0.3;
    display: block;
    height: 55px;
@@ -162,8 +162,9 @@ width: 100%;
 .contactsListItemActive:active {
    box-shadow:  2px 2px 15px 2px #0000005d;
    transition: all .4s ease-out;
-   scale: 1.01;
+   scale: 1.03;
 }
+
 .contactsListItemActive:hover img {
    rotate: 0deg;
    opacity: 0.5;
@@ -194,8 +195,8 @@ width: 100%;
     font-weight: 900;
     padding-right: 20px;
 
-background-color: #333333;
-/* background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png"); */
+/* background-color: #333333; */
+background-color: #0f0f0f;
 background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
 
     box-shadow:
@@ -219,8 +220,8 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
    transition: all .4s ease-out;
 }
 
-.contactsListItemActive:hover ,
+/* .contactsListItemActive:hover ,
 .contactsListItem:active  {
    scale: 1.01;
    transition: all .4s ease-out;
-}
+} */

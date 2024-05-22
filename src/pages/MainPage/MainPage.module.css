@@ -228,7 +228,7 @@ box-shadow:
     border-radius: 14px;
     background-image: url('images/str2.png'); 
     background-color: #000000;
-    background-size: 170%;
+    background-size: 100%;
     background-position: top;
     background-repeat: repeat;
     overflow: hidden;
@@ -238,11 +238,12 @@ box-shadow:
     rgb(0, 0, 0) 3px 3px 8px -3px;
 
     @media screen and (min-width: 768px) {
+      background-size: 110%;
       border-radius: 17px;
       height: 200px;
     };
     @media screen and (min-width: 1200px) {
-      background-size: 80%;
+      background-size: 50%;
       background-repeat: repeat;
       background-attachment: fixed;
       border-radius: 19px;
@@ -496,7 +497,7 @@ box-shadow:
 
     @media screen and (min-width: 768px) {
       grid-column-gap: 15px;
-      padding: 0 240px;
+      padding: 0 150px;
     };
     @media screen and (min-width: 1200px) {
       grid-column-gap: 20px;
@@ -517,9 +518,8 @@ box-shadow:
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
 
-    background-color: #333333;
-/* background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png"); */
-background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+    background-color: #0f0f0f;
+    background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
 
     
    
@@ -531,6 +531,7 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
     };
 
     @media screen and (min-width: 1200px) {
+      
       /* background-attachment: fixed; */
       height: 70px;
     };
@@ -545,11 +546,13 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
     align-items: center;
     height: 100%;
     width: 100%;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 900;
      /* box-shadow:
     inset #7c787870 -5px -5px 9px,
     inset #3a3a3a 5px 5px 9px; */
     color: #000000;
+    /* color: #949494; */
     /* text-shadow:rgb(0 0 0) 5px 5px 7px; */
     box-shadow:
     inset #000000b0 -5px -5px 9px,
@@ -563,6 +566,7 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
     };
     @media screen and (min-width: 1200px) {
       font-size: 19px;
+      /* color: #949494; */
     };
    }
 
