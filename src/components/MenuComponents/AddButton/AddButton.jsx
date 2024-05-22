@@ -14,9 +14,15 @@ const AddButton = ({ onClick, alreadyAdded }) => {
 
   return (
 
-    <div onClick={handleClick} disabled={added} className={styles.addButton}>
-       {added ? '✓' : '+'}
+    <div 
+      onClick={handleClick} 
+      disabled={added} 
+      className={`${styles.addButton} ${added ? styles.added : styles.notAdded}`}
+    >
+      {added ? '✓' : '+'}
     </div>
+
+
 
   );
 };

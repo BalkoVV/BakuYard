@@ -16,7 +16,7 @@
 }
 
 .basketContainer {
-   padding: 0 10px;
+   padding: 0 15px;
 
   @media screen and (min-width: 767.9px) {
     padding: 0 150px;
@@ -618,42 +618,60 @@ cursor: pointer;
 
 
 .emptyOrderBasketBox {
-display: flex;
-justify-content: center;
-width: 100%;
-background-color: #010101;
-border-radius: 13px;
-box-shadow:
- inset rgba(42, 41, 41, 0.471) -4px -4px 9px,
- inset #303030 4px 4px 9px,
- rgb(0, 0, 0) 3px 3px 8px -3px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 13px;
+  overflow: hidden;
+  /* margin: 0 20px; */
+}
 
+.basketEmpty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+  box-shadow:
+    inset #000000b0 -5px -5px 9px,
+    inset #7d7d7d93 5px 5px 9px; 
 }
 
 
-
-.orderDoneMessage,
+/* .orderDoneMessage,
 .basketEmptyMessage {
    display: flex;
    align-items: center;
    
  
  @media screen and (min-width: 767.9px) {
-  /* width: 550px; */
+  
  };
  @media screen and (min-width: 1200px) {
-  /* width: 850px; */
+ 
  };
-}
+} */
 
 .orderDoneMessage h2,
 .basketEmptyMessage h2 {
  display: flex;
  width: 100%;
+ /* height: 100%; */
  justify-content: center;
  text-align: center;
+ border-radius: 13px;
  line-height: 55px;
- font-size: 15px;
+ font-size: 14px;
+ /* margin: 20px; */
+ /* background-color: #fff; */
+ /* background-color: #0f0f0f;
+  background-image: 
+    url("https://www.transparenttextures.com/patterns/mooning.png");
+    box-shadow:
+    inset #000000b0 -5px -5px 9px,
+    inset #7d7d7d93 5px 5px 9px;  */
+
+
 
  
  @media screen and (min-width: 767.9px) {
@@ -666,124 +684,135 @@ box-shadow:
  };
 }
 
-.toMenuButton {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 21px;
-  right: 20px; 
-  height: 60px;
-  width: 60px;
-  border: none;
-  z-index: 9;
-  border-radius: 13px;
- 
-  box-shadow:  4px 4px 15px 4px #0000008b;
- 
-  background-color: #010101;
-  transition: all .3s ease-out;
-      
-  @media screen and (min-width: 767.9px) {
-     height: 60px;
-     width: 150px;
-     border-radius: 15px;
-  };
+ .toMenuButton {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 21px;
+    right: 20px; 
+    height: 60px;
+    width: 60px;
+    border-radius: 13px;
+    overflow: hidden;
+    border: none;
+    box-shadow:  4px 4px 15px 2px #00000078;
+    background-color: #0f0f0f;
+    background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+    transition: all .4s ease-out;
+    z-index: 9;
+     
+     @media screen and (min-width: 767.9px) {
+        width: 150px;
+        flex-direction: row-reverse;
+        right: 40px; 
+       
+     };
 
-  @media screen and (min-width: 1200px) {
-     height: 60px;
-     width: 150px;
-     border-radius: 17px;
-     right: 90px; 
-  };
-}
- 
+        @media screen and (min-width: 1200px) {
+           
+           right: 80px; 
+          
+        };
+ }
+
  .toMenuLink {
-  display: flex; 
-  align-items: flex-end;
-  margin: 0;
-  padding: 0;
-  height: 60px;
-  width: 60px;
-  border-radius: 13px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+  width: 100%;
   box-shadow:
-   inset rgba(42, 41, 41, 0.471) -4px -4px 9px,
-   inset #303030 4px 4px 9px,
-   rgb(0, 0, 0) 3px 3px 8px -3px;
- 
+   inset #000000b0 -5px -5px 9px,
+   inset #7d7d7d93 5px 5px 9px; 
+   
+     @media screen and (min-width: 767.9px) {
+        flex-direction: row-reverse;
+        justify-content: start;
+     };
 
-  @media screen and (min-width: 767.9px) {
-     height: 60px;
-     width: 150px;
-     border-radius: 15px;
-   };
-   @media screen and (min-width: 1200px) {
-     height: 60px;
-     width: 150px;
-     border-radius: 17px;
-   };
+        @media screen and (min-width: 1200px) {
+     
+        };
  }
  
  .toMenuDescription {
-    /* position: absolute; */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 10px;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  
-  font-size: 7px;
-  color: #5e2000;
-  color: #3e3e3e;
-  transition: all .3s ease-out;
-  left: 0;
-  
-  @media screen and (min-width: 767.9px) {
-     font-size: 14px;
-     justify-content: start;
-     align-items: center;
-     padding-left: 20px;
-     padding-bottom: 0px;
-   };
-   @media screen and (min-width: 1200px) {
-     justify-content: start;
-     align-items: center;
-     font-size: 14px;
-     padding-left: 20px;
-     padding-bottom: 0px;
-   };
+   margin: 0;
+   font-size: 9px;
+   transition: all .4s ease-out;
+   color: #000000;
+   color: #949494;
+   font-weight: 900;
+   margin-bottom: 6px;
+
+    @media screen and (min-width: 767.9px) {
+     margin-bottom: 0px;
+     margin-left: 11px;
+     font-size: 15px;
+     
+  };
+
+     @media screen and (min-width: 1200px) {
+      
+     };
  }
  
  .toMenuButton:hover .toMenuDescription {
-  color: #5e5e5e;
-  transition: all .4s ease-out;
- }
  
+  color: #dbdbdb;
+      transition: all .4s ease-out;
+ }
 
  .toMenuButton:hover {
-  box-shadow:  2px 2px 15px 2px #0000005d;
+  scale: 1.02;
   transition: all .4s ease-out;
-  scale: 1.03;
- }
-  
+  box-shadow:  4px 4px 15px 2px #0000002d;
+}
 
  .toMenuIcon {
-    display: block;
-     justify-content: center;
-     align-items: center;
-     position: absolute;
-     right: 16px;
-     top: 12px;
-     fill: #3a3a3a;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 3px; */
+    opacity: .5;
+    /* rotate: -5deg; */
+    height: 40px;
+        width: 45px;
+        top: 2px;
+        right: 8px;
+     
 
      @media screen and (min-width: 767.9px) {
-        right: 18px;
-        top: 16px;
-      };
+      
+      
+        margin-bottom: 0px;
+        height: 65px;
+        width: 65px;
+        top: -3px;
+        right: -7px;
 
-      @media screen and (min-width: 1200px) {
+        rotate: -5deg;
+        transition: all .4s ease-out;
        
       };
+
+      /* @media screen and (min-width: 1200px) {
+        right: -7px;
+        rotate: -5deg;
+      }; */
  }
+
+ .toMenuButton:hover  .toMenuIcon {
+  
+  rotate: 0deg;
+  transition: all .4s ease-out;
+
+  @media screen and (min-width: 767.9px) {
+ 
+    scale: .85;
+  };
+
+ 
+}
