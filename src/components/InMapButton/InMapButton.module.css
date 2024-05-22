@@ -3,33 +3,31 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   top: 390px;
+   top: 370px;
    right: 20px; 
-   height: 40px;
-   width: 100px;
+   height: 60px;
+   width: 150px;
    border-radius: 11px;
    overflow: hidden;
    border: none;
    box-shadow:  4px 4px 15px 2px #00000078;
-   background-color: #333333;
-   background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-   /* background-color: #333333; */
-/* background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png"); */
-background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+   background-color: #333333;  
+   background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
    transition: all .4s ease-out;
+   /* font-size: 14px; */
       
 @media screen and (min-width: 767.9px) {
-         top: 380px;
-         right: 20px; 
-         height: 60px;
-         width: 150px;
+         top: 400px;
+         right: 40px; 
+         /* height: 60px;
+         width: 150px; */
       };
 
          @media screen and (min-width: 1200px) {
             top: 580px;
             right: 68px; 
-            height: 60px;
-            width: 150px;
+            /* height: 60px;
+            width: 150px; */
          };
   }
   
@@ -57,24 +55,25 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
     margin: 0;
     /* padding: 0 3px 0 0 ; */
     font-size: 10px;
+    font-size: 14px;
     transition: all .4s ease-out;
     color: #000000;
     font-weight: 900;
 
      @media screen and (min-width: 767.9px) {
-      font-size: 13px;
+      font-size: 15px;
       /* padding: 0 5px 0 0 ; */
    };
 
       @media screen and (min-width: 1200px) {
-         font-size: 15px;
+         font-size: 16px;
          /* padding: 0 10px 0 0 ; */
       };
   }
   
   .inMapButton:hover .inMapDescription {
   
-   color: #c9c9c9;
+   color: #949494;
        transition: all .4s ease-out;
   }
 

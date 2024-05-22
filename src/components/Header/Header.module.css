@@ -83,32 +83,34 @@ background-image: url("https://www.transparenttextures.com/patterns/egg-shell.pn
  }
 
  .headerLinkText {
-  background: #888888;
+  color: #949494;
+  transition: all .4s ease-out;
+  /* background: #888888;
   background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   
 }
 
  .activeLink h4 {
- color: #600000;
-   background: #900000;
+ color: #770000;
+   /* background: #900000;
    background: linear-gradient(to bottom, #900000 0%, #600000 50%, #400000 100%);
    background-clip: text;
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent; */
  transition: all .4s ease-out;
 }
 
  .headerNav a:hover h4 {
- color: #600000;
-   background: #900000;
+ color: #770000;
+   /* background: #900000;
    background: linear-gradient(to bottom, #900000 0%, #600000 50%, #400000 100%);
    background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
- transition: all .4s ease-out;
+ transition: all .4s ease-out; */
 }
 
 .headerInfo {
@@ -133,7 +135,7 @@ background-image: url("https://www.transparenttextures.com/patterns/egg-shell.pn
   justify-content: end;
   text-align: center;
   padding: 1px 0;
-  color: #9f9f9f;
+  /* color: #9f9f9f; */
   
 
  @media screen and (min-width: 1200px) {
@@ -151,12 +153,12 @@ padding-right: 1.9px;
  margin: 0;
  font-size: 11px;
  padding-left: 2px;
-
- background: #888888;
+ color: #949494;
+ /* background: #888888;
   background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 
  @media screen and (min-width: 1200px) {
   font-size: 12px;

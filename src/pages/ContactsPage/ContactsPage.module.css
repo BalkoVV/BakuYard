@@ -215,7 +215,7 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
 
 .contactsListItemActive:hover .contactsListItemDiscriptions,
 .contactsListItem:active .contactsListItemDiscriptions {
-   color: #f8f8f8;
+   color: #949494;
    transition: all .4s ease-out;
 }
 

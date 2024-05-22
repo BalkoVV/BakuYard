@@ -36,13 +36,13 @@
    font-size: 15px;
    font-weight: 900;
    margin: 0;
-   color: #888888;
+   color: #949494;
 
-   background: #888888;
+   /* background: #888888;
    background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
    background-clip: text;
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent; */
 
    @media screen and (min-width: 768px) {
       height: 95px;
@@ -155,9 +155,9 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
    /* border-radius: 30%; */
    /* font-weight: 900; */
    /* letter-spacing: 1px; */
-   color: #bbbaba;
+   color: #949494;
    /* color: #010101; */
-   text-shadow: 0px 0px 12px rgb(0, 0, 0);
+   /* text-shadow: 0px 0px 12px rgb(0, 0, 0); */
    /* background: #ececec;
   background: linear-gradient(to bottom, #ececec 0%, #afafaf 20%, #909090 50%, #afafaf 80%, #ececec 100%);
   background-clip: text;
@@ -178,7 +178,7 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
 .dishCard:active h3,
 .dishCard:focus h3 {
    color: #cd0303;
-   color: #eeeeee;
+   color: #e9e9e9;
    /* text-shadow: 0px 0px 22px rgba(0, 0, 0, 0.395); */
    transition: all .4s ease-out;
 }
@@ -210,7 +210,7 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
       scale: 1.3;
       bottom: 0px;
       left: 0px;
-      opacity: .3;
+      opacity: .4;
       z-index: 0;
    
     @media screen and (max-width: 375px) {
@@ -247,7 +247,7 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
 .dishCard:active .dishCardImage,
 .dishCard:focus .dishCardImage {
    transition: all .4s ease-out;
-   opacity: .9;
+   opacity: .8;
   
 
    @media screen and (min-width: 768px) {
