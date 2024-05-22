@@ -10,8 +10,11 @@
   background-position: left;
   /* background-color: #020202;
   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
-  background-color: #020202;
+  background-color: #010101;
   background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
+  background-color: #020202;
+ 
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
   @media screen and (min-width: 1200px) {
     background-attachment: fixed;
@@ -145,10 +148,10 @@ box-shadow:
       width: 350px;
       font-size: 15px;
       line-height: 45px;
-      color: #656565;
-      text-shadow:rgb(0 0 0) 5px 5px 7px;
+      color: #7c7c7c;
+      text-shadow: rgb(0, 0, 0) 0px 0px 15px;
       font-weight: 500;
-      letter-spacing: 0.4px;
+      letter-spacing: 0.1px;
   
       @media screen and (min-width: 768px) {
         font-size: 19px;
@@ -172,18 +175,13 @@ box-shadow:
   /*  */
 
   .featuresTopBox {
-   
+    display: flex;
     justify-content: center;
-   display: flex;
-   height: 380px;
-   justify-content: center;
-   align-items: center;
-   background: #23232320;
-    box-shadow: 0 0 50px 22px #00000070;   
-    background: #0b0b0b;
-    box-shadow: 0 0 50px 22px #00000070;   
-    /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");  */
-    background-color: #2b2b2b31;
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 9px #00000070;   
+    background-color: #98989811;
     /* background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png"); */
   
     @media screen and (min-width: 768px) {
@@ -212,15 +210,11 @@ box-shadow:
    
     grid-column-gap: 25px;
     grid-row-gap: 25px;
-    /* width: 1110px; */
-    /* height: 450px; */
   };
   @media screen and (min-width: 1200px) {
      grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    /* width: 1110px; */
-    /* height: 450px; */
   };
  
 }
@@ -332,8 +326,8 @@ box-shadow:
     /* background: #0b0b0b; */
     box-shadow: 0 0 50px 22px #00000070;   
     /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");  */
-     background-color: #070707;
-    background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
+     background-color: #98989811;
+    /* background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png"); */
 
     @media screen and (min-width: 768px) {
       height: 400px;
@@ -522,6 +516,12 @@ box-shadow:
     border-radius: 11px;
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
+
+    background-color: #333333;
+/* background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png"); */
+background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+
+    
    
     box-shadow:
       2px 8px 19px 3px #00000026;
@@ -546,12 +546,14 @@ box-shadow:
     height: 100%;
     width: 100%;
     font-size: 10px;
-     box-shadow:
+     /* box-shadow:
     inset #7c787870 -5px -5px 9px,
-    inset #3a3a3a 5px 5px 9px;
-    color: #6b6b6b;
-    text-shadow:rgb(0 0 0) 5px 5px 7px;
-
+    inset #3a3a3a 5px 5px 9px; */
+    color: #000000;
+    /* text-shadow:rgb(0 0 0) 5px 5px 7px; */
+    box-shadow:
+    inset #000000b0 -5px -5px 9px,
+    inset #7d7d7d93 5px 5px 9px; 
 /* background: linear-gradient(to top, #F0B7A1 0%, #8C3310 50%, #752201 51%, #BF6E4E 100%); */
 
 

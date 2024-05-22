@@ -13,6 +13,9 @@
    box-shadow:  4px 4px 15px 2px #00000078;
    background-color: #333333;
    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+   /* background-color: #333333; */
+/* background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png"); */
+background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
    transition: all .4s ease-out;
       
 @media screen and (min-width: 767.9px) {

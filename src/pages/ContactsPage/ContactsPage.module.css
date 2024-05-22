@@ -10,11 +10,12 @@ width: 100%;
 .contactsPage {
    width: 100%;
    background-repeat: repeat;
-   background-color: #020202;
    background-position: top;
+   background-color: #020202;
+ 
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    /* background-color: #000000; */
-   background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
+   /* background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png"); */
    background-attachment: none;
 
       @media screen and (min-width: 768px) {
@@ -57,9 +58,12 @@ width: 100%;
    left: 0;
    right: 0;
    bottom: 0;
-   background: #07070700;
+   background: #00000000;
    z-index: -1;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   /* background-color: #0f0f0f; */
+/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .contactsListBox {
@@ -136,7 +140,7 @@ width: 100%;
 .contactsListItem img {
    position: absolute;
    /* rotate: 0deg; */
-   opacity: 0.5;
+   opacity: 0.3;
    display: block;
    height: 55px;
    transition: all .4s ease-out;
@@ -158,11 +162,11 @@ width: 100%;
 .contactsListItemActive:active {
    box-shadow:  2px 2px 15px 2px #0000005d;
    transition: all .4s ease-out;
-   scale: 1.02;
+   scale: 1.01;
 }
 .contactsListItemActive:hover img {
    rotate: 0deg;
-   opacity: 0.4;
+   opacity: 0.5;
    display: block;
    transition: all .4s ease-out;
    left: 10px;
@@ -191,8 +195,8 @@ width: 100%;
     padding-right: 20px;
 
 background-color: #333333;
-background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
-
+/* background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png"); */
+background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
 
     box-shadow:
     inset #000000b0 -5px -5px 9px,
@@ -217,6 +221,6 @@ background-image: url("https://www.transparenttextures.com/patterns/otis-redding
 
 .contactsListItemActive:hover ,
 .contactsListItem:active  {
-   scale: 1.02;
+   scale: 1.01;
    transition: all .4s ease-out;
 }

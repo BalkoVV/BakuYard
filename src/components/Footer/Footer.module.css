@@ -7,30 +7,15 @@
   width: 100%;
 
   border-top: 1px solid transparent;
-  border-image: linear-gradient(0.25turn, #1a1a1a, #292929, #1a1a1a);
+  border-image: linear-gradient(0.25turn, #101010, #2a2a2a, #101010);
   border-image-slice: 1;
 
-  box-shadow: 0 0 20px 22px #00000064;   
+  /* box-shadow: 0 0 20px 9px #090909;    */
 
-background-color: #020202;
-background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/slash-it.png");
 background-color: #000000;
 background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
 
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* background-color: #000000; */
-/* background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* background-color: #343434; */
-/* background-color: #000000; */
-/* background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png"); */
+
 @media screen and (min-width: 768px) {
     height: 170px;
   };

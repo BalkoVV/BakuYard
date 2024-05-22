@@ -6,15 +6,11 @@
    height: 100%;
    background-position: bottom;
    background-repeat: repeat;
-   /* background-color: #020202;
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
-   /* background-color: #272727;
-background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png"); */
-/* background-color: #1f1f1f;
-background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-3.png"); */
-background-color: #020202;
-background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
-
+   background-color: #ffffff1c;
+   background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
+   background-color: #020202;
+ 
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    background-position: left;
 
    @media screen and (min-width: 767.9px) {
@@ -40,7 +36,7 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png
    font-size: 15px;
    font-weight: 900;
    margin: 0;
-   color: #7c7c7c;
+   color: #888888;
 
    background: #888888;
    background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
@@ -86,14 +82,18 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png
    height: 130px;
    justify-content: space-between;
    align-items: center;
-   border: none;
    border-radius: 15px;
    overflow: hidden;
    margin-left: auto;
    margin-right: auto;
    transition: all .4s ease-out;
-   box-shadow:  4px 4px 15px 2px #00000078;
-
+   box-shadow:  5px 5px 15px 3px #00000078;
+   border: none;
+   background-color: #444444;
+   background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+   background-color: #0f0f0f;
+background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
    z-index: 10;
 
@@ -115,8 +115,11 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png
    justify-content: space-around;
    align-items: center;
    border-radius: 15px; 
- 
-   background-color: #444444;
+   /* box-shadow:  4px 4px 15px 2px #00000078; */
+   box-shadow:
+    inset #000000b0 -5px -5px 9px,
+    inset #7d7d7d93 5px 5px 9px; 
+   /* background-color: #94939325; */
 /* background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png"); */
 
    /* box-shadow:
@@ -142,19 +145,30 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png
 .dishCard:focus {
    box-shadow:  2px 2px 15px 2px #0000005d;
    transition: all .4s ease-out;
-   scale: 1.02;
-
+   scale: 1.01;
+   /* border: 1px solid #252525; */
+  
 }
 .dishCard h3 {
-   font-weight: 900;
-   letter-spacing: 1px;
-   color: #000000;
-   color: #7b7a7a;
-   background: #900000;
+   display: flex;
+   /* background: linear-gradient(0deg, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.884)); */
+   /* border-radius: 30%; */
+   /* font-weight: 900; */
+   /* letter-spacing: 1px; */
+   color: #bbbaba;
+   /* color: #010101; */
+   text-shadow: 0px 0px 12px rgb(0, 0, 0);
+   /* background: #ececec;
+  background: linear-gradient(to bottom, #ececec 0%, #afafaf 20%, #909090 50%, #afafaf 80%, #ececec 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+   /* color: #7b7a7a; */
+   /* background: #900000;
    background: linear-gradient(to bottom, #900000 0%, #600000 50%, #400000 100%);
    background-clip: text;
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent; */
    
 
    transition: all .4s ease-out;
@@ -163,8 +177,9 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png
 .dishCard:hover h3,
 .dishCard:active h3,
 .dishCard:focus h3 {
-   color: #fefefe;
-   /* color: #400000; */
+   color: #cd0303;
+   color: #eeeeee;
+   /* text-shadow: 0px 0px 22px rgba(0, 0, 0, 0.395); */
    transition: all .4s ease-out;
 }
 
@@ -191,11 +206,11 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png
       position: absolute;
       height: 115px;
       width: 115px;
-      rotate: 5deg;
+      rotate: -7deg;
       scale: 1.3;
       bottom: 0px;
       left: 0px;
-      opacity: .5;
+      opacity: .3;
       z-index: 0;
    
     @media screen and (max-width: 375px) {
@@ -232,7 +247,7 @@ background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png
 .dishCard:active .dishCardImage,
 .dishCard:focus .dishCardImage {
    transition: all .4s ease-out;
-   opacity: .7;
+   opacity: .9;
   
 
    @media screen and (min-width: 768px) {
