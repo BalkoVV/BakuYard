@@ -80,7 +80,7 @@ transition: all .4s ease-out;
    @media screen and (min-width: 767.9px) {
      display: flex;
     margin-bottom: 0px;
-    margin-right: 7px;
+    margin-right: 12px;
     font-size: 15px;
     
  };
@@ -109,21 +109,21 @@ transition: all .4s ease-out;
    align-items: center;
    transform: rotateY(180deg);
    /* margin-bottom: 3px; */
-   opacity: .7;
+   opacity: .5;
    /* rotate: -5deg; */
    height: 41px;
        width: 41px;
        top: 7px;
-       right: 9px;
+       right: 10px;
     
 
     @media screen and (min-width: 767.9px) {
      
      
        margin-bottom: 0px;
-       height: 55px;
-       width: 55px;
-       top: 1px;
+       height: 50px;
+       width: 50px;
+       top: 4px;
        left: -5px;
 
        rotate: -5deg;

@@ -256,6 +256,7 @@ export const Basket = () => {
 
                       <ul className={styles.basketQuantityBox}>
 
+                        
                           <li className={styles.basketQuantityTitle}>
                             <h3>Кількість</h3>
                             <h3>позицій: </h3>
@@ -264,6 +265,8 @@ export const Basket = () => {
                           <li className={styles.basketTotalQuantity}>
                             {totalItems}
                           </li>
+                        
+
 
                       </ul>
 

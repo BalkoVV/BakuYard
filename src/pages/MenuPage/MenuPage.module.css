@@ -262,7 +262,7 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
 .dishCard:hover .dishCardImage,
 .dishCard:active .dishCardImage,
 .dishCard:focus .dishCardImage {
-   /* rotate: 0deg; */
+   rotate: 0deg;
    /* scale: 1.1; */
    transition: all .4s ease-out;
    opacity: .7;
@@ -634,8 +634,8 @@ transition: all .4s ease-out;
 } */
      
 .basketIcon.nonEmpty {
-   /* fill: #949494; */
-   opacity: .6;
+   fill: #949494;
+   opacity: .5;
 }
 
 /* .basketBadge {
@@ -644,8 +644,8 @@ color: transparent;
 
 .basketBadge {
    position: absolute;
-   right: 12px;
-   top: 19px;
+   right: 10px;
+   top: 15px;
    display: flex;
    justify-content: end;
    align-items: center;
@@ -653,11 +653,13 @@ color: transparent;
    width: 13px;
    border-radius: 50%;
    color: #7a0000;
-   background: #949494;
-   color: #949494;
-   background: #7a0000;
-   font-weight: 400;
-   font-size: 13px;
+   background: #4e0000;
+   color: #c7c7c7;
+   border: 1px solid #949494a1;
+   /* opacity: .5; */
+   /* background: #7a0000; */
+   /* font-weight: 900; */
+   font-size: 14px;
    rotate: 5deg;
    z-index: 2;
 

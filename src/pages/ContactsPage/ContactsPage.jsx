@@ -8,6 +8,7 @@ import MailIcon from 'components/Icons/MailIcon/MailIcon';
 import LocationIcon from 'components/Icons/LocationIcon/LocationIcon';
 import ClockIcon from 'components/Icons/ClockIcon/ClockIcon';
 import PhonesIcon from 'components/Icons/PhonesIcon/PhonesIcon';
+import RetroPhonesIcon from 'components/Icons/RetroPhonesIcon/RetroPhonesIcon';
 // import flagMapIcon from 'images/flagMap.svg';
 
 import styles from 'pages/ContactsPage/ContactsPage.module.css';
@@ -60,7 +61,7 @@ export const ContactsPage = () => {
                   </li>          
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
-                    <PhonesIcon className={styles.phoneIconContact}/>
+                    <RetroPhonesIcon className={styles.phoneIconContact}/>
                     <a href="tel:+380459453369" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 045 945 33 69</a>
                   </li>
 

@@ -134,7 +134,7 @@ background-image: url("https://www.transparenttextures.com/patterns/txture.png")
    align-items: center;
    height: 70px;
    width: 100%;
-   color: #7b7b7b;
+   /* color: #7b7b7b; */
    font-size: 13px;
    border-radius: 13px;
    margin:  3px 0;
@@ -159,7 +159,7 @@ background-image: url("https://www.transparenttextures.com/patterns/txture.png")
 .contactsListItem img {
    position: absolute;
    rotate: -5deg;
-   opacity: 0.5;
+   opacity: 0.45;
    display: block;
    height: 55px;
    transition: all .4s ease-out;
@@ -243,7 +243,7 @@ background-image: url("https://www.transparenttextures.com/patterns/white-wall-3
 
 .contactsListItemActive:hover .contactsListItemDiscriptions,
 .contactsListItem:active .contactsListItemDiscriptions {
-   color: #949494;
+   color: #dbdbdb;
    transition: all .4s ease-out;
 }
 

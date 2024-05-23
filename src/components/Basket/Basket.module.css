@@ -59,6 +59,7 @@
   color: #5e5e5e;
   font-size: 13px;
   margin: 0;
+  padding: 20px 0 10px;
 
 @media screen and (min-width: 767.9px) {
   font-size: 15px;
@@ -93,7 +94,7 @@
     border: none;
     padding: 10px;
     border-radius: 17px;
-    background: #07070759;
+    /* background: #07070759; */
 
     border-radius: 13px;
     box-shadow:
@@ -118,7 +119,7 @@
   border-radius: 13px;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 70px;
   transition: all .3s ease-out; 
   border-radius: 13px;
   background-color: #010101;
@@ -127,6 +128,13 @@
    inset #303030 5px 5px 9px,
    rgb(0, 0, 0) 3px 3px 8px -3px;
 
+
+   background-color: #282828;
+
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   box-shadow:
+   inset #000000b0 -5px -5px 9px,
+   inset #7d7d7d93 5px 5px 9px; 
 
  @media screen and (min-width: 767.9px) {
      
@@ -155,8 +163,8 @@
 }
 
 .basketListItemCategory {
-  color: #5e2000;
-  font-size: 8px;
+  color: #949494;
+  font-size: 10px;
   padding-left: 10px;
    
  @media screen and (min-width: 767.9px) {
@@ -169,9 +177,9 @@
 
 .basketListItemName {
  display: flex;
- font-size: 13px;
+ font-size: 12px;
  padding-left: 5px;
-  
+  color:#949494;
  @media screen and (min-width: 767.9px) {
      
  };
@@ -184,7 +192,7 @@
  display: flex;
  align-items: center;
  font-size: 8px;
- color: #6e432e;
+ color: #949494;
  padding-left: 10px;
 
  @media screen and (min-width: 767.9px) {
@@ -206,12 +214,12 @@
    align-items: center;
    justify-content: center;
    height: 60px;
-   width: 60px;
+   width: 70px;
    margin: 0;
    padding: 0;
-   font-size: 12px;
+   font-size: 14px;
    border-radius: 0 11px 11px 0;
-
+color: #949494;
     
  @media screen and (min-width: 767.9px) {
   font-size: 15px;
@@ -229,9 +237,9 @@
    width: 100px;
    margin: 0;
    padding: 0;
-   right: 101px;
-   font-size: 15px;
-   top: 0;
+   /* right: 101px; */
+   font-size: 19px;
+   /* top: 0; */
 
   @media screen and (min-width: 767.9px) {
       
@@ -254,7 +262,7 @@
   border: none;
   padding: 0;
   margin: 0;
-  color: #7b7a7a;
+  color: #949494;
   font-size: 25px;
   background: transparent;
   border-radius: 7px;
@@ -291,6 +299,9 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 15px;
   padding-top: 30px;
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(0.25turn, #101010, #2a2a2a, #101010);
+  border-image-slice: 1;
   /* padding: 0 60px; */
   /* background-color: #fff; */
  
@@ -313,11 +324,14 @@
  width: 100%;
  /* padding: 0 20px; */
 border-radius: 13px;
- background-color: #050505;
-  box-shadow:
-   inset rgba(0, 0, 0, 0.772) -5px -5px 9px,
-   inset #303030 5px 5px 9px,
-   rgb(0, 0, 0) 3px 3px 8px -3px;
+ 
+ 
+   background-color: #282828;
+
+background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+box-shadow:
+inset #000000b0 -5px -5px 9px,
+inset #7d7d7d93 5px 5px 9px; 
 
  @media screen and (min-width: 768px) {
    
@@ -327,6 +341,7 @@ border-radius: 13px;
   
  };
 }
+
 
 .basketQuantityTitle,
 .basketPriceTitle {
@@ -351,7 +366,7 @@ margin: 0;
 
 .basketTotalQuantity,
 .basketTotalPrice {
-   color: #5e2000;
+   color: #949494;
    padding-right: 25px;
    font-size: 22px;
 
@@ -387,9 +402,9 @@ margin: 0;
   padding: 20px;
   border-radius: 13px;
   margin-top: 30px;
-  background: #b4b4b44a;
+  /* background: #b4b4b44a; */
   box-shadow: 7px 7px 15px 2px #00000047;
-  background: #07070759;
+  /* background: #07070759; */
 
   border-radius: 13px;
   box-shadow:
@@ -407,16 +422,20 @@ margin: 0;
 }
 
  .basketInput {
-   background-color: rgb(0, 0, 0);
-   color: #b4b4b463;
+   /* background-color: rgb(0, 0, 0); */
+   color: #949494;
    padding-left: 16px;
    height: 50px;
    border: none;
    border-radius: 11px;
    border: 1px solid rgb(0, 0, 0);
-   box-shadow: inset 0 2px 10px 1px rgba(50, 49, 49, 0.688), inset 0 0 0 60px rgba(20, 20, 20, 0.3), 0 1px rgba(38, 38, 38, 0.08);
+   font-size: 17px;
+   /* box-shadow: inset 0 2px 10px 1px rgba(50, 49, 49, 0.688), inset 0 0 0 60px rgba(20, 20, 20, 0.3), 0 1px rgba(38, 38, 38, 0.08); */
    /* background: linear-gradient(rgb(22, 22, 22), rgb(29, 29, 29)); */
-   background: #010101;
+   /* background: #3a3a3a72; */
+   background-color: #000000;
+
+background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    /* color: #ccc; */
    transition: .5s linear;
 
@@ -434,7 +453,7 @@ margin: 0;
 .basketInput:hover,
 .basketInput:focus,
 .basketInput:active {
-  border: 1px solid #5e2000;
+  border: 1px solid #949494;
 }
 
 

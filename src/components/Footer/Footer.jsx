@@ -34,7 +34,7 @@ export const Footer = ({ customLinks }) => {
           <ul className={styles.footerSocial}>
             <li>
               
-              <a href="https://www.instagram.com/dvorbakinskii/" target="_blank" rel="noreferrer"><InstagramIcon /></a>
+              <a href="https://www.instagram.com/dvorbakinskii/" target="_blank" rel="noreferrer"><InstagramIcon className={styles.instaFooter} /></a>
 
             </li>
             <li>
