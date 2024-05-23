@@ -16,7 +16,7 @@ import saucesMenu1 from 'images/saucesCardMenu.svg';
 import saucesMenu2 from 'images/saucesCardMenu.svg';
 
 export const Sauces = () => {
-  const { addToCart, cartItems } = useContext(CartContext);
+  const { addToCart, removeFromCart, cartItems } = useContext(CartContext);
 
   const [saucesItems, setSaucesItems] = useState([]);
 
@@ -139,12 +139,15 @@ export const Sauces = () => {
 
                   <span className={styles.dishListButtonAddBox}>
                       <td className={styles.dishListButtonAdd}>
-                        <AddButton
-                          
-                          onClick={() => addToCart(item)}
+                      <AddButton
+                          onAdd={() => addToCart(item)}
+                          onRemove={() => {
+                            removeFromCart(item.id);
+                            updateButtonState(item.id);
+                          }}
                           alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                          updateButtonState={() => updateButtonState(item.id)}
                         />
+
                       </td>
                   </span>
 

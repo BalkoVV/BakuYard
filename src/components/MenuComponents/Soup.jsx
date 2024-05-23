@@ -23,7 +23,7 @@ import soupMenu1 from 'images/soupCardMenu.svg';
 import soupMenu2 from 'images/soupCardMenu.svg';
 
 export const Soup = () => {
-  const { addToCart, cartItems } = useContext(CartContext);
+  const { addToCart, removeFromCart, cartItems } = useContext(CartContext);
   const [soupItems, setSoupItems] = useState([]);
 
   useEffect(() => {
@@ -164,12 +164,15 @@ style={{
 
                   <span className={styles.dishListButtonAddBox}>
                       <td className={styles.dishListButtonAdd}>
-                        <AddButton
-                          
-                          onClick={() => addToCart(item)}
+                      <AddButton
+                          onAdd={() => addToCart(item)}
+                          onRemove={() => {
+                            removeFromCart(item.id);
+                            updateButtonState(item.id);
+                          }}
                           alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                          updateButtonState={() => updateButtonState(item.id)}
                         />
+
                       </td>
                   </span>
 

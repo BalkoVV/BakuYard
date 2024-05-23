@@ -24,7 +24,7 @@ import pizzaMenu2 from 'images/pizzaCardMenu.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const Pizza = () => {
-  const { addToCart, cartItems } = useContext(CartContext);
+  const { addToCart, removeFromCart, cartItems } = useContext(CartContext);
   const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
@@ -195,12 +195,14 @@ export const Pizza = () => {
 
                     <span className={styles.dishListButtonAddBox}>
                         <td className={styles.dishListButtonAdd}>
-                          <AddButton
-                            
-                            onClick={() => addToCart(item)}
-                            alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                            updateButtonState={() => updateButtonState(item.id)}
-                          />
+                        <AddButton
+                          onAdd={() => addToCart(item)}
+                          onRemove={() => {
+                            removeFromCart(item.id);
+                            updateButtonState(item.id);
+                          }}
+                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                        />
                         </td>
                     </span>
 
@@ -247,12 +249,15 @@ export const Pizza = () => {
 
                     <span className={styles.dishListButtonAddBox}>
                         <td className={styles.dishListButtonAdd}>
-                          <AddButton
-                            
-                            onClick={() => addToCart(item)}
+                        <AddButton
+                            onAdd={() => addToCart(item)}
+                            onRemove={() => {
+                              removeFromCart(item.id);
+                              updateButtonState(item.id);
+                            }}
                             alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                            updateButtonState={() => updateButtonState(item.id)}
                           />
+
                         </td>
                     </span>
 
@@ -298,12 +303,14 @@ export const Pizza = () => {
 
                     <span className={styles.dishListButtonAddBox}>
                         <td className={styles.dishListButtonAdd}>
-                          <AddButton
-                            
-                            onClick={() => addToCart(item)}
-                            alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                            updateButtonState={() => updateButtonState(item.id)}
-                          />
+                        <AddButton
+                          onAdd={() => addToCart(item)}
+                          onRemove={() => {
+                            removeFromCart(item.id);
+                            updateButtonState(item.id);
+                          }}
+                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                        />
                         </td>
                     </span>
 

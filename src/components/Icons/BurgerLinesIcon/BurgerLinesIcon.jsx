@@ -2,6 +2,7 @@
 
 import React from 'react';
 import burgerLinesIcon from 'images/mobileSwitch.svg';
+// import burgerLinesIcon from 'images/inmap.svg';
 import styles from 'components/Logo/Logo.module.css';
 
 

@@ -24,7 +24,7 @@ import mainDishMenu1 from 'images/mainDishCardMenu.svg';
 import mainDishMenu2 from 'images/mainDishCardMenu.svg';
 
 export const MainDish = () => {
-  const { addToCart, cartItems } = useContext(CartContext);
+  const { addToCart, removeFromCart, cartItems } = useContext(CartContext);
   const [mainDishItems, setMainDishItems] = useState([]);
 
   useEffect(() => {
@@ -174,12 +174,15 @@ style={{
 
                     <span className={styles.dishListButtonAddBox}>
                         <td className={styles.dishListButtonAdd}>
-                          <AddButton
-                            
-                            onClick={() => addToCart(item)}
-                            alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                            updateButtonState={() => updateButtonState(item.id)}
-                          />
+                        <AddButton
+                          onAdd={() => addToCart(item)}
+                          onRemove={() => {
+                            removeFromCart(item.id);
+                            updateButtonState(item.id);
+                          }}
+                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                        />
+
                         </td>
                     </span>
 

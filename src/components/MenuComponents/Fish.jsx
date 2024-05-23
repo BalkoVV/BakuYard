@@ -19,7 +19,7 @@ import fishMenu2 from 'images/fishCardMenu.svg';
 
 
 export const Fish = () => {
-  const { addToCart, cartItems } = useContext(CartContext);
+  const { addToCart, removeFromCart, cartItems } = useContext(CartContext);
   const [fishItems, setFishItems] = useState([]);
 
   useEffect(() => {
@@ -140,12 +140,15 @@ export const Fish = () => {
 
                     <span className={styles.dishListButtonAddBox}>
                         <td className={styles.dishListButtonAdd}>
-                          <AddButton
-                            
-                            onClick={() => addToCart(item)}
-                            alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                            updateButtonState={() => updateButtonState(item.id)}
-                          />
+                        <AddButton
+                          onAdd={() => addToCart(item)}
+                          onRemove={() => {
+                            removeFromCart(item.id);
+                            updateButtonState(item.id);
+                          }}
+                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                        />
+
                         </td>
                     </span>
 

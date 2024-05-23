@@ -17,6 +17,21 @@ width: 100%;
    /* background-color: #000000; */
    /* background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png"); */
    background-attachment: none;
+   /* background-color: #272727;
+background-image: url("https://www.transparenttextures.com/patterns/redox-01.png");
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/straws.png");
+background-color: #1c1c1c;
+background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
+background-color: #1f1f1f;
+background-image: url("https://www.transparenttextures.com/patterns/triangles.png");
+background-color: #050505;
+background-image: url("https://www.transparenttextures.com/patterns/txture.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
       @media screen and (min-width: 768px) {
          
@@ -68,15 +83,17 @@ width: 100%;
 
 .contactsListBox {
    display: flex;
-   padding:  0 20px 20px;
+   padding:  0 20px  20px ;
    flex-direction: column;
 
    @media screen and (min-width: 767.9px) {
       display: grid;
-      padding:  0 20px 20px 0;
+      /* width: 300px; */
+      padding:  0 20px 20px ;
       height: 450px;
       justify-content: center;
       align-items: center;
+      /* background-color: #fff; */
    };
    @media screen and (min-width: 1200px) {
      
@@ -87,6 +104,7 @@ width: 100%;
 
  .contactsList {
    display: grid;
+   /* grid-template-columns: repeat(1, 1fr); */
    grid-row-gap: 10px;
    width: 100%;
    padding-bottom: 10px;
@@ -97,6 +115,7 @@ width: 100%;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 30px;
       grid-row-gap: 30px;
+      
       /* padding: 0 30px; */
    };
 
@@ -120,13 +139,13 @@ width: 100%;
    border-radius: 13px;
    margin:  3px 0;
    border-radius: 13px;
-   background-color: #030405;
+   /* background-color: #030405; */
    box-shadow:  4px 4px 15px 2px #00000078;
   
    transition: all .4s ease-out;
    @media screen and (min-width: 767.9px) {
       font-size: 13px;
-      width: 300px;
+      width: 350px;
    };
 
    @media screen and (min-width: 1200px) {
@@ -196,8 +215,13 @@ width: 100%;
     padding-right: 20px;
 
 /* background-color: #333333; */
-background-color: #0f0f0f;
-background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+background-color: #444444;
+background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+
+/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+/* background-color: #3b3a3a; */
+/* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
     box-shadow:
     inset #000000b0 -5px -5px 9px,

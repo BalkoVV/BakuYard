@@ -10,8 +10,8 @@
   background-position: left;
   /* background-color: #020202;
   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
-  background-color: #010101;
-  background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
+  /* background-color: #010101;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png"); */
   background-color: #020202;
  
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
@@ -180,10 +180,37 @@ box-shadow:
     height: 380px;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 20px 9px #00000070;   
-    background-color: #98989811;
+    /* box-shadow: 0 0 20px 9px #00000070;    */
+    box-shadow: 0 0 50px 22px #00000070;  
+
+    /* background-color: #98989811; */
+    /* background-color: #05050582; */
+/* background-image: url("https://www.transparenttextures.com/patterns/dimension.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     /* background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png"); */
-  
+    /* background-color: #303030; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+    /* background-color: #3b3a3a; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+    background-color: #9619192e;
+background-image: url("https://www.transparenttextures.com/patterns/lyonnette.png");
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/my-little-plaid-dark.png");
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/nami.png");
+background-color: #000000ac; */
+/* background-image: url("images/bckg.png");
+background-size: contain; */
+/* background-color: #050505;
+background-image: url("https://www.transparenttextures.com/patterns/swirl.png");
+background-color: #050505;
+background-image: url("https://www.transparenttextures.com/patterns/white-diamond-dark.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     @media screen and (min-width: 768px) {
       height: 700px;
       padding: 0 40px;
@@ -326,10 +353,13 @@ box-shadow:
     padding: 0 20px;
     /* background: #0b0b0b; */
     box-shadow: 0 0 50px 22px #00000070;   
+    
     /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");  */
-     background-color: #98989811;
+     /* background-color: #98989811; */
     /* background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png"); */
-
+    /* background-color: #000000; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/soft-kill.png"); */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     @media screen and (min-width: 768px) {
       height: 400px;
     };
@@ -515,12 +545,17 @@ box-shadow:
     overflow: hidden;
     height: 40px;
     border-radius: 11px;
-    background-color: #000000;
-    background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
+    background-color: #83838383;
+    background-color: #444444;
+background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+    /* background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
 
     background-color: #0f0f0f;
     background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
-
+    background-color: #303030; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+    /* background-color: #3b3a3a; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
     
    
     box-shadow:

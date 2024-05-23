@@ -1,19 +1,9 @@
 .logo {
    display: flex;
-   /* margin-top: 5px; */
-   height: 25px;
+
+   height: 40px;
   
 
-   @media screen and (min-width: 768px) {
-      /* padding-right: 100px; */
-      /* margin-left: 50px; */
-      height: 30px;
-   };
-
-   @media screen and (min-width: 1200px) {
-      /* padding-right: 200px; */
-      /* margin-left: 130px; */
-      height: 40px;
-   };
+ 
 }
 

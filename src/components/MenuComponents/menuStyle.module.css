@@ -31,13 +31,13 @@
 }
 
 .dishPageContainer {
-   padding: 0 10px;
+   padding: 10px 10px;
   
    @media screen and (min-width: 767.9px) {
-    padding: 0 120px;
+    padding: 20px 120px;
    };
    @media screen and (min-width: 1200px) {
-    padding: 0 250px;
+    padding: 30px 250px;
    };
   }
 
@@ -140,6 +140,13 @@
     background-color: #141414;
 /* background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png"); */
    background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+   background-color: #303030;
+/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+/* background-color: #3b3a3a; */
+background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+
+background-color: #444444;
+background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    box-shadow:
    inset #000000b0 -5px -5px 9px,
    inset #7d7d7d93 5px 5px 9px; 
@@ -240,10 +247,11 @@ font-weight: 900;
    display: flex;
    align-items: flex-start;
    font-size: 8px;
-   letter-spacing: -0.1px;
-   color: #949494;
+   /* letter-spacing: -0.1px; */
+   color: #1d0000;
    padding: 10px 0 0 10px;
    height: 40px;
+   /* font-style: italic; */
 
   
 
@@ -254,8 +262,9 @@ font-weight: 900;
    };
   
    @media screen and (min-width: 1200px) {
-      font-size: 11px;
+      font-size: 12px;
       padding: 15px 0 0 25px;
+      font-weight: 900;
       /* letter-spacing: .2px; */
    };
 }
@@ -418,7 +427,7 @@ font-weight: 900;
    margin: 0;
    padding: 0;
    border-radius: 0 14px 14px 0;
-   background: #acacac31;
+   /* background: #acacac31; */
    border-left: 1px solid #1a1a1a;
 
    @media screen and (min-width: 767.9px) {
@@ -445,13 +454,13 @@ font-weight: 900;
    border: none;
    padding: 0;
    margin: 0;
-   color: #7b7a7a;
+   /* color: #7b7a7a; */
    font-size: 25px;
-   background: transparent;
+   /* background: transparent; */
    /* background-color: #0f0f0f;
    background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-   border-radius: 11px;
-   scale: 1.02;
+   /* border-radius: 11px; */
+   /* scale: 1.02; */
 
    @media screen and (min-width: 767.9px) {
       width: 40px;
@@ -563,120 +572,7 @@ color: red;
 
 /* ============================================ */
 
-     .toBasketButton {
-      position: absolute;
-      border: none;
-      top: 20px;
-      right: 20px; 
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      height: 60px;
-      width: 150px;
-      border: none;
-      z-index: 9;
-      border-radius: 11px;
-      background-color: #000000;
-          
-      @media screen and (min-width: 767.9px) {
-         height: 60px;
-         width: 150px;
-      };
-
-      @media screen and (min-width: 1200px) {
-         height: 60px;
-         width: 150px;
-      };
-   }
-   .toBasketLink {
-      display: flex; 
-      align-items: center;
-      justify-content: start;
-      height: 40px;
-      width: 110px;
-      border-radius: 11px;
-
-      @media screen and (min-width: 767.9px) {
-         height: 60px;
-         width: 150px;
-        
-       };
-       @media screen and (min-width: 1200px) {
-         height: 60px;
-            width: 150px;
-        
-       };
-   }
-   
-   .toBasketDescription {
-      margin: 0;
-      padding: 0;
-      font-size: 10px;
-      padding-left: 5px;
-
-      @media screen and (min-width: 767.9px) {
-         font-size: 14px;
-        
-       };
-       @media screen and (min-width: 1200px) {
-         
-         font-size: 14px;
-       };
-   }
-   
-   .toBasketButton:hover .toBasketDescription {
-      color: #5e2000;
-     }
-   
-   .basketIcon {
-      position: absolute;
-      right: 5px;
-      top: 4px;
-      fill: #3a3a3a;
-
-      @media screen and (min-width: 767.9px) {
-         right: 13px;
-         top: 12px;
-       };
-       @media screen and (min-width: 1200px) {
-         right: 13px;
-      top: 12px;
-       };
-     }
      
-     .basketIcon.nonEmpty {
-        fill: #5e2000;
-      }
-
-      .basketBadge {
-         position: absolute;
-         right: 4px;
-         top: 9px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         height: 12px;
-         width: 12px;
-         border-radius: 50%;
-         color: #dbdbdb;
-         background-color: #5e2000;
-         font-size: 15px;
-         z-index: 2;
-         box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.808);
-
-         @media screen and (min-width: 767.9px) {
-           
-            height: 15px;
-         width: 15px;
-            right: 11px;
-            top: 16px;
-          };
-          @media screen and (min-width: 1200px) {
-            right: 11px;
-         top: 16px;
-           
-          };
-        }
 
 
 /* ================================================ */
@@ -727,10 +623,19 @@ color: red;
    border-radius: 13px;
    overflow: hidden;
    border: none;
+
    box-shadow:  4px 4px 15px 2px #00000078;
    background-color: #0f0f0f;
    background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
-   transition: all .4s ease-out;
+   background-color: #303030;
+/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+/* background-color: #3b3a3a; */
+background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+   
+background-color: #444444;
+background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+
+transition: all .4s ease-out;
    z-index: 9;
     
     @media screen and (min-width: 767.9px) {
@@ -760,8 +665,8 @@ color: red;
   inset #7d7d7d93 5px 5px 9px; 
   
     @media screen and (min-width: 767.9px) {
-       flex-direction: row-reverse;
-       justify-content: start;
+       flex-direction: row;
+       justify-content: end;
     };
 
        @media screen and (min-width: 1200px) {
@@ -774,13 +679,13 @@ color: red;
   font-size: 9px;
   transition: all .4s ease-out;
   color: #000000;
-  color: #949494;
+  /* color: #949494; */
   font-weight: 900;
   margin-bottom: 6px;
 
    @media screen and (min-width: 767.9px) {
     margin-bottom: 0px;
-    margin-left: 11px;
+    margin-right: 13px;
     font-size: 15px;
     
  };
@@ -791,14 +696,15 @@ color: red;
 }
 
 .toMenuButton:hover .toMenuDescription {
-   color: #dbdbdb;
-   transition: all .4s ease-out;
+
+ color: #dbdbdb;
+     transition: all .4s ease-out;
 }
 
 .toMenuButton:hover {
-   scale: 1.02;
-   transition: all .4s ease-out;
-   box-shadow:  4px 4px 15px 2px #0000002d;
+ scale: 1.02;
+ transition: all .4s ease-out;
+ box-shadow:  4px 4px 15px 2px #0000002d;
 }
 
 .toMenuIcon {
@@ -806,23 +712,24 @@ color: red;
    display: flex;
    justify-content: center;
    align-items: center;
+   transform: rotateY(180deg);
    /* margin-bottom: 3px; */
    opacity: .5;
    /* rotate: -5deg; */
    height: 40px;
-       width: 40px;
+       width: 45px;
        top: 2px;
-       right: 10px;
+       right: 8px;
     
 
     @media screen and (min-width: 767.9px) {
      
      
        margin-bottom: 0px;
-       height: 65px;
-       width: 65px;
-       top: -3px;
-       right: -7px;
+       height: 60px;
+       width: 60px;
+       top: 0px;
+       left: -3px;
 
        rotate: -5deg;
        transition: all .4s ease-out;
@@ -833,19 +740,6 @@ color: red;
        right: -7px;
        rotate: -5deg;
      }; */
-}
-
-.toMenuButton:hover  .toMenuIcon {
- 
- rotate: 0deg;
- transition: all .4s ease-out;
-
- @media screen and (min-width: 767.9px) {
-
-   scale: .85;
- };
-
-
 }
 
   /* ================================================ */

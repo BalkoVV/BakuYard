@@ -621,20 +621,26 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   width: 100%;
-  border-radius: 13px;
-  overflow: hidden;
+  /* border-radius: 13px; */
+  /* overflow: hidden; */
+  /* box-shadow:  4px 4px 15px 2px #00000078; */
   /* margin: 0 20px; */
 }
 
-.basketEmpty {
+.basketEmpty,
+.orderCompleted {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  
-  box-shadow:
+  /* background-color: #303030; */
+
+/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+/* background-color: #3b3a3a; */
+/* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
+  /* box-shadow:
     inset #000000b0 -5px -5px 9px,
-    inset #7d7d7d93 5px 5px 9px; 
+    inset #7d7d7d93 5px 5px 9px;  */
 }
 
 
@@ -656,31 +662,22 @@ cursor: pointer;
 .basketEmptyMessage h2 {
  display: flex;
  width: 100%;
- /* height: 100%; */
  justify-content: center;
  text-align: center;
- border-radius: 13px;
- line-height: 55px;
- font-size: 14px;
- /* margin: 20px; */
- /* background-color: #fff; */
- /* background-color: #0f0f0f;
-  background-image: 
-    url("https://www.transparenttextures.com/patterns/mooning.png");
-    box-shadow:
-    inset #000000b0 -5px -5px 9px,
-    inset #7d7d7d93 5px 5px 9px;  */
+ font-size: 15px;
+      line-height: 45px;
+      color: #7c7c7c;
+      text-shadow: rgb(0, 0, 0) 0px 0px 15px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
 
-
-
- 
  @media screen and (min-width: 767.9px) {
-  font-size: 19px;
-  line-height: 65px;
+  font-size: 15px;
+  /* line-height: 65px; */
  };
  @media screen and (min-width: 1200px) {
-  font-size: 22px;
-  line-height: 75px;
+  font-size: 17px;
+  /* line-height: 75px; */
  };
 }
 
@@ -695,10 +692,19 @@ cursor: pointer;
     border-radius: 13px;
     overflow: hidden;
     border: none;
+
     box-shadow:  4px 4px 15px 2px #00000078;
     background-color: #0f0f0f;
     background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
-    transition: all .4s ease-out;
+    background-color: #303030;
+/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+/* background-color: #3b3a3a; */
+background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+    
+background-color: #444444;
+background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+
+transition: all .4s ease-out;
     z-index: 9;
      
      @media screen and (min-width: 767.9px) {
@@ -728,8 +734,8 @@ cursor: pointer;
    inset #7d7d7d93 5px 5px 9px; 
    
      @media screen and (min-width: 767.9px) {
-        flex-direction: row-reverse;
-        justify-content: start;
+        flex-direction: row;
+        justify-content: end;
      };
 
         @media screen and (min-width: 1200px) {
@@ -742,13 +748,13 @@ cursor: pointer;
    font-size: 9px;
    transition: all .4s ease-out;
    color: #000000;
-   color: #949494;
+   /* color: #949494; */
    font-weight: 900;
    margin-bottom: 6px;
 
     @media screen and (min-width: 767.9px) {
      margin-bottom: 0px;
-     margin-left: 11px;
+     margin-right: 13px;
      font-size: 15px;
      
   };
@@ -775,6 +781,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: rotateY(180deg);
     /* margin-bottom: 3px; */
     opacity: .5;
     /* rotate: -5deg; */
@@ -788,10 +795,10 @@ cursor: pointer;
       
       
         margin-bottom: 0px;
-        height: 65px;
-        width: 65px;
-        top: -3px;
-        right: -7px;
+        height: 60px;
+        width: 60px;
+        top: 0px;
+        left: -3px;
 
         rotate: -5deg;
         transition: all .4s ease-out;
@@ -804,15 +811,4 @@ cursor: pointer;
       }; */
  }
 
- .toMenuButton:hover  .toMenuIcon {
-  
-  rotate: 0deg;
-  transition: all .4s ease-out;
-
-  @media screen and (min-width: 767.9px) {
  
-    scale: .85;
-  };
-
- 
-}

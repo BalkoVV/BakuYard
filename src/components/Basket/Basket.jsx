@@ -179,10 +179,9 @@ export const Basket = () => {
             <div className={styles.emptyOrderBasketBox}>
               <span className={styles.orderDone}>
                 <div className={styles.orderDoneMessage}>
-                    <h2>Замовлення оформлене!  <br/>
-                        Адміністратор зателефонує Вам  <br/>
-                        для підтвердження <br/>
-                        та узгодження деталей
+                    <h2>Ваше замовлення сформовано!  <br/>
+                        Зачекайте дзвінка Адміністратора  <br/>
+                        для підтвердження та узгодження деталей
                     </h2>
                 </div>
               </span>
@@ -195,7 +194,7 @@ export const Basket = () => {
               <span className={styles.basketEmpty}>
                 <div className={styles.basketEmptyMessage}>
                   <h2>
-                    Ваш кошик порожній <br/>
+                    Ваше замовлення ще не сформоване <br/>
                     Додайте страви з Меню <br/>
                     *доступні для доставки
                   </h2>

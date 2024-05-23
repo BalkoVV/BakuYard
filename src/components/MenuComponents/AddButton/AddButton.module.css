@@ -3,27 +3,34 @@
    height: 100%;
    width: 100%;
    margin: 0;
-   border-radius: 9px;
+   border-radius: 12px;
    align-items: center;
    justify-content: center;
    text-transform: uppercase;
    font-weight: 900;
    transition: all 0.4s ease-out;
-cursor: pointer;
+   cursor: pointer;
+   /* border: 1px solid rgba(0, 0, 0, 0.196); */
    box-shadow:
-   inset #0e0e0e -5px -5px 9px,
-   inset #303030 5px 5px 9px,
+   inset #0e0e0e -1px -1px 9px,
+   inset #151515 1px 1px 9px,
    rgb(0, 0, 0) 3px 3px 8px -3px;
-    background: #141414;
+    /* background: #141414; */
+    background-color: #2b00008a;
+    background-color: #0000006d;
 }
 
 
 .added {
-   color: #690000;
+   color: #7c7c7c;
+   color: #4c0000;
+   background-color: #98989870;
+   /* background-color: #69000096; */
    /* Стилі для стану "додано" */
  }
  
  .notAdded {
    color: #7c7c7c;
+   
    /* Стилі для стану "не додано" */
  }

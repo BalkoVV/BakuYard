@@ -83,7 +83,7 @@ background-image: url("https://www.transparenttextures.com/patterns/egg-shell.pn
  }
 
  .headerLinkText {
-  color: #949494;
+  color: #646464;
   transition: all .4s ease-out;
   /* background: #888888;
   background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
@@ -94,7 +94,7 @@ background-image: url("https://www.transparenttextures.com/patterns/egg-shell.pn
 }
 
  .activeLink h4 {
- color: #770000;
+ color: #4c0000;
    /* background: #900000;
    background: linear-gradient(to bottom, #900000 0%, #600000 50%, #400000 100%);
    background-clip: text;
@@ -104,7 +104,7 @@ background-image: url("https://www.transparenttextures.com/patterns/egg-shell.pn
 }
 
  .headerNav a:hover h4 {
- color: #770000;
+ color: #4c0000;
    /* background: #900000;
    background: linear-gradient(to bottom, #900000 0%, #600000 50%, #400000 100%);
    background-clip: text;
@@ -153,7 +153,7 @@ padding-right: 1.9px;
  margin: 0;
  font-size: 11px;
  padding-left: 2px;
- color: #949494;
+ color: #646464;
  /* background: #888888;
   background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
   background-clip: text;
@@ -168,8 +168,8 @@ padding-right: 1.9px;
 
 .burgerLinesIcon {
   position: absolute;
-  right: 33px;
-  top: 18px;
+  right: 30px;
+  top: 13px;
   
    @media screen and (min-width: 767.9px) {
      display: none; 

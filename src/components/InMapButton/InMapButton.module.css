@@ -11,8 +11,12 @@
    overflow: hidden;
    border: none;
    box-shadow:  4px 4px 15px 2px #00000078;
-   background-color: #0f0f0f;
-   background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+   background-color: #444444;
+background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   /* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+   /* background-color: #303030; */
+/* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
    transition: all .4s ease-out;
    /* font-size: 14px; */
       

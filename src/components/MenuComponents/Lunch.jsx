@@ -18,7 +18,7 @@ import lunchMenu1 from 'images/lunchCardMenu.svg';
 import lunchMenu2 from 'images/lunchCardMenu.svg';
 
 export const Lunch = () => {
-  const { addToCart, cartItems } = useContext(CartContext);
+  const { addToCart, removeFromCart, cartItems } = useContext(CartContext);
   const [lunchItems, setLunchItems] = useState([]);
 
    useEffect(() => {
@@ -111,11 +111,15 @@ export const Lunch = () => {
                     <span>
                     <td>{item.ціна}</td>
                     <td>
-                        <AddButton
-                          onClick={() => addToCart(item)}
-                          alreadyAdded={cartItems.some(cartItem => cartItem.назва === item.назва)}
-                          updateButtonState={() => updateButtonState(item.назва)}
-                        />
+                    <AddButton
+                        onAdd={() => addToCart(item)}
+                        onRemove={() => {
+                          removeFromCart(item.id);
+                          updateButtonState(item.id);
+                        }}
+                        alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                      />
+
                     </td>
                     </span>
                   </li>
