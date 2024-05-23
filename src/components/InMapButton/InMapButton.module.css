@@ -1,88 +1,138 @@
+
+
+/* ================================== */
+
 .inMapButton {
    position: absolute;
    display: flex;
-   align-items: center;
-   justify-content: center;
+   flex-direction: column;
    top: 370px;
    right: 20px; 
    height: 60px;
-   width: 150px;
-   border-radius: 11px;
+   width: 60px;
+   border-radius: 13px;
    overflow: hidden;
    border: none;
+
    box-shadow:  4px 4px 15px 2px #00000078;
-   background-color: #444444;
+   background-color: #0f0f0f;
+   background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+   background-color: #303030;
+/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+/* background-color: #3b3a3a; */
+background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+   
+background-color: #222222;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   /* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-   /* background-color: #303030; */
-/* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-   transition: all .4s ease-out;
-   /* font-size: 14px; */
-      
-@media screen and (min-width: 767.9px) {
-         top: 400px;
-         right: 40px; 
-         /* height: 60px;
-         width: 150px; */
-      };
 
-         @media screen and (min-width: 1200px) {
-            top: 580px;
-            right: 68px; 
-            /* height: 60px;
-            width: 150px; */
-         };
-  }
-  
-.inMapLink {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 100%;
-   width: 100%;
-   box-shadow:
-    inset #000000b0 -5px -5px 9px,
-    inset #7d7d7d93 5px 5px 9px; 
+transition: all .4s ease-out;
+   z-index: 9;
     
-      @media screen and (min-width: 767.9px) {
-         height: 60px;
-         width: 150px;
-      };
-
-         @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 767.9px) {
+       width: 150px;
+       flex-direction: row-reverse;
+       /* right: 40px;  */
+       top: 400px;
+       right: 40px; 
       
-         };
-  }
-  
-  .inMapDescription {
-    margin: 0;
-    /* padding: 0 3px 0 0 ; */
-    font-size: 10px;
-    font-size: 14px;
-    transition: all .4s ease-out;
-    color: #000000;
-    font-weight: 900;
+    };
 
-     @media screen and (min-width: 767.9px) {
-      font-size: 15px;
-      /* padding: 0 5px 0 0 ; */
-   };
-
-      @media screen and (min-width: 1200px) {
-         font-size: 16px;
-         /* padding: 0 10px 0 0 ; */
-      };
-  }
-  
-  .inMapButton:hover .inMapDescription {
-  
-   color: #949494;
-       transition: all .4s ease-out;
-  }
-
-  .inMapButton:hover {
-   scale: 1.02;
-   transition: all .4s ease-out;
+       @media screen and (min-width: 1200px) {
+          
+         top: 580px;
+         right: 68px; 
+         
+       };
 }
+
+.inMapLink {
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: end;
+ height: 100%;
+ width: 100%;
+ box-shadow:
+  inset #000000b0 -5px -5px 9px,
+  inset #7d7d7d93 5px 5px 9px; 
   
+    @media screen and (min-width: 767.9px) {
+       flex-direction: row;
+       justify-content: end;
+    };
+
+       @media screen and (min-width: 1200px) {
+    
+       };
+}
+
+.inMapDescription {
+  margin: 0;
+  font-size: 9px;
+  transition: all .4s ease-out;
+  color: #949494;
+  /* color: #949494; */
+  font-weight: 900;
+  margin-bottom: 6px;
+  display: none;
+
+   @media screen and (min-width: 767.9px) {
+     display: flex;
+    margin-bottom: 0px;
+    margin-right: 7px;
+    font-size: 15px;
+    
+ };
+
+    @media screen and (min-width: 1200px) {
+     
+    };
+}
+
+.inMapButton:hover .inMapDescription {
+
+ color: #dbdbdb;
+     transition: all .4s ease-out;
+}
+
+.inMapButton:hover {
+ scale: 1.02;
+ transition: all .4s ease-out;
+ box-shadow:  4px 4px 15px 2px #0000002d;
+}
+
+.inMapIcon {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transform: rotateY(180deg);
+   /* margin-bottom: 3px; */
+   opacity: .7;
+   /* rotate: -5deg; */
+   height: 41px;
+       width: 41px;
+       top: 7px;
+       right: 9px;
+    
+
+    @media screen and (min-width: 767.9px) {
+     
+     
+       margin-bottom: 0px;
+       height: 55px;
+       width: 55px;
+       top: 1px;
+       left: -5px;
+
+       rotate: -5deg;
+       transition: all .4s ease-out;
+      
+     };
+
+     /* @media screen and (min-width: 1200px) {
+       right: -7px;
+       rotate: -5deg;
+     }; */
+}

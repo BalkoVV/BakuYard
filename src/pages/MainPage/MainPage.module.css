@@ -180,9 +180,14 @@ box-shadow:
     height: 380px;
     justify-content: center;
     align-items: center;
+    margin: 0 20px;
     /* box-shadow: 0 0 20px 9px #00000070;    */
-    box-shadow: 0 0 50px 22px #00000070;  
-
+    /* box-shadow: 0 0 50px 22px #00000070;   */
+    background: #222222;
+    border-radius: 22px;
+    box-shadow: 0 0 50px 22px #00000070;   
+    
+    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); 
     /* background-color: #98989811; */
     /* background-color: #05050582; */
 /* background-image: url("https://www.transparenttextures.com/patterns/dimension.png"); */
@@ -259,10 +264,12 @@ background-image: url("https://www.transparenttextures.com/patterns/white-diamon
     background-position: top;
     background-repeat: repeat;
     overflow: hidden;
+   
+
     box-shadow:
-    inset #4b4b4b78 -5px -5px 9px,
-    inset #4b4b4b78 5px 5px 9px,
-    rgb(0, 0, 0) 3px 3px 8px -3px;
+    inset #37363678 -5px -5px 9px,
+    inset #37363678 5px 5px 9px,
+    rgb(0, 0, 0) 3px 3px 18px -3px;
 
     @media screen and (min-width: 768px) {
       background-size: 110%;
@@ -351,10 +358,12 @@ background-image: url("https://www.transparenttextures.com/patterns/white-diamon
     align-items: center;
     justify-content: center;
     padding: 0 20px;
-    /* background: #0b0b0b; */
+    margin: 0 20px;
+    background: #222222;
+    border-radius: 22px;
     box-shadow: 0 0 50px 22px #00000070;   
     
-    /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");  */
+    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); 
      /* background-color: #98989811; */
     /* background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png"); */
     /* background-color: #000000; */
@@ -422,9 +431,9 @@ background-image: url("https://www.transparenttextures.com/patterns/white-diamon
     width: 100%;
     border-radius: 13px;
     box-shadow:
-    inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
-    inset #303030 5px 5px 9px,
-    rgb(0, 0, 0) 3px 3px 8px -3px;
+    inset #37363678 -5px -5px 9px,
+    inset #37363678 5px 5px 9px,
+    rgb(0, 0, 0) 3px 3px 18px -3px;
     font-size: 15px;
     color: #555555;
    
@@ -546,7 +555,7 @@ background-image: url("https://www.transparenttextures.com/patterns/white-diamon
     height: 40px;
     border-radius: 11px;
     background-color: #83838383;
-    background-color: #444444;
+    background-color: #222222;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
     /* background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
 
@@ -586,7 +595,7 @@ background-image: url("https://www.transparenttextures.com/patterns/white-wall-3
      /* box-shadow:
     inset #7c787870 -5px -5px 9px,
     inset #3a3a3a 5px 5px 9px; */
-    color: #000000;
+    color: #949494;
     /* color: #949494; */
     /* text-shadow:rgb(0 0 0) 5px 5px 7px; */
     box-shadow:

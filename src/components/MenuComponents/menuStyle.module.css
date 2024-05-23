@@ -145,7 +145,7 @@
 /* background-color: #3b3a3a; */
 background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
 
-background-color: #444444;
+background-color: #222222;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    box-shadow:
    inset #000000b0 -5px -5px 9px,
@@ -202,7 +202,7 @@ background-image: url("https://www.transparenttextures.com/patterns/white-wall-3
    font-size: 12px;
    /* letter-spacing: .01px; */
    color: #c7c7c7;
-   color: #000000;
+   color: #949494;
 font-weight: 900;
    @media screen and (max-width: 374.9px) {
       font-size: 9px;
@@ -427,7 +427,7 @@ font-weight: 900;
    margin: 0;
    padding: 0;
    border-radius: 0 14px 14px 0;
-   /* background: #acacac31; */
+   background: #acacac21;
    border-left: 1px solid #1a1a1a;
 
    @media screen and (min-width: 767.9px) {
@@ -632,7 +632,7 @@ color: red;
 /* background-color: #3b3a3a; */
 background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
    
-background-color: #444444;
+background-color: #222222;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
 transition: all .4s ease-out;
@@ -682,8 +682,10 @@ transition: all .4s ease-out;
   /* color: #949494; */
   font-weight: 900;
   margin-bottom: 6px;
+  display: none;
 
    @media screen and (min-width: 767.9px) {
+     display: flex;
     margin-bottom: 0px;
     margin-right: 13px;
     font-size: 15px;
@@ -716,19 +718,19 @@ transition: all .4s ease-out;
    /* margin-bottom: 3px; */
    opacity: .5;
    /* rotate: -5deg; */
-   height: 40px;
-       width: 45px;
-       top: 2px;
-       right: 8px;
+   height: 41px;
+       width: 41px;
+       top: 9px;
+       right: 9px;
     
 
     @media screen and (min-width: 767.9px) {
      
      
        margin-bottom: 0px;
-       height: 60px;
-       width: 60px;
-       top: 0px;
+       height: 55px;
+       width: 55px;
+       top: 5px;
        left: -3px;
 
        rotate: -5deg;

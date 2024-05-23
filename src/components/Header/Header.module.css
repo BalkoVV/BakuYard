@@ -147,6 +147,7 @@ background-image: url("https://www.transparenttextures.com/patterns/egg-shell.pn
 
 .headerInfoIconLocation {
 padding-right: 1.9px;
+/* height: 22px; */
 }
 
 .headerInfo h3 {
@@ -168,8 +169,8 @@ padding-right: 1.9px;
 
 .burgerLinesIcon {
   position: absolute;
-  right: 30px;
-  top: 13px;
+  right: 35px;
+  top: 18px;
   
    @media screen and (min-width: 767.9px) {
      display: none; 
