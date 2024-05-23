@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a9d16ce.css",
-    "main.js": "/static/js/main.d26c9bb7.js",
+    "main.css": "/static/css/main.95de5a5e.css",
+    "main.js": "/static/js/main.b3a79788.js",
     "static/media/map450000.png": "/static/media/map450000.b9852b23fd62a6aa79b0.png",
     "static/media/23232555.png": "/static/media/23232555.20d673c873c32dd792fa.png",
     "static/media/Constantine.ttf": "/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
     "static/media/str2.png": "/static/media/str2.c6abf30fc16c5e0a3528.png",
     "static/media/bhLogo.svg": "/static/media/bhLogo.7cf148ab0b9b06cb6bc727cb19c54d65.svg",
-    "static/media/yardBakuLogo.svg": "/static/media/yardBakuLogo.9c7a4b9b5e8d3af6aa89bf3b7b8d295e.svg",
+    "static/media/yardBakuLogo.svg": "/static/media/yardBakuLogo.554e0f0e38760ee0520af7652b90aa04.svg",
     "static/media/pizzaCardMenu.svg": "/static/media/pizzaCardMenu.9910e177a09f6fb10bbb910839c3dd59.svg",
     "static/media/pizzaCard.svg": "/static/media/pizzaCard.3c20770994cef8c0502561e0923ce8e7.svg",
     "static/media/mocktailsCardMenu.svg": "/static/media/mocktailsCardMenu.6c35f5dd2df8584c18ff3de3c89edfe7.svg",
@@ -48,6 +48,7 @@
     "static/media/sideDishCard.svg": "/static/media/sideDishCard.a78c310f94aaae5b692e778ad5154931.svg",
     "static/media/coldAppetizerCardMenu.svg": "/static/media/coldAppetizerCardMenu.42899967b4f75d8dca673eeb6c7f012b.svg",
     "static/media/coldAppetizerCard.svg": "/static/media/coldAppetizerCard.43eefbe9cf4e6b1622c7c5f98c190d5e.svg",
+    "static/media/pinInMap.svg": "/static/media/pinInMap.6bd3f1776385bbb6c4db8b0885983f09.svg",
     "static/media/mobile.svg": "/static/media/mobile.e53b51f799a743b8ec12531b8545768d.svg",
     "static/media/closhe.svg": "/static/media/closhe.f3578c6136b11118d18511c0c22e1163.svg",
     "static/media/clock.svg": "/static/media/clock.4130123e70535f2bbc2c0aea679cba6e.svg",
@@ -58,13 +59,13 @@
     "static/media/formail.svg": "/static/media/formail.a1b8eb8653c733201191a7570ce6c5ee.svg",
     "static/media/forfacebook.svg": "/static/media/forfacebook.7a3d61c7dca5284b41cd1114ff38fe16.svg",
     "static/media/dot.svg": "/static/media/dot.b4f4f8597348d068629d2637b84cc700.svg",
-    "static/media/mobileSwitch.svg": "/static/media/mobileSwitch.8881ecc1a149ef9be1af9719fd37413b.svg",
+    "static/media/mobileSwitch.svg": "/static/media/mobileSwitch.f9267bca0c6ebad784743249f0fd6c6e.svg",
     "static/media/toMenu.svg": "/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.1a9d16ce.css.map": "/static/css/main.1a9d16ce.css.map",
-    "main.d26c9bb7.js.map": "/static/js/main.d26c9bb7.js.map"
+    "main.95de5a5e.css.map": "/static/css/main.95de5a5e.css.map",
+    "main.b3a79788.js.map": "/static/js/main.b3a79788.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a9d16ce.css",
-    "static/js/main.d26c9bb7.js"
+    "static/css/main.95de5a5e.css",
+    "static/js/main.b3a79788.js"
   ]
 }
