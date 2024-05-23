@@ -89,7 +89,7 @@
    border: none;
    padding: 20px 10px;
    margin-bottom: 70px;
-   background: #00000000;
+   /* background: #00000000; */
    border-radius: 19px;
    box-shadow:
    inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
@@ -145,7 +145,7 @@
 /* background-color: #3b3a3a; */
 background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
 
-background-color: #222222;
+background-color: #282828;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    box-shadow:
    inset #000000b0 -5px -5px 9px,
@@ -427,7 +427,7 @@ font-weight: 900;
    margin: 0;
    padding: 0;
    border-radius: 0 14px 14px 0;
-   background: #acacac21;
+   /* background: #acacac21; */
    border-left: 1px solid #1a1a1a;
 
    @media screen and (min-width: 767.9px) {
@@ -632,7 +632,7 @@ color: red;
 /* background-color: #3b3a3a; */
 background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
    
-background-color: #222222;
+background-color: #282828;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
 transition: all .4s ease-out;

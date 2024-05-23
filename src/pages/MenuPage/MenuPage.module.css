@@ -90,7 +90,7 @@
    box-shadow:  5px 5px 15px 3px #00000078;
    border: none;
    background-color: #444444;
-   background-color: #222222;
+   background-color: #282828;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
    /* background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png"); */
@@ -494,7 +494,7 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
 /* background-color: #3b3a3a; */
 background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
 
-background-color: #222222;
+background-color: #282828;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 transition: all .4s ease-out;
    z-index: 9;
