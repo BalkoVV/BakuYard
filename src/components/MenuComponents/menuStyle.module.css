@@ -2,10 +2,13 @@
    position: relative;
    min-height: 85vh;
    background-repeat: repeat;
-   /* background-color: #070707; */
    background-color: #000000;
    background-position: top;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+
+   /* background-color: #373737; */
+/* background-image: url("https://www.transparenttextures.com/patterns/redox-01.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
    background-attachment: none;
 
    @media screen and (min-width: 767.9px) {
@@ -58,8 +61,7 @@
    
    font-size: 15px;
    margin: 0;
-   color: #7c7c7c;
-/* color: transparent; */
+   color: #949494;
    @media screen and (min-width: 768px) {
      
    };
@@ -83,13 +85,11 @@
 
 .dishList {
    display: grid;
-   /* width: 100%; */
    grid-template-columns: repeat(1, 1fr);
    grid-row-gap: 10px;
    border: none;
    padding: 20px 5px;
    margin-bottom: 70px;
-   /* background: #00000000; */
    border-radius: 15px;
    box-shadow:
    inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
@@ -103,7 +103,29 @@
 
   @media screen and (min-width: 1200px) {
    padding: 40px 20px;
-   /* margin-bottom: 50px; */
+  };
+}
+
+.dishLunchList {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-row-gap: 0px;
+   border: none;
+   padding: 0px 5px 0px;
+   margin-bottom: 50px;
+   border-radius: 15px;
+   box-shadow:
+   inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
+   inset #303030 5px 5px 9px,
+   rgb(0, 0, 0) 3px 3px 8px -3px;
+   z-index: 9;
+      
+   @media screen and (min-width: 767.9px) {
+      padding: 30px 15px;
+   };
+
+  @media screen and (min-width: 1200px) {
+   padding: 40px 20px;
   };
 }
 
@@ -134,27 +156,22 @@
    justify-content: space-between;
    height: 60px;
    margin-bottom: 17px;
-    transition: all .3s ease-out; 
-    border-radius: 15px;
-    /* background-color: #010101; */
-    background-color: #141414;
-/* background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png"); */
-   background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
-   background-color: #303030;
-/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-/* background-color: #3b3a3a; */
-background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+   transition: all .3s ease-out; 
+   border-radius: 15px;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   background-color: #333333;
 
-background-color: #282828;
-background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   
-background-color: #252525;
-/* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
-box-shadow:
-   inset #000000b0 -5px -5px 9px,
-   inset #7d7d7d93 5px 5px 9px; 
-   
 
+   background-color: #373737;
+background-image: url("https://www.transparenttextures.com/patterns/solid.png");
+background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+
+   box-shadow:
+      inset #000000b0 -5px -5px 9px,
+      inset #7d7d7d93 5px 5px 9px; 
+   
    @media screen and (min-width: 768px) {
       height: 65px;
       margin-bottom: 13px;
@@ -166,8 +183,233 @@ box-shadow:
    };
  }
 
+ .dishListItemLunch {
+   position: relative;
+   width: 100%;
+   display: flex; 
+   flex-direction: column;
+   /* padding-left: 3px; */
+   /* align-items: center; */
+   /* justify-content: space-between; */
+   /* justify-content: end; */
+   margin-bottom: 17px;
+   transition: all .3s ease-out; 
+   border-radius: 15px;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   background-color: #333333;
+   box-shadow:
+      inset #000000b0 -5px -5px 9px,
+      inset #7d7d7d93 5px 5px 9px; 
+   
+   @media screen and (min-width: 768px) {
+      /* height: 65px;
+      margin-bottom: 13px; */
+   };
+
+   @media screen and (min-width: 1200px) {
+      /* height: 70px;
+      margin-bottom: 16px; */
+   };
+}
+
+.dishListItemLunchManagement {
+ display: flex;
+ justify-content: space-between;
+}
+
+/* .dishListItemLunchInfoBox {
+display: flex;
+width: 100%;
+justify-content: space-between;
+} */
+.dishListItemLunchInfo,
+.dishListItemLunchFirst, 
+.dishListItemLunchSecond,
+.dishListItemLunchSalad,
+.dishListItemLunchDrink,
+.dishListItemLunchBread {
+   display: flex;
+   /* width: 100%; */
+   justify-content: space-between;
+   /* justify-content: start; */
+   align-items: center;
+   height: 60px;
+   /* background-color: rgba(255, 255, 255, 0.275); */
+   border-bottom: 1px solid #000;
+}
+
+.dishListItemLunchInfo {
+   border-top: none;
+}
+
+.dishListItemLunchDay {
+ display: flex;
+ /* height: 60px; */
+ width: 100%;
+justify-content: center;
+align-items: center;
+}
+
+.dishListItemLunchPrice {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+ width: 60px;
+ height: 60px;
+ /* background-color: rgb(36, 5, 5); */
+}
+
+.dishListItemLunchAddBox {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background-color: #fff; */
+   height: 70px;
+   }
+   
+
+.dishListLunchButtonAddBox {
+   position: absolute;
+   right: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 60px;
+   width: 70px;
+   margin: 0;
+   z-index: 9;
+
+   @media screen and (min-width: 767.9px) {
+      /* height: 65px;
+      width: 65px;
+      justify-content: center;
+      border-left: 1px solid #1a1a1a; */
+   };
+
+   @media screen and (min-width: 1200px) {
+      /* height: 70px;
+      width: 70px;
+      justify-content: center;
+      border-left: 1px solid #1a1a1a; */
+   };
+}
+
+.dishListLunchButtonAdd {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   border: none;
+   padding: 0;
+   margin: 0;
+   overflow: hidden;
+   font-size: 25px;
+   border: 2px solid #94949465;
+   border-radius: 14px;
+
+   @media screen and (min-width: 767.9px) {
+      /* width: 40px;
+      height: 40px; */
+   };
+
+   @media screen and (min-width: 1200px) {
+      /* width: 45px;
+      height: 45px; */
+   };
+}
+.dishListItemLunchNameFirst,
+.dishListItemLunchNameSecond,
+.dishListItemLunchNameSalad,
+.dishListItemLunchNameDrink,
+.dishListItemLunchNameBread {
+   display: flex;
+   /* width: 100%; */
+   color: rgb(199, 199, 199);
+}
+.dishListItemLunchPrice,
+.dishListItemLunchWeigthFirst,
+.dishListItemLunchWeigthSecond,
+.dishListItemLunchWeigthSalad,
+.dishListItemLunchWeigthDrink,
+.dishListItemLunchWeigthBread {
+   display: flex;
+   /* flex-direction: column; */
+   align-items: center;
+   justify-content: center;
+   /* padding: 0; */
+   height: 60px;
+   width: 60px;
+   border-left: 1px solid #1a1a1a;
+   background-color: rgba(18, 18, 18, 0.375);
+   color: #949494;
+}
+
+.dishListItemLunchOptionsSalad {
+color: rgb(128, 43, 0);
+}
+
+
+
+
+.dishListButtonAddBox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 60px;
+   width: 60px;
+   margin: 0;
+   padding: 0;
+   border-radius: 0 14px 14px 0;
+   background: #111010;
+   background: #00000087;
+
+   border-left: 1px solid #2a2a2a;
+
+   @media screen and (min-width: 767.9px) {
+      height: 65px;
+      width: 65px;
+      justify-content: center;
+      border-left: 1px solid #1a1a1a;
+   };
+
+   @media screen and (min-width: 1200px) {
+      height: 70px;
+      width: 70px;
+      justify-content: center;
+      border-left: 1px solid #1a1a1a;
+   };
+}
+
+.dishListButtonAdd {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   border: none;
+   padding: 0;
+   margin: 0;
+   overflow: hidden;
+   font-size: 25px;
+   border: 2px solid #94949465;
+   border-radius: 14px;
+
+   @media screen and (min-width: 767.9px) {
+      width: 40px;
+      height: 40px;
+   };
+
+   @media screen and (min-width: 1200px) {
+      width: 45px;
+      height: 45px;
+   };
+}
+
+
+
  .dishListItem:hover {
-  
    transition: all .3s ease-out;
    scale: 1.02;
 }
@@ -366,13 +608,14 @@ box-shadow:
    align-items: center;
    justify-content: center;
    height: 60px;
-   width: 40px;
+   width: 50px;
    margin: 0;
    padding: 0;
-   font-size: 9px;
-   color: #6e432e;
+   font-size: 10px;
+   color: #949494;
    border-left: 1px solid #1a1a1a;
    letter-spacing: -0.1px;
+   background: #00000087;
 
    @media screen and (max-width: 399px) {
       font-size: 8px;
@@ -396,13 +639,15 @@ box-shadow:
    align-items: center;
    justify-content: center;
    height: 60px;
-   width: 40px;
+   width: 50px;
    margin: 0;
    padding: 0;
+
    font-size: 11px;
    letter-spacing: -0.1px;
-   color: #5e2000;
+   color: #949494;
    border-left: 1px solid #1a1a1a;
+   background: #00000087;
     
    @media screen and (max-width: 399px) {
       font-size: 8px;
@@ -423,201 +668,9 @@ box-shadow:
    };
 }
  
-.dishListButtonAddBox {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 60px;
-   margin: 0;
-   padding: 0;
-   border-radius: 0 14px 14px 0;
-   background: #acacac21;
-   border-left: 1px solid #1a1a1a;
-
-   @media screen and (min-width: 767.9px) {
-      height: 65px;
-      width: 65px;
-      justify-content: center;
-      border-left: 1px solid #1a1a1a;
-   };
-
-   @media screen and (min-width: 1200px) {
-      height: 70px;
-      width: 70px;
-      justify-content: center;
-      border-left: 1px solid #1a1a1a;
-   };
-}
-
-.dishListButtonAdd {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 40px;
-   height: 40px;
-   border: none;
-   padding: 0;
-   margin: 0;
-   overflow: hidden;
-   /* color: #7b7a7a; */
-   font-size: 25px;
-
-   /* background: transparent; */
-   /* background-color: #0f0f0f;
-   background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-   /* border-radius: 11px; */
-   /* scale: 1.02; */
-
-   @media screen and (min-width: 767.9px) {
-      width: 40px;
-      height: 40px;
-   };
-
-   @media screen and (min-width: 1200px) {
-      width: 45px;
-      height: 45px;
-   };
-}
-
-/* .dishListButtonAdd:hover  {
-   cursor: pointer;
- 
-} */
-
-/* .dishListButtonAdd added {
-color: red;
-} */
-
-/* =========================================== */
-
-/* .dishTablePrice100 {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 70px;
-   margin: 0;
-   padding: 0;
-   right: 202px;
-   font-size: 15px;
-   top: 0;
-   border-left: 1px solid #39393969;
-   background-color: #45454520;
-} */
-
-/* .dishTablePriceNotDelivery {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 100px;
-   margin: 0;
-   padding: 0;
-   right: 0px;
-   font-size: 15px;
-   top: 0;
-   border-left: 1px solid #39393969;
-} */
-/* 
-.dishTableWeigth100 {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 70px;
-   margin: 0;
-   padding: 0;
-   right: 273px;
-   font-size: 15px;
-   top: 0;
-   border-left: 1px solid #39393969;
-   background-color: #45454520;
-} */
-
-/* .dishTablePrice50 {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 70px;
-   margin: 0;
-   padding: 0;
-   right: 344px;
-   font-size: 15px;
-   top: 0;
-   border-left: 1px solid #39393969;
-} */
-
-/* .dishTableWeigth50 {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 70px;
-   margin: 0;
-   padding: 0;
-   right: 415px;
-   font-size: 15px;
-   top: 0;
-   border-left: 1px solid #39393969;
-} */
-
-/* .dishTableWeigthNotDelivery {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 100px;
-   margin: 0;
-   padding: 0;
-   right: 101px;
-   font-size: 15px;
-   top: 0;
-   border-left: 1px solid #39393969;
-} */
-
-/* ============================================ */
-
-     
 
 
-/* ================================================ */
 
-   /* .dishTable {
-   border: 1px solid red;
-   border-radius: 13px;
-   padding: 10px;
-   } */
-   /* .dishTableList {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-row-gap: 20px;
-   } */
-
-   /* .dishTableListItem {
-      display: grid;
-      
-      border-radius: 13px;
-   } */
-
-   /* .dishTableListItem ul {
-      
-      border-radius: 13px;
-      overflow: hidden;
-      background-color: rgba(158, 155, 155, 0.139);
-   } */
-
-   /* .dishTableListItem ul li {
-      display: flex;
-      justify-content:space-between;
-      align-items: center;
-      background-color: rgba(110, 105, 105, 0.394);
-      
-      height: 50px;
-   } */
-
-/* ============================================== */
 
 .toMenuButton {
    position: absolute;
@@ -630,21 +683,10 @@ color: red;
    border-radius: 13px;
    overflow: hidden;
    border: none;
-
    box-shadow:  4px 4px 15px 2px #00000078;
-   /* background-color: hsl(0, 0%, 6%); */
-   /* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-   /* background-color: #303030; */
-/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-/* background-color: #3b3a3a; */
-/* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
-   
-background-color: #252525;
-background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-
-/* background-color: #222222; */
-/* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
-transition: all .4s ease-out;
+   background-color: #333333;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   transition: all .4s ease-out;
    z-index: 9;
     
     @media screen and (min-width: 767.9px) {
@@ -724,24 +766,18 @@ transition: all .4s ease-out;
    justify-content: center;
    align-items: center;
    transform: rotateY(180deg);
-   /* margin-bottom: 3px; */
-   /* opacity: .7; */
-   /* rotate: -5deg; */
    height: 41px;
-       width: 41px;
-       top: 9px;
-       right: 9px;
+   width: 41px;
+   top: 9px;
+   right: 9px;
     
 
     @media screen and (min-width: 767.9px) {
-     
-     
        margin-bottom: 0px;
        height: 55px;
        width: 55px;
        top: 5px;
        left: -3px;
-
        rotate: -5deg;
        transition: all .4s ease-out;
       
@@ -753,7 +789,7 @@ transition: all .4s ease-out;
      }; */
 }
 
-  /* ================================================ */
+
 
   
   

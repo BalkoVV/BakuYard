@@ -26,6 +26,11 @@ background-color: #252525;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
 background-color: #222222;
+
+
+
+background-color: #252525;
+background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
 /* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
 transition: all .4s ease-out;
    z-index: 9;
@@ -78,6 +83,7 @@ transition: all .4s ease-out;
   font-weight: 900;
   margin-bottom: 6px;
   display: none;
+  text-shadow: 1px 1px 2px black;
 
    @media screen and (min-width: 767.9px) {
      display: flex;
@@ -111,7 +117,7 @@ transition: all .4s ease-out;
    align-items: center;
    transform: rotateY(180deg);
    /* margin-bottom: 3px; */
-   opacity: 1;
+   opacity: .6;
    /* rotate: -5deg; */
    height: 41px;
        width: 41px;
@@ -123,9 +129,9 @@ transition: all .4s ease-out;
      
      
        margin-bottom: 0px;
-       height: 50px;
-       width: 50px;
-       top: 4px;
+       height: 48px;
+       width: 48px;
+       top: 5px;
        left: 0px;
 
        rotate: -5deg;

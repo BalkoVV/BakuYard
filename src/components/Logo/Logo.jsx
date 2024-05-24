@@ -2,7 +2,7 @@
 
 import React from 'react';
 // import logo from 'images/yardBakuLogo.svg';
-import logo from 'images/MainLogoBY.svg';
+import logo from 'images/SideLogoBY.svg';
 import styles from 'components/Logo/Logo.module.css';
 
 

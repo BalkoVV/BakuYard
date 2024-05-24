@@ -7,11 +7,7 @@
    height="33"
    viewBox="0 0 173 33"
    id="svg870"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  xmlns="http://www.w3.org/2000/svg">
   <defs
      id="defs874">
     <clipPath
@@ -223,13 +219,6 @@
        id="path828-6"
        style="fill:#494949;fill-opacity:0;stroke:#494949;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
-  <metadata
-     id="metadata21512">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:title>yardBakuLogo</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+ 
+
 </svg>

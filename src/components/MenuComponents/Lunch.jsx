@@ -17,6 +17,7 @@ import styles from 'components/MenuComponents/menuStyle.module.css';
 import lunchMenu1 from 'images/lunchCardMenu.svg';
 import lunchMenu2 from 'images/lunchCardMenu.svg';
 
+
 export const Lunch = () => {
   const { addToCart, removeFromCart, cartItems } = useContext(CartContext);
   const [lunchItems, setLunchItems] = useState([]);
@@ -98,54 +99,72 @@ export const Lunch = () => {
      
 
        
-          <table className={styles.dishTable}>
+          <table >
 
-            <tbody  className={styles.dishTableList}>
+            <tbody >
               {lunchItems.map((item) => (
-                <tr key={item.id}  className={styles.dishTableListItem}>
-                  <ul>
-                  <li>
-                    <span>
-                    <td>{item.назва}</td>
-                    </span>
-                    <span>
-                    <td>{item.ціна}</td>
-                    <td>
-                    <AddButton
-                        onAdd={() => addToCart(item)}
-                        onRemove={() => {
-                          removeFromCart(item.id);
-                          updateButtonState(item.id);
-                        }}
-                        alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                      />
+                <tr key={item.id}  className={styles.dishLunchList}>
+                  <span className={styles.dishListItemLunchAddBox}>
+                  <td className={styles.dishListItemLunchDay}>{item.назва}</td>
+                  <span className={styles.dishListLunchButtonAddBox}>
+                        <td className={styles.dishListLunchButtonAdd}>
+                        
 
-                    </td>
+                          <AddButton
+                            onAdd={() => addToCart(item)}
+                            onRemove={() => {
+                              removeFromCart(item.id);
+                              updateButtonState(item.id);
+                            }}
+                            alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                          />
+
+
+                        </td>
                     </span>
+                  </span>
+                  <ul className={styles.dishListItemLunch}>
+                 
+                  <li  className={styles.dishListItemLunchFirst}>
+                    <td className={styles.dishListItemLunchNameFirst}>{item.назва_перше}</td>
+                    <td className={styles.dishListItemLunchWeigthFirst}>{item.вага_перше}</td>
                   </li>
-                  <li>
-                    <td className={styles.dishTableNameFirst}>{item.назва_перше}</td>
-                    <td className={styles.dishTableWeigthFirst}>{item.вага_перше}</td>
-                  </li>
-                  <li>
-                    <td className={styles.dishTableNameSecond}>{item.назва_друге}</td>
-                    <td className={styles.dishTableWeigthSecond}>{item.вага_друге}</td>
+                  <li className={styles.dishListItemLunchSecond}>
+                    <td className={styles.dishListItemLunchNameSecond}>{item.назва_друге}</td>
+                    <td className={styles.dishListItemLunchWeigthSecond}>{item.вага_друге}</td>
                   </li>
                  
-                  <li>
-                    <td className={styles.dishTableNameSalad}>{item.назва_салат}</td>
-                    <td className={styles.dishTableOptionsSalad}>{item.опції_салат}</td>
-                    <td className={styles.dishTableWeigthSalad}>{item.вага_салат}</td>
+                  <li className={styles.dishListItemLunchSalad}>
+                    <td className={styles.dishListItemLunchNameSalad}>{item.назва_салат}</td>
+                    {/* <td className={styles.dishListItemLunchOptionsSalad}>{item.опції_салат}</td> */}
+                    <td className={styles.dishListItemLunchWeigthSalad}>{item.вага_салат}</td>
                     
                   </li>
-                  <li>
-                    <td className={styles.dishTableNameDrink}>{item.назва_напій}</td>
-                    <td className={styles.dishTableWeigthDrink}>{item.вага_напій}</td>
+                  <li className={styles.dishListItemLunchDrink}>
+                    <td className={styles.dishListItemLunchNameDrink}>{item.назва_напій}</td>
+                    <td className={styles.dishListItemLunchWeigthDrink}>{item.вага_напій}</td>
                   </li>
-                  <li> 
-                    <td className={styles.dishTableBread}>{item.назва_хліб}</td>
-                    <td className={styles.dishTableBread}>{item.вага_хліб}</td>
+                  <li className={styles.dishListItemLunchBread}> 
+                    <td className={styles.dishListItemLunchNameBread}>{item.назва_хліб}</td>
+                    <td className={styles.dishListItemLunchWeigthBread}>{item.вага_хліб}</td>
                   </li>
+                  <li className={styles.dishListItemLunchManagement}>
+                    
+                   
+                    <td className={styles.dishListItemLunchInfo}>
+                       <h4>
+                          * замовлення у відповідний день
+                       </h4>
+                     </td>
+                    
+                     <td className={styles.dishListItemLunchPrice}>
+                       {item.ціна}
+                     </td>
+                   
+ 
+                    
+                     
+                   </li>
                   </ul>
                 </tr>
               ))}

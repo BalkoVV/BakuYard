@@ -159,7 +159,7 @@ background-image: url("https://www.transparenttextures.com/patterns/txture.png")
 .contactsListItem img {
    position: absolute;
    rotate: -5deg;
-   opacity: 1;
+   opacity: .6;
    display: block;
    height: 55px;
    transition: all .4s ease-out;
@@ -218,8 +218,12 @@ background-image: url("https://www.transparenttextures.com/patterns/txture.png")
 
 
 
-background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+/* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); */
 background-color: #252525;
+background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
+/* background-color: #373737; */
+/* background-image: url("https://www.transparenttextures.com/patterns/solid.png"); */
+
 /* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
 /* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
 /* background-color: #3b3a3a; */

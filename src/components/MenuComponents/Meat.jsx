@@ -116,9 +116,6 @@ style={{
                 
                  <div className={styles.dishListItemInfo}>
 
-                    {/* <span className={styles.dishListItemCategory}>
-                      <td>{item.категорія}</td>
-                    </span> */}
                   
                     <span className={styles.dishListItemName} >
                       <td className={styles.dishListItemNameDescription}>{item.назва}</td>
@@ -164,6 +161,7 @@ style={{
               ))}
             </tbody>
           </table>
+          
           
        </div>
       </div>

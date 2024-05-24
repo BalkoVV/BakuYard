@@ -8,6 +8,7 @@
    viewBox="0 0 173 33"
    id="svg870"
    xmlns="http://www.w3.org/2000/svg">
+
   <defs
      id="defs874">
     <clipPath
@@ -99,6 +100,12 @@
   </defs>
   <title
      id="title824">yardBakuLogo</title>
+     <!-- <defs>
+    <linearGradient id="innerShadowGradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(0, 0, 0, 0.5);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(0, 0, 0, 0);stop-opacity:0" />
+    </linearGradient>
+  </defs> -->
   <g
      id="g24167"
      transform="translate(-0.03426544,1.1581794)">
