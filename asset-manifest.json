@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.70702806.css",
-    "main.js": "/static/js/main.c034621d.js",
+    "main.css": "/static/css/main.03c55c69.css",
+    "main.js": "/static/js/main.55487787.js",
     "static/media/inMap.png": "/static/media/inMap.7c68d7b44ab412af869a.png",
     "static/media/23232555.png": "/static/media/23232555.20d673c873c32dd792fa.png",
     "static/media/Constantine.ttf": "/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
@@ -9,7 +9,8 @@
     "static/media/facebookQR.png": "/static/media/facebookQR.d2e472d3247e96a635c8.png",
     "static/media/MenuBusinessCard.png": "/static/media/MenuBusinessCard.5a8511f4aa9d16e04026.png",
     "static/media/str2.png": "/static/media/str2.c6abf30fc16c5e0a3528.png",
-    "static/media/MainLogoBY.svg": "/static/media/MainLogoBY.a2849d7bd169a35dc39ca25da7bd7212.svg",
+    "static/media/MainLogoBY.svg": "/static/media/MainLogoBY.c90fcfcf21e148735680a6bd7b94958a.svg",
+    "static/media/SideLogoBY.svg": "/static/media/SideLogoBY.a3f2654c28b6812a86148e16af1451c3.svg",
     "static/media/bhLogo.svg": "/static/media/bhLogo.7cf148ab0b9b06cb6bc727cb19c54d65.svg",
     "static/media/pizzaCardMenu.svg": "/static/media/pizzaCardMenu.9910e177a09f6fb10bbb910839c3dd59.svg",
     "static/media/pizzaCard.svg": "/static/media/pizzaCard.3c20770994cef8c0502561e0923ce8e7.svg",
@@ -66,11 +67,11 @@
     "static/media/dot.svg": "/static/media/dot.b4f4f8597348d068629d2637b84cc700.svg",
     "static/media/mobileSwitch.svg": "/static/media/mobileSwitch.fbd81f0ffcbc9f0d3f9daa0da92bd41d.svg",
     "static/media/toMenu.svg": "/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.70702806.css.map": "/static/css/main.70702806.css.map",
-    "main.c034621d.js.map": "/static/js/main.c034621d.js.map"
+    "main.03c55c69.css.map": "/static/css/main.03c55c69.css.map",
+    "main.55487787.js.map": "/static/js/main.55487787.js.map"
   },
   "entrypoints": [
-    "static/css/main.70702806.css",
-    "static/js/main.c034621d.js"
+    "static/css/main.03c55c69.css",
+    "static/js/main.55487787.js"
   ]
 }
