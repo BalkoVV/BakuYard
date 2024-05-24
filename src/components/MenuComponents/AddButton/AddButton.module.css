@@ -3,34 +3,37 @@
    height: 100%;
    width: 100%;
    margin: 0;
-   border-radius: 12px;
+   border-radius: 13px;
    align-items: center;
    justify-content: center;
    text-transform: uppercase;
    font-weight: 900;
    transition: all 0.4s ease-out;
    cursor: pointer;
+   overflow: hidden;
+   background-color: #000000;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    /* border: 1px solid rgba(0, 0, 0, 0.196); */
    box-shadow:
-   inset #0e0e0e -1px -1px 9px,
-   inset #151515 1px 1px 9px,
-   rgb(0, 0, 0) 3px 3px 8px -3px;
+   inset #161616 -1px -1px 9px,
+   inset #383838 1px 1px 9px;
+   /* rgb(0, 0, 0) 3px 3px 8px -3px; */
     /* background: #141414; */
-    background-color: #2b00008a;
-    background-color: #0000006d;
+    /* background-color: #2b00008a; */
+    /* background-color: #0000006d; */
 }
 
 
 .added {
    color: #7c7c7c;
    color: #4c0000;
-   background-color: #98989870;
+   background-color: #989898ba;
    /* background-color: #69000096; */
    /* Стилі для стану "додано" */
  }
  
  .notAdded {
-   color: #7c7c7c;
+   color: #949494;
    
    /* Стилі для стану "не додано" */
  }

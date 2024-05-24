@@ -15,18 +15,18 @@
    border: none;
 
    box-shadow:  4px 4px 15px 2px #00000078;
-   background-color: #0f0f0f;
-   background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
-   background-color: #303030;
+   /* background-color: #0f0f0f; */
+   /* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+   /* background-color: #303030; */
 /* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
 /* background-color: #3b3a3a; */
-background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+/* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
    
-background-color: #282828;
+background-color: #252525;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
 background-color: #222222;
-background-image: url("https://www.transparenttextures.com/patterns/slash-it.png");
+/* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
 transition: all .4s ease-out;
    z-index: 9;
     
@@ -111,7 +111,7 @@ transition: all .4s ease-out;
    align-items: center;
    transform: rotateY(180deg);
    /* margin-bottom: 3px; */
-   opacity: .7;
+   opacity: 1;
    /* rotate: -5deg; */
    height: 41px;
        width: 41px;
