@@ -7,7 +7,8 @@ import FacebookIcon from 'components/Icons/FacebookIcon/FacebookIcon';
 import MailIcon from 'components/Icons/MailIcon/MailIcon';
 import LocationIcon from 'components/Icons/LocationIcon/LocationIcon';
 import ClockIcon from 'components/Icons/ClockIcon/ClockIcon';
-import PhonesIcon from 'components/Icons/PhonesIcon/PhonesIcon';
+import BlackberryPhoneIcon from 'components/Icons/BlackberryPhoneIcon/BlackberryPhoneIcon';
+import ApplePhoneIcon from 'components/Icons/ApplePhoneIcon/ApplePhoneIcon';
 import RetroPhonesIcon from 'components/Icons/RetroPhonesIcon/RetroPhonesIcon';
 // import flagMapIcon from 'images/flagMap.svg';
 
@@ -51,12 +52,12 @@ export const ContactsPage = () => {
                   </li>
 
                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
-                    <PhonesIcon className={styles.phoneIconContact}/>
+                    <BlackberryPhoneIcon className={styles.phoneIconContact}/>
                     <a href="tel:+380682393837" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 068 239 38 37</a>
                   </li>
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
-                    <PhonesIcon className={styles.phoneIconContact}/>
+                    <ApplePhoneIcon className={styles.phoneIconContact}/>
                     <a href="tel:+380934423028" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 093 442 30 28</a>
                   </li>          
 

@@ -93,6 +93,25 @@
    background-color: #282828;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
+background-color: #595959;
+background-image: url("https://www.transparenttextures.com/patterns/tasky.png");
+background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/tactile-noise-light.png");
+background-color: #232323;
+background-image: url("https://www.transparenttextures.com/patterns/straws.png");
+background-color: #222222;
+background-image: url("https://www.transparenttextures.com/patterns/slash-it.png");
+/* background-color: #000000; */
+/* background-image: url("https://www.transparenttextures.com/patterns/simple-dashed.png"); */
+
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
    /* background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png"); */
    /* background-color: #0f0f0f;
 background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
@@ -262,7 +281,7 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
 .dishCard:hover .dishCardImage,
 .dishCard:active .dishCardImage,
 .dishCard:focus .dishCardImage {
-   rotate: 0deg;
+   /* rotate: 0deg; */
    /* scale: 1.1; */
    transition: all .4s ease-out;
    opacity: .7;
@@ -496,6 +515,8 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
 
 background-color: #282828;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+background-color: #222222;
+background-image: url("https://www.transparenttextures.com/patterns/slash-it.png");
 transition: all .4s ease-out;
    z-index: 9;
     
@@ -539,8 +560,8 @@ transition: all .4s ease-out;
   margin: 0;
   font-size: 9px;
   transition: all .4s ease-out;
-  color: #9b9b9b;
-  color: #000000;
+  color: #949494;
+  /* color: #000000; */
   font-weight: 900;
   margin-bottom: 9px;
   display: none;
@@ -560,7 +581,7 @@ transition: all .4s ease-out;
 
 .toBasketButton:hover .toBasketDescription {
 
- color: #949494;
+ color: #e9e9e9;
      transition: all .4s ease-out;
 }
 
@@ -575,7 +596,7 @@ transition: all .4s ease-out;
    display: flex;
    justify-content: center;
    align-items: center;
-  opacity: .5;
+  opacity: .7;
    height: 51px;
        width: 51px;
        top: 4px;
@@ -635,7 +656,7 @@ transition: all .4s ease-out;
      
 .basketIcon.nonEmpty {
    fill: #949494;
-   opacity: .5;
+   opacity: .7;
 }
 
 /* .basketBadge {
@@ -653,9 +674,9 @@ color: transparent;
    width: 13px;
    border-radius: 50%;
    color: #7a0000;
-   background: #4e0000;
+   background: #4c0000;
    color: #c7c7c7;
-   border: 1px solid #949494a1;
+   border: 1px solid #949494;
    /* opacity: .5; */
    /* background: #7a0000; */
    /* font-weight: 900; */

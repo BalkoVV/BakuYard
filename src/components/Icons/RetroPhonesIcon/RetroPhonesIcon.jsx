@@ -1,7 +1,7 @@
 // RetroPhonesIcon.jsx
 
 import React from 'react';
-import retroPhonesIcon from 'images/retroPhone.svg';
+import retroPhonesIcon from 'images/radioPhone.svg';
 import styles from 'components/Logo/Logo.module.css';
 
 

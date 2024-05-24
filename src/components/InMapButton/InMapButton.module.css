@@ -25,6 +25,8 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
 background-color: #282828;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
+background-color: #222222;
+background-image: url("https://www.transparenttextures.com/patterns/slash-it.png");
 transition: all .4s ease-out;
    z-index: 9;
     
@@ -109,7 +111,7 @@ transition: all .4s ease-out;
    align-items: center;
    transform: rotateY(180deg);
    /* margin-bottom: 3px; */
-   opacity: .5;
+   opacity: .7;
    /* rotate: -5deg; */
    height: 41px;
        width: 41px;
@@ -124,7 +126,7 @@ transition: all .4s ease-out;
        height: 50px;
        width: 50px;
        top: 4px;
-       left: -5px;
+       left: 0px;
 
        rotate: -5deg;
        transition: all .4s ease-out;

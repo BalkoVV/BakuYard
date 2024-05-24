@@ -1,0 +1,159 @@
+/*  */
+
+.businessCardPage {
+   position: relative;
+   min-height: 85vh;
+  
+   /* background-color: #070707; */
+   background-color: #000000;
+  
+
+
+   @media screen and (min-width: 767.9px) {
+     };
+     @media screen and (min-width: 1200px) {
+      background-attachment: fixed;
+     };
+
+}
+
+.cardHolder {
+   position: relative;
+ display: flex;
+ justify-content: center;
+}
+
+.businessCardTop {
+ display: flex;
+ align-items: center;
+
+ /* margin-left: 300px; */
+ margin: 150px 170px;
+ height: 50mm;
+ width: 90mm;
+ background-color: rgb(0, 0, 0);
+ border: .5px solid rgb(17, 17, 17);
+ /* border-radius: 9px; */
+ scale: 1.8;
+ box-shadow: -3px 3px 19px 3px #4a4a4a90;}
+
+.mainLogoTop {
+   display: flex;
+   width: 50%;
+ padding-left: 15px;
+ padding-right: 15px;
+}
+
+.lineTop {
+ display: flex;
+ height: 170px;
+ width: .1px;
+ background-color: #222222ff;
+}
+
+.infoTop {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ /* margin-left: 15px; */
+height: 100%;
+/* list-style-type: circle; */
+}
+
+.infoTop li {
+ display: flex;
+ justify-content: start;
+ align-items: center;
+ margin: 5px 0;
+ padding: 0 0 0 15px;
+ 
+ /* background-color: #fff; */
+}
+
+.infoTop li h5 {
+   display: flex;
+   justify-content: start;
+   width: 100%;
+ margin: 0;
+ padding: 0;
+ font-size: 7px;
+ 
+}
+
+.infoTopDescription {
+   color: #2c2c2c;
+   font-weight: 900;
+}
+
+.businessCardBack {
+   /* position: absolute; */
+   display: flex;
+   align-items: center;
+   margin-top: 150px;
+   /* margin-left: 300px; */
+   margin: 150px 170px;
+   height: 190px;
+   width: 340px;
+   background-color: rgb(0, 0, 0);
+   border: .5px solid rgb(17, 17, 17);
+   /* border-radius: 9px; */
+   scale: 1.8;
+   box-shadow: 3px 3px 19px 3px #4a4a4a90;
+  }
+  
+  .menuQrBack {
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   background:url("images/MenuBusinessCard.png");
+   background-size: 80%;
+   background-position: center;
+   background-repeat: no-repeat;
+   overflow: hidden;
+   height: 190px;
+   width: 210px;
+   /* background-color: #fff; */
+  }
+  
+  .lineBack {
+   display: flex;
+   height: 170px;
+   width: .1px;
+   background-color: #222222ff;
+  }
+  
+  .infoBack {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  height: 190px;
+  width: 129px;
+  padding: 20px 0;
+  }
+
+  .facebookQrBack {
+   display: flex;
+   height: 85px;
+   background: url('images/facebookQR.png');
+   /* padding-top: 15px; */
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   /* background-color: #fff; */
+   /* background-color: rgba(0, 0, 255, 0.173); */
+
+}
+  .instagramQrBack {
+   display: flex;
+   height: 85px;
+   background: url('images/instagramQR.png');
+
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   /* background-color: #fff; */
+   /* background-color: rgba(0, 128, 0, 0.256); */
+
+}
+  
+ 

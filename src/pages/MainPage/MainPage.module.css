@@ -180,14 +180,19 @@ box-shadow:
     height: 380px;
     justify-content: center;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 5px;
     /* box-shadow: 0 0 20px 9px #00000070;    */
     /* box-shadow: 0 0 50px 22px #00000070;   */
     background: #282828;
     border-radius: 22px;
-    box-shadow: 0 0 50px 22px #00000070;   
+    /* box-shadow: 0 0 50px 22px #00000070;    */
+    box-shadow:
+   inset #000000b0 -5px -5px 9px,
+   inset #7d7d7d93 5px 5px 9px; 
     
-    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); 
+    /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");  */
+    background-color: #222222;
+background-image: url("https://www.transparenttextures.com/patterns/slash-it.png");
     /* background-color: #98989811; */
     /* background-color: #05050582; */
 /* background-image: url("https://www.transparenttextures.com/patterns/dimension.png"); */
@@ -217,6 +222,7 @@ background-image: url("https://www.transparenttextures.com/patterns/white-diamon
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     @media screen and (min-width: 768px) {
+      margin: 0 20px;
       height: 700px;
       padding: 0 40px;
     };
@@ -358,18 +364,26 @@ background-image: url("https://www.transparenttextures.com/patterns/white-diamon
     align-items: center;
     justify-content: center;
     padding: 0 20px;
-    margin: 0 20px;
+    margin: 0 10px;
     background: #282828;
     border-radius: 22px;
     box-shadow: 0 0 50px 22px #00000070;   
     
-    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); 
+
+    box-shadow:
+   inset #000000b0 -5px -5px 9px,
+   inset #7d7d7d93 5px 5px 9px; 
+    
+    /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");  */
+    background-color: #222222;
+background-image: url("https://www.transparenttextures.com/patterns/slash-it.png");
      /* background-color: #98989811; */
     /* background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png"); */
     /* background-color: #000000; */
     /* background-image: url("https://www.transparenttextures.com/patterns/soft-kill.png"); */
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     @media screen and (min-width: 768px) {
+      margin: 0 90px;
       height: 400px;
     };
     @media screen and (min-width: 1200px) {
@@ -529,10 +543,10 @@ background-image: url("https://www.transparenttextures.com/patterns/white-diamon
   .featuresBottom {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 10px;
    
     width: 100%;
-    padding: 0 50px;
+    padding: 0 20px;
 
     @media screen and (min-width: 768px) {
       grid-column-gap: 15px;
@@ -552,11 +566,13 @@ background-image: url("https://www.transparenttextures.com/patterns/white-diamon
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 40px;
-    border-radius: 11px;
+    height: 70px;
+    border-radius: 13px;
     background-color: #83838383;
     background-color: #282828;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+background-color: #222222;
+background-image: url("https://www.transparenttextures.com/patterns/slash-it.png");
     /* background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
 
     background-color: #0f0f0f;
@@ -571,13 +587,13 @@ background-image: url("https://www.transparenttextures.com/patterns/white-wall-3
       2px 8px 19px 3px #00000026;
 
     @media screen and (min-width: 768px) {
-      height: 60px;
+      /* height: 60px; */
     };
 
     @media screen and (min-width: 1200px) {
       
       /* background-attachment: fixed; */
-      height: 70px;
+      /* height: 70px; */
     };
    }
 
