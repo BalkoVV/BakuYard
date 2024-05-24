@@ -151,7 +151,7 @@ box-shadow:
       font-size: 15px;
       line-height: 45px;
       color: #7c7c7c;
-      text-shadow: rgb(0, 0, 0) 0px 0px 15px;
+      text-shadow: 4px 4px 2px black;
       font-weight: 500;
       letter-spacing: 0.1px;
   
@@ -182,10 +182,11 @@ box-shadow:
     height: 380px;
     justify-content: center;
     align-items: center;
-    background: #282828;
+    /* background: #282828; */
     box-shadow: 0 0 50px 22px #00000070;   
-    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); 
-    background-color: #333333;
+    box-shadow: 0 0 40px 20px #00000070;  
+    /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");  */
+    /* background-color: #333333; */
   
     @media screen and (min-width: 768px) {
       height: 700px;
@@ -227,22 +228,27 @@ box-shadow:
     height: 100px;
     width: 100%;
     border-radius: 14px;
-    background-image: url('images/str2.png'); 
+    background-image: url('images/str2.png'); background-color: #000000;
+    /* background-image: url("https://www.transparenttextures.com/patterns/stardust.png"); */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     background-color: #000000;
     background-size: 100%;
     background-position: top;
     background-repeat: repeat;
     overflow: hidden;
     box-shadow:
-    inset #5655559c -5px -5px 9px,
-    inset #565555dd 5px 5px 9px,
+    inset #59595979 -5px -5px 9px,
+    inset #565555b5 5px 5px 9px,
     rgba(0, 0, 0, 0.627) 3px 3px 10px 3px;
 
-    box-shadow:
+    /* box-shadow:
     inset #adadad67 -5px -5px 9px,
     inset #ededed67 5px 5px 9px,
-    rgba(0, 0, 0, 0.627) 3px 3px 10px 3px;
-  
+    rgba(0, 0, 0, 0.627) 3px 3px 10px 3px; */
+    /* box-shadow:
+    inset #8b8b8b9c -5px -5px 9px,
+    inset #aaaaaa9c 5px 5px 9px,
+    rgba(0, 0, 0, 0.627) 3px 3px 10px 3px; */
 
     @media screen and (min-width: 768px) {
       background-size: 110%;
@@ -266,8 +272,10 @@ box-shadow:
    justify-content: center;
    font-size: 15px;
     border-radius: 13px;
-    background: radial-gradient(rgba(7, 0, 0, 0.741), rgba(0, 0, 255, 0));
-text-shadow: 1px 1px 1px rgba(253, 0, 0, 0.326);
+background: rgba(0, 0, 0, 0.474);
+
+color: #6a6a6a;
+text-shadow: 1px 1px 1px #44444440;
   @media screen and (min-width: 768px) {
     font-size: 17px;
   };
@@ -299,8 +307,9 @@ text-shadow: 1px 1px 1px rgba(253, 0, 0, 0.326);
      width: 370px;
      font-size: 15px;
      line-height: 45px;
-     color: #656565;
-     text-shadow:rgb(0 0 0) 5px 5px 7px;
+     color: #7c7c7c;
+     
+     text-shadow: 4px 4px 2px black;
      font-weight: 500;
      letter-spacing: 0.4px;
  
@@ -332,17 +341,21 @@ text-shadow: 1px 1px 1px rgba(253, 0, 0, 0.326);
     justify-content: center;
     padding: 0 20px;
     /* margin: 0 10px; */
-    background: #282828;
+    /* background: #282828; */
     /* border-radius: 22px; */
     box-shadow: 0 0 50px 22px #00000070;   
+    box-shadow: 0 0 40px 20px #00000070; 
     
 /* 
     box-shadow:
    inset #000000b0 -5px -5px 9px,
    inset #7d7d7d93 5px 5px 9px;  */
     
-    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png"); 
-    background-color: #333333;
+    /* background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");  */
+    /* background-color: #333333; */
+
+    /* background-color: #000000; */
+/* background-image: url("https://www.transparenttextures.com/patterns/solid.png"); */
 /* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
      /* background-color: #98989811; */
     /* background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png"); */
@@ -390,8 +403,8 @@ text-shadow: 1px 1px 1px rgba(253, 0, 0, 0.326);
     background-repeat: repeat;
     border: none;
     box-shadow:
-    inset #adadad9c -5px -5px 9px,
-    inset #adadad9c 5px 5px 9px,
+    inset #8b8b8b9c -5px -5px 9px,
+    inset #aaaaaa9c 5px 5px 9px,
     rgba(0, 0, 0, 0.627) 3px 3px 10px 3px;
 
     /* box-shadow:
@@ -418,13 +431,14 @@ text-shadow: 1px 1px 1px rgba(253, 0, 0, 0.326);
     height: 100%;
     width: 100%;
     border-radius: 13px;
-background: radial-gradient(rgba(7, 0, 0, 0.741), rgba(0, 0, 255, 0));
     /* box-shadow:
     inset #37363678 -5px -5px 9px,
     inset #37363678 5px 5px 9px,
     rgb(0, 0, 0) 3px 3px 18px -3px; */
     font-size: 15px;
-    color: #949494;
+    color: #6a6a6a;
+    text-shadow: 1px 1px 1px #44444440;
+    background: #0000009e;
    
    
     
@@ -469,7 +483,8 @@ background: radial-gradient(rgba(7, 0, 0, 0.741), rgba(0, 0, 255, 0));
     font-size: 15px;
     line-height: 45px;
     color: #656565;
-    text-shadow:rgb(0 0 0) 5px 5px 7px;
+    /* color: #7c7c7c; */
+    text-shadow: 4px 4px 3px black;
     font-weight: 500;
     letter-spacing: 0.4px;
 
@@ -545,6 +560,9 @@ background: radial-gradient(rgba(7, 0, 0, 0.741), rgba(0, 0, 255, 0));
     border-radius: 13px;
     background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
     background-color: #252525;
+
+    background-color: #000000;
+background-image: url("https://www.transparenttextures.com/patterns/solid.png");
 /* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
     /* background-image: url("https://www.transparenttextures.com/patterns/dark-dot.png");
 
@@ -556,9 +574,9 @@ background: radial-gradient(rgba(7, 0, 0, 0.741), rgba(0, 0, 255, 0));
     /* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
     
    
-    box-shadow:
-      2px 8px 19px 3px #00000026;
-
+    background-color: #262626;
+    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+    box-shadow:  4px 4px 15px 2px #00000078;
     @media screen and (min-width: 768px) {
       /* height: 60px; */
     };
@@ -628,10 +646,10 @@ background: radial-gradient(rgba(7, 0, 0, 0.741), rgba(0, 0, 255, 0));
      width: 370px;
      font-size: 15px;
      line-height: 45px;
-     color: #6b6b6b;
-     text-shadow:rgb(0 0 0) 5px 5px 7px;
+     color: #7c7c7c;
+     text-shadow: 4px 4px 2px black;
      font-weight: 500;
-     letter-spacing: 0.4px;
+     /* letter-spacing: 0.4px; */
  
      @media screen and (min-width: 768px) {
        font-size: 19px;

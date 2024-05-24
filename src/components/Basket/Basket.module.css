@@ -727,6 +727,8 @@ background-color: #252525;
 /* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
 transition: all .4s ease-out;
     z-index: 9;
+    background-color: #262626;
+    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
      
      @media screen and (min-width: 767.9px) {
         width: 150px;
@@ -766,7 +768,7 @@ transition: all .4s ease-out;
  
  .toMenuDescription {
    margin: 0;
-   font-size: 9px;
+  
    transition: all .4s ease-out;
    color: #949494;
    /* color: #949494; */
@@ -778,8 +780,8 @@ transition: all .4s ease-out;
       display: flex;
      margin-bottom: 0px;
      margin-right: 13px;
-     font-size: 15px;
-     
+     font-size: 16px;
+     text-shadow: 1px 1px 1px black;
   };
 
      @media screen and (min-width: 1200px) {
@@ -806,7 +808,7 @@ transition: all .4s ease-out;
     align-items: center;
     transform: rotateY(180deg);
     /* margin-bottom: 3px; */
-    opacity: 1;
+    opacity: .6;
     /* rotate: -5deg; */
     height: 41px;
         width: 41px;

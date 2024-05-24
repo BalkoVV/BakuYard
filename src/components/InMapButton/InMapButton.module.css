@@ -32,7 +32,13 @@ background-color: #222222;
 background-color: #252525;
 background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
 /* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
+
+background-color: #111111;
+background-image: url("https://www.transparenttextures.com/patterns/solid.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 transition: all .4s ease-out;
+background-color: #262626;
+background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
    z-index: 9;
     
     @media screen and (min-width: 767.9px) {

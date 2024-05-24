@@ -164,7 +164,7 @@ background-image: url("https://www.transparenttextures.com/patterns/txture.png")
    height: 55px;
    transition: all .4s ease-out;
    left: 10px;
-  scale: .9;
+   scale: .9;
 
    @media screen and (min-width: 767.9px) {
       padding-left: 10px;
@@ -228,6 +228,11 @@ background-image: url("https://www.transparenttextures.com/patterns/mooning.png"
 /* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
 /* background-color: #3b3a3a; */
 /* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: #111111;
+background-image: url("https://www.transparenttextures.com/patterns/solid.png");
+background-color: #262626;
+background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
     box-shadow:

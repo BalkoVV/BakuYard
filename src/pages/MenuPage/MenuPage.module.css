@@ -92,7 +92,21 @@
    background-color: #444444;
    background-color: #252525;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-
+background-color: #111111;
+background-image: url("https://www.transparenttextures.com/patterns/solid.png");
+background-color: #333333;
+background-image: url("https://www.transparenttextures.com/patterns/white-sand.png");
+background-color: #111111;
+background-image: url("https://www.transparenttextures.com/patterns/ticks.png");
+background-color: #0d0d0d;
+background-image: url("https://www.transparenttextures.com/patterns/solid.png");
+background-color: #262626;
+background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 /* background-color: #595959;
 background-image: url("https://www.transparenttextures.com/patterns/tasky.png");
 background-color: #000000;
@@ -517,9 +531,20 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
 background-color: #252525;
 background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 /* background-color: #222222;
+background-color: #111111;
+background-color: #111111;
+background-image: url("https://www.transparenttextures.com/patterns/solid.png");
+background-image: url("https://www.transparenttextures.com/patterns/solid.png");
 background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
 transition: all .4s ease-out;
+background-color: #111111;
+background-image: url("https://www.transparenttextures.com/patterns/solid.png");
+/* background-color: #4d4d4d; */
+/* background-image: url("https://www.transparenttextures.com/patterns/white-sand.png"); */
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
    z-index: 9;
+   background-color: #262626;
+   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
     
     @media screen and (min-width: 767.9px) {
        width: 150px;
@@ -597,7 +622,7 @@ transition: all .4s ease-out;
    display: flex;
    justify-content: center;
    align-items: center;
-  /* opacity: 1; */
+  opacity: .6;
    height: 51px;
        width: 51px;
        top: 4px;
