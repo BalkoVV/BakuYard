@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.4b85df7e.css",
-    "main.js": "/static/js/main.86eed5e8.js",
+    "main.css": "/static/css/main.8fe92bf0.css",
+    "main.js": "/static/js/main.8d31a15e.js",
     "static/media/inMap.png": "/static/media/inMap.7c68d7b44ab412af869a.png",
     "static/media/23232555.png": "/static/media/23232555.20d673c873c32dd792fa.png",
     "static/media/Constantine.ttf": "/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
+    "static/media/instagramQR.png": "/static/media/instagramQR.c59f76799ee27525ab9d.png",
+    "static/media/facebookQR.png": "/static/media/facebookQR.d2e472d3247e96a635c8.png",
+    "static/media/MenuBusinessCard.png": "/static/media/MenuBusinessCard.5a8511f4aa9d16e04026.png",
     "static/media/str2.png": "/static/media/str2.c6abf30fc16c5e0a3528.png",
+    "static/media/MainLogoBY.svg": "/static/media/MainLogoBY.a2849d7bd169a35dc39ca25da7bd7212.svg",
     "static/media/bhLogo.svg": "/static/media/bhLogo.7cf148ab0b9b06cb6bc727cb19c54d65.svg",
-    "static/media/yardBakuLogo.svg": "/static/media/yardBakuLogo.554e0f0e38760ee0520af7652b90aa04.svg",
     "static/media/pizzaCardMenu.svg": "/static/media/pizzaCardMenu.9910e177a09f6fb10bbb910839c3dd59.svg",
     "static/media/pizzaCard.svg": "/static/media/pizzaCard.3c20770994cef8c0502561e0923ce8e7.svg",
     "static/media/mocktailsCardMenu.svg": "/static/media/mocktailsCardMenu.6c35f5dd2df8584c18ff3de3c89edfe7.svg",
@@ -34,8 +37,8 @@
     "static/media/lunchCard.svg": "/static/media/lunchCard.78d95a7b3890d72b55e5d8fa871b51f0.svg",
     "static/media/soupCardMenu.svg": "/static/media/soupCardMenu.235be984d6343aadac755c4426f2bc34.svg",
     "static/media/soupCard.svg": "/static/media/soupCard.237446378318f8ba61649461aaba86e2.svg",
+    "static/media/hotDrinkCard.svg": "/static/media/hotDrinkCard.2e7b9670c4b8bf76ff343a3e22cfc72f.svg",
     "static/media/hotDrinkCardMenu.svg": "/static/media/hotDrinkCardMenu.2e7b9670c4b8bf76ff343a3e22cfc72f.svg",
-    "static/media/hotDrinkCard.svg": "/static/media/hotDrinkCard.8444df1d37302c97a7df1349900dc0ce.svg",
     "static/media/mainDishCardMenu.svg": "/static/media/mainDishCardMenu.ec46098901e9951de2e7af7494e3f658.svg",
     "static/media/mainDishCard.svg": "/static/media/mainDishCard.ea58e76c56efaf5f111c0f4f7d378ce9.svg",
     "static/media/fishCardMenu.svg": "/static/media/fishCardMenu.ef11691cd5bfdde60044751d29a98f9f.svg",
@@ -48,25 +51,26 @@
     "static/media/sideDishCard.svg": "/static/media/sideDishCard.a78c310f94aaae5b692e778ad5154931.svg",
     "static/media/coldAppetizerCardMenu.svg": "/static/media/coldAppetizerCardMenu.42899967b4f75d8dca673eeb6c7f012b.svg",
     "static/media/coldAppetizerCard.svg": "/static/media/coldAppetizerCard.43eefbe9cf4e6b1622c7c5f98c190d5e.svg",
+    "static/media/radioPhone.svg": "/static/media/radioPhone.e7aa469a355d9d1568ee3795b34102df.svg",
+    "static/media/blackberryPhone.svg": "/static/media/blackberryPhone.c0f09cfa0ef4678323bbf5b2b51f742f.svg",
     "static/media/userInMap.svg": "/static/media/userInMap.38d640a764ffb1d1d4fead98b342cade.svg",
-    "static/media/mobile.svg": "/static/media/mobile.e53b51f799a743b8ec12531b8545768d.svg",
     "static/media/closhe.svg": "/static/media/closhe.f3578c6136b11118d18511c0c22e1163.svg",
     "static/media/clock.svg": "/static/media/clock.4130123e70535f2bbc2c0aea679cba6e.svg",
     "static/media/toMenuIcon.svg": "/static/media/toMenuIcon.c2f5db7d108ea803a02fc2f167c55491.svg",
+    "static/media/applePhone.svg": "/static/media/applePhone.ce0e711ffda1534eedb3ed87829c7903.svg",
     "static/media/inmap.svg": "/static/media/inmap.32de515b34c2dba4402eb9ddb48943d0.svg",
     "index.html": "/index.html",
-    "static/media/retroPhone.svg": "/static/media/retroPhone.9b664d2cc7029cbebe8d03476207105d.svg",
     "static/media/forinsta.svg": "/static/media/forinsta.b0ee49bf8fb245f238ef935850ffd4a2.svg",
     "static/media/formail.svg": "/static/media/formail.a1b8eb8653c733201191a7570ce6c5ee.svg",
     "static/media/forfacebook.svg": "/static/media/forfacebook.7a3d61c7dca5284b41cd1114ff38fe16.svg",
     "static/media/dot.svg": "/static/media/dot.b4f4f8597348d068629d2637b84cc700.svg",
     "static/media/mobileSwitch.svg": "/static/media/mobileSwitch.fbd81f0ffcbc9f0d3f9daa0da92bd41d.svg",
     "static/media/toMenu.svg": "/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.4b85df7e.css.map": "/static/css/main.4b85df7e.css.map",
-    "main.86eed5e8.js.map": "/static/js/main.86eed5e8.js.map"
+    "main.8fe92bf0.css.map": "/static/css/main.8fe92bf0.css.map",
+    "main.8d31a15e.js.map": "/static/js/main.8d31a15e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b85df7e.css",
-    "static/js/main.86eed5e8.js"
+    "static/css/main.8fe92bf0.css",
+    "static/js/main.8d31a15e.js"
   ]
 }
