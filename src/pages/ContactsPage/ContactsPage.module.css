@@ -113,13 +113,11 @@ width: 100%;
    align-items: center;
    height: 70px;
    width: 100%;
-   /* color: #7b7b7b; */
    font-size: 13px;
    border-radius: 13px;
    margin:  3px 0;
    border-radius: 13px;
-   /* background-color: #030405; */
-   box-shadow:  4px 4px 15px 2px #00000078;
+   box-shadow: rgba(0, 0, 0, 0.608) 3px 3px 10px 4px;
   
    transition: all .4s ease-out;
    @media screen and (min-width: 767.9px) {
@@ -158,9 +156,10 @@ width: 100%;
 
 .contactsListItemActive:hover,
 .contactsListItemActive:active {
-   box-shadow:  2px 2px 15px 2px #0000005d;
+ 
+   box-shadow: rgba(0, 0, 0, 0.273) 3px 3px 10px 6px;
    transition: all .4s ease-out;
-   scale: 1.03;
+   scale: 1.02;
 }
 
 .contactsListItemActive:hover img {

@@ -15,12 +15,7 @@ import pitaData from "services/dataBakedDishes/pita.json"
 
 import pizzaMenu1 from 'images/pizzaCardMenu.svg';
 import pizzaMenu2 from 'images/pizzaCardMenu.svg';
-// import pizzaMenu3 from 'images/pizzaCardMenu.svg';
-// import pizzaMenu2 from 'images/pizzaCard.svg';
-// import pizzaMenu1 from 'images/pizzaMenu1.png';
-// import pizzaMenu2 from 'images/pizzaMenu2.png';
 
-// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
 export const Pizza = () => {
@@ -73,39 +68,7 @@ export const Pizza = () => {
 
 
         <div className={styles.dishPageBox}>
-{/* 
-        <img
-         src={pizzaMenu1}
-        alt=""
-        style={{
-          position: 'fixed',
-          top: '-90px',
-          left: '-150px',
-          width: '600px',
-          height: '600px',
-          zIndex: '0',
-          rotate: '7deg',
-          opacity: '.4'
-        }}
-      /> */}
 
-
-       {/* <img
-         src={pizzaMenu2}
-        alt=""
-        style={{
-          position: 'fixed',
-          bottom: '-90px',
-          right: '-150px',
-          width: '600px',
-          height: '600px',
-          zIndex: '0',
-          rotate: '-17deg',
-          transform: 'scaleX(-1)',
-          opacity: '.4',
-          
-        }}
-      /> */}
 
        <img
 
@@ -141,22 +104,6 @@ export const Pizza = () => {
          
         }}
       />
-
-{/* <img
-         src={pizzaMenu3}
-        alt=""
-        style={{
-          position: 'fixed',
-          top: '0px',
-          right: '-20px',
-          width: '400px',
-          height: '400px',
-          zIndex: '0',
-          rotate: '-17deg',
-          opacity: '.15',
-          
-        }}
-      /> */}
        
           
             <table className={styles.dishList}>

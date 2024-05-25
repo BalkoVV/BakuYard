@@ -1,6 +1,6 @@
 .fadeOut {
   opacity: 0; 
-  transition: opacity 1s ease-out;
+  /* transition: opacity 1s ease-out; */
 }
 
 .basket {
@@ -16,7 +16,7 @@
 }
 
 .basketContainer {
-   padding: 0 15px;
+   padding: 0 5px;
 
   @media screen and (min-width: 767.9px) {
     padding: 0 150px;
@@ -28,14 +28,17 @@
  }
  
 
-
+ .menuCardImage {
+  @media screen and (max-width: 767.9px) {
+     display: none;
+    };
+  }
 
 
 
 
 .basketTitle {
    display: flex;
-   /* visibility: hidden; */
    justify-content: center;
    align-items: center;
    height: 95px;
@@ -56,7 +59,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #5e5e5e;
+  color: #949494;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
   font-size: 13px;
   margin: 0;
   padding: 20px 0 10px;
@@ -88,14 +92,12 @@
 
 
 .basketList {
+  position: relative;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 20px;
     border: none;
-    padding: 10px;
-    border-radius: 17px;
-    /* background: #07070759; */
-
+    padding: 0px 5px 5px;
     border-radius: 13px;
     box-shadow:
     inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
@@ -115,24 +117,14 @@
 
 .basketListItem {
   display: flex; 
-  padding-left: 3px;
-  border-radius: 13px;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
-  transition: all .3s ease-out; 
+  height: 60px;
+  transition: all .4s ease-out; 
   border-radius: 13px;
-  background-color: #010101;
+  background-color: #262626;
+  background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
   box-shadow:
-   inset rgba(0, 0, 0, 0.772) -5px -5px 9px,
-   inset #303030 5px 5px 9px,
-   rgb(0, 0, 0) 3px 3px 8px -3px;
-
-
-   background-color: #252525;
-
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   box-shadow:
    inset #000000b0 -5px -5px 9px,
    inset #7d7d7d93 5px 5px 9px; 
 
@@ -145,7 +137,7 @@
 }
 
 .basketListItem:hover {
-  transition: all .3s ease-out;
+  transition: all .4s ease-out;
    scale: 1.02;
 }
 
@@ -153,6 +145,7 @@
  display: flex;
  flex-direction: column;
  height: 60px;
+
 }
 
 .basketListItemInfo span {
@@ -164,6 +157,8 @@
 
 .basketListItemCategory {
   color: #949494;
+  text-shadow: 1px 1px 1px black;
+
   font-size: 10px;
   padding-left: 10px;
    
@@ -178,30 +173,56 @@
 .basketListItemName {
  display: flex;
  font-size: 12px;
- padding-left: 5px;
-  color:#949494;
+ padding-left: 15px;
+
+ 
+  color: #bebebe;
+   font-weight: 900;
+   text-shadow: 1px 1px 2px black;
+
+   @media screen and (max-width: 374.9px) {
+    font-size: 9px;
+    /* padding-left: 1px; */
+
+ };
+
  @media screen and (min-width: 767.9px) {
-     
+    font-size: 17px;
+    /* padding: 35px 0 0 20px; */
+    /* padding-left: 10px; */
  };
  @media screen and (min-width: 1200px) {
-   
+    font-size: 19px;
+    /* padding: 35px 0 0 20px; */
+    padding-left: 25px;
  };
 }
 
 .basketListItemIngredients {
- display: flex;
- align-items: center;
- font-size: 8px;
- color: #949494;
- padding-left: 10px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 9px;
+  letter-spacing: -0.1px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  color: #bbbbbb;
+  text-shadow: 1px 1px 1px black;
+  padding: 10px 0 0 10px;
+  height: 40px;
 
- @media screen and (min-width: 767.9px) {
-     
- };
+ 
 
- @media screen and (min-width: 1200px) {
-   
- };
+  @media screen and (min-width: 767.9px) {
+     font-size: 10px;
+     padding: 12px 0 0 20px;
+     /* letter-spacing: .1px; */
+  };
+ 
+  @media screen and (min-width: 1200px) {
+     font-size: 12px;
+     padding: 15px 0 0 25px;
+     font-weight: 900;
+     /* letter-spacing: .2px; */
+  };
 }
 
 .basketListItemManagement {
@@ -214,18 +235,23 @@
    align-items: center;
    justify-content: center;
    height: 60px;
-   width: 70px;
+   width: 55px;
    margin: 0;
    padding: 0;
    font-size: 14px;
-   border-radius: 0 11px 11px 0;
-color: #949494;
-    
+   color: #949494;
+   text-shadow: 1px 1px 1px black;
+  background: #00000087;
+  border-right: 1px solid #212121;
+  border-left: 1px solid #212121;
+
  @media screen and (min-width: 767.9px) {
   font-size: 15px;
+  width: 60px;
  };
  @media screen and (min-width: 1200px) {
   font-size: 17px;
+  width: 85px;
  };
 }
 
@@ -234,12 +260,13 @@ color: #949494;
    align-items: center;
    justify-content: space-between;
    height: 60px;
-   width: 100px;
+   width: 120px;
    margin: 0;
    padding: 0;
-   /* right: 101px; */
+   padding: 0 7px;
    font-size: 19px;
-   /* top: 0; */
+   background: #00000087;
+   border-radius: 0 13px 13px 0;
 
   @media screen and (min-width: 767.9px) {
       
@@ -257,17 +284,17 @@ color: #949494;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border: none;
   padding: 0;
   margin: 0;
-  color: #949494;
+  overflow: hidden;
   font-size: 25px;
-  background: transparent;
-  border-radius: 7px;
-  background-color: rgba(73, 73, 73, 0.371);
-  transition: all 0.3s ease-out;
+  color: #949494;
+  border: 2px solid #94949465;
+  border-radius: 12px;
+  transition: all 0.4s ease-out;
    box-shadow:
    inset #0e0e0e -5px -5px 9px,
    inset #303030 5px 5px 9px,
@@ -324,15 +351,12 @@ color: #949494;
  width: 100%;
  /* padding: 0 20px; */
 border-radius: 13px;
- 
- 
-   background-color: #282828;
-
-background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+background-color: #262626;
+background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
 box-shadow:
 inset #000000b0 -5px -5px 9px,
-inset #7d7d7d93 5px 5px 9px; 
-
+inset #7d7d7d93 5px 5px 9px, 
+0px 0px 12px 1px rgba(0, 0, 0, 0.577);
  @media screen and (min-width: 768px) {
    
  };
@@ -348,6 +372,10 @@ inset #7d7d7d93 5px 5px 9px;
   display: grid;
   padding-left: 25px;
   font-size: 10px;
+  color: #949494;
+  text-shadow: 1px 1px 1px black;
+
+  
   @media screen and (min-width: 767.9px) {
     padding-left: 35px;
     font-size: 12px;
@@ -366,9 +394,10 @@ margin: 0;
 
 .basketTotalQuantity,
 .basketTotalPrice {
-   color: #949494;
+   color: #c2c2c2;
    padding-right: 25px;
    font-size: 22px;
+   text-shadow: 1px 1px 1px black;
 
  @media screen and (min-width: 767.9px) {
   font-size: 22px;
@@ -383,7 +412,6 @@ margin: 0;
 
 .basketMakeOrder {
   display: flex;
-  /* width: 100%; */
   justify-content: center; 
 
    @media screen and (min-width: 767.9px) {
@@ -402,10 +430,7 @@ margin: 0;
   padding: 20px;
   border-radius: 13px;
   margin-top: 30px;
-  /* background: #b4b4b44a; */
   box-shadow: 7px 7px 15px 2px #00000047;
-  /* background: #07070759; */
-
   border-radius: 13px;
   box-shadow:
   inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
@@ -422,22 +447,21 @@ margin: 0;
 }
 
  .basketInput {
+  position: relative;
    /* background-color: rgb(0, 0, 0); */
-   color: #949494;
+   /* color: #000000; */
    padding-left: 16px;
    height: 50px;
    border: none;
    border-radius: 11px;
    border: 1px solid rgb(0, 0, 0);
    font-size: 17px;
-   /* box-shadow: inset 0 2px 10px 1px rgba(50, 49, 49, 0.688), inset 0 0 0 60px rgba(20, 20, 20, 0.3), 0 1px rgba(38, 38, 38, 0.08); */
-   /* background: linear-gradient(rgb(22, 22, 22), rgb(29, 29, 29)); */
-   /* background: #3a3a3a72; */
-   background-color: #000000;
-
-background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   /* color: #ccc; */
-   transition: .5s linear;
+   background-color: #262626;
+   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+   box-shadow:
+   inset #000000a4 2px 2px 2px,
+   inset #000000a4 -1px -1px 3px; 
+   transition: all .4s linear;
 
    ;
 
@@ -453,7 +477,7 @@ background-image: url("https://www.transparenttextures.com/patterns/white-wall-3
 .basketInput:hover,
 .basketInput:focus,
 .basketInput:active {
-  border: 1px solid #949494;
+  border: 1px solid #4c0000;
 }
 
 
@@ -500,7 +524,6 @@ display: flex;
 justify-content: center;
 padding: 40px 0;
 width: 100%;
-/* background-color: #fff; */
 }
 
 .buttonMakeOrder,
@@ -522,10 +545,11 @@ width: 100%;
   inset rgba(42, 41, 41, 0.471) -4px -4px 9px,
   inset #303030 4px 4px 9px,
   rgb(0, 0, 0) 3px 3px 8px -3px;
+
+  
       
   @media screen and (min-width: 767.9px) {
-    
-     /* border-radius: 15px; */
+
   };
 
   @media screen and (min-width: 1200px) {
@@ -540,8 +564,6 @@ width: 100%;
  padding: 0;
  margin: 0;
  font-family: PrimaryFont;
- /* font-size: 12px; */
- /* font-weight: 100; */
  justify-content: center;
  align-items: center;
  border-radius: 17px;
@@ -796,7 +818,7 @@ transition: all .4s ease-out;
  }
 
  .toMenuButton:hover {
-  scale: 1.02;
+  scale: 1.03;
   transition: all .4s ease-out;
   box-shadow:  4px 4px 15px 2px #0000002d;
 }

@@ -37,12 +37,6 @@
    margin: 0;
    color: #d2121200;
 
-   /* background: #888888;
-   background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent; */
-
    @media screen and (min-width: 768px) {
       height: 95px;
    };
@@ -86,54 +80,10 @@
    margin-left: auto;
    margin-right: auto;
    transition: all .4s ease-out;
-   box-shadow:  5px 5px 15px 3px #00000078;
+   box-shadow: rgba(0, 0, 0, 0.441) 3px 3px 10px 4px;
    border: none;
-   background-color: #444444;
-   background-color: #252525;
-background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-background-color: #111111;
-background-image: url("https://www.transparenttextures.com/patterns/solid.png");
-background-color: #333333;
-background-image: url("https://www.transparenttextures.com/patterns/white-sand.png");
-background-color: #111111;
-background-image: url("https://www.transparenttextures.com/patterns/ticks.png");
-background-color: #0d0d0d;
-background-image: url("https://www.transparenttextures.com/patterns/solid.png");
-background-color: #262626;
-background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* background-color: #595959;
-background-image: url("https://www.transparenttextures.com/patterns/tasky.png");
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/tactile-noise-light.png");
-background-color: #232323;
-background-image: url("https://www.transparenttextures.com/patterns/straws.png");
-background-color: #222222;
-background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
-/* background-color: #000000; */
-/* background-image: url("https://www.transparenttextures.com/patterns/simple-dashed.png"); */
-
-
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-   /* background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png"); */
-   /* background-color: #0f0f0f;
-background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-/* background-color: #303030;
-background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-   /* z-index: 10; */
+   background-color: #262626;
+   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
 
    @media screen and (min-width: 767.9px) {
       height: 180px;
@@ -153,17 +103,9 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
    justify-content: space-around;
    align-items: center;
    border-radius: 15px; 
-   /* box-shadow:  4px 4px 15px 2px #00000078; */
    box-shadow:
     inset #000000b0 -5px -5px 9px,
     inset #7d7d7d93 5px 5px 9px; 
-   /* background-color: #94939325; */
-/* background-image: url("https://www.transparenttextures.com/patterns/fake-brick.png"); */
-
-   /* box-shadow:
-    inset #000000b0 -5px -5px 9px,
-    inset #7d7d7d93 5px 5px 9px;  */
-   
 
     @media screen and (min-width: 768px) {
     
@@ -182,32 +124,17 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
 .dishCard:active,
 .dishCard:focus {
    box-shadow:  2px 2px 15px 2px #0000005d;
+   box-shadow: rgba(0, 0, 0, 0.273) 3px 3px 10px 6px;
    transition: all .4s ease-out;
-   scale: 1.03;
-   /* border: 1px solid #252525; */
+   scale: 1.02;
   
 }
 .dishCard h3 {
    display: flex;
-   /* background: linear-gradient(0deg, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.884)); */
-   /* border-radius: 30%; */
-   /* font-weight: 900; */
-   /* letter-spacing: 1px; */
    font-weight: 900;
    color: #949494;
    text-shadow: 1px 1px 1px black;
-   /* text-shadow: 0px 0px 12px rgb(0, 0, 0); */
-   /* background: #ececec;
-  background: linear-gradient(to bottom, #ececec 0%, #afafaf 20%, #909090 50%, #afafaf 80%, #ececec 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-   /* color: #7b7a7a; */
-   /* background: #900000;
-   background: linear-gradient(to bottom, #900000 0%, #600000 50%, #400000 100%);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent; */
+
    
 
    transition: all .4s ease-out;
@@ -226,9 +153,7 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
 .dishCard:hover h3,
 .dishCard:active h3,
 .dishCard:focus h3 {
-   color: #770000;
    color: #e9e9e9;
-   /* text-shadow: 0px 0px 22px rgba(0, 0, 0, 0.395); */
    transition: all .4s ease-out;
 }
 
@@ -295,10 +220,7 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
 .dishCard:hover .dishCardImage,
 .dishCard:active .dishCardImage,
 .dishCard:focus .dishCardImage {
-   /* rotate: 0deg; */
-   /* scale: 1.1; */
    transition: all .4s ease-out;
-   /* opacity: .7; */
   
 
    @media screen and (min-width: 768px) {
@@ -378,135 +300,6 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
  position: relative;
 }
 
-
-
-/* .goToBasketButton {
-   position: absolute;
-   top: 92px;
-   right: 20px; 
-
-   display: flex;
-   align-items: center;
-   height: 60px;
-   width: 60px;
-
-   border: none;
-   border-radius: 15px;
-   background-color: rgba(37, 36, 36, 0.136);
-}
-.goToBasketIcon {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-   fill: #e4c4c4;
-}
-.nonEmpty {
-
-}
-.goToBasketBadge {
-
-}
-.goToBasketTitle {
-
-} */
-
-
-/* .toBasketButton {
-
-   position: absolute;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   top: 92px;
-   right: 20px; 
-   height: 60px;
-   width: 60px;
-   border: none;
-   border-radius: 13px;
-   box-shadow:  4px 4px 15px 4px #0000008b;
-   background-color: #010101;
-   transition: all .4s linear;
-       
-   @media screen and (min-width: 767.9px) {
-      height: 70px;
-      width: 70px;
-      border-radius: 15px;
-      right: 70px;
-      top: 92px;
-   };
-
-   @media screen and (min-width: 1200px) {
-      height: 80px;
-      width: 80px;
-      border-radius: 17px;
-      right: 90px; 
-   };
-} */
-
-/* .toBasketLink {
-   display: flex; 
-   align-items: center;
-   height: 60px;
-   width: 60px;
-   border-radius: 13px;
-   
-   box-shadow:
-    inset rgba(42, 41, 41, 0.471) -4px -4px 9px,
-    inset #303030 4px 4px 9px,
-    rgb(0, 0, 0) 3px 3px 8px -3px;
-  
-
-   @media screen and (min-width: 767.9px) {
-      height: 70px;
-      width: 70px;
-      border-radius: 15px;
-    };
-
-    @media screen and (min-width: 1200px) {
-      height: 80px;
-      width: 80px;
-      border-radius: 17px;
-    };
-} */
-
-/* .toBasketDescription {
-   display: flex;
-   justify-content: center;
-   align-items: flex-end;
-
-   padding-bottom: 15px;
-   width: 100%;
-   height: 100%;
-
-   font-size: 7px;
-   color: #5e5e5e;
-   transition: color .4s ease-out;
-
-   @media screen and (min-width: 767.9px) {
-      font-size: 9px;
-      padding-bottom: 25px;
-    };
-    @media screen and (min-width: 1200px) {
-      font-size: 11px;
-      padding-bottom: 28px;
-    };
-} */
-
-/* .toBasketButton:hover  {
-   box-shadow:  2px 2px 15px 2px #0000005d;
-   transition: all .4s linear;
-   scale: 1.03;
-  }
-
-  .toBasketButton:hover .toBasketDescription {
-   color: #8e8e8e;
-   transition: color .4s linear;
-  } */
-
-
-
-
 .toBasketButton {
    position: absolute;
    display: flex;
@@ -518,30 +311,9 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
    border-radius: 13px;
    overflow: hidden;
    border: none;
-
-   box-shadow:  4px 4px 15px 2px #00000078;
-   background-color: #0f0f0f;
-   background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
-   background-color: #303030;
-/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-/* background-color: #3b3a3a; */
-background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
-
-background-color: #252525;
-background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-/* background-color: #222222;
-background-color: #111111;
-background-color: #111111;
-background-image: url("https://www.transparenttextures.com/patterns/solid.png");
-background-image: url("https://www.transparenttextures.com/patterns/solid.png");
-background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
-transition: all .4s ease-out;
-background-color: #111111;
-background-image: url("https://www.transparenttextures.com/patterns/solid.png");
-/* background-color: #4d4d4d; */
-/* background-image: url("https://www.transparenttextures.com/patterns/white-sand.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+   box-shadow: rgba(0, 0, 0, 0.608) 3px 3px 10px 4px;
    z-index: 9;
+   transition: all .4s ease-out;
    background-color: #262626;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
     
@@ -587,7 +359,6 @@ background-image: url("https://www.transparenttextures.com/patterns/solid.png");
   transition: all .4s ease-out;
   color: #949494;
   text-shadow: 1px 1px 1px black;
-  /* color: #000000; */
   font-weight: 900;
   margin-bottom: 9px;
   display: none;
@@ -614,7 +385,7 @@ background-image: url("https://www.transparenttextures.com/patterns/solid.png");
 .toBasketButton:hover {
  scale: 1.02;
  transition: all .4s ease-out;
- box-shadow:  4px 4px 15px 2px #0000002d;
+ box-shadow: rgba(0, 0, 0, 0.273) 3px 3px 10px 6px;
 }
 
 .basketIcon {
@@ -645,49 +416,15 @@ background-image: url("https://www.transparenttextures.com/patterns/solid.png");
      };
 
      @media screen and (min-width: 1200px) {
-       /* right: -7px; */
-       /* rotate: -5deg; */
+     
      };
 }
-
-
-
-/* .basketIcon {
-   display: block;
-   justify-content: center;
-   align-items: center;
-   position: absolute;
-
-   height: 65px;
- 
-   right: 9px;
-   bottom: 13px;
-
-   fill: #000000;
-
-   @media screen and (min-width: 767.9px) {
-      height: 45px;
-      width: 45px;
-      right: 12px;
-      bottom: 20px;
-   };
-
-   @media screen and (min-width: 1200px) {
-      height: 65px;
-      width: 65px;
-      right: 1px;
-      bottom: 20px;
-   };
-} */
      
 .basketIcon.nonEmpty {
    fill: #949494;
    opacity: .7;
 }
 
-/* .basketBadge {
-color: transparent;
-} */
 
 .basketBadge {
    position: absolute;
@@ -699,13 +436,11 @@ color: transparent;
    height: 13px;
    width: 13px;
    border-radius: 50%;
-   color: #7a0000;
+   /* color: #7a0000; */
    background: #4c0000;
-   color: #c7c7c7;
+   color: #949494;
    border: 1px solid #949494;
-   /* opacity: .5; */
-   /* background: #7a0000; */
-   /* font-weight: 900; */
+   box-shadow: rgba(0, 0, 0, 0.324) 0px 0px 2px 2px;;
    font-size: 14px;
    rotate: 5deg;
    z-index: 2;
@@ -716,14 +451,9 @@ color: transparent;
       font-size: 20px;
       left: 36px;
       top: 14px;
-      /* justify-content: end; */
-      /* rotate: 5deg; */
       };
 
-      /* @media screen and (min-width: 1200px) {
-      font-size: 33px;
-      left: 31px;
-      top: 19px;
-      rotate: 0deg;
-      }; */
+      @media screen and (min-width: 1200px) {
+     
+      };
 }

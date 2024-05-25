@@ -5,10 +5,6 @@
    background-color: #000000;
    background-position: top;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-
-   /* background-color: #373737; */
-/* background-image: url("https://www.transparenttextures.com/patterns/redox-01.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
    background-attachment: none;
 
    @media screen and (min-width: 767.9px) {
@@ -89,8 +85,8 @@
    grid-template-columns: repeat(1, 1fr);
    grid-row-gap: 10px;
    border: none;
-   padding: 20px 5px;
-   margin-bottom: 70px;
+   padding: 15px 5px 0px;
+   margin-bottom: 50px;
    border-radius: 15px;
    box-shadow:
    inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
@@ -99,11 +95,11 @@
    z-index: 9;
       
    @media screen and (min-width: 767.9px) {
-      padding: 30px 15px;
+      padding: 15px 15px 5px;
    };
 
   @media screen and (min-width: 1200px) {
-   padding: 40px 20px;
+   padding: 20px 20px 5px;
   };
 }
 
@@ -120,13 +116,14 @@
    inset #303030 5px 5px 9px,
    rgb(0, 0, 0) 3px 3px 8px -3px;
    z-index: 9;
+   overflow: hidden;
       
    @media screen and (min-width: 767.9px) {
-      padding: 30px 15px;
+      padding: 0px 15px;
    };
 
   @media screen and (min-width: 1200px) {
-   padding: 40px 20px;
+   padding: 0px 20px;
   };
 }
 
@@ -159,25 +156,13 @@
    margin-bottom: 17px;
    transition: all .3s ease-out; 
    border-radius: 15px;
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   background-color: #333333;
-
-
-   background-color: #373737;
-background-image: url("https://www.transparenttextures.com/patterns/solid.png");
-background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
-
-background-color: #111111;
-background-image: url("https://www.transparenttextures.com/patterns/solid.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-background-color: #262626;
-background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+   background-color: #262626;
+   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
    box-shadow:
       inset #000000b0 -5px -5px 9px,
       inset #7d7d7d93 5px 5px 9px; 
-   
+   overflow: hidden;
+
    @media screen and (min-width: 768px) {
       height: 65px;
       margin-bottom: 13px;
@@ -194,16 +179,10 @@ background-image: url("https://www.transparenttextures.com/patterns/soft-wallpap
    width: 100%;
    display: flex; 
    flex-direction: column;
-   /* padding-left: 3px; */
-   /* align-items: center; */
-   /* justify-content: space-between; */
-   /* justify-content: end; */
    margin-bottom: 17px;
    transition: all .3s ease-out; 
+   overflow: hidden;
    border-radius: 15px;
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   background-color: #333333;
-
    background-color: #262626;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
    box-shadow:
@@ -226,11 +205,6 @@ background-image: url("https://www.transparenttextures.com/patterns/soft-wallpap
  justify-content: space-between;
 }
 
-/* .dishListItemLunchInfoBox {
-display: flex;
-width: 100%;
-justify-content: space-between;
-} */
 .dishListItemLunchInfo,
 .dishListItemLunchFirst, 
 .dishListItemLunchSecond,
@@ -238,12 +212,9 @@ justify-content: space-between;
 .dishListItemLunchDrink,
 .dishListItemLunchBread {
    display: flex;
-   /* width: 100%; */
    justify-content: space-between;
-   /* justify-content: start; */
    align-items: center;
    height: 60px;
-   /* background-color: rgba(255, 255, 255, 0.275); */
    border-bottom: 1px solid #000;
 }
 
@@ -253,10 +224,12 @@ justify-content: space-between;
 
 .dishListItemLunchDay {
  display: flex;
- /* height: 60px; */
  width: 100%;
 justify-content: center;
 align-items: center;
+padding-left: 60px;
+color: #949494;
+text-shadow: 1px 1px 1px #444444bc;
 }
 
 .dishListItemLunchPrice {
@@ -266,20 +239,17 @@ align-items: center;
 
  width: 60px;
  height: 60px;
- /* background-color: rgb(36, 5, 5); */
 }
 
 .dishListItemLunchAddBox {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   /* background-color: #fff; */
    height: 70px;
    }
    
 
 .dishListLunchButtonAddBox {
-   position: absolute;
    right: 10px;
    display: flex;
    align-items: center;
@@ -290,17 +260,11 @@ align-items: center;
    z-index: 9;
 
    @media screen and (min-width: 767.9px) {
-      /* height: 65px;
-      width: 65px;
-      justify-content: center;
-      border-left: 1px solid #1a1a1a; */
+    
    };
 
    @media screen and (min-width: 1200px) {
-      /* height: 70px;
-      width: 70px;
-      justify-content: center;
-      border-left: 1px solid #1a1a1a; */
+    
    };
 }
 
@@ -319,23 +283,44 @@ align-items: center;
    border-radius: 14px;
 
    @media screen and (min-width: 767.9px) {
-      /* width: 40px;
-      height: 40px; */
+   
    };
 
    @media screen and (min-width: 1200px) {
-      /* width: 45px;
-      height: 45px; */
+   
    };
 }
 .dishListItemLunchNameFirst,
 .dishListItemLunchNameSecond,
 .dishListItemLunchNameSalad,
 .dishListItemLunchNameDrink,
-.dishListItemLunchNameBread {
+.dishListItemLunchNameBread,
+.dishListItemLunchInfo {
    display: flex;
-   /* width: 100%; */
-   color: rgb(199, 199, 199);
+   align-items: center;
+   padding-left: 15px;
+   font-size: 12px;
+  
+   color: #bebebe;
+   font-weight: 900;
+   text-shadow: 1px 1px 2px black;
+
+   @media screen and (max-width: 374.9px) {
+      font-size: 9px;
+      /* padding-left: 1px; */
+
+   };
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 17px;
+      /* padding: 35px 0 0 20px; */
+      /* padding-left: 10px; */
+   };
+   @media screen and (min-width: 1200px) {
+      font-size: 19px;
+      /* padding: 35px 0 0 20px; */
+      padding-left: 25px;
+   };
 }
 .dishListItemLunchPrice,
 .dishListItemLunchWeigthFirst,
@@ -344,20 +329,18 @@ align-items: center;
 .dishListItemLunchWeigthDrink,
 .dishListItemLunchWeigthBread {
    display: flex;
-   /* flex-direction: column; */
    align-items: center;
    justify-content: center;
-   /* padding: 0; */
    height: 60px;
    width: 60px;
    border-left: 1px solid #1a1a1a;
    background-color: rgba(18, 18, 18, 0.375);
    color: #949494;
+   background: #00000087;
+   border-left: 1px solid #605f5f24;
+   /* overflow: hidden; */
 }
 
-.dishListItemLunchOptionsSalad {
-color: rgb(128, 43, 0);
-}
 
 
 
@@ -456,12 +439,13 @@ color: rgb(128, 43, 0);
    padding: 35px 0 0 10px;
    font-size: 12px;
   
-   color: #e9e9e9;
+   color: #bebebe;
    font-weight: 900;
    text-shadow: 1px 1px 2px black;
+
    @media screen and (max-width: 374.9px) {
       font-size: 9px;
-      /* letter-spacing: .01px; */
+
    };
 
    @media screen and (min-width: 767.9px) {
@@ -477,10 +461,11 @@ color: rgb(128, 43, 0);
 .dishListItemNameDescriptionHardDrink {
    display: flex;
    padding: 35px 0 0 10px;
-   font-size: 11px;
-   letter-spacing: .01px;
-   color: #949494;
-   text-shadow: 1px 1px 1px black;
+   font-size: 12px;
+  
+   color: #bebebe;
+   font-weight: 900;
+   text-shadow: 1px 1px 2px black;
 
    @media screen and (max-width: 399px) {
       padding: 35px 0 0 2px;
@@ -608,14 +593,12 @@ color: rgb(128, 43, 0);
       font-size: 15px;
       height: 65px;
       width: 80px;
-      /* border-left: 1px solid #1a1a1a; */
    };
 
    @media screen and (min-width: 1200px) {
       font-size: 17px;
       height: 70px;
       width: 100px;
-      /* border-left: 1px solid #2a2a2a; */
    };
 }
 
@@ -700,15 +683,13 @@ color: rgb(128, 43, 0);
    overflow: hidden;
    border: none;
    box-shadow:  4px 4px 15px 2px #00000078;
-   background-color: #333333;
-   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+   z-index: 9;
    transition: all .4s ease-out;
-   background-color: #111111;
-background-image: url("https://www.transparenttextures.com/patterns/solid.png");
-   /* z-index: 9; */
+
    background-color: #262626;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
-    @media screen and (min-width: 767.9px) {
+    
+   @media screen and (min-width: 767.9px) {
        width: 150px;
        flex-direction: row-reverse;
        right: 40px; 
@@ -775,7 +756,7 @@ background-image: url("https://www.transparenttextures.com/patterns/solid.png");
 }
 
 .toMenuButton:hover {
- scale: 1.02;
+ scale: 1.03;
  transition: all .4s ease-out;
  box-shadow:  4px 4px 15px 2px #0000002d;
 }

@@ -13,32 +13,11 @@
    border-radius: 13px;
    overflow: hidden;
    border: none;
+   box-shadow: rgba(0, 0, 0, 0.608) 3px 3px 10px 4px;
 
-   box-shadow:  4px 4px 15px 2px #00000078;
-   /* background-color: #0f0f0f; */
-   /* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-   /* background-color: #303030; */
-/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-/* background-color: #3b3a3a; */
-/* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
-   
-background-color: #252525;
-background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-
-background-color: #222222;
-
-
-
-background-color: #252525;
-background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
-/* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
-
-background-color: #111111;
-background-image: url("https://www.transparenttextures.com/patterns/solid.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-transition: all .4s ease-out;
-background-color: #262626;
-background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+   transition: all .4s ease-out;
+   background-color: #262626;
+   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
    z-index: 9;
     
     @media screen and (min-width: 767.9px) {
@@ -111,9 +90,10 @@ background-image: url("https://www.transparenttextures.com/patterns/soft-wallpap
 }
 
 .inMapButton:hover {
- scale: 1.02;
+ scale: 1.03;
  transition: all .4s ease-out;
  box-shadow:  4px 4px 15px 2px #0000002d;
+ box-shadow: rgba(0, 0, 0, 0.273) 3px 3px 10px 6px;
 }
 
 .inMapIcon {

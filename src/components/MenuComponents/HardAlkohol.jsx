@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-// import AddButton from 'components/MenuComponents/AddButton/AddButton';
-// import CartContext from "components/CartProvider/CartProvider";
-
-// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
-// import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 
 
 
 import menuBrandyData from "services/dataHardAlkohol/brandy.json";
-// import menuCognacData from "services/dataHardAlkohol/cognac.json";
 import menuGinData from "services/dataHardAlkohol/gin.json";
 import menuLiqueursData from "services/dataHardAlkohol/liqueurs.json";
 import menuWhiskeyData from "services/dataHardAlkohol/whiskey.json";
@@ -19,7 +13,7 @@ import menuVodkaData from "services/dataHardAlkohol/vodka.json";
 import menuVermouthData from "services/dataHardAlkohol/vermouth.json";
 import menuTequilaData from "services/dataHardAlkohol/tequila.json";
 import menuRumData from "services/dataHardAlkohol/rum.json";
-import menuShotData from "services/dataHardAlkohol/shot.json";
+
 
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
@@ -30,10 +24,8 @@ import alcoholMenu2 from 'images/alcoholCardMenu.svg';
 
 
 export const HardAlkohol = () => {
-  // const { cartItems } = useContext(CartContext);
 
   const [brandyItems, setBrandyItems] = useState([]);
-//   const [cognacItems, setCognacItems] = useState([]);
   const [ginItems, setGinItems] = useState([]);
   const [liqueursItems, setLiqueursItems] = useState([]);
   const [whiskeyItems, setWhiskeyItems] = useState([]);
@@ -41,7 +33,7 @@ export const HardAlkohol = () => {
   const [vermouthItems, setVermouthItems] = useState([]);  
   const [tequilaItems, setTequilaItems] = useState([]); 
   const [rumItems, setRumItems] = useState([]); 
-  const [shotItems, setShotItems] = useState([]); 
+
 
 
   useEffect(() => {
@@ -61,9 +53,6 @@ export const HardAlkohol = () => {
     setBrandyItems(menuBrandyData);
   }, []);
 
-//   useEffect(() => {
-//     setCognacItems(menuCognacData);
-//   }, []);
 
   useEffect(() => {
     setGinItems(menuGinData);
@@ -93,9 +82,7 @@ export const HardAlkohol = () => {
    setRumItems(menuRumData);
  }, []);
 
- useEffect(() => {
-   setShotItems(menuShotData);
- }, []);
+
 
   return (
     <div className={styles.dishPage}>
@@ -159,6 +146,7 @@ export const HardAlkohol = () => {
 
                   <span className={styles.dishListItemName} >
                     <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+
                   </span>
 
                   <span className={styles.dishListItemIngredientsHardDrink}>
@@ -356,57 +344,7 @@ export const HardAlkohol = () => {
           </tbody>
           </table>
 
-          <table className={styles.dishList}>
-       
-           
-            <tbody>
-            <h3 className={styles.dishListTitle}>Вермут</h3>
-            {vermouthItems.map((item) => (
-            <tr key={item.id} className={styles.dishListItem}>
-              
-              <div className={styles.dishListItemInfo}>
-
-                <span className={styles.dishListItemName} >
-                  <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
-                </span>
-
-                <span className={styles.dishListItemIngredientsHardDrink}>
-                  <td>{item.інгредієнти}</td>
-                </span>
-
-                </div>
-
-                <div className={styles.dishListItemManagement}>
-
-                <span className={styles.dishListItemWeigth50}>
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
-                </span>
-
-                <span className={styles.dishTablePrice50}>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна50}</td>
-                </span>
-
-                <span className={styles.dishListItemWeigth100}>
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага100}</td>
-                </span>
-
-                <span className={styles.dishTablePrice100}>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна100}</td>
-                </span>
-
-                <span className={styles.dishListItemWeigthBottle}>
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
-                </span>
-
-                <span className={styles.dishTablePriceBottle}>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                </span>
-
-                </div>
-              </tr>
-            ))}
-          </tbody>
-          </table>
+          
 
           <table className={styles.dishList}>
   
@@ -561,40 +499,58 @@ export const HardAlkohol = () => {
             ))}
           </tbody>
           </table>
-
           <table className={styles.dishList}>
        
-            <tbody>
-              {shotItems.map((item) => (
-                 <tr key={item.id} className={styles.dishListItem}>
-      
-                  <div className={styles.dishListItemInfo}>
+           
+       <tbody>
+       <h3 className={styles.dishListTitle}>Вермут</h3>
+       {vermouthItems.map((item) => (
+       <tr key={item.id} className={styles.dishListItem}>
+         
+         <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemName} >
-                    <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
-                  </span>
+           <span className={styles.dishListItemName} >
+             <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+           </span>
 
-                  <span className={styles.dishListItemIngredientsHardDrink}>
-                    <td>{item.інгредієнти}</td>
-                  </span>
+           <span className={styles.dishListItemIngredientsHardDrink}>
+             <td>{item.інгредієнти}</td>
+           </span>
 
-                  </div>
+           </div>
 
-                  <div className={styles.dishListItemManagement}>
+           <div className={styles.dishListItemManagement}>
 
-                  <span className={styles.dishListItemWeigth50}>
-                    <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
-                  </span>
+           <span className={styles.dishListItemWeigth50}>
+             <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
+           </span>
 
-                  <span className={styles.dishTablePrice50}>
-                    <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-                  </span>
+           <span className={styles.dishTablePrice50}>
+             <td  className={styles.dishTablePriceNotDelivery}>{item.ціна50}</td>
+           </span>
 
-                  </div>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+           <span className={styles.dishListItemWeigth100}>
+             <td  className={styles.dishTableWeigthNotDelivery}>{item.вага100}</td>
+           </span>
+
+           <span className={styles.dishTablePrice100}>
+             <td  className={styles.dishTablePriceNotDelivery}>{item.ціна100}</td>
+           </span>
+
+           <span className={styles.dishListItemWeigthBottle}>
+             <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+           </span>
+
+           <span className={styles.dishTablePriceBottle}>
+             <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+           </span>
+
+           </div>
+         </tr>
+       ))}
+     </tbody>
+     </table>
+          
           
         </div>
       </div>

@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-// import AddButton from 'components/MenuComponents/AddButton/AddButton';
-// import CartContext from "components/CartProvider/CartProvider";
 
-// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
-// import ToMenuButton from "components/ToMenuButton/ToMenuButton";
 import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 
 import menuAlcoholicCocktailsData from "services/dataCocktails/alcoholicCocktails.json";
+import menuShotData from "services/dataHardAlkohol/shot.json";
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
@@ -21,7 +18,7 @@ export const AlcoholicCocktails = () => {
 
 
   const [alcoholicCocktailsItems, setAlcoholicCocktailsItems] = useState([]);
-
+  const [shotItems, setShotItems] = useState([]); 
 
   useEffect(() => {
     const contentElements = document.querySelectorAll(`.${styles.fades}`);
@@ -42,6 +39,9 @@ export const AlcoholicCocktails = () => {
   }, []);
 
 
+  useEffect(() => {
+    setShotItems(menuShotData);
+  }, []);
 
  
 
@@ -130,6 +130,7 @@ export const AlcoholicCocktails = () => {
           {/* <h3 className={styles.dishListTitle}>Алкогольні коктейлі</h3> */}
  
           <tbody>
+          <h3 className={styles.dishListTitle}>Коктейлі</h3>
             {alcoholicCocktailsItems.map((item) => (
             <tr key={item.id} className={styles.dishListItem}>
               
@@ -167,6 +168,40 @@ export const AlcoholicCocktails = () => {
           </tbody>
         </table>
 
+        <table className={styles.dishList}>
+       
+       <tbody>
+       <h3 className={styles.dishListTitle}>Шоти</h3>
+         {shotItems.map((item) => (
+            <tr key={item.id} className={styles.dishListItem}>
+ 
+             <div className={styles.dishListItemInfo}>
+
+             <span className={styles.dishListItemName} >
+               <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
+             </span>
+
+             <span className={styles.dishListItemIngredientsHardDrink}>
+               <td>{item.інгредієнти}</td>
+             </span>
+
+             </div>
+
+             <div className={styles.dishListItemManagement}>
+
+             <span className={styles.dishListItemWeigth50}>
+               <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+             </span>
+
+             <span className={styles.dishTablePrice50}>
+               <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+             </span>
+
+             </div>
+           </tr>
+         ))}
+       </tbody>
+     </table>
         </div>
       </div>
     </div>

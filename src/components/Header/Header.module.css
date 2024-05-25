@@ -7,48 +7,15 @@
   box-shadow: 0 0 20px 22px #00000064;   
   width:100%;
   z-index: 10;
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
-
-/* background-color: #000000; */
-/* background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png"); */
-/* background-color: #000000; */
-/* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
-/* background-color: #030303; */
-/* background-color: #000000; */
-/* background-color: #1a1a1a; */
-/* background-color: #000000; */
-/* background-color: #000000; */
-/* background-color: #000000; */
-/* background-color: #000000; */
-/* background-image: url("https://www.transparenttextures.com/patterns/simple-dashed.png"); */
-/* background-color: #000000; */
-/* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
-/* background-color: #000000; */
-/* background-image: url("https://www.transparenttextures.com/patterns/black-lozenge.png"); */
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
 }
 
-/* .bottomLineLogo {
-  position: absolute;
-  display: flex;
-  height: 5px;
-  width: 195px;
-  top: 49px;
-  left: 32px;
-  background-image: url("images/bottomLineLogo.svg");
-  background-size: 150%;
-  background-repeat: repeat;
-  background-position: center;
-  border-image-slice: 1;
-} */
+
 
 .headerBox {
    display: flex;
    height: 70px;
-   /* box-shadow:
-   inset #000000b1 0px -15px 29px,
-   inset #000000b1 0px 15px 29px,
-   rgb(0, 0, 0) 3px 3px 8px -3px; */
   
    @media screen and (min-width: 768px) {
     height: 70px;
@@ -75,20 +42,17 @@ background-image: url("https://www.transparenttextures.com/patterns/egg-shell.pn
 .headerList li {
   display: flex;
   align-items: center;
-  /* color: #272727; */
 } 
 
 
 .headerNav {
   display: flex;
   align-items: center;
-  /* padding-top: 50px; */
   width: 100%;
   height: 100%;
   justify-content: space-between;
   font-size: 11px;
   margin-left: 10px;
-/* color: #f0c0c0; */
   @media screen and (min-width: 1200px) {
     font-size: 15px;
   }; 
@@ -100,37 +64,21 @@ background-image: url("https://www.transparenttextures.com/patterns/egg-shell.pn
  }
 
  .headerLinkText {
+  color: #949494;
+  text-shadow: 1px 1px 1px #2c2c2c;
   transition: all .4s ease-out;
-  color: #787878;
-text-shadow: 1px 1px 1px #3b3b3b;
-  /* background: #888888;
-  background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  
 }
 
  .activeLink h4 {
  color: #400000;
- text-shadow: 1px 1px 1px #3c0000;
-   /* background: #900000;
-   background: linear-gradient(to bottom, #900000 0%, #600000 50%, #400000 100%);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent; */
+ text-shadow: 1px 1px 1px #270000;
  transition: all .4s ease-out;
 }
 
  .headerNav a:hover h4 {
  color: #400000;
- text-shadow: 1px 1px 1px #3c0000;
-   /* background: #900000;
-   background: linear-gradient(to bottom, #900000 0%, #600000 50%, #400000 100%);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
- transition: all .4s ease-out; */
+ text-shadow: 1px 1px 1px #4e0000;
+ transition: all .4s ease-out;
 }
 
 .headerInfo {
@@ -155,11 +103,8 @@ text-shadow: 1px 1px 1px #3b3b3b;
   justify-content: end;
   text-align: center;
   padding: 1px 0;
-  /* color: #9f9f9f; */
   
-
  @media screen and (min-width: 1200px) {
-  /* padding: 5px 0; */
 }; 
 
 }
@@ -167,7 +112,7 @@ text-shadow: 1px 1px 1px #3b3b3b;
 
 .headerInfoIconLocation {
 padding-right: 1.9px;
-/* height: 22px; */
+
 }
 
 .headerInfo h3 {
@@ -175,13 +120,9 @@ padding-right: 1.9px;
  font-size: 11px;
  padding-left: 2px;
 
- color: #787878;
- text-shadow: 1px 1px 1px #3b3b3b;
- /* background: #888888;
-  background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+ color: #949494;
+ text-shadow: 1px 1px 1px #2c2c2c;
+
 
  @media screen and (min-width: 1200px) {
   font-size: 12px;

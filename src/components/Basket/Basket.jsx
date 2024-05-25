@@ -6,6 +6,9 @@ import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 import styles from 'components/Basket/Basket.module.css';
 import "index.css";
 
+import closheMenu1 from 'images/closheMenuCard.svg';
+import closheMenu2 from 'images/closheMenuCard.svg';
+
 export const Basket = () => {
   const { cartItems, increaseQuantity, decreaseQuantity, clearCart } = useContext(CartContext);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -164,6 +167,36 @@ export const Basket = () => {
       <div className={styles.discriptionBox}>
               <h1 className={styles.basketTitle}>Замовлення</h1> 
 
+              <img
+            src={closheMenu1}
+            alt=""
+            style={{
+              position: 'fixed',
+              top: '70px',
+              left: '-100px',
+              width: '500px',
+              height: '500px',
+              zIndex: '0',
+              rotate: '10deg',
+              transform: 'scaleX(-1)',
+              opacity: '.4'
+            }}
+          />
+          <img
+            className={styles.menuCardImage}
+            src={closheMenu2}
+            alt=""
+            style={{
+              position: 'fixed',
+              bottom: '10px',
+              right: '-50px',
+              width: '500px',
+              height: '500px',
+              zIndex: '0',
+              rotate: '-10deg',
+              opacity: '.4',
+            }}
+          />
               <div className={styles.toMenuButton}>
                 <NavLink to="/menu" className={styles.toMenuLink}>
                   <ToMenuIcon className={styles.toMenuIcon}/>
@@ -231,6 +264,10 @@ export const Basket = () => {
                       </div>
 
                       <div className={styles.basketListItemManagement}>
+                      <span className={styles.basketListItemPrice}>
+                            {item.ціна}
+                          </span>
+                          
                           <span className={styles.basketListItemCounter}>
                             <button className={styles.basketListItemDecrease} onClick={() => decreaseQuantity(item.id)}>
                               -
@@ -243,9 +280,7 @@ export const Basket = () => {
                             </button>
                           </span>
                           
-                          <span className={styles.basketListItemPrice}>
-                            {item.ціна}
-                          </span>
+                         
                       </div>
 
                     </li>
