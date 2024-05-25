@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.770816b7.css",
-    "main.js": "/static/js/main.ffd533d0.js",
+    "main.css": "/static/css/main.6894d902.css",
+    "main.js": "/static/js/main.f7ef339e.js",
     "static/media/inMap.png": "/static/media/inMap.7c68d7b44ab412af869a.png",
     "static/media/23232555.png": "/static/media/23232555.20d673c873c32dd792fa.png",
     "static/media/Constantine.ttf": "/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
@@ -11,7 +11,8 @@
     "static/media/str2.png": "/static/media/str2.c6abf30fc16c5e0a3528.png",
     "static/media/MainLogoBY.svg": "/static/media/MainLogoBY.c90fcfcf21e148735680a6bd7b94958a.svg",
     "static/media/MainLogoBY2.svg": "/static/media/MainLogoBY2.bebba45ed2a000e4d42268be77088c5d.svg",
-    "static/media/bhLogo.svg": "/static/media/bhLogo.7cf148ab0b9b06cb6bc727cb19c54d65.svg",
+    "static/media/MainLogoBYUncolored.svg": "/static/media/MainLogoBYUncolored.678f4e3063e740703fc3a0400fd721e0.svg",
+    "static/media/bhLogo.svg": "/static/media/bhLogo.5a003b706ca85f63a30b92bdbc4c151e.svg",
     "static/media/pizzaCardMenu.svg": "/static/media/pizzaCardMenu.9910e177a09f6fb10bbb910839c3dd59.svg",
     "static/media/pizzaCard.svg": "/static/media/pizzaCard.3c20770994cef8c0502561e0923ce8e7.svg",
     "static/media/mocktailsCardMenu.svg": "/static/media/mocktailsCardMenu.6c35f5dd2df8584c18ff3de3c89edfe7.svg",
@@ -53,25 +54,28 @@
     "static/media/coldAppetizerCardMenu.svg": "/static/media/coldAppetizerCardMenu.42899967b4f75d8dca673eeb6c7f012b.svg",
     "static/media/coldAppetizerCard.svg": "/static/media/coldAppetizerCard.43eefbe9cf4e6b1622c7c5f98c190d5e.svg",
     "static/media/radioPhone.svg": "/static/media/radioPhone.e7aa469a355d9d1568ee3795b34102df.svg",
-    "static/media/blackberryPhone.svg": "/static/media/blackberryPhone.c0f09cfa0ef4678323bbf5b2b51f742f.svg",
     "static/media/userInMap.svg": "/static/media/userInMap.38d640a764ffb1d1d4fead98b342cade.svg",
+    "static/media/mobile.svg": "/static/media/mobile.e53b51f799a743b8ec12531b8545768d.svg",
     "static/media/closhe.svg": "/static/media/closhe.f3578c6136b11118d18511c0c22e1163.svg",
     "static/media/clock.svg": "/static/media/clock.4130123e70535f2bbc2c0aea679cba6e.svg",
     "static/media/toMenuIcon.svg": "/static/media/toMenuIcon.c2f5db7d108ea803a02fc2f167c55491.svg",
     "static/media/applePhone.svg": "/static/media/applePhone.ce0e711ffda1534eedb3ed87829c7903.svg",
     "static/media/inmap.svg": "/static/media/inmap.32de515b34c2dba4402eb9ddb48943d0.svg",
     "index.html": "/index.html",
-    "static/media/forinsta.svg": "/static/media/forinsta.b0ee49bf8fb245f238ef935850ffd4a2.svg",
+    "static/media/forinsta.svg": "/static/media/forinsta.1cc51fd31ffe0d8fbb32e6ebc674d430.svg",
+    "static/media/forinstafooter.svg": "/static/media/forinstafooter.a6933c29af44f8cb842e07d3645256f2.svg",
     "static/media/formail.svg": "/static/media/formail.a1b8eb8653c733201191a7570ce6c5ee.svg",
+    "static/media/formailfooter.svg": "/static/media/formailfooter.3d007a5b8b510f127c662d5e55a68eb0.svg",
+    "static/media/forfacebookfooter.svg": "/static/media/forfacebookfooter.e3f08c0d5e47ffc6ee96018cd7c6cbc9.svg",
     "static/media/forfacebook.svg": "/static/media/forfacebook.7a3d61c7dca5284b41cd1114ff38fe16.svg",
     "static/media/dot.svg": "/static/media/dot.8cc6efd0c8788ed971b3aa63955650ab.svg",
     "static/media/mobileSwitch.svg": "/static/media/mobileSwitch.fbd81f0ffcbc9f0d3f9daa0da92bd41d.svg",
     "static/media/toMenu.svg": "/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.770816b7.css.map": "/static/css/main.770816b7.css.map",
-    "main.ffd533d0.js.map": "/static/js/main.ffd533d0.js.map"
+    "main.6894d902.css.map": "/static/css/main.6894d902.css.map",
+    "main.f7ef339e.js.map": "/static/js/main.f7ef339e.js.map"
   },
   "entrypoints": [
-    "static/css/main.770816b7.css",
-    "static/js/main.ffd533d0.js"
+    "static/css/main.6894d902.css",
+    "static/js/main.f7ef339e.js"
   ]
 }
