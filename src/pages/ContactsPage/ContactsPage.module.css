@@ -11,27 +11,9 @@ width: 100%;
    width: 100%;
    background-repeat: repeat;
    background-position: top;
-   background-color: #000000;
- 
+   background-color: #020202;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   /* background-color: #000000; */
-   /* background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png"); */
    background-attachment: none;
-   /* background-color: #272727;
-background-image: url("https://www.transparenttextures.com/patterns/redox-01.png");
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/straws.png");
-background-color: #1c1c1c;
-background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
-background-color: #1f1f1f;
-background-image: url("https://www.transparenttextures.com/patterns/triangles.png");
-background-color: #050505;
-background-image: url("https://www.transparenttextures.com/patterns/txture.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
       @media screen and (min-width: 768px) {
          
@@ -73,12 +55,9 @@ background-image: url("https://www.transparenttextures.com/patterns/txture.png")
    left: 0;
    right: 0;
    bottom: 0;
-   background: #0000003b;
+   background: #02020207;
    z-index: -1;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-   /* background-color: #0f0f0f; */
-/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .contactsListBox {
@@ -209,7 +188,7 @@ background-image: url("https://www.transparenttextures.com/patterns/txture.png")
    transition: all .4s ease-out;
     width: 100%;
     height: 100%;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 1px black;
     /* transition: all .4s ease-out; */
     border-radius: 13px;
     font-size: 14px;

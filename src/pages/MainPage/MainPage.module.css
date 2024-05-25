@@ -8,6 +8,7 @@
   width: 100%;
   background-position: left;
   background-color: #000000;
+  background-color: #020202;
   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
   @media screen and (min-width: 1200px) {
@@ -65,8 +66,8 @@
       width: 350px;
       font-size: 15px;
       line-height: 45px;
-      color: #7c7c7c;
-      text-shadow: 4px 4px 2px black;
+      color: #949494;
+      text-shadow: 3px 3px 1px rgb(0, 0, 0);
       font-weight: 500;
       letter-spacing: 0.1px;
   
@@ -95,6 +96,8 @@
     justify-content: center;
     align-items: center; 
     box-shadow: 0 0 40px 20px #00000070;  
+    background-color: #070707;
+    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
   
     @media screen and (min-width: 768px) {
       height: 700px;
@@ -138,7 +141,7 @@
     border-radius: 14px;
     background-image: url('images/str2.png'); 
     background-color: #000000;
-    background-size: 100%;
+    background-size: 150%;
     background-position: top;
     background-repeat: repeat;
     overflow: hidden;
@@ -148,12 +151,12 @@
     rgba(0, 0, 0, 0.627) 3px 3px 10px 3px;
 
     @media screen and (min-width: 768px) {
-      background-size: 110%;
+      /* background-size: 150%; */
       border-radius: 17px;
       height: 200px;
     };
     @media screen and (min-width: 1200px) {
-      background-size: 30%;
+      background-size: 90%;
       background-repeat: repeat;
       background-attachment: fixed;
       border-radius: 19px;
@@ -171,8 +174,8 @@
     border-radius: 13px;
 background: rgba(0, 0, 0, 0.474);
 
-color: #6a6a6a;
-text-shadow: 1px 1px 1px #44444440;
+color: #787878;
+text-shadow: 1.5px 1.5px 1px #444444bc;
   @media screen and (min-width: 768px) {
     font-size: 17px;
   };
@@ -204,9 +207,9 @@ text-shadow: 1px 1px 1px #44444440;
      width: 370px;
      font-size: 15px;
      line-height: 45px;
-     color: #7c7c7c;
+     color: #949494;
      
-     text-shadow: 4px 4px 2px black;
+     text-shadow: 3px 3px 1px rgb(0, 0, 0);
      font-weight: 500;
      letter-spacing: 0.4px;
  
@@ -238,6 +241,8 @@ text-shadow: 1px 1px 1px #44444440;
     justify-content: center;
     padding: 0 20px;
     box-shadow: 0 0 40px 20px #00000070; 
+    background-color: #070707;
+    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
     @media screen and (min-width: 768px) {
       height: 400px;
@@ -303,8 +308,8 @@ text-shadow: 1px 1px 1px #44444440;
     width: 100%;
     border-radius: 13px;
     font-size: 15px;
-    color: #6a6a6a;
-    text-shadow: 1px 1px 1px #44444440;
+    color: #787878;
+    text-shadow: 1.5px 1.5px 1px #444444bc;
     background: #0000009e;
 
     @media screen and (min-width: 768px) {
@@ -341,8 +346,8 @@ text-shadow: 1px 1px 1px #44444440;
     width: 350px;
     font-size: 15px;
     line-height: 45px;
-    color: #656565;
-    text-shadow: 4px 4px 3px black;
+    color: #949494;
+    text-shadow: 3px 3px 1px rgb(0, 0, 0);
     font-weight: 500;
     letter-spacing: 0.4px;
 
@@ -422,8 +427,8 @@ text-shadow: 1px 1px 1px #44444440;
     font-size: 12px;
     font-weight: 900;
     color: #949494;
-    text-shadow: 1px 1px 2px black;
-    box-shadow:
+    text-shadow: 1.5px 1.5px 1px #000000bc;
+        box-shadow:
     inset #000000b0 -5px -5px 9px,
     inset #7d7d7d93 5px 5px 9px; 
 
@@ -459,8 +464,8 @@ text-shadow: 1px 1px 1px #44444440;
   width: 370px;
   font-size: 15px;
   line-height: 45px;
-  color: #7c7c7c;
-  text-shadow: 4px 4px 2px black;
+  color: #949494;
+  text-shadow: 3px 3px 1px rgb(0, 0, 0);
   font-weight: 500;
  
      @media screen and (min-width: 768px) {

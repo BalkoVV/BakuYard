@@ -6,9 +6,8 @@
    height: 100%;
    background-position: bottom;
    background-repeat: repeat;
-   background-color: #ffffff1c;
-   background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
-   background-color: #000000;
+ 
+   background-color: #020202;
  
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    background-position: left;
@@ -36,7 +35,7 @@
    font-size: 15px;
    font-weight: 900;
    margin: 0;
-   color: #94949400;
+   color: #d2121200;
 
    /* background: #888888;
    background: linear-gradient(to bottom, #888888 0%, #494949 50%, #393939 100%);
@@ -196,7 +195,7 @@ background-image: url("https://www.transparenttextures.com/patterns/az-subtle.pn
    /* letter-spacing: 1px; */
    font-weight: 900;
    color: #949494;
-   text-shadow: 1px 1px 2px black;
+   text-shadow: 1px 1px 1px black;
    /* text-shadow: 0px 0px 12px rgb(0, 0, 0); */
    /* background: #ececec;
   background: linear-gradient(to bottom, #ececec 0%, #afafaf 20%, #909090 50%, #afafaf 80%, #ececec 100%);
@@ -587,6 +586,7 @@ background-image: url("https://www.transparenttextures.com/patterns/solid.png");
   font-size: 9px;
   transition: all .4s ease-out;
   color: #949494;
+  text-shadow: 1px 1px 1px black;
   /* color: #000000; */
   font-weight: 900;
   margin-bottom: 9px;
