@@ -1,7 +1,7 @@
 // MailIconFooter.jsx
 
 import React from 'react';
-import mailIconFooter from 'images/forMailFooter.svg';
+import mailIconFooter from 'images/formailfooter.svg';
 // import styles from 'components/Logo/Logo.module.css';
 
 

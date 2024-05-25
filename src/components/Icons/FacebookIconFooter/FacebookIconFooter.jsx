@@ -1,7 +1,7 @@
 // FacebookIconFooter.jsx
 
 import React from 'react';
-import facebookIconFooter from 'images/forFacebookFooter.svg';
+import facebookIconFooter from 'images/forfacebookfooter.svg';
 
 
 export const FacebookIconFooter = () => {
