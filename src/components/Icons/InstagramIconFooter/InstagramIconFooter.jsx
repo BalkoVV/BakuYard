@@ -1,7 +1,7 @@
 // InstagramIconFooter.jsx
 
 import React from 'react';
-import instagramIconFooter from 'images/forInstaFooter.svg';
+import instagramIconFooter from 'images/forinstafooter.svg';
 // import styles from 'components/Logo/Logo.module.css';
 
 
