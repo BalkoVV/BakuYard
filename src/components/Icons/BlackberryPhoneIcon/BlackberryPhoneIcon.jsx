@@ -1,8 +1,7 @@
 // BlackberryPhoneIcon.jsx
 
 import React from 'react';
-import blackberryPhoneIcon from 'images/blackberryPhone.svg';
-// import styles from 'components/Logo/Logo.module.css';
+import blackberryPhoneIcon from 'images/mobile.svg';
 
 
 export const BlackberryPhoneIcon = () => {

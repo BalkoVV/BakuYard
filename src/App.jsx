@@ -34,12 +34,17 @@ export const App = () => {
         <Route render={({ location }) => {
           const isContactsPage = location.pathname === '/contacts';
           return <Footer customLinks={isContactsPage ? 
-        
+            
+            
           <a href="mailto:ben.happyngton@gmail.com" target="_blank" rel="noreferrer">
-             
-            <LogoBen />
            
-          </a> : null} />;
+          <LogoBen />
+         
+        </a>
+          
+            
+      
+          : null} />;
         }} />
       </MasterContainer>
     </Router>

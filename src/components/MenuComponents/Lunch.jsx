@@ -153,7 +153,7 @@ export const Lunch = () => {
                    
                     <td className={styles.dishListItemLunchInfo}>
                        <h4>
-                          * замовлення у відповідний день
+                          * замовлення з 12:00 до 15:00
                        </h4>
                      </td>
                     

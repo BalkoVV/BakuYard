@@ -1,7 +1,7 @@
 // Logo.jsx
 
 import React from 'react';
-// import logo from 'images/yardBakuLogo.svg';
+
 import logo from 'images/MainLogoBY2.svg';
 import styles from 'components/Logo/Logo.module.css';
 

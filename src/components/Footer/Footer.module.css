@@ -10,52 +10,11 @@
   border-image: linear-gradient(0.25turn, #101010, #2a2a2a, #101010);
   border-image-slice: 1;
 
-  /* box-shadow: 0 0 20px 9px #090909;    */
-  box-shadow: 0 0 20px 22px #00000064;   
   box-shadow: 0 0 26px 22px #00000064;
 
 background-color: #000000;
 background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
 
-/* background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
-background-color: #040404;
-background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
-background-color: #030303;
-background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
-background-color: #1a1a1a;
-background-image: url("https://www.transparenttextures.com/patterns/hexellence.png");
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/my-little-plaid-dark.png");
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/nami.png");
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/simple-dashed.png");
-background-color: #080808;
-background-image: url("https://www.transparenttextures.com/patterns/slash-it.png");
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/black-lozenge.png");
-background-color: #020202;
-background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
-background-color: #000000;
-background-image: url("https://www.transparenttextures.com/patterns/black-scales.png"); */
-/* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
 
 @media screen and (min-width: 768px) {
@@ -71,7 +30,6 @@ background-image: url("https://www.transparenttextures.com/patterns/black-scales
 .footerContainer {
   width: 100%;
  
-  /* background: linear-gradient(0deg, #c6191933,#00000077); */
 }
 
 
@@ -79,10 +37,6 @@ background-image: url("https://www.transparenttextures.com/patterns/black-scales
 .footerBox {
  padding: 40px 0 0;
  height: 160px;
- /* box-shadow:
- inset #000000b1 0px -25px 99px,
- inset #000000b1 0px 25px 99px,
- rgb(0, 0, 0) 3px 3px 8px -3px; */
 }
 .footerLogo {
   position: relative;
@@ -91,29 +45,43 @@ background-image: url("https://www.transparenttextures.com/patterns/black-scales
  justify-content: center;
 }
 
+
+
+
 .footerAllRights {
   display: flex;
   justify-content: center;
+ 
+
   color: #3c3c3c;
+  font-size: 9px;
   margin-top: 30px;
   margin-bottom: 30px;
   
 }
 
+.customFooter {
+ background-color: #fff;
+}
+
+.footerAllRights h5 {
+ margin: 0;
+}
+
 .footerSocial {
   position: relative;
   display: flex;
-  /* width: 100%; */
   justify-content: center;
   align-items: center;
-  margin-top: 17px;
+  margin-top: 25px;
+  
+  /* background-color: #fff; */
 }
 
 
 
 .footerSocial li img {
   height: 22px;
-  /* border-radius: 50%; */
 }
 
 .footerSocial li {
@@ -136,8 +104,4 @@ background-image: url("https://www.transparenttextures.com/patterns/black-scales
 
 .logoFooter {
  margin-top: 50px;
-}
-  
-.instaFooter {
- fill: red;
 }

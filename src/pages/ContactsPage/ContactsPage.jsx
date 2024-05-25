@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 
 import InMapButton from 'components/InMapButton/InMapButton';
-
 import InstagramIcon from 'components/Icons/InstagramIcon/InstagramIcon';
 import FacebookIcon from 'components/Icons/FacebookIcon/FacebookIcon';
 import MailIcon from 'components/Icons/MailIcon/MailIcon';
@@ -10,7 +9,6 @@ import ClockIcon from 'components/Icons/ClockIcon/ClockIcon';
 import BlackberryPhoneIcon from 'components/Icons/BlackberryPhoneIcon/BlackberryPhoneIcon';
 import ApplePhoneIcon from 'components/Icons/ApplePhoneIcon/ApplePhoneIcon';
 import RetroPhonesIcon from 'components/Icons/RetroPhonesIcon/RetroPhonesIcon';
-// import flagMapIcon from 'images/flagMap.svg';
 
 import styles from 'pages/ContactsPage/ContactsPage.module.css';
 
@@ -52,12 +50,12 @@ export const ContactsPage = () => {
                   </li>
 
                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
-                    <BlackberryPhoneIcon className={styles.phoneIconContact}/>
+                    <ApplePhoneIcon className={styles.phoneIconContact}/>
                     <a href="tel:+380682393837" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 068 239 38 37</a>
                   </li>
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
-                    <ApplePhoneIcon className={styles.phoneIconContact}/>
+                    <BlackberryPhoneIcon className={styles.phoneIconContact}/>
                     <a href="tel:+380934423028" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 093 442 30 28</a>
                   </li>          
 
