@@ -142,20 +142,41 @@ export const HardAlkohol = () => {
             {brandyItems.map((item) => (
             <tr key={item.id} className={styles.dishListItem}>
               
-               <div className={styles.dishListItemInfo}>
+               {/* <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemName} >
-                    <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
-
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
                   </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
 
-                  <span className={styles.dishListItemIngredientsHardDrink}>
-                    <td>{item.інгредієнти}</td>
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
                   </span>
+                  
+
+               </div> */}
+
+                <div className={styles.dishListItemInfo}>
+
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
+
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
 
                </div>
 
-               <div className={styles.dishListItemManagement}>
+               {/* <div className={styles.dishListItemManagement}>
                 
                   <span className={styles.dishListItemWeigth50}>
                     <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
@@ -181,7 +202,48 @@ export const HardAlkohol = () => {
                     <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
                   </span>
 
-               </div>
+               </div> */}
+               <div className={styles.dishListItemManagement}>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна50}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+                  <td>{item.вага100}</td>
+                </span>
+
+                <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+                  <td>{item.ціна100}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна}</td>
+                </span>
+
+               </span>
+
+               
+
+                </div>
               </tr>
             ))}
           </tbody> 
@@ -197,19 +259,41 @@ export const HardAlkohol = () => {
             {liqueursItems.map((item) => (
             <tr key={item.id} className={styles.dishListItem}>
               
-              <div className={styles.dishListItemInfo}>
+              {/* <div className={styles.dishListItemInfo}>
 
-              <span className={styles.dishListItemName} >
-                <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
-              </span>
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
 
-              <span className={styles.dishListItemIngredientsHardDrink}>
-                <td>{item.інгредієнти}</td>
-              </span>
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
 
-              </div>
+               </div> */}
 
-              <div className={styles.dishListItemManagement}>
+                <div className={styles.dishListItemInfo}>
+
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
+
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
+
+               </div>
+
+              {/* <div className={styles.dishListItemManagement}>
 
               <span className={styles.dishListItemWeigth50}>
                 <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
@@ -235,7 +319,48 @@ export const HardAlkohol = () => {
                 <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
               </span>
 
-              </div>
+              </div> */}
+              <div className={styles.dishListItemManagement}>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна50}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+                  <td>{item.вага100}</td>
+                </span>
+
+                <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+                  <td>{item.ціна100}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна}</td>
+                </span>
+
+               </span>
+
+               
+
+                </div>
               </tr>
             ))}
           </tbody>
@@ -249,19 +374,41 @@ export const HardAlkohol = () => {
             {whiskeyItems.map((item) => (
             <tr key={item.id} className={styles.dishListItem}>
               
-              <div className={styles.dishListItemInfo}>
+             {/* <div className={styles.dishListItemInfo}>
 
-                <span className={styles.dishListItemName} >
-                  <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
-                </span>
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
 
-                <span className={styles.dishListItemIngredientsHardDrink}>
-                  <td>{item.інгредієнти}</td>
-                </span>
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
 
-                </div>
+               </div> */}
 
-                <div className={styles.dishListItemManagement}>
+                <div className={styles.dishListItemInfo}>
+
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
+
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
+
+               </div>
+
+                {/* <div className={styles.dishListItemManagement}>
 
                 <span className={styles.dishListItemWeigth50}>
                   <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
@@ -286,6 +433,47 @@ export const HardAlkohol = () => {
                 <span className={styles.dishTablePriceBottle}>
                   <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
                 </span>
+
+                </div> */}
+                <div className={styles.dishListItemManagement}>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна50}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+                  <td>{item.вага100}</td>
+                </span>
+
+                <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+                  <td>{item.ціна100}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна}</td>
+                </span>
+
+               </span>
+
+               
 
                 </div>
               </tr>
@@ -300,43 +488,78 @@ export const HardAlkohol = () => {
             {vodkaItems.map((item) => (
             <tr key={item.id} className={styles.dishListItem}>
               
-              <div className={styles.dishListItemInfo}>
+             {/* <div className={styles.dishListItemInfo}>
 
-                <span className={styles.dishListItemName} >
-                  <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
-                </span>
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
 
-                <span className={styles.dishListItemIngredientsHardDrink}>
-                  <td>{item.інгредієнти}</td>
-                </span>
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
 
-                </div>
+               </div> */}
+                <div className={styles.dishListItemInfo}>
+
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
+
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
+
+               </div>
 
                 <div className={styles.dishListItemManagement}>
 
-                <span className={styles.dishListItemWeigth50}>
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага50}</td>
                 </span>
 
-                <span className={styles.dishTablePrice50}>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна50}</td>
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна50}</td>
                 </span>
 
-                <span className={styles.dishListItemWeigth100}>
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага100}</td>
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+                  <td>{item.вага100}</td>
                 </span>
 
-                <span className={styles.dishTablePrice100}>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна100}</td>
+                <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+                  <td>{item.ціна100}</td>
                 </span>
 
-                <span className={styles.dishListItemWeigthBottle}>
-                  <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага}</td>
                 </span>
 
-                <span className={styles.dishTablePriceBottle}>
-                  <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна}</td>
                 </span>
+
+               </span>
+
+               
 
                 </div>
               </tr>
@@ -353,19 +576,24 @@ export const HardAlkohol = () => {
             {tequilaItems.map((item) => (
             <tr key={item.id} className={styles.dishListItem}>
               
-              <div className={styles.dishListItemInfo}>
+             <div className={styles.dishListItemInfo}>
 
-              <span className={styles.dishListItemName} >
-                <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
-              </span>
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
 
-              <span className={styles.dishListItemIngredientsHardDrink}>
-                <td>{item.інгредієнти}</td>
-              </span>
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
 
-              </div>
+               </div>
 
-              <div className={styles.dishListItemManagement}>
+              {/* <div className={styles.dishListItemManagement}>
 
               <span className={styles.dishListItemWeigth50}>
                 <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
@@ -391,7 +619,48 @@ export const HardAlkohol = () => {
                 <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
               </span>
 
-              </div>      
+              </div>       */}
+              <div className={styles.dishListItemManagement}>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна50}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+                  <td>{item.вага100}</td>
+                </span>
+
+                <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+                  <td>{item.ціна100}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна}</td>
+                </span>
+
+               </span>
+
+               
+
+                </div>
               </tr>
             ))}
           </tbody>
@@ -403,20 +672,24 @@ export const HardAlkohol = () => {
             <h3 className={styles.dishListTitle}>Ром</h3>
             {rumItems.map((item) => (
             <tr key={item.id} className={styles.dishListItem}>
-              
-              <div className={styles.dishListItemInfo}>
+             <div className={styles.dishListItemInfo}>
 
-              <span className={styles.dishListItemName} >
-                <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
-              </span>
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
 
-              <span className={styles.dishListItemIngredientsHardDrink}>
-                <td>{item.інгредієнти}</td>
-              </span>
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
 
-              </div>
+               </div>
 
-              <div className={styles.dishListItemManagement}>
+              {/* <div className={styles.dishListItemManagement}>
 
               <span className={styles.dishListItemWeigth50}>
                 <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
@@ -442,7 +715,48 @@ export const HardAlkohol = () => {
                 <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
               </span>
 
-              </div>  
+              </div>   */}
+              <div className={styles.dishListItemManagement}>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна50}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+                  <td>{item.вага100}</td>
+                </span>
+
+                <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+                  <td>{item.ціна100}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна}</td>
+                </span>
+
+               </span>
+
+               
+
+                </div>
               </tr>
             ))}
           </tbody>
@@ -456,19 +770,24 @@ export const HardAlkohol = () => {
             {ginItems.map((item) => (
             <tr key={item.id} className={styles.dishListItem}>
               
-              <div className={styles.dishListItemInfo}>
+             <div className={styles.dishListItemInfo}>
 
-                <span className={styles.dishListItemName} >
-                  <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
-                </span>
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
 
-                <span className={styles.dishListItemIngredientsHardDrink}>
-                  <td>{item.інгредієнти}</td>
-                </span>
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
 
-                </div>
+               </div>
 
-                <div className={styles.dishListItemManagement}>
+                {/* <div className={styles.dishListItemManagement}>
 
                 <span className={styles.dishListItemWeigth50}>
                   <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
@@ -494,7 +813,48 @@ export const HardAlkohol = () => {
                   <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
                 </span>
 
-              </div>
+              </div> */}
+              <div className={styles.dishListItemManagement}>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна50}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+                  <td>{item.вага100}</td>
+                </span>
+
+                <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+                  <td>{item.ціна100}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна}</td>
+                </span>
+
+               </span>
+
+               
+
+                </div>
               </tr>
             ))}
           </tbody>
@@ -507,19 +867,41 @@ export const HardAlkohol = () => {
        {vermouthItems.map((item) => (
        <tr key={item.id} className={styles.dishListItem}>
          
-         <div className={styles.dishListItemInfo}>
+                 {/* <div className={styles.dishListItemInfo}>
 
-           <span className={styles.dishListItemName} >
-             <td className={styles.dishListItemNameDescriptionHardDrink}>{item.назва}</td>
-           </span>
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
 
-           <span className={styles.dishListItemIngredientsHardDrink}>
-             <td>{item.інгредієнти}</td>
-           </span>
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
 
-           </div>
+               </div> */}
 
-           <div className={styles.dishListItemManagement}>
+                <div className={styles.dishListItemInfo}>
+
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span>
+
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
+
+               </div>
+
+           {/* <div className={styles.dishListItemManagement}>
 
            <span className={styles.dishListItemWeigth50}>
              <td  className={styles.dishTableWeigthNotDelivery}>{item.вага50}</td>
@@ -545,7 +927,48 @@ export const HardAlkohol = () => {
              <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
            </span>
 
-           </div>
+           </div> */}
+           <div className={styles.dishListItemManagement}>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна50}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+                  <td>{item.вага100}</td>
+                </span>
+
+                <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+                  <td>{item.ціна100}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна}</td>
+                </span>
+
+               </span>
+
+               
+
+                </div>
          </tr>
        ))}
      </tbody>

@@ -42,7 +42,7 @@ export const MainDish = () => {
 
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+    window.scrollTo(0, 0); 
   }, []);
 
   useEffect(() => {
@@ -144,25 +144,49 @@ style={{
               <tbody>
               {mainDishItems.map((item) => (
               <tr key={item.id} className={styles.dishListItem}>
-                
-                 <div className={styles.dishListItemInfo}>
+               <div className={styles.dishListItemInfo}>
 
-                    {/* <span className={styles.dishListItemCategory}>
-                      <td>{item.категорія}</td>
-                    </span> */}
-                  
-                  <span className={styles.dishListItemName} >
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
+                
+                   <span className={styles.dishListItemName} >
                       <td className={styles.dishListItemNameDescription}>{item.назва}</td>
                     </span>
 
-                    <span className={styles.dishListItemIngredients}>
-                      <td>{item.інгредієнти}</td>
+                  <span className={styles.dishListItemIngredients}>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+                  </span>
+                  
+
+               </div>
+                   <div className={styles.dishListItemManagement}>
+
+                    <span className={styles.dishListWeightPriceBox}>
+                        <span className={styles.dishListItemWeigth}>
+                          <td>{item.вага}</td>
+                        </span>
+
+                        <span className={styles.dishTablePrice}>
+                          <td>{item.ціна}</td>
+                        </span>
+                    </span>
+
+                    <span className={styles.dishListButtonAddBox}>
+                        <td className={styles.dishListButtonAdd}>
+                        <AddButton
+                          onAdd={() => addToCart(item)}
+                          onRemove={() => {
+                            removeFromCart(item.id);
+                            updateButtonState(item.id);
+                          }}
+                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                        />
+                        </td>
                     </span>
 
                  </div>
-
-                  
-                 <div className={styles.dishListItemManagement}>
+                 {/* <div className={styles.dishListItemManagement}>
 
                     <span className={styles.dishListItemWeigth}>
                       <td>{item.вага}</td>
@@ -186,7 +210,7 @@ style={{
                         </td>
                     </span>
 
-                 </div>
+                 </div> */}
 
                 </tr>
               ))}

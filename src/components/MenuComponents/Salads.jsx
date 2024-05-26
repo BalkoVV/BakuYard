@@ -4,11 +4,9 @@ import React, { useEffect, useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 import AddButton from 'components/MenuComponents/AddButton/AddButton';
-// import ToMenuButton from "components/ToMenuButton/ToMenuButton";
+
 import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 import { CartContext } from "components/CartProvider/CartProvider";
-
-// import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 
 
 import menuData from "services/dataSalads/salads.json";
@@ -16,9 +14,9 @@ import styles from 'components/MenuComponents/menuStyle.module.css';
 
 import saladMenu1 from 'images/saladCardMenu.svg';
 import saladMenu2 from 'images/saladCardMenu.svg';
+
 // import saladMenu1 from 'images/saladMenu1.png';
 // import saladMenu2 from 'images/saladMenu2.png';
-// import saladMenu3 from 'images/saladMenu3.png';
 
 export const Salads = () => {
   const { addToCart, removeFromCart, cartItems } = useContext(CartContext);
@@ -28,7 +26,7 @@ export const Salads = () => {
     const contentElements = document.querySelectorAll(`.${styles.fades}`);
     contentElements.forEach((element, index) => {
       setTimeout(() => {
-        element.style.opacity = '.9'; 
+        element.style.opacity = '1'; 
       }, 10 * index); 
     });
   }, []);
@@ -52,28 +50,25 @@ export const Salads = () => {
 
   return (
     <div className={styles.dishPage}>
+
       <div className={styles.discriptionBox}>
           <h1 className={styles.dishTitle}>Салати</h1> 
           <div className={styles.toMenuButton}>
-        <NavLink to="/menu" className={styles.toMenuLink}>
-          <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Меню</h1>
-        </NavLink>
+            <NavLink to="/menu" className={styles.toMenuLink}>
+              <ToMenuIcon className={styles.toMenuIcon}/>
+              <h1 className={styles.toMenuDescription}>до Меню</h1>
+            </NavLink>
+          </div>
       </div>
-            </div>
+
       <div className={styles.dishPageContainer}>
        
-
-      
-         
-      
         <div className={styles.dishPageBox}>
 
         <img
-        // className={styles.menuCardImage}
          src={saladMenu1}
-        alt=""
-        style={{
+         alt=""
+         style={{
           position: 'fixed',
           top: '70px',
           left: '-100px',
@@ -100,7 +95,6 @@ export const Salads = () => {
           rotate: '-10deg',
           transform: 'scaleX(-1)',
           opacity: '.4',
-          // backgroundColor: 'white',
         }}
       />
         
@@ -113,23 +107,48 @@ export const Salads = () => {
               
                <div className={styles.dishListItemInfo}>
 
-                  {/* <span className={styles.dishListItemCategory}>
-                    <td>{item.категорія}</td>
-                  </span> */}
+                  <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                  </span>
                 
                    <span className={styles.dishListItemName} >
                       <td className={styles.dishListItemNameDescription}>{item.назва}</td>
                     </span>
 
                   <span className={styles.dishListItemIngredients}>
-                    <td>{item.інгредієнти}</td>
+                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
                   </span>
                   
 
                </div>
 
-                
-               <div className={styles.dishListItemManagement}>
+                 <div className={styles.dishListItemManagement}>
+
+                    <span className={styles.dishListWeightPriceBox}>
+                        <span className={styles.dishListItemWeigth}>
+                          <td>{item.вага}</td>
+                        </span>
+
+                        <span className={styles.dishTablePrice}>
+                          <td>{item.ціна}</td>
+                        </span>
+                    </span>
+
+                    <span className={styles.dishListButtonAddBox}>
+                        <td className={styles.dishListButtonAdd}>
+                        <AddButton
+                          onAdd={() => addToCart(item)}
+                          onRemove={() => {
+                            removeFromCart(item.id);
+                            updateButtonState(item.id);
+                          }}
+                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                        />
+                        </td>
+                    </span>
+
+                 </div>
+               {/* <div className={styles.dishListItemManagement}>
 
                   <span className={styles.dishListItemWeigth}>
                     <td>{item.вага}</td>
@@ -153,7 +172,7 @@ export const Salads = () => {
                       </td>
                   </span>
 
-               </div>
+               </div> */}
 
               </tr>
             ))}
