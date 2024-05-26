@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import logo from 'images/MainLogoBY2.svg';
+import logo from 'images/MainLogoBY22.svg';
 import styles from 'components/Logo/Logo.module.css';
 
 

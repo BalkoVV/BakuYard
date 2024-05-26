@@ -71,30 +71,6 @@
 
 /* -------------------------------------------------------------- */
 
-/* .dishList {
-   display: grid;
-   grid-template-columns: repeat(1, 1fr);
-   grid-row-gap: 10px;
-   border: none;
-   padding: 15px 5px 0px;
-   margin-bottom: 50px;
-   border-radius: 15px;
-   z-index: 9;
-   box-shadow:
-      inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
-      inset #303030 5px 5px 9px,
-      rgb(0, 0, 0) 3px 3px 8px -3px;
-   
-      
-   @media screen and (min-width: 767.9px) {
-      padding: 15px 15px 5px;
-   };
-
-   @media screen and (min-width: 1200px) {
-      padding: 20px 20px 5px;
-   };
-}   */
-
 .dishList {
    display: grid;
    grid-template-columns: repeat(1, 1fr);
@@ -144,7 +120,7 @@
    justify-content: space-between;
    height: 60px;
    margin-bottom: 17px;
-   transition: all .3s ease-out; 
+   transition: all .4s ease-out; 
    border-radius: 15px;
    background-color: #262626;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
@@ -164,10 +140,6 @@
    };
  }
 
- .dishListItem:hover {
-   transition: all .4s ease-out;
-   scale: 1.01;
-}
 
  .dishListItemInfo {
    display: flex;
@@ -306,11 +278,7 @@
    }; 
 }
 
-.dishListItemWeigthNotAddHardCenter,
-.dishListItemPriceNotAddHardCenter {
- border-left: 2px solid #333333;
- border-right: 2px solid #333333;
-}
+
 
  .dishListItemWeigth {
  display: flex;
@@ -319,7 +287,9 @@
  border-radius: 0 0 0 5px;
  background: #00000087;
  height: 100%;
- border-bottom: 1px solid #333333;
+ border-bottom: 1px solid #262626;
+ border-left: 1px solid #262626;
+
 }
 
 .dishListItemWeigthNotAdd {
@@ -329,8 +299,32 @@
    border-radius: 0 0 0 5px;
    background: #00000087;
    height: 100%;
-   border-bottom: 1px solid #333333;  
+   border-bottom: 1px solid #262626;  
   }
+
+
+.dishListItemWeigthNotAddHardRight {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 0 0 0 5px;
+   background: #00000087;
+   height: 100%;
+   border-bottom: 1px solid #262626;  
+   border-left: 1px solid #262626;  
+}
+
+.dishListItemPriceNotAddHardRight {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 0 0 0 5px;
+   background: #00000087;
+   height: 100%;
+   border-radius:  5px 0 0 0;
+   border-top: 1px solid #262626;  
+   border-left: 1px solid #262626;  
+}
 
   .dishListItemWeigthNotAddHard {
    display: flex;
@@ -339,21 +333,62 @@
    border-radius: 0 0 5px 5px;
    background: #00000087;
    height: 100%;
-   border-bottom: 1px solid #333333;  
+   border-bottom: 1px solid #262626;  
+   border-left: 1px solid #262626;  
+   border-right: 1px solid #262626;  
   }
+
+  .dishListItemPriceNotAddHard {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px 5px 0 0 ;
+   background: #00000087;
+   height: 100%;
+   border-top: 1px solid #262626;
+   border-left: 1px solid #262626;  
+   border-right: 1px solid #262626;  
+   /* display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 60px;
+   width: 50px;
+   margin: 0;
+   padding: 0;
+   font-size: 12px;
+   text-shadow: 1px 1px 2px rgb(0, 0, 0);
+   letter-spacing: -0.1px;
+   color: #949494;
+   background: #00000087;
+   border-left: 1px solid #605f5f24;
+    
+   @media screen and (min-width: 767.9px) {
+      font-size: 15px;
+      height: 65px;
+      width: 80px;
+   };
+
+   @media screen and (min-width: 1200px) {
+      font-size: 17px;
+      height: 70px;
+      width: 100px;
+   }; */
+}
 
 
  
 
-.dishTablePrice {
+.dishListItemPrice {
    display: flex;
    align-items: center;
    justify-content: center;
    /* background-color: #000; */
    border-radius: 5px 0 0 0 ;
- background: #00000087;
+   background: #00000087;
    height: 100%;
-   border-top: 1px solid #333333;
+   border-top: 1px solid #262626;
+   border-left: 1px solid #262626;
+
    /* display: flex;
    align-items: center;
    justify-content: center;
@@ -389,7 +424,7 @@
    border-radius: 5px 0 0 0 ;
    background: #00000087;
    height: 100%;
-   border-top: 1px solid #333333;
+   border-top: 1px solid #262626;
    /* display: flex;
    align-items: center;
    justify-content: center;
@@ -417,67 +452,29 @@
    }; */
 }
 
-.dishListItemPriceNotAddHard {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   /* background-color: #000; */
-   border-radius: 5px 5px 0 0 ;
-   background: #00000087;
-   height: 100%;
-   border-top: 1px solid #333333;
-   /* display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 50px;
-   margin: 0;
-   padding: 0;
-   font-size: 12px;
-   text-shadow: 1px 1px 2px rgb(0, 0, 0);
-   letter-spacing: -0.1px;
-   color: #949494;
-   background: #00000087;
-   border-left: 1px solid #605f5f24;
-    
-   @media screen and (min-width: 767.9px) {
-      font-size: 15px;
-      height: 65px;
-      width: 80px;
-   };
 
-   @media screen and (min-width: 1200px) {
-      font-size: 17px;
-      height: 70px;
-      width: 100px;
-   }; */
-}
 
 .dishListButtonAddBox {
    display: flex;
    align-items: center;
    justify-content: start;
    height: 60px;
-   width: 55px;
+   width: 50px;
    margin: 0;
    padding: 0;
    border-radius: 0 14px 14px 0;
-   background: #111010;
    background: #00000087;
-
-   /* border-left: 1px solid #2a2a2a; */
-   /* border-left: 1px solid #605f5f24; */
 
    @media screen and (min-width: 767.9px) {
       height: 65px;
-      width: 60px;
+      width: 55px;
       /* justify-content: center; */
       /* border-left: 1px solid #1a1a1a; */
    };
 
    @media screen and (min-width: 1200px) {
       height: 70px;
-      width: 65px;
+      width: 60px;
       /* justify-content: center; */
       /* border-left: 1px solid #1a1a1a; */
    };
@@ -494,8 +491,8 @@
    margin: 0;
    overflow: hidden;
    font-size: 25px;
-   transition: all .4s ease-out;
-   border-radius: 15px;
+   /* transition: all .4s ease-out; */
+   border-radius: 13px;
    background-color: #444444;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
 
@@ -510,8 +507,9 @@
    };
 }
 
-.dishListButtonAdd:hover {
+.dishListItem:hover {
    transition: all .4s ease-out;
+   scale: 1.02;
 }
 
 
@@ -548,7 +546,7 @@
    display: flex; 
    flex-direction: column;
    margin-bottom: 17px;
-   transition: all .3s ease-out; 
+   transition: all .4s ease-out; 
    overflow: hidden;
    border-radius: 15px;
    background-color: #262626;
@@ -711,131 +709,6 @@ text-shadow: 1px 1px 1px #444444bc;
 
 /* -------------------------------------------------------------- */
 /* ############################################################## */
-
-
-.dishListItemNameDescriptionHardDrink {
-   display: flex;
-   padding: 35px 0 0 10px;
-   font-size: 12px;
-  
-   color: #bebebe;
-   font-weight: 900;
-   text-shadow: 1px 1px 2px black;
-
-   @media screen and (max-width: 399px) {
-      padding: 35px 0 0 2px;
-      font-size: 8px;
-      letter-spacing: .01px;
-      
-   };
-
-   @media screen and (min-width: 767.9px) {
-      font-size: 17px;
-      padding: 35px 0 0 20px;
-   };
-   @media screen and (min-width: 1200px) {
-      font-size: 19px;
-      padding: 35px 0 0 20px;
-   };
-}
-
-
-
-.dishListItemIngredientsHardDrink {
-   display: flex;
-   align-items: flex-start;
-   font-size: 9px;
-   /* letter-spacing: -0.1px; */
-   color: #949494;
-   text-shadow: 1px 1px 1px black;
-
-   padding: 10px 0 0 10px;
-   height: 40px;
-
-   @media screen and (max-width: 399px) {
-      font-size: 7px;
-   }
-
-   @media screen and (min-width: 767.9px) {
-      font-size: 10px;
-      padding: 12px 0 0 20px;
-      /* letter-spacing: .1px; */
-   };
-  
-   @media screen and (min-width: 1200px) {
-      font-size: 11px;
-      padding: 15px 0 0 25px;
-      /* letter-spacing: .2px; */
-   };
-}
-
-.dishTableWeigthNotDelivery {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 50px;
-   margin: 0;
-   padding: 0;
-   font-size: 10px;
-   color: #949494;
-   border-left: 1px solid #1a1a1a;
-   letter-spacing: -0.1px;
-   background: #00000087;
-
-   @media screen and (max-width: 399px) {
-      font-size: 8px;
-   }
-
-   @media screen and (min-width: 767.9px) {
-      font-size: 15px;
-      height: 65px;
-      width: 70px;
-   };
-
-   @media screen and (min-width: 1200px) {
-      font-size: 17px;
-      height: 70px;
-      width: 80px;
-   };
-}
-
-.dishTablePriceNotDelivery {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 50px;
-   margin: 0;
-   padding: 0;
-
-   font-size: 11px;
-   letter-spacing: -0.1px;
-   color: #949494;
-   border-left: 1px solid #1a1a1a;
-   background: #00000087;
-    
-   @media screen and (max-width: 399px) {
-      font-size: 8px;
-   }
-
-   @media screen and (min-width: 767.9px) {
-      font-size: 15px;
-      height: 65px;
-      width: 70px;
-      border-left: 1px solid #1a1a1a;
-   };
-
-   @media screen and (min-width: 1200px) {
-      font-size: 17px;
-      height: 70px;
-      width: 80px;
-      border-left: 1px solid #1a1a1a;
-   };
-}
- 
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .toMenuButton {
    position: absolute;

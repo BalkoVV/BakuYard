@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ReactComponent as MainLogo } from 'images/MainLogoBY.svg';
+import { ReactComponent as MainLogo } from 'images/MainLogoBY2.svg';
 // import MenuQrLogo from 'images/MenuBusinessCard.png';
 import styles from 'pages/BusinessCardPage/BusinessCardPage.module.css'
 

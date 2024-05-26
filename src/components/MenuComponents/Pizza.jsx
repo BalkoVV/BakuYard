@@ -138,7 +138,7 @@ export const Pizza = () => {
                           <td>{item.вага}</td>
                         </span>
 
-                        <span className={styles.dishTablePrice}>
+                        <span className={styles.dishListItemPrice}>
                           <td>{item.ціна}</td>
                         </span>
                     </span>
