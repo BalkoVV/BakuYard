@@ -1,34 +1,46 @@
 .fadeOut {
   opacity: 0; 
-  /* transition: opacity 1s ease-out; */
 }
 
+/* basket */
 .basket {
- position: relative;
- min-height: 85vh;
-  
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
+  position: relative;
+  min-height: 85vh;
    
- };
-}
-
-.basketContainer {
-   padding: 0 5px;
-
   @media screen and (min-width: 767.9px) {
-    padding: 0 150px;
+      
   };
-  
   @media screen and (min-width: 1200px) {
-    padding: 0 300px;
+    
   };
  }
- 
 
- .menuCardImage {
+
+
+/* discriptionBox */
+
+
+/* basketTitle */
+.basketTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95px;
+  font-size: 15px;
+  margin: 0;
+  color: transparent;
+
+  @media screen and (min-width: 767.9px) {
+    
+  };
+  @media screen and (min-width: 1200px) {
+    
+  };
+  
+}
+
+/* menuCardImage */
+.menuCardImage {
   @media screen and (max-width: 767.9px) {
      display: none;
     };
@@ -36,25 +48,256 @@
 
 
 
-
-.basketTitle {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 95px;
-   font-size: 15px;
-   margin: 0;
-   color: transparent;
-
-   @media screen and (min-width: 767.9px) {
-     
-   };
-   @media screen and (min-width: 1200px) {
-     
-   };
+/* toMenuButton */
+.toMenuButton {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 21px;
+  right: 20px; 
+  height: 60px;
+  width: 60px;
+  border-radius: 13px;
+  overflow: hidden;
+  border: none;
+  box-shadow:  4px 4px 15px 2px #00000078;
+  transition: all .4s ease-out;
+  z-index: 9;
+  background-color: #262626;
+  background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
    
+   @media screen and (min-width: 767.9px) {
+      width: 150px;
+      flex-direction: row-reverse;
+      right: 40px; 
+     
+   };
+
+      @media screen and (min-width: 1200px) {
+         
+         right: 80px; 
+        
+      };
 }
 
+.toMenuButton:hover .toMenuDescription {
+ 
+  color: #e9e9e9;
+      transition: all .4s ease-out;
+ }
+
+ .toMenuButton:hover {
+  scale: 1.03;
+  transition: all .4s ease-out;
+  box-shadow:  4px 4px 15px 2px #0000002d;
+}
+
+
+/* toMenuLink */
+.toMenuLink {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+  width: 100%;
+  box-shadow:
+   inset #000000b0 -5px -5px 9px,
+   inset #7d7d7d93 5px 5px 9px; 
+   
+     @media screen and (min-width: 767.9px) {
+        flex-direction: row;
+        justify-content: end;
+     };
+
+        @media screen and (min-width: 1200px) {
+     
+        };
+ }
+
+
+/* toMenuIcon */
+.toMenuIcon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  opacity: .6;
+  height: 41px;
+  width: 41px;
+  top: 9px;
+  right: 9px;
+   
+
+   @media screen and (min-width: 767.9px) {
+      margin-bottom: 0px;
+      height: 55px;
+      width: 55px;
+      top: 5px;
+      left: -3px;
+
+      rotate: -5deg;
+      transition: all .4s ease-out;
+     
+    };
+
+    /* @media screen and (min-width: 1200px) {
+      right: -7px;
+      rotate: -5deg;
+    }; */
+}
+
+
+/* toMenuDescription */
+.toMenuDescription {
+  margin: 0;
+ 
+  transition: all .4s ease-out;
+  color: #949494;
+  /* color: #949494; */
+  font-weight: 900;
+  margin-bottom: 6px;
+  display: none;
+
+   @media screen and (min-width: 767.9px) {
+     display: flex;
+    margin-bottom: 0px;
+    margin-right: 13px;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px black;
+ };
+
+    @media screen and (min-width: 1200px) {
+     
+    };
+}
+
+
+/* basketContainer */
+.basketContainer {
+  padding: 0 5px;
+
+ @media screen and (min-width: 767.9px) {
+   padding: 0 150px;
+ };
+ 
+ @media screen and (min-width: 1200px) {
+   padding: 0 300px;
+ };
+}
+
+
+
+
+/* emptyOrderBasketBox */
+.emptyOrderBasketBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* border-radius: 13px; */
+  /* overflow: hidden; */
+  /* box-shadow:  4px 4px 15px 2px #00000078; */
+  /* margin: 0 20px; */
+}
+
+
+
+/* orderDone */
+
+
+
+/* orderDoneMessage */
+.orderDoneMessage,
+.basketEmptyMessage {
+   display: flex;
+   align-items: center;
+   /* background-color: #fff; */
+   
+ 
+ @media screen and (min-width: 767.9px) {
+  
+ };
+ @media screen and (min-width: 1200px) {
+ 
+ };
+}
+
+.orderDoneMessage h2,
+.basketEmptyMessage h2 {
+  /* background-color: red; */
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ text-align: center;
+ font-size: 15px;
+      line-height: 45px;
+      color: #7c7c7c;
+      text-shadow: rgb(0, 0, 0) 0px 0px 15px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+
+ @media screen and (min-width: 767.9px) {
+  font-size: 15px;
+  /* line-height: 65px; */
+ };
+ @media screen and (min-width: 1200px) {
+  font-size: 17px;
+  /* line-height: 75px; */
+ };
+}
+
+
+/* basketBox */
+
+
+
+/* emptyOrderBasketBox */
+
+
+
+/* basketEmpty */
+
+
+
+/* basketEmptyMessage */
+
+
+
+/* basketListBox */
+.basketListBox {
+position: relative;
+}
+
+
+/* basketList */
+.basketList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 15px;
+  border: none;
+  padding: 15px 5px 0px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  box-shadow:
+  inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
+  inset #303030 5px 5px 9px,
+  rgb(0, 0, 0) 3px 3px 8px -3px;
+  z-index: 9;
+     
+  @media screen and (min-width: 767.9px) {
+     padding: 15px 15px 5px;
+  };
+
+ @media screen and (min-width: 1200px) {
+  padding: 20px 20px 5px;
+ };
+}
+
+
+
+/* basketTitled */
 .basketTitled {
   display: flex;
   justify-content: center;
@@ -76,64 +319,32 @@
 }
 
 
-.basketListBox {
- display: flex;
- flex-direction: column;
- /* padding: 10px; */
- 
-@media screen and (min-width: 767.9px) {
-  /* padding: 20px; */
-};
-@media screen and (min-width: 1200px) {
-  /* padding: 60px; */
- 
-};
-}
-
-
-.basketList {
-  position: relative;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 20px;
-    border: none;
-    padding: 0px 5px 5px;
-    border-radius: 13px;
-    box-shadow:
-    inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
-    inset #303030 5px 5px 9px,
-    rgb(0, 0, 0) 3px 3px 8px -3px;
-
-
-     
- @media screen and (min-width: 767.9px) {
-  padding: 20px;
- };
- @media screen and (min-width: 1200px) {
-  padding: 30px;
-  /* background: red; */
- };
-}
-
+/* basketListItem */
 .basketListItem {
-  display: flex; 
-  align-items: center;
-  justify-content: space-between;
-  height: 60px;
-  transition: all .4s ease-out; 
-  border-radius: 13px;
-  background-color: #262626;
-  background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
-  box-shadow:
-   inset #000000b0 -5px -5px 9px,
-   inset #7d7d7d93 5px 5px 9px; 
+  position: relative;
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   height: 60px;
+   /* margin-bottom: 17px; */
+   transition: all .4s ease-out; 
+   border-radius: 15px;
+   background-color: #262626;
+   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+   box-shadow:
+      inset #000000b0 -5px -5px 9px,
+      inset #7d7d7d93 5px 5px 9px; 
+   overflow: hidden;
 
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
+   /* @media screen and (min-width: 768px) {
+      height: 65px;
+      margin-bottom: 13px;
+   };
+
+   @media screen and (min-width: 1200px) {
+      height: 70px;
+      margin-bottom: 16px;
+   }; */
 }
 
 .basketListItem:hover {
@@ -141,144 +352,240 @@
    scale: 1.02;
 }
 
+
+
+/* basketListItemInfo */
 .basketListItemInfo {
- display: flex;
- flex-direction: column;
- height: 60px;
-
-}
-
-.basketListItemInfo span {
   display: flex;
-  align-items: center;
-  justify-content: start;
-  height: 20px;
-}
+  flex-direction: column;
+  height: 60px;
+  width: 100%;
+ 
+ }
+ 
+
+
 
 .basketListItemCategory {
-  color: #949494;
-  text-shadow: 1px 1px 1px black;
-
-  font-size: 10px;
-  padding-left: 10px;
-   
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  /* background-color: rgba(0, 64, 100, 0.825); */
 }
 
-.basketListItemName {
- display: flex;
- font-size: 12px;
- padding-left: 15px;
 
- 
-  color: #bebebe;
+
+/* basketListItemCategoryDescription */
+.basketListItemCategoryDescription {
+  /* display: flex;
+  padding-left: 15px;
+  margin: 0;
+  color: #949494;
+  text-shadow: 1px 1px 1px black;
+  font-size: 10px; */
+
+  display: flex;
+   align-items: center;
+   padding-left: 15px;
+   font-size: 11px;
+  
+   color: #bebebe;
    font-weight: 900;
    text-shadow: 1px 1px 2px black;
 
    @media screen and (max-width: 374.9px) {
-    font-size: 9px;
-    /* padding-left: 1px; */
+      font-size: 9px;
+      /* padding-left: 1px; */
 
- };
+   };
 
- @media screen and (min-width: 767.9px) {
-    font-size: 17px;
-    /* padding: 35px 0 0 20px; */
-    /* padding-left: 10px; */
- };
- @media screen and (min-width: 1200px) {
-    font-size: 19px;
-    /* padding: 35px 0 0 20px; */
-    padding-left: 25px;
- };
+   @media screen and (min-width: 767.9px) {
+      font-size: 12px;
+      /* padding: 35px 0 0 20px; */
+      /* padding-left: 10px; */
+   };
+   @media screen and (min-width: 1200px) {
+      font-size: 13px;
+      /* padding: 35px 0 0 20px; */
+      /* padding-left: 25px; */
+   };
 }
+
+
+.basketListItemName {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+
+
+  @media screen and (min-width: 767.9px) {
+     
+  };
+  @media screen and (min-width: 1200px) {
+     
+  };
+}
+
+
+
+.basketListItemNameDescription  {
+  /* display: flex;
+  padding-left: 5px;
+  margin: 0;
+  color: #949494;
+  text-shadow: 1px 1px 1px black;
+  font-size: 10px; */
+  display: flex;
+   align-items: center;
+   padding-left: 15px;
+   font-size: 12px;
+  
+   color: #bebebe;
+   font-weight: 900;
+   text-shadow: 1px 1px 2px black;
+
+   @media screen and (max-width: 374.9px) {
+      font-size: 9px;
+      /* padding-left: 1px; */
+
+   };
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 17px;
+      /* padding: 35px 0 0 20px; */
+      /* padding-left: 10px; */
+   };
+   @media screen and (min-width: 1200px) {
+      font-size: 19px;
+      /* padding: 35px 0 0 20px; */
+      padding-left: 25px;
+   };
+}
+
+
 
 .basketListItemIngredients {
   display: flex;
-  align-items: flex-start;
-  font-size: 9px;
-  letter-spacing: -0.1px;
-  text-shadow: 1px 1px 2px rgb(0, 0, 0);
-  color: #bbbbbb;
-  text-shadow: 1px 1px 1px black;
-  padding: 10px 0 0 10px;
-  height: 40px;
-
- 
+  justify-content: start;
+  align-items: center;
+  /* padding-left: 5px; */
+  width: 100%;
+  height: 55px;
+  /* background-color: rgba(83, 0, 100, 0.825); */
 
   @media screen and (min-width: 767.9px) {
-     font-size: 10px;
-     padding: 12px 0 0 20px;
-     /* letter-spacing: .1px; */
+     
   };
- 
   @media screen and (min-width: 1200px) {
-     font-size: 12px;
-     padding: 15px 0 0 25px;
-     font-weight: 900;
-     /* letter-spacing: .2px; */
+     
   };
 }
+
+
+
+.basketListItemIngredientsDescription {
+  display: flex;
+  padding-left: 5px;
+  margin: 0;
+  color: #949494;
+  font-size: 10px;
+}
+
+
 
 .basketListItemManagement {
   display: flex;
+
+}
+
+.basketListItemCounterInfo {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 80px;
+ display: flex;
+ flex-direction: column;
+ /* background-color: #fff; */
+}
+
+
+
+.basketListItemQuantity {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
   align-items: center;
+  height: 50%;
+ border-bottom: 1px solid #262626;
+ font-size: 18px;
+ text-shadow: 1px 1px 1px black;
 }
 
 .basketListItemPrice {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 55px;
-   margin: 0;
-   padding: 0;
-   font-size: 14px;
-   color: #949494;
-   text-shadow: 1px 1px 1px black;
+  display: flex;
+border-top: 1px solid #262626;
+justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  text-shadow: 1px 1px 1px black;
+height: 50%;
+}
+
+/* basketListItemPrice */
+
+
+
+/* basketListItemCounter */
+.basketListItemCounter {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  height: 60px;
+  /* width: 150px; */
+  margin: 0;
+  padding: 0;
+  /* padding: 0 7px; */
+  font-size: 19px;
   background: #00000087;
-  border-right: 1px solid #212121;
-  border-left: 1px solid #212121;
+  border-radius: 0 13px 13px 0;
+  border-radius: 13px;
+  border-left: 2px solid #262626;
+  margin-left: 2px;
 
  @media screen and (min-width: 767.9px) {
-  font-size: 15px;
-  width: 60px;
+     
  };
+
  @media screen and (min-width: 1200px) {
-  font-size: 17px;
-  width: 85px;
+   
  };
 }
 
-.basketListItemCounter {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   height: 60px;
-   width: 120px;
-   margin: 0;
-   padding: 0;
-   padding: 0 7px;
-   font-size: 19px;
-   background: #00000087;
-   border-radius: 0 13px 13px 0;
-
-  @media screen and (min-width: 767.9px) {
-      
-  };
-
-  @media screen and (min-width: 1200px) {
-    
-  };
+.basketListItemDecreaseBox {
+ display: flex;
+ align-items: center;
+ justify-content: end;
+ height: 100%;
+ width: 55px;
+ /* background-color: #fff; */
 }
 
+.basketListItemIncreaseBox {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+  /* width: 100%; */
+ width: 55px;
 
-
+  /* background-color: #fff; */
+ }
+/* basketListItemIncrease */
+/* basketListItemDecrease */
 .basketListItemIncrease,
 .basketListItemDecrease {
   display: flex;
@@ -292,7 +599,6 @@
   overflow: hidden;
   font-size: 25px;
   color: #949494;
-  border: 2px solid #94949465;
   border-radius: 12px;
   transition: all 0.4s ease-out;
    box-shadow:
@@ -300,6 +606,10 @@
    inset #303030 5px 5px 9px,
    rgb(0, 0, 0) 3px 3px 8px -3px;
     background: #141414;
+
+    border-radius: 13px;
+    background-color: #444444;
+    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
   
   @media screen and (min-width: 767.9px) {
       
@@ -317,7 +627,15 @@
 
 
 
+/* basketListItemQuantity */
 
+
+
+
+
+
+
+/* basketOrderInfo */
 .basketOrderInfo {
   display: grid;
   display: flex;
@@ -329,7 +647,6 @@
   border-top: 1px solid transparent;
   border-image: linear-gradient(0.25turn, #101010, #2a2a2a, #101010);
   border-image-slice: 1;
-  /* padding: 0 60px; */
   /* background-color: #fff; */
  
   
@@ -343,30 +660,36 @@
 }
 
 
+
+/* basketQuantityBox */
 .basketQuantityBox {
- display: flex;
- align-items: center;
- justify-content: space-between;
- height: 60px;
- width: 100%;
- /* padding: 0 20px; */
-border-radius: 13px;
-background-color: #262626;
-background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
-box-shadow:
-inset #000000b0 -5px -5px 9px,
-inset #7d7d7d93 5px 5px 9px, 
-0px 0px 12px 1px rgba(0, 0, 0, 0.577);
- @media screen and (min-width: 768px) {
-   
- };
- @media screen and (min-width: 1200px) {
- 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  /* padding: 0 20px; */
+ border-radius: 13px;
+ background-color: #262626;
+ background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+ box-shadow:
+ inset #000000b0 -5px -5px 9px,
+ inset #7d7d7d93 5px 5px 9px, 
+ 0px 0px 12px 1px rgba(0, 0, 0, 0.577);
+  @media screen and (min-width: 768px) {
+    
+  };
+  @media screen and (min-width: 1200px) {
   
- };
-}
+   
+  };
+ }
+ 
 
 
+
+/* basketQuantityTitle */
+/* basketPriceTitle */
 .basketQuantityTitle,
 .basketPriceTitle {
   display: grid;
@@ -392,6 +715,10 @@ inset #7d7d7d93 5px 5px 9px,
 margin: 0;
 }
 
+
+
+/* basketTotalQuantity */
+/* basketTotalPrice */
 .basketTotalQuantity,
 .basketTotalPrice {
    color: #c2c2c2;
@@ -409,10 +736,23 @@ margin: 0;
  };
 }
 
+/* basketQuantityBox */
 
+
+
+
+
+
+
+
+
+
+
+/* basketMakeOrder */
 .basketMakeOrder {
   display: flex;
   justify-content: center; 
+  
 
    @media screen and (min-width: 767.9px) {
    };
@@ -421,10 +761,111 @@ margin: 0;
    };
  }
 
+
  
+ .buttonMakeOrderDescription {
+  color: #616060;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  font-family: PrimaryFont;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+  width: 100%;
+  height: 100%;
+  box-shadow:  4px 4px 15px 4px #0000008b;
+  transition: all .4s ease-out;
+}
+
+.buttonMakeOrderDescription:hover {
+  box-shadow:  2px 2px 15px 2px #0000005d;
+  transition: all .4s ease-out;
+  scale: 1.03;
+ }
+
+ .buttonMakeOrder.disabled {
+  cursor: not-allowed;
+  position: relative;
+  transition: background-color 0.5s; 
+
+  
+@media screen and (min-width: 767.9px) {
+    
+};
+@media screen and (min-width: 1200px) {
+  
+};
+}
+
+.buttonMakeOrder.disabled:hover::after {
+  content: "Заповніть всі поля";
+  position: absolute;
+  top: calc(20% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(0, 0, 0);
+  font-family: PrimaryFont;
+
+  color: #d9d9d949;
+  padding: 6px 0px;
+  border-radius: 11px;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: opacity .4s ease-out; 
+  opacity: 0; 
+
+   
+@media screen and (min-width: 767.9px) {
+    
+};
+@media screen and (min-width: 1200px) {
+  
+};
+}
+
+.buttonMakeOrder.disabled:hover::after {
+  opacity: 1; 
+  transition: opacity .4s ease-out; 
+
+  
+@media screen and (min-width: 767.9px) {
+    
+};
+@media screen and (min-width: 1200px) {
+  
+};
+}
+
+.buttonMakeOrder.active .buttonMakeOrderDescription{
+     color: #8f3000;
+
+  @media screen and (min-width: 767.9px) {
+    
+  };
+  @media screen and (min-width: 1200px) {
+    
+  };
+}
+
+.buttonMakeOrder.active:hover {
+cursor: pointer;
+   
+@media screen and (min-width: 767.9px) {
+    
+};
+@media screen and (min-width: 1200px) {
+  
+};
+}
+
+
+/* basketInputBox */
 .basketInputBox {
   display: grid;
-  width: 85%;
+  /* background-color: #fff; */
+  /* width: 85%; */
+  /* width: 100%; */
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 15px;
   padding: 20px;
@@ -446,15 +887,19 @@ margin: 0;
  };
 }
 
- .basketInput {
+
+/* basketInput */
+.basketInput {
   position: relative;
    /* background-color: rgb(0, 0, 0); */
    /* color: #000000; */
+   font-family: PrimaryFont;
    padding-left: 16px;
    height: 50px;
    border: none;
    border-radius: 11px;
    border: 1px solid rgb(0, 0, 0);
+   color: #949494;
    font-size: 17px;
    background-color: #262626;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
@@ -463,7 +908,7 @@ margin: 0;
    inset #000000a4 -1px -1px 3px; 
    transition: all .4s linear;
 
-   ;
+   
 
     
  @media screen and (min-width: 767.9px) {
@@ -481,51 +926,65 @@ margin: 0;
 }
 
 
+
+
+/* basketInputAddressBox */
 .basketInputAddressBox {
-   display: flex;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-   
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
-}
-
-.basketInputStreet {
-   width: 230px;
-   width: 100%;
-
+  
+@media screen and (min-width: 767.9px) {
     
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
+};
+@media screen and (min-width: 1200px) {
+  
+};
 }
 
+
+
+
+/* basketInputStreet */
+.basketInputStreet {
+  width: 230px;
+  width: 100%;
+
+   
+@media screen and (min-width: 767.9px) {
+    
+};
+@media screen and (min-width: 1200px) {
+  
+};
+}
+
+
+/* basketInputStreetNumber */
 .basketInputStreetNumber {
-   width: 40px;
+  width: 40px;
 margin-left: 10px;
-   
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
+  
+@media screen and (min-width: 767.9px) {
+    
+};
+@media screen and (min-width: 1200px) {
+  
+};
 }
 
+
+/* buttonMakeOrderBox */
 .buttonMakeOrderBox {
-display: flex;
-justify-content: center;
-padding: 40px 0;
-width: 100%;
-}
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  width: 100%;
+  }
 
+
+/* buttonMakeOrder */
+/* isOrderButtonActive */
 .buttonMakeOrder,
 .buttonMakeOrder.active {
   display: flex;
@@ -558,6 +1017,12 @@ width: 100%;
     
 }
 
+
+
+
+
+
+/* buttonMakeOrderDescription */
 .buttonMakeOrderDescription {
   color: #616060;
  display: flex;
@@ -573,399 +1038,3 @@ width: 100%;
  transition: all .4s ease-out;
 }
 
-.buttonMakeOrderDescription:hover {
-  box-shadow:  2px 2px 15px 2px #0000005d;
-  transition: all .4s ease-out;
-  scale: 1.03;
- }
-
-
- 
-.buttonMakeOrder.disabled {
-   cursor: not-allowed;
-   position: relative;
-   transition: background-color 0.5s; 
-
-   
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
-}
-
-.buttonMakeOrder.disabled:hover::after {
-   content: "Заповніть всі поля";
-   position: absolute;
-   top: calc(20% + 5px);
-   left: 50%;
-   transform: translateX(-50%);
-   background-color: rgb(0, 0, 0);
-   font-family: PrimaryFont;
-
-   color: #d9d9d949;
-   padding: 6px 0px;
-   border-radius: 11px;
-   font-size: 13px;
-   white-space: nowrap;
-   transition: opacity .4s ease-out; 
-   opacity: 0; 
-
-    
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
-}
-
-.buttonMakeOrder.disabled:hover::after {
-   opacity: 1; 
-   transition: opacity .4s ease-out; 
-
-   
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
-}
-
-.buttonMakeOrder.active .buttonMakeOrderDescription{
-      color: #8f3000;
- 
-   @media screen and (min-width: 767.9px) {
-     
-   };
-   @media screen and (min-width: 1200px) {
-     
-   };
-}
-
-.buttonMakeOrder.active:hover {
-cursor: pointer;
-    
- @media screen and (min-width: 767.9px) {
-     
- };
- @media screen and (min-width: 1200px) {
-   
- };
-}
-
-
-
-.emptyOrderBasketBox {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  /* border-radius: 13px; */
-  /* overflow: hidden; */
-  /* box-shadow:  4px 4px 15px 2px #00000078; */
-  /* margin: 0 20px; */
-}
-
-.basketEmpty,
-.orderCompleted {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  /* background-color: #303030; */
-
-/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-/* background-color: #3b3a3a; */
-/* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
-  /* box-shadow:
-    inset #000000b0 -5px -5px 9px,
-    inset #7d7d7d93 5px 5px 9px;  */
-}
-
-
-/* .orderDoneMessage,
-.basketEmptyMessage {
-   display: flex;
-   align-items: center;
-   
- 
- @media screen and (min-width: 767.9px) {
-  
- };
- @media screen and (min-width: 1200px) {
- 
- };
-} */
-
-.orderDoneMessage h2,
-.basketEmptyMessage h2 {
- display: flex;
- width: 100%;
- justify-content: center;
- text-align: center;
- font-size: 15px;
-      line-height: 45px;
-      color: #7c7c7c;
-      text-shadow: rgb(0, 0, 0) 0px 0px 15px;
-      font-weight: 500;
-      letter-spacing: 0.1px;
-
- @media screen and (min-width: 767.9px) {
-  font-size: 15px;
-  /* line-height: 65px; */
- };
- @media screen and (min-width: 1200px) {
-  font-size: 17px;
-  /* line-height: 75px; */
- };
-}
-
- .toMenuButton {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 21px;
-    right: 20px; 
-    height: 60px;
-    width: 60px;
-    border-radius: 13px;
-    overflow: hidden;
-    border: none;
-
-    box-shadow:  4px 4px 15px 2px #00000078;
-    background-color: #0f0f0f;
-    background-image: url("https://www.transparenttextures.com/patterns/mooning.png");
-    background-color: #303030;
-/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
-/* background-color: #3b3a3a; */
-background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
-    
-background-color: #282828;
-background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-
-background-color: #252525;
-/* background-image: url("https://www.transparenttextures.com/patterns/slash-it.png"); */
-transition: all .4s ease-out;
-    z-index: 9;
-    background-color: #262626;
-    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
-     
-     @media screen and (min-width: 767.9px) {
-        width: 150px;
-        flex-direction: row-reverse;
-        right: 40px; 
-       
-     };
-
-        @media screen and (min-width: 1200px) {
-           
-           right: 80px; 
-          
-        };
- }
-
- .toMenuLink {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  height: 100%;
-  width: 100%;
-  box-shadow:
-   inset #000000b0 -5px -5px 9px,
-   inset #7d7d7d93 5px 5px 9px; 
-   
-     @media screen and (min-width: 767.9px) {
-        flex-direction: row;
-        justify-content: end;
-     };
-
-        @media screen and (min-width: 1200px) {
-     
-        };
- }
- 
- .toMenuDescription {
-   margin: 0;
-  
-   transition: all .4s ease-out;
-   color: #949494;
-   /* color: #949494; */
-   font-weight: 900;
-   margin-bottom: 6px;
-   display: none;
-
-    @media screen and (min-width: 767.9px) {
-      display: flex;
-     margin-bottom: 0px;
-     margin-right: 13px;
-     font-size: 16px;
-     text-shadow: 1px 1px 1px black;
-  };
-
-     @media screen and (min-width: 1200px) {
-      
-     };
- }
- 
- .toMenuButton:hover .toMenuDescription {
- 
-  color: #e9e9e9;
-      transition: all .4s ease-out;
- }
-
- .toMenuButton:hover {
-  scale: 1.03;
-  transition: all .4s ease-out;
-  box-shadow:  4px 4px 15px 2px #0000002d;
-}
-
- .toMenuIcon {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotateY(180deg);
-    /* margin-bottom: 3px; */
-    opacity: .6;
-    /* rotate: -5deg; */
-    height: 41px;
-        width: 41px;
-        top: 9px;
-        right: 9px;
-     
-
-     @media screen and (min-width: 767.9px) {
-      
-      
-        margin-bottom: 0px;
-        height: 55px;
-        width: 55px;
-        top: 5px;
-        left: -3px;
-
-        rotate: -5deg;
-        transition: all .4s ease-out;
-       
-      };
-
-      /* @media screen and (min-width: 1200px) {
-        right: -7px;
-        rotate: -5deg;
-      }; */
- }
-
-
-
-
-
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
- .dishListItemInfo {
-  display: flex;
-  flex-direction: column;
-  height: 60px;
-  width: 100%;
-  background-color: #000;
-}
-
-.dishListItemCategory {
- display: flex;
- justify-content: start;
- align-items: center;
- width: 100%;
- height: 55px;
- background-color: rgba(0, 64, 100, 0.825);
- 
-}
-
-.dishListItemCategoryDescription {
-  display: flex;
-  padding-left: 15px;
-  margin: 0;
-  color: red;
-  font-size: 10px;
-}
-
-.dishListItemName {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-  height: 55px;
-  background-color: rgba(0, 100, 7, 0.825);
-
-  @media screen and (min-width: 767.9px) {
-     
-  };
-  @media screen and (min-width: 1200px) {
-     
-  };
-}
-
-.dishListItemNameDescription {
-  display: flex;
-  padding-left: 5px;
-  margin: 0;
-  color: red;
-  font-size: 10px;
-}
-
-/* .dishListItemNameDescription {
-  display: flex;
-  padding: 35px 0 0 10px;
-  font-size: 12px;
- 
-  color: #bebebe;
-  font-weight: 900;
-  text-shadow: 1px 1px 2px black;
-
-  @media screen and (max-width: 374.9px) {
-     font-size: 9px;
-
-  };
-
-  @media screen and (min-width: 767.9px) {
-     font-size: 17px;
-     padding: 35px 0 0 20px;
-  };
-  @media screen and (min-width: 1200px) {
-     font-size: 19px;
-     padding: 35px 0 0 20px;
-  };
-} */
-
-.dishListItemIngredients {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  /* padding-left: 5px; */
-  width: 100%;
-  height: 55px;
-  background-color: rgba(83, 0, 100, 0.825);
-
-  @media screen and (min-width: 767.9px) {
-     
-  };
-  @media screen and (min-width: 1200px) {
-     
-  };
-
- 
-
- 
-}
-
-
-.dishListItemIngredientsDescription {
-  display: flex;
-  padding-left: 5px;
-  margin: 0;
-  color: red;
-  font-size: 10px;
-}
-
- 

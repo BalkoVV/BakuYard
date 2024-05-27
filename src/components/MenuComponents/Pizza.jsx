@@ -115,8 +115,8 @@ export const Pizza = () => {
                 
                 <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
                 
                    <span className={styles.dishListItemName} >
@@ -170,50 +170,50 @@ export const Pizza = () => {
               {khachapuriData.map((item) => (
               <tr key={item.id} className={styles.dishListItem}>
                 
-                 <div className={styles.dishListItemInfo}>
+                <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
-                  </span>
-                
-                   <span className={styles.dishListItemName} >
-                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
-                    </span>
+<span className={styles.dishListItemCategory}>
+    <td className={styles.dishListItemCategoryDescription}></td>
+  </span>
 
-                  <span className={styles.dishListItemIngredients}>
-                    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
-                  </span>
-                  
+   <span className={styles.dishListItemName} >
+      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+    </span>
 
-               </div>
+  <span className={styles.dishListItemIngredients}>
+    <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
+  </span>
+  
 
-                  
-                 <div className={styles.dishListItemManagement}>
+</div>
 
-                    <span className={styles.dishListWeightPriceBox}>
-                        <span className={styles.dishListItemWeigth}>
-                          <td>{item.вага}</td>
-                        </span>
+  
+ <div className={styles.dishListItemManagement}>
 
-                        <span className={styles.dishTablePrice}>
-                          <td>{item.ціна}</td>
-                        </span>
-                    </span>
+    <span className={styles.dishListWeightPriceBox}>
+        <span className={styles.dishListItemWeigth}>
+          <td>{item.вага}</td>
+        </span>
 
-                    <span className={styles.dishListButtonAddBox}>
-                        <td className={styles.dishListButtonAdd}>
-                        <AddButton
-                          onAdd={() => addToCart(item)}
-                          onRemove={() => {
-                            removeFromCart(item.id);
-                            updateButtonState(item.id);
-                          }}
-                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                        />
-                        </td>
-                    </span>
+        <span className={styles.dishListItemPrice}>
+          <td>{item.ціна}</td>
+        </span>
+    </span>
 
-                 </div>
+    <span className={styles.dishListButtonAddBox}>
+        <td className={styles.dishListButtonAdd}>
+        <AddButton
+          onAdd={() => addToCart(item)}
+          onRemove={() => {
+            removeFromCart(item.id);
+            updateButtonState(item.id);
+          }}
+          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+        />
+        </td>
+    </span>
+
+ </div>
 
                 </tr>
               ))}
@@ -228,10 +228,8 @@ export const Pizza = () => {
                 
                 <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>
-                      {item.категорія}
-                    </td>
+                <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
                 
                    <span className={styles.dishListItemName} >
@@ -253,7 +251,7 @@ export const Pizza = () => {
                           <td>{item.вага}</td>
                         </span>
 
-                        <span className={styles.dishTablePrice}>
+                        <span className={styles.dishListItemPrice}>
                           <td>{item.ціна}</td>
                         </span>
                     </span>

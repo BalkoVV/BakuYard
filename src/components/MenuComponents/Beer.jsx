@@ -58,11 +58,12 @@ export const Beer = () => {
       <div className={styles.discriptionBox}>
             <h1 className={styles.dishTitle}>Пиво</h1> 
             <div className={styles.toMenuButton}>
-        <NavLink to="/menu" className={styles.toMenuLink}>
-          <ToMenuIcon className={styles.toMenuIcon}/>
-          <h1 className={styles.toMenuDescription}>до Меню</h1>
-        </NavLink>
-      </div>          </div>
+              <NavLink to="/menu" className={styles.toMenuLink}>
+                <ToMenuIcon className={styles.toMenuIcon}/>
+                <h1 className={styles.toMenuDescription}>до Меню</h1>
+              </NavLink>
+            </div>         
+       </div>
       
       <div className={styles.dishPageContainer}>
       
@@ -123,7 +124,7 @@ export const Beer = () => {
           </table> */}
 
 <table className={styles.dishList}>
-          <h3 className={styles.dishListTitle}>Пиво</h3>
+          {/* <h3 className={styles.dishListTitle}>Пиво</h3> */}
  
           <tbody>
             {menuItems.map((item) => (
@@ -131,8 +132,8 @@ export const Beer = () => {
               
               <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+              <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
                 
                    <span className={styles.dishListItemName} >
@@ -213,8 +214,8 @@ export const Beer = () => {
                 
                 <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
                 
                    <span className={styles.dishListItemName} >
@@ -255,7 +256,7 @@ export const Beer = () => {
 
                  </div> */}
 
-<div className={styles.dishListItemManagement}>
+{/* <div className={styles.dishListItemManagement}>
 
 <span className={styles.dishListWeightPriceBox}>
     <span className={styles.dishListItemWeigth}>
@@ -280,7 +281,34 @@ export const Beer = () => {
     </td>
 </span>
 
-</div>
+</div> */}
+
+<div className={styles.dishListItemManagement}>
+
+                    <span className={styles.dishListWeightPriceBox}>
+                        <span className={styles.dishListItemWeigth}>
+                          <td>{item.вага}</td>
+                        </span>
+
+                        <span className={styles.dishListItemPrice}>
+                          <td>{item.ціна}</td>
+                        </span>
+                    </span>
+
+                    <span className={styles.dishListButtonAddBox}>
+                        <td className={styles.dishListButtonAdd}>
+                        <AddButton
+                          onAdd={() => addToCart(item)}
+                          onRemove={() => {
+                            removeFromCart(item.id);
+                            updateButtonState(item.id);
+                          }}
+                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                        />
+                        </td>
+                    </span>
+
+                 </div>
 
                 </tr>
               ))}

@@ -8,7 +8,9 @@
   align-items: center;
  
    /* background-color: #070707; */
-   background-color: #000000;
+   background-color: #020202;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+
   
 
 
@@ -31,14 +33,14 @@
  align-items: center;
 
  /* margin-left: 300px; */
- margin: 150px 170px;
+ margin: 150px 20px;
  height: 50mm;
  width: 90mm;
  background-color: rgb(0, 0, 0);
- border: .5px solid rgb(17, 17, 17);
+ border: .5px solid #5050506b;
  /* border-radius: 9px; */
- scale: 1.8;
- box-shadow: -3px 3px 19px 3px #4a4a4a90;}
+ /* scale: 1.8; */
+ box-shadow: 3px 3px 9px 3px #000000;}
 
 .mainLogoTop {
    display: flex;
@@ -51,7 +53,7 @@
  display: flex;
  height: 170px;
  width: .1px;
- background-color: #222222ff;
+ background-color: #5050507f;
 }
 
 .infoTop {
@@ -74,9 +76,9 @@ height: 100%;
 }
 
 .infoTop li h5 {
-   display: flex;
-   justify-content: start;
-   width: 100%;
+ display: flex;
+ justify-content: start;
+ width: 100%;
  margin: 0;
  padding: 0;
  font-size: 7px;
@@ -84,7 +86,7 @@ height: 100%;
 }
 
 .infoTopDescription {
-   color: #2c2c2c;
+   color: #505050;
    font-weight: 900;
 }
 
@@ -94,27 +96,28 @@ height: 100%;
    align-items: center;
    margin-top: 150px;
    /* margin-left: 300px; */
-   margin: 150px 170px;
+   margin: 150px 20px;
    height: 190px;
    width: 340px;
    background-color: rgb(0, 0, 0);
-   border: .5px solid rgb(17, 17, 17);
+   border: .5px solid #5050506b;
    /* border-radius: 9px; */
-   scale: 1.8;
-   box-shadow: 3px 3px 19px 3px #4a4a4a90;
+   /* scale: 1.8; */
+ box-shadow: 3px 3px 9px 3px #000000;
   }
   
   .menuQrBack {
    display: flex;
    margin-left: auto;
    margin-right: auto;
-   background:url("images/MenuBusinessCard.png");
+   background:url("images/Menu-QR.png");
    background-size: 80%;
    background-position: center;
    background-repeat: no-repeat;
    overflow: hidden;
    height: 190px;
    width: 210px;
+   opacity: .7;
    /* background-color: #fff; */
   }
   
@@ -122,7 +125,7 @@ height: 100%;
    display: flex;
    height: 170px;
    width: .1px;
-   background-color: #222222ff;
+   background-color: #5050507f;
   }
   
   .infoBack {
@@ -137,7 +140,7 @@ height: 100%;
   .facebookQrBack {
    display: flex;
    height: 85px;
-   background: url('images/facebookQR.png');
+   background: url('images/Facebook-QR.png');
    /* padding-top: 15px; */
    background-size: contain;
    background-position: center;
@@ -149,7 +152,7 @@ height: 100%;
   .instagramQrBack {
    display: flex;
    height: 85px;
-   background: url('images/instagramQR.png');
+   background: url('images/Instagram-QR.png');
 
    background-size: contain;
    background-position: center;
@@ -170,7 +173,7 @@ height: 100%;
  height: 700px;
  background-color: rgb(0, 0, 0);
  margin-bottom: 70px;
- box-shadow: -3px 3px 19px 3px #4a4a4a90;
+ box-shadow: 3px 3px 9px 3px #000000;
 }
 
 .mainLogoTable {
@@ -186,7 +189,7 @@ margin-bottom: 10px;
    display: flex;
    width: 100%;
    justify-content: center;
-   color: #222222;
+   color: #505050;
    margin-bottom: 30px;
 }
 
@@ -194,18 +197,19 @@ margin-bottom: 10px;
    display: flex;
    justify-content: center;
    width: 100%;
-   height: .1px;
-   background-color: #222222ff;
+   height: .5px;
+   background-color: #5050507f;
 }
 
 .menuQrTable {
    display: flex;
-   height: 100%;
-   width: 100%;
+   height: 80%;
+   width: 80%;
    margin-left: auto;
    margin-right: auto;
-   background:url("images/MenuBusinessCard.png");
+   background:url("images/Menu-QR.png");
    background-size: 100%;
+   opacity: .7;
    background-position: center;
    background-repeat: no-repeat;
    overflow: hidden;

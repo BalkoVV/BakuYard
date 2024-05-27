@@ -114,9 +114,10 @@ style={{
               
                <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+               <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
+                
                 
                    <span className={styles.dishListItemName} >
                       <td className={styles.dishListItemNameDescription}>{item.назва}</td>
@@ -169,9 +170,10 @@ style={{
               
              <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+             <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
+                
                 
                    <span className={styles.dishListItemName} >
                       <td className={styles.dishListItemNameDescription}>{item.назва}</td>
@@ -185,17 +187,20 @@ style={{
                </div>
 
                 
-               <div className={styles.dishListItemManagement}>
+               <div className={styles.dishListItemManagementNotAdd}>
 
-                  <span className={styles.dishListItemWeigth}>
-                    <td>{item.вага}</td>
+                  <span className={styles.dishListWeightPriceBoxNotAdd}>
+                      <span className={styles.dishListItemWeigthNotAdd}>
+                        <td>{item.вага}</td>
+                      </span>
+
+                      <span className={styles.dishTablePriceNotAdd}>
+                        <td>{item.ціна}</td>
+                      </span>
                   </span>
 
-                  <span className={styles.dishTablePrice}>
-                    <td>{item.ціна}</td>
-                  </span>
 
-               </div>
+                </div>
               </tr>
             ))}
           </tbody>

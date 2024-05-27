@@ -174,8 +174,8 @@ export const Basket = () => {
               position: 'fixed',
               top: '70px',
               left: '-30px',
-              width: '450px',
-              height: '450px',
+              width: '500px',
+              height: '500px',
               zIndex: '0',
               rotate: '10deg',
               transform: 'scaleX(-1)',
@@ -190,8 +190,8 @@ export const Basket = () => {
               position: 'fixed',
               bottom: '10px',
               right: '-30px',
-              width: '450px',
-              height: '450px',
+              width: '500px',
+              height: '500px',
               zIndex: '0',
               rotate: '-10deg',
               opacity: '.4',
@@ -246,56 +246,62 @@ export const Basket = () => {
 
                   {cartItems.map((item) => (
                     <li className={styles.basketListItem} key={item.id}>
-                      
-                      {/* <div className={styles.basketListItemInfo}>
+                 
+                      <div className={styles.basketListItemInfo}>
 
-                        <span className={styles.basketListItemCategory}>
-                          {item.категорія}
-                        </span>
-                        
-                        <span className={styles.basketListItemName}>
-                          {item.назва}
-                        </span>
+                          <span className={styles.basketListItemCategory}>
+                            <td className={styles.basketListItemCategoryDescription}>
+                              {item.категорія}
+                            </td>
+                          </span>
+
+                          <span className={styles.basketListItemName} >
+                            <td className={styles.basketListItemNameDescription}>
+                              {item.назва}
+                            </td>
+                          </span>
 
                         <span className={styles.basketListItemIngredients}>
-                          {item.інгредієнти}
+                          <td className={styles.basketListItemIngredientsDescription}>
+
+                          </td>
                         </span>
 
-                      </div> */}
-                      <div className={styles.dishListItemInfo}>
-
-<span className={styles.dishListItemCategory}>
-  <td className={styles.dishListItemCategoryDescription}>
-    {item.категорія}
-  </td>
-</span>
-
- <span className={styles.dishListItemName} >
-    <td className={styles.dishListItemNameDescription}>{item.назва}</td>
-  </span>
-
-<span className={styles.dishListItemIngredients}>
-  <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
-</span>
+                        </div>
 
 
-</div>
+
+
+
+
+
 
                       <div className={styles.basketListItemManagement}>
-                      <span className={styles.basketListItemPrice}>
+                          {/* <span className={styles.basketListItemPrice}>
                             {item.ціна}
-                          </span>
+                          </span> */}
+
                           
                           <span className={styles.basketListItemCounter}>
-                            <button className={styles.basketListItemDecrease} onClick={() => decreaseQuantity(item.id)}>
+                           <span className={styles.basketListItemDecreaseBox}>
+                           <button className={styles.basketListItemDecrease} onClick={() => decreaseQuantity(item.id)}>
                               -
                             </button>
+                           </span>
+                            <span  className={styles.basketListItemCounterInfo}>
                             <span className={styles.basketListItemQuantity}>
                               {item.quantity}
                             </span>
-                            <button className={styles.basketListItemIncrease} onClick={() => increaseQuantity(item.id)}>
+                            <span className={styles.basketListItemPrice}>
+                              {item.ціна}
+                            </span>
+                            </span>
+                          
+                           <span className={styles.basketListItemIncreaseBox}>
+                           <button className={styles.basketListItemIncrease} onClick={() => increaseQuantity(item.id)}>
                               +
                             </button>
+                           </span>
                           </span>
                           
                          
@@ -308,6 +314,7 @@ export const Basket = () => {
                     <div className={styles.basketOrderInfo}>
 
                       <ul className={styles.basketQuantityBox}>
+
 
                         
                           <li className={styles.basketQuantityTitle}>

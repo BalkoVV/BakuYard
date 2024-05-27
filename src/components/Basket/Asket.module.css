@@ -1,0 +1,899 @@
+.fadeOut {
+  opacity: 0; 
+}
+
+.menuCardImage {
+  @media screen and (max-width: 767.9px) {
+     display: none;
+    };
+  }
+
+.basket {
+ position: relative;
+ min-height: 85vh;
+  
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+/* .discriptionBox {} */
+
+/* .basketTitle {} */
+
+.basketContainer {
+   padding: 0 5px;
+
+  @media screen and (min-width: 767.9px) {
+    padding: 0 150px;
+  };
+  
+  @media screen and (min-width: 1200px) {
+    padding: 0 300px;
+  };
+ }
+ 
+
+.basketTitle {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 95px;
+   font-size: 15px;
+   margin: 0;
+   color: transparent;
+
+   @media screen and (min-width: 767.9px) {
+     
+   };
+   @media screen and (min-width: 1200px) {
+     
+   };
+   
+}
+
+.basketTitled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #949494;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  font-size: 13px;
+  margin: 0;
+  padding: 20px 0 10px;
+
+@media screen and (min-width: 767.9px) {
+  font-size: 15px;
+  margin-bottom: 10px;
+};
+@media screen and (min-width: 1200px) {
+  font-size: 17px;
+  margin-bottom: 20px;
+};
+}
+
+.basketList {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 10px;
+  border: none;
+  padding: 15px 5px 0px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  box-shadow:
+  inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
+  inset #303030 5px 5px 9px,
+  rgb(0, 0, 0) 3px 3px 8px -3px;
+  z-index: 9;
+     
+  @media screen and (min-width: 767.9px) {
+     padding: 15px 15px 5px;
+  };
+
+ @media screen and (min-width: 1200px) {
+  padding: 20px 20px 5px;
+ };
+}
+
+.basketListItem {
+  /* position: relative; */
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   height: 60px;
+   margin-bottom: 17px;
+   transition: all .4s ease-out; 
+   border-radius: 15px;
+   background-color: #262626;
+   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+   box-shadow:
+      inset #000000b0 -5px -5px 9px,
+      inset #7d7d7d93 5px 5px 9px; 
+   overflow: hidden;
+
+   @media screen and (min-width: 768px) {
+      height: 65px;
+      margin-bottom: 13px;
+   };
+
+   @media screen and (min-width: 1200px) {
+      height: 70px;
+      margin-bottom: 16px;
+   };
+}
+
+.basketListItem:hover {
+  transition: all .4s ease-out;
+   scale: 1.02;
+}
+
+.basketListItemInfo {
+ display: flex;
+ flex-direction: column;
+ height: 60px;
+
+ @media screen and (min-width: 767.9px) {
+  height: 65px;
+     
+ };
+ @media screen and (min-width: 1200px) {
+  height: 70px;
+   
+ };
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.basketListItemInfo span {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 20px;
+}
+
+.basketListItemCategory {
+  color: #949494;
+  text-shadow: 1px 1px 1px black;
+
+  font-size: 10px;
+  padding-left: 10px;
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+.basketListItemName {
+ display: flex;
+ font-size: 12px;
+ padding-left: 15px;
+
+ 
+  color: #bebebe;
+   font-weight: 900;
+   text-shadow: 1px 1px 2px black;
+
+   @media screen and (max-width: 374.9px) {
+    font-size: 9px;
+    /* padding-left: 1px; */
+
+ };
+
+ @media screen and (min-width: 767.9px) {
+    font-size: 17px;
+    /* padding: 35px 0 0 20px; */
+    /* padding-left: 10px; */
+ };
+ @media screen and (min-width: 1200px) {
+    font-size: 19px;
+    /* padding: 35px 0 0 20px; */
+    padding-left: 25px;
+ };
+}
+
+.basketListItemIngredients {
+  display: flex;
+  align-items: flex-start;
+  font-size: 9px;
+  letter-spacing: -0.1px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  color: #bbbbbb;
+  text-shadow: 1px 1px 1px black;
+  padding: 10px 0 0 10px;
+  height: 40px;
+
+ 
+
+  @media screen and (min-width: 767.9px) {
+     font-size: 10px;
+     padding: 12px 0 0 20px;
+     /* letter-spacing: .1px; */
+  };
+ 
+  @media screen and (min-width: 1200px) {
+     font-size: 12px;
+     padding: 15px 0 0 25px;
+     font-weight: 900;
+     /* letter-spacing: .2px; */
+  };
+}
+
+.basketListItemManagement {
+  display: flex;
+  align-items: center;
+}
+
+.basketListItemPrice {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 60px;
+   width: 55px;
+   border-radius: 8px 0 0 8px;
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+   color: #949494;
+   text-shadow: 1px 1px 1px black;
+  background: #00000087;
+  border-right: 1px solid #212121;
+  border-left: 1px solid #212121;
+
+ @media screen and (min-width: 767.9px) {
+  font-size: 15px;
+  width: 60px;
+ };
+ @media screen and (min-width: 1200px) {
+  font-size: 17px;
+  width: 85px;
+ };
+}
+
+.basketListItemQuantityBox {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+height: 100%;
+}
+
+.basketListItemQuantityPrice {
+ font-size: 13px;
+ display: flex;
+width: 100%;
+justify-content: center;
+ background-color: rgba(45, 2, 2, 0.753);
+}
+
+.basketListItemQuantity {
+display: flex;
+width: 100%;
+font-size: 20px;
+justify-content: center;
+background-color: #fff;
+}
+
+
+.basketListItemCounter {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 60px;
+   width: 150px;
+   margin: 0;
+   padding: 0;
+   padding: 0 7px;
+   font-size: 19px;
+   background: #00000087;
+   border-radius: 0 13px 13px 0;
+   border-radius: 13px;
+
+  @media screen and (min-width: 767.9px) {
+      
+  };
+
+  @media screen and (min-width: 1200px) {
+    
+  };
+}
+
+
+
+.basketListItemIncrease,
+.basketListItemDecrease {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-size: 25px;
+  color: #949494;
+  border-radius: 12px;
+  transition: all 0.4s ease-out;
+   box-shadow:
+   inset #0e0e0e -5px -5px 9px,
+   inset #303030 5px 5px 9px,
+   rgb(0, 0, 0) 3px 3px 8px -3px;
+    background: #141414;
+
+    border-radius: 13px;
+    background-color: #444444;
+    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+  
+  @media screen and (min-width: 767.9px) {
+      
+  };
+
+  @media screen and (min-width: 1200px) {
+    
+  };
+}
+
+.basketListItemIncrease:hover,
+.basketListItemDecrease:hover {
+ cursor: pointer;
+}
+
+
+
+
+.basketOrderInfo {
+  display: grid;
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  padding-top: 30px;
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(0.25turn, #101010, #2a2a2a, #101010);
+  border-image-slice: 1;
+  background-color: #fff;
+ 
+  
+  @media screen and (min-width: 767.9px) {
+    /* padding: 0 70px; */
+  };
+  @media screen and (min-width: 1200px) {
+    /* padding: 0 120px; */
+  };
+
+}
+
+
+.basketQuantityBox {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 60px;
+ width: 100%;
+ /* padding: 0 20px; */
+border-radius: 13px;
+background-color: #262626;
+background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+box-shadow:
+inset #000000b0 -5px -5px 9px,
+inset #7d7d7d93 5px 5px 9px, 
+0px 0px 12px 1px rgba(0, 0, 0, 0.577);
+ @media screen and (min-width: 768px) {
+   
+ };
+ @media screen and (min-width: 1200px) {
+ 
+  
+ };
+}
+
+
+.basketQuantityTitle,
+.basketPriceTitle {
+  display: grid;
+  padding-left: 25px;
+  font-size: 10px;
+  color: #949494;
+  text-shadow: 1px 1px 1px black;
+
+  
+  @media screen and (min-width: 767.9px) {
+    padding-left: 35px;
+    font-size: 12px;
+  };
+  
+  @media screen and (min-width: 1200px) {
+    padding-left: 35px;
+    font-size: 13px;
+  };
+  }
+
+.basketQuantityTitle h3,
+.basketPriceTitle h3 {
+margin: 0;
+}
+
+.basketTotalQuantity,
+.basketTotalPrice {
+   color: #c2c2c2;
+   padding-right: 25px;
+   font-size: 22px;
+   text-shadow: 1px 1px 1px black;
+
+ @media screen and (min-width: 767.9px) {
+  font-size: 22px;
+  padding-right: 35px;
+ };
+ @media screen and (min-width: 1200px) {
+  font-size: 22px;
+  padding-right: 45px;
+ };
+}
+
+
+.basketMakeOrder {
+  display: flex;
+  justify-content: center; 
+
+   @media screen and (min-width: 767.9px) {
+   };
+ 
+   @media screen and (min-width: 1200px) {
+   };
+ }
+
+ 
+.basketInputBox {
+  display: grid;
+  width: 85%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 15px;
+  padding: 20px;
+  border-radius: 13px;
+  margin-top: 30px;
+  box-shadow: 7px 7px 15px 2px #00000047;
+  border-radius: 13px;
+  box-shadow:
+  inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
+  inset #303030 5px 5px 9px,
+  rgb(0, 0, 0) 3px 3px 8px -3px;
+
+   
+ @media screen and (min-width: 767.9px) {
+  width: 65%;
+ };
+ @media screen and (min-width: 1200px) {
+  width: 55%;
+ };
+}
+
+ .basketInput {
+  position: relative;
+   /* background-color: rgb(0, 0, 0); */
+   /* color: #000000; */
+   padding-left: 16px;
+   height: 50px;
+   border: none;
+   border-radius: 11px;
+   border: 1px solid rgb(0, 0, 0);
+   font-size: 17px;
+   background-color: #262626;
+   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+   box-shadow:
+   inset #000000a4 2px 2px 2px,
+   inset #000000a4 -1px -1px 3px; 
+   transition: all .4s linear;
+
+   
+
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+.basketInput:hover,
+.basketInput:focus,
+.basketInput:active {
+  border: 1px solid #4c0000;
+}
+
+
+.basketInputAddressBox {
+   display: flex;
+   justify-content: space-between;
+
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+.basketInputStreet {
+   width: 230px;
+   width: 100%;
+
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+.basketInputStreetNumber {
+   width: 40px;
+margin-left: 10px;
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+.buttonMakeOrderBox {
+display: flex;
+justify-content: center;
+padding: 40px 0;
+width: 100%;
+}
+
+.buttonMakeOrder,
+.buttonMakeOrder.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  width: 150px;
+  border: none;
+  border-radius: 17px;
+  box-shadow:  4px 4px 15px 4px #0000008b;
+  
+  background-color: #010101;
+  transition: all .4s ease-out;
+  box-shadow:
+  inset rgba(42, 41, 41, 0.471) -4px -4px 9px,
+  inset #303030 4px 4px 9px,
+  rgb(0, 0, 0) 3px 3px 8px -3px;
+
+  
+      
+  @media screen and (min-width: 767.9px) {
+
+  };
+
+  @media screen and (min-width: 1200px) {
+   
+  };
+    
+}
+
+.buttonMakeOrderDescription {
+  color: #616060;
+ display: flex;
+ padding: 0;
+ margin: 0;
+ font-family: PrimaryFont;
+ justify-content: center;
+ align-items: center;
+ border-radius: 17px;
+ width: 100%;
+ height: 100%;
+ box-shadow:  4px 4px 15px 4px #0000008b;
+ transition: all .4s ease-out;
+}
+
+.buttonMakeOrderDescription:hover {
+  box-shadow:  2px 2px 15px 2px #0000005d;
+  transition: all .4s ease-out;
+  scale: 1.03;
+ }
+
+
+ 
+.buttonMakeOrder.disabled {
+   cursor: not-allowed;
+   position: relative;
+   transition: background-color 0.5s; 
+
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+.buttonMakeOrder.disabled:hover::after {
+   content: "Заповніть всі поля";
+   position: absolute;
+   top: calc(20% + 5px);
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: rgb(0, 0, 0);
+   font-family: PrimaryFont;
+
+   color: #d9d9d949;
+   padding: 6px 0px;
+   border-radius: 11px;
+   font-size: 13px;
+   white-space: nowrap;
+   transition: opacity .4s ease-out; 
+   opacity: 0; 
+
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+.buttonMakeOrder.disabled:hover::after {
+   opacity: 1; 
+   transition: opacity .4s ease-out; 
+
+   
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+.buttonMakeOrder.active .buttonMakeOrderDescription{
+      color: #8f3000;
+ 
+   @media screen and (min-width: 767.9px) {
+     
+   };
+   @media screen and (min-width: 1200px) {
+     
+   };
+}
+
+.buttonMakeOrder.active:hover {
+cursor: pointer;
+    
+ @media screen and (min-width: 767.9px) {
+     
+ };
+ @media screen and (min-width: 1200px) {
+   
+ };
+}
+
+
+
+.emptyOrderBasketBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* border-radius: 13px; */
+  /* overflow: hidden; */
+  /* box-shadow:  4px 4px 15px 2px #00000078; */
+  /* margin: 0 20px; */
+}
+
+.basketEmpty,
+.orderCompleted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* background-color: #303030; */
+
+/* background-image: url("https://www.transparenttextures.com/patterns/mooning.png"); */
+/* background-color: #3b3a3a; */
+/* background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png"); */
+  /* box-shadow:
+    inset #000000b0 -5px -5px 9px,
+    inset #7d7d7d93 5px 5px 9px;  */
+}
+
+
+/* .orderDoneMessage,
+.basketEmptyMessage {
+   display: flex;
+   align-items: center;
+   
+ 
+ @media screen and (min-width: 767.9px) {
+  
+ };
+ @media screen and (min-width: 1200px) {
+ 
+ };
+} */
+
+.orderDoneMessage h2,
+.basketEmptyMessage h2 {
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ text-align: center;
+ font-size: 15px;
+      line-height: 45px;
+      color: #7c7c7c;
+      text-shadow: rgb(0, 0, 0) 0px 0px 15px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+
+ @media screen and (min-width: 767.9px) {
+  font-size: 15px;
+  /* line-height: 65px; */
+ };
+ @media screen and (min-width: 1200px) {
+  font-size: 17px;
+  /* line-height: 75px; */
+ };
+}
+
+ .toMenuButton {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 21px;
+    right: 20px; 
+    height: 60px;
+    width: 60px;
+    border-radius: 13px;
+    overflow: hidden;
+    border: none;
+    box-shadow:  4px 4px 15px 2px #00000078;
+    transition: all .4s ease-out;
+    z-index: 9;
+    background-color: #262626;
+    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+     
+     @media screen and (min-width: 767.9px) {
+        width: 150px;
+        flex-direction: row-reverse;
+        right: 40px; 
+       
+     };
+
+        @media screen and (min-width: 1200px) {
+           
+           right: 80px; 
+          
+        };
+ }
+
+ .toMenuLink {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+  width: 100%;
+  box-shadow:
+   inset #000000b0 -5px -5px 9px,
+   inset #7d7d7d93 5px 5px 9px; 
+   
+     @media screen and (min-width: 767.9px) {
+        flex-direction: row;
+        justify-content: end;
+     };
+
+        @media screen and (min-width: 1200px) {
+     
+        };
+ }
+ 
+ .toMenuDescription {
+   margin: 0;
+  
+   transition: all .4s ease-out;
+   color: #949494;
+   /* color: #949494; */
+   font-weight: 900;
+   margin-bottom: 6px;
+   display: none;
+
+    @media screen and (min-width: 767.9px) {
+      display: flex;
+     margin-bottom: 0px;
+     margin-right: 13px;
+     font-size: 16px;
+     text-shadow: 1px 1px 1px black;
+  };
+
+     @media screen and (min-width: 1200px) {
+      
+     };
+ }
+ 
+ .toMenuButton:hover .toMenuDescription {
+ 
+  color: #e9e9e9;
+      transition: all .4s ease-out;
+ }
+
+ .toMenuButton:hover {
+  scale: 1.03;
+  transition: all .4s ease-out;
+  box-shadow:  4px 4px 15px 2px #0000002d;
+}
+
+ .toMenuIcon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    opacity: .6;
+    height: 41px;
+    width: 41px;
+    top: 9px;
+    right: 9px;
+     
+
+     @media screen and (min-width: 767.9px) {
+        margin-bottom: 0px;
+        height: 55px;
+        width: 55px;
+        top: 5px;
+        left: -3px;
+
+        rotate: -5deg;
+        transition: all .4s ease-out;
+       
+      };
+
+      /* @media screen and (min-width: 1200px) {
+        right: -7px;
+        rotate: -5deg;
+      }; */
+ }
+
+
+
+
+
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+ 

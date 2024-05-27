@@ -66,7 +66,7 @@ export const ContactsPage = () => {
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <MailIcon className={styles.contactsListItemImg}/>
-                    <a href="mailto:your_email@example.com" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}>Надішліть нам eMail</a>
+                    <a href="mailto:bakinskiydvor2021@gmail.com" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}>Надішліть нам eMail</a>
                   </li>
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>

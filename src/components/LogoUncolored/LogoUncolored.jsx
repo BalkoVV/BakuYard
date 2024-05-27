@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import logoUncolored from 'images/MainLogoBY2Uncolored.svg';
+import logoUncolored from 'images/MainLogoBY22Uncolored.svg';
 import styles from 'components/LogoUncolored/LogoUncolored.module.css';
 
 

@@ -95,8 +95,8 @@ export const Desserts = () => {
                 <tr key={item.id} className={styles.dishListItem}>
                  <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                 <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
                 
                    <span className={styles.dishListItemName} >
@@ -116,7 +116,7 @@ export const Desserts = () => {
                           <td>{item.вага}</td>
                         </span>
 
-                        <span className={styles.dishTablePrice}>
+                        <span className={styles.dishListItemPrice}>
                           <td>{item.ціна}</td>
                         </span>
                     </span>

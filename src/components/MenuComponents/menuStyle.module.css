@@ -129,7 +129,7 @@
       inset #7d7d7d93 5px 5px 9px; 
    overflow: hidden;
 
-   @media screen and (min-width: 768px) {
+   /* @media screen and (min-width: 768px) {
       height: 65px;
       margin-bottom: 13px;
    };
@@ -137,7 +137,7 @@
    @media screen and (min-width: 1200px) {
       height: 70px;
       margin-bottom: 16px;
-   };
+   }; */
  }
 
 
@@ -146,6 +146,7 @@
    flex-direction: column;
    height: 60px;
    width: 100%;
+   padding-right: 5px;
    /* background-color: #000; */
 }
 
@@ -160,12 +161,40 @@
 }
 
 .dishListItemCategoryDescription {
-   display: flex;
+   /* display: flex;
    padding-left: 15px;
    margin: 0;
    color: #949494;
-   
-   font-size: 10px;
+   color: #c0c0c0;
+
+   text-shadow: 1px 1px 1px black;
+   font-size: 10px; */
+   display: flex;
+   align-items: center;
+   padding-left: 15px;
+   font-size: 12px;
+  
+   color: #bebebe;
+   font-weight: 900;
+   text-shadow: 1px 1px 2px black;
+
+   @media screen and (max-width: 374.9px) {
+      font-size: 9px;
+      /* padding-left: 1px; */
+
+   };
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 17px;
+      /* padding: 35px 0 0 20px; */
+      /* padding-left: 10px; */
+   };
+   @media screen and (min-width: 1200px) {
+      font-size: 19px;
+      /* padding: 35px 0 0 20px; */
+      padding-left: 25px;
+   };
+
 }
 
 .dishListItemName {
@@ -185,11 +214,40 @@
 }
 
 .dishListItemNameDescription {
-   display: flex;
+   /* display: flex;
    padding-left: 5px;
    margin: 0;
-   color: #949494;
+   color: #c0c0c0;
+  
    font-size: 10px;
+   text-shadow: 1px 1px 1px black; */
+
+   display: flex;
+   align-items: center;
+   padding-left: 15px;
+   font-size: 12px;
+  
+   color: #bebebe;
+   font-weight: 900;
+   text-shadow: 1px 1px 2px black;
+
+   @media screen and (max-width: 374.9px) {
+      font-size: 9px;
+      /* padding-left: 1px; */
+
+   };
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 17px;
+      /* padding: 35px 0 0 20px; */
+      /* padding-left: 10px; */
+   };
+   @media screen and (min-width: 1200px) {
+      font-size: 19px;
+      /* padding: 35px 0 0 20px; */
+      padding-left: 25px;
+   };
+
 }
 
 /* .dishListItemNameDescription {
@@ -220,10 +278,10 @@
    display: flex;
    justify-content: start;
    align-items: center;
-   /* padding-left: 5px; */
+   
    width: 100%;
    height: 55px;
-   /* background-color: rgba(83, 0, 100, 0.825); */
+  
 
    @media screen and (min-width: 767.9px) {
       
@@ -239,11 +297,38 @@
 
 
 .dishListItemIngredientsDescription {
-   display: flex;
-   padding-left: 5px;
+   /* display: flex;
+   padding-left: 10px;
    margin: 0;
+   color: #c0c0c0;
+   text-shadow: 1px 1px 1px black;
+
+   font-size: 10px; */
+   display: flex;
+   align-items: center;
+   padding-left: 15px;
+   font-size: 11px;
+  
    color: #949494;
-   font-size: 10px;
+   font-weight: 900;
+   text-shadow: 1px 1px 2px black;
+
+   @media screen and (max-width: 374.9px) {
+      font-size: 9px;
+      /* padding-left: 1px; */
+
+   };
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 12px;
+      /* padding: 35px 0 0 20px; */
+      /* padding-left: 10px; */
+   };
+   @media screen and (min-width: 1200px) {
+      font-size: 13px;
+      /* padding: 35px 0 0 20px; */
+      /* padding-left: 25px; */
+   };
 }
 
 .dishListItemManagement,

@@ -27,7 +27,7 @@ export const App = () => {
               <Route path="/menu" component={MenuPage} />
               <Route path="/basket" component={BasketPage} />
               <Route path="/contacts" component={ContactsPage} />
-              <Route path="/business-card" component={BusinessCard} />
+              <Route path="/card" component={BusinessCard} />
             </CartProvider>
           </Switch>
         </div>

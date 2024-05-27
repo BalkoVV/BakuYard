@@ -48,9 +48,9 @@ body {
   src: url(./data/fonts/Constantine.ttf) format("truetype");
 }
 
-button:active {
+/* button:active {
  background-color: rgb(9, 0, 0);
  background: radial-gradient( rgb(8, 8, 8),transparent);
-}
+} */
 
 

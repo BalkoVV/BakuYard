@@ -151,7 +151,7 @@ export const Wines = () => {
               <div className={styles.dishListItemInfo}>
 
                   <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
                 
                    <span className={styles.dishListItemName} >
@@ -206,7 +206,7 @@ export const Wines = () => {
                <div className={styles.dishListItemInfo}>
 
                   <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
                 
                    <span className={styles.dishListItemName} >
@@ -261,7 +261,7 @@ export const Wines = () => {
               <div className={styles.dishListItemInfo}>
 
                   <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
                 
                    <span className={styles.dishListItemName} >
@@ -317,7 +317,7 @@ export const Wines = () => {
                <div className={styles.dishListItemInfo}>
 
                   <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
                 
                    <span className={styles.dishListItemName} >

@@ -115,8 +115,8 @@ style={{
               
               <div className={styles.dishListItemInfo}>
 
-                  <span className={styles.dishListItemCategory}>
-                    <td className={styles.dishListItemCategoryDescription}>{item.категорія}</td>
+              <span className={styles.dishListItemCategory}>
+                    <td className={styles.dishListItemCategoryDescription}></td>
                   </span>
                 
                    <span className={styles.dishListItemName} >

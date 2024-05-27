@@ -140,6 +140,7 @@ export const Lunch = () => {
                     <td className={styles.dishListItemLunchWeigthSalad}>{item.вага_салат}</td>
                     
                   </li>
+                  
                   <li className={styles.dishListItemLunchDrink}>
                     <td className={styles.dishListItemLunchNameDrink}>{item.назва_напій}</td>
                     <td className={styles.dishListItemLunchWeigthDrink}>{item.вага_напій}</td>
