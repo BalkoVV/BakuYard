@@ -55,10 +55,7 @@ const BusinessCard = () => {
       </div>
       <div className={styles.businessCardTable}>
       <MainLogo className={styles.mainLogoTable}/>
-      <h1  className={styles.mainDiscriptionTable}>МЕНЮ</h1>
-      <span className={styles.lineTable}></span>
-      
-      <span className={styles.menuQrTable}></span>
+
       </div>
     </div>
 

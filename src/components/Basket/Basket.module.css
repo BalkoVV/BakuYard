@@ -389,7 +389,9 @@ position: relative;
   display: flex;
    align-items: center;
    padding-left: 15px;
-   font-size: 11px;
+   font-size: 10px;
+   font-style: italic;
+
   
    color: #bebebe;
    font-weight: 900;
@@ -402,12 +404,12 @@ position: relative;
    };
 
    @media screen and (min-width: 767.9px) {
-      font-size: 12px;
+      font-size: 11px;
       /* padding: 35px 0 0 20px; */
       /* padding-left: 10px; */
    };
    @media screen and (min-width: 1200px) {
-      font-size: 13px;
+      font-size: 12px;
       /* padding: 35px 0 0 20px; */
       /* padding-left: 25px; */
    };

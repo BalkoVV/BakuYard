@@ -1,0 +1,47 @@
+.businessCardPage {
+   position: relative;
+   min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+   /* background-color: #070707; */
+   background-color: #020202;
+   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+
+  
+
+
+   @media screen and (min-width: 767.9px) {
+     };
+     @media screen and (min-width: 1200px) {
+      background-attachment: fixed;
+     };
+
+}
+
+.cardHolder {
+   position: relative;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.businessCardTop {
+ display: flex;
+ align-items: center;
+justify-content: center;
+ /* margin-left: 300px; */
+ margin: 130px 20px ;
+ height: 50mm;
+ width: 90mm;
+ background-color: rgb(0, 13, 83);
+ border: .5px solid #5050506b;
+ border-radius: 5.5px;
+ /* scale: 1.8; */
+ box-shadow: 3px 3px 9px 3px #000000;}
+
+ .mainLogoTop {
+   fill: #000000;
+ height: 95px;
+}

@@ -26,6 +26,7 @@
    position: relative;
  display: flex;
  justify-content: center;
+ flex-direction: column;
 }
 
 .businessCardTop {
@@ -33,12 +34,12 @@
  align-items: center;
 
  /* margin-left: 300px; */
- margin: 150px 20px;
+ margin: 30px 20px ;
  height: 50mm;
  width: 90mm;
  background-color: rgb(0, 0, 0);
  border: .5px solid #5050506b;
- /* border-radius: 9px; */
+ border-radius: 9px;
  /* scale: 1.8; */
  box-shadow: 3px 3px 9px 3px #000000;}
 
@@ -96,7 +97,9 @@ height: 100%;
    align-items: center;
    margin-top: 150px;
    /* margin-left: 300px; */
-   margin: 150px 20px;
+ border-radius: 9px;
+
+   margin: 20px;
    height: 190px;
    width: 340px;
    background-color: rgb(0, 0, 0);

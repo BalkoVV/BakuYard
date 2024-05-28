@@ -42,7 +42,7 @@ export const Footer = ({ customLinks }) => {
             </li>
             <li>
               
-              <a href="mailto:your_email@example.com" target="_blank" rel="noreferrer">
+              <a href="mailto:bakinskiydvor2021@gmail.com" target="_blank" rel="noreferrer">
                 <MailIconFooter />
               </a>
 

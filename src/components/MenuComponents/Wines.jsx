@@ -162,34 +162,50 @@ export const Wines = () => {
                     <td className={styles.dishListItemIngredientsDescription}>{item.інгредієнти}</td>
                   </span>
                   
+                  </div>
+              
+                <div className={styles.dishListItemManagement}>
 
-               </div>
-                
-                <div className={styles.dishListItemManagementNotAdd}>
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
 
-                  <span className={styles.dishListWeightPriceBoxNotAdd}>
-                      <span className={styles.dishListItemWeigthNotAdd}>
-                        <td>{item.вага}</td>
-                      </span>
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага50}</td>
+                </span>
 
-                      <span className={styles.dishTablePriceNotAdd}>
-                        <td>{item.ціна}</td>
-                      </span>
-                  </span>
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна50}</td>
+                </span>
 
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+                  <td>{item.вага100}</td>
+                </span>
+
+                <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+                  <td>{item.ціна100}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+               <span className={styles.dishListItemWeigthNotAddHardRight}>
+                  <td>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHardRight}>
+                  <td>{item.ціна}</td>
+                </span>
+
+               </span>
+
+               
 
                 </div>
-               {/* <div className={styles.dishListItemManagement}>
-
-                  <span className={styles.dishListItemWeigth}>
-                    <td>{item.вага}</td>
-                  </span>
-
-                  <span className={styles.dishTablePrice}>
-                    <td>{item.ціна}</td>
-                  </span>
-
-               </div> */}
+              
               </tr>
             ))}
           </tbody>
@@ -219,7 +235,50 @@ export const Wines = () => {
                   
 
                </div>
-                <div className={styles.dishListItemManagementNotAdd}>
+
+               <div className={styles.dishListItemManagement}>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={styles.dishListItemWeigthNotAddHard}>
+                  <td>{item.вага50}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHard}>
+                  <td>{item.ціна50}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+                <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+                  <td>{item.вага100}</td>
+                </span>
+
+                <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+                  <td>{item.ціна100}</td>
+                </span>
+
+               </span>
+
+               <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+               <span className={styles.dishListItemWeigthNotAddHardRight}>
+                  <td>{item.вага}</td>
+                </span>
+
+                <span className={styles.dishListItemPriceNotAddHardRight}>
+                  <td>{item.ціна}</td>
+                </span>
+
+               </span>
+
+               
+
+                </div>
+               
+                {/* <div className={styles.dishListItemManagementNotAdd}>
 
                   <span className={styles.dishListWeightPriceBoxNotAdd}>
                       <span className={styles.dishListItemWeigthNotAdd}>
@@ -232,7 +291,7 @@ export const Wines = () => {
                   </span>
 
 
-                </div>
+                </div> */}
                {/* <div className={styles.dishListItemManagement}>
 
                   <span className={styles.dishListItemWeigth}>
@@ -275,7 +334,48 @@ export const Wines = () => {
 
                </div>
 
-                <div className={styles.dishListItemManagementNotAdd}>
+               <div className={styles.dishListItemManagement}>
+
+<span className={styles.dishListWeightPriceBoxNotAdd}>
+
+ <span className={styles.dishListItemWeigthNotAddHard}>
+   <td>{item.вага50}</td>
+ </span>
+
+ <span className={styles.dishListItemPriceNotAddHard}>
+   <td>{item.ціна50}</td>
+ </span>
+
+</span>
+
+<span className={styles.dishListWeightPriceBoxNotAdd}>
+
+ <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+   <td>{item.вага100}</td>
+ </span>
+
+ <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+   <td>{item.ціна100}</td>
+ </span>
+
+</span>
+
+<span className={styles.dishListWeightPriceBoxNotAdd}>
+
+<span className={styles.dishListItemWeigthNotAddHardRight}>
+   <td>{item.вага}</td>
+ </span>
+
+ <span className={styles.dishListItemPriceNotAddHardRight}>
+   <td>{item.ціна}</td>
+ </span>
+
+</span>
+
+
+
+ </div>
+                {/* <div className={styles.dishListItemManagementNotAdd}>
 
                   <span className={styles.dishListWeightPriceBoxNotAdd}>
                       <span className={styles.dishListItemWeigthNotAdd}>
@@ -288,7 +388,7 @@ export const Wines = () => {
                   </span>
 
 
-                </div>
+                </div> */}
                {/* <div className={styles.dishListItemManagement}>
 
                   <span className={styles.dishListItemWeigth}>
@@ -331,7 +431,48 @@ export const Wines = () => {
 
                </div>
 
-                <div className={styles.dishListItemManagementNotAdd}>
+               <div className={styles.dishListItemManagement}>
+
+{/* <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+ <span className={styles.dishListItemWeigthNotAddHard}>
+   <td>{item.вага50}</td>
+ </span>
+
+ <span className={styles.dishListItemPriceNotAddHard}>
+   <td>{item.ціна50}</td>
+ </span>
+
+</span> */}
+
+{/* <span className={styles.dishListWeightPriceBoxNotAdd}>
+
+ <span className={`${styles.dishListItemWeigthNotAddHard} ${styles.dishListItemWeigthNotAddHardCenter}`}>
+   <td>{item.вага100}</td>
+ </span>
+
+ <span className={`${styles.dishListItemPriceNotAddHard} ${styles.dishListItemPriceNotAddHardCenter}`}>
+   <td>{item.ціна100}</td>
+ </span> */}
+
+{/* </span> */}
+
+<span className={styles.dishListWeightPriceBoxNotAdd}>
+
+<span className={styles.dishListItemWeigthNotAddHardRight}>
+   <td>{item.вага}</td>
+ </span>
+
+ <span className={styles.dishListItemPriceNotAddHardRight}>
+   <td>{item.ціна}</td>
+ </span>
+
+</span>
+
+
+
+ </div>
+                {/* <div className={styles.dishListItemManagementNotAdd}>
 
                   <span className={styles.dishListWeightPriceBoxNotAdd}>
                       <span className={styles.dishListItemWeigthNotAdd}>
@@ -344,7 +485,7 @@ export const Wines = () => {
                   </span>
 
 
-                </div>
+                </div> */}
                {/* <div className={styles.dishListItemManagement}>
 
                   <span className={styles.dishListItemWeigth}>
