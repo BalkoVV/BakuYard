@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c657bf7e.css",
-    "main.js": "/static/js/main.ec298399.js",
+    "main.css": "/static/css/main.eb5d7685.css",
+    "main.js": "/static/js/main.826d2466.js",
     "static/media/inMap.png": "/static/media/inMap.7c68d7b44ab412af869a.png",
     "static/media/Instagram-QR.png": "/static/media/Instagram-QR.d98c00342daf7e6c6e3f.png",
     "static/media/23232555.png": "/static/media/23232555.20d673c873c32dd792fa.png",
@@ -13,6 +13,7 @@
     "static/media/str2.png": "/static/media/str2.c6abf30fc16c5e0a3528.png",
     "static/media/MainLogoBY22.svg": "/static/media/MainLogoBY22.dc4b10d0bf7fecad23c8e6a6978ad9d1.svg",
     "static/media/MainLogoBY22Uncolored.svg": "/static/media/MainLogoBY22Uncolored.a302f60f5e808a3986150b8205fb148a.svg",
+    "static/media/bhLogoSilver.svg": "/static/media/bhLogoSilver.06dcb9cc53453c2cb4e132808a2f82e9.svg",
     "static/media/bhLogo.svg": "/static/media/bhLogo.5a003b706ca85f63a30b92bdbc4c151e.svg",
     "static/media/pizzaCardMenu.svg": "/static/media/pizzaCardMenu.23f27e89b6f6670c674cd7f716832a88.svg",
     "static/media/pizzaCard.svg": "/static/media/pizzaCard.3c20770994cef8c0502561e0923ce8e7.svg",
@@ -71,11 +72,11 @@
     "static/media/dot.svg": "/static/media/dot.8cc6efd0c8788ed971b3aa63955650ab.svg",
     "static/media/mobileSwitch.svg": "/static/media/mobileSwitch.fbd81f0ffcbc9f0d3f9daa0da92bd41d.svg",
     "static/media/toMenu.svg": "/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.c657bf7e.css.map": "/static/css/main.c657bf7e.css.map",
-    "main.ec298399.js.map": "/static/js/main.ec298399.js.map"
+    "main.eb5d7685.css.map": "/static/css/main.eb5d7685.css.map",
+    "main.826d2466.js.map": "/static/js/main.826d2466.js.map"
   },
   "entrypoints": [
-    "static/css/main.c657bf7e.css",
-    "static/js/main.ec298399.js"
+    "static/css/main.eb5d7685.css",
+    "static/js/main.826d2466.js"
   ]
 }
