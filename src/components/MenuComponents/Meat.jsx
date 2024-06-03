@@ -166,6 +166,7 @@ style={{
                         <span className={styles.dishListItemWeigth}>
                           <td>{item.вага}</td>
                         </span>
+                        <span className={styles.dishListRazdelitel}></span>
 
                         <span className={styles.dishListItemPrice}>
                           <td>{item.ціна}</td>

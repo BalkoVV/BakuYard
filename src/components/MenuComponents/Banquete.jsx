@@ -158,7 +158,7 @@ style={{
                       <span className={styles.dishListItemWeigthNotAdd}>
                         <td>{item.вага}</td>
                       </span>
-
+                      <span className={styles.dishListRazdelitel}></span>
                       <span className={styles.dishTablePriceNotAdd}>
                         <td>{item.ціна}</td>
                       </span>
@@ -203,7 +203,7 @@ style={{
                       <span className={styles.dishListItemWeigthNotAdd}>
                         <td>{item.вага}</td>
                       </span>
-
+                      <span className={styles.dishListRazdelitel}></span>
                       <span className={styles.dishTablePriceNotAdd}>
                         <td>{item.ціна}</td>
                       </span>

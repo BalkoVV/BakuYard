@@ -8,8 +8,8 @@ import "index.css";
 
 import PlusIcon from 'images/increase.svg';
 import MinusIcon from 'images/minus.svg';
-import closheMenu1 from 'images/closheMenuCard.svg';
-import closheMenu2 from 'images/closheMenuCard.svg';
+import closheMenu1 from 'images/closherr.svg';
+import closheMenu2 from 'images/closherr.svg';
 
 export const Basket = () => {
   const { cartItems, increaseQuantity, decreaseQuantity, clearCart } = useContext(CartContext);

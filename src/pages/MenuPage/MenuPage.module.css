@@ -109,6 +109,10 @@
     inset #000000b0 -5px -5px 9px,
     inset #7d7d7d93 5px 5px 9px; 
 
+    box-shadow:
+inset #000000b0 -3px -3px 9px,
+inset #7d7d7d93 3px 3px 9px ; 
+
     @media screen and (min-width: 768px) {
     
       height: 180px;
@@ -344,6 +348,10 @@
  box-shadow:
   inset #000000b0 -5px -5px 9px,
   inset #7d7d7d93 5px 5px 9px; 
+
+  box-shadow:
+inset #000000b0 -3px -3px 9px,
+inset #7d7d7d93 3px 3px 9px ; 
   
     @media screen and (min-width: 767.9px) {
        flex-direction: row;

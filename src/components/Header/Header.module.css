@@ -64,19 +64,19 @@
  }
 
  .headerLinkText {
-  color: #727272;
+  color: #707070;
   text-shadow: 1px 1px 1px #2c2c2c;
   transition: all .4s ease-out;
 }
 
  .activeLink h4 {
- color: #400000;
+ color: #600000;
  text-shadow: 1px 1px 1px #270000;
  transition: all .4s ease-out;
 }
 
  .headerNav a:hover h4 {
- color: #400000;
+ color: #600000;
  text-shadow: 1px 1px 1px #4e0000;
  transition: all .4s ease-out;
 }
@@ -120,7 +120,7 @@ padding-right: 1.9px;
  font-size: 11px;
  padding-left: 2px;
 
- color: #727272;
+ color: #707070;
  text-shadow: 1px 1px 1px #2c2c2c;
 
 

@@ -103,8 +103,9 @@
   height: 100%;
   width: 100%;
   box-shadow:
-   inset #000000b0 -5px -5px 9px,
-   inset #7d7d7d93 5px 5px 9px; 
+   inset #000000b0 -2px -2px 9px,
+   inset #7d7d7d93 2px 2px 9px,
+   0px 0px 12px 1px rgba(0, 0, 0, 0.577); 
    
      @media screen and (min-width: 767.9px) {
         flex-direction: row;
@@ -332,8 +333,9 @@ position: relative;
    background-color: #262626;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
    box-shadow:
-      inset #000000b0 -5px -5px 9px,
-      inset #7d7d7d93 5px 5px 9px; 
+      inset #000000b0 -2px -2px 9px,
+      inset #7d7d7d93 2px 2px 9px,
+      0px 0px 12px 1px rgba(0, 0, 0, 0.577); 
    overflow: hidden;
 
    /* @media screen and (min-width: 768px) {
@@ -372,6 +374,7 @@ position: relative;
   align-items: center;
   width: 100%;
   height: 55px;
+  padding-bottom: 5px;
   /* background-color: rgba(0, 64, 100, 0.825); */
 }
 
@@ -385,17 +388,27 @@ position: relative;
   color: #949494;
   text-shadow: 1px 1px 1px black;
   font-size: 10px; */
-
+/* 
   display: flex;
    align-items: center;
    padding-left: 15px;
    font-size: 10px;
-   /* font-style: italic; */
 
   
    color: #dddddd;
    font-weight: 900;
-   text-shadow: 1px 1px 1px black;
+   text-shadow: 1px 1px 1px black; */
+
+   font-family: PoiretFont;
+
+   display: flex;
+   align-items: center;
+   padding-left: 15px;
+   font-size: 12px;
+   color: #e9e9e9;
+   color: #000000;
+   font-weight: 900;
+   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.559);
 
    @media screen and (max-width: 374.9px) {
       font-size: 9px;
@@ -404,12 +417,12 @@ position: relative;
    };
 
    @media screen and (min-width: 767.9px) {
-      font-size: 11px;
+      font-size: 12px;
       /* padding: 35px 0 0 20px; */
       /* padding-left: 10px; */
    };
    @media screen and (min-width: 1200px) {
-      font-size: 12px;
+      font-size: 13px;
       /* padding: 35px 0 0 20px; */
       /* padding-left: 25px; */
    };
@@ -604,19 +617,9 @@ color: #dddddd;
   padding: 0;
   margin: 0;
   overflow: hidden;
-  /* font-size: 25px; */
-  /* color: #dddddd; */
   border-radius: 9px;
   transition: all 0.4s ease-out;
-   /* box-shadow:
-   inset #0e0e0e -5px -5px 9px,
-   inset #303030 5px 5px 9px,
-   rgb(0, 0, 0) 3px 3px 8px -3px;
-    background: #141414; */
-    background: transparent;
-    /* border-radius: 13px; */
-    /* background-color: #0000007c; */
-    /* background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png"); */
+  background: transparent;
   
   @media screen and (min-width: 767.9px) {
       
@@ -661,7 +664,7 @@ color: #dddddd;
     /* padding: 0 70px; */
   };
   @media screen and (min-width: 1200px) {
-    /* padding: 0 120px; */
+    padding: 30px 60px 0;
   };
 
 }
@@ -680,8 +683,8 @@ color: #dddddd;
  background-color: #262626;
  background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
  box-shadow:
- inset #000000b0 -5px -5px 9px,
- inset #7d7d7d93 5px 5px 9px, 
+ inset #000000b0 -2px -2px 9px,
+ inset #7d7d7d93 2px 2px 9px, 
  0px 0px 12px 1px rgba(0, 0, 0, 0.577);
   @media screen and (min-width: 768px) {
     
@@ -920,8 +923,9 @@ cursor: pointer;
    background-color: #262626;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
    box-shadow:
-   inset #000000a4 3px 3px 7px,
-   inset #000000a4 1px 1px 3px; 
+   inset #000000a4 3px 3px 3px,
+   inset #00000018 3px 3px 7px
+   ; 
    transition: all .4s linear;
 
    

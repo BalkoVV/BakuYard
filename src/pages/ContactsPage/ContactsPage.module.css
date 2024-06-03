@@ -204,9 +204,9 @@ background-color: #262626;
 background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
-    box-shadow:
-    inset #000000b0 -5px -5px 9px,
-    inset #7d7d7d93 5px 5px 9px; 
+box-shadow:
+inset #000000b0 -3px -3px 9px,
+inset #7d7d7d93 3px 3px 9px ; 
 
    @media screen and (min-width: 767.9px) {
       padding-right: 30px;

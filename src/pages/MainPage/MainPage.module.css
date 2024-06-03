@@ -164,7 +164,7 @@
       height: 200px;
     };
     @media screen and (min-width: 1200px) {
-      background-size: 90%;
+      background-size: 150%;
       background-repeat: repeat;
       background-attachment: fixed;
       border-radius: 19px;
@@ -447,10 +447,15 @@ text-shadow: 1.5px 1.5px 1px #444444bc;
    
  color: #999999;
 
-    text-shadow: 1.5px 1.5px 1px #000000bc;
+    text-shadow: 1px 1px 1px #000000bc;
         box-shadow:
     inset #000000b0 -5px -5px 9px,
     inset #7d7d7d93 5px 5px 9px; 
+
+
+    box-shadow:
+inset #000000b0 -3px -3px 9px,
+inset #7d7d7d93 3px 3px 9px ; 
 
     @media screen and (min-width: 768px) {
       font-size: 15px;

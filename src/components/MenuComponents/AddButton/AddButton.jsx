@@ -37,7 +37,7 @@
 import React, { useState } from 'react';
 import styles from 'components/MenuComponents/AddButton/AddButton.module.css';
 
-import PlusIcon from 'images/plus.svg';
+import PlusIcon from 'images/plus2.svg';
 import CheckIcon from 'images/check.svg';
 
 const AddButton = ({ onAdd, onRemove, alreadyAdded }) => {
