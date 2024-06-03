@@ -17,6 +17,8 @@
       };
 
    @media screen and (min-width: 1200px) {
+    background-color: #020202;
+
       background-attachment: fixed;
    };
 }

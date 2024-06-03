@@ -6,6 +6,8 @@ import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 import styles from 'components/Basket/Basket.module.css';
 import "index.css";
 
+import PlusIcon from 'images/increase.svg';
+import MinusIcon from 'images/minus.svg';
 import closheMenu1 from 'images/closheMenuCard.svg';
 import closheMenu2 from 'images/closheMenuCard.svg';
 
@@ -284,8 +286,9 @@ export const Basket = () => {
                           
                           <span className={styles.basketListItemCounter}>
                            <span className={styles.basketListItemDecreaseBox}>
+                          
                            <button className={styles.basketListItemDecrease} onClick={() => decreaseQuantity(item.id)}>
-                              -
+                           <img src={MinusIcon} alt="Minus" />
                             </button>
                            </span>
                             <span  className={styles.basketListItemCounterInfo}>
@@ -299,7 +302,7 @@ export const Basket = () => {
                           
                            <span className={styles.basketListItemIncreaseBox}>
                            <button className={styles.basketListItemIncrease} onClick={() => increaseQuantity(item.id)}>
-                              +
+                           <img src={PlusIcon} alt="Plus" />
                             </button>
                            </span>
                           </span>

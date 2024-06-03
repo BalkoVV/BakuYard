@@ -37,6 +37,9 @@
 import React, { useState } from 'react';
 import styles from 'components/MenuComponents/AddButton/AddButton.module.css';
 
+import PlusIcon from 'images/plus.svg';
+import CheckIcon from 'images/check.svg';
+
 const AddButton = ({ onAdd, onRemove, alreadyAdded }) => {
   const [added, setAdded] = useState(alreadyAdded);
 
@@ -51,9 +54,13 @@ const AddButton = ({ onAdd, onRemove, alreadyAdded }) => {
   };
 
   return (
+    // <div onClick={handleClick} className={`${styles.addButton} ${added ? styles.added : ''}`}>
+    //   {added ? '✓' : '+'}
+    // </div>
+
     <div onClick={handleClick} className={`${styles.addButton} ${added ? styles.added : ''}`}>
-      {added ? '✓' : '+'}
-    </div>
+    {added ? <img src={CheckIcon} alt="Check" /> : <img src={PlusIcon} alt="Plus" />}
+  </div>
   );
 };
 

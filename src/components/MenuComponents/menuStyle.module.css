@@ -118,7 +118,7 @@
    display: flex; 
    align-items: center;
    justify-content: space-between;
-   height: 60px;
+   /* height: 60px; */
    margin-bottom: 25px;
    transition: all .4s ease-out; 
    border-radius: 15px;
@@ -127,7 +127,7 @@
    
 
 
-background-color: #585858;
+/* background-color: #585858; */
 
 background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
 
@@ -169,21 +169,11 @@ background-image: url("https://www.transparenttextures.com/patterns/soft-wallpap
 }
 
 .dishListItemCategoryDescription {
-   /* display: flex;
-   padding-left: 15px;
-   margin: 0;
-   color: #949494;
-   color: #c0c0c0;
-
-   text-shadow: 1px 1px 1px black;
-   font-size: 10px; */
    display: flex;
-   
    align-items: center;
    padding-left: 15px;
    font-size: 12px;
-  
-   color: #bebebe;
+   color: #949494;
    font-weight: 900;
    text-shadow: 1px 1px 2px black;
 
@@ -241,14 +231,14 @@ text-align: left;
    display: inline;
    align-items: center;
    /* padding-left: 15px; */
-   font-size: 12px;
+   font-size: 14px;
   
-   color: #bebebe;
+   color: #dddddd;
    font-weight: 900;
-   text-shadow: 1px 1px 2px black;
-   color: #000000;
+   text-shadow: 1px 1px 1px black;
+   /* color: #000000; */
 
-   text-shadow: 1px 1px 1px rgba(47, 47, 47, 0.523);
+   /* text-shadow: 1px 1px 1px rgba(47, 47, 47, 0.523); */
 
    @media screen and (max-width: 374.9px) {
       font-size: 9px;
@@ -334,15 +324,15 @@ text-align: left;
    display: inline;
    /* align-items: start; */
    
-   font-size: 8px;
+   font-size: 10px;
   padding-left: 5px;
-   color: #000000;
+   color: #dddddd;
    font-weight: 900;
    text-shadow: 1px 1px 2px black;
 
    /* color: #000000; */
 
-   text-shadow: 1px 1px 1px rgba(25, 25, 25, 0.435);
+   /* text-shadow: 1px 1px 1px rgba(25, 25, 25, 0.435); */
    @media screen and (max-width: 374.9px) {
       font-size: 10px;
       /* padding-left: 1px; */
@@ -352,10 +342,10 @@ text-align: left;
    @media screen and (min-width: 767.9px) {
       font-size: 9px;
       /* padding: 35px 0 0 20px; */
-      padding-left: 20px;
+      padding-left: 7px;
    };
    @media screen and (min-width: 1200px) {
-      font-size: 13px;
+      font-size: 11px;
       /* padding: 35px 0 0 20px; */
       padding-left: 10px;
    };
@@ -371,52 +361,34 @@ text-align: left;
 .dishListWeightPriceBox {
  display: flex;
  flex-direction: column;
- /* width: 70px; */
+ /* background-color: #00000043; */
 }
+
 
 .dishListWeightPriceBoxNotAdd {
    display: flex;
    flex-direction: column;
-   width: 70px;
-   height: 60px;
+   /* width: 70px; */
+   height: 70px;
 
    @media screen and (min-width: 767.9px) {
       /* font-size: 15px; */
-      height: 65px;
+      /* height: 65px; */
       /* width: 80px; */
    };
 
    @media screen and (min-width: 1200px) {
       /* font-size: 17px; */
-      height: 70px;
+      /* height: 70px; */
       /* width: 100px; */
    }; 
 }
 
 
 
- .dishListItemWeigth {
- display: flex;
- align-items: center;
- justify-content: center;
- border-radius: 0 0 0 5px;
- background: #00000026;
- height: 100%;
- width: 100px;
- border-bottom: 1px solid #262626;
- border-left: 1px solid #262626;
 
-}
 
-.dishListItemWeigthNotAdd {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 0 0 0 5px;
-   background: #00000087;
-   height: 100%;
-   border-bottom: 1px solid #262626;  
-  }
+
 
 
 .dishListItemWeigthNotAddHardRight {
@@ -426,8 +398,8 @@ text-align: left;
    border-radius: 0 0 0 5px;
    background: #00000087;
    height: 100%;
-   border-bottom: 1px solid #262626;  
-   border-left: 1px solid #262626;  
+   border-bottom: 1px solid #000;  
+   border-left: 1px solid #000;  
 }
 
 .dishListItemPriceNotAddHardRight {
@@ -451,7 +423,7 @@ text-align: left;
    height: 100%;
    border-bottom: 1px solid #262626;  
    border-left: 1px solid #262626;  
-   border-right: 1px solid #262626;  
+   /* border-right: 1px solid #262626;   */
   }
 
   .dishListItemPriceNotAddHard {
@@ -492,19 +464,50 @@ text-align: left;
 }
 
 
- 
+ /* .dishListItemManagement {
+ background-color: rgba(0, 0, 0, 0.306);
+} */
+
+
+.dishListItemWeigth {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* border-radius: 0 0 0 5px; */
+   /* background: #00000087; */
+   height: 100%;
+   width: 100px;
+   border-bottom: 2px solid #141414;
+   /* border-left: 2px solid #000; */
+   color: #dddddd;
+   text-shadow: 1px 1px 1px black;
+   /* background-color: #fff; */
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 15px;
+    
+   };
+
+   @media screen and (min-width: 1200px) {
+      font-size: 17px;
+     
+   }; 
+  }
 
 .dishListItemPrice {
    display: flex;
    align-items: center;
    justify-content: center;
    /* background-color: #000; */
-   border-radius: 5px 0 0 0 ;
-   background: #00000026;
+   /* border-radius: 0px 0px 0px 1px; */
+   /* background: #00000087; */
    height: 100%;
-   border-top: 1px solid #262626;
-   border-left: 1px solid #262626;
-
+   border-top: 2px solid #141414;
+   
+   /* border-left: 2px solid #000; */
+   color: #dddddd;
+   text-shadow: 1px 1px 1px black;
+   /* background-color: #fff; */
    /* display: flex;
    align-items: center;
    justify-content: center;
@@ -530,42 +533,68 @@ text-align: left;
       height: 70px;
       width: 100px;
    }; */
+
+   @media screen and (min-width: 767.9px) {
+      font-size: 15px;
+    
+   };
+
+   @media screen and (min-width: 1200px) {
+      font-size: 17px;
+     
+   }; 
 }
+
+.dishListItemWeigthNotAdd {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* border-radius: 0 0 0 5px; */
+   color: #dddddd;
+   height: 100%;
+   text-shadow: 1px 1px 1px #141414;
+   /* background-color: #00000043; */
+   border-bottom: 2px solid #000000;  
+   /* border-left: 1px solid #000000;  */
+   
+   @media screen and (min-width: 767.9px) {
+      font-size: 15px;
+      /* height: 65px; */
+      width: 90px;
+   };
+
+   @media screen and (min-width: 1200px) {
+      font-size: 17px;
+      /* height: 70px; */
+      width: 100px;
+   }; 
+
+  }
 
 .dishTablePriceNotAdd {
    display: flex;
    align-items: center;
    justify-content: center;
-   /* background-color: #000; */
-   border-radius: 5px 0 0 0 ;
-   background: #00000087;
+   /* border-radius: 5px 0 0 0 ; */
    height: 100%;
-   border-top: 1px solid #262626;
-   /* display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 50px;
-   margin: 0;
-   padding: 0;
-   font-size: 12px;
-   text-shadow: 1px 1px 2px rgb(0, 0, 0);
-   letter-spacing: -0.1px;
-   color: #949494;
-   background: #00000087;
-   border-left: 1px solid #605f5f24;
-    
+   width: 70px;
+   /* background-color: #00000043; */
+   border-top: 2px solid #141414;
+   /* border-left: 1px solid #000000; */
+    color: #dddddd;
+    text-shadow: 1px 1px 1px #000;
+
    @media screen and (min-width: 767.9px) {
       font-size: 15px;
-      height: 65px;
-      width: 80px;
+      /* height: 65px; */
+      width: 90px;
    };
 
    @media screen and (min-width: 1200px) {
       font-size: 17px;
-      height: 70px;
+      /* height: 70px; */
       width: 100px;
-   }; */
+   }; 
 }
 
 
@@ -579,8 +608,11 @@ text-align: left;
    margin: 0;
    padding: 0;
    border-radius: 0 14px 14px 0;
+   /* background-color: rgba(0, 0, 0, 0); */
    /* background: #00000087; */
-   background: #00000026;
+   /* background: #000000b5; */
+   /* background-color: #901818d8; */
+   /* background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png"); */
 /* 
    @media screen and (min-width: 767.9px) {
       height: 65px;
@@ -597,19 +629,25 @@ text-align: left;
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 45px;
-   height: 45px;
+   width: 40px;
+   height: 40px;
    border: none;
    padding: 0;
    margin: 0;
    overflow: hidden;
-   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.669);
+   /* box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.669); */
    
    /* transition: all .4s ease-out; */
-   border-radius: 13px;
+   border-radius: 9px;
    /* border-radius: 50%; */
-   /* background-color: #585858; */
-   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+   /* border-radius: 50%; */
+/* 
+   box-shadow:
+   inset #000000b0 -5px -5px 11px,
+   inset #17171703 5px 5px 9px;  */
+
+   /* background-color: #000000; */
+   /* background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png"); */
    /* background-color: #03c910; */
    /* @media screen and (min-width: 767.9px) {
       width: 45px;
@@ -732,7 +770,7 @@ text-shadow: 1px 1px 1px #444444bc;
    
 
 .dishListLunchButtonAddBox {
-   right: 10px;
+   /* right: 10px; */
    display: flex;
    align-items: center;
    justify-content: center;
@@ -761,8 +799,9 @@ text-shadow: 1px 1px 1px #444444bc;
    margin: 0;
    overflow: hidden;
    font-size: 25px;
-   border: 2px solid #94949465;
-   border-radius: 14px;
+   /* border: 2px solid #94949465; */
+   border-radius: 9px;
+   background-color: #fff;
 
    @media screen and (min-width: 767.9px) {
    
@@ -883,7 +922,7 @@ text-shadow: 1px 1px 1px #444444bc;
 .toMenuDescription {
   margin: 0;
   transition: all .4s ease-out;
-  color: #949494;
+  color: #999999;
   font-weight: 900;
   margin-bottom: 6px;
   display: none;
@@ -893,7 +932,7 @@ text-shadow: 1px 1px 1px #444444bc;
     margin-bottom: 0px;
     margin-right: 13px;
     font-size: 16px;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     
  };
 

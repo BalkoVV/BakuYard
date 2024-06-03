@@ -161,6 +161,7 @@ style={{
 
                </div>
                    <div className={styles.dishListItemManagement}>
+                    
 
                     <span className={styles.dishListWeightPriceBox}>
                         <span className={styles.dishListItemWeigth}>

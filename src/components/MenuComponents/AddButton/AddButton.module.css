@@ -11,6 +11,8 @@
    cursor: pointer;
    color: black;
    font-family: Primary;
+   overflow: hidden;
+   border-radius: 9px;
    text-shadow: 0px 0px 11px #fc000030;
    -webkit-text-stroke: .7px rgba(138, 137, 137, 0.76);
   font-size: 33px;
@@ -19,24 +21,26 @@
    /* box-shadow:
    inset #161616 -1px -1px 9px,
    inset #161616 1px 1px 9px; */
-      background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+      /* background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
 
    box-shadow:
    inset #000000b0 -5px -5px 11px,
-   inset #17171703 5px 5px 9px; 
+   inset #17171703 5px 5px 9px;  */
 }
 
 
 .added {
-   color: #870000;
-   background-color: #c9c7c7e1;
-   background-color: #000000;
+   /* color: #870000; */
+   /* fill: red; */
+   background-color: #c9c7c764;
+   /* background-color: #000000; */
    /* color: #949494; */
 
 
  }
  
  .notAdded {
+   fill: green;
   /* background-color: #03c910; */
 
   /* background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png"); */

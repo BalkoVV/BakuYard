@@ -206,17 +206,21 @@ export const AlcoholicCocktails = () => {
 
                </div>
 
-             <div className={styles.dishListItemManagement}>
+               <div className={styles.dishListItemManagementNotAdd}>
 
-             <span className={styles.dishListItemWeigth50}>
-               <td  className={styles.dishTableWeigthNotDelivery}>{item.вага}</td>
-             </span>
+                  <span className={styles.dishListWeightPriceBoxNotAdd}>
+                      <span className={styles.dishListItemWeigthNotAdd}>
+                        <td>{item.вага}</td>
+                      </span>
 
-             <span className={styles.dishTablePrice50}>
-               <td  className={styles.dishTablePriceNotDelivery}>{item.ціна}</td>
-             </span>
+                      <span className={styles.dishTablePriceNotAdd}>
+                        <td>{item.ціна}</td>
+                      </span>
+                </span>
 
-             </div>
+
+                  </div>
+          
            </tr>
          ))}
        </tbody>

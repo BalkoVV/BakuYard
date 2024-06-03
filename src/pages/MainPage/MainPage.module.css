@@ -12,6 +12,7 @@
   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
   @media screen and (min-width: 1200px) {
+    background-color: #020202;
     background-attachment: fixed;
   }; 
 
@@ -67,6 +68,8 @@
       font-size: 15px;
       line-height: 45px;
       color: #949494;
+ color: #727272;
+
       text-shadow: 3px 3px 1px rgb(0, 0, 0);
       font-weight: 500;
       letter-spacing: 0.1px;
@@ -180,6 +183,8 @@
 background: rgba(0, 0, 0, 0.474);
 
 color: #787878;
+color: #727272;
+
 text-shadow: 1.5px 1.5px 1px #444444bc;
   @media screen and (min-width: 768px) {
     font-size: 17px;
@@ -213,6 +218,7 @@ text-shadow: 1.5px 1.5px 1px #444444bc;
      font-size: 15px;
      line-height: 45px;
      color: #949494;
+ color: #727272;
      
      text-shadow: 3px 3px 1px rgb(0, 0, 0);
      font-weight: 500;
@@ -314,6 +320,8 @@ text-shadow: 1.5px 1.5px 1px #444444bc;
     border-radius: 13px;
     font-size: 15px;
     color: #787878;
+ color: #727272;
+
     text-shadow: 1.5px 1.5px 1px #444444bc;
     background: #0000009e;
 
@@ -352,6 +360,8 @@ text-shadow: 1.5px 1.5px 1px #444444bc;
     font-size: 15px;
     line-height: 45px;
     color: #949494;
+ color: #727272;
+
     text-shadow: 3px 3px 1px rgb(0, 0, 0);
     font-weight: 500;
     letter-spacing: 0.4px;
@@ -434,7 +444,9 @@ text-shadow: 1.5px 1.5px 1px #444444bc;
     width: 100%;
     font-size: 12px;
     font-weight: 900;
-    color: #949494;
+   
+ color: #999999;
+
     text-shadow: 1.5px 1.5px 1px #000000bc;
         box-shadow:
     inset #000000b0 -5px -5px 9px,
@@ -472,7 +484,7 @@ text-shadow: 1.5px 1.5px 1px #444444bc;
   width: 370px;
   font-size: 15px;
   line-height: 45px;
-  color: #949494;
+  color: #727272;
   text-shadow: 3px 3px 1px rgb(0, 0, 0);
   font-weight: 500;
  
