@@ -50,7 +50,7 @@ body {
 
 @font-face {
   font-family: PoiretFont;
-  src: url(./data/fonts/MainFont.ttf) format("truetype");
+  src: url(./data/fonts/Cardo.ttf) format("truetype");
 }
 
 /* button:active {

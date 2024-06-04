@@ -153,7 +153,7 @@ export const Beer = () => {
                       <span className={styles.dishListItemWeigthNotAdd}>
                         <td>{item.вага}</td>
                       </span>
-
+                      <span className={styles.dishListRazdelitel}></span>
                       <span className={styles.dishTablePriceNotAdd}>
                         <td>{item.ціна}</td>
                       </span>
@@ -289,7 +289,7 @@ export const Beer = () => {
                         <span className={styles.dishListItemWeigth}>
                           <td>{item.вага}</td>
                         </span>
-
+                        <span className={styles.dishListRazdelitel}></span>
                         <span className={styles.dishListItemPrice}>
                           <td>{item.ціна}</td>
                         </span>

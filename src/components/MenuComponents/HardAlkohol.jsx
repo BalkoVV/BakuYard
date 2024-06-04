@@ -223,6 +223,7 @@ export const HardAlkohol = () => {
                 <span className={styles.dishListItemWeigth}>
                   <td>{item.вага50}</td>
                 </span>
+                <span className={styles.dishListRazdelitel}></span>
 
                 <span className={styles.dishListItemPrice}>
                   <td>{item.ціна50}</td>
@@ -235,6 +236,7 @@ export const HardAlkohol = () => {
                 <span className={`${styles.dishListItemWeigth} ${styles.dishListItemWeigthNotAddHardCenter}`}>
                   <td>{item.вага100}</td>
                 </span>
+                <span className={styles.dishListRazdelitel}></span>
 
                 <span className={`${styles.dishListItemPrice} ${styles.dishListItemPriceNotAddHardCenter}`}>
                   <td>{item.ціна100}</td>
@@ -247,6 +249,7 @@ export const HardAlkohol = () => {
                <span className={styles.dishListItemWeigth}>
                   <td>{item.вага}</td>
                 </span>
+                <span className={styles.dishListRazdelitel}></span>
 
                 <span className={styles.dishListItemPrice}>
                   <td>{item.ціна}</td>
@@ -376,6 +379,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага50}</td>
 </span>
+<span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна50}</td>
@@ -388,6 +392,7 @@ export const HardAlkohol = () => {
 <span className={`${styles.dishListItemWeigth} ${styles.dishListItemWeigthNotAddHardCenter}`}>
   <td>{item.вага100}</td>
 </span>
+<span className={styles.dishListRazdelitel}></span>
 
 <span className={`${styles.dishListItemPrice} ${styles.dishListItemPriceNotAddHardCenter}`}>
   <td>{item.ціна100}</td>
@@ -400,6 +405,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага}</td>
 </span>
+<span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна}</td>
@@ -527,6 +533,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага50}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна50}</td>
@@ -539,6 +546,7 @@ export const HardAlkohol = () => {
 <span className={`${styles.dishListItemWeigth} ${styles.dishListItemWeigthNotAddHardCenter}`}>
   <td>{item.вага100}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={`${styles.dishListItemPrice} ${styles.dishListItemPriceNotAddHardCenter}`}>
   <td>{item.ціна100}</td>
@@ -551,6 +559,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна}</td>
@@ -647,6 +656,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага50}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна50}</td>
@@ -659,6 +669,7 @@ export const HardAlkohol = () => {
 <span className={`${styles.dishListItemWeigth} ${styles.dishListItemWeigthNotAddHardCenter}`}>
   <td>{item.вага100}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={`${styles.dishListItemPrice} ${styles.dishListItemPriceNotAddHardCenter}`}>
   <td>{item.ціна100}</td>
@@ -671,6 +682,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна}</td>
@@ -914,6 +926,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага50}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна50}</td>
@@ -926,6 +939,7 @@ export const HardAlkohol = () => {
 <span className={`${styles.dishListItemWeigth} ${styles.dishListItemWeigthNotAddHardCenter}`}>
   <td>{item.вага100}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={`${styles.dishListItemPrice} ${styles.dishListItemPriceNotAddHardCenter}`}>
   <td>{item.ціна100}</td>
@@ -938,6 +952,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна}</td>
@@ -1047,6 +1062,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага50}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна50}</td>
@@ -1059,6 +1075,7 @@ export const HardAlkohol = () => {
 <span className={`${styles.dishListItemWeigth} ${styles.dishListItemWeigthNotAddHardCenter}`}>
   <td>{item.вага100}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={`${styles.dishListItemPrice} ${styles.dishListItemPriceNotAddHardCenter}`}>
   <td>{item.ціна100}</td>
@@ -1071,6 +1088,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна}</td>
@@ -1196,6 +1214,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага50}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна50}</td>
@@ -1208,6 +1227,7 @@ export const HardAlkohol = () => {
 <span className={`${styles.dishListItemWeigth} ${styles.dishListItemWeigthNotAddHardCenter}`}>
   <td>{item.вага100}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={`${styles.dishListItemPrice} ${styles.dishListItemPriceNotAddHardCenter}`}>
   <td>{item.ціна100}</td>
@@ -1220,6 +1240,7 @@ export const HardAlkohol = () => {
 <span className={styles.dishListItemWeigth}>
   <td>{item.вага}</td>
 </span>
+                      <span className={styles.dishListRazdelitel}></span>
 
 <span className={styles.dishListItemPrice}>
   <td>{item.ціна}</td>
