@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.17b20168.css",
-    "main.js": "/static/js/main.b313e9a5.js",
+    "main.css": "/static/css/main.e9682699.css",
+    "main.js": "/static/js/main.df3b3347.js",
     "static/media/inMap.png": "/static/media/inMap.7c68d7b44ab412af869a.png",
     "static/media/Instagram-QR.png": "/static/media/Instagram-QR.d98c00342daf7e6c6e3f.png",
     "static/media/23232555.png": "/static/media/23232555.20d673c873c32dd792fa.png",
@@ -43,7 +43,7 @@
     "static/media/soupCardMenu.svg": "/static/media/soupCardMenu.5d1669806be208f073462a37518afa94.svg",
     "static/media/soupCard.svg": "/static/media/soupCard.237446378318f8ba61649461aaba86e2.svg",
     "static/media/hotDrinkCardMenu.svg": "/static/media/hotDrinkCardMenu.5833f4fc5884c6d4d52143263d0cf5a4.svg",
-    "static/media/hotDrinkCard.svg": "/static/media/hotDrinkCard.2e7b9670c4b8bf76ff343a3e22cfc72f.svg",
+    "static/media/hotDrinkCard.svg": "/static/media/hotDrinkCard.8444df1d37302c97a7df1349900dc0ce.svg",
     "static/media/mainDishCardMenu.svg": "/static/media/mainDishCardMenu.0ea008a22f03a3f38bcfcd92fcb06bf9.svg",
     "static/media/mainDishCard.svg": "/static/media/mainDishCard.ea58e76c56efaf5f111c0f4f7d378ce9.svg",
     "static/media/fishCardMenu.svg": "/static/media/fishCardMenu.c61e500535c3c629f790566cb49d5c97.svg",
@@ -52,14 +52,14 @@
     "static/media/dessertCard.svg": "/static/media/dessertCard.e8c4ec2357200b085382e5f2504c66f1.svg",
     "static/media/meatCardMenu.svg": "/static/media/meatCardMenu.6e12b5c57c597032e7921ecf9e1e2daf.svg",
     "static/media/sideDishCardMenu.svg": "/static/media/sideDishCardMenu.357d845aa01b0c7ac953f276619c59de.svg",
-    "static/media/meatCard.svg": "/static/media/meatCard.c883959fd05a2a6bec9c33daffdb66ca.svg",
+    "static/media/meatCard.svg": "/static/media/meatCard.917d5e194e4b3bda61d0966e0813f1fa.svg",
     "static/media/sideDishCard.svg": "/static/media/sideDishCard.a78c310f94aaae5b692e778ad5154931.svg",
     "static/media/coldAppetizerCardMenu.svg": "/static/media/coldAppetizerCardMenu.a9368d522d73c340b457a29fa74ba794.svg",
     "static/media/coldAppetizerCard.svg": "/static/media/coldAppetizerCard.43eefbe9cf4e6b1622c7c5f98c190d5e.svg",
     "static/media/radioPhone.svg": "/static/media/radioPhone.e7aa469a355d9d1568ee3795b34102df.svg",
-    "static/media/closherr.svg": "/static/media/closherr.57e8ed58ee4194ba7b4910e7047f3be1.svg",
     "static/media/userInMap.svg": "/static/media/userInMap.38d640a764ffb1d1d4fead98b342cade.svg",
     "static/media/mobile.svg": "/static/media/mobile.e53b51f799a743b8ec12531b8545768d.svg",
+    "static/media/closherr.svg": "/static/media/closherr.f3578c6136b11118d18511c0c22e1163.svg",
     "static/media/plus2.svg": "/static/media/plus2.1dfe233c364e3b77a1af54fab878ff60.svg",
     "static/media/clock.svg": "/static/media/clock.4130123e70535f2bbc2c0aea679cba6e.svg",
     "static/media/toMenuIcon.svg": "/static/media/toMenuIcon.c2f5db7d108ea803a02fc2f167c55491.svg",
@@ -72,15 +72,15 @@
     "static/media/formail.svg": "/static/media/formail.a1b8eb8653c733201191a7570ce6c5ee.svg",
     "static/media/formailfooter.svg": "/static/media/formailfooter.4dbaecf073a13c1824a58ab0152d232f.svg",
     "static/media/forfacebookfooter.svg": "/static/media/forfacebookfooter.d266b2e72907889e4aa7e9bbfb7d6f2c.svg",
-    "static/media/forfacebook.svg": "/static/media/forfacebook.7a3d61c7dca5284b41cd1114ff38fe16.svg",
+    "static/media/forfacebook.svg": "/static/media/forfacebook.97137569f1d2cac155cd9e1575f02a36.svg",
     "static/media/dot.svg": "/static/media/dot.6b30c1a708c1a64c95e21f67f058bb86.svg",
     "static/media/mobileSwitch.svg": "/static/media/mobileSwitch.fbd81f0ffcbc9f0d3f9daa0da92bd41d.svg",
     "static/media/toMenu.svg": "/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
-    "main.17b20168.css.map": "/static/css/main.17b20168.css.map",
-    "main.b313e9a5.js.map": "/static/js/main.b313e9a5.js.map"
+    "main.e9682699.css.map": "/static/css/main.e9682699.css.map",
+    "main.df3b3347.js.map": "/static/js/main.df3b3347.js.map"
   },
   "entrypoints": [
-    "static/css/main.17b20168.css",
-    "static/js/main.b313e9a5.js"
+    "static/css/main.e9682699.css",
+    "static/js/main.df3b3347.js"
   ]
 }
