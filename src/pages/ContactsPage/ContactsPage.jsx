@@ -7,7 +7,6 @@ import MailIcon from 'components/Icons/MailIcon/MailIcon';
 import LocationIcon from 'components/Icons/LocationIcon/LocationIcon';
 import ClockIcon from 'components/Icons/ClockIcon/ClockIcon';
 import BlackberryPhoneIcon from 'components/Icons/BlackberryPhoneIcon/BlackberryPhoneIcon';
-// import ApplePhoneIcon from 'components/Icons/ApplePhoneIcon/ApplePhoneIcon';
 import RetroPhonesIcon from 'components/Icons/RetroPhonesIcon/RetroPhonesIcon';
 
 import styles from 'pages/ContactsPage/ContactsPage.module.css';
@@ -48,6 +47,14 @@ export const ContactsPage = () => {
                     <ClockIcon className={styles.contactsListItemImg}/>
                     <h3 className={styles.contactsListItemDiscriptions}>Ми працюємо з 11:00 до 23:00</h3>
                   </li>
+                  <li className={styles.contactsListItem}>
+                    <RetroPhonesIcon className={styles.phoneIconContact}/>
+                    <h3 className={styles.contactsListItemDiscriptions}>Доставка з 11:00 до 21:00</h3>
+                  </li>
+                  <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
+                    <MailIcon className={styles.contactsListItemImg}/>
+                    <a href="mailto:bakinskiydvor2021@gmail.com" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}>Надішліть нам eMail</a>
+                  </li>
 
                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <BlackberryPhoneIcon className={styles.phoneIconContact}/>
@@ -59,16 +66,9 @@ export const ContactsPage = () => {
                     <a href="tel:+380934423028" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 093 442 30 28</a>
                   </li>          
 
-                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
-                    <RetroPhonesIcon className={styles.phoneIconContact}/>
-                    <a href="tel:+380459453369" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}>Доставка працює з 11:00 до 21:00</a>
-                  </li>
+                  
 
-                   <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
-                    <MailIcon className={styles.contactsListItemImg}/>
-                    <a href="mailto:bakinskiydvor2021@gmail.com" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}>Надішліть нам eMail</a>
-                  </li>
-
+                  
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <InstagramIcon className={styles.contactsListItemImg}/>
                     <a href="https://www.instagram.com/dvorbakinskii/" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}>Ми в Instagram</a>

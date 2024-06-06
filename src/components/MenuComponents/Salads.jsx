@@ -12,11 +12,9 @@ import { CartContext } from "components/CartProvider/CartProvider";
 import menuData from "services/dataSalads/salads.json";
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
-// import saladMenu1 from 'images/saladCardMenu.svg';
-// import saladMenu2 from 'images/saladCardMenu.svg';
+import saladMenu1 from 'images/saladCardMenu.svg';
+import saladMenu2 from 'images/saladCardMenu.svg';
 
-import saladMenu1 from 'images/saladMenu1.png';
-import saladMenu2 from 'images/saladMenu2.png';
 
 export const Salads = () => {
   const { addToCart, removeFromCart, cartItems } = useContext(CartContext);
@@ -76,7 +74,7 @@ export const Salads = () => {
           height: '500px',
           zIndex: '0',
           rotate: '10deg',
-          opacity: '1'
+          opacity: '.4'
         }}
       />
 
@@ -94,7 +92,7 @@ export const Salads = () => {
           zIndex: '0',
           rotate: '-10deg',
           transform: 'scaleX(-1)',
-          opacity: '1',
+          opacity: '.4',
         }}
       />
         

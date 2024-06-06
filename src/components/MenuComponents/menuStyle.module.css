@@ -606,7 +606,7 @@ display: flex;
 }
 
 .dishListItem:hover .dishListItemNameDescription {
-color: rgb(222, 222, 222);
+color: rgb(254, 254, 254);
 transition: all .8s ease-out;
 
 }

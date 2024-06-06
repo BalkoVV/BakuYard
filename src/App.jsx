@@ -13,8 +13,6 @@ import Footer from 'components/Footer/Footer';
 import MasterContainer from 'components/MasterContainer/MasterContainer';
 import LogoBen from 'components/LogoBen/LogoBen';
 import styles from 'index.css';
-import BusinessCard from 'pages/BusinessCardPage/BusinessCardPage';
-import BeHappyCard from 'pages/BeHappyPage/BeHappyPage';
 
 export const App = () => {
   return (
@@ -28,8 +26,6 @@ export const App = () => {
               <Route path="/menu" component={MenuPage} />
               <Route path="/basket" component={BasketPage} />
               <Route path="/contacts" component={ContactsPage} />
-              <Route path="/card" component={BusinessCard} />
-              <Route path="/behappy" component={BeHappyCard} />
             </CartProvider>
           </Switch>
         </div>
