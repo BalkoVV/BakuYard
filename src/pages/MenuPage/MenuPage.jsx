@@ -344,10 +344,10 @@ export const MenuPage = () => {
                   
                    <span className={styles.dishCardDescriptionBox}>
                    <h3 className={styles.dishCardDescriptionTop}>
-                       Бізнес
+                       Комплексні
                     </h3>
                     <h3 className={styles.dishCardDescriptionBottom}>
-                      ланчі
+                      обіди
                     </h3>
                    </span>
                    

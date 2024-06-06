@@ -107,16 +107,9 @@ export const Basket = () => {
 
   const handleSubmitOrder = () => {
     if (isOrderButtonActive()) {
-      // const botToken = '7074161122:AAGCX_7aMobZIj6F6pTpURI2fopAgf8SVMU';
-      // const botChatId = 539872126;
-
+     
       const botToken = '7381297312:AAGXSrCnATa8DHTnYPA8FXMHIBeVuh4sUNo';
       const botChatId = 6721446998;
-
-      
-      // https://api.telegram.org/bot7381297312:AAGXSrCnATa8DHTnYPA8FXMHIBeVuh4sUNo
-
-
 
       const message = `
         Нове замовлення!

@@ -61,7 +61,7 @@ export const ContactsPage = () => {
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>
                     <RetroPhonesIcon className={styles.phoneIconContact}/>
-                    <a href="tel:+380459453369" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}> +38 045 945 33 69</a>
+                    <a href="tel:+380459453369" target="_blank" rel="noreferrer" className={styles.contactsListItemDiscriptions}>Доставка працює з 11:00 до 21:00</a>
                   </li>
 
                    <li className={`${styles.contactsListItem} ${styles.contactsListItemActive}`}>

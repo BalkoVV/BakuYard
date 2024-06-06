@@ -51,7 +51,7 @@ export const Lunch = () => {
   return (
     <div className={styles.dishPage}>
          <div className={styles.discriptionBox}>
-          <h1 className={styles.dishTitle}>Бізнес ланчі</h1> 
+          <h1 className={styles.dishTitle}>Комплексні обіди</h1> 
           <div className={styles.toMenuButton}>
         <NavLink to="/menu" className={styles.toMenuLink}>
           <ToMenuIcon className={styles.toMenuIcon}/>
@@ -150,7 +150,7 @@ export const Lunch = () => {
                         <span className={styles.dishListRazdelitel}></span>
 
                         <span className={styles.dishListItemPrice}>
-                        <td>з 11 до 15</td>
+                        <td>з 12 до 15</td>
                         </span>
                     </span>
 
