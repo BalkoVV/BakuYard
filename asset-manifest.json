@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.e9682699.css",
-    "main.js": "/static/js/main.df3b3347.js",
+    "main.js": "/static/js/main.fb11ea46.js",
     "static/media/inMap.png": "/static/media/inMap.7c68d7b44ab412af869a.png",
     "static/media/Instagram-QR.png": "/static/media/Instagram-QR.d98c00342daf7e6c6e3f.png",
     "static/media/23232555.png": "/static/media/23232555.20d673c873c32dd792fa.png",
     "static/media/Facebook-QR.png": "/static/media/Facebook-QR.368fed66fe39027df586.png",
     "static/media/Cardo.ttf": "/static/media/Cardo.0ed38090866979acc11f.ttf",
     "static/media/Constantine.ttf": "/static/media/Constantine.3ee1143b25cccb6510a0.ttf",
+    "static/media/saladMenu2.png": "/static/media/saladMenu2.ea108eea3f4e3d18dd24.png",
+    "static/media/saladMenu1.png": "/static/media/saladMenu1.5bc633780684e8bca0d1.png",
     "static/media/Menu-QR.png": "/static/media/Menu-QR.68b3e706660103c4942b.png",
     "static/media/str2.png": "/static/media/str2.c6abf30fc16c5e0a3528.png",
     "static/media/MainLogoBY22.svg": "/static/media/MainLogoBY22.dc4b10d0bf7fecad23c8e6a6978ad9d1.svg",
@@ -26,7 +28,6 @@
     "static/media/beveragesCard.svg": "/static/media/beveragesCard.ade1307aa1b9e408e577571e2683915c.svg",
     "static/media/cocktailsCardMenu.svg": "/static/media/cocktailsCardMenu.cd3e99c6c8c02d72ef68c62da9ddd1fb.svg",
     "static/media/cocktailsCard.svg": "/static/media/cocktailsCard.9c13eab571f8c65ec8881ea32f2981f9.svg",
-    "static/media/saladCardMenu.svg": "/static/media/saladCardMenu.64ee01969c1000797dddb218265958f6.svg",
     "static/media/saladCard.svg": "/static/media/saladCard.94d83bdf6e3d133cfc7622bdf416d1cd.svg",
     "static/media/beerCardMenu.svg": "/static/media/beerCardMenu.59de6776c3baea4b1ce4a6461d9bc27e.svg",
     "static/media/beerCard.svg": "/static/media/beerCard.a91d1964d512752cbb5bb678b4c6d9ad.svg",
@@ -77,10 +78,10 @@
     "static/media/mobileSwitch.svg": "/static/media/mobileSwitch.fbd81f0ffcbc9f0d3f9daa0da92bd41d.svg",
     "static/media/toMenu.svg": "/static/media/toMenu.dc093e8169afaa826d41f7ebbe0e10b4.svg",
     "main.e9682699.css.map": "/static/css/main.e9682699.css.map",
-    "main.df3b3347.js.map": "/static/js/main.df3b3347.js.map"
+    "main.fb11ea46.js.map": "/static/js/main.fb11ea46.js.map"
   },
   "entrypoints": [
     "static/css/main.e9682699.css",
-    "static/js/main.df3b3347.js"
+    "static/js/main.fb11ea46.js"
   ]
 }
