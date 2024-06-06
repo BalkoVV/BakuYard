@@ -179,31 +179,7 @@ style={{
                     </span>
 
                  </div>
-               {/* <div className={styles.dishListItemManagement}>
-
-                  <span className={styles.dishListItemWeigth}>
-                    <td>{item.вага}</td>
-                  </span>
-
-                  <span className={styles.dishTablePrice}>
-                    <td>{item.ціна}</td>
-                  </span>
-
-                  <span className={styles.dishListButtonAddBox}>
-                      <td className={styles.dishListButtonAdd}>
-                      <AddButton
-                          onAdd={() => addToCart(item)}
-                          onRemove={() => {
-                            removeFromCart(item.id);
-                            updateButtonState(item.id);
-                          }}
-                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
-                        />
-
-                      </td>
-                  </span>
-
-               </div> */}
+               
 
               </tr>
             ))}

@@ -119,8 +119,7 @@
    margin-bottom: 25px;
    transition: all .4s ease-out; 
    border-radius: 15px;
-   background-color: #262626;
-   /* background-color: rgba(60, 1, 1, 0.847); */
+   background-color: #313131;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
 
    box-shadow:
@@ -199,15 +198,27 @@
    };
 }
 
+/* .dishListItemLunchPositionName {
+ padding-left: 10px;
+
+ @media screen and (min-width: 767.9px) {
+   padding-left: 15px;
+};
+@media screen and (min-width: 1200px) {
+   padding-left: 20px;
+};
+} */
+
 .dishListItemNameDescription {
    display: flex;
    display: inline;
    align-items: center;
    font-size: 14px;
    color: #b0b0b0;
-   color: #cbcbcb;
+   /* color: #cbcbcb; */
    font-weight: 900;
    text-shadow: 1px 1px 1px black;
+   transition: all .4s ease-out;
 
    @media screen and (max-width: 374.9px) {
       font-size: 9px;
@@ -226,14 +237,149 @@
 
 .dishListRazdelitel {
 display: flex;
+justify-content: center;
+
 width: 100%;
-height: 8px;
-background-color: #141414;
-border-radius: 4px;
+height: 5px;
+background-color: #000000;
+border-radius: 2px;
 
 }
 
+.dishListLunchDelimiterBox {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   height: 2px;
+  
+}
 
+.dishListLunchDelimiter {
+ width: 97%;
+ background-color: #0000009b;
+ border-radius: 2px;
+}
+
+
+
+.dishLunchList {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-row-gap: 0px;
+   border: none;
+   padding: 30px 5px 0px;
+   margin-bottom: 50px;
+   border-radius: 15px;
+   box-shadow:
+   inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
+   inset #303030 5px 5px 9px,
+   rgb(0, 0, 0) 3px 3px 8px -3px;
+   z-index: 9;
+   overflow: hidden;
+      
+   @media screen and (min-width: 767.9px) {
+      padding: 30px 15px 0;
+   };
+
+  @media screen and (min-width: 1200px) {
+   padding: 30px 20px 0;
+  };
+}
+
+
+ .dishListItemLunch {
+   position: relative;
+   width: 100%;
+   display: flex; 
+   flex-direction: column;
+   margin-bottom: 17px;
+   transition: all .4s ease-out; 
+   overflow: hidden;
+   border-radius: 13px;
+   margin-bottom: 30px;
+  
+   /* background-color: rgba(255, 255, 255, 0.186); */
+   background-color: #313131;
+   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
+
+   box-shadow:
+   inset #000000b0 -3px -3px 9px,
+   inset #7d7d7d93 3px 3px 9px; 
+
+   @media screen and (min-width: 768px) {
+   
+   };
+
+   @media screen and (min-width: 1200px) {
+  
+   };
+}
+
+.dishListItemLunch:hover {
+  scale: 1.01;
+}
+
+.dishListItemLunch:hover .dishListItemNameDescription {
+   color: white;
+ }
+
+.dishListItemLunch .dishListItemLunchPosition:nth-child(n+2) {
+ /* background-color: rgb(3, 22, 129); */
+ color: red;
+ height: 40px;
+}
+
+.dishListItemLunchManagement {
+ display: flex;
+ justify-content: space-between;
+}
+
+
+.dishListItemLunchPosition {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 60px;
+   padding: 0 10px;
+   /* background-color: #fff; */
+   @media screen and (min-width: 767.9px) {
+      padding: 0 20px;
+   };
+
+  @media screen and (min-width: 1200px) {
+   padding: 0 30px;
+  };
+}
+
+.dishListItemLunchPositionAddBox {
+   display: flex;
+   justify-content: start;
+align-items: center;
+   /* background-color: blue; */
+height: 70px;
+width: 50px;
+}
+/* ul li:nth-child(n+2) */
+
+.dishListItemLunchPositionInfo {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.dishListItemLunchPositionInfo td {
+display: flex;
+/* background-color: red; */
+height: 50%;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+
+.dishListItemLunchPositionManagement {
+display: flex;
+}
 .dishListItemIngredients {
    display: flex;
    display: block;
@@ -264,7 +410,7 @@ border-radius: 4px;
    color: #a5a5a5;
    letter-spacing: .8px;
    /* font-weight: 900; */
-   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.559);
+   text-shadow: 1px 1px 1px rgb(0, 0, 0);
 
    @media screen and (max-width: 374.9px) {
       font-size: 10px;
@@ -290,6 +436,8 @@ border-radius: 4px;
  display: flex;
  flex-direction: column;
 }
+
+
 
 
 .dishListWeightPriceBoxNotAdd {
@@ -324,62 +472,26 @@ border-radius: 4px;
    border-left: 1px solid #000;  
 }
 
-.dishListItemPriceNotAddHardRight {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 0 0 0 5px;
-   background: #00000087;
-   height: 100%;
-   border-radius:  5px 0 0 0;
-   border-top: 1px solid #262626;  
-   border-left: 1px solid #262626;  
-}
-
-  .dishListItemWeigthNotAddHard {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 0 0 5px 5px;
-   background: #00000087;
-   height: 100%;
-   border-bottom: 1px solid #262626;  
-   border-left: 1px solid #262626;  
-   /* border-right: 1px solid #262626;   */
-  }
-
-  .dishListItemPriceNotAddHard {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 5px 5px 0 0 ;
-   background: #00000087;
-   height: 100%;
-   border-top: 1px solid #262626;
-   border-left: 1px solid #262626;  
-   border-right: 1px solid #262626;  
-  
-}
 
 
-.dishListItemWeigth {
+.dishListItemWeigth
+ {
    display: flex;
    align-items: center;
    justify-content: center;
    height: 100%;
-   width: 100px;
-   /* border-bottom: 2px solid #141414; */
+   width: 80px;
    color: #999999;
    text-shadow: 1px 1px 1px black;
 
    @media screen and (min-width: 767.9px) {
       font-size: 15px;
-    
+      width: 90px;
    };
 
    @media screen and (min-width: 1200px) {
       font-size: 17px;
-     
+      width: 100px;
    }; 
   }
 
@@ -475,204 +587,34 @@ border-radius: 4px;
    justify-content: center;
    width: 40px;
    height: 40px;
-   border: none;
+   /* border: 1.5px solid rgba(134, 134, 134, 0.529); */
    padding: 0;
    margin: 0;
    overflow: hidden;
-   border-radius: 9px;
+   border-radius: 10px;
+   transition: all .4s ease-out;
 
 }
+
+
 
 .dishListItem:hover {
    transition: all .4s ease-out;
    scale: 1.02;
+   /* background-color: rgba(0, 0, 0, 0.348); */
+
+}
+
+.dishListItem:hover .dishListItemNameDescription {
+color: rgb(222, 222, 222);
+transition: all .8s ease-out;
 
 }
 
 
-.dishLunchList {
-   display: grid;
-   grid-template-columns: repeat(1, 1fr);
-   grid-row-gap: 0px;
-   border: none;
-   padding: 0px 5px 0px;
-   margin-bottom: 50px;
-   border-radius: 15px;
-   box-shadow:
-   inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
-   inset #303030 5px 5px 9px,
-   rgb(0, 0, 0) 3px 3px 8px -3px;
-   z-index: 9;
-   overflow: hidden;
-      
-   @media screen and (min-width: 767.9px) {
-      padding: 0px 15px;
-   };
 
-  @media screen and (min-width: 1200px) {
-   padding: 0px 20px;
-  };
-}
 
- .dishListItemLunch {
-   position: relative;
-   width: 100%;
-   display: flex; 
-   flex-direction: column;
-   margin-bottom: 17px;
-   transition: all .4s ease-out; 
-   overflow: hidden;
-   border-radius: 13px;
-   background-color: #262626;
-   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
-   box-shadow:
-      inset #000000b0 -5px -5px 9px,
-      inset #7d7d7d93 5px 5px 9px; 
-   
-   @media screen and (min-width: 768px) {
-   
-   };
 
-   @media screen and (min-width: 1200px) {
-  
-   };
-}
-
-.dishListItemLunchManagement {
- display: flex;
- justify-content: space-between;
-}
-
-.dishListItemLunchInfo,
-.dishListItemLunchFirst, 
-.dishListItemLunchSecond,
-.dishListItemLunchSalad,
-.dishListItemLunchDrink,
-.dishListItemLunchBread {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   height: 60px;
-   border-bottom: 1px solid #000;
-}
-
-.dishListItemLunchInfo {
-   border-top: none;
-}
-
-.dishListItemLunchDay {
- display: flex;
- width: 100%;
-justify-content: center;
-align-items: center;
-padding-left: 60px;
-color: #949494;
-text-shadow: 1px 1px 1px #444444bc;
-}
-
-.dishListItemLunchPrice {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
- width: 60px;
- height: 60px;
-}
-
-.dishListItemLunchAddBox {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   height: 70px;
-   }
-   
-
-.dishListLunchButtonAddBox {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 70px;
-   margin: 0;
-   z-index: 9;
-
-   @media screen and (min-width: 767.9px) {
-    
-   };
-
-   @media screen and (min-width: 1200px) {
-    
-   };
-}
-
-.dishListLunchButtonAdd {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 40px;
-   height: 40px;
-   border: none;
-   padding: 0;
-   margin: 0;
-   overflow: hidden;
-   font-size: 25px;
-   border-radius: 9px;
-   background-color: #fff;
-
-   @media screen and (min-width: 767.9px) {
-   
-   };
-
-   @media screen and (min-width: 1200px) {
-   
-   };
-}
-.dishListItemLunchNameFirst,
-.dishListItemLunchNameSecond,
-.dishListItemLunchNameSalad,
-.dishListItemLunchNameDrink,
-.dishListItemLunchNameBread,
-.dishListItemLunchInfo {
-   display: flex;
-   align-items: center;
-   padding-left: 15px;
-   font-size: 12px;
-  
-   color: #bebebe;
-   font-weight: 900;
-   text-shadow: 1px 1px 2px black;
-
-   @media screen and (max-width: 374.9px) {
-      font-size: 9px;
-
-   };
-
-   @media screen and (min-width: 767.9px) {
-      font-size: 17px;
-     
-   };
-   @media screen and (min-width: 1200px) {
-      font-size: 19px;
-      padding-left: 25px;
-   };
-}
-.dishListItemLunchPrice,
-.dishListItemLunchWeigthFirst,
-.dishListItemLunchWeigthSecond,
-.dishListItemLunchWeigthSalad,
-.dishListItemLunchWeigthDrink,
-.dishListItemLunchWeigthBread {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 60px;
-   width: 60px;
-   border-left: 1px solid #1a1a1a;
-   background-color: rgba(18, 18, 18, 0.375);
-   color: #949494;
-   background: #00000087;
-   border-left: 1px solid #605f5f24;
-}
 
 
 

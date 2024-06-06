@@ -101,15 +101,34 @@ export const Lunch = () => {
        
           <table >
 
-            <tbody >
+            <tbody className={styles.dishLunchList}>
               {lunchItems.map((item) => (
-                <tr key={item.id}  className={styles.dishLunchList}>
-                  <span className={styles.dishListItemLunchAddBox}>
-                  <td className={styles.dishListItemLunchDay}>{item.назва}</td>
-                  <span className={styles.dishListLunchButtonAddBox}>
-                        <td className={styles.dishListLunchButtonAdd}>
-                        
+                <tr key={item.id}  >
+                
+                  <ul className={styles.dishListItemLunch}>
+                    <li className={styles.dishListItemLunchPosition}>
+                     <span className={styles.dishListItemLunchPositionName}>
+                     {/* <td>{item.назва}</td> */}
+                     <td className={styles.dishListItemNameDescription}>{item.назва}</td>
 
+                     </span>
+
+                  {/* <span className={styles.dishListItemName} >
+                      <td className={styles.dishListItemNameDescription}>{item.назва}</td>
+                    </span> */}
+
+                      {/* <span  className={styles.dishListItemLunchPositionManagement}>
+                      <span  className={styles.dishListItemLunchPositionInfo}>  
+                        <td className={styles.dishListItemPrice}>{item.ціна}</td>
+
+                      <span className={styles.dishListRazdelitel}></span>
+                  
+
+                        <td className={styles.dishListItemPrice}>з 11 до 15</td>
+                      </span>
+
+                      <span  className={styles.dishListItemLunchPositionAddBox}>
+                        <td className={styles.dishListButtonAdd}>
                           <AddButton
                             onAdd={() => addToCart(item)}
                             onRemove={() => {
@@ -118,54 +137,82 @@ export const Lunch = () => {
                             }}
                             alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
                           />
+                        </td>
+                      </span>
+                      </span> */}
 
+                       <div className={styles.dishListItemManagement}>
 
+                    <span className={styles.dishListWeightPriceBox}>
+                        <span className={styles.dishListItemWeigth}>
+                        <td>{item.ціна}</td>
+                        </span>
+                        <span className={styles.dishListRazdelitel}></span>
+
+                        <span className={styles.dishListItemPrice}>
+                        <td>з 11 до 15</td>
+                        </span>
+                    </span>
+
+                    <span className={styles.dishListButtonAddBox}>
+                        <td className={styles.dishListButtonAdd}>
+                        <AddButton
+                          onAdd={() => addToCart(item)}
+                          onRemove={() => {
+                            removeFromCart(item.id);
+                            updateButtonState(item.id);
+                          }}
+                          alreadyAdded={cartItems.some(cartItem => cartItem.id === item.id)}
+                        />
                         </td>
                     </span>
-                  </span>
-                  <ul className={styles.dishListItemLunch}>
-                 
-                  <li  className={styles.dishListItemLunchFirst}>
-                    <td className={styles.dishListItemLunchNameFirst}>{item.назва_перше}</td>
-                    <td className={styles.dishListItemLunchWeigthFirst}>{item.вага_перше}</td>
-                  </li>
-                  <li className={styles.dishListItemLunchSecond}>
-                    <td className={styles.dishListItemLunchNameSecond}>{item.назва_друге}</td>
-                    <td className={styles.dishListItemLunchWeigthSecond}>{item.вага_друге}</td>
-                  </li>
-                 
-                  <li className={styles.dishListItemLunchSalad}>
-                    <td className={styles.dishListItemLunchNameSalad}>{item.назва_салат}</td>
-                    {/* <td className={styles.dishListItemLunchOptionsSalad}>{item.опції_салат}</td> */}
-                    <td className={styles.dishListItemLunchWeigthSalad}>{item.вага_салат}</td>
-                    
-                  </li>
-                  
-                  <li className={styles.dishListItemLunchDrink}>
-                    <td className={styles.dishListItemLunchNameDrink}>{item.назва_напій}</td>
-                    <td className={styles.dishListItemLunchWeigthDrink}>{item.вага_напій}</td>
-                  </li>
-                  <li className={styles.dishListItemLunchBread}> 
-                    <td className={styles.dishListItemLunchNameBread}>{item.назва_хліб}</td>
-                    <td className={styles.dishListItemLunchWeigthBread}>{item.вага_хліб}</td>
-                  </li>
-                  <li className={styles.dishListItemLunchManagement}>
-                    
+
+                 </div>
                    
-                    <td className={styles.dishListItemLunchInfo}>
-                       <h4>
-                          * замовлення з 12:00 до 15:00
-                       </h4>
-                     </td>
-                    
-                     <td className={styles.dishListItemLunchPrice}>
-                       {item.ціна}
-                     </td>
-                   
- 
-                    
+
+                    </li>
+                    <span className={styles.dishListLunchDelimiterBox}>
+                      <span className={styles.dishListLunchDelimiter}></span>
+                    </span>
+                    <li  className={styles.dishListItemLunchPosition}>
+                      <td className={styles.dishListItemNameDescription}>{item.назва_перше}</td>
+                      <td className={styles.dishListItemPrice}>{item.вага_перше}</td>
                      
-                   </li>
+                    </li>
+                    <span className={styles.dishListLunchDelimiterBox}>
+                      <span className={styles.dishListLunchDelimiter}></span>
+                    </span>
+
+                    <li className={styles.dishListItemLunchPosition}>
+                      <td className={styles.dishListItemNameDescription}>{item.назва_друге}</td>
+                      <td className={styles.dishListItemPrice}>{item.вага_друге}</td>
+                    </li>
+                    <span className={styles.dishListLunchDelimiterBox}>
+                      <span className={styles.dishListLunchDelimiter}></span>
+                    </span>
+                 
+                    <li className={styles.dishListItemLunchPosition}>
+                      <td className={styles.dishListItemNameDescription}>{item.назва_салат}</td>
+                      <td className={styles.dishListItemPrice}>{item.вага_салат}</td>
+                    </li>
+                    <span className={styles.dishListLunchDelimiterBox}>
+                      <span className={styles.dishListLunchDelimiter}></span>
+                    </span>
+                  
+                    <li className={styles.dishListItemLunchPosition}>
+                      <td className={styles.dishListItemNameDescription}>{item.назва_напій}</td>
+                      <td className={styles.dishListItemPrice}>{item.вага_напій}</td>
+                    </li>
+                    <span className={styles.dishListLunchDelimiterBox}>
+                      <span className={styles.dishListLunchDelimiter}></span>
+                    </span>
+
+                  <li className={styles.dishListItemLunchPosition}> 
+                    <td className={styles.dishListItemNameDescription}>{item.назва_хліб}</td>
+                    <td className={styles.dishListItemPrice}>{item.вага_хліб}</td>
+                  </li>
+
+                  
                   </ul>
                 </tr>
               ))}
