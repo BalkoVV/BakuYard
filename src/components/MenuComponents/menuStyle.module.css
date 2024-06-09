@@ -3,7 +3,6 @@
    min-height: 85vh;
    background-repeat: repeat;
    background-color: #000000;
-   /* background-color: rgba(17, 0, 0, 0.176); */
    background-position: top;
    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
    background-attachment: none;
@@ -83,7 +82,10 @@
    inset #303030 5px 5px 9px,
    rgba(0, 0, 0, 0.853) 3px 3px 15px 3px;
    z-index: 9;
-      
+   background: rgba(0, 0, 0, 0.5);
+
+    /* background-image: url("images/hotel.png"); */
+/* background-attachment: fixed; */
    @media screen and (min-width: 767.9px) {
       padding: 15px 15px 5px;
    };
@@ -116,23 +118,23 @@
    display: flex; 
    align-items: center;
    justify-content: space-between;
-   margin-bottom: 25px;
+   margin-bottom: 15px;
    transition: all .4s ease-out; 
    border-radius: 15px;
    background-color: #313131;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
 
-   box-shadow:
+   /* box-shadow:
       inset #000000b0 -3px -3px 9px,
-      inset #7d7d7d93 3px 3px 9px; 
+      inset #7d7d7d93 3px 3px 9px;  */
    overflow: hidden;
 
    @media screen and (min-width: 768px) {
-      margin-bottom: 23px;
+      margin-bottom: 20px;
    };
 
    @media screen and (min-width: 1200px) {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
    };
  }
 
@@ -215,6 +217,9 @@
    align-items: center;
    font-size: 14px;
    color: #b0b0b0;
+   /* color: #0000009f; */
+
+   /* font-family: IndicoFont; */
    /* color: #cbcbcb; */
    font-weight: 900;
    text-shadow: 1px 1px 1px black;
@@ -274,6 +279,7 @@ border-radius: 2px;
    inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
    inset #303030 5px 5px 9px,
    rgb(0, 0, 0) 3px 3px 8px -3px;
+   background: rgba(0, 0, 0, 0.5);
    z-index: 9;
    overflow: hidden;
       
@@ -343,11 +349,11 @@ border-radius: 2px;
    padding: 0 10px;
    /* background-color: #fff; */
    @media screen and (min-width: 767.9px) {
-      padding: 0 20px;
+      padding: 0 10px 0 20px;
    };
 
   @media screen and (min-width: 1200px) {
-   padding: 0 30px;
+   padding: 0 10px 0 30px;
   };
 }
 
@@ -402,12 +408,14 @@ display: flex;
 
 
 .dishListItemIngredientsDescription {
-   font-family: PoiretFont;
+   font-family: MainFonts;
    display: inline;
    font-size: 13px;
    padding-left: 5px;
    font-style: italic;
    color: #a5a5a5;
+   /* color: #000000a0; */
+
    letter-spacing: .8px;
    /* font-weight: 900; */
    text-shadow: 1px 1px 1px rgb(0, 0, 0);

@@ -4,7 +4,7 @@ import React, { useContext, useEffect } from "react";
 import { NavLink, Route, Switch, useLocation } from "react-router-dom"; 
 
 import { CartProvider, CartContext } from "components/CartProvider/CartProvider";
-import { ReactComponent as BasketIcon } from 'images/closherr.svg';
+import { ReactComponent as BasketIcon } from 'images/delivery.svg';
 
 import Basket from "components/Basket/Basket";
 

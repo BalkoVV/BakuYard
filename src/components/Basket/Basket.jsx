@@ -8,8 +8,9 @@ import "index.css";
 
 import PlusIcon from 'images/increase.svg';
 import MinusIcon from 'images/minus.svg';
-import closheMenu1 from 'images/closherrCardMenu.svg';
-import closheMenu2 from 'images/closherrCardMenu.svg';
+import closheMenu1 from 'images/deliveryMenuCard.svg';
+import closheMenu2 from 'images/deliveryMenuCard.svg';
+
 
 export const Basket = () => {
   const { cartItems, increaseQuantity, decreaseQuantity, clearCart } = useContext(CartContext);
@@ -176,7 +177,7 @@ export const Basket = () => {
             style={{
               position: 'fixed',
               top: '70px',
-              left: '-30px',
+              left: '0px',
               width: '500px',
               height: '500px',
               zIndex: '0',

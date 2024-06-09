@@ -125,7 +125,7 @@
   justify-content: center;
   align-items: center;
   transform: rotateY(180deg);
-  /* opacity: .6; */
+  opacity: .6;
   height: 41px;
   width: 41px;
   top: 9px;
@@ -156,7 +156,7 @@
   margin: 0;
  
   transition: all .4s ease-out;
-  color: #dddddd;
+  color: #949494;
   /* color: #949494; */
   font-weight: 900;
   margin-bottom: 6px;
@@ -284,7 +284,9 @@ position: relative;
   box-shadow:
   inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
   inset #303030 5px 5px 9px,
-  rgb(0, 0, 0) 3px 3px 8px -3px;
+  rgba(0, 0, 0, 0.382) 3px 3px 8px 3px;
+  background: rgba(0, 0, 0, 0.285);
+
   z-index: 9;
      
   @media screen and (min-width: 767.9px) {
@@ -332,10 +334,10 @@ position: relative;
    border-radius: 15px;
    background-color: #262626;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
-   box-shadow:
+   /* box-shadow:
       inset #000000b0 -2px -2px 9px,
       inset #7d7d7d93 2px 2px 9px,
-      0px 0px 12px 1px rgba(0, 0, 0, 0.577); 
+      0px 0px 12px 1px rgba(0, 0, 0, 0.577);  */
    overflow: hidden;
 
    /* @media screen and (min-width: 768px) {
@@ -693,10 +695,10 @@ color: #dddddd;
  border-radius: 13px;
  background-color: #262626;
  background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
- box-shadow:
+ /* box-shadow:
  inset #000000b0 -2px -2px 9px,
  inset #7d7d7d93 2px 2px 9px, 
- 0px 0px 12px 1px rgba(0, 0, 0, 0.577);
+ 0px 0px 12px 1px rgba(0, 0, 0, 0.577); */
   @media screen and (min-width: 768px) {
     
   };
@@ -785,7 +787,7 @@ margin: 0;
 
  
  .buttonMakeOrderDescription {
-  /* color: #c81b1b; */
+  color: #c81b1b;
   display: flex;
   padding: 0;
   margin: 0;
@@ -796,6 +798,7 @@ margin: 0;
   width: 100%;
   height: 100%;
   box-shadow:  4px 4px 15px 4px #0000008b;
+  
   transition: all .4s ease-out;
 }
 
@@ -840,12 +843,12 @@ margin: 0;
   background-color: rgb(0, 0, 0);
 
 
-  
+  /* ============================================== */
   font-family: PrimaryFont;
 
-  color: rgb(222, 222, 222);
+  color: rgb(177, 177, 177);
   /* padding: 6px 0px; */
-  border-radius: 14px;
+  border-radius: 16px;
   font-size: 13px;
   white-space: nowrap;
   transition: opacity .4s ease-out; 
@@ -854,9 +857,9 @@ margin: 0;
   background-color: #262626;
   background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
   box-shadow:
-  inset #000000b0 -2px -2px 9px,
-  inset #7d7d7d93 2px 2px 9px, 
-  0px 0px 12px 1px rgba(0, 0, 0, 0.577);
+     inset #000000b0 -2px -2px 9px,
+     inset #7d7d7d93 2px 2px 9px, 
+     0px 0px 12px 1px rgba(0, 0, 0, 0.577);
 @media screen and (min-width: 767.9px) {
     
 };
@@ -912,9 +915,6 @@ cursor: pointer;
 /* basketInputBox */
 .basketInputBox {
   display: grid;
-  /* background-color: #fff; */
-  /* width: 85%; */
-  /* width: 100%; */
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 15px;
   padding: 20px;
@@ -952,10 +952,9 @@ cursor: pointer;
    font-size: 17px;
    background-color: #262626;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
-   box-shadow:
+   /* box-shadow:
    inset #000000a4 3px 3px 3px,
-   inset #00000018 3px 3px 7px
-   ; 
+   inset #00000018 3px 3px 7px;  */
    transition: all .4s linear;
 
    
@@ -1087,11 +1086,10 @@ margin-left: 10px;
  border-radius: 17px;
  width: 100%;
  height: 100%;
- box-shadow:  4px 4px 15px 4px #0000008b;
  box-shadow:
- inset #0e0e0e -5px -5px 9px,
- inset #303030 5px 5px 9px,
- rgb(0, 0, 0) 3px 3px 8px -3px;
+     inset #000000b0 -2px -2px 9px,
+     inset #7d7d7d93 2px 2px 9px, 
+     0px 0px 12px 1px rgba(0, 0, 0, 0.577);
  background-color: #262626;
  background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
  transition: all .4s ease-out;

@@ -17,7 +17,7 @@
       };
 
    @media screen and (min-width: 1200px) {
-    background-color: #020202;
+    /* background-color: #020202; */
 
       background-attachment: fixed;
    };
@@ -404,21 +404,21 @@ inset #7d7d7d93 3px 3px 9px ;
    justify-content: center;
    align-items: center;
   opacity: .6;
-   height: 51px;
-       width: 51px;
-       top: 4px;
-       left: 4px;
+   height: 45px;
+       width: 45px;
+       top: 7px;
+       left: 7px;
 
-    
+       /* transform: scaleX(-1); */
 
     @media screen and (min-width: 767.9px) {
      
      
        margin-bottom: 0px;
-       height: 65px;
-       width: 65px;
-       top: -3px;
-       left: -3px;
+       height: 55px;
+       width: 55px;
+       top: 2px;
+       left: 3px;
 
        rotate: -5deg;
        transition: all .4s ease-out;
@@ -438,29 +438,25 @@ inset #7d7d7d93 3px 3px 9px ;
 
 .basketBadge {
    position: absolute;
-   right: 10px;
-   top: 15px;
+   left: -1px;
+   top: 1px;
    display: flex;
    justify-content: end;
    align-items: center;
-   height: 13px;
-   width: 13px;
-   border-radius: 50%;
-   /* color: #7a0000; */
-   background: #4c0000;
-   color: #949494;
-   border: 1px solid #949494;
-   box-shadow: rgba(0, 0, 0, 0.324) 0px 0px 2px 2px;;
-   font-size: 14px;
-   rotate: 5deg;
+   height: 50px;
+   width: 50px;
+   background-image: url('images/checkDelivery.svg');
+   background-size: contain;
+   color: #f3000000;
    z-index: 2;
 
    @media screen and (min-width: 767.9px) {
-      height: 17px;
-      width: 17px;
-      font-size: 20px;
-      left: 36px;
-      top: 14px;
+      height: 55px;
+      width: 55px;
+      /* font-size: 25px; */
+      left: -5px;
+      top: -4px;
+      rotate: -5deg;
       };
 
       @media screen and (min-width: 1200px) {

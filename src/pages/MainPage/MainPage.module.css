@@ -8,11 +8,9 @@
   width: 100%;
   background-position: left;
   background-color: #000000;
-  /* background-color: #020202; */
   background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
 
   @media screen and (min-width: 1200px) {
-    background-color: #020202;
     background-attachment: fixed;
   }; 
 

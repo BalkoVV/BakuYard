@@ -53,9 +53,9 @@ body {
   src: url(./data/fonts/Cardo.ttf) format("truetype");
 }
 
-/* button:active {
- background-color: rgb(9, 0, 0);
- background: radial-gradient( rgb(8, 8, 8),transparent);
+/* @font-face {
+  font-family: IndicoFont;
+  src: url(./data/fonts/Indico.ttf) format("truetype");
 } */
 
 
