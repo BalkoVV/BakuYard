@@ -178,14 +178,14 @@
 
 /* basketContainer */
 .basketContainer {
-  padding: 0 5px;
+  padding: 50px 55px;
 
  @media screen and (min-width: 767.9px) {
-   padding: 0 150px;
+   padding: 60px 200px;
  };
  
  @media screen and (min-width: 1200px) {
-   padding: 0 300px;
+   padding: 70px 400px;
  };
 }
 
@@ -197,10 +197,15 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  /* border-radius: 13px; */
+  border-radius: 13px;
   /* overflow: hidden; */
-  /* box-shadow:  4px 4px 15px 2px #00000078; */
-  /* margin: 0 20px; */
+  padding: 50px 0;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow:
+  inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
+  inset #303030 5px 5px 9px,
+  rgba(0, 0, 0, 0.853) 3px 3px 15px 3px;
+  /* margin: 20px 0; */
 }
 
 

@@ -37,6 +37,10 @@ export const Basket = () => {
   }, []);
 
   useEffect(() => {
+    window.scrollTo(0, 0); // Прокрутити сторінку до верхньої частини
+  }, []);
+
+  useEffect(() => {
     const calculateTotalPrice = () => {
       const total = cartItems.reduce((acc, item) => {
         return acc + (parseFloat(item.ціна) * item.quantity);
@@ -281,11 +285,7 @@ export const Basket = () => {
 
 
                       <div className={styles.basketListItemManagement}>
-                          {/* <span className={styles.basketListItemPrice}>
-                            {item.ціна}
-                          </span> */}
-
-                          
+      
                           <span className={styles.basketListItemCounter}>
                            <span className={styles.basketListItemDecreaseBox}>
                           
