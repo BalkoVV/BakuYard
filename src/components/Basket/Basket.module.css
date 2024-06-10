@@ -125,7 +125,7 @@
   justify-content: center;
   align-items: center;
   transform: rotateY(180deg);
-  opacity: .6;
+  /* opacity: .6; */
   height: 41px;
   width: 41px;
   top: 9px;
@@ -178,14 +178,14 @@
 
 /* basketContainer */
 .basketContainer {
-  padding: 50px 55px;
+  padding: 0 5px;
 
  @media screen and (min-width: 767.9px) {
-   padding: 60px 200px;
+   padding: 0 150px;
  };
  
  @media screen and (min-width: 1200px) {
-   padding: 70px 400px;
+   padding: 0 300px;
  };
 }
 
@@ -199,13 +199,8 @@
   width: 100%;
   border-radius: 13px;
   /* overflow: hidden; */
-  padding: 50px 0;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow:
-  inset rgba(42, 41, 41, 0.471) -5px -5px 9px,
-  inset #303030 5px 5px 9px,
-  rgba(0, 0, 0, 0.853) 3px 3px 15px 3px;
-  /* margin: 20px 0; */
+  /* box-shadow:  4px 4px 15px 2px #00000078; */
+  /* margin: 0 20px; */
 }
 
 
@@ -239,10 +234,10 @@
  text-align: center;
  font-size: 15px;
       line-height: 45px;
-      color: #7c7c7c;
-      text-shadow: rgb(0, 0, 0) 0px 0px 15px;
-      font-weight: 500;
-      letter-spacing: 0.1px;
+      color: #949494;
+      text-shadow: 1px 1px 1px rgb(0, 0, 0);
+      font-weight: 900;
+      /* letter-spacing: 0.1px; */
 
  @media screen and (min-width: 767.9px) {
   font-size: 15px;
@@ -420,7 +415,7 @@ position: relative;
 
 
 .basketListItemCategoryDescription {
-  font-family: PoiretFont;
+  font-family: MainFonts;
   display: inline;
   font-size: 13px;
   padding-left: 10px;

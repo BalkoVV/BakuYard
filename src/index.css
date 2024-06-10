@@ -30,6 +30,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'PrimaryFont';
+  /* font-family: 'AmagroFont'; */
   font-weight: 100;
   color: #9f9f9f;
   background: #000000;
@@ -53,9 +54,15 @@ body {
   src: url(./data/fonts/Cardo.ttf) format("truetype");
 }
 
-/* @font-face {
-  font-family: IndicoFont;
-  src: url(./data/fonts/Indico.ttf) format("truetype");
-} */
+@font-face {
+  font-family: AnticvaFont;
+  src: url(./data/fonts/Anticva.otf) format("truetype");
+}
+
+@font-face {
+  font-family: AmagroFont;
+  src: url(./data/fonts/Amagro.ttf) format("truetype");
+}
+
 
 

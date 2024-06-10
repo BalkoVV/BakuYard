@@ -140,7 +140,7 @@ width: 100%;
 .contactsListItem img {
    position: absolute;
    rotate: -5deg;
-   opacity: .6;
+   /* opacity: .6; */
    display: block;
    height: 55px;
    transition: all .4s ease-out;
@@ -186,7 +186,7 @@ width: 100%;
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   color: #000000;
+   color: #060606;
    color: #949494;
    transition: all .4s ease-out;
     width: 100%;
@@ -216,7 +216,7 @@ inset #7d7d7d93 3px 3px 9px ;
    @media screen and (min-width: 1200px) {
       padding-right: 50px;
       font-size: 16px;
-   
+   letter-spacing: .5px;
    };
   
 }
