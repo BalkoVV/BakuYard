@@ -1045,14 +1045,13 @@ margin-left: 10px;
   width: 150px;
   border: none;
   border-radius: 17px;
-  box-shadow:  4px 4px 15px 4px #0000008b;
-  
   background-color: #010101;
   transition: all .4s ease-out;
   box-shadow:
   inset rgba(42, 41, 41, 0.471) -4px -4px 9px,
   inset #303030 4px 4px 9px,
-  rgb(0, 0, 0) 3px 3px 8px -3px;
+  rgb(183, 8, 8) 0px 0px 8px 3px;
+  transition: all .4s ease-out;
 
   color: rgb(222, 222, 222);
   font-size: 17px;
