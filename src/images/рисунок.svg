@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg1657"
+   inkscape:export-filename="/Users/macbookair/Documents/BalkoVV/proj/BakuYard/public/logo512.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="рисунок.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1659"
+     pagecolor="#000000"
+     bordercolor="#060b00"
+     borderopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="false"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="192px"
+     inkscape:zoom="0.61333768"
+     inkscape:cx="641.57154"
+     inkscape:cy="411.68187"
+     inkscape:window-width="1440"
+     inkscape:window-height="847"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1654">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipath_lpe_path-effect1192-2">
+      <path
+         fill="#ff0000"
+         d="m 6.71,19.045 c 1.032,0 1.239,0 2.839,0 1.6,0 2.581,-1.239 2.581,-3.303 0,-2.065 -1.187,-3.148 -2.735,-3.148 L 6.711,12.542 v 6.503 z"
+         id="path1202-7"
+         style="display:none" />
+      <path
+         id="lpe_path-effect1192"
+         class="powerclip"
+         d="M -4.318,-3.595 H 21.805359 V 28.019707 H -4.318 Z M 6.71,19.045 c 1.032,0 1.239,0 2.839,0 1.6,0 2.581,-1.239 2.581,-3.303 0,-2.065 -1.187,-3.148 -2.735,-3.148 L 6.711,12.542 v 6.503 z" />
+    </clipPath>
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect1192"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Використовувати почергове правило заповнення на панелі &lt;b&gt;Заповнення та штрих&lt;/b&gt;, якщо немає спрощення результату після перетворення обрізання на контури." />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1196"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0.3"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1200"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0.3"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1593">
+      <path
+         fill="#ff0000"
+         d="m 6.71,19.045 c 1.032,0 1.239,0 2.839,0 1.6,0 2.581,-1.239 2.581,-3.303 0,-2.065 -1.187,-3.148 -2.735,-3.148 L 6.711,12.542 v 6.503 z"
+         id="path1595"
+         style="display:none" />
+      <path
+         id="lpe_path-effect1597"
+         class="powerclip"
+         d="M -4.318,-3.595 H 21.805359 V 28.019707 H -4.318 Z M 6.71,19.045 c 1.032,0 1.239,0 2.839,0 1.6,0 2.581,-1.239 2.581,-3.303 0,-2.065 -1.187,-3.148 -2.735,-3.148 L 6.711,12.542 v 6.503 z" />
+    </clipPath>
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect1597"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Використовувати почергове правило заповнення на панелі &lt;b&gt;Заповнення та штрих&lt;/b&gt;, якщо немає спрощення результату після перетворення обрізання на контури." />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect20344"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0.3"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect20346"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1 @ F,0,0,1,0,0.3,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0.3"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1593-7">
+      <path
+         fill="#ff0000"
+         d="m 6.71,19.045 c 1.032,0 1.239,0 2.839,0 1.6,0 2.581,-1.239 2.581,-3.303 0,-2.065 -1.187,-3.148 -2.735,-3.148 L 6.711,12.542 v 6.503 z"
+         id="path1595-3"
+         style="display:none" />
+      <path
+         id="lpe_path-effect1597-1"
+         class="powerclip"
+         d="M -4.318,-3.595 H 21.805359 V 28.019707 H -4.318 Z M 6.71,19.045 c 1.032,0 1.239,0 2.839,0 1.6,0 2.581,-1.239 2.581,-3.303 0,-2.065 -1.187,-3.148 -2.735,-3.148 L 6.711,12.542 v 6.503 z" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Шар 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3966"
+       transform="matrix(0.9156708,0,0,0.9156708,6.1006475,5.3296417)">
+      <path
+         fill="#000000"
+         d="M 2.384,6.142 H 1.332 a 0.3,0.3 45 0 1 -0.3,-0.3 V 3.5 c 0,-0.1656854 0.134316,-0.2987765 0.2999911,-0.2963639 1.1615899,0.016915 5.2691895,0.083756 8.8976849,0.00336 0.165317,-0.00366 0.433589,-0.011238 0.599027,-0.02024 1.113001,-0.060559 1.629804,-0.2439605 1.858473,-1.1382145 0.04102,-0.1604026 0.195139,-0.2935744 0.360824,-0.2932757 1.566367,0.00282 2.593446,0.027244 3.065355,0.0415 0.16551,0.005 0.284329,0.1437191 0.259095,0.3074637 -0.474884,3.0815886 -2.361071,3.877448 -4.820832,4.0232232 -0.165379,0.0098 -0.433929,0.015457 -0.599611,0.016582 L 6.947441,6.1712384 A 0.3010068,0.3010068 134.70681 0 0 6.6484805,6.4732743 l 0.00849,2.4657275 c 5.703e-4,0.1656844 0.1353499,0.299993 0.3010275,0.2984393 1.7089997,-0.016027 4.175772,-0.1343092 5.639449,0.6708469 0.144651,0.079572 0.365237,0.232928 0.497216,0.333074 1.474768,1.119058 2.137827,2.547635 2.226804,5.200742 0.0056,0.165587 0.01214,0.434153 0.01359,0.599829 0.01228,1.405822 -0.205402,2.686711 -0.653041,3.712331 -0.06627,0.151828 -0.183586,0.393792 -0.265228,0.537924 -1.480118,2.613041 -5.1868807,2.386767 -7.1427986,2.360461 -0.1655494,-0.0022 -0.4340881,-0.0017 -0.5997734,-0.0015 -1.2138803,0.0014 -3.0254719,-0.003 -3.7412236,-0.0047 C 2.7673081,22.645983 2.6332703,22.511414 2.633763,22.345727 2.6398064,20.313428 2.6798106,8.8709975 2.6836966,6.4419522 2.6839616,6.2762933 2.5496854,6.142 2.384,6.142 Z"
+         id="path856"
+         clip-path="url(#clipPath1593-7)"
+         inkscape:path-effect="#path-effect1597;#path-effect20344"
+         inkscape:original-d="M 2.684,6.142 H 1.032 V 3.2 c 0.361,0 5.316,0.103 9.497,0 1.445,-0.052 2.013,-0.206 2.219,-1.445 2.426,0 3.665,0.052 3.665,0.052 C 16,5.265 13.936,6.039 11.252,6.142 L 6.6474479,6.1732761 6.658,9.239 c 1.806,0 4.697,-0.206 6.194,0.826 1.703,1.187 2.426,2.684 2.477,5.677 0.052,1.652 -0.206,3.148 -0.774,4.284 C 13.11,23.071 8.8822931,22.646271 6.9742085,22.650613 5.5268847,22.653906 2.787,22.64573 2.633,22.64573 2.633,22.232732 2.684,7.793 2.684,6.142 Z"
+         sodipodi:nodetypes="ccccccccccccscc"
+         style="fill:#a30000;fill-opacity:0.40767825;stroke:#e4f0f1;stroke-width:0.7;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(5.7595406,0,0,5.4434937,18.215141,0.64536767)" />
+      <path
+         fill="#ff0000"
+         d="M 57.161654,104.31672 H 72.91299 c 0.165685,0 0.434325,2.6e-4 0.599987,-0.002 8.956148,-0.14381 14.46528,-6.743735 14.564046,-17.677513 0.0015,-0.165667 0.0015,-0.434296 -2.82e-4,-0.599971 -0.1193,-10.923979 -6.761291,-16.910898 -15.450763,-17.045343 -0.165649,-0.0026 -0.434274,-0.0029 -0.599958,-0.0035 l -14.858596,-0.05933 a 0.29885316,0.29885316 135.11907 0 0 -0.300047,0.298802 l -0.0057,34.789275 a 0.29995107,0.29995107 45.004672 0 0 0.299951,0.3 z"
+         id="path858-8"
+         style="fill:#111111;fill-opacity:0.0235294;stroke:#e4f0f1;stroke-width:3.9195;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:nodetypes="csscccc"
+         inkscape:original-d="M 56.861654,104.31672 H 73.21299 c 9.215278,0 14.865384,-6.74452 14.865384,-17.97989 0,-11.240722 -6.836588,-17.347652 -15.752356,-17.347652 l -15.458592,-0.06173 z"
+         inkscape:path-effect="#path-effect20346" />
+    </g>
+  </g>
+</svg>
