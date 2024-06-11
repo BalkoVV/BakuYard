@@ -120,7 +120,7 @@
    justify-content: space-between;
    margin-bottom: 15px;
    transition: all .4s ease-out; 
-   border-radius: 15px;
+   border-radius: 11px;
    background-color: #313131;
    background-image: url("https://www.transparenttextures.com/patterns/soft-wallpaper.png");
 
@@ -298,7 +298,7 @@ border-radius: 2px;
    width: 100%;
    display: flex; 
    flex-direction: column;
-   margin-bottom: 17px;
+   margin-bottom: 15px;
    transition: all .4s ease-out; 
    overflow: hidden;
    border-radius: 13px;

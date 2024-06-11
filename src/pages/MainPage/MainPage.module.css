@@ -162,7 +162,7 @@
       height: 200px;
     };
     @media screen and (min-width: 1200px) {
-      background-size: 150%;
+      background-size: 45%;
       background-repeat: repeat;
       background-attachment: fixed;
       border-radius: 19px;
