@@ -576,7 +576,7 @@ export const HardAlkohol = () => {
           <table className={styles.dishList}>
  
             <tbody>
-            <h3 className={styles.dishListTitle}>Водка</h3>
+            <h3 className={styles.dishListTitle}>Горілка</h3>
             {vodkaItems.map((item) => (
             <tr key={item.id} className={styles.dishListItem}>
               

@@ -10,6 +10,7 @@ import BasketPage from 'pages/BasketPage/BasketPage';
 import ContactsPage from 'pages/ContactsPage/ContactsPage';
 import Header from 'components/Header/Header';
 import Footer from 'components/Footer/Footer';
+// import NotFoundPage from 'pages/NotFoundPage/NotFoundPage';
 import MasterContainer from 'components/MasterContainer/MasterContainer';
 import LogoBen from 'components/LogoBen/LogoBen';
 import styles from 'index.css';
@@ -26,7 +27,9 @@ export const App = () => {
               <Route path="/menu" component={MenuPage} />
               <Route path="/basket" component={BasketPage} />
               <Route path="/contacts" component={ContactsPage} />
+              {/* <Route path="" component={NotFoundPage} /> */}
             </CartProvider>
+            
           </Switch>
         </div>
         <Route render={({ location }) => {

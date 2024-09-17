@@ -1,7 +1,6 @@
 // LogoBen.jsx
 
 import React from 'react';
-// import logoben from 'images/t1.svg';
 import logoben from 'images/bhLogo.svg';
 import styles from 'components/LogoBen/LogoBen.module.css';
 

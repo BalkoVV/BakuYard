@@ -8,9 +8,6 @@ import { ReactComponent as ToMenuIcon } from 'images/toMenuIcon.svg';
 import banqueteHotData from "services/dataBanquete/banqueteHot.json";
 import banqueteColdData from "services/dataBanquete/banqueteCold.json"
 
-// import pizzaMenu1 from 'images/pizzaMenu1.png';
-// import pizzaMenu2 from 'images/pizzaMenu2.png';
-// import pizzaMenu3 from 'images/pizzaMenu3.png';
 
 import styles from 'components/MenuComponents/menuStyle.module.css';
 
@@ -31,7 +28,7 @@ export const Banquete = () => {
     contentElements.forEach((element, index) => {
       setTimeout(() => {
         element.style.opacity = '1'; 
-      }, 10 * index); 
+      }, 1 * index); 
     });
   }, []);
 
@@ -104,29 +101,7 @@ style={{
 }}
 />
 
-        {/* <img
-         src={pizzaMenu1}
-        alt=""
-        style={{
-          position: 'fixed',
-          top: '100px',
-          left: '-40px',
-          width: '400px',
-          height: '600px',
-        }}
-      />
-       <img
-         src={pizzaMenu2}
-        alt=""
-        style={{
-          position: 'fixed',
-          top: '220px',
-          right: '-40px',
-          width: '400px',
-          height: '600px',
-        }}
-      /> */}
-       
+    
           
           <table className={styles.dishList}>
           <h3 className={styles.dishListTitle}>Гарячі страви</h3>
