@@ -78,6 +78,22 @@ background-image: url("https://www.transparenttextures.com/patterns/egg-shell.pn
   /* background-color: #fff; */
 }
 
+.footerSocialCustom {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  
+  /* background-color: #fff; */
+}
+
+.footerSocialCustom h3 {
+ font-size: 10px;
+ color: #3c3c3c;
+}
+
 
 
 .footerSocial li img {

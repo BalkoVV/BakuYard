@@ -19,9 +19,12 @@ export const Footer = ({ customLinks }) => {
           <li className={styles.footerLogo}>
               <LogoUncolored/>
            </li>
+           
         {customLinks ? (
-          <ul className={styles.footerSocial}>
-            
+
+          <ul className={styles.footerSocialCustom}>
+            <h3>сайт створено</h3> 
+
             {customLinks}
           </ul>
         ) : (
